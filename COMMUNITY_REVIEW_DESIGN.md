@@ -31,3 +31,11 @@ Popularity and vote totals never determine historical confidence. Several retell
 ## Remaining implementation
 
 Build submission API and receipt page, queue and bounded review jobs, source-retrieval checks, structured reviewer outputs, debate/challenge interface, revision history, publication/export workflow and badge rules. Add spam/rate controls and spending limits. Replace current interface wording about GitHub posting and independent review only when the replacement service is deployed and tested.
+
+## Showing contributions in the historical graph
+
+Facts are observation nodes with dates, places and passage-level evidence. Relationships are separately assessed edges with mechanism, direction, timing, evidence and review status. Threads are named routes through the graph, including branches, rather than a separate store of duplicated facts.
+
+After automated assessment, a contribution can append a supported node and edge, branch from an existing node, connect two existing threads, or revise an edge. Counterevidence attaches to the affected fact or relationship. Challenging an edge does not delete its endpoint facts. Unsupported adjacency never becomes an implied causal arrow.
+
+Selecting a fact shows its source passages; selecting a relationship shows why that connection is proposed, alternatives, supporting and contrary evidence, uncertainty and revision history. Distinguish supported, provisional and disputed edges through labels and line styles as well as color. New branch endpoints offer a prompt to investigate the next open question. Contributors can preview the proposed graph changes before submitting them. Deduplicate source accounts and fact records before publication.
