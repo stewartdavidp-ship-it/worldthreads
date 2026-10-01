@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WorldThreads — 1816 Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <div class="brand">WorldThreads</div>
+      <div class="tagline">History isn't a collection of events. It's the threads that connect them.</div>
+    </div>
+    <nav>
+      <button class="nav-btn active" data-view="year">1816</button>
+      <button class="nav-btn" data-view="threads">Threads</button>
+      <button class="nav-btn" data-view="evidence">Evidence</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">PROTOTYPE YEAR</p>
+        <h1>1816</h1>
+        <h2>The world in motion</h2>
+        <p class="intro">Explore how climate, biology, food systems, economics and human responses interacted across regions. This prototype starts with a small verified dataset and is designed to grow into a global historical systems graph.</p>
+      </div>
+      <div class="hero-card">
+        <div class="hero-stat"><span>7</span><small>verified observations</small></div>
+        <div class="hero-stat"><span>2</span><small>prototype regions</small></div>
+        <div class="hero-stat"><span>5</span><small>interacting systems</small></div>
+      </div>
+    </section>
+
+    <section class="filters">
+      <button class="filter active" data-system="ALL">All systems</button>
+      <button class="filter earth" data-system="EARTH">Earth</button>
+      <button class="filter bio" data-system="BIOSPHERE">Biosphere</button>
+      <button class="filter production" data-system="PRODUCTION & RESOURCES">Production</button>
+      <button class="filter human" data-system="HUMAN SYSTEMS">Human systems</button>
+      <button class="filter power" data-system="POWER & CULTURE">Power & culture</button>
+    </section>
+
+    <section class="layout">
+      <aside class="panel map-panel">
+        <div class="section-head">
+          <p class="eyebrow">WORLD VIEW</p>
+          <h3>Where the evidence sits</h3>
+        </div>
+        <div class="map-shell">
+          <div class="map-label europe">Europe</div>
+          <button class="map-node europe-node" data-region="Europe" aria-label="Europe observations"></button>
+          <div class="map-label na">North America</div>
+          <button class="map-node na-node" data-region="North America" aria-label="North America observations"></button>
+          <div class="map-empty">The global map fills as research expands.</div>
+        </div>
+        <div class="legend">
+          <span><i class="dot high"></i> High confidence</span>
+          <span><i class="dot medium"></i> Medium-high confidence</span>
+        </div>
+      </aside>
+
+      <section class="panel thread-panel">
+        <div class="section-head">
+          <p class="eyebrow">TRACE</p>
+          <h3>Gulf of Maine thread</h3>
+          <p>Click any node to inspect the evidence behind it.</p>
+        </div>
+        <div id="threadGraph" class="thread-graph"></div>
+      </section>
+    </section>
+
+    <section class="panel observations-panel">
+      <div class="section-head row-head">
+        <div>
+          <p class="eyebrow">1816 DATASET</p>
+          <h3>Observations</h3>
+        </div>
+        <div id="countLabel" class="count-label"></div>
+      </div>
+      <div id="cards" class="cards"></div>
+    </section>
+  </main>
+
+  <dialog id="detailDialog">
+    <button id="closeDialog" class="close" aria-label="Close">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+
+  <footer>
+    <span>WorldThreads v0.1</span>
+    <span>Prototype data: 1816</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
