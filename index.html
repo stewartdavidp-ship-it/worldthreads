@@ -113,9 +113,11 @@
       <h4>Return your findings</h4>
       <label for="contributionFile">Upload research output for local checks</label>
       <input id="contributionFile" type="file" accept=".json,application/json">
-      <p>This prototype checks the file on your device. It does not send it to the repository. Download the checked draft for submission through the project’s review process.</p>
+      <p>This prototype checks the file on your device. It does not send it to the repository. After checking your draft, copy its contents into the GitHub review form below. Posting requires a GitHub account and creates a public submission.</p>
+      <p><a class="nav-btn submission-link" href="https://github.com/stewartdavidp-ship-it/worldthreads/issues/new?template=research-contribution.yml" target="_blank" rel="noopener">Post research for review</a> <a href="https://github.com/stewartdavidp-ship-it/worldthreads/issues?q=is%3Aissue+label%3Aresearch" target="_blank" rel="noopener">See submitted research</a></p>
       <p id="contributionStatus" role="status" aria-live="polite"></p>
       <ul id="contributionErrors"></ul>
+      <button id="copySubmission" class="nav-btn" hidden>Copy checked research</button>
       <button id="downloadSubmission" class="nav-btn" hidden>Download pending review draft</button>
     </section>
 

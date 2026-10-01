@@ -96,3 +96,7 @@ Reader contribution scope now requires 1816 and a locality; new observations out
 Documented reviewed seed → local contribution → verification → further year expansion. Annual views will reference stable records in a shared graph; cross-year connections require their own evidence and alternative review. Readiness is an editorial decision with explicit review and operating prerequisites, not a count-based automatic opening. 1816 remains active; no next year was invented or opened.
 
 Final scope checks: the suggested missions now cover fisheries, flood exposure and a reusable local 1816 question; the out-of-year Bengal mission was replaced. Nine intake tests and five graph/provenance tests pass. Intake rejects impossible calendar dates and relationships with no 1816 endpoint. Browser verification confirms the local mission, place and 1816 prompt. The original graph’s context records remain distinct from new contributor scope.
+
+## 2026-10-01 — Public research posting
+
+Added a GitHub issue form on the default branch and linked it from the published contribution flow. Contributors can check a JSON draft locally, copy it, and post it publicly using a GitHub account. Required form fields preserve the starting thread, locality, findings, uncertainty and structured evidence. Research and pending-review labels identify submissions. Posts do not auto-promote claims; maintainers still run intake and independent historical review. No test finding was posted as real research.

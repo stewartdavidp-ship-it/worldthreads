@@ -163,14 +163,15 @@ function bindContributions(){
   document.getElementById('downloadResearchPrompt').addEventListener('click',()=>downloadText('worldthreads-research-prompt.txt',prompt));
   document.getElementById('downloadResearchTemplate').addEventListener('click',()=>downloadText('worldthreads-output-template.json',JSON.stringify(kit,null,2),'application/json'));
   document.getElementById('contributionFile').addEventListener('change',async e=>{
-    pendingContribution=null;const status=document.getElementById('contributionStatus'),list=document.getElementById('contributionErrors'),button=document.getElementById('downloadSubmission');list.replaceChildren();button.hidden=true;
+    pendingContribution=null;const status=document.getElementById('contributionStatus'),list=document.getElementById('contributionErrors'),button=document.getElementById('downloadSubmission');list.replaceChildren();button.hidden=true;document.getElementById('copySubmission').hidden=true;
     const file=e.target.files[0];if(!file)return;status.textContent='Checking your draft…';
     try{
       if(file.size>2*1024*1024)throw Error('Please keep each contribution under 2 MB.');
       const draft=JSON.parse(await file.text());const errors=WorldThreadsIntake.validateSubmission(draft,state);
       if(errors.length){status.textContent='Please fix these items before review.';for(const error of errors){const li=document.createElement('li');li.textContent=error;list.appendChild(li);}return;}
-      pendingContribution=draft;status.textContent=`Structure checks passed: ${draft.observations.length} proposed observations and ${draft.relationships.length} connections. Historical verification is still pending. Nothing has been added to the graph.`;button.hidden=false;
+      pendingContribution=draft;status.textContent=`Structure checks passed: ${draft.observations.length} proposed observations and ${draft.relationships.length} connections. Historical verification is still pending. Nothing has been added to the graph.`;button.hidden=false;document.getElementById('copySubmission').hidden=false;
     }catch(error){status.textContent=`Could not check the draft: ${error.message}`;}
   });
+  document.getElementById('copySubmission').addEventListener('click',async()=>{if(!pendingContribution)return;try{await navigator.clipboard.writeText(JSON.stringify(pendingContribution,null,2));document.getElementById('contributionStatus').textContent='Copied. Open Post research for review and paste this into Structured research output. Verification is still pending.';}catch{document.getElementById('contributionStatus').textContent='Clipboard access was unavailable. Download your checked draft, open it, and copy its contents into the review form.';}});
   document.getElementById('downloadSubmission').addEventListener('click',()=>{if(pendingContribution)downloadText('worldthreads-pending-review.json',JSON.stringify(pendingContribution,null,2),'application/json');});
 }

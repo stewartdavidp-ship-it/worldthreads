@@ -2,7 +2,7 @@
 
 Choose a thread and an open question in the prototype. Prepare the research prompt and download its output template. Research a bounded question, record actual inspected passages and return JSON with observations, sources, evidence, optional relationships and a search log. Retain competing causes and unsuccessful searches. All new work enters as a contributor draft.
 
-The current static prototype reads an uploaded file locally, checks its structure and offers a pending-review download. It does not transmit files or add records to the graph. Contributors with repository access can submit the draft in a pull request under `contributions/pending/`; other contributors need a maintainer-provided submission channel. Public upload storage, authentication, notifications and moderation require a later hosted service.
+The current static prototype reads an uploaded file locally, checks its structure and offers a pending-review download. It does not transmit files or add records to the graph. Contributors with repository access can submit the draft in a pull request under `contributions/pending/`; other contributors can use “Post research for review” to submit their checked JSON through the GitHub research issue form. A GitHub account is required; submissions are public and enter the review queue. Native website accounts, file storage and moderation remain future work.
 
 ## Intake and verification
 
