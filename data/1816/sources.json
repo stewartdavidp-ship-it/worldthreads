@@ -18,7 +18,7 @@
     "id": "SRC-002",
     "type": "Peer-reviewed article",
     "authorOrOrg": "Alexander et al., Science Advances",
-    "title": "The 1816 'year without a summer' in an ecology of marine fisheries",
+    "title": "Tambora and the mackerel year: Phenology and fisheries during an extreme climate event",
     "year": 2017,
     "url": "https://doi.org/10.1126/sciadv.1601635",
     "quality": "High",
@@ -27,7 +27,8 @@
       "temperature",
       "fisheries",
       "adaptation"
-    ]
+    ],
+    "fullTextUrl": "https://repository.library.noaa.gov/view/noaa/59268/noaa_59268_DS1.pdf"
   },
   {
     "id": "SRC-003",
@@ -88,7 +89,8 @@
       "snow",
       "drought",
       "proxies"
-    ]
+    ],
+    "fullTextUrl": "https://html.rhhz.net/qxxb_en/html/20170104.htm"
   },
   {
     "id": "SRC-007",
@@ -106,25 +108,26 @@
   },
   {
     "id": "SRC-008",
-    "type": "Primary treaty text",
+    "type": "Unscanned treaty transcription",
     "authorOrOrg": "Treaty of Sugauli transcript",
     "title": "Treaty of Sugauli",
     "year": 1815,
     "url": "https://en.wikisource.org/wiki/Treaty_of_Sugauli",
-    "quality": "Medium-High",
+    "quality": "Medium",
     "topics": [
       "Nepal",
       "East India Company",
       "territory",
       "diplomacy"
-    ]
+    ],
+    "notes": "Wikisource warns that the text is not backed by a scanned edition; original verification pending."
   },
   {
     "id": "SRC-009",
     "type": "Museum collection record",
     "authorOrOrg": "Royal Museums Greenwich",
     "title": "The Bombardment of Algiers, 27 August 1816",
-    "year": 1816,
+    "year": null,
     "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-12109",
     "quality": "High",
     "topics": [
@@ -132,14 +135,16 @@
       "Royal Navy",
       "slavery",
       "Mediterranean"
-    ]
+    ],
+    "objectDate": 1836,
+    "notes": "1816 is the depicted event; the painting dates to 1836. Collection webpage publication date is unspecified."
   },
   {
     "id": "SRC-010",
     "type": "Scholarly monograph / Cambridge",
-    "authorOrOrg": "Elizabeth A. Eldredge",
+    "authorOrOrg": "Elizabeth A. Eldredge; Boydell & Brewer, hosted by Cambridge Core",
     "title": "Kingdoms and Chiefdoms of Southeastern Africa — chronology and Zulu consolidation",
-    "year": 2018,
+    "year": 2015,
     "url": "https://www.cambridge.org/core/books/abs/kingdoms-and-chiefdoms-of-southeastern-africa/chronology-of-conflicts-migrations-and-political-reconfiguration-east-of-the-drakensberg-in-the-era-of-shaka/A9658A686F8C58794A2441343AF0AC41",
     "quality": "High",
     "topics": [
@@ -147,7 +152,9 @@
       "AmaZulu",
       "southern Africa",
       "political reconfiguration"
-    ]
+    ],
+    "onlinePublicationYear": 2018,
+    "notes": "Print publication 2015; online publication 14 March 2018. Appendix B summary inspected."
   },
   {
     "id": "SRC-011",
@@ -198,7 +205,7 @@
     "type": "Library interpretation",
     "authorOrOrg": "British Library",
     "title": "Mary Shelley’s Frankenstein",
-    "year": 2026,
+    "year": null,
     "url": "https://www.britishlibrary.cn/en/works/frankenstein/",
     "quality": "High",
     "topics": [
@@ -206,21 +213,23 @@
       "Frankenstein",
       "1816 weather",
       "literature"
-    ]
+    ],
+    "notes": "Webpage publication date unspecified; accessed 2026-10-01."
   },
   {
     "id": "SRC-015",
     "type": "Performing arts institution",
     "authorOrOrg": "Metropolitan Opera",
     "title": "Timeline: Rossini",
-    "year": 2026,
+    "year": null,
     "url": "https://www.metopera.org/learn/education/timeline-rossini/",
     "quality": "High",
     "topics": [
       "Rossini",
       "Barber of Seville",
       "opera"
-    ]
+    ],
+    "notes": "Live page redirects to access queue. Premiere checked through indexed institutional excerpt; publication date unspecified."
   },
   {
     "id": "SRC-016",

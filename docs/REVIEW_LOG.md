@@ -15,3 +15,32 @@ records relief capacity as a plausible cofactor (SRC-018, p. 44) and prior
 food insecurity as an unsourced question. No counterevidence search is claimed
 complete. Added distinct relationship evidence records so observation support
 does not automatically stand in for causal support.
+
+## 2026-10-01 — Rounds 2–5: fisheries, Czech Lands, Geneva and China
+
+Added claim-specific locators to ten observations and ten relationships. Corrected the fisheries source title and limited the temperature record to Salem. Fish responses are identified as inference rather than population counts. Corrected the rain record's location to Řenče and narrowed its scope. Added economic, environmental and source-bias explanations. Expanded the Chinese cold record to 1815–1816 and retained proxy disagreement. Attribution confidence was reduced where local observations do not isolate mechanisms. Independent review and wider alternative searches remain open.
+
+## 2026-10-01 — Rounds 6–9: Alpine floods, literature, politics, medicine and music
+
+Registered evidence for ten more observations and four relationships. Alpine flood evidence is explicitly abstract-only: fresh spring snowfall and triggering rain challenge a simple two-winter snow chain. Added creative and scientific cofactors to the Frankenstein connection. Downgraded Sugauli evidence because the treaty transcription lacks a scan. Distinguished the Algiers painting date (1836) from the event (1816). Narrowed Rossini to the checked premiere, removing unverified Bologna reception. Medical history was checked through the accessible NCBI PDF. Shaka chronology and its comparative relationship remain open. All source checks still await independent review.
+
+## 2026-10-01 — Round 10: southeastern Africa chronology
+
+The publisher-hosted Appendix B excerpt supports the Shaka entries for 1816 and 1816–17. Registered locators without claiming full-chapter or oral-tradition inspection. Corrected source metadata to print publication 2015 and online publication 2018. The Slachter’s Nek comparison remains explicitly non-causal. Every current observation and relationship now has a passage-level evidence record; none has independent approval.
+
+### Specific corrections in rounds 2–10
+
+| Record | Earlier scope | Revised scope and reason |
+| --- | --- | --- |
+| WT-1816-0001 | Gulf-wide temperature anomaly | Salem air-temperature series; SRC-002 pp. 6–8 does not measure regional water temperature. |
+| WT-1816-0002 | Species response stated directly | Response identified as historical inference from exports and thermal windows; SRC-002 Results and Discussion. |
+| WT-1816-0007 | Vodokrty and autumn sowing | Řenče, eight weeks of rain from 8 June; unsupported sowing clause removed; SRC-001 section 4.2.2. |
+| WT-1816-0010 | Snow storage sets up flood risk broadly | Fresh spring 1817 snow distinguished from enduring 1816 snow; SRC-005 Abstract. |
+| WT-1816-0012 | Cold record limited to 1816 | Documentary scope expanded to 1815–1816; proxy disagreement retained; SRC-006 section 3.1. |
+| WT-1816-0017 | Ratification asserted at High confidence | Counterpart exchange reported provisionally; Medium confidence because SRC-008 lacks a scanned edition. |
+| WT-1816-0021 | Premiere plus Bologna revision/reception | Premiere only; later reception removed because full institutional source was inaccessible. |
+| SRC-009 | Source year 1816 | Undated webpage with painting date 1836; event date remains 1816 in observation. |
+| SRC-010 | Publication year 2018 | Print year 2015, online year 2018; publisher metadata distinguishes them. |
+| SRC-014/015 | Webpage year assumed 2026 | Publication year unspecified; access date is recorded in evidence. |
+
+Validation: structural audit zero errors and zero warnings; 42 claims still await independent review and 16 alternative searches await expansion. Audit rejection checks exercised duplicate IDs, wrong evidence ownership and self-approval. Browser check confirmed source locators, pending review and the qualified Frankenstein connection.

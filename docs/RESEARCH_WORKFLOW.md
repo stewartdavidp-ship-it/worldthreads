@@ -15,7 +15,7 @@ Run `python3 scripts/audit.py`. The audit checks duplicate IDs, dangling referen
 Resolve audit errors before publishing a revision. For each substantive correction, record old claim, new claim, supporting locator and reason in a review log. Preserve stable IDs and explain date/meaning changes. Keep unresolved issues in research gaps; do not mark an entire region complete because one thread was added. Rerun the audit and check changed browser behavior. Publish the revision with remaining warnings and review limits stated.
 
 ## First batch
-The local Tambora batch has claim-level evidence and scholarly corroboration, with independent review still pending. Its maritime observation was narrowed to a dated 1819 report. Recovery beyond the core 1814–1818 window requires explicit context labeling. Legacy records still need passage-level audit.
+The local Tambora batch has claim-level evidence and scholarly corroboration, with independent review still pending. Its maritime observation was narrowed to a dated 1819 report. Recovery beyond the core 1814–1818 window requires explicit context labeling. The subsequent ten rounds added locators to all current claims. Independent review, wider alternative searches and full-text access for limited sources remain open.
 
 ## Challenge the preferred explanation
 
@@ -30,3 +30,7 @@ The first famine example records relief capacity as a plausible cofactor and
 pre-existing insecurity as an unresolved research question. Targeted alternative
 research and independent review remain pending. Automated audits cannot perform
 these substantive historical judgments.
+
+## Repeat the cycle
+
+Refresh `data/1816/audit-report.json` with `python3 scripts/audit.py --report data/1816/audit-report.json`. Select one bounded task from the queue and `docs/NEXT_REVIEW_PASSES.md`. Record the source access scope before interpreting its findings. Recheck the observation, connection, alternatives and thread summary together. Preserve unresolved questions after a clean structural audit. Repeat until the selected task is resolved or documented as requiring evidence not yet available.

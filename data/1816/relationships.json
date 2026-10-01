@@ -9,12 +9,44 @@
     "explanation": "Tambora is identified as a major volcanic forcing behind the anomalous 1816 Northern Hemisphere climate, while local atmospheric variability also mattered.",
     "confidence": "High",
     "sourceRefs": [
-      "SRC-002",
-      "SRC-016"
+      "SRC-002"
     ],
-    "alternatives": [
-      "internal climate variability"
-    ]
+    "evidenceRefs": [
+      "EV-B2-REL-0001"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Tambora is identified as a major volcanic forcing behind the anomalous 1816 Northern Hemisphere climate, while local atmospheric variability also mattered.",
+      "assessment": "supported",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0001",
+          "explanation": "Weather varies within the region.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-002"
+          ],
+          "locator": "Introduction",
+          "evidenceNote": "The temperature series is local, and attribution is not isolated.",
+          "distinguishingEvidence": [
+            "Compare independent records and test the competing mechanism."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "No contrary source independently inspected.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent replication and comparison across locations or periods."
+      ],
+      "searchStatus": "Alternative discussion in the supporting paper inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
   },
   {
     "id": "REL-0002",
@@ -27,7 +59,43 @@
     "confidence": "High",
     "sourceRefs": [
       "SRC-002"
-    ]
+    ],
+    "evidenceRefs": [
+      "EV-B2-REL-0002"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Temperature anomalies affected migratory fish species differently because of species-specific phenology and thermal sensitivity.",
+      "assessment": "plausible",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0002",
+          "explanation": "Dams and settlement also affect fish exports.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-002"
+          ],
+          "locator": "Results: anthropogenic pressures; Discussion",
+          "evidenceNote": "Export patterns combine human and biological effects.",
+          "distinguishingEvidence": [
+            "Compare independent records and test the competing mechanism."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "No contrary source independently inspected.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent replication and comparison across locations or periods."
+      ],
+      "searchStatus": "Alternative discussion in the supporting paper inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
   },
   {
     "id": "REL-0003",
@@ -40,7 +108,43 @@
     "confidence": "High",
     "sourceRefs": [
       "SRC-002"
-    ]
+    ],
+    "evidenceRefs": [
+      "EV-B2-REL-0003"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Weak alewife availability interacted with crop failure and food demand, shifting fishing effort toward marine species including mackerel.",
+      "assessment": "supported",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0003",
+          "explanation": "Trade reopening and market demand also affect export shifts.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-002"
+          ],
+          "locator": "Introduction; Discussion",
+          "evidenceNote": "War and embargo affected trade; relative contributions need further testing.",
+          "distinguishingEvidence": [
+            "Compare independent records and test the competing mechanism."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "No contrary source independently inspected.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent replication and comparison across locations or periods."
+      ],
+      "searchStatus": "Alternative discussion in the supporting paper inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
   },
   {
     "id": "REL-0004",
@@ -53,7 +157,43 @@
     "confidence": "High",
     "sourceRefs": [
       "SRC-002"
-    ]
+    ],
+    "evidenceRefs": [
+      "EV-B2-REL-0004"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "The emergency shift in fishing effort persisted after the immediate climate anomaly, creating a path-dependent structural adaptation.",
+      "assessment": "supported",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0004",
+          "explanation": "Population, transport and markets support longer-term expansion.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-002"
+          ],
+          "locator": "Discussion, p. 13",
+          "evidenceNote": "Authors discuss these forces alongside contingent adaptation.",
+          "distinguishingEvidence": [
+            "Compare independent records and test the competing mechanism."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "No contrary source independently inspected.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent replication and comparison across locations or periods."
+      ],
+      "searchStatus": "Alternative discussion in the supporting paper inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
   },
   {
     "id": "REL-0005",
@@ -65,9 +205,44 @@
     "explanation": "Tambora forcing contributed to the exceptionally cold 1816 summer in the Czech Lands; background climate and circulation variability also influenced conditions.",
     "confidence": "High",
     "sourceRefs": [
-      "SRC-001",
-      "SRC-016"
-    ]
+      "SRC-001"
+    ],
+    "evidenceRefs": [
+      "EV-B2-REL-0005"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Tambora forcing contributed to the exceptionally cold 1816 summer in the Czech Lands; background climate and circulation variability also influenced conditions.",
+      "assessment": "supported",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0005",
+          "explanation": "Earlier cooling and circulation also matter.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-001"
+          ],
+          "locator": "Sections 5.1 and 6",
+          "evidenceNote": "Regional responses differ from the global signal.",
+          "distinguishingEvidence": [
+            "Compare independent records and test the competing mechanism."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "No contrary source independently inspected.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent replication and comparison across locations or periods."
+      ],
+      "searchStatus": "Alternative discussion in the supporting paper inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
   },
   {
     "id": "REL-0006",
@@ -80,7 +255,43 @@
     "confidence": "Medium-High",
     "sourceRefs": [
       "SRC-001"
-    ]
+    ],
+    "evidenceRefs": [
+      "EV-B2-REL-0006"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Persistent wet conditions damaged cereals and yields, contributing to shortage and later grain-price pressure.",
+      "assessment": "supported",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0006",
+          "explanation": "Postwar demand, inflation and agricultural change also influence prices.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-001"
+          ],
+          "locator": "Section 5.3",
+          "evidenceNote": "The paper discusses economic interpretations alongside harvest failure.",
+          "distinguishingEvidence": [
+            "Compare independent records and test the competing mechanism."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "Oats had a better yield and less volatile prices; crops did not respond uniformly.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent replication and comparison across locations or periods."
+      ],
+      "searchStatus": "Alternative discussion in the supporting paper inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
   },
   {
     "id": "REL-0007",
@@ -93,7 +304,43 @@
     "confidence": "High",
     "sourceRefs": [
       "SRC-001"
-    ]
+    ],
+    "evidenceRefs": [
+      "EV-B2-REL-0007"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Cold and damaging 1816 weather contributed to poor grain harvests followed by widespread price increases in 1817.",
+      "assessment": "supported",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0007",
+          "explanation": "Postwar demand, inflation and agricultural change also influence prices.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-001"
+          ],
+          "locator": "Section 5.3",
+          "evidenceNote": "The paper discusses economic interpretations alongside harvest failure.",
+          "distinguishingEvidence": [
+            "Compare independent records and test the competing mechanism."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "Oats had a better yield and less volatile prices; crops did not respond uniformly.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent replication and comparison across locations or periods."
+      ],
+      "searchStatus": "Alternative discussion in the supporting paper inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
   },
   {
     "id": "REL-0008",
@@ -103,11 +350,46 @@
     "causalStatus": "CONTRIBUTORY",
     "lag": "~1 year",
     "explanation": "The Geneva cold summer occurred in the post-Tambora climate anomaly, with regional circulation and cloudiness shaping the local expression.",
-    "confidence": "High",
+    "confidence": "Medium-High",
     "sourceRefs": [
-      "SRC-004",
-      "SRC-016"
-    ]
+      "SRC-004"
+    ],
+    "evidenceRefs": [
+      "EV-B2-REL-0008"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "The Geneva cold summer occurred in the post-Tambora climate anomaly, with regional circulation and cloudiness shaping the local expression.",
+      "assessment": "plausible",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0008",
+          "explanation": "Circulation, cloudiness, ocean state and solar activity interact.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-004"
+          ],
+          "locator": "Section 4",
+          "evidenceNote": "Observations cannot uniquely separate mechanisms.",
+          "distinguishingEvidence": [
+            "Compare independent records and test the competing mechanism."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "The authors explicitly state attribution is not possible from these observations alone.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent replication and comparison across locations or periods."
+      ],
+      "searchStatus": "Alternative discussion in the supporting paper inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
   },
   {
     "id": "REL-0009",
@@ -117,11 +399,47 @@
     "causalStatus": "CONTRIBUTORY",
     "lag": "same summer",
     "explanation": "The cold, rainy Geneva summer helped keep the literary group indoors and formed the documented setting for the ghost-story challenge from which Frankenstein emerged. This is a contributing cultural context, not a claim that climate alone caused the work.",
-    "confidence": "Medium-High",
+    "confidence": "Medium",
     "sourceRefs": [
       "SRC-013",
       "SRC-014"
-    ]
+    ],
+    "evidenceRefs": [
+      "EV-B3-REL-0009-SRC-014"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "The cold, rainy Geneva summer helped keep the literary group indoors and formed the documented setting for the ghost-story challenge from which Frankenstein emerged. This is a contributing cultural context, not a claim that climate alone caused the work.",
+      "assessment": "plausible",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B3-0009",
+          "explanation": "Byron’s challenge, Gothic storytelling, scientific debates and Mary Shelley’s creative choices also mattered.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-014"
+          ],
+          "locator": "The birth of Frankenstein",
+          "evidenceNote": "The account discusses the challenge and galvanism alongside stormy weather.",
+          "distinguishingEvidence": [
+            "Compare independent accounts and test the relative contribution."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "Manuscript chronology alone cannot establish the relative influence of weather.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent historical records and explicit comparison of mechanisms."
+      ],
+      "searchStatus": "Supporting source discussion inspected; wider alternative search pending",
+      "reviewStatus": "pending_independent_review"
+    }
   },
   {
     "id": "REL-0010",
@@ -131,10 +449,46 @@
     "causalStatus": "CONTRIBUTORY",
     "lag": "1–2 years",
     "explanation": "Post-eruption cold conditions contributed to unusual Alpine snow conditions during 1816–1817.",
-    "confidence": "High",
+    "confidence": "Medium-High",
     "sourceRefs": [
       "SRC-005"
-    ]
+    ],
+    "evidenceRefs": [
+      "EV-B3-REL-0010-SRC-005"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Post-eruption cold conditions contributed to unusual Alpine snow conditions during 1816–1817.",
+      "assessment": "plausible",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B3-0010",
+          "explanation": "Atmospheric variability and individual snowfall events also shape snow storage.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-005"
+          ],
+          "locator": "Abstract",
+          "evidenceNote": "Regional hydrology combines climate background with weather events.",
+          "distinguishingEvidence": [
+            "Compare independent accounts and test the relative contribution."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "The source does not isolate the volcanic share of snow accumulation.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent historical records and explicit comparison of mechanisms."
+      ],
+      "searchStatus": "Supporting source discussion inspected; wider alternative search pending",
+      "reviewStatus": "pending_independent_review"
+    }
   },
   {
     "id": "REL-0011",
@@ -148,10 +502,42 @@
     "sourceRefs": [
       "SRC-005"
     ],
-    "alternatives": [
-      "spring 1817 snowfall",
-      "heavy July 1817 rainfall"
-    ]
+    "evidenceRefs": [
+      "EV-B3-REL-0011-SRC-005"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Snow storage increased the water available for melt, but modeling indicates spring 1817 snowfall and intense triggering rainfall were more immediate drivers than surviving 1816 snow alone.",
+      "assessment": "plausible",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B3-0011",
+          "explanation": "Fresh spring 1817 snowfall and intense rainfall drive the flood.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-005"
+          ],
+          "locator": "Abstract",
+          "evidenceNote": "Fresh snow is favored over the proposed two-winter accumulation mechanism.",
+          "distinguishingEvidence": [
+            "Compare independent accounts and test the relative contribution."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "The simulated flood peaks are too small because rainfall is underestimated.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent historical records and explicit comparison of mechanisms."
+      ],
+      "searchStatus": "Supporting source discussion inspected; wider alternative search pending",
+      "reviewStatus": "pending_independent_review"
+    }
   },
   {
     "id": "REL-0012",
@@ -159,12 +545,48 @@
     "predicate": "CONTRIBUTED_TO",
     "objectId": "WT-1816-0012",
     "causalStatus": "CONTRIBUTORY",
-    "lag": "~1 year",
+    "lag": "months to ~1 year",
     "explanation": "Multiple proxy lines attribute a significant part of the southern China 1816 cold excursion to Tambora-era volcanic forcing.",
-    "confidence": "High",
+    "confidence": "Medium-High",
     "sourceRefs": [
       "SRC-006"
-    ]
+    ],
+    "evidenceRefs": [
+      "EV-B2-REL-0012"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Multiple proxy lines attribute a significant part of the southern China 1816 cold excursion to Tambora-era volcanic forcing.",
+      "assessment": "plausible",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0012",
+          "explanation": "Earlier eruption, solar background and reporting sensitivity affect attribution.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-006"
+          ],
+          "locator": "Sections 3.3–3.4",
+          "evidenceNote": "The paper discusses background cooling and archive sensitivity.",
+          "distinguishingEvidence": [
+            "Compare independent records and test the competing mechanism."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "No contrary source independently inspected.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent replication and comparison across locations or periods."
+      ],
+      "searchStatus": "Alternative discussion in the supporting paper inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
   },
   {
     "id": "REL-0013",
@@ -177,7 +599,43 @@
     "confidence": "Medium",
     "sourceRefs": [
       "SRC-006"
-    ]
+    ],
+    "evidenceRefs": [
+      "EV-B2-REL-0013"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Association only; no directional causal claim.",
+      "assessment": "unresolved",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0013",
+          "explanation": "Proxy coverage and sensitivity may explain disagreement.",
+          "kind": "rival_explanation",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-006"
+          ],
+          "locator": "Sections 3.2 and 3.4",
+          "evidenceNote": "No single reconstruction is established as more reliable.",
+          "distinguishingEvidence": [
+            "Independent regional hydroclimate records."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "Reconstructions disagree spatially.",
+          "assessment": "documented"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent regional hydroclimate records."
+      ],
+      "searchStatus": "Paper comparison inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
   },
   {
     "id": "REL-0014",
@@ -187,11 +645,16 @@
     "causalStatus": "ASSOCIATED",
     "lag": "4 months",
     "explanation": "These are distinct state-formation/diplomatic processes in different regions. The link is chronological only and exists to support comparative political timelines, not causation.",
-    "confidence": "High",
+    "confidence": "Medium",
     "sourceRefs": [
       "SRC-007",
       "SRC-008"
-    ]
+    ],
+    "evidenceRefs": [
+      "EV-B3-REL-0014-SRC-007",
+      "EV-B3-REL-0014-SRC-008"
+    ],
+    "researchStatus": "Source checked; independent review pending"
   },
   {
     "id": "REL-0015",
@@ -205,7 +668,12 @@
     "sourceRefs": [
       "SRC-010",
       "SRC-011"
-    ]
+    ],
+    "evidenceRefs": [
+      "EV-B3-REL-0015-SRC-010",
+      "EV-B3-REL-0015-SRC-011"
+    ],
+    "researchStatus": "Source checked; independent review pending"
   },
   {
     "id": "REL-0016",

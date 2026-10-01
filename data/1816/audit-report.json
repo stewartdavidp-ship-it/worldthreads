@@ -1,0 +1,358 @@
+{
+  "errors": [],
+  "warnings": [],
+  "independentReviewPending": [
+    "REL-0001",
+    "REL-0002",
+    "REL-0003",
+    "REL-0004",
+    "REL-0005",
+    "REL-0006",
+    "REL-0007",
+    "REL-0008",
+    "REL-0009",
+    "REL-0010",
+    "REL-0011",
+    "REL-0012",
+    "REL-0013",
+    "REL-0014",
+    "REL-0015",
+    "REL-0016",
+    "REL-0017",
+    "REL-0018",
+    "WT-1816-0001",
+    "WT-1816-0002",
+    "WT-1816-0003",
+    "WT-1816-0004",
+    "WT-1816-0005",
+    "WT-1816-0006",
+    "WT-1816-0007",
+    "WT-1816-0008",
+    "WT-1816-0009",
+    "WT-1816-0010",
+    "WT-1816-0011",
+    "WT-1816-0012",
+    "WT-1816-0013",
+    "WT-1816-0014",
+    "WT-1816-0015",
+    "WT-1816-0016",
+    "WT-1816-0017",
+    "WT-1816-0018",
+    "WT-1816-0019",
+    "WT-1816-0020",
+    "WT-1816-0021",
+    "WT-1816-0022",
+    "WT-1816-0023",
+    "WT-1816-0024"
+  ],
+  "alternativeSearchPending": [
+    "REL-0001",
+    "REL-0002",
+    "REL-0003",
+    "REL-0004",
+    "REL-0005",
+    "REL-0006",
+    "REL-0007",
+    "REL-0008",
+    "REL-0009",
+    "REL-0010",
+    "REL-0011",
+    "REL-0012",
+    "REL-0013",
+    "REL-0016",
+    "REL-0017",
+    "REL-0018"
+  ],
+  "queue": [
+    {
+      "claimId": "REL-0001",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0002",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0003",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0004",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0005",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0006",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0007",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0008",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0009",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0010",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0011",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0012",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0013",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0014",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0015",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0016",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0017",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0018",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0001",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0002",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0003",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0004",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0005",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0006",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0007",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0008",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0009",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0010",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0011",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0012",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0013",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0014",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0015",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0016",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0017",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0018",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0019",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0020",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0021",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0022",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0023",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0024",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0001",
+      "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0002",
+      "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0003",
+      "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0004",
+      "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0005",
+      "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0006",
+      "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0007",
+      "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0008",
+      "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0009",
+      "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0010",
+      "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0011",
+      "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0012",
+      "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0013",
+      "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0016",
+      "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0017",
+      "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0018",
+      "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    }
+  ]
+}

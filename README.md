@@ -37,7 +37,7 @@ index.html                 Browser prototype
 styles.css                 Prototype styling
 app.js                     Prototype interactions
 
-data/1816/observations.json  Initial verified 1816 records
+data/1816/observations.json  1816 observations with review status
 
 docs/PROJECT_SPEC.md       WorldThreads project specification
 ```
@@ -64,4 +64,6 @@ Thread connections use actual endpoints. Observation details show review status.
 Research, review, audit and fix procedures: `docs/RESEARCH_WORKFLOW.md`.
 Correction history: `docs/REVIEW_LOG.md`.
 Run `python3 scripts/audit.py` to check references and evidence provenance.
-Legacy claims without page-level evidence are reported as warnings.
+All 42 current claims have passage-level evidence. Structural audit: zero errors and zero missing-evidence warnings. All 42 claims await independent review; 16 alternative searches remain open. Some evidence is limited to abstracts or indexed excerpts.
+
+Run `python3 scripts/audit.py --report data/1816/audit-report.json` to refresh the next review queue. See `docs/NEXT_REVIEW_PASSES.md` for specific priorities.

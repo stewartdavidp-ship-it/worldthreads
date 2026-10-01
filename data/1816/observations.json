@@ -1,15 +1,15 @@
 [
   {
     "id": "WT-1816-0001",
-    "title": "Gulf of Maine temperature shock",
+    "title": "Salem air-temperature anomaly in 1816",
     "startDate": "1816",
     "endDate": "1816",
     "datePrecision": "YEAR",
     "continent": "North America",
     "region": "Northeastern United States / Gulf of Maine",
     "historicalEntity": "United States",
-    "place": "Gulf of Maine",
-    "observation": "Daily average and low temperatures in 1816 were more than one standard deviation lower, while temperature differential was more than one standard deviation higher, than the other years in the 1814–1818 comparison.",
+    "place": "Salem, Massachusetts",
+    "observation": "The fisheries study analyzes unusually low average and minimum air temperatures and larger daily ranges at Salem in 1816 against 1814–1818.",
     "coverageType": "CONDITION",
     "system": "EARTH",
     "topic": "Temperature",
@@ -17,20 +17,23 @@
       "SHOCK"
     ],
     "baseline": "1814–1818 comparison",
-    "anomaly": ">1 SD differences",
+    "anomaly": "Temperature anomaly; see source tables",
     "evidenceType": [
       "Instrumental measurement",
       "Scholarly analysis"
     ],
-    "confidence": "High",
+    "confidence": "Medium-High",
     "sourceRefs": [
       "SRC-002"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0001"
+    ]
   },
   {
     "id": "WT-1816-0002",
-    "title": "Migratory fish populations respond",
+    "title": "Historical analysis infers species-specific fish responses",
     "startDate": "1816",
     "endDate": "1817",
     "datePrecision": "DATE_RANGE",
@@ -38,7 +41,7 @@
     "region": "Gulf of Maine",
     "historicalEntity": "United States",
     "place": "Gulf of Maine watersheds",
-    "observation": "Abnormal temperatures affected alewives, shad, herring and mackerel differently according to migration/spawning phenology and temperature tolerance; alewives were particularly affected.",
+    "observation": "Export records and thermal-window analysis suggest alewives were especially vulnerable; biological responses are historical inferences, not direct population counts.",
     "coverageType": "TREND",
     "system": "BIOSPHERE",
     "topic": "Fish populations / phenology",
@@ -50,11 +53,14 @@
       "Climate records",
       "Scholarly reconstruction"
     ],
-    "confidence": "High",
+    "confidence": "Medium-High",
     "sourceRefs": [
       "SRC-002"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0002"
+    ]
   },
   {
     "id": "WT-1816-0003",
@@ -83,7 +89,10 @@
     "sourceRefs": [
       "SRC-002"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0003"
+    ]
   },
   {
     "id": "WT-1816-0004",
@@ -112,7 +121,10 @@
     "sourceRefs": [
       "SRC-002"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0004"
+    ]
   },
   {
     "id": "WT-1816-0005",
@@ -137,10 +149,12 @@
     ],
     "confidence": "High",
     "sourceRefs": [
-      "SRC-001",
-      "SRC-003"
+      "SRC-001"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0005"
+    ]
   },
   {
     "id": "WT-1816-0006",
@@ -170,7 +184,10 @@
     "sourceRefs": [
       "SRC-001"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0006"
+    ]
   },
   {
     "id": "WT-1816-0007",
@@ -181,8 +198,8 @@
     "continent": "Europe",
     "region": "Southwestern Bohemia",
     "historicalEntity": "Czech Lands",
-    "place": "Vodokrty / southwestern Bohemia",
-    "observation": "A documentary account reports rain beginning 8 June 1816 and continuing for about eight weeks with few rain-free days; cereals became wet, yields were poor, prices high, hunger was reported, and lack of grain left some fields unsown in autumn.",
+    "place": "Řenče, southwestern Bohemia",
+    "observation": "A chronicle from Řenče describes roughly eight weeks of frequent rain from 8 June 1816, wet grain, poor yields, rising prices and hunger.",
     "coverageType": "EVENT",
     "system": "EARTH",
     "topic": "Rainfall → crops → prices → food security",
@@ -190,7 +207,7 @@
       "SHOCK",
       "OUTCOME"
     ],
-    "value": "~8 weeks rain",
+    "value": "~8 weeks of frequent rain",
     "unit": "duration",
     "baseline": "normal seasonal conditions",
     "anomaly": "exceptionally persistent rain",
@@ -202,7 +219,10 @@
     "sourceRefs": [
       "SRC-001"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0007"
+    ]
   },
   {
     "id": "WT-1816-0008",
@@ -229,10 +249,14 @@
     "confidence": "High",
     "sourceRefs": [
       "SRC-016",
-      "SRC-003"
+      "SRC-003",
+      "SRC-001"
     ],
-    "researchStatus": "Verified",
-    "contextNode": true
+    "researchStatus": "Source checked; independent review pending",
+    "contextNode": true,
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0008-SRC-001"
+    ]
   },
   {
     "id": "WT-1816-0009",
@@ -262,7 +286,10 @@
     "sourceRefs": [
       "SRC-004"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0009"
+    ]
   },
   {
     "id": "WT-1816-0010",
@@ -274,7 +301,7 @@
     "region": "Alpine Rhine Basin",
     "historicalEntity": "Swiss Confederation",
     "place": "Swiss Alps / Rhine Basin",
-    "observation": "Historical reports and hydrological reconstruction indicate substantial snow storage in 1816 and 1817; snowfall events reached unusually low elevations and snow conditions helped set up the hydrological sensitivity of 1817.",
+    "observation": "A hydrological reconstruction finds substantial Alpine snow storage in spring 1816 and 1817. It attributes the 1817 flood meltwater principally to fresh spring snowfall rather than surviving 1815/1816 snow.",
     "coverageType": "CONDITION",
     "system": "EARTH",
     "topic": "Snowpack / hydrology",
@@ -287,11 +314,14 @@
       "Hydrological reconstruction",
       "Model simulation"
     ],
-    "confidence": "High",
+    "confidence": "Medium-High",
     "sourceRefs": [
       "SRC-005"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0010-SRC-005"
+    ]
   },
   {
     "id": "WT-1816-0011",
@@ -314,24 +344,27 @@
       "Historical water-level records",
       "Hydrological reconstruction"
     ],
-    "confidence": "High",
+    "confidence": "Medium-High",
     "sourceRefs": [
       "SRC-005"
     ],
-    "researchStatus": "Verified",
-    "contextNode": true
+    "researchStatus": "Source checked; independent review pending",
+    "contextNode": true,
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0011-SRC-005"
+    ]
   },
   {
     "id": "WT-1816-0012",
-    "title": "Southern China experiences unusual cold, frost and snow",
-    "startDate": "1816",
+    "title": "Southern Chinese records report unusual cold in 1815–1816",
+    "startDate": "1815",
     "endDate": "1816",
     "datePrecision": "YEAR",
     "continent": "Asia",
     "region": "Southern China",
     "historicalEntity": "Qing Empire",
     "place": "Southern China",
-    "observation": "Tree-ring and Chinese documentary proxies show a Tambora-era cold excursion with severe frost damage and snow and ice accumulations unusual for southern China.",
+    "observation": "Southern Chinese documents report unusual snow, frost and ice in 1815–1816; the reconstructed temperature response has a different spatial pattern.",
     "coverageType": "CONDITION",
     "system": "EARTH",
     "topic": "Cold / frost / snow",
@@ -343,11 +376,14 @@
       "Documentary proxy",
       "Scholarly reconstruction"
     ],
-    "confidence": "High",
+    "confidence": "Medium-High",
     "sourceRefs": [
       "SRC-006"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0012"
+    ]
   },
   {
     "id": "WT-1816-0013",
@@ -375,7 +411,10 @@
     "sourceRefs": [
       "SRC-006"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0013"
+    ]
   },
   {
     "id": "WT-1816-0014",
@@ -402,7 +441,10 @@
     "sourceRefs": [
       "SRC-012"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0014-SRC-012"
+    ]
   },
   {
     "id": "WT-1816-0015",
@@ -430,7 +472,11 @@
       "SRC-013",
       "SRC-014"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0015-SRC-013",
+      "EV-B3-WT-1816-0015-SRC-014"
+    ]
   },
   {
     "id": "WT-1816-0016",
@@ -456,11 +502,14 @@
     "sourceRefs": [
       "SRC-007"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0016-SRC-007"
+    ]
   },
   {
     "id": "WT-1816-0017",
-    "title": "Treaty of Sugauli ratified",
+    "title": "Treaty of Sugauli counterparts exchanged",
     "startDate": "1816-03-04",
     "endDate": "1816-03-04",
     "datePrecision": "EXACT_DAY",
@@ -468,7 +517,7 @@
     "region": "South Asia / Himalaya",
     "historicalEntity": "Kingdom of Nepal / East India Company",
     "place": "Makwanpur region / Nepal",
-    "observation": "The Treaty of Sugauli was exchanged/ratified on 4 March 1816 after the Anglo-Nepalese War. Its articles recognized territorial cessions to the East India Company and provided for accredited ministers between the two states.",
+    "observation": "The treaty transcription records exchange of counterparts on 4 March 1816 following the Anglo-Nepalese War. Articles III and VIII specify territorial cessions and accredited ministers.",
     "coverageType": "EVENT",
     "system": "POWER & CULTURE",
     "topic": "War settlement / diplomacy / territorial change",
@@ -479,11 +528,14 @@
     "evidenceType": [
       "Treaty text"
     ],
-    "confidence": "High",
+    "confidence": "Medium",
     "sourceRefs": [
       "SRC-008"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0017-SRC-008"
+    ]
   },
   {
     "id": "WT-1816-0018",
@@ -513,7 +565,10 @@
     "sourceRefs": [
       "SRC-009"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0018-SRC-009"
+    ]
   },
   {
     "id": "WT-1816-0019",
@@ -541,7 +596,10 @@
     "sourceRefs": [
       "SRC-010"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0019-SRC-010"
+    ]
   },
   {
     "id": "WT-1816-0020",
@@ -568,19 +626,22 @@
     "sourceRefs": [
       "SRC-011"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0020-SRC-011"
+    ]
   },
   {
     "id": "WT-1816-0021",
     "title": "The Barber of Seville premieres",
     "startDate": "1816-02-20",
-    "endDate": "1816-08",
-    "datePrecision": "DATE_RANGE",
+    "endDate": "1816-02-20",
+    "datePrecision": "EXACT_DAY",
     "continent": "Europe",
     "region": "Southern Europe",
     "historicalEntity": "Papal States / Italian opera world",
-    "place": "Rome; later Bologna",
-    "observation": "Rossini's Il Barbiere di Siviglia premiered at Rome's Teatro Argentina on 20 February 1816. Its opening night was poorly received, but a revised Bologna performance in August was highly successful, preceding rapid wider diffusion.",
+    "place": "Rome, Teatro Argentina",
+    "observation": "Rossini’s Il Barbiere di Siviglia premiered at Rome’s Teatro Argentina on 20 February 1816.",
     "coverageType": "WORK",
     "system": "POWER & CULTURE",
     "topic": "Music / opera / cultural diffusion",
@@ -590,11 +651,14 @@
     "evidenceType": [
       "Performing arts institutional history"
     ],
-    "confidence": "High",
+    "confidence": "Medium-High",
     "sourceRefs": [
       "SRC-015"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0021-SRC-015"
+    ]
   },
   {
     "id": "WT-1816-0022",

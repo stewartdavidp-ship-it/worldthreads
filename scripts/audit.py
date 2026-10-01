@@ -2,8 +2,13 @@
 import json
 from pathlib import Path
 import sys
+import argparse
 
-ROOT = Path(__file__).resolve().parents[1] / 'data' / '1816'
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--data-dir', type=Path, default=Path(__file__).resolve().parents[1] / 'data' / '1816')
+parser.add_argument('--report', type=Path, help='Save audit results and the next review queue as JSON')
+args = parser.parse_args()
+ROOT = args.data_dir
 errors, warnings = [], []
 data = {n: json.loads((ROOT / (n + '.json')).read_text()) for n in
         ('observations', 'relationships', 'sources', 'threads', 'evidence')}
@@ -45,6 +50,7 @@ for item in data['evidence']:
     if not claim: errors.append(f'{key}: missing claim')
     if item.get('sourceId') not in index['sources']: errors.append(f'{key}: missing source')
     if claim and item.get('sourceId') not in claim.get('sourceRefs', []): errors.append(f'{key}: source absent from claim')
+    if claim and key not in claim.get('evidenceRefs', []): errors.append(f'{key}: evidence not linked from claim')
     for field in ('locator', 'accessedAt', 'provenance', 'limitations', 'reviewer'):
         if not item.get(field): errors.append(f'{key}: missing {field}')
     if item.get('reviewStatus') == 'approved' and (not item.get('independentReviewer') or item['independentReviewer'] == item.get('reviewer')):
@@ -59,4 +65,12 @@ for item in data['threads']:
 for message in errors: print('ERROR:', message)
 for message in warnings: print('WARNING:', message)
 print(f'Audit: {len(errors)} errors, {len(warnings)} warnings')
+pending_claims = sorted({e['claimId'] for e in data['evidence'] if e.get('reviewStatus') != 'approved'})
+open_searches = sorted(r['id'] for r in data['relationships'] if r.get('causalReview', {}).get('searchStatus') and 'pending' in r['causalReview']['searchStatus'].lower())
+print(f'Review remains open: {len(pending_claims)} claims await independent review; {len(open_searches)} alternative searches await expansion')
+if args.report:
+    queue = [{'claimId': c, 'task': 'Independent source and claim review', 'status': 'pending'} for c in pending_claims]
+    queue += [{'claimId': c, 'task': 'Expand search for competing explanations and counterevidence', 'status': 'pending'} for c in open_searches]
+    args.report.parent.mkdir(parents=True, exist_ok=True)
+    args.report.write_text(json.dumps({'errors': errors, 'warnings': warnings, 'independentReviewPending': pending_claims, 'alternativeSearchPending': open_searches, 'queue': queue}, indent=2) + '\n')
 sys.exit(bool(errors))
