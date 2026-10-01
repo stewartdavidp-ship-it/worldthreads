@@ -1,0 +1,49 @@
+name: Research contribution for 1816
+description: Submit findings from a WorldThreads thread or local research mission for review.
+title: "[1816 research] "
+labels: ["research", "pending-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share your 1816 findings for verification. Posting creates a public review item; it does not add claims to the accepted graph. Do not include private information. Use the research prompt and JSON template from WorldThreads.
+  - type: input
+    id: thread
+    attributes:
+      label: Starting thread or mission
+      description: Copy its title or ID from your research prompt.
+    validations:
+      required: true
+  - type: input
+    id: place
+    attributes:
+      label: Place investigated
+      placeholder: Town, region, watershed or community
+    validations:
+      required: true
+  - type: textarea
+    id: findings
+    attributes:
+      label: Findings and uncertainty
+      description: What supports, challenges or changes the theory? Inconclusive results are welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: research-output
+    attributes:
+      label: Structured research output
+      description: Paste the JSON from your checked pending-review draft. Include passage evidence, source limitations and alternative searches. For long drafts, split the JSON across follow-up comments or link a repository file.
+      render: json
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Research checks
+      options:
+        - label: My proposed observations concern 1816 and distinguish evidence from interpretation.
+          required: true
+        - label: I recorded inspected passages, limitations and searches for competing explanations.
+          required: true
+        - label: I understand this submission is public and awaits independent review.
+          required: true
