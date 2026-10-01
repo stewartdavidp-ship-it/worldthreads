@@ -320,7 +320,8 @@
     ],
     "researchStatus": "Source checked; independent review pending",
     "evidenceRefs": [
-      "EV-B3-WT-1816-0010-SRC-005"
+      "EV-B3-WT-1816-0010-SRC-005",
+      "EV-R13-WT-1816-0010-SRC-005"
     ]
   },
   {
@@ -351,7 +352,8 @@
     "researchStatus": "Source checked; independent review pending",
     "contextNode": true,
     "evidenceRefs": [
-      "EV-B3-WT-1816-0011-SRC-005"
+      "EV-B3-WT-1816-0011-SRC-005",
+      "EV-R13-WT-1816-0011-SRC-005"
     ]
   },
   {
@@ -470,12 +472,14 @@
     "confidence": "High",
     "sourceRefs": [
       "SRC-013",
-      "SRC-014"
+      "SRC-014",
+      "SRC-020"
     ],
     "researchStatus": "Source checked; independent review pending",
     "evidenceRefs": [
       "EV-B3-WT-1816-0015-SRC-013",
-      "EV-B3-WT-1816-0015-SRC-014"
+      "EV-B3-WT-1816-0015-SRC-014",
+      "EV-R13-WT-1816-0015-SRC-020"
     ]
   },
   {
@@ -517,7 +521,7 @@
     "region": "South Asia / Himalaya",
     "historicalEntity": "Kingdom of Nepal / East India Company",
     "place": "Makwanpur region / Nepal",
-    "observation": "The treaty transcription records exchange of counterparts on 4 March 1816 following the Anglo-Nepalese War. Articles III and VIII specify territorial cessions and accredited ministers.",
+    "observation": "A scanned government compilation records exchange of treaty counterparts on 4 March 1816 at Muckwaunpoor. Articles III and VIII specify territorial cessions and accredited ministers.",
     "coverageType": "EVENT",
     "system": "POWER & CULTURE",
     "topic": "War settlement / diplomacy / territorial change",
@@ -528,13 +532,15 @@
     "evidenceType": [
       "Treaty text"
     ],
-    "confidence": "Medium",
+    "confidence": "Medium-High",
     "sourceRefs": [
-      "SRC-008"
+      "SRC-008",
+      "SRC-019"
     ],
-    "researchStatus": "Source checked; independent review pending",
+    "researchStatus": "Text corroborated against scanned compilation; independent review pending",
     "evidenceRefs": [
-      "EV-B3-WT-1816-0017-SRC-008"
+      "EV-B3-WT-1816-0017-SRC-008",
+      "EV-R13-WT-1816-0017-SRC-019"
     ]
   },
   {
@@ -657,7 +663,8 @@
     ],
     "researchStatus": "Source checked; independent review pending",
     "evidenceRefs": [
-      "EV-B3-WT-1816-0021-SRC-015"
+      "EV-B3-WT-1816-0021-SRC-015",
+      "EV-R15-WT-1816-0021"
     ]
   },
   {
@@ -748,6 +755,186 @@
     "contextNode": true,
     "evidenceRefs": [
       "EV-0024"
+    ]
+  },
+  {
+    "id": "WT-1816-0025",
+    "title": "Nepal accepts revised Terai settlement terms",
+    "startDate": "1816-12-08",
+    "endDate": "1816-12-11",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Asia",
+    "region": "South Asia / Himalaya",
+    "historicalEntity": "Kingdom of Nepal / East India Company",
+    "place": "Nepal–Company frontier / Terai",
+    "observation": "A memorandum of 8 December 1816 proposed restoring specified Terai lands with exceptions and a surveyed boundary. A letter received on 11 December records the Rajah’s acceptance of the terms; actual implementation dates are not established here.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "Diplomacy / territorial revision",
+    "analyticalRole": [
+      "RESPONSE",
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Scanned government compilation of diplomatic documents"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-019"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-R13-WT-1816-0025-SRC-019"
+    ]
+  },
+  {
+    "continent": "Oceania",
+    "region": "Southeastern Australia",
+    "historicalEntity": "British colony of New South Wales / Aboriginal Country",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "analyticalRole": [
+      "SHOCK",
+      "OUTCOME"
+    ],
+    "confidence": "Medium-High",
+    "researchStatus": "Source checked; independent review pending",
+    "id": "WT-1816-0026",
+    "title": "Macquarie orders a punitive military expedition",
+    "startDate": "1816-04-10",
+    "endDate": "1816-04-10",
+    "datePrecision": "EXACT_DAY",
+    "place": "Sydney and the Cumberland Plain",
+    "observation": "Macquarie’s diary records orders for three detachments, forced removal and hostage-taking, with firing authorized on resistance. His justification is a colonial official’s account, not a neutral description of the conflict.",
+    "topic": "Colonial policy / coercion",
+    "evidenceType": [
+      "Primary diary transcription"
+    ],
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "evidenceRefs": [
+      "EV-R14-WT-1816-0026-SRC-021"
+    ]
+  },
+  {
+    "continent": "Oceania",
+    "region": "Southeastern Australia",
+    "historicalEntity": "British colony of New South Wales / Aboriginal Country",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "analyticalRole": [
+      "SHOCK",
+      "OUTCOME"
+    ],
+    "confidence": "Medium-High",
+    "researchStatus": "Source checked; independent review pending",
+    "id": "WT-1816-0027",
+    "title": "Dharawal people killed at Appin",
+    "startDate": "1816-04-17",
+    "endDate": "1816-04-17",
+    "datePrecision": "EXACT_DAY",
+    "place": "Appin, Cataract River",
+    "observation": "The NSW archive identifies the Appin massacre on 17 April 1816. Wallis’s report describes firing at the fleeing camp and counts fourteen bodies; this is a reported minimum, not an independently complete death toll.",
+    "topic": "Colonial violence / Dharawal history",
+    "evidenceType": [
+      "Archive interpretation",
+      "Contemporary military report transcription"
+    ],
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "evidenceRefs": [
+      "EV-R14-WT-1816-0027-SRC-022"
+    ]
+  },
+  {
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "historicalEntity": "Italian states / European opera networks",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "Opera / reception / diffusion",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Performing arts institutional history"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-015"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "id": "WT-1816-0028",
+    "title": "Revised Barber of Seville receives acclaim in Bologna",
+    "startDate": "1816-08",
+    "endDate": "1816-08",
+    "datePrecision": "MONTH",
+    "place": "Bologna",
+    "observation": "The Metropolitan Opera timeline describes slight revisions followed by a successful Bologna performance in August 1816. Reception is an institutional historical account, not a quantified audience measure.",
+    "evidenceRefs": [
+      "EV-R15-WT-1816-0028"
+    ]
+  },
+  {
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "historicalEntity": "Italian states / European opera networks",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "Opera / reception / diffusion",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Performing arts institutional history"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-015"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "id": "WT-1816-0029",
+    "title": "Barber of Seville reaches more cities in 1817",
+    "startDate": "1817",
+    "endDate": "1817",
+    "datePrecision": "YEAR",
+    "place": "Eight additional Italian cities and Barcelona",
+    "observation": "The Metropolitan Opera timeline reports performances in eight additional Italian cities and Barcelona during 1817. The underlying city-by-city performance records remain uninspected.",
+    "contextNode": true,
+    "evidenceRefs": [
+      "EV-R15-WT-1816-0029"
+    ]
+  },
+  {
+    "id": "WT-1816-0030",
+    "title": "Cholera epidemic reported in Jessore in August 1817",
+    "startDate": "1817-08",
+    "endDate": "1817-08",
+    "datePrecision": "MONTH",
+    "continent": "Asia",
+    "region": "Bengal",
+    "historicalEntity": "Bengal Presidency",
+    "place": "Jessore, present-day Bangladesh",
+    "observation": "Harrison locates the apparent start of the 1817 epidemic in Jessore in August. Earlier disease names and colonial reporting complicate retrospective classification; no exact death toll is asserted.",
+    "coverageType": "EVENT",
+    "system": "HUMAN SYSTEMS",
+    "topic": "Population health",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Historical scholarship"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-024"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "contextNode": true,
+    "evidenceRefs": [
+      "EV-R16-WT-1816-0030"
     ]
   }
 ]

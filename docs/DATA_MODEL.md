@@ -119,3 +119,9 @@ An alternative with no source is a research question, not an established fact.
 Counterevidence must distinguish not searched, searched but not found and actual
 contradictory observations. Source count alone does not establish independence.
 Evidence records link to the specific observation or relationship they support.
+
+## Source access and dependence
+
+Evidence `accessScope` identifies full text, scan, transcription, abstract, indexed excerpt, publisher excerpt, catalog description or institutional record. Record the actual version inspected. A later full-text inspection supplements earlier partial inspection without erasing its history.
+
+Source `dependencyGroup` marks editions or retellings of a shared underlying text. These sources must not automatically count as independent corroboration. The audit queue lists limited-access claim/source pairs and shared source families separately from independent review. Contested relationships also require alternative review.

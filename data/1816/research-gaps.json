@@ -46,7 +46,8 @@
     "domain": "climate + Indigenous history + colonial contact",
     "question": "Identify documentary, oral-history and proxy evidence for 1816 conditions without imposing European archival density as the standard of historical importance.",
     "priority": "High",
-    "status": "Open"
+    "status": "Partially researched",
+    "notes": "First Oceania thread added from official orders, archive report and library scholarship. Dharawal perspectives, broader Indigenous histories and climate evidence remain open."
   },
   {
     "id": "GAP-007",
@@ -62,6 +63,16 @@
     "domain": "population health",
     "question": "Add mortality, epidemic, nutrition, birth/death and migration evidence while separating contemporary observation from later reconstruction.",
     "priority": "High",
-    "status": "Open"
+    "status": "Partially researched",
+    "notes": "Jessore August 1817 added from historical scholarship. Climate attribution unresolved; labour mobility is an explicitly unproven alternative. Primary reports, local voices and mortality reconstruction remain open."
+  },
+  {
+    "id": "GAP-009",
+    "region": "Caribbean / Barbados",
+    "domain": "enslavement + resistance + colonial policy",
+    "question": "Compare the April 1816 rebellion’s official reports with Barbadian scholarship and enslaved people’s perspectives; distinguish emancipation expectations from other causes.",
+    "priority": "High",
+    "status": "Source access pending",
+    "notes": "National Archives indexed lesson found. Chrome redirects to a human-verification page; primary reports were not read. No event or causal claim added from the blocked documents."
   }
 ]

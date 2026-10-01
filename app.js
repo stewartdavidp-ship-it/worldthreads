@@ -59,7 +59,7 @@ function renderThread(){
 
   });
   const connections=document.createElement('section'); connections.className='thread-connections';
-  const heading=document.createElement('h4'); heading.textContent='Evidence-supported connections'; connections.appendChild(heading);
+  const heading=document.createElement('h4'); heading.textContent='Connections and hypotheses'; connections.appendChild(heading);
   (thread.relationshipIds||[]).forEach(id=>{
     const r=state.relationships.find(r=>r.id===id); if(!r)return;
     const el=document.createElement('div'); el.className='relation-item';
@@ -97,7 +97,12 @@ function openDetail(o){
 function renderEvidence(claim){
   const records=(claim.evidenceRefs||[]).map(id=>state.evidence.find(e=>e.id===id)).filter(Boolean);
   if(!records.length)return '<p class="review-note">Passage-level evidence not yet registered.</p>';
-  return '<div class="evidence-records">'+records.map(e=>`<p><strong>${escapeHtml(e.sourceId)} · ${escapeHtml(e.locator)}</strong><br>${escapeHtml(e.provenance)}<br>${escapeHtml(e.limitations)}<br>Review: ${escapeHtml(e.reviewStatus.replaceAll('_',' '))}</p>`).join('')+'</div>';
+  return '<div class="evidence-records">'+records.map(e=>{
+    const source=state.sources.find(s=>s.id===e.sourceId);
+    const url=source?.fullTextUrl||source?.url;
+    const label=`${escapeHtml(e.sourceId)} · ${escapeHtml(e.locator)}`;
+    return `<p><strong>${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${label}</a>`:label}</strong><br>${escapeHtml(e.provenance)}<br>${escapeHtml(e.limitations)}<br>Review: ${escapeHtml(e.reviewStatus.replaceAll('_',' '))}</p>`;
+  }).join('')+'</div>';
 }
 function renderCausalReview(r){
   const c=r.causalReview;

@@ -402,10 +402,12 @@
     "confidence": "Medium",
     "sourceRefs": [
       "SRC-013",
-      "SRC-014"
+      "SRC-014",
+      "SRC-020"
     ],
     "evidenceRefs": [
-      "EV-B3-REL-0009-SRC-014"
+      "EV-B3-REL-0009-SRC-014",
+      "EV-R13-REL-0009-SRC-020"
     ],
     "researchStatus": "Source checked; independent review pending",
     "causalReview": {
@@ -419,9 +421,10 @@
           "kind": "cofactor",
           "assessment": "plausible",
           "sourceRefs": [
-            "SRC-014"
+            "SRC-014",
+            "SRC-020"
           ],
-          "locator": "The birth of Frankenstein",
+          "locator": "1831 Introduction, ghost-story and galvanism paragraphs",
           "evidenceNote": "The account discusses the challenge and galvanism alongside stormy weather.",
           "distinguishingEvidence": [
             "Compare independent accounts and test the relative contribution."
@@ -430,14 +433,14 @@
       ],
       "counterevidence": [
         {
-          "description": "Manuscript chronology alone cannot establish the relative influence of weather.",
-          "assessment": "source_limitation"
+          "description": "The reproduced 1817 Preface says the weather became serene. Rain should not be treated as a continuous constraint throughout creation.",
+          "assessment": "qualified_counterexample"
         }
       ],
       "distinguishingEvidence": [
-        "Independent historical records and explicit comparison of mechanisms."
+        "Date-specific contemporary diaries compared with weather records and manuscript chronology."
       ],
-      "searchStatus": "Supporting source discussion inspected; wider alternative search pending",
+      "searchStatus": "Earlier Preface and retrospective Introduction compared; independent diaries and wider alternatives pending",
       "reviewStatus": "pending_independent_review"
     }
   },
@@ -454,7 +457,8 @@
       "SRC-005"
     ],
     "evidenceRefs": [
-      "EV-B3-REL-0010-SRC-005"
+      "EV-B3-REL-0010-SRC-005",
+      "EV-R13-REL-0010-SRC-005"
     ],
     "researchStatus": "Source checked; independent review pending",
     "causalReview": {
@@ -503,7 +507,8 @@
       "SRC-005"
     ],
     "evidenceRefs": [
-      "EV-B3-REL-0011-SRC-005"
+      "EV-B3-REL-0011-SRC-005",
+      "EV-R13-REL-0011-SRC-005"
     ],
     "researchStatus": "Source checked; independent review pending",
     "causalReview": {
@@ -528,14 +533,14 @@
       ],
       "counterevidence": [
         {
-          "description": "The simulated flood peaks are too small because rainfall is underestimated.",
-          "assessment": "source_limitation"
+          "description": "The model underestimates the largest peaks and may overstate required rainfall. Its authors argue a flood could occur with normal summer 1816 snow storage.",
+          "assessment": "model_limitation"
         }
       ],
       "distinguishingEvidence": [
-        "Independent historical records and explicit comparison of mechanisms."
+        "Independent catchment rainfall records and reconstruction using historical land use and hydraulic conditions."
       ],
-      "searchStatus": "Supporting source discussion inspected; wider alternative search pending",
+      "searchStatus": "Preprint methods and limitations checked; independent hydrological studies and wider alternatives pending",
       "reviewStatus": "pending_independent_review"
     }
   },
@@ -645,14 +650,16 @@
     "causalStatus": "ASSOCIATED",
     "lag": "4 months",
     "explanation": "These are distinct state-formation/diplomatic processes in different regions. The link is chronological only and exists to support comparative political timelines, not causation.",
-    "confidence": "Medium",
+    "confidence": "Medium-High",
     "sourceRefs": [
       "SRC-007",
-      "SRC-008"
+      "SRC-008",
+      "SRC-019"
     ],
     "evidenceRefs": [
       "EV-B3-REL-0014-SRC-007",
-      "EV-B3-REL-0014-SRC-008"
+      "EV-B3-REL-0014-SRC-008",
+      "EV-R13-REL-0014-SRC-019"
     ],
     "researchStatus": "Source checked; independent review pending"
   },
@@ -799,6 +806,179 @@
         "Inspect the underlying dated reports and compare conditions before and after the eruption."
       ],
       "searchStatus": "Initial scholarly check complete; targeted alternative search pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0019",
+    "subjectId": "WT-1816-0017",
+    "predicate": "PRECEDED",
+    "objectId": "WT-1816-0025",
+    "causalStatus": "ASSOCIATED",
+    "lag": "~9 months",
+    "explanation": "The March treaty exchange preceded December negotiations explicitly modifying some treaty provisions. This documents a connected diplomatic sequence; it does not isolate the causes of renegotiation.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-019"
+    ],
+    "evidenceRefs": [
+      "EV-R13-REL-0019-SRC-019"
+    ],
+    "researchStatus": "Source checked; independent review pending"
+  },
+  {
+    "id": "REL-0020",
+    "subjectId": "WT-1816-0026",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0027",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "7 days",
+    "explanation": "The governor’s expedition orders provided the policy and military framework for Wallis’s action at Appin. The documents do not isolate every cause of the massacre.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-021",
+      "SRC-022",
+      "SRC-023"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "The governor’s expedition orders provided the policy and military framework for Wallis’s action at Appin. The documents do not isolate every cause of the massacre.",
+      "assessment": "supported",
+      "priorConditions": [
+        "Colonial settlement expansion and Indigenous resistance require contextual investigation."
+      ],
+      "alternatives": [
+        {
+          "id": "ALT-R14-0020-A",
+          "explanation": "Colonial expansion and concern for the Bathurst supply route also shaped the military campaign.",
+          "kind": "prior_condition",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-023"
+          ],
+          "locator": "Paragraphs on April campaign and Cox’s road",
+          "evidenceNote": "Gapps interprets the campaign in the wider history of resistance and settlement expansion.",
+          "distinguishingEvidence": [
+            "Compare military instructions, settler correspondence and Dharawal histories."
+          ]
+        },
+        {
+          "id": "ALT-R14-0020-B",
+          "explanation": "Local tactical decisions, darkness and the rocky terrain shaped deaths during flight.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-022"
+          ],
+          "locator": "Wallis transcription, 17 April",
+          "evidenceNote": "The report describes these conditions from the commander’s perspective.",
+          "distinguishingEvidence": [
+            "Compare the report with site evidence and community histories."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "Official reports are not neutral accounts and cannot establish the motives or experiences of the Dharawal victims.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Dharawal-led historical research, original instructions and independently assessed site evidence."
+      ],
+      "searchStatus": "Governor and commander accounts compared with library scholarship; Indigenous perspectives and wider alternatives pending",
+      "reviewStatus": "pending_independent_review"
+    },
+    "evidenceRefs": [
+      "EV-R14-REL-0020-SRC-021",
+      "EV-R14-REL-0020-SRC-022",
+      "EV-R14-REL-0020-SRC-023"
+    ]
+  },
+  {
+    "id": "REL-0021",
+    "subjectId": "WT-1816-0021",
+    "predicate": "PRECEDED",
+    "objectId": "WT-1816-0028",
+    "causalStatus": "ASSOCIATED",
+    "lag": "~6 months",
+    "explanation": "The Rome premiere preceded the revised Bologna performance. Their different reception is reported by the timeline, but revision alone is not established as its cause.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-015"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-R15-REL-0021"
+    ]
+  },
+  {
+    "id": "REL-0022",
+    "subjectId": "WT-1816-0028",
+    "predicate": "PRECEDED",
+    "objectId": "WT-1816-0029",
+    "causalStatus": "ASSOCIATED",
+    "lag": "months to ~1 year",
+    "explanation": "Bologna acclaim preceded broader performance in 1817. The timeline links these narratively; this edge preserves the sequence without isolating the causes of diffusion.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-015"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-R15-REL-0022"
+    ]
+  },
+  {
+    "id": "REL-0023",
+    "subjectId": "WT-1816-0008",
+    "predicate": "CONTESTED_CONNECTION",
+    "objectId": "WT-1816-0030",
+    "causalStatus": "CONTESTED",
+    "lag": "~28 months",
+    "explanation": "A Tambora–cholera connection has been proposed, but the inspected literature does not establish attribution. This is a research hypothesis.",
+    "confidence": "Low",
+    "sourceRefs": [
+      "SRC-018",
+      "SRC-024"
+    ],
+    "researchStatus": "Hypothesis checked; independent review pending",
+    "evidenceRefs": [
+      "EV-R16-REL-0023-A",
+      "EV-R16-REL-0023-B"
+    ],
+    "causalReview": {
+      "primaryExplanation": "Proposed climatic contribution to the epidemic",
+      "assessment": "unresolved",
+      "priorConditions": [
+        "Earlier regional disease reports have uncertain retrospective classification."
+      ],
+      "alternatives": [
+        {
+          "id": "ALT-REL0023-MOBILITY",
+          "explanation": "Migrant labour associated with indigo production may have contributed to spread.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-024"
+          ],
+          "locator": "Acts of God, paragraphs on Jessore and migrant labour; notes 30–32",
+          "evidenceNote": "Harrison explicitly calls the hypothesis unproven.",
+          "distinguishingEvidence": [
+            "Compare dated labour movements with local outbreaks."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "De Jong Boers reports that the climate hypothesis could not be substantiated. Failure to substantiate is not disproof.",
+          "assessment": "unresolved"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Inspect contemporary epidemic reports and regional weather, harvest and movement records."
+      ],
+      "searchStatus": "Initial alternatives inspected; wider search pending",
       "reviewStatus": "pending_independent_review"
     }
   }

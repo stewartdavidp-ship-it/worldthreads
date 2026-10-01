@@ -144,5 +144,83 @@
     ],
     "scope": "Asia",
     "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-NEPAL-SETTLEMENT",
+    "title": "A peace settlement is revised within the year",
+    "subtitle": "Nepal–Company frontier, March–December 1816",
+    "description": "The treaty exchange is followed by agreed changes to Terai provisions. The documents state diplomatic, boundary and financial terms; the causes and implementation of the revision remain research questions.",
+    "nodeIds": [
+      "WT-1816-0017",
+      "WT-1816-0025"
+    ],
+    "relationshipIds": [
+      "REL-0019"
+    ],
+    "mechanisms": [
+      "negotiated settlement",
+      "territorial revision"
+    ],
+    "scope": "Asia",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-APPIN",
+    "title": "Colonial orders become violence at Appin",
+    "subtitle": "Dharawal Country / New South Wales, April 1816",
+    "description": "The governor’s orders and commander’s report document a military sequence. Colonial expansion, resistance and local decisions require separate assessment, including Dharawal perspectives.",
+    "nodeIds": [
+      "WT-1816-0026",
+      "WT-1816-0027"
+    ],
+    "relationshipIds": [
+      "REL-0020"
+    ],
+    "mechanisms": [
+      "colonial coercion",
+      "military implementation"
+    ],
+    "scope": "Oceania",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-ROSSINI",
+    "title": "An opera moves from premiere to wider performance",
+    "subtitle": "Rome, Bologna and other cities, 1816–1817",
+    "description": "Separate records distinguish the Rome premiere, Bologna reception and later performances. The sequence is documented; artistic changes, existing reputation and performance networks remain questions for causal research.",
+    "nodeIds": [
+      "WT-1816-0021",
+      "WT-1816-0028",
+      "WT-1816-0029"
+    ],
+    "relationshipIds": [
+      "REL-0021",
+      "REL-0022"
+    ],
+    "mechanisms": [
+      "cultural circulation",
+      "changing reception"
+    ],
+    "scope": "Europe",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-BENGAL-HEALTH",
+    "title": "An epidemic with unresolved explanations",
+    "subtitle": "Bengal, 1817",
+    "description": "A documented epidemic is kept separate from the proposed climate connection. Mobility and working conditions remain competing research considerations.",
+    "nodeIds": [
+      "WT-1816-0008",
+      "WT-1816-0030"
+    ],
+    "relationshipIds": [
+      "REL-0023"
+    ],
+    "mechanisms": [
+      "disease vulnerability",
+      "population mobility"
+    ],
+    "scope": "South Asia",
+    "confidence": "Low"
   }
 ]

@@ -20,6 +20,11 @@
     "REL-0016",
     "REL-0017",
     "REL-0018",
+    "REL-0019",
+    "REL-0020",
+    "REL-0021",
+    "REL-0022",
+    "REL-0023",
     "WT-1816-0001",
     "WT-1816-0002",
     "WT-1816-0003",
@@ -43,7 +48,13 @@
     "WT-1816-0021",
     "WT-1816-0022",
     "WT-1816-0023",
-    "WT-1816-0024"
+    "WT-1816-0024",
+    "WT-1816-0025",
+    "WT-1816-0026",
+    "WT-1816-0027",
+    "WT-1816-0028",
+    "WT-1816-0029",
+    "WT-1816-0030"
   ],
   "alternativeSearchPending": [
     "REL-0001",
@@ -61,7 +72,66 @@
     "REL-0013",
     "REL-0016",
     "REL-0017",
-    "REL-0018"
+    "REL-0018",
+    "REL-0020",
+    "REL-0023"
+  ],
+  "limitedAccess": [
+    {
+      "claimId": "WT-1816-0015",
+      "sourceId": "SRC-013",
+      "accessScopes": [
+        "catalog_description"
+      ]
+    },
+    {
+      "claimId": "WT-1816-0019",
+      "sourceId": "SRC-010",
+      "accessScopes": [
+        "publisher_excerpt"
+      ]
+    },
+    {
+      "claimId": "REL-0015",
+      "sourceId": "SRC-010",
+      "accessScopes": [
+        "publisher_excerpt"
+      ]
+    }
+  ],
+  "sourceDependenceChecks": [
+    {
+      "claimId": "WT-1816-0015",
+      "dependencyGroup": "FRANKENSTEIN-CREATION-RECOLLECTION",
+      "sourceIds": [
+        "SRC-014",
+        "SRC-020"
+      ]
+    },
+    {
+      "claimId": "WT-1816-0017",
+      "dependencyGroup": "SUGAULI-TREATY-TEXT",
+      "sourceIds": [
+        "SRC-008",
+        "SRC-019"
+      ]
+    },
+    {
+      "claimId": "REL-0009",
+      "dependencyGroup": "FRANKENSTEIN-CREATION-RECOLLECTION",
+      "sourceIds": [
+        "SRC-014",
+        "SRC-020"
+      ]
+    },
+    {
+      "claimId": "REL-0014",
+      "dependencyGroup": "SUGAULI-TREATY-TEXT",
+      "sourceIds": [
+        "SRC-008",
+        "SRC-019"
+      ]
+    }
   ],
   "queue": [
     {
@@ -151,6 +221,31 @@
     },
     {
       "claimId": "REL-0018",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0019",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0020",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0021",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0022",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0023",
       "task": "Independent source and claim review",
       "status": "pending"
     },
@@ -275,6 +370,36 @@
       "status": "pending"
     },
     {
+      "claimId": "WT-1816-0025",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0026",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0027",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0028",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0029",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0030",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
       "claimId": "REL-0001",
       "task": "Expand search for competing explanations and counterevidence",
       "status": "pending"
@@ -352,6 +477,83 @@
     {
       "claimId": "REL-0018",
       "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0020",
+      "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0023",
+      "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0015",
+      "sourceId": "SRC-013",
+      "accessScopes": [
+        "catalog_description"
+      ],
+      "task": "Inspect fuller source material",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0019",
+      "sourceId": "SRC-010",
+      "accessScopes": [
+        "publisher_excerpt"
+      ],
+      "task": "Inspect fuller source material",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0015",
+      "sourceId": "SRC-010",
+      "accessScopes": [
+        "publisher_excerpt"
+      ],
+      "task": "Inspect fuller source material",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0015",
+      "dependencyGroup": "FRANKENSTEIN-CREATION-RECOLLECTION",
+      "sourceIds": [
+        "SRC-014",
+        "SRC-020"
+      ],
+      "task": "Assess dependence; seek a separate underlying witness",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0017",
+      "dependencyGroup": "SUGAULI-TREATY-TEXT",
+      "sourceIds": [
+        "SRC-008",
+        "SRC-019"
+      ],
+      "task": "Assess dependence; seek a separate underlying witness",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0009",
+      "dependencyGroup": "FRANKENSTEIN-CREATION-RECOLLECTION",
+      "sourceIds": [
+        "SRC-014",
+        "SRC-020"
+      ],
+      "task": "Assess dependence; seek a separate underlying witness",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0014",
+      "dependencyGroup": "SUGAULI-TREATY-TEXT",
+      "sourceIds": [
+        "SRC-008",
+        "SRC-019"
+      ],
+      "task": "Assess dependence; seek a separate underlying witness",
       "status": "pending"
     }
   ]

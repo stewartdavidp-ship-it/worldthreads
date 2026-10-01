@@ -73,7 +73,10 @@
       "Lake Constance",
       "Rhine",
       "flooding"
-    ]
+    ],
+    "fullTextUrl": "https://boris-portal.unibe.ch/bitstreams/0387908a-4dd0-4942-806e-a3af211bb476/download",
+    "notes": "University-hosted preprint methods, results and discussion inspected. Final published text and datasets not replicated.",
+    "dependencyGroup": "ROESSLER-BROENNIMANN-FLOOD-STUDY"
   },
   {
     "id": "SRC-006",
@@ -120,7 +123,8 @@
       "territory",
       "diplomacy"
     ],
-    "notes": "Wikisource warns that the text is not backed by a scanned edition; original verification pending."
+    "notes": "Wikisource warns that the text is not backed by a scanned edition; original verification pending.",
+    "dependencyGroup": "SUGAULI-TREATY-TEXT"
   },
   {
     "id": "SRC-009",
@@ -214,13 +218,14 @@
       "1816 weather",
       "literature"
     ],
-    "notes": "Webpage publication date unspecified; accessed 2026-10-01."
+    "notes": "Webpage publication date unspecified; accessed 2026-10-01.",
+    "dependencyGroup": "FRANKENSTEIN-CREATION-RECOLLECTION"
   },
   {
     "id": "SRC-015",
     "type": "Performing arts institution",
     "authorOrOrg": "Metropolitan Opera",
-    "title": "Timeline: Rossini",
+    "title": "The Creation of Il Barbiere di Siviglia",
     "year": null,
     "url": "https://www.metopera.org/learn/education/timeline-rossini/",
     "quality": "High",
@@ -229,7 +234,7 @@
       "Barber of Seville",
       "opera"
     ],
-    "notes": "Live page redirects to access queue. Premiere checked through indexed institutional excerpt; publication date unspecified."
+    "notes": "Full institutional timeline read through Chrome on 2026-10-01. Publication date unspecified. Reception and spread are institutional synthesis; underlying performance records not inspected."
   },
   {
     "id": "SRC-016",
@@ -277,6 +282,102 @@
       "subsistence",
       "recovery"
     ],
-    "notes": "Indonesia 60, pp. 37–60. Full text checked; archival references are cited through this article, not independently inspected."
+    "notes": "Indonesia 60, pp. 37–60. Full text checked; archival references are cited through this article, not independently inspected.",
+    "fullTextUrl": "https://web.english.upenn.edu/~cavitch/pdf-library/Boers_Mount_Tambora_in_1815.pdf"
+  },
+  {
+    "id": "SRC-019",
+    "type": "Scanned government treaty compilation",
+    "authorOrOrg": "C. U. Aitchison; Government of India",
+    "title": "A Collection of Treaties, Engagements and Sanads, Vol. XIV",
+    "year": 1929,
+    "url": "https://dl.tufts.edu/downloads/f7623q75r?filename=q811kw83k.pdf",
+    "quality": "High",
+    "topics": [
+      "Nepal",
+      "treaties",
+      "territorial settlement"
+    ],
+    "dependencyGroup": "SUGAULI-TREATY-TEXT",
+    "notes": "Tufts digital scan, printed pp. 55–58 (PDF pp. 65–68) visually inspected. Later official compilation, not original signed instruments."
+  },
+  {
+    "id": "SRC-020",
+    "type": "Primary author recollection in transcribed edition",
+    "authorOrOrg": "Mary W. Shelley; Project Gutenberg",
+    "title": "Frankenstein (1831): Introduction and reproduced 1817 Preface",
+    "year": 1831,
+    "url": "https://www.gutenberg.org/files/42324/42324-h/42324-h.htm",
+    "quality": "Medium-High",
+    "topics": [
+      "Frankenstein",
+      "creation narrative",
+      "weather",
+      "galvanism"
+    ],
+    "dependencyGroup": "FRANKENSTEIN-CREATION-RECOLLECTION",
+    "notes": "Transcription from a photo-reprint; Introduction dated 15 October 1831 is retrospective. Reproduced Preface dated September 1817 attributed to Percy Shelley in Introduction."
+  },
+  {
+    "id": "SRC-021",
+    "type": "Primary diary transcription",
+    "authorOrOrg": "Lachlan Macquarie; Macquarie University",
+    "title": "Governor’s Diary, April 1816",
+    "year": 1816,
+    "url": "https://www.mq.edu.au/macquarie-archive/lema/1816/1816april.html",
+    "quality": "Medium-High",
+    "topics": [
+      "colonial policy",
+      "military expedition",
+      "New South Wales"
+    ],
+    "notes": "Entry 10 April; Mitchell Library A773 pp. 1–8. University transcription inspected; manuscript scan not inspected."
+  },
+  {
+    "id": "SRC-022",
+    "type": "Archive interpretation and primary report transcription",
+    "authorOrOrg": "Museums of History NSW; James Wallis",
+    "title": "Massacre at Appin, 17 April 1816",
+    "year": 2022,
+    "url": "https://mhnsw.au/stories/first-nations/massacre-appin-17-april-1816/",
+    "quality": "High",
+    "topics": [
+      "Appin",
+      "Dharawal",
+      "colonial violence"
+    ],
+    "notes": "Chrome page and expanded Wallis transcription inspected. Diary reference [4/1735] pp. 55–57; archival report date 1816, webpage publication 5 December 2022."
+  },
+  {
+    "id": "SRC-023",
+    "type": "Library-hosted historical research",
+    "authorOrOrg": "Stephen Gapps; State Library of New South Wales",
+    "title": "The Sydney wars",
+    "year": 2018,
+    "url": "https://www.sl.nsw.gov.au/stories/sydney-wars",
+    "quality": "Medium-High",
+    "topics": [
+      "Aboriginal resistance",
+      "colonial expansion",
+      "military history"
+    ],
+    "notes": "Full article read in Chrome. Cited Hassall correspondence and other originals not inspected."
+  },
+  {
+    "id": "SRC-024",
+    "type": "Peer-reviewed historical article",
+    "authorOrOrg": "Mark Harrison, Modern Asian Studies",
+    "title": "A Dreadful Scourge: Cholera in early nineteenth-century India",
+    "year": 2020,
+    "onlineYear": 2019,
+    "url": "https://www.cambridge.org/core/journals/modern-asian-studies/article/dreadful-scourge-cholera-in-early-nineteenthcentury-india/7277A51FD55951F1D22F1166CFF9A064",
+    "quality": "High",
+    "topics": [
+      "Bengal",
+      "cholera",
+      "migration",
+      "colonial records"
+    ],
+    "notes": "Full article inspected, Acts of God section and methodological introduction. Underlying archival letters and registers remain uninspected."
   }
 ]

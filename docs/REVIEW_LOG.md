@@ -44,3 +44,25 @@ The publisher-hosted Appendix B excerpt supports the Shaka entries for 1816 and 
 | SRC-014/015 | Webpage year assumed 2026 | Publication year unspecified; access date is recorded in evidence. |
 
 Validation: structural audit zero errors and zero warnings; 42 claims still await independent review and 16 alternative searches await expansion. Audit rejection checks exercised duplicate IDs, wrong evidence ownership and self-approval. Browser check confirmed source locators, pending review and the qualified Frankenstein connection.
+
+## 2026-10-01 — Rounds 11–13: scanned treaties, flood methods and creation accounts
+
+Sugauli text was compared visually against Aitchison Vol. XIV (1929), printed pp. 55–56 / PDF pp. 65–66. Confidence moves from Medium to Medium-High for the bounded exchange claim; original instruments remain uninspected. Added the December 1816 acceptance of revised Terai terms from printed pp. 57–58, with implementation explicitly unresolved. The sequence relationship is non-causal.
+
+The university-hosted flood preprint is now accessible. Methods and limitations identify modern land-use/hydraulic assumptions and underestimation of largest peaks; required rainfall magnitude is not treated as a measured quantity. This is deeper inspection of the same study, not independent corroboration.
+
+Shelley’s 1831 Introduction and reproduced 1817 Preface support the creation context while the latter records a return of serene weather. Added the qualification against continuous confinement. Source dependency groups keep the library interpretation and underlying recollection from being counted as independent witnesses. All independent review remains pending.
+
+## 2026-10-01 — Round 14: first Oceania thread
+
+Added two bounded April 1816 records and a qualified policy-to-action relationship. Macquarie’s diary transcription was compared with Wallis’s archive-hosted report and Gapps’s library article, both read through Chrome when automated retrieval failed. Official justifications are attributed, the body count is treated as a reported minimum, and Dharawal perspectives remain an explicit evidence gap. The thread does not assert climate causation. Barbados research remains a gap after archive access reached a human-verification page; blocked primary reports are not marked read.
+
+## 2026-10-01 — Round 15: opera source access restored
+
+Chrome provided the full Metropolitan Opera timeline after automated access reached a queue. Corrected source title to the visible heading. Kept the premiere record narrow and added separate Bologna and 1817 diffusion observations with passage locators. The two new relationships are chronological: revised music and acclaim are not automatically treated as isolated causes of wider performance. Original reviews and performance registers remain a corroboration task.
+
+## 2026-10-01 — Round 16: Bengal health and unresolved attribution
+
+Added the bounded Jessore August 1817 epidemic record from Harrison’s full article. A separate contested relationship records the historical Tambora hypothesis without endorsing it. Labour mobility is preserved as an explicitly unproven cofactor. Colonial reporting and retrospective disease classification limit interpretation; mortality totals and dated microbiological speculation were not adopted. Primary reports and independent review remain open.
+
+Validation after round 16: 30 observations, 23 relationships, ten threads and 24 sources. Audit: zero structural errors or warnings; 53 claims await independent review, 18 alternative searches remain open, three claim/source pairs have limited access and four claims share underlying source families. Four automated provenance/queue behavior checks pass. Browser inspection confirms the contested Bengal connection, clickable passage links and pending review labels.

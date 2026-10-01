@@ -31,7 +31,7 @@ for name in ('observations', 'relationships'):
         for evidence in item.get('evidenceRefs', []):
             record = index['evidence'].get(evidence)
             if record and record.get('claimId') != key: errors.append(f'{key}: evidence belongs to another claim')
-        if name == 'relationships' and item.get('causalStatus') in ('CAUSAL', 'CONTRIBUTORY'):
+        if name == 'relationships' and item.get('causalStatus') in ('CAUSAL', 'CONTRIBUTORY', 'CONTESTED'):
             review = item.get('causalReview')
             if not review: warnings.append(f'{key}: causal alternative review not registered')
             else:
@@ -53,6 +53,10 @@ for item in data['evidence']:
     if claim and key not in claim.get('evidenceRefs', []): errors.append(f'{key}: evidence not linked from claim')
     for field in ('locator', 'accessedAt', 'provenance', 'limitations', 'reviewer'):
         if not item.get(field): errors.append(f'{key}: missing {field}')
+    if item.get('accessScope') not in ('full_text', 'scan', 'transcription', 'abstract', 'indexed_excerpt', 'publisher_excerpt', 'catalog_description', 'institutional_record'):
+        errors.append(f'{key}: missing or invalid access scope')
+    if item.get('reviewStatus') not in ('pending_independent_review', 'approved', 'rejected'):
+        errors.append(f'{key}: invalid review status')
     if item.get('reviewStatus') == 'approved' and (not item.get('independentReviewer') or item['independentReviewer'] == item.get('reviewer')):
         errors.append(f'{key}: approval requires a distinct independent reviewer')
 for item in data['threads']:
@@ -67,10 +71,27 @@ for message in warnings: print('WARNING:', message)
 print(f'Audit: {len(errors)} errors, {len(warnings)} warnings')
 pending_claims = sorted({e['claimId'] for e in data['evidence'] if e.get('reviewStatus') != 'approved'})
 open_searches = sorted(r['id'] for r in data['relationships'] if r.get('causalReview', {}).get('searchStatus') and 'pending' in r['causalReview']['searchStatus'].lower())
+limited = []
+dependence = []
+for claim in data['observations'] + data['relationships']:
+    records = [index['evidence'][e] for e in claim.get('evidenceRefs', []) if e in index['evidence']]
+    for source in {e['sourceId'] for e in records}:
+        scopes = {e.get('accessScope') for e in records if e['sourceId'] == source}
+        if scopes and scopes <= {'abstract', 'indexed_excerpt', 'publisher_excerpt', 'catalog_description'}:
+            limited.append({'claimId': claim['id'], 'sourceId': source, 'accessScopes': sorted(scopes)})
+    groups = {}
+    for source in claim.get('sourceRefs', []):
+        group = index['sources'].get(source, {}).get('dependencyGroup')
+        if group: groups.setdefault(group, []).append(source)
+    for group, sources in groups.items():
+        if len(set(sources)) > 1: dependence.append({'claimId': claim['id'], 'dependencyGroup': group, 'sourceIds': sorted(set(sources))})
 print(f'Review remains open: {len(pending_claims)} claims await independent review; {len(open_searches)} alternative searches await expansion')
+print(f'Source follow-up: {len(limited)} claim/source pairs have limited access; {len(dependence)} claims cite editions or retellings in a shared source family')
 if args.report:
     queue = [{'claimId': c, 'task': 'Independent source and claim review', 'status': 'pending'} for c in pending_claims]
     queue += [{'claimId': c, 'task': 'Expand search for competing explanations and counterevidence', 'status': 'pending'} for c in open_searches]
+    queue += [dict(c, task='Inspect fuller source material', status='pending') for c in limited]
+    queue += [dict(c, task='Assess dependence; seek a separate underlying witness', status='pending') for c in dependence]
     args.report.parent.mkdir(parents=True, exist_ok=True)
-    args.report.write_text(json.dumps({'errors': errors, 'warnings': warnings, 'independentReviewPending': pending_claims, 'alternativeSearchPending': open_searches, 'queue': queue}, indent=2) + '\n')
+    args.report.write_text(json.dumps({'errors': errors, 'warnings': warnings, 'independentReviewPending': pending_claims, 'alternativeSearchPending': open_searches, 'limitedAccess': limited, 'sourceDependenceChecks': dependence, 'queue': queue}, indent=2) + '\n')
 sys.exit(bool(errors))
