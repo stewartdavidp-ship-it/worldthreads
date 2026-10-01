@@ -60,3 +60,7 @@ Apply the same depth of inquiry to each major world region. Do not force equal n
 
 ## Working slogan
 History isn't a collection of events. It's the threads that connect them.
+
+## Year-by-year community expansion
+
+Build a reviewed annual foundation, invite local research, verify and incorporate contributions, then open another deliberately selected year. Earlier years remain open to corrections and new threads. Recognition rewards verified evidence and challenges. Annual views eventually reference one shared graph, enabling separately reviewed connections across years with explicit lag and competing causes. See `YEAR_EXPANSION.md` for readiness and cross-year review rules. The active contribution year remains 1816.

@@ -15,7 +15,7 @@ Run `python3 scripts/audit.py`. The audit checks duplicate IDs, dangling referen
 Resolve audit errors before publishing a revision. For each substantive correction, record old claim, new claim, supporting locator and reason in a review log. Preserve stable IDs and explain date/meaning changes. Keep unresolved issues in research gaps; do not mark an entire region complete because one thread was added. Rerun the audit and check changed browser behavior. Publish the revision with remaining warnings and review limits stated.
 
 ## First batch
-The local Tambora batch has claim-level evidence and scholarly corroboration, with independent review still pending. Its maritime observation was narrowed to a dated 1819 report. Recovery beyond the core 1814–1818 window requires explicit context labeling. The seventeen recorded rounds added locators to all current claims. Independent review, wider alternative searches and full-text access for limited sources remain open.
+The local Tambora batch has claim-level evidence and scholarly corroboration, with independent review still pending. Its maritime observation was narrowed to a dated 1819 report. Recovery beyond the core 1814–1818 window requires explicit context labeling. The eighteen recorded rounds added locators to all current claims. Independent review, wider alternative searches and full-text access for limited sources remain open.
 
 ## Challenge the preferred explanation
 

@@ -934,7 +934,8 @@
     "limitations": "Original newspaper and cited records not independently inspected.",
     "reviewer": "Codex",
     "reviewStatus": "pending_independent_review",
-    "accessScope": "full_text"
+    "accessScope": "full_text",
+    "dependencyGroup": "HOBART-HARVEST-1816-08-31"
   },
   {
     "id": "EV-R17-REL-0024-A",
@@ -986,6 +987,35 @@
     "limitations": "Original newspaper and cited records not independently inspected.",
     "reviewer": "Codex",
     "reviewStatus": "pending_independent_review",
-    "accessScope": "full_text"
+    "accessScope": "full_text",
+    "dependencyGroup": "HOBART-HARVEST-1816-08-31"
+  },
+  {
+    "id": "EV-R18-WT-1816-0033",
+    "claimId": "WT-1816-0033",
+    "sourceId": "SRC-028",
+    "locator": "31 August 1816, p. 2, paragraph beginning The very unusual tempestuous and rainy Weather",
+    "accessedAt": "2026-10-01",
+    "support": "supports harvest expectation and contemporary comparison",
+    "provenance": "Trove article transcription read in Chrome",
+    "limitations": "Newspaper expectation, not measured yield. NSW reports relayed from letters and newspapers. Print/OCR comparison remains open.",
+    "reviewer": "Codex",
+    "reviewStatus": "pending_independent_review",
+    "accessScope": "transcription",
+    "dependencyGroup": "HOBART-HARVEST-1816-08-31"
+  },
+  {
+    "id": "EV-R18-REL-0025",
+    "claimId": "REL-0025",
+    "sourceId": "SRC-028",
+    "locator": "31 August 1816, p. 2, paragraph beginning The very unusual tempestuous and rainy Weather",
+    "accessedAt": "2026-10-01",
+    "support": "supports harvest expectation and contemporary comparison",
+    "provenance": "Trove article transcription read in Chrome",
+    "limitations": "Newspaper expectation, not measured yield. NSW reports relayed from letters and newspapers. Print/OCR comparison remains open.",
+    "reviewer": "Codex",
+    "reviewStatus": "pending_independent_review",
+    "accessScope": "transcription",
+    "dependencyGroup": "HOBART-HARVEST-1816-08-31"
   }
 ]

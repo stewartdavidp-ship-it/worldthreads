@@ -1,0 +1,123 @@
+[
+  {
+    "id": "MISSION-FISHERIES",
+    "title": "What drove the move toward mackerel?",
+    "threadId": "THREAD-GULF-MAINE",
+    "gapId": "GAP-007",
+    "status": "Open hypothesis",
+    "theory": "Food pressure and fish availability contributed to a lasting shift in fishing effort, alongside markets and prior river damage.",
+    "known": "The current graph contains temperature analysis, export-based biological inference and a proposed adaptation sequence.",
+    "claimRefs": [
+      "REL-0002",
+      "REL-0003",
+      "REL-0004"
+    ],
+    "missing": [
+      "Independent catch or effort records",
+      "Dated market, trade and river-obstruction evidence",
+      "Comparison with places under different food pressure"
+    ],
+    "supportWouldLookLike": [
+      "Effort changes track local food pressure and fish availability after accounting for trade and access."
+    ],
+    "challengeWouldLookLike": [
+      "A similar shift predates the shock or follows trade incentives more closely than local food pressure."
+    ],
+    "researchSteps": [
+      "Compare dated records across at least two locations or periods.",
+      "Identify whether exports reflect catch, demand, reporting or trade access.",
+      "Retain interacting causes and uncertainty; do not infer populations directly from exports."
+    ],
+    "possibleOutcomes": [
+      "Supports part of the theory",
+      "Weakens part of the theory",
+      "Suggests another explanation",
+      "Insufficient evidence"
+    ],
+    "badgeIds": [
+      "CAUSALITY_EXPLORER",
+      "THEORY_CHALLENGER",
+      "SOURCE_DETECTIVE"
+    ]
+  },
+  {
+    "id": "MISSION-FLOOD-EXPOSURE",
+    "title": "Did exposure explain differing flood losses?",
+    "threadId": "THREAD-OCEANIA-WEATHER",
+    "gapId": "GAP-006",
+    "status": "Open hypothesis",
+    "theory": "Floodplain exposure helped determine damage; severe weather did not produce identical agricultural outcomes everywhere.",
+    "known": "The graph separates qualitative rain, reported Windsor flood losses and Hobart\u2019s harvest expectation.",
+    "claimRefs": [
+      "WT-1816-0031",
+      "WT-1816-0032",
+      "WT-1816-0033",
+      "REL-0024"
+    ],
+    "missing": [
+      "Actual harvest and damage records",
+      "High-ground versus low-ground comparisons",
+      "Comparable rainfall and river conditions",
+      "Original Hobart newspaper passage"
+    ],
+    "supportWouldLookLike": [
+      "Under comparable conditions, exposed farms suffered greater losses than less exposed farms."
+    ],
+    "challengeWouldLookLike": [
+      "Loss patterns are better explained by rainfall, crop timing or other conditions than residence location."
+    ],
+    "researchSteps": [
+      "Check comparable localities and crop calendars.",
+      "Distinguish forecast harvests from realized returns.",
+      "Treat volcanic attribution as a separate question."
+    ],
+    "possibleOutcomes": [
+      "Supports part of the theory",
+      "Weakens part of the theory",
+      "Suggests another explanation",
+      "Insufficient evidence"
+    ],
+    "badgeIds": [
+      "RESILIENCE_SPOTTER",
+      "THEORY_CHALLENGER",
+      "SOURCE_DETECTIVE"
+    ]
+  },
+  {
+    "id": "MISSION-LOCAL-1816",
+    "title": "What changed where you live in 1816?",
+    "threadId": null,
+    "gapId": "GAP-010",
+    "status": "Open local question",
+    "theory": "A local change in 1816 may connect to the wider systems in this thread; that connection needs evidence.",
+    "known": "The graph contains some regional records, but local coverage remains incomplete.",
+    "claimRefs": [],
+    "missing": [
+      "Dated 1816 records for your place",
+      "Local prior conditions and alternative explanations",
+      "Evidence that distinguishes a local connection from coincidental timing"
+    ],
+    "supportWouldLookLike": [
+      "Local 1816 records support a specific mechanism and its timing."
+    ],
+    "challengeWouldLookLike": [
+      "Local records contradict the proposed mechanism or fit another explanation better."
+    ],
+    "researchSteps": [
+      "Choose a town, district, watershed or community.",
+      "Inspect 1816 records of weather, harvests, prices, population, work, health, politics or culture.",
+      "Use earlier/later records as comparison only; keep proposed observations in 1816."
+    ],
+    "possibleOutcomes": [
+      "Supports part of the theory",
+      "Weakens part of the theory",
+      "Suggests another explanation",
+      "Insufficient evidence"
+    ],
+    "badgeIds": [
+      "THREAD_FINDER",
+      "THEORY_CHALLENGER",
+      "SOURCE_DETECTIVE"
+    ]
+  }
+]

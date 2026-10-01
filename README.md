@@ -57,7 +57,7 @@ The dataset is intentionally small. The next phase expands environmental, biolog
 
 ## v0.3 evidence and thread update
 
-33 observations, 25 relationships, eleven threads and 27 sources. The local Tambora batch has scholarly corroboration and page-level evidence; independent review is pending. Its maritime record is now limited to a dated 1819 report.
+33 observations, 25 relationships, eleven threads and 28 sources. The local Tambora batch has scholarly corroboration and page-level evidence; independent review is pending. Its maritime record is now limited to a dated 1819 report.
 
 Thread connections use actual endpoints. Observation details show review status.
 
@@ -71,3 +71,5 @@ Run `python3 scripts/audit.py --report data/1816/audit-report.json` to refresh t
 ## Community research prototype
 
 Choose an open question, generate a research prompt and output template, and load a returned JSON draft for local intake checks. Drafts stay separate from accepted graph data. See `docs/CONTRIBUTING_RESEARCH.md` for independent verification and repository submission. Badge criteria recognize accepted threads, causal research, challenges, resilience and source work; account-based uploads and awards require a hosted service.
+
+Year-by-year expansion and cross-year relationship review: `docs/YEAR_EXPANSION.md`. The active contribution year is 1816; later-year readiness remains an editorial decision.

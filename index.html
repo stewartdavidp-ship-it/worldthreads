@@ -82,7 +82,21 @@
     <section class="panel contribution-panel" id="contribute">
       <p class="eyebrow">EXTEND THE RESEARCH</p>
       <h3>Where does this thread lead next?</h3>
-      <p>Choose an open question, research it with our method, and return a structured draft for review.</p>
+      <p>Explore 1816 facts and relationships in a place that interests you—your town, region or community. Return your findings as a draft for review.</p>
+      <label for="researchPlace">Place you want to investigate</label>
+      <input id="researchPlace" type="text" placeholder="Your town, district, watershed or community">
+      <label for="researchDirection">How would you like to explore?</label>
+      <select id="researchDirection" class="thread-select">
+        <option value="continue_thread">Continue this thread</option>
+        <option value="new_thread">Start a related thread from another perspective</option>
+      </select>
+      <label for="personalQuestion">Your question or provisional theory (optional)</label>
+      <textarea id="personalQuestion" rows="3" placeholder="What might happen next, or what other force could explain this? For example: did rising population affect climate?"></textarea>
+      <label for="proposedThreadTitle">Title for a related thread (optional)</label>
+      <input id="proposedThreadTitle" type="text" placeholder="Name the perspective you want to explore">
+      <label for="researchMission">Suggested research mission</label>
+      <select id="researchMission" class="thread-select"><option value="">Explore an open question</option></select>
+      <div id="missionBrief" hidden></div>
       <label for="researchGap">Open research question</label>
       <select id="researchGap" class="thread-select"></select>
       <p id="gapQuestion"></p>

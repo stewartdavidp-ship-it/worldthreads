@@ -9,10 +9,15 @@
     if(p.context?.gapId && !(existing.gaps||[]).some(x=>x.id===p.context.gapId))fail('Unknown research gap.');
     if(p.context?.threadId && !(existing.threads||[]).some(x=>x.id===p.context.threadId))fail('Unknown historical thread.');
     if(typeof p.contributor?.name!=='string'||!p.contributor.name.trim())fail('Include a contributor name or alias.');
+    if(p.context?.direction&&!['continue_thread','new_thread'].includes(p.context.direction))fail('Choose a valid research direction.');
+    if(p.context?.direction==='new_thread'&&(!p.proposedThread?.title?.trim()||!p.proposedThread?.perspective?.trim()||!Array.isArray(p.proposedThread.nodeIds)))fail('Describe the proposed thread and its record IDs.');
+    if(p.context?.missionId){const mission=(existing.missions||[]).find(m=>m.id===p.context.missionId);if(!mission)fail('Unknown research mission.');else{if((mission.threadId&&p.context.threadId!==mission.threadId)||p.context.gapId!==mission.gapId)fail('Mission, gap and thread must match.');if(!mission.possibleOutcomes.includes(p.missionResult?.outcome)||typeof p.missionResult?.reason!=='string'||!p.missionResult.reason.trim())fail('Record a mission outcome and evidence-based reason.');}}
+    if(p.context?.year!==1816)fail('Anchor the contribution to year 1816.');
+    if(typeof p.context?.place!=='string'||!p.context.place.trim())fail('Specify the place being investigated.');
     if(p.review?.status!=='pending')fail('New contributions must have review status pending.');
     for(const n of ['sources','observations','relationships','evidence','searchLog'])if(!Array.isArray(p[n]))fail(`Include a ${n} array.`);
     if(errors.length)return errors;
-    if(!p.observations.length)fail('Include at least one proposed observation.');
+    if(!p.observations.length&&!p.context.missionId)fail('Include at least one proposed observation.');
     if(!p.searchLog.length)fail('Record searches for other explanations and counterevidence.');
     const maps={};const ids=new Set();
     for(const n of ['sources','observations','relationships','evidence']){
@@ -28,6 +33,7 @@
     if(p.sources.some(s=>s?.url?.includes('replace-with-inspected-source'))||p.observations.some(o=>o?.observation?.startsWith('Replace with')))fail('Replace template placeholders with researched findings.');
     const sourceIds=new Set([...maps.sources.keys(),...(existing.sources||[]).map(x=>x.id)]);
     const observationIds=new Set([...maps.observations.keys(),...(existing.observations||[]).map(x=>x.id)]);
+    if(p.proposedThread?.nodeIds)for(const id of p.proposedThread.nodeIds)if(!observationIds.has(id))fail(`Proposed thread: unknown observation ${id}.`);
     const claimMap=new Map([...maps.observations,...maps.relationships]);
     const text=(x,fields)=>fields.forEach(f=>{if(typeof x[f]!=='string'||!x[f].trim())fail(`${x.id}: include ${f}.`);});
     for(const s of p.sources){if(!s||!s.id)continue;text(s,['title','authorOrOrg','type','url']);try{if(!['https:','http:'].includes(new URL(s.url).protocol))throw Error();}catch{fail(`${s.id}: use an http or https source URL.`);}}
@@ -41,7 +47,7 @@
       if(!['Low','Medium','Medium-High','High'].includes(c.confidence))fail(`${c.id}: choose a supported confidence label.`);
       if(c.researchStatus!=='Contributor draft; independent review pending')fail(`${c.id}: keep contributor draft status.`);
     }
-    for(const o of p.observations){if(!o||!o.id)continue;text(o,['title','observation','startDate','endDate','datePrecision','continent','region','place','historicalEntity','coverageType','system','topic']);for(const f of ['analyticalRole','evidenceType'])if(!Array.isArray(o[f])||!o[f].length)fail(`${o.id}: include ${f}.`);}
+    for(const o of p.observations){if(!o||!o.id)continue;if(!/^1816(?:-\d{2}(?:-\d{2})?)?$/.test(o.startDate)||!/^1816(?:-\d{2}(?:-\d{2})?)?$/.test(o.endDate))fail(`${o.id}: proposed observations must be dated within 1816; keep other years as source context.`);text(o,['title','observation','startDate','endDate','datePrecision','continent','region','place','historicalEntity','coverageType','system','topic']);for(const f of ['analyticalRole','evidenceType'])if(!Array.isArray(o[f])||!o[f].length)fail(`${o.id}: include ${f}.`);}
     for(const r of p.relationships){if(!r||!r.id)continue;text(r,['subjectId','objectId','predicate','causalStatus','explanation','lag']);if(!['CAUSAL','CONTRIBUTORY','ASSOCIATED','CONTESTED'].includes(r.causalStatus))fail(`${r.id}: invalid causal status.`);for(const f of ['subjectId','objectId'])if(!observationIds.has(r[f]))fail(`${r.id}: unknown ${f}.`);if(['CAUSAL','CONTRIBUTORY','CONTESTED'].includes(r.causalStatus)&&(!r.causalReview?.searchStatus||!Array.isArray(r.causalReview.alternatives)||!Array.isArray(r.causalReview.counterevidence)))fail(`${r.id}: record alternatives, counterevidence and search status.`);}
     const scopes=['full_text','scan','transcription','abstract','indexed_excerpt','publisher_excerpt','catalog_description','institutional_record'];
     for(const e of p.evidence){if(!e||!e.id)continue;text(e,['claimId','sourceId','locator','accessedAt','provenance','limitations','reviewer']);const c=claimMap.get(e.claimId);if(!c||!c.sourceRefs?.includes(e.sourceId)||!c.evidenceRefs?.includes(e.id))fail(`${e.id}: link to its proposed claim and source.`);if(!scopes.includes(e.accessScope))fail(`${e.id}: record actual accessScope.`);if(e.reviewStatus!=='pending_independent_review'||e.independentReviewer)fail(`${e.id}: independent approval cannot be supplied at intake.`);}

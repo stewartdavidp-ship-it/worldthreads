@@ -66,6 +66,18 @@ for item in data['threads']:
         rel = index['relationships'].get(edge)
         if not rel: errors.append(f'{item["id"]}: missing edge {edge}')
         elif not {rel['subjectId'], rel['objectId']} <= set(item['nodeIds']): errors.append(f'{item["id"]}: edge endpoints outside thread')
+mission_path = ROOT / 'research-missions.json'
+if mission_path.exists():
+    mission_ids = set()
+    for mission in json.loads(mission_path.read_text()):
+        key = mission.get('id')
+        if not key or key in mission_ids: errors.append(f'missions: missing or duplicate ID {key}')
+        mission_ids.add(key)
+        if mission.get('threadId') and mission['threadId'] not in index['threads']: errors.append(f'{key}: unknown mission thread')
+        for claim in mission.get('claimRefs', []):
+            if claim not in index['observations'] and claim not in index['relationships']: errors.append(f'{key}: unknown mission claim {claim}')
+        for field in ('theory', 'known', 'missing', 'supportWouldLookLike', 'challengeWouldLookLike', 'possibleOutcomes'):
+            if not mission.get(field): errors.append(f'{key}: missing mission {field}')
 for message in errors: print('ERROR:', message)
 for message in warnings: print('WARNING:', message)
 print(f'Audit: {len(errors)} errors, {len(warnings)} warnings')
@@ -83,6 +95,9 @@ for claim in data['observations'] + data['relationships']:
     for source in claim.get('sourceRefs', []):
         group = index['sources'].get(source, {}).get('dependencyGroup')
         if group: groups.setdefault(group, []).append(source)
+    for record in records:
+        group = record.get('dependencyGroup')
+        if group: groups.setdefault(group, []).append(record['sourceId'])
     for group, sources in groups.items():
         if len(set(sources)) > 1: dependence.append({'claimId': claim['id'], 'dependencyGroup': group, 'sourceIds': sorted(set(sources))})
 print(f'Review remains open: {len(pending_claims)} claims await independent review; {len(open_searches)} alternative searches await expansion')

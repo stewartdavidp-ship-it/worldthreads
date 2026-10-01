@@ -24,3 +24,21 @@ Intake is an initial structural screen. The repository audit remains required af
 The badge catalog in `data/contribution-badges.json` defines Thread Finder, Causality Explorer, Theory Challenger, Resilience Spotter and Source Detective. Awards require a recorded independent acceptance decision and links to the accepted claims or review correction. A maintainer records award ID, contributor alias, reviewer, date, accepted record IDs and reason. The same contribution must not earn repeated copies of the same award. Corrections to an accepted contribution trigger award review, with reasons retained.
 
 There are no automatic awards, claim-count points or leaderboards in this prototype. Badge discovery is visible now; contributor accounts, award storage and profile display remain a hosted-service milestone. Recognition should reward better evidence, responsible uncertainty and corrections, including findings that weaken the primary theory.
+
+## Suggested research missions
+
+`research-missions.json` presents provisional theories tied to existing claims. Each mission includes known evidence, missing records, observations that would support or challenge the theory, practical research steps and possible outcomes. Contributors may support, weaken, propose an alternative or return insufficient evidence. A mission may return no new graph observations when research is inconclusive; its search log and reason still provide useful review material. Completing a mission does not itself award a badge.
+
+Mission evidence must be evaluated against the stated distinguishing observations rather than a desired verdict. Reviewers may revise the mission theory after findings, with the change documented. Mission briefs describe hypotheses, not accepted new causal claims.
+
+## At the edge of mapped research
+
+The thread invitation uses terminal nodes from the actual displayed relationships. It describes the limit of our current map, not a historical end. A reader can continue the selected thread or propose a related thread from another perspective, using a personal question or a suggested mission. New perspectives begin as hypotheses; a shared theme must not create an unsupported causal edge.
+
+A new-thread draft includes `context.direction: new_thread` and `proposedThread` with title, perspective and supported observation IDs. Review the proposed thread and its individual claims before assigning a repository thread ID. Continuing work uses `continue_thread`. For example, population effects on climate would require its own records and mechanism checks, even when it begins from interest in a volcanic-climate thread.
+
+## 1816 and local investigation
+
+All new contributor observations must be dated within 1816. Required context includes `year: 1816` and the place investigated. Historical sources published later are eligible when their evidence concerns 1816. Earlier/later records may supply comparison or antecedents, but should remain contextual source material rather than new out-of-year observations in these contributions. Existing graph context nodes remain available for supported relationships anchored in 1816.
+
+Invite readers to investigate their town, district, watershed or community, with local archives, newspapers, oral histories, institutional records and appropriate scholarship. Record local names and source limits. Do not assume that a global theory applies locally. Local differences, counterexamples and resilience are useful contributions.

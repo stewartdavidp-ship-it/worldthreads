@@ -123,6 +123,14 @@
       ]
     },
     {
+      "claimId": "WT-1816-0033",
+      "dependencyGroup": "HOBART-HARVEST-1816-08-31",
+      "sourceIds": [
+        "SRC-027",
+        "SRC-028"
+      ]
+    },
+    {
       "claimId": "REL-0009",
       "dependencyGroup": "FRANKENSTEIN-CREATION-RECOLLECTION",
       "sourceIds": [
@@ -136,6 +144,14 @@
       "sourceIds": [
         "SRC-008",
         "SRC-019"
+      ]
+    },
+    {
+      "claimId": "REL-0025",
+      "dependencyGroup": "HOBART-HARVEST-1816-08-31",
+      "sourceIds": [
+        "SRC-027",
+        "SRC-028"
       ]
     }
   ],
@@ -573,6 +589,16 @@
       "status": "pending"
     },
     {
+      "claimId": "WT-1816-0033",
+      "dependencyGroup": "HOBART-HARVEST-1816-08-31",
+      "sourceIds": [
+        "SRC-027",
+        "SRC-028"
+      ],
+      "task": "Assess dependence; seek a separate underlying witness",
+      "status": "pending"
+    },
+    {
       "claimId": "REL-0009",
       "dependencyGroup": "FRANKENSTEIN-CREATION-RECOLLECTION",
       "sourceIds": [
@@ -588,6 +614,16 @@
       "sourceIds": [
         "SRC-008",
         "SRC-019"
+      ],
+      "task": "Assess dependence; seek a separate underlying witness",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0025",
+      "dependencyGroup": "HOBART-HARVEST-1816-08-31",
+      "sourceIds": [
+        "SRC-027",
+        "SRC-028"
       ],
       "task": "Assess dependence; seek a separate underlying witness",
       "status": "pending"

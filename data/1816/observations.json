@@ -1007,7 +1007,7 @@
     "datePrecision": "DAY",
     "region": "Van Diemen’s Land",
     "place": "Hobart / Tasmania",
-    "observation": "Garden quotes the 31 August Hobart Gazette anticipating an abundant harvest and possible supply to Port Jackson despite severe weather. This records an expectation, not realized output.",
+    "observation": "The 31 August Hobart Gazette anticipates an abundant harvest and possible supply to Port Jackson despite severe weather. The transcription matches Garden’s quoted account; both concern the same newspaper passage. This is an expectation, not realized output.",
     "coverageType": "EVENT",
     "system": "PRODUCTION & RESOURCES",
     "topic": "Weather / agriculture",
@@ -1018,10 +1018,12 @@
       "Newspaper quoted through scholarship"
     ],
     "sourceRefs": [
-      "SRC-027"
+      "SRC-027",
+      "SRC-028"
     ],
     "evidenceRefs": [
-      "EV-R17-WT-1816-0033"
+      "EV-R17-WT-1816-0033",
+      "EV-R18-WT-1816-0033"
     ]
   }
 ]

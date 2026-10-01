@@ -1047,11 +1047,13 @@
     "explanation": "The newspaper contrasted the colonies’ agricultural prospects. This is comparison, not evidence that one outcome caused the other.",
     "confidence": "Medium",
     "sourceRefs": [
-      "SRC-027"
+      "SRC-027",
+      "SRC-028"
     ],
     "researchStatus": "Source checked; independent review pending",
     "evidenceRefs": [
-      "EV-R17-REL-0025"
+      "EV-R17-REL-0025",
+      "EV-R18-REL-0025"
     ]
   }
 ]

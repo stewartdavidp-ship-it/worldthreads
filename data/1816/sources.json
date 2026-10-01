@@ -425,5 +425,20 @@
       "harvests"
     ],
     "notes": "Published version inspected, pp. 186–188; primary newspaper passages quoted through this article remain uninspected. Its volcanic attribution is not independently established here."
+  },
+  {
+    "id": "SRC-028",
+    "type": "Primary newspaper transcription",
+    "authorOrOrg": "The Hobart Town Gazette and Southern Reporter; National Library of Australia Trove",
+    "title": "Hobart Town, Saturday 31 August 1816",
+    "year": 1816,
+    "url": "https://trove.nla.gov.au/newspaper/article/651461",
+    "quality": "Medium-High",
+    "topics": [
+      "harvest expectations",
+      "Van Diemen’s Land",
+      "New South Wales"
+    ],
+    "notes": "Article text on page 2 read through Chrome. Digitized page viewer available; detailed visual comparison with print not completed. OCR and volunteer corrections may affect wording."
   }
 ]

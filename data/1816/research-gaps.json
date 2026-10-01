@@ -74,5 +74,13 @@
     "priority": "High",
     "status": "Source access pending",
     "notes": "National Archives indexed lesson found. Chrome redirects to a human-verification page; primary reports were not read. No event or causal claim added from the blocked documents."
+  },
+  {
+    "id": "GAP-010",
+    "region": "Your locality",
+    "domain": "local facts and relationships in 1816",
+    "question": "What changed in your town, region or community in 1816, and what evidence connects those changes?",
+    "priority": "High",
+    "status": "Open"
   }
 ]

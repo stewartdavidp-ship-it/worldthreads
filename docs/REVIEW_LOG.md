@@ -76,3 +76,21 @@ Compared Macquarie’s 31 May and 2–3 June diary transcriptions with Garden’
 Added a thread-linked contribution entry point, open-question selector, methodology prompt and prescribed JSON template. Local intake checks require passage references, alternative searches, unique IDs and pending review; drafts cannot overwrite accepted records or assert independent approval. The browser smoke check loaded a test-only draft without changing the graph. Five intake behavior tests and four graph provenance tests pass.
 
 Badge criteria recognize accepted threads, causal research, theory challenges, resilience and source work. Awards depend on recorded independent decisions. Public server-side submissions, contributor accounts and actual badge storage remain an explicit future milestone; the static prototype does not claim to provide them.
+
+## 2026-10-01 — Suggested theory-testing missions
+
+Added three provisional missions anchored to existing graph claims: fisheries effort, flood exposure and Bengal health. Each describes existing support, missing evidence, possible supporting and challenging findings, and practical comparison steps. Mission results accept support, weakening, alternatives or insufficient evidence; inconclusive submissions need not invent observations. Six intake tests pass, including mission/context alignment and an empty-observation inconclusive result. Browser checks confirm the mission brief and prompt controls.
+
+## 2026-10-01 — Reader invitation at the mapped frontier
+
+Thread endings are derived from displayed edge endpoints. Added invitations to continue a thread or start a related perspective, plus a reader’s own question and proposed thread title. The generated prompt keeps a new perspective provisional and the returned package separate from accepted graph data. New-thread intake checks record references; shared context does not automatically create a causal edge.
+
+## 2026-10-01 — Round 18: original Hobart harvest notice
+
+Chrome reached Trove after its automatic access check cleared. Read the 31 August 1816 article transcription, p. 2, and compared the harvest expectation and colony contrast with Garden’s quotation. The primary transcription and later quotation share one underlying passage; claim-level dependency groups preserve this. No realized yield or precise flood chronology was imported from the newspaper. Detailed visual OCR/print comparison remains open.
+
+Reader contribution scope now requires 1816 and a locality; new observations outside 1816 are rejected. Earlier/later evidence may provide context only. The local mission works from any selected thread, with no imposed regional perspective.
+
+## 2026-10-01 — Year-by-year expansion model
+
+Documented reviewed seed → local contribution → verification → further year expansion. Annual views will reference stable records in a shared graph; cross-year connections require their own evidence and alternative review. Readiness is an editorial decision with explicit review and operating prerequisites, not a count-based automatic opening. 1816 remains active; no next year was invented or opened.

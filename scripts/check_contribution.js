@@ -6,6 +6,7 @@ if(!filename){console.error('Usage: node scripts/check_contribution.js contribut
 try{
   const data={};for(const n of ['sources','observations','relationships','threads'])data[n]=JSON.parse(fs.readFileSync(path.join(__dirname,'../data/1816',n+'.json'),'utf8'));
   data.gaps=JSON.parse(fs.readFileSync(path.join(__dirname,'../data/1816/research-gaps.json'),'utf8'));
+  data.missions=JSON.parse(fs.readFileSync(path.join(__dirname,'../data/1816/research-missions.json'),'utf8'));
   const errors=validateSubmission(JSON.parse(fs.readFileSync(filename,'utf8')),data);
   for(const error of errors)console.error(error);
   console.log(errors.length?'Intake needs corrections.':'Structure checks passed. Independent historical review and repository audit are still required.');

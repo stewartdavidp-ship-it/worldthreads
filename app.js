@@ -1,16 +1,17 @@
-const state={observations:[],relationships:[],threads:[],sources:[],evidence:[],gaps:[],badges:[],system:'ALL',threadId:null};
+const state={observations:[],relationships:[],threads:[],sources:[],evidence:[],gaps:[],badges:[],missions:[],system:'ALL',threadId:null};
 
 async function load(){
-  const [observations,relationships,threads,sources,evidence,gaps,badges]=await Promise.all([
+  const [observations,relationships,threads,sources,evidence,gaps,badges,missions]=await Promise.all([
     fetch('data/1816/observations.json').then(r=>r.json()),
     fetch('data/1816/relationships.json').then(r=>r.json()),
     fetch('data/1816/threads.json').then(r=>r.json()),
     fetch('data/1816/sources.json').then(r=>r.json()),
     fetch('data/1816/evidence.json').then(r=>r.json()),
     fetch('data/1816/research-gaps.json').then(r=>r.json()),
-    fetch('data/contribution-badges.json').then(r=>r.json())
+    fetch('data/contribution-badges.json').then(r=>r.json()),
+    fetch('data/1816/research-missions.json').then(r=>r.json())
   ]);
-  Object.assign(state,{observations,relationships,threads,sources,evidence,gaps,badges,threadId:threads[0]?.id||null});
+  Object.assign(state,{observations,relationships,threads,sources,evidence,gaps,badges,missions,threadId:threads[0]?.id||null});
   bind(); render(); bindContributions();
 }
 
@@ -23,7 +24,7 @@ function bind(){
     const first=state.observations.find(o=>o.continent===btn.dataset.region && !o.contextNode) || state.observations.find(o=>o.continent===btn.dataset.region);
     if(first) openDetail(first);
   }));
-  document.getElementById('threadSelect').addEventListener('change',e=>{state.threadId=e.target.value;renderThread();});
+  document.getElementById('threadSelect').addEventListener('change',e=>{state.threadId=e.target.value;selectedMission=null;document.getElementById('researchMission').value='';document.getElementById('missionBrief').hidden=true;document.getElementById('researchKit').hidden=true;renderThread();});
   document.getElementById('closeDialog').addEventListener('click',()=>document.getElementById('detailDialog').close());
 }
 
@@ -72,6 +73,12 @@ function renderThread(){
     });
     const detail=document.createElement('p'); detail.textContent=`${r.causalStatus} · ${r.confidence} confidence · ${r.lag||'Lag unknown'} — ${r.explanation}`;el.appendChild(detail);connections.appendChild(el);
   });
+  const outgoing=new Set((thread.relationshipIds||[]).map(id=>state.relationships.find(r=>r.id===id)?.subjectId));
+  const ends=thread.nodeIds.filter(id=>!outgoing.has(id)).map(id=>obs(id)?.title||id);
+  const invitation=document.createElement('div');invitation.className='thread-invitation';
+  const text=document.createElement('p');text.textContent=`Our mapped research currently reaches ${ends.join('; ')||'the records shown here'}. Does this interest you? Follow a consequence, test another cause, or explore a related perspective.`;invitation.appendChild(text);
+  for(const [label,direction] of [['Continue this thread','continue_thread'],['Start a related thread','new_thread']]){const button=document.createElement('button');button.className='nav-btn';button.textContent=label;button.addEventListener('click',()=>{document.getElementById('researchDirection').value=direction;document.getElementById('researchKit').hidden=true;document.getElementById('contribute').scrollIntoView({behavior:'smooth'});document.getElementById('personalQuestion').focus();});invitation.appendChild(button);}
+  connections.appendChild(invitation);
   root.after(connections);
 
 }
@@ -121,8 +128,9 @@ function escapeAttr(str=''){return escapeHtml(str)}
 load().catch(err=>{document.getElementById('cards').innerHTML=`<p>Could not load prototype data: ${escapeHtml(err.message)}</p>`;});
 
 let pendingContribution=null;
+let selectedMission=null;
 function researchTemplate(gap,thread){
-  return {schemaVersion:1,context:{gapId:gap.id,threadId:thread.id,question:gap.question},contributor:{name:'Your name or alias'},review:{status:'pending'},sources:[{id:'C-SRC-001',type:'Source type',authorOrOrg:'Author or institution',title:'Source title',year:null,url:'https://example.org/replace-with-inspected-source',quality:'Unassessed',topics:[],notes:'Record publication version and dependence on other sources.'}],observations:[{id:'C-OBS-001',title:'Bounded proposed observation',startDate:'1816',endDate:'1816',datePrecision:'YEAR',continent:gap.region,region:gap.region,historicalEntity:'Specify historical entity',place:'Specify locality',observation:'Replace with a claim supported by the inspected passage.',coverageType:'EVENT',system:'HUMAN SYSTEMS',topic:gap.domain,analyticalRole:['OUTCOME'],evidenceType:['Specify evidence type'],confidence:'Low',sourceRefs:['C-SRC-001'],researchStatus:'Contributor draft; independent review pending',evidenceRefs:['C-EV-001']}],relationships:[],evidence:[{id:'C-EV-001',claimId:'C-OBS-001',sourceId:'C-SRC-001',locator:'Page, section or dated entry',accessedAt:new Date().toISOString().slice(0,10),provenance:'Describe exactly what was inspected',limitations:'State source limits and uninspected originals',reviewer:'Your name or alias',reviewStatus:'pending_independent_review',accessScope:'full_text'}],searchLog:[{query:'Search for rival causes, vulnerabilities, counterexamples and resilience',result:'Record inspected sources, findings and unsuccessful searches.'}]};
+  return {schemaVersion:1,context:{gapId:gap.id,threadId:thread.id,question:gap.question,year:1816,place:document.getElementById('researchPlace').value.trim()},contributor:{name:'Your name or alias'},review:{status:'pending'},sources:[{id:'C-SRC-001',type:'Source type',authorOrOrg:'Author or institution',title:'Source title',year:null,url:'https://example.org/replace-with-inspected-source',quality:'Unassessed',topics:[],notes:'Record publication version and dependence on other sources.'}],observations:[{id:'C-OBS-001',title:'Bounded proposed observation',startDate:'1816',endDate:'1816',datePrecision:'YEAR',continent:gap.region,region:gap.region,historicalEntity:'Specify historical entity',place:'Specify locality',observation:'Replace with a claim supported by the inspected passage.',coverageType:'EVENT',system:'HUMAN SYSTEMS',topic:gap.domain,analyticalRole:['OUTCOME'],evidenceType:['Specify evidence type'],confidence:'Low',sourceRefs:['C-SRC-001'],researchStatus:'Contributor draft; independent review pending',evidenceRefs:['C-EV-001']}],relationships:[],evidence:[{id:'C-EV-001',claimId:'C-OBS-001',sourceId:'C-SRC-001',locator:'Page, section or dated entry',accessedAt:new Date().toISOString().slice(0,10),provenance:'Describe exactly what was inspected',limitations:'State source limits and uninspected originals',reviewer:'Your name or alias',reviewStatus:'pending_independent_review',accessScope:'full_text'}],searchLog:[{query:'Search for rival causes, vulnerabilities, counterexamples and resilience',result:'Record inspected sources, findings and unsuccessful searches.'}]};
 }
 function downloadText(name,text,type='text/plain'){
   const url=URL.createObjectURL(new Blob([text],{type}));const link=document.createElement('a');link.href=url;link.download=name;link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
@@ -132,13 +140,24 @@ function bindContributions(){
   state.badges.forEach(b=>{const card=document.createElement('article');card.className='badge-card';const title=document.createElement('h4');title.textContent=b.title;const description=document.createElement('p');description.textContent=b.description;card.append(title,description);badgeRoot.appendChild(card);});
   const select=document.getElementById('researchGap');
   state.gaps.forEach(g=>{const option=document.createElement('option');option.value=g.id;option.textContent=`${g.region} · ${g.status}`;select.appendChild(option);});
+  select.value='GAP-010';
+  const missionSelect=document.getElementById('researchMission');
+  state.missions.forEach(m=>{const option=document.createElement('option');option.value=m.id;option.textContent=m.title;missionSelect.appendChild(option);});
+  missionSelect.addEventListener('change',()=>{selectedMission=state.missions.find(m=>m.id===missionSelect.value)||null;const brief=document.getElementById('missionBrief');brief.replaceChildren();brief.hidden=!selectedMission;if(!selectedMission)return;const m=selectedMission;select.value=m.gapId;select.dispatchEvent(new Event('change'));if(m.threadId){state.threadId=m.threadId;document.getElementById('threadSelect').value=m.threadId;renderThread();}for(const [label,value] of [['Theory to test',m.theory],['What we have',m.known],['Missing evidence',m.missing.join(' ')],['Would support',m.supportWouldLookLike.join(' ')],['Would challenge',m.challengeWouldLookLike.join(' ')],['Useful outcomes',m.possibleOutcomes.join(' · ')]]){const p=document.createElement('p');const strong=document.createElement('strong');strong.textContent=label+': ';p.append(strong,document.createTextNode(value));brief.appendChild(p);}});
   const selected=()=>state.gaps.find(g=>g.id===select.value);
-  const update=()=>{document.getElementById('gapQuestion').textContent=selected()?.question||'';document.getElementById('researchKit').hidden=true;};update();select.addEventListener('change',update);
+  const update=()=>{if(selectedMission&&selectedMission.gapId!==select.value){selectedMission=null;missionSelect.value='';document.getElementById('missionBrief').hidden=true;}document.getElementById('gapQuestion').textContent=selected()?.question||'';document.getElementById('researchKit').hidden=true;};update();select.addEventListener('change',update);
   let kit=null,prompt='';
   document.getElementById('makeResearchPrompt').addEventListener('click',()=>{
     const gap=selected(),thread=state.threads.find(t=>t.id===state.threadId);if(!gap||!thread)return;
     kit=researchTemplate(gap,thread);
-    prompt=`Research contribution for WorldThreads\n\nStarting thread: ${thread.title} (${thread.id})\nOpen question: ${gap.question} (${gap.id})\nCore window: 1814–1818; label later context explicitly.\n\nFollow research → review → audit → fix:\n1. Bound the place, dates and question. Inspect relevant original or scholarly passages. Record source title, author, URL, version, access date and precise page/section locator. Say when only an abstract, transcription or retelling was accessible.\n2. Make the smallest supported observations. Separate measurements, reported expectations and later inferences. Preserve historical names and source bias. Do not invent missing figures.\n3. Review every proposed connection separately. Search for rival explanations, prior conditions, interacting cofactors, counterevidence and resilience. Record failed searches. Chronology alone is not causation. Several retellings of one text are not independent corroboration.\n4. Return a JSON file using the output template below. Use unique local IDs; connect each claim to passage-level evidence. For causal or contested relationships include causalReview with primaryExplanation, assessment, priorConditions, alternatives (id, explanation, kind, assessment, sourceRefs, locator, evidenceNote, distinguishingEvidence), counterevidence, distinguishingEvidence, searchStatus and reviewStatus.\n5. Fix unsupported wording and unresolved references before returning. Leave all records as contributor drafts pending independent review. Include uncertainty and what evidence could change your conclusion. Do not claim approval or publish directly.\n\nExisting observation IDs that may be referenced: ${thread.nodeIds.join(', ')}.\nAn empty relationships array is valid when no connection is supported.\nReplace all template placeholders; do not submit them as findings.\n\nOUTPUT TEMPLATE\n${JSON.stringify(kit,null,2)}`;
+    const direction=document.getElementById('researchDirection').value,question=document.getElementById('personalQuestion').value.trim(),title=document.getElementById('proposedThreadTitle').value.trim();
+    kit.context.direction=direction;
+    if(question)kit.context.question=question;
+    if(direction==='new_thread')kit.proposedThread={title:title||'Proposed related thread',perspective:question||'Describe the new perspective',nodeIds:[]};
+    if(selectedMission&&!question&&direction==='continue_thread'){kit.context.missionId=selectedMission.id;kit.context.question=selectedMission.title;kit.missionResult={outcome:'Insufficient evidence',reason:'Explain what the inspected evidence supports, challenges or leaves unresolved',claimRefs:[]};}
+    prompt=`Research contribution for WorldThreads\n\nStarting thread: ${thread.title} (${thread.id})\nResearch question: ${kit.context.question} (${gap.id})\nContribution year: 1816. New observations must describe 1816 facts, and proposed relationships must concern those facts. Earlier/later material may supply comparisons or antecedents, never replace the 1816 focus. Later-published scholarship about 1816 is valid.\n\nFollow research → review → audit → fix:\n1. Bound the place, dates and question. Inspect relevant original or scholarly passages. Record source title, author, URL, version, access date and precise page/section locator. Say when only an abstract, transcription or retelling was accessible.\n2. Make the smallest supported observations. Separate measurements, reported expectations and later inferences. Preserve historical names and source bias. Do not invent missing figures.\n3. Review every proposed connection separately. Search for rival explanations, prior conditions, interacting cofactors, counterevidence and resilience. Record failed searches. Chronology alone is not causation. Several retellings of one text are not independent corroboration.\n4. Return a JSON file using the output template below. Use unique local IDs; connect each claim to passage-level evidence. For causal or contested relationships include causalReview with primaryExplanation, assessment, priorConditions, alternatives (id, explanation, kind, assessment, sourceRefs, locator, evidenceNote, distinguishingEvidence), counterevidence, distinguishingEvidence, searchStatus and reviewStatus.\n5. Fix unsupported wording and unresolved references before returning. Leave all records as contributor drafts pending independent review. Include uncertainty and what evidence could change your conclusion. Do not claim approval or publish directly.\n\nExisting observation IDs that may be referenced: ${thread.nodeIds.join(', ')}.\nAn empty relationships array is valid when no connection is supported.\nReplace all template placeholders; do not submit them as findings.\n\nOUTPUT TEMPLATE\n${JSON.stringify(kit,null,2)}`;
+    if(kit.context.missionId){const m=selectedMission;prompt=`MISSION: ${m.title} (${m.id})\nStatus: ${m.status}\nTheory: ${m.theory}\nExisting evidence: ${m.known}\nClaims to inspect: ${m.claimRefs.join(', ')}\nMissing: ${m.missing.join(' ')}\nWould support: ${m.supportWouldLookLike.join(' ')}\nWould challenge: ${m.challengeWouldLookLike.join(' ')}\nSteps: ${m.researchSteps.join(' ')}\nReturn a missionResult with one of: ${m.possibleOutcomes.join('; ')}. Explain your evidence and remaining limits. Disproof and inconclusive results are valuable.\n\n`+prompt;}
+    prompt=`PLACE: ${kit.context.place||'Choose and specify a locality before submitting'}\nYEAR: 1816\nEXPLORATION: ${direction==='new_thread'?'Start a related thread from a different perspective':'Continue the current thread'}\nYour question: ${kit.context.question}\n${direction==='new_thread'?'Proposed title: '+kit.proposedThread.title+'\nKeep the new perspective provisional; shared context is not a causal link. Return proposedThread with the IDs of supported records.':''}\n\n`+prompt;
     document.getElementById('researchPrompt').value=prompt;document.getElementById('researchKit').hidden=false;
   });
   document.getElementById('downloadResearchPrompt').addEventListener('click',()=>downloadText('worldthreads-research-prompt.txt',prompt));
