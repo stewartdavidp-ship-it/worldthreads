@@ -124,8 +124,8 @@
   {
     "id": "THREAD-TAMBORA-LOCAL",
     "title": "Direct eruption damage disrupts local livelihoods",
-    "subtitle": "Sumbawa and neighboring islands, 1815 antecedent",
-    "description": "Local food, water and maritime disruption form a branching thread. Recovery through 1816 remains a research gap.",
+    "subtitle": "Sumbawa, 1815–1819 context",
+    "description": "Direct food and water damage and later maritime difficulty are distinct branches. Long-term recovery remains only partly documented.",
     "nodeIds": [
       "WT-1816-0008",
       "WT-1816-0022",
@@ -143,6 +143,6 @@
       "transport disruption"
     ],
     "scope": "Asia",
-    "confidence": "Medium"
+    "confidence": "Medium-High"
   }
 ]

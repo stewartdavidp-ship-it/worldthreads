@@ -253,5 +253,21 @@
       "shipping"
     ],
     "notes": "Secondary synthesis checked 2026-10-01. Local records require corroboration from archival and scholarly sources; mortality estimates are not imported."
+  },
+  {
+    "id": "SRC-018",
+    "type": "Scholarly historical article",
+    "authorOrOrg": "Bernice de Jong Boers",
+    "title": "Mount Tambora in 1815: A Volcanic Eruption in Indonesia and Its Aftermath",
+    "year": 1995,
+    "url": "https://doi.org/10.2307/3351140",
+    "quality": "High",
+    "topics": [
+      "Tambora",
+      "Sumbawa",
+      "subsistence",
+      "recovery"
+    ],
+    "notes": "Indonesia 60, pp. 37–60. Full text checked; archival references are cited through this article, not independently inspected."
   }
 ]

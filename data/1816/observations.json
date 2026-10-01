@@ -598,15 +598,15 @@
   },
   {
     "id": "WT-1816-0022",
-    "title": "Ash damages crops and fresh water",
+    "title": "Ash destroys crops and contaminates drinking water",
     "startDate": "1815-04",
     "endDate": "1815",
     "datePrecision": "DATE_RANGE",
     "continent": "Asia",
     "region": "Southeast Asia",
     "historicalEntity": "Sumbawa and neighboring island communities",
-    "place": "Sumbawa / neighboring islands",
-    "observation": "The Smithsonian synthesis describes regional ashfall after the April 1815 eruption damaging crops and contaminating fresh-water supplies. This records direct local exposure, separate from distant cooling.",
+    "place": "Sumbawa",
+    "observation": "De Jong Boers describes ash-damaged crops and ash-contaminated drinking water on Sumbawa (p. 43).",
     "coverageType": "CONDITION",
     "system": "PRODUCTION & RESOURCES",
     "topic": "Tambora direct local impacts",
@@ -614,26 +614,29 @@
       "SHOCK"
     ],
     "evidenceType": [
-      "Secondary historical synthesis"
+      "Scholarly synthesis of historical reports"
     ],
-    "confidence": "Medium",
+    "confidence": "Medium-High",
     "sourceRefs": [
-      "SRC-017"
+      "SRC-018"
     ],
-    "researchStatus": "Needs scholarly corroboration",
-    "contextNode": true
+    "researchStatus": "Corroborated; independent review pending",
+    "contextNode": true,
+    "evidenceRefs": [
+      "EV-0022"
+    ]
   },
   {
     "id": "WT-1816-0023",
-    "title": "Pumice obstructs harbors and shipping",
-    "startDate": "1815-04",
-    "endDate": "1815",
-    "datePrecision": "DATE_RANGE",
+    "title": "Floating pumice hampers a sea route in 1819",
+    "startDate": "1819",
+    "endDate": "1819",
+    "datePrecision": "YEAR",
     "continent": "Asia",
     "region": "Southeast Asia",
     "historicalEntity": "Sumbawa and neighboring island communities",
-    "place": "Sumbawa / neighboring islands",
-    "observation": "The account describes floating pumice trapping ships and obstructing harbors, interrupting trade and travel for months after the eruption.",
+    "place": "Tambora / Pekat, Sumbawa",
+    "observation": "De Jong Boers reports Vetter’s 1819 account of difficult sea access and floating pumice near Tambora and Pekat (p. 46).",
     "coverageType": "CONDITION",
     "system": "HUMAN SYSTEMS",
     "topic": "Tambora direct local impacts",
@@ -641,26 +644,29 @@
       "OUTCOME"
     ],
     "evidenceType": [
-      "Secondary historical synthesis"
+      "Scholarly synthesis of historical reports"
     ],
-    "confidence": "Medium",
+    "confidence": "Medium-High",
     "sourceRefs": [
-      "SRC-017"
+      "SRC-018"
     ],
-    "researchStatus": "Needs scholarly corroboration",
-    "contextNode": true
+    "researchStatus": "Corroborated; independent review pending",
+    "contextNode": true,
+    "evidenceRefs": [
+      "EV-0023"
+    ]
   },
   {
     "id": "WT-1816-0024",
-    "title": "Food loss accompanies a local subsistence crisis",
-    "startDate": "1815-04",
+    "title": "Crop loss contributes to post-eruption famine",
+    "startDate": "1815",
     "endDate": "1815",
     "datePrecision": "DATE_RANGE",
     "continent": "Asia",
     "region": "Southeast Asia",
     "historicalEntity": "Sumbawa and neighboring island communities",
-    "place": "Sumbawa / neighboring islands",
-    "observation": "The synthesis associates crop destruction with starvation on Sumbawa and neighboring Lombok. The timing and scale of recovery through 1816 remain unresolved here.",
+    "place": "Sumbawa",
+    "observation": "De Jong Boers links destroyed crops to immediate famine on Sumbawa (pp. 43–44).",
     "coverageType": "CONDITION",
     "system": "HUMAN SYSTEMS",
     "topic": "Tambora direct local impacts",
@@ -668,13 +674,16 @@
       "OUTCOME"
     ],
     "evidenceType": [
-      "Secondary historical synthesis"
+      "Scholarly synthesis of historical reports"
     ],
-    "confidence": "Medium",
+    "confidence": "Medium-High",
     "sourceRefs": [
-      "SRC-017"
+      "SRC-018"
     ],
-    "researchStatus": "Needs scholarly corroboration",
-    "contextNode": true
+    "researchStatus": "Corroborated; independent review pending",
+    "contextNode": true,
+    "evidenceRefs": [
+      "EV-0024"
+    ]
   }
 ]

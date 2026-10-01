@@ -57,11 +57,11 @@ The dataset is intentionally small. The next phase expands environmental, biolog
 
 ## v0.3 evidence and thread update
 
-The dataset has 24 observations, 18 relationships, six threads and 17 sources.
-The new local Tambora thread distinguishes direct food/water and maritime
-disruption from distant climatic effects. Its three new observations have
-medium confidence and explicitly require scholarly corroboration; recovery
-through 1816 remains open.
+24 observations, 18 relationships, six threads and 18 sources. The local Tambora batch has scholarly corroboration and page-level evidence; independent review is pending. Its maritime record is now limited to a dated 1819 report.
 
-Thread connections now use each relationship's actual endpoints instead of
-assuming every thread is a linear chain. Observation details show review status.
+Thread connections use actual endpoints. Observation details show review status.
+
+Research, review, audit and fix procedures: `docs/RESEARCH_WORKFLOW.md`.
+Correction history: `docs/REVIEW_LOG.md`.
+Run `python3 scripts/audit.py` to check references and evidence provenance.
+Legacy claims without page-level evidence are reported as warnings.

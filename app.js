@@ -1,13 +1,14 @@
-const state={observations:[],relationships:[],threads:[],sources:[],system:'ALL',threadId:null};
+const state={observations:[],relationships:[],threads:[],sources:[],evidence:[],system:'ALL',threadId:null};
 
 async function load(){
-  const [observations,relationships,threads,sources]=await Promise.all([
+  const [observations,relationships,threads,sources,evidence]=await Promise.all([
     fetch('data/1816/observations.json').then(r=>r.json()),
     fetch('data/1816/relationships.json').then(r=>r.json()),
     fetch('data/1816/threads.json').then(r=>r.json()),
-    fetch('data/1816/sources.json').then(r=>r.json())
+    fetch('data/1816/sources.json').then(r=>r.json()),
+    fetch('data/1816/evidence.json').then(r=>r.json())
   ]);
-  Object.assign(state,{observations,relationships,threads,sources,threadId:threads[0]?.id||null});
+  Object.assign(state,{observations,relationships,threads,sources,evidence,threadId:threads[0]?.id||null});
   bind(); render();
 }
 
@@ -88,11 +89,22 @@ function openDetail(o){
   const dlg=document.getElementById('detailDialog'); const content=document.getElementById('dialogContent');
   const rels=state.relationships.filter(r=>r.subjectId===o.id||r.objectId===o.id);
   const sourceLinks=(o.sourceRefs||[]).map(id=>source(id)).filter(Boolean).map(s=>`<a class="source-badge" href="${escapeAttr(s.url)}" target="_blank" rel="noreferrer">${escapeHtml(s.id)} · ${escapeHtml(s.authorOrOrg)}</a>`).join('');
-  const relHtml=rels.map(r=>{const other=obs(r.subjectId===o.id?r.objectId:r.subjectId);const direction=r.subjectId===o.id?'→':'←';return `<div class="relation-item"><b>${direction} ${escapeHtml(r.predicate.replaceAll('_',' '))}</b> ${escapeHtml(other?.title||'Unknown node')}<br><span>${escapeHtml(r.explanation||'')} · ${escapeHtml(r.confidence)} confidence</span></div>`}).join('');
-  content.innerHTML=`<p class="eyebrow">${escapeHtml(o.id)}</p><h2>${escapeHtml(o.title)}</h2><p>${escapeHtml(o.observation)}</p><dl class="detail-grid"><dt>Date</dt><dd>${escapeHtml(o.startDate)}${o.endDate&&o.endDate!==o.startDate?' → '+escapeHtml(o.endDate):''}</dd><dt>System</dt><dd>${escapeHtml(o.system)}</dd><dt>Role</dt><dd>${escapeHtml((o.analyticalRole||[]).join(', '))}</dd><dt>Coverage</dt><dd>${escapeHtml(o.coverageType)}</dd><dt>Region</dt><dd>${escapeHtml(o.region)}</dd><dt>Entity</dt><dd>${escapeHtml(o.historicalEntity)}</dd><dt>Place</dt><dd>${escapeHtml(o.place)}</dd><dt>Review status</dt><dd>${escapeHtml(o.researchStatus)}</dd><dt>Confidence</dt><dd>${escapeHtml(o.confidence)}</dd><dt>Evidence</dt><dd>${escapeHtml((o.evidenceType||[]).join(', '))}</dd>${o.value?`<dt>Value</dt><dd>${escapeHtml(o.value)} ${escapeHtml(o.unit||'')}</dd>`:''}${o.baseline?`<dt>Baseline</dt><dd>${escapeHtml(o.baseline)}</dd>`:''}${o.anomaly?`<dt>Anomaly</dt><dd>${escapeHtml(o.anomaly)}</dd>`:''}</dl><h3>Sources</h3><div class="source-badges">${sourceLinks||'No source registry entries yet.'}</div><h3>Connections</h3><div class="relation-list">${relHtml||'<div class="relation-item">No explicit graph relationships added yet.</div>'}</div>`;
+  const relHtml=rels.map(r=>{const other=obs(r.subjectId===o.id?r.objectId:r.subjectId);const direction=r.subjectId===o.id?'→':'←';return `<div class="relation-item"><b>${direction} ${escapeHtml(r.predicate.replaceAll('_',' '))}</b> ${escapeHtml(other?.title||'Unknown node')}<br><span>${escapeHtml(r.explanation||'')} · ${escapeHtml(r.confidence)} confidence</span>${renderCausalReview(r)}${renderEvidence(r)}</div>`}).join('');
+  content.innerHTML=`<p class="eyebrow">${escapeHtml(o.id)}</p><h2>${escapeHtml(o.title)}</h2><p>${escapeHtml(o.observation)}</p><dl class="detail-grid"><dt>Date</dt><dd>${escapeHtml(o.startDate)}${o.endDate&&o.endDate!==o.startDate?' → '+escapeHtml(o.endDate):''}</dd><dt>System</dt><dd>${escapeHtml(o.system)}</dd><dt>Role</dt><dd>${escapeHtml((o.analyticalRole||[]).join(', '))}</dd><dt>Coverage</dt><dd>${escapeHtml(o.coverageType)}</dd><dt>Region</dt><dd>${escapeHtml(o.region)}</dd><dt>Entity</dt><dd>${escapeHtml(o.historicalEntity)}</dd><dt>Place</dt><dd>${escapeHtml(o.place)}</dd><dt>Review status</dt><dd>${escapeHtml(o.researchStatus)}</dd><dt>Confidence</dt><dd>${escapeHtml(o.confidence)}</dd><dt>Evidence</dt><dd>${escapeHtml((o.evidenceType||[]).join(', '))}</dd>${o.value?`<dt>Value</dt><dd>${escapeHtml(o.value)} ${escapeHtml(o.unit||'')}</dd>`:''}${o.baseline?`<dt>Baseline</dt><dd>${escapeHtml(o.baseline)}</dd>`:''}${o.anomaly?`<dt>Anomaly</dt><dd>${escapeHtml(o.anomaly)}</dd>`:''}</dl><h3>Sources</h3><div class="source-badges">${sourceLinks||'No source registry entries yet.'}</div>${renderEvidence(o)}<h3>Connections</h3><div class="relation-list">${relHtml||'<div class="relation-item">No explicit graph relationships added yet.</div>'}</div>`;
   dlg.showModal();
 }
 
+function renderEvidence(claim){
+  const records=(claim.evidenceRefs||[]).map(id=>state.evidence.find(e=>e.id===id)).filter(Boolean);
+  if(!records.length)return '<p class="review-note">Passage-level evidence not yet registered.</p>';
+  return '<div class="evidence-records">'+records.map(e=>`<p><strong>${escapeHtml(e.sourceId)} · ${escapeHtml(e.locator)}</strong><br>${escapeHtml(e.provenance)}<br>${escapeHtml(e.limitations)}<br>Review: ${escapeHtml(e.reviewStatus.replaceAll('_',' '))}</p>`).join('')+'</div>';
+}
+function renderCausalReview(r){
+  const c=r.causalReview;
+  if(!c)return '<p class="review-note">Competing explanations have not yet been systematically reviewed.</p>';
+  const alternatives=(c.alternatives||[]).map(a=>`<li><strong>${escapeHtml(a.assessment)} · ${escapeHtml(a.kind.replaceAll('_',' '))}</strong>: ${escapeHtml(a.explanation)}<br>${escapeHtml(a.evidenceNote||'')} ${escapeHtml((a.sourceRefs||[]).join(', '))} ${escapeHtml(a.locator||'')}<br>Evidence to seek: ${escapeHtml((a.distinguishingEvidence||[]).join(' '))}</li>`).join('');
+  return `<details class="causal-review"><summary>Other explanations and open questions</summary><p>${escapeHtml(c.searchStatus)}</p>${alternatives?'<ul>'+alternatives+'</ul>':'<p>No alternatives registered yet; review remains open.</p>'}<p>Counterevidence: ${escapeHtml((c.counterevidence||[]).map(e=>e.description).join(' ')||'Not yet registered.')}</p><p>Next evidence: ${escapeHtml((c.distinguishingEvidence||[]).join(' '))}</p></details>`;
+}
 function obs(id){return state.observations.find(o=>o.id===id)}
 function source(id){return state.sources.find(s=>s.id===id)}
 function escapeHtml(str=''){return String(str).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}

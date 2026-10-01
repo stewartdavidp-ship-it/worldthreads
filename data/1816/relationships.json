@@ -215,13 +215,25 @@
     "causalStatus": "CONTRIBUTORY",
     "lag": "days to weeks",
     "explanation": "Local ashfall damaged food and water resources.",
-    "confidence": "Medium",
+    "confidence": "Medium-High",
     "sourceRefs": [
-      "SRC-017"
+      "SRC-018"
     ],
-    "alternatives": [
-      "Local recovery and relief require additional evidence"
-    ]
+    "evidenceRefs": [
+      "EV-REL-0016"
+    ],
+    "causalReview": {
+      "primaryExplanation": "Local ashfall damaged food and water resources.",
+      "assessment": "supported",
+      "priorConditions": [],
+      "alternatives": [],
+      "counterevidence": [],
+      "distinguishingEvidence": [
+        "Inspect the underlying dated reports and compare conditions before and after the eruption."
+      ],
+      "searchStatus": "Initial scholarly check complete; targeted alternative search pending",
+      "reviewStatus": "pending_independent_review"
+    }
   },
   {
     "id": "REL-0017",
@@ -229,15 +241,39 @@
     "predicate": "CONTRIBUTED_TO",
     "objectId": "WT-1816-0023",
     "causalStatus": "CONTRIBUTORY",
-    "lag": "days to months",
-    "explanation": "Floating eruption debris obstructed access by sea.",
-    "confidence": "Medium",
+    "lag": "~4 years",
+    "explanation": "The 1819 report records lingering maritime difficulty; it does not measure continuous harbor closure.",
+    "confidence": "Medium-High",
     "sourceRefs": [
-      "SRC-017"
+      "SRC-018"
     ],
-    "alternatives": [
-      "Local recovery and relief require additional evidence"
-    ]
+    "evidenceRefs": [
+      "EV-REL-0017"
+    ],
+    "causalReview": {
+      "primaryExplanation": "The 1819 report records lingering maritime difficulty; it does not measure continuous harbor closure.",
+      "assessment": "supported",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-REL0017-ACCESS",
+          "explanation": "Other navigation conditions may have contributed to the reported difficulty.",
+          "kind": "cofactor",
+          "assessment": "unresolved",
+          "sourceRefs": [],
+          "evidenceNote": "No independent assessment of navigation conditions is registered.",
+          "distinguishingEvidence": [
+            "Route logs distinguishing pumice obstruction from other navigation hazards."
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "distinguishingEvidence": [
+        "Inspect the underlying dated reports and compare conditions before and after the eruption."
+      ],
+      "searchStatus": "Initial scholarly check complete; targeted alternative search pending",
+      "reviewStatus": "pending_independent_review"
+    }
   },
   {
     "id": "REL-0018",
@@ -247,12 +283,55 @@
     "causalStatus": "CONTRIBUTORY",
     "lag": "weeks to months",
     "explanation": "Lost crops contributed to a subsistence crisis; other pressures remain unresolved.",
-    "confidence": "Medium",
+    "confidence": "Medium-High",
     "sourceRefs": [
-      "SRC-017"
+      "SRC-018"
     ],
-    "alternatives": [
-      "Local recovery and relief require additional evidence"
-    ]
+    "evidenceRefs": [
+      "EV-REL-0018"
+    ],
+    "causalReview": {
+      "primaryExplanation": "Lost crops contributed to a subsistence crisis; other pressures remain unresolved.",
+      "assessment": "supported",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-REL0018-RELIEF",
+          "explanation": "Food access and relief capacity may also have shaped famine severity.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-018"
+          ],
+          "locator": "printed page 44",
+          "evidenceNote": "The article describes limited relief capacity; its relative contribution is not quantified.",
+          "distinguishingEvidence": [
+            "Dated relief deliveries, food stocks and prices across affected communities."
+          ]
+        },
+        {
+          "id": "ALT-REL0018-BASELINE",
+          "explanation": "Pre-eruption food insecurity may have increased vulnerability.",
+          "kind": "prior_condition",
+          "assessment": "unresolved",
+          "sourceRefs": [],
+          "evidenceNote": "Research question; no supporting evidence registered.",
+          "distinguishingEvidence": [
+            "Pre-April 1815 harvest, price and food-stock records."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "No counterevidence registered; this does not establish that none exists.",
+          "assessment": "not_searched"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Inspect the underlying dated reports and compare conditions before and after the eruption."
+      ],
+      "searchStatus": "Initial scholarly check complete; targeted alternative search pending",
+      "reviewStatus": "pending_independent_review"
+    }
   }
 ]

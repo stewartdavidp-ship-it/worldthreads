@@ -1,0 +1,74 @@
+[
+  {
+    "id": "EV-0022",
+    "claimId": "WT-1816-0022",
+    "sourceId": "SRC-018",
+    "locator": "printed page 43",
+    "accessedAt": "2026-10-01",
+    "support": "supports narrowed claim",
+    "provenance": "Historical reports cited by scholarly article; underlying archival originals not inspected",
+    "limitations": "One scholarly synthesis; independent human review pending",
+    "reviewer": "Codex",
+    "reviewStatus": "pending_independent_review"
+  },
+  {
+    "id": "EV-0023",
+    "claimId": "WT-1816-0023",
+    "sourceId": "SRC-018",
+    "locator": "printed page 46",
+    "accessedAt": "2026-10-01",
+    "support": "supports narrowed claim",
+    "provenance": "Historical reports cited by scholarly article; underlying archival originals not inspected",
+    "limitations": "One scholarly synthesis; independent human review pending",
+    "reviewer": "Codex",
+    "reviewStatus": "pending_independent_review"
+  },
+  {
+    "id": "EV-0024",
+    "claimId": "WT-1816-0024",
+    "sourceId": "SRC-018",
+    "locator": "printed page 43–44",
+    "accessedAt": "2026-10-01",
+    "support": "supports narrowed claim",
+    "provenance": "Historical reports cited by scholarly article; underlying archival originals not inspected",
+    "limitations": "One scholarly synthesis; independent human review pending",
+    "reviewer": "Codex",
+    "reviewStatus": "pending_independent_review"
+  },
+  {
+    "id": "EV-REL-0016",
+    "claimId": "REL-0016",
+    "sourceId": "SRC-018",
+    "locator": "printed page 43",
+    "accessedAt": "2026-10-01",
+    "support": "supports narrowed claim",
+    "provenance": "Historical reports cited by scholarly article; underlying archival originals not inspected",
+    "limitations": "One scholarly synthesis; independent human review pending",
+    "reviewer": "Codex",
+    "reviewStatus": "pending_independent_review"
+  },
+  {
+    "id": "EV-REL-0017",
+    "claimId": "REL-0017",
+    "sourceId": "SRC-018",
+    "locator": "printed page 46",
+    "accessedAt": "2026-10-01",
+    "support": "supports narrowed claim",
+    "provenance": "Historical reports cited by scholarly article; underlying archival originals not inspected",
+    "limitations": "One scholarly synthesis; independent human review pending",
+    "reviewer": "Codex",
+    "reviewStatus": "pending_independent_review"
+  },
+  {
+    "id": "EV-REL-0018",
+    "claimId": "REL-0018",
+    "sourceId": "SRC-018",
+    "locator": "printed page 43–44",
+    "accessedAt": "2026-10-01",
+    "support": "supports narrowed claim",
+    "provenance": "Historical reports cited by scholarly article; underlying archival originals not inspected",
+    "limitations": "One scholarly synthesis; independent human review pending",
+    "reviewer": "Codex",
+    "reviewStatus": "pending_independent_review"
+  }
+]

@@ -105,3 +105,17 @@ Mechanisms must track counterexamples and resilience factors. They are not deter
 ## Context window
 
 The prototype year is 1816, but the graph may include nodes from 1814–1818 whenever they are necessary to explain antecedents, lagged outcomes or persistence.
+
+## Causal review
+
+A relationship may carry `causalReview`: `primaryExplanation`, `assessment`,
+`priorConditions`, `alternatives`, `counterevidence`, `distinguishingEvidence`,
+`searchStatus` and `reviewStatus`. Alternatives are objects with stable IDs,
+explanation, kind (rival explanation, cofactor or prior condition), assessment,
+sourceRefs, locator/evidenceNote and distinguishingEvidence. Assessments are
+supported, plausible, contested, contradicted or unresolved.
+
+An alternative with no source is a research question, not an established fact.
+Counterevidence must distinguish not searched, searched but not found and actual
+contradictory observations. Source count alone does not establish independence.
+Evidence records link to the specific observation or relationship they support.
