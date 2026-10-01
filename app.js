@@ -1,104 +1,88 @@
-const state={observations:[],system:'ALL'};
-const threadIds=['WT-1816-0001','WT-1816-0002','WT-1816-0003','WT-1816-0004'];
+const state={observations:[],relationships:[],threads:[],sources:[],system:'ALL',threadId:null};
 
 async function load(){
-  const res=await fetch('data/1816/observations.json');
-  state.observations=await res.json();
-  bind();
-  render();
+  const [observations,relationships,threads,sources]=await Promise.all([
+    fetch('data/1816/observations.json').then(r=>r.json()),
+    fetch('data/1816/relationships.json').then(r=>r.json()),
+    fetch('data/1816/threads.json').then(r=>r.json()),
+    fetch('data/1816/sources.json').then(r=>r.json())
+  ]);
+  Object.assign(state,{observations,relationships,threads,sources,threadId:threads[0]?.id||null});
+  bind(); render();
 }
 
 function bind(){
   document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{
     document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));
-    btn.classList.add('active');
-    state.system=btn.dataset.system;
-    renderCards();
+    btn.classList.add('active'); state.system=btn.dataset.system; renderCards();
   }));
-
   document.querySelectorAll('.map-node').forEach(btn=>btn.addEventListener('click',()=>{
-    const region=btn.dataset.region;
-    const first=state.observations.find(o=>o.continent===region);
+    const first=state.observations.find(o=>o.continent===btn.dataset.region && !o.contextNode) || state.observations.find(o=>o.continent===btn.dataset.region);
     if(first) openDetail(first);
   }));
-
+  document.getElementById('threadSelect').addEventListener('change',e=>{state.threadId=e.target.value;renderThread();});
   document.getElementById('closeDialog').addEventListener('click',()=>document.getElementById('detailDialog').close());
 }
 
-function render(){
-  renderThread();
-  renderCards();
+function render(){ renderStats(); renderThreadOptions(); renderThread(); renderCards(); }
+
+function renderStats(){
+  const high=state.observations.filter(o=>o.confidence==='High').length;
+  const continents=new Set(state.observations.map(o=>o.continent));
+  document.getElementById('statObservations').textContent=state.observations.length;
+  document.getElementById('statThreads').textContent=state.threads.length;
+  document.getElementById('statSources').textContent=state.sources.length;
+  document.getElementById('statRelations').textContent=state.relationships.length;
+  document.getElementById('highConfidence').textContent=high;
+  document.getElementById('regionsCovered').textContent=continents.size;
+}
+
+function renderThreadOptions(){
+  const select=document.getElementById('threadSelect'); select.innerHTML='';
+  state.threads.forEach(t=>{const o=document.createElement('option');o.value=t.id;o.textContent=t.title;select.appendChild(o);});
+  if(state.threadId) select.value=state.threadId;
 }
 
 function renderThread(){
-  const root=document.getElementById('threadGraph');
-  root.innerHTML='';
-  threadIds.map(id=>state.observations.find(o=>o.id===id)).filter(Boolean).forEach(o=>{
-    const el=document.createElement('button');
-    el.className='thread-node';
-    el.innerHTML=`<span class="system">${escapeHtml(o.system)}</span><strong>${escapeHtml(shortTitle(o))}</strong><small>${escapeHtml(o.lag||'')}</small>`;
-    el.addEventListener('click',()=>openDetail(o));
-    root.appendChild(el);
+  const thread=state.threads.find(t=>t.id===state.threadId)||state.threads[0]; if(!thread)return;
+  document.getElementById('threadTitle').textContent=thread.title;
+  document.getElementById('threadSubtitle').textContent=thread.subtitle||'';
+  document.getElementById('threadDescription').textContent=thread.description||'';
+  const root=document.getElementById('threadGraph'); root.innerHTML='';
+  thread.nodeIds.forEach((id,i)=>{
+    const o=obs(id); if(!o)return;
+    const node=document.createElement('button'); node.className='thread-node active-node';
+    node.innerHTML=`<span class="system">${escapeHtml(o.system)}</span><strong>${escapeHtml(o.title)}</strong><small>${escapeHtml(o.place||'')}</small>`;
+    node.addEventListener('click',()=>openDetail(o)); root.appendChild(node);
+    const relId=thread.relationshipIds?.[i]; const rel=state.relationships.find(r=>r.id===relId);
+    if(rel){const edge=document.createElement('div');edge.className='edge-label';edge.innerHTML=`<span>${escapeHtml(rel.predicate.replaceAll('_',' '))}<br>${escapeHtml(rel.lag||'')}</span>`;root.appendChild(edge);}
   });
 }
 
 function renderCards(){
   const root=document.getElementById('cards');
-  const filtered=state.observations.filter(o=>state.system==='ALL'||o.system===state.system);
-  document.getElementById('countLabel').textContent=`${filtered.length} shown`;
+  const filtered=state.observations.filter(o=>(state.system==='ALL'||o.system===state.system));
+  document.getElementById('countLabel').textContent=`${filtered.length} of ${state.observations.length} shown`;
   root.innerHTML='';
   filtered.forEach(o=>{
-    const el=document.createElement('article');
-    el.className='card';
-    el.innerHTML=`
-      <div class="card-top"><span class="pill">${escapeHtml(o.system)}</span><span class="confidence">${escapeHtml(o.confidence)}</span></div>
-      <h4>${escapeHtml(shortTitle(o))}</h4>
-      <p>${escapeHtml(o.observation)}</p>
-      <div class="meta"><span>${escapeHtml(o.continent)}</span><span>${escapeHtml(o.place)}</span><span>${escapeHtml(o.coverageType)}</span></div>`;
-    el.addEventListener('click',()=>openDetail(o));
-    root.appendChild(el);
+    const el=document.createElement('article'); el.className='card';
+    el.innerHTML=`<div class="card-top"><span class="pill">${escapeHtml(o.system)}</span><span class="confidence">${escapeHtml(o.confidence)}</span></div><h4>${escapeHtml(o.title)}</h4><p>${escapeHtml(o.observation)}</p><div class="meta"><span>${escapeHtml(o.startDate)}</span><span>${escapeHtml(o.continent)}</span><span>${escapeHtml(o.place)}</span><span>${escapeHtml(o.coverageType)}</span></div>`;
+    el.addEventListener('click',()=>openDetail(o)); root.appendChild(el);
   });
 }
 
-function shortTitle(o){
-  const map={
-    'WT-1816-0001':'Temperature shock',
-    'WT-1816-0002':'Fish populations respond',
-    'WT-1816-0003':'Food pressure shifts fishing',
-    'WT-1816-0004':'Adaptation becomes structural',
-    'WT-1816-0005':'Cold summer in Central Europe',
-    'WT-1816-0006':'Harvest losses become price pressure',
-    'WT-1816-0007':'Eight weeks of persistent rain'
-  };
-  return map[o.id]||o.topic;
-}
-
 function openDetail(o){
-  const dlg=document.getElementById('detailDialog');
-  const content=document.getElementById('dialogContent');
-  content.innerHTML=`
-    <p class="eyebrow">${escapeHtml(o.id)}</p>
-    <h2>${escapeHtml(shortTitle(o))}</h2>
-    <p>${escapeHtml(o.observation)}</p>
-    <dl class="detail-grid">
-      <dt>System</dt><dd>${escapeHtml(o.system)}</dd>
-      <dt>Role</dt><dd>${escapeHtml((o.analyticalRole||[]).join(', '))}</dd>
-      <dt>Region</dt><dd>${escapeHtml(o.region)}</dd>
-      <dt>Place</dt><dd>${escapeHtml(o.place)}</dd>
-      <dt>Confidence</dt><dd>${escapeHtml(o.confidence)}</dd>
-      <dt>Relationship</dt><dd>${escapeHtml(o.relationship||'')}</dd>
-      <dt>Lag</dt><dd>${escapeHtml(o.lag||'')}</dd>
-      <dt>Evidence</dt><dd>${escapeHtml((o.evidenceType||[]).join(', '))}</dd>
-      <dt>Related</dt><dd>${escapeHtml((o.relatedIds||[]).join(', '))}</dd>
-      <dt>Source</dt><dd><a class="source-link" href="${o.source}" target="_blank" rel="noreferrer">${escapeHtml(o.source)}</a></dd>
-    </dl>`;
+  const dlg=document.getElementById('detailDialog'); const content=document.getElementById('dialogContent');
+  const rels=state.relationships.filter(r=>r.subjectId===o.id||r.objectId===o.id);
+  const sourceLinks=(o.sourceRefs||[]).map(id=>source(id)).filter(Boolean).map(s=>`<a class="source-badge" href="${escapeAttr(s.url)}" target="_blank" rel="noreferrer">${escapeHtml(s.id)} · ${escapeHtml(s.authorOrOrg)}</a>`).join('');
+  const relHtml=rels.map(r=>{const other=obs(r.subjectId===o.id?r.objectId:r.subjectId);const direction=r.subjectId===o.id?'→':'←';return `<div class="relation-item"><b>${direction} ${escapeHtml(r.predicate.replaceAll('_',' '))}</b> ${escapeHtml(other?.title||'Unknown node')}<br><span>${escapeHtml(r.explanation||'')} · ${escapeHtml(r.confidence)} confidence</span></div>`}).join('');
+  content.innerHTML=`<p class="eyebrow">${escapeHtml(o.id)}</p><h2>${escapeHtml(o.title)}</h2><p>${escapeHtml(o.observation)}</p><dl class="detail-grid"><dt>Date</dt><dd>${escapeHtml(o.startDate)}${o.endDate&&o.endDate!==o.startDate?' → '+escapeHtml(o.endDate):''}</dd><dt>System</dt><dd>${escapeHtml(o.system)}</dd><dt>Role</dt><dd>${escapeHtml((o.analyticalRole||[]).join(', '))}</dd><dt>Coverage</dt><dd>${escapeHtml(o.coverageType)}</dd><dt>Region</dt><dd>${escapeHtml(o.region)}</dd><dt>Entity</dt><dd>${escapeHtml(o.historicalEntity)}</dd><dt>Place</dt><dd>${escapeHtml(o.place)}</dd><dt>Confidence</dt><dd>${escapeHtml(o.confidence)}</dd><dt>Evidence</dt><dd>${escapeHtml((o.evidenceType||[]).join(', '))}</dd>${o.value?`<dt>Value</dt><dd>${escapeHtml(o.value)} ${escapeHtml(o.unit||'')}</dd>`:''}${o.baseline?`<dt>Baseline</dt><dd>${escapeHtml(o.baseline)}</dd>`:''}${o.anomaly?`<dt>Anomaly</dt><dd>${escapeHtml(o.anomaly)}</dd>`:''}</dl><h3>Sources</h3><div class="source-badges">${sourceLinks||'No source registry entries yet.'}</div><h3>Connections</h3><div class="relation-list">${relHtml||'<div class="relation-item">No explicit graph relationships added yet.</div>'}</div>`;
   dlg.showModal();
 }
 
-function escapeHtml(str=''){
-  return String(str).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
-}
+function obs(id){return state.observations.find(o=>o.id===id)}
+function source(id){return state.sources.find(s=>s.id===id)}
+function escapeHtml(str=''){return String(str).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
+function escapeAttr(str=''){return escapeHtml(str)}
 
-load().catch(err=>{
-  document.getElementById('cards').innerHTML=`<p>Could not load prototype data: ${escapeHtml(err.message)}</p>`;
-});
+load().catch(err=>{document.getElementById('cards').innerHTML=`<p>Could not load prototype data: ${escapeHtml(err.message)}</p>`;});
