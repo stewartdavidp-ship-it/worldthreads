@@ -54,3 +54,14 @@ Gulf of Maine:
 ```
 
 The dataset is intentionally small. The next phase expands environmental, biological, agricultural, economic, political and cultural evidence globally before drawing broader causal conclusions.
+
+## v0.3 evidence and thread update
+
+The dataset has 24 observations, 18 relationships, six threads and 17 sources.
+The new local Tambora thread distinguishes direct food/water and maritime
+disruption from distant climatic effects. Its three new observations have
+medium confidence and explicitly require scholarly corroboration; recovery
+through 1816 remains open.
+
+Thread connections now use each relationship's actual endpoints instead of
+assuming every thread is a linear chain. Observation details show review status.

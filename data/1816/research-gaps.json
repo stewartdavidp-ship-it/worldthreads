@@ -1,10 +1,67 @@
 [
-{"id":"GAP-001","region":"West Africa","domain":"climate + agriculture + politics","question":"What 1815–1817 weather, harvest, food-price and political records survive for Asante, Oyo, Dahomey, Sokoto and neighboring systems?","priority":"High","status":"Open"},
-{"id":"GAP-002","region":"East Africa / Indian Ocean","domain":"climate + trade + disease","question":"What documentary or proxy evidence can connect 1816 climate variability to ports, monsoon trade, crops, livestock or disease ecology?","priority":"High","status":"Open"},
-{"id":"GAP-003","region":"South Asia","domain":"monsoon + agriculture + prices","question":"Resolve regional rainfall/temperature anomalies and crop/price effects across Bengal, Madras, Bombay and inland polities for 1815–1817.","priority":"High","status":"Open"},
-{"id":"GAP-004","region":"Southeast Asia","domain":"Tambora direct impacts + recovery","question":"Build local Sumbawa, Bali, Java and maritime trade threads that distinguish direct eruption impacts from distant climatic effects.","priority":"High","status":"Open"},
-{"id":"GAP-005","region":"South America","domain":"climate + independence + economy","question":"Add climate, harvest, trade and military observations around the Río de la Plata, Andes and Brazil alongside political events.","priority":"High","status":"Open"},
-{"id":"GAP-006","region":"Oceania","domain":"climate + Indigenous history + colonial contact","question":"Identify documentary, oral-history and proxy evidence for 1816 conditions without imposing European archival density as the standard of historical importance.","priority":"High","status":"Open"},
-{"id":"GAP-007","region":"Global oceans","domain":"sea surface / storms / fisheries / trade routes","question":"Map marine and atmospheric observations that connect ocean conditions to shipping, fisheries and commodity flows.","priority":"Medium","status":"Open"},
-{"id":"GAP-008","region":"Global","domain":"population health","question":"Add mortality, epidemic, nutrition, birth/death and migration evidence while separating contemporary observation from later reconstruction.","priority":"High","status":"Open"}
+  {
+    "id": "GAP-001",
+    "region": "West Africa",
+    "domain": "climate + agriculture + politics",
+    "question": "What 1815–1817 weather, harvest, food-price and political records survive for Asante, Oyo, Dahomey, Sokoto and neighboring systems?",
+    "priority": "High",
+    "status": "Open"
+  },
+  {
+    "id": "GAP-002",
+    "region": "East Africa / Indian Ocean",
+    "domain": "climate + trade + disease",
+    "question": "What documentary or proxy evidence can connect 1816 climate variability to ports, monsoon trade, crops, livestock or disease ecology?",
+    "priority": "High",
+    "status": "Open"
+  },
+  {
+    "id": "GAP-003",
+    "region": "South Asia",
+    "domain": "monsoon + agriculture + prices",
+    "question": "Resolve regional rainfall/temperature anomalies and crop/price effects across Bengal, Madras, Bombay and inland polities for 1815–1817.",
+    "priority": "High",
+    "status": "Open"
+  },
+  {
+    "id": "GAP-004",
+    "region": "Southeast Asia",
+    "domain": "Tambora direct impacts + recovery",
+    "question": "Build local Sumbawa, Bali, Java and maritime trade threads that distinguish direct eruption impacts from distant climatic effects.",
+    "priority": "High",
+    "status": "Partially researched",
+    "notes": "Initial direct-impact thread added from a secondary synthesis. Scholarly corroboration, island-specific chronology, relief, trade and recovery through 1816 remain open."
+  },
+  {
+    "id": "GAP-005",
+    "region": "South America",
+    "domain": "climate + independence + economy",
+    "question": "Add climate, harvest, trade and military observations around the Río de la Plata, Andes and Brazil alongside political events.",
+    "priority": "High",
+    "status": "Open"
+  },
+  {
+    "id": "GAP-006",
+    "region": "Oceania",
+    "domain": "climate + Indigenous history + colonial contact",
+    "question": "Identify documentary, oral-history and proxy evidence for 1816 conditions without imposing European archival density as the standard of historical importance.",
+    "priority": "High",
+    "status": "Open"
+  },
+  {
+    "id": "GAP-007",
+    "region": "Global oceans",
+    "domain": "sea surface / storms / fisheries / trade routes",
+    "question": "Map marine and atmospheric observations that connect ocean conditions to shipping, fisheries and commodity flows.",
+    "priority": "Medium",
+    "status": "Open"
+  },
+  {
+    "id": "GAP-008",
+    "region": "Global",
+    "domain": "population health",
+    "question": "Add mortality, epidemic, nutrition, birth/death and migration evidence while separating contemporary observation from later reconstruction.",
+    "priority": "High",
+    "status": "Open"
+  }
 ]

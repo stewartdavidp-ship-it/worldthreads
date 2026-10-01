@@ -49,14 +49,27 @@ function renderThread(){
   document.getElementById('threadSubtitle').textContent=thread.subtitle||'';
   document.getElementById('threadDescription').textContent=thread.description||'';
   const root=document.getElementById('threadGraph'); root.innerHTML='';
-  thread.nodeIds.forEach((id,i)=>{
+  document.querySelector('.thread-connections')?.remove();
+  thread.nodeIds.forEach(id=>{
     const o=obs(id); if(!o)return;
     const node=document.createElement('button'); node.className='thread-node active-node';
     node.innerHTML=`<span class="system">${escapeHtml(o.system)}</span><strong>${escapeHtml(o.title)}</strong><small>${escapeHtml(o.place||'')}</small>`;
     node.addEventListener('click',()=>openDetail(o)); root.appendChild(node);
-    const relId=thread.relationshipIds?.[i]; const rel=state.relationships.find(r=>r.id===relId);
-    if(rel){const edge=document.createElement('div');edge.className='edge-label';edge.innerHTML=`<span>${escapeHtml(rel.predicate.replaceAll('_',' '))}<br>${escapeHtml(rel.lag||'')}</span>`;root.appendChild(edge);}
+
   });
+  const connections=document.createElement('section'); connections.className='thread-connections';
+  const heading=document.createElement('h4'); heading.textContent='Evidence-supported connections'; connections.appendChild(heading);
+  (thread.relationshipIds||[]).forEach(id=>{
+    const r=state.relationships.find(r=>r.id===id); if(!r)return;
+    const el=document.createElement('div'); el.className='relation-item';
+    [r.subjectId,r.objectId].forEach((nodeId,i)=>{
+      if(i){const label=document.createElement('span');label.textContent=` → ${r.predicate.replaceAll('_',' ')} → `;el.appendChild(label);}
+      const button=document.createElement('button');button.className='connection-node';button.textContent=obs(nodeId)?.title||nodeId;button.addEventListener('click',()=>openDetail(obs(nodeId)));el.appendChild(button);
+    });
+    const detail=document.createElement('p'); detail.textContent=`${r.causalStatus} · ${r.confidence} confidence · ${r.lag||'Lag unknown'} — ${r.explanation}`;el.appendChild(detail);connections.appendChild(el);
+  });
+  root.after(connections);
+
 }
 
 function renderCards(){
@@ -76,7 +89,7 @@ function openDetail(o){
   const rels=state.relationships.filter(r=>r.subjectId===o.id||r.objectId===o.id);
   const sourceLinks=(o.sourceRefs||[]).map(id=>source(id)).filter(Boolean).map(s=>`<a class="source-badge" href="${escapeAttr(s.url)}" target="_blank" rel="noreferrer">${escapeHtml(s.id)} · ${escapeHtml(s.authorOrOrg)}</a>`).join('');
   const relHtml=rels.map(r=>{const other=obs(r.subjectId===o.id?r.objectId:r.subjectId);const direction=r.subjectId===o.id?'→':'←';return `<div class="relation-item"><b>${direction} ${escapeHtml(r.predicate.replaceAll('_',' '))}</b> ${escapeHtml(other?.title||'Unknown node')}<br><span>${escapeHtml(r.explanation||'')} · ${escapeHtml(r.confidence)} confidence</span></div>`}).join('');
-  content.innerHTML=`<p class="eyebrow">${escapeHtml(o.id)}</p><h2>${escapeHtml(o.title)}</h2><p>${escapeHtml(o.observation)}</p><dl class="detail-grid"><dt>Date</dt><dd>${escapeHtml(o.startDate)}${o.endDate&&o.endDate!==o.startDate?' → '+escapeHtml(o.endDate):''}</dd><dt>System</dt><dd>${escapeHtml(o.system)}</dd><dt>Role</dt><dd>${escapeHtml((o.analyticalRole||[]).join(', '))}</dd><dt>Coverage</dt><dd>${escapeHtml(o.coverageType)}</dd><dt>Region</dt><dd>${escapeHtml(o.region)}</dd><dt>Entity</dt><dd>${escapeHtml(o.historicalEntity)}</dd><dt>Place</dt><dd>${escapeHtml(o.place)}</dd><dt>Confidence</dt><dd>${escapeHtml(o.confidence)}</dd><dt>Evidence</dt><dd>${escapeHtml((o.evidenceType||[]).join(', '))}</dd>${o.value?`<dt>Value</dt><dd>${escapeHtml(o.value)} ${escapeHtml(o.unit||'')}</dd>`:''}${o.baseline?`<dt>Baseline</dt><dd>${escapeHtml(o.baseline)}</dd>`:''}${o.anomaly?`<dt>Anomaly</dt><dd>${escapeHtml(o.anomaly)}</dd>`:''}</dl><h3>Sources</h3><div class="source-badges">${sourceLinks||'No source registry entries yet.'}</div><h3>Connections</h3><div class="relation-list">${relHtml||'<div class="relation-item">No explicit graph relationships added yet.</div>'}</div>`;
+  content.innerHTML=`<p class="eyebrow">${escapeHtml(o.id)}</p><h2>${escapeHtml(o.title)}</h2><p>${escapeHtml(o.observation)}</p><dl class="detail-grid"><dt>Date</dt><dd>${escapeHtml(o.startDate)}${o.endDate&&o.endDate!==o.startDate?' → '+escapeHtml(o.endDate):''}</dd><dt>System</dt><dd>${escapeHtml(o.system)}</dd><dt>Role</dt><dd>${escapeHtml((o.analyticalRole||[]).join(', '))}</dd><dt>Coverage</dt><dd>${escapeHtml(o.coverageType)}</dd><dt>Region</dt><dd>${escapeHtml(o.region)}</dd><dt>Entity</dt><dd>${escapeHtml(o.historicalEntity)}</dd><dt>Place</dt><dd>${escapeHtml(o.place)}</dd><dt>Review status</dt><dd>${escapeHtml(o.researchStatus)}</dd><dt>Confidence</dt><dd>${escapeHtml(o.confidence)}</dd><dt>Evidence</dt><dd>${escapeHtml((o.evidenceType||[]).join(', '))}</dd>${o.value?`<dt>Value</dt><dd>${escapeHtml(o.value)} ${escapeHtml(o.unit||'')}</dd>`:''}${o.baseline?`<dt>Baseline</dt><dd>${escapeHtml(o.baseline)}</dd>`:''}${o.anomaly?`<dt>Anomaly</dt><dd>${escapeHtml(o.anomaly)}</dd>`:''}</dl><h3>Sources</h3><div class="source-badges">${sourceLinks||'No source registry entries yet.'}</div><h3>Connections</h3><div class="relation-list">${relHtml||'<div class="relation-item">No explicit graph relationships added yet.</div>'}</div>`;
   dlg.showModal();
 }
 
