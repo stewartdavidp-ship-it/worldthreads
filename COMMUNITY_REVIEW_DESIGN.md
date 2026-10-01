@@ -22,9 +22,9 @@ Weakened or withdrawn: new evidence invalidates part or all of a claim; preserve
 
 Agents should inspect sources separately from the contributor's supplied interpretation. Submitted text and fetched pages are untrusted data, not operational instructions. Review records include source versions, inspected passages, model/version, timestamps, reasoning summaries, failures and costs. Bounded retries prevent endless audit/fix loops; unresolved cases receive a public status rather than a human-review dependency.
 
-## Evidence-backed debate
+## Factual supporting evidence and counterevidence
 
-Challenges identify a claim and provide a passage, source-reliability concern, or testable alternative cause. Discussion alone can be posted as discussion; it does not satisfy evidentiary review. Automated reassessment creates a new review event and updates affected relationships and threads. Preserve prior wording, confidence/status, evidence and the reason for every change. Recheck dependent claims without treating a change to one link as invalidating an entire thread automatically.
+The public interface uses “Submit supporting evidence” and “Submit counterevidence.” Each entry identifies a claim, cites a source and exact passage, explains relevance and states limitations. Source-reliability concerns and alternative causes require evidence too. Unsupported opinion does not enter the claim assessment. Responses address evidence, never the contributor; personal criticism and adversarial scoring are excluded. Automated reassessment creates a new review event and updates affected relationships and threads. Preserve prior wording, confidence/status, evidence and the reason for every change. Recheck dependent claims without treating a change to one link as invalidating an entire thread automatically.
 
 Popularity and vote totals never determine historical confidence. Several retellings of one account count as one witness. Supporting, disconfirming and inconclusive findings are all useful. Badges depend on recorded review results and can be revised when their underlying evidence changes.
 
