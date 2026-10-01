@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>WorldThreads — 1816 Prototype</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="threads.css" />
 </head>
 <body>
   <header class="site-header">
@@ -13,24 +14,25 @@
       <div class="tagline">History isn't a collection of events. It's the threads that connect them.</div>
     </div>
     <nav>
-      <button class="nav-btn active" data-view="year">1816</button>
-      <button class="nav-btn" data-view="threads">Threads</button>
-      <button class="nav-btn" data-view="evidence">Evidence</button>
+      <button class="nav-btn active">1816</button>
+      <button class="nav-btn">Threads</button>
+      <button class="nav-btn">Evidence</button>
     </nav>
   </header>
 
   <main>
     <section class="hero">
       <div>
-        <p class="eyebrow">PROTOTYPE YEAR</p>
+        <p class="eyebrow">PROTOTYPE YEAR · CONTEXT 1814–1818</p>
         <h1>1816</h1>
         <h2>The world in motion</h2>
-        <p class="intro">Explore how climate, biology, food systems, economics and human responses interacted across regions. This prototype starts with a small verified dataset and is designed to grow into a global historical systems graph.</p>
+        <p class="intro">Explore evidence as a historical systems graph: Earth, biosphere, production, people, power and culture. Facts remain separate from the relationships historians infer between them.</p>
       </div>
       <div class="hero-card">
-        <div class="hero-stat"><span>7</span><small>verified observations</small></div>
-        <div class="hero-stat"><span>2</span><small>prototype regions</small></div>
-        <div class="hero-stat"><span>5</span><small>interacting systems</small></div>
+        <div class="hero-stat"><span id="statObservations">—</span><small>observations</small></div>
+        <div class="hero-stat"><span id="statThreads">—</span><small>traceable threads</small></div>
+        <div class="hero-stat"><span id="statSources">—</span><small>sources</small></div>
+        <div class="hero-stat"><span id="statRelations">—</span><small>relationships</small></div>
       </div>
     </section>
 
@@ -43,57 +45,51 @@
       <button class="filter power" data-system="POWER & CULTURE">Power & culture</button>
     </section>
 
+    <section class="data-strip">
+      <div class="data-chip"><strong id="highConfidence">—</strong><span>high-confidence observations</span></div>
+      <div class="data-chip"><strong id="regionsCovered">—</strong><span>continents represented</span></div>
+      <div class="data-chip"><strong>5</strong><span>interacting systems</span></div>
+      <div class="data-chip"><strong>1814–18</strong><span>causal context window</span></div>
+    </section>
+
     <section class="layout">
       <aside class="panel map-panel">
-        <div class="section-head">
-          <p class="eyebrow">WORLD VIEW</p>
-          <h3>Where the evidence sits</h3>
-        </div>
+        <div class="section-head"><p class="eyebrow">WORLD VIEW</p><h3>Where the evidence sits</h3><p>Click a region to open one of its evidence records.</p></div>
         <div class="map-shell">
-          <div class="map-label europe">Europe</div>
-          <button class="map-node europe-node" data-region="Europe" aria-label="Europe observations"></button>
-          <div class="map-label na">North America</div>
-          <button class="map-node na-node" data-region="North America" aria-label="North America observations"></button>
-          <div class="map-empty">The global map fills as research expands.</div>
+          <div class="map-label na">North America</div><button class="map-node na-node" data-region="North America" aria-label="North America"></button>
+          <div class="map-label europe">Europe</div><button class="map-node europe-node" data-region="Europe" aria-label="Europe"></button>
+          <div class="map-label asia">Asia</div><button class="map-node asia-node" data-region="Asia" aria-label="Asia"></button>
+          <div class="map-label africa">Africa</div><button class="map-node africa-node" data-region="Africa" aria-label="Africa"></button>
+          <div class="map-label sa">South America</div><button class="map-node sa-node" data-region="South America" aria-label="South America"></button>
+          <div class="map-empty">Coverage shows evidence gathered so far, not historical importance. Research gaps remain explicit.</div>
         </div>
-        <div class="legend">
-          <span><i class="dot high"></i> High confidence</span>
-          <span><i class="dot medium"></i> Medium-high confidence</span>
-        </div>
+        <div class="legend"><span><i class="dot high"></i> High confidence</span><span><i class="dot medium"></i> Medium / mixed evidence</span></div>
       </aside>
 
       <section class="panel thread-panel">
         <div class="section-head">
           <p class="eyebrow">TRACE</p>
-          <h3>Gulf of Maine thread</h3>
-          <p>Click any node to inspect the evidence behind it.</p>
+          <h3 id="threadTitle">Historical thread</h3>
+          <p id="threadSubtitle"></p>
         </div>
+        <div class="thread-toolbar"><select id="threadSelect" class="thread-select" aria-label="Choose a historical thread"></select></div>
+        <p id="threadDescription" class="thread-description"></p>
         <div id="threadGraph" class="thread-graph"></div>
       </section>
     </section>
 
     <section class="panel observations-panel">
       <div class="section-head row-head">
-        <div>
-          <p class="eyebrow">1816 DATASET</p>
-          <h3>Observations</h3>
-        </div>
+        <div><p class="eyebrow">1816 KNOWLEDGE GRAPH</p><h3>Observations</h3></div>
         <div id="countLabel" class="count-label"></div>
       </div>
       <div id="cards" class="cards"></div>
     </section>
   </main>
 
-  <dialog id="detailDialog">
-    <button id="closeDialog" class="close" aria-label="Close">×</button>
-    <div id="dialogContent"></div>
-  </dialog>
+  <dialog id="detailDialog"><button id="closeDialog" class="close" aria-label="Close">×</button><div id="dialogContent"></div></dialog>
 
-  <footer>
-    <span>WorldThreads v0.1</span>
-    <span>Prototype data: 1816</span>
-  </footer>
-
+  <footer><span>WorldThreads v0.2</span><span>Prototype year: 1816 · evidence and relationships separated</span></footer>
   <script src="app.js"></script>
 </body>
 </html>
