@@ -936,5 +936,92 @@
     "evidenceRefs": [
       "EV-R16-WT-1816-0030"
     ]
+  },
+  {
+    "continent": "Oceania",
+    "historicalEntity": "British Australian colonies",
+    "researchStatus": "Source checked; independent review pending",
+    "confidence": "Medium-High",
+    "id": "WT-1816-0031",
+    "title": "Macquarie records sustained heavy rain",
+    "startDate": "1816-05-31",
+    "endDate": "1816-05-31",
+    "datePrecision": "DAY",
+    "region": "New South Wales",
+    "place": "Sydney / Hawkesbury catchments",
+    "observation": "The 31 May diary entry describes four days of heavy rain and three days of southeasterly gales. This is a qualitative report, not a rainfall measurement.",
+    "coverageType": "CONDITION",
+    "system": "EARTH",
+    "topic": "Weather / agriculture",
+    "analyticalRole": [
+      "CONDITION"
+    ],
+    "evidenceType": [
+      "Diary transcription"
+    ],
+    "sourceRefs": [
+      "SRC-025"
+    ],
+    "evidenceRefs": [
+      "EV-R17-WT-1816-0031"
+    ]
+  },
+  {
+    "continent": "Oceania",
+    "historicalEntity": "British Australian colonies",
+    "researchStatus": "Source checked; independent review pending",
+    "confidence": "Medium-High",
+    "id": "WT-1816-0032",
+    "title": "Flood and crop losses reported near Windsor",
+    "startDate": "1816-05-31",
+    "endDate": "1816-05-31",
+    "datePrecision": "DAY",
+    "region": "New South Wales",
+    "place": "Hawkesbury River and South Creek",
+    "observation": "A dispatch received on 2 June reports flooding on 31 May and anticipated losses of houses and grain. The 3 June entry relays further crop-loss reports; these are official accounts, not a surveyed damage total.",
+    "coverageType": "EVENT",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "Weather / agriculture",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Diary transcription"
+    ],
+    "sourceRefs": [
+      "SRC-026"
+    ],
+    "evidenceRefs": [
+      "EV-R17-WT-1816-0032"
+    ]
+  },
+  {
+    "continent": "Oceania",
+    "historicalEntity": "British Australian colonies",
+    "researchStatus": "Source checked; independent review pending",
+    "confidence": "Medium-High",
+    "id": "WT-1816-0033",
+    "title": "Hobart newspaper anticipates a plentiful harvest",
+    "startDate": "1816-08-31",
+    "endDate": "1816-08-31",
+    "datePrecision": "DAY",
+    "region": "Van Diemen’s Land",
+    "place": "Hobart / Tasmania",
+    "observation": "Garden quotes the 31 August Hobart Gazette anticipating an abundant harvest and possible supply to Port Jackson despite severe weather. This records an expectation, not realized output.",
+    "coverageType": "EVENT",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "Weather / agriculture",
+    "analyticalRole": [
+      "RESILIENCE"
+    ],
+    "evidenceType": [
+      "Newspaper quoted through scholarship"
+    ],
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "evidenceRefs": [
+      "EV-R17-WT-1816-0033"
+    ]
   }
 ]

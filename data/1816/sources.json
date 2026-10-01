@@ -379,5 +379,51 @@
       "colonial records"
     ],
     "notes": "Full article inspected, Acts of God section and methodological introduction. Underlying archival letters and registers remain uninspected."
+  },
+  {
+    "id": "SRC-025",
+    "type": "Primary diary transcription",
+    "authorOrOrg": "Lachlan Macquarie; Macquarie University archive",
+    "title": "1816 journal, May",
+    "year": 1816,
+    "url": "https://www.mq.edu.au/macquarie-archive/lema/1816/1816may.html",
+    "quality": "Medium-High",
+    "topics": [
+      "weather",
+      "floods",
+      "New South Wales"
+    ],
+    "notes": "University transcription inspected; manuscript not inspected. June reports relay magistrates’ dispatches."
+  },
+  {
+    "id": "SRC-026",
+    "type": "Primary diary transcription",
+    "authorOrOrg": "Lachlan Macquarie; Macquarie University archive",
+    "title": "1816 journal, June",
+    "year": 1816,
+    "url": "https://www.mq.edu.au/macquarie-archive/lema/1816/1816june.html",
+    "quality": "Medium-High",
+    "topics": [
+      "weather",
+      "floods",
+      "New South Wales"
+    ],
+    "notes": "University transcription inspected; manuscript not inspected. June reports relay magistrates’ dispatches."
+  },
+  {
+    "id": "SRC-027",
+    "type": "Historical research article",
+    "authorOrOrg": "Don Garden; Journal of the Royal Australian Historical Society",
+    "title": "A Wet and Cold El Niño: the Tambora volcano’s impact in the Australian colonies",
+    "year": 2021,
+    "url": "https://www.rahs.org.au/wp-content/uploads/2023/02/4.-Garden-JRAHS-Vol-107-Pt-2-Dec-2021.pdf",
+    "quality": "Medium-High",
+    "topics": [
+      "Australian colonies",
+      "weather",
+      "flood vulnerability",
+      "harvests"
+    ],
+    "notes": "Published version inspected, pp. 186–188; primary newspaper passages quoted through this article remain uninspected. Its volcanic attribution is not independently established here."
   }
 ]

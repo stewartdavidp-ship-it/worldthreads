@@ -981,5 +981,77 @@
       "searchStatus": "Initial alternatives inspected; wider search pending",
       "reviewStatus": "pending_independent_review"
     }
+  },
+  {
+    "id": "REL-0024",
+    "subjectId": "WT-1816-0031",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0032",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "same episode",
+    "explanation": "Heavy rain accompanied the flood episode; damage also depended on exposure. The diary does not isolate rainfall’s contribution.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-025",
+      "SRC-026",
+      "SRC-027"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-R17-REL-0024-A",
+      "EV-R17-REL-0024-B",
+      "EV-R17-REL-0024-C"
+    ],
+    "causalReview": {
+      "primaryExplanation": "Rainfall contributed to inundation",
+      "assessment": "supported",
+      "priorConditions": [
+        "Floodplain exposure"
+      ],
+      "alternatives": [
+        {
+          "id": "ALT-REL0024-EXPOSURE",
+          "explanation": "Settlement on low ground increased exposure.",
+          "kind": "prior_condition",
+          "assessment": "supported",
+          "sourceRefs": [
+            "SRC-027"
+          ],
+          "locator": "Published p. 186",
+          "evidenceNote": "Garden discusses residences on vulnerable floodplains.",
+          "distinguishingEvidence": [
+            "Compare losses on high and low ground."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "Hobart’s harvest expectation cautions against uniform agricultural failure across colonies.",
+          "assessment": "supported"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Inspect local damage, land-use and rainfall records."
+      ],
+      "searchStatus": "Exposure inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0025",
+    "subjectId": "WT-1816-0032",
+    "predicate": "ASSOCIATED_WITH",
+    "objectId": "WT-1816-0033",
+    "causalStatus": "ASSOCIATED",
+    "lag": "~3 months",
+    "explanation": "The newspaper contrasted the colonies’ agricultural prospects. This is comparison, not evidence that one outcome caused the other.",
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-R17-REL-0025"
+    ]
   }
 ]

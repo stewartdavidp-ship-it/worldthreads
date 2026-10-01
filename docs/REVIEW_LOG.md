@@ -66,3 +66,13 @@ Chrome provided the full Metropolitan Opera timeline after automated access reac
 Added the bounded Jessore August 1817 epidemic record from Harrison’s full article. A separate contested relationship records the historical Tambora hypothesis without endorsing it. Labour mobility is preserved as an explicitly unproven cofactor. Colonial reporting and retrospective disease classification limit interpretation; mortality totals and dated microbiological speculation were not adopted. Primary reports and independent review remain open.
 
 Validation after round 16: 30 observations, 23 relationships, ten threads and 24 sources. Audit: zero structural errors or warnings; 53 claims await independent review, 18 alternative searches remain open, three claim/source pairs have limited access and four claims share underlying source families. Four automated provenance/queue behavior checks pass. Browser inspection confirms the contested Bengal connection, clickable passage links and pending review labels.
+
+## 2026-10-01 — Round 17: flood exposure and resilience in Oceania
+
+Compared Macquarie’s 31 May and 2–3 June diary transcriptions with Garden’s published article (pp. 186–188). Added qualitative rain and official flood/crop-loss reports, preserving the distinction between event and report dates. Hobart’s August harvest expectation is a separate record, not realized production. Exposure on low ground is a supported prior condition; cross-colony comparison is non-causal. Volcanic attribution remains open.
+
+## 2026-10-01 — Community research intake and recognition
+
+Added a thread-linked contribution entry point, open-question selector, methodology prompt and prescribed JSON template. Local intake checks require passage references, alternative searches, unique IDs and pending review; drafts cannot overwrite accepted records or assert independent approval. The browser smoke check loaded a test-only draft without changing the graph. Five intake behavior tests and four graph provenance tests pass.
+
+Badge criteria recognize accepted threads, causal research, theory challenges, resilience and source work. Awards depend on recorded independent decisions. Public server-side submissions, contributor accounts and actual badge storage remain an explicit future milestone; the static prototype does not claim to provide them.

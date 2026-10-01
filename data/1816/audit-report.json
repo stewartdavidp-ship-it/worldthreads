@@ -25,6 +25,8 @@
     "REL-0021",
     "REL-0022",
     "REL-0023",
+    "REL-0024",
+    "REL-0025",
     "WT-1816-0001",
     "WT-1816-0002",
     "WT-1816-0003",
@@ -54,7 +56,10 @@
     "WT-1816-0027",
     "WT-1816-0028",
     "WT-1816-0029",
-    "WT-1816-0030"
+    "WT-1816-0030",
+    "WT-1816-0031",
+    "WT-1816-0032",
+    "WT-1816-0033"
   ],
   "alternativeSearchPending": [
     "REL-0001",
@@ -74,7 +79,8 @@
     "REL-0017",
     "REL-0018",
     "REL-0020",
-    "REL-0023"
+    "REL-0023",
+    "REL-0024"
   ],
   "limitedAccess": [
     {
@@ -250,6 +256,16 @@
       "status": "pending"
     },
     {
+      "claimId": "REL-0024",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0025",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
       "claimId": "WT-1816-0001",
       "task": "Independent source and claim review",
       "status": "pending"
@@ -400,6 +416,21 @@
       "status": "pending"
     },
     {
+      "claimId": "WT-1816-0031",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0032",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0033",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
       "claimId": "REL-0001",
       "task": "Expand search for competing explanations and counterevidence",
       "status": "pending"
@@ -486,6 +517,11 @@
     },
     {
       "claimId": "REL-0023",
+      "task": "Expand search for competing explanations and counterevidence",
+      "status": "pending"
+    },
+    {
+      "claimId": "REL-0024",
       "task": "Expand search for competing explanations and counterevidence",
       "status": "pending"
     },

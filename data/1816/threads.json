@@ -222,5 +222,26 @@
     ],
     "scope": "South Asia",
     "confidence": "Low"
+  },
+  {
+    "id": "THREAD-OCEANIA-WEATHER",
+    "title": "Flood exposure and differing harvest prospects",
+    "subtitle": "New South Wales and Van Diemen’s Land, 1816",
+    "description": "Official rain and flood reports sit beside a different harvest expectation in Hobart. Local vulnerability matters; volcanic attribution remains a separate research question.",
+    "nodeIds": [
+      "WT-1816-0031",
+      "WT-1816-0032",
+      "WT-1816-0033"
+    ],
+    "relationshipIds": [
+      "REL-0024",
+      "REL-0025"
+    ],
+    "mechanisms": [
+      "flood exposure",
+      "regional resilience"
+    ],
+    "scope": "Oceania",
+    "confidence": "Medium-High"
   }
 ]
