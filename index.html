@@ -3,9 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+  (function(){
+    var theme='auto',size='normal',sizes={normal:'100%',large:'112.5%',xl:'125%',xxl:'140%'};
+    try{theme=localStorage.getItem('worldthreads-theme')||theme;size=localStorage.getItem('worldthreads-text-size')||size;}catch(e){}
+    var dark=theme==='dark'||(theme!=='light'&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+    document.documentElement.setAttribute('data-theme',dark?'dark':'light');
+    document.documentElement.style.fontSize=sizes[size]||'100%';
+  })();
+  </script>
   <title>WorldThreads — 1816 Prototype</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="threads.css" />
+  <link rel="stylesheet" href="appearance.css" />
 </head>
 <body>
   <header class="site-header">
@@ -14,6 +24,25 @@
       <div class="tagline">History isn't a collection of events. It's the threads that connect them.</div>
     </div>
     <nav>
+<div class="disp">
+                <button class="disp-btn" id="dispBtn" type="button" aria-label="Display settings: theme and text size" aria-haspopup="dialog" aria-expanded="false" aria-controls="dispPanel"><span class="a1">A</span><span class="a2">a</span></button>
+                <div class="disp-panel" id="dispPanel" role="dialog" aria-label="Display settings">
+                    <p class="dph" id="dispThemeLbl">Theme</p>
+                    <div class="disp-row" id="dispTheme" role="group" aria-labelledby="dispThemeLbl">
+                        <button type="button" data-theme-choice="auto" aria-pressed="true" title="Match your device">Auto</button>
+                        <button type="button" data-theme-choice="light" aria-pressed="false" title="Light theme">Light</button>
+                        <button type="button" data-theme-choice="dark" aria-pressed="false" title="Dark theme">Dark</button>
+                    </div>
+                    <p class="dph mt" id="dispSizeLbl">Text size</p>
+                    <div class="disp-sizes" role="group" aria-labelledby="dispSizeLbl">
+                        <button type="button" data-size="normal" aria-pressed="true" aria-label="Normal text size" title="Normal">A</button>
+                        <button type="button" data-size="large" aria-pressed="false" aria-label="Large text size" title="Large">A</button>
+                        <button type="button" data-size="xl" aria-pressed="false" aria-label="Extra-large text size" title="Extra large">A</button>
+                        <button type="button" data-size="xxl" aria-pressed="false" aria-label="Largest text size" title="Largest">A</button>
+                    </div>
+                    <p class="disp-note">Saved on this device.</p>
+                </div>
+            </div>
       <button class="nav-btn active">1816</button>
       <button class="nav-btn">Threads</button>
       <button class="nav-btn">Evidence</button>
@@ -135,5 +164,6 @@
   <footer><span>WorldThreads v0.3</span><span>Prototype year: 1816 · evidence and relationships separated</span></footer>
   <script src="contribution.js"></script>
   <script src="app.js"></script>
+  <script src="appearance.js"></script>
 </body>
 </html>
