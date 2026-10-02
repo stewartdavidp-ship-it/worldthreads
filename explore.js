@@ -76,7 +76,7 @@
       if(['provisional','disputed'].includes(r.communityStatus))line.setAttribute('stroke-dasharray','2 7');else if(['ASSOCIATED','CONTESTED'].includes(r.causalStatus))line.setAttribute('stroke-dasharray','8 6');line.addEventListener('click',()=>openRelationship(r));svg.append(line);
     }
     for(const o of records){
-      const p=positions.get(o.id),inStory=t.nodeIds.includes(o.id),b=button('',()=>selectFact(o.id),'network-fact'+(o.id===selected?' selected':'')+(!inStory?' related-fact':''));b.style.left=p.x/width*100+'%';b.style.top=p.y+'px';b.style.setProperty('--node-color',palette(o));b.setAttribute('aria-pressed',String(o.id===selected));b.append(node('small',inStory?'Fact '+(t.nodeIds.indexOf(o.id)+1):'Related branch'),node('strong',factTitle(o)));canvas.append(b);
+      const p=positions.get(o.id),inStory=t.nodeIds.includes(o.id),b=button('',()=>selectFact(o.id),'network-fact'+(o.id===selected?' selected':'')+(!inStory?' related-fact':''));b.style.left=p.x/width*100+'%';b.style.top=p.y+'px';b.style.setProperty('--node-color',palette(o));b.setAttribute('aria-pressed',String(o.id===selected));b.append(node('small',inStory?'Fact '+(t.nodeIds.indexOf(o.id)+1):'Related lead'),node('strong',factTitle(o)));canvas.append(b);
     }
     reader();
   }
@@ -104,10 +104,10 @@
     const app=WorldThreadsApp,t=thread(),o=app.obs(selected),root=$('factReader');root.replaceChildren();if(!o)return;
     const index=t.nodeIds.indexOf(selected),next=index>=0?model.nextConnection(t,selected,app.state.relationships):null;
     const connections=app.state.relationships.filter(r=>r.subjectId===selected||r.objectId===selected);
-    root.append(node('p',index>=0?`CLUE ${index+1} OF ${t.nodeIds.length} · ${title(t)}`:'RELATED BRANCH · YOUR ORIGINAL STORY IS STILL ON THE MAP','eyebrow'),node('h3',factTitle(o)));if(storySummaries[o.id])root.append(node('p',storySummaries[o.id],'story-instruction'));
+    root.append(node('p',index>=0?`CLUE ${index+1} OF ${t.nodeIds.length} · ${title(t)}`:'RELATED BRANCH · YOUR ORIGINAL STORY IS STILL ON THE MAP','eyebrow'),node('h3',factTitle(o)));const scene=node('div',undefined,'scene-context');scene.append(node('small','PLACE & TIME'),node('span',o.place+' · '+o.startDate));root.append(scene);if(storySummaries[o.id])root.append(node('p',storySummaries[o.id],'story-instruction'));
     if(index===0&&!storySummaries[o.id])root.append(node('p','Our story starts here. Follow the recorded connections to see how this fact relates to what happened next.','story-instruction'));
     if(next){
-      const onward=node('div',undefined,'guided-next');onward.append(node('small','FOLLOW THE NEXT RECORDED CONNECTION'),button('Next clue: '+factTitle(app.obs(next.objectId))+' →',()=>selectFact(next.objectId,next),'nav-btn primary'),node('p',next.explanation),node('small',connectionStatus(next)),button('Why this connection?',()=>openRelationship(next),'trail-link'));root.append(onward);
+      const onward=node('div',undefined,'guided-next');onward.append(node('small','CONNECTION TO EXAMINE'),button('Next clue: '+factTitle(app.obs(next.objectId))+' →',()=>selectFact(next.objectId,next),'nav-btn primary'),node('p',next.explanation),node('small',connectionStatus(next)),button('Why this connection?',()=>openRelationship(next),'trail-link'));root.append(onward);
     }else{
       const end=node('div',undefined,'guided-next');end.append(node('strong',index>=0?'You’ve followed the recorded clues. What’s missing?':'You’re exploring beyond the original story.'),node('p','No further connection is recorded in this thread. The evidence does not settle every cause or consequence. What would you investigate next?'),button('Investigate an unanswered question',()=>startResearch(),'nav-btn primary'));root.append(end);
       if(index<0)root.append(button('Return to the original story',()=>selectFact(t.nodeIds[0])));
