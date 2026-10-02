@@ -1,0 +1,9 @@
+{
+ "name":"worldthreads-community", "main":"src/index.js", "compatibility_date":"2026-10-01",
+ "account_id":"6135814eafd78ae5ff2ee846043b4e8b", "preview_urls":false,
+ "observability":{"enabled":false},
+ "vars":{"APP_ORIGIN":"https://stewartdavidp-ship-it.github.io","AI_MODEL":"@cf/meta/llama-3.3-70b-instruct-fp8-fast","DAILY_REVIEW_LIMIT":"12","DAILY_AI_CALL_LIMIT":"24"},
+ "ai":{"binding":"AI"},
+ "triggers":{"crons":["*/5 * * * *"]},
+ "d1_databases":[{"binding":"DB","database_name":"worldthreads-community","database_id":"8f7f70ea-23c3-416a-80fd-0d5ccd3e378b"}]
+}

@@ -1,10 +1,86 @@
 [
-{"id":"GAP-001","region":"West Africa","domain":"climate + agriculture + politics","question":"What 1815–1817 weather, harvest, food-price and political records survive for Asante, Oyo, Dahomey, Sokoto and neighboring systems?","priority":"High","status":"Open"},
-{"id":"GAP-002","region":"East Africa / Indian Ocean","domain":"climate + trade + disease","question":"What documentary or proxy evidence can connect 1816 climate variability to ports, monsoon trade, crops, livestock or disease ecology?","priority":"High","status":"Open"},
-{"id":"GAP-003","region":"South Asia","domain":"monsoon + agriculture + prices","question":"Resolve regional rainfall/temperature anomalies and crop/price effects across Bengal, Madras, Bombay and inland polities for 1815–1817.","priority":"High","status":"Open"},
-{"id":"GAP-004","region":"Southeast Asia","domain":"Tambora direct impacts + recovery","question":"Build local Sumbawa, Bali, Java and maritime trade threads that distinguish direct eruption impacts from distant climatic effects.","priority":"High","status":"Open"},
-{"id":"GAP-005","region":"South America","domain":"climate + independence + economy","question":"Add climate, harvest, trade and military observations around the Río de la Plata, Andes and Brazil alongside political events.","priority":"High","status":"Open"},
-{"id":"GAP-006","region":"Oceania","domain":"climate + Indigenous history + colonial contact","question":"Identify documentary, oral-history and proxy evidence for 1816 conditions without imposing European archival density as the standard of historical importance.","priority":"High","status":"Open"},
-{"id":"GAP-007","region":"Global oceans","domain":"sea surface / storms / fisheries / trade routes","question":"Map marine and atmospheric observations that connect ocean conditions to shipping, fisheries and commodity flows.","priority":"Medium","status":"Open"},
-{"id":"GAP-008","region":"Global","domain":"population health","question":"Add mortality, epidemic, nutrition, birth/death and migration evidence while separating contemporary observation from later reconstruction.","priority":"High","status":"Open"}
+  {
+    "id": "GAP-001",
+    "region": "West Africa",
+    "domain": "climate + agriculture + politics",
+    "question": "What 1815–1817 weather, harvest, food-price and political records survive for Asante, Oyo, Dahomey, Sokoto and neighboring systems?",
+    "priority": "High",
+    "status": "Open"
+  },
+  {
+    "id": "GAP-002",
+    "region": "East Africa / Indian Ocean",
+    "domain": "climate + trade + disease",
+    "question": "What documentary or proxy evidence can connect 1816 climate variability to ports, monsoon trade, crops, livestock or disease ecology?",
+    "priority": "High",
+    "status": "Open"
+  },
+  {
+    "id": "GAP-003",
+    "region": "South Asia",
+    "domain": "monsoon + agriculture + prices",
+    "question": "Resolve regional rainfall/temperature anomalies and crop/price effects across Bengal, Madras, Bombay and inland polities for 1815–1817.",
+    "priority": "High",
+    "status": "Open"
+  },
+  {
+    "id": "GAP-004",
+    "region": "Southeast Asia",
+    "domain": "Tambora direct impacts + recovery",
+    "question": "Build local Sumbawa, Bali, Java and maritime trade threads that distinguish direct eruption impacts from distant climatic effects.",
+    "priority": "High",
+    "status": "Partially researched",
+    "notes": "Direct-impact claims checked against a scholarly synthesis with page locators. Underlying archives, island-specific chronology, relief, trade and recovery through 1816 remain open; independent review pending."
+  },
+  {
+    "id": "GAP-005",
+    "region": "South America",
+    "domain": "climate + independence + economy",
+    "question": "Add climate, harvest, trade and military observations around the Río de la Plata, Andes and Brazil alongside political events.",
+    "priority": "High",
+    "status": "Open"
+  },
+  {
+    "id": "GAP-006",
+    "region": "Oceania",
+    "domain": "climate + Indigenous history + colonial contact",
+    "question": "Identify documentary, oral-history and proxy evidence for 1816 conditions without imposing European archival density as the standard of historical importance.",
+    "priority": "High",
+    "status": "Partially researched",
+    "notes": "First Oceania thread added from official orders, archive report and library scholarship. Dharawal perspectives, broader Indigenous histories and climate evidence remain open. Weather thread adds qualitative rain, reported flooding and a contrasting harvest expectation. Instrumental attribution, Indigenous weather histories and original newspaper inspection remain open."
+  },
+  {
+    "id": "GAP-007",
+    "region": "Global oceans",
+    "domain": "sea surface / storms / fisheries / trade routes",
+    "question": "Map marine and atmospheric observations that connect ocean conditions to shipping, fisheries and commodity flows.",
+    "priority": "Medium",
+    "status": "Open"
+  },
+  {
+    "id": "GAP-008",
+    "region": "Global",
+    "domain": "population health",
+    "question": "Add mortality, epidemic, nutrition, birth/death and migration evidence while separating contemporary observation from later reconstruction.",
+    "priority": "High",
+    "status": "Partially researched",
+    "notes": "Jessore August 1817 added from historical scholarship. Climate attribution unresolved; labour mobility is an explicitly unproven alternative. Primary reports, local voices and mortality reconstruction remain open."
+  },
+  {
+    "id": "GAP-009",
+    "region": "Caribbean / Barbados",
+    "domain": "enslavement + resistance + colonial policy",
+    "question": "Compare the April 1816 rebellion’s official reports with Barbadian scholarship and enslaved people’s perspectives; distinguish emancipation expectations from other causes.",
+    "priority": "High",
+    "status": "Source access pending",
+    "notes": "National Archives indexed lesson found. Chrome redirects to a human-verification page; primary reports were not read. No event or causal claim added from the blocked documents."
+  },
+  {
+    "id": "GAP-010",
+    "region": "Your locality",
+    "domain": "local facts and relationships in 1816",
+    "question": "What changed in your town, region or community in 1816, and what evidence connects those changes?",
+    "priority": "High",
+    "status": "Open"
+  }
 ]

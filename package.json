@@ -1,0 +1,16 @@
+{
+  "name": "worldthreads",
+  "version": "0.4.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test scripts/test_*.js && npm run test:service && python3 -m unittest discover -s scripts -p 'test_*.py'",
+    "test:service": "wrangler deploy --config worker/wrangler.jsonc --dry-run --outdir .test-build && node --test scripts/test_service.mjs",
+    "deploy:api": "wrangler deploy --config worker/wrangler.jsonc"
+  },
+  "devDependencies": {
+    "wrangler": "4.145.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

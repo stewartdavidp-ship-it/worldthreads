@@ -1,0 +1,1 @@
+ALTER TABLE investigation_member ADD COLUMN active INTEGER NOT NULL DEFAULT 1;

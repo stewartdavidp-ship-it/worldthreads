@@ -1,14 +1,18 @@
-const state={observations:[],relationships:[],threads:[],sources:[],system:'ALL',threadId:null};
+const state={observations:[],relationships:[],threads:[],sources:[],evidence:[],gaps:[],badges:[],missions:[],system:'ALL',threadId:null};
 
 async function load(){
-  const [observations,relationships,threads,sources]=await Promise.all([
+  const [observations,relationships,threads,sources,evidence,gaps,badges,missions]=await Promise.all([
     fetch('data/1816/observations.json').then(r=>r.json()),
     fetch('data/1816/relationships.json').then(r=>r.json()),
     fetch('data/1816/threads.json').then(r=>r.json()),
-    fetch('data/1816/sources.json').then(r=>r.json())
+    fetch('data/1816/sources.json').then(r=>r.json()),
+    fetch('data/1816/evidence.json').then(r=>r.json()),
+    fetch('data/1816/research-gaps.json').then(r=>r.json()),
+    fetch('data/contribution-badges.json').then(r=>r.json()),
+    fetch('data/1816/research-missions.json').then(r=>r.json())
   ]);
-  Object.assign(state,{observations,relationships,threads,sources,threadId:threads[0]?.id||null});
-  bind(); render();
+  Object.assign(state,{observations,relationships,threads,sources,evidence,gaps,badges,missions,threadId:threads[0]?.id||null});
+  bind(); render(); bindContributions(); window.dispatchEvent(new Event("worldthreads-ready"));
 }
 
 function bind(){
@@ -20,7 +24,7 @@ function bind(){
     const first=state.observations.find(o=>o.continent===btn.dataset.region && !o.contextNode) || state.observations.find(o=>o.continent===btn.dataset.region);
     if(first) openDetail(first);
   }));
-  document.getElementById('threadSelect').addEventListener('change',e=>{state.threadId=e.target.value;renderThread();});
+  document.getElementById('threadSelect').addEventListener('change',e=>{state.threadId=e.target.value;selectedMission=null;document.getElementById('researchMission').value='';document.getElementById('missionBrief').hidden=true;document.getElementById('researchKit').hidden=true;renderThread();});
   document.getElementById('closeDialog').addEventListener('click',()=>document.getElementById('detailDialog').close());
 }
 
@@ -49,14 +53,37 @@ function renderThread(){
   document.getElementById('threadSubtitle').textContent=thread.subtitle||'';
   document.getElementById('threadDescription').textContent=thread.description||'';
   const root=document.getElementById('threadGraph'); root.innerHTML='';
-  thread.nodeIds.forEach((id,i)=>{
+  document.querySelector('.thread-connections')?.remove();
+  thread.nodeIds.forEach(id=>{
     const o=obs(id); if(!o)return;
     const node=document.createElement('button'); node.className='thread-node active-node';
-    node.innerHTML=`<span class="system">${escapeHtml(o.system)}</span><strong>${escapeHtml(o.title)}</strong><small>${escapeHtml(o.place||'')}</small>`;
-    node.addEventListener('click',()=>openDetail(o)); root.appendChild(node);
-    const relId=thread.relationshipIds?.[i]; const rel=state.relationships.find(r=>r.id===relId);
-    if(rel){const edge=document.createElement('div');edge.className='edge-label';edge.innerHTML=`<span>${escapeHtml(rel.predicate.replaceAll('_',' '))}<br>${escapeHtml(rel.lag||'')}</span>`;root.appendChild(edge);}
+    if(o.communityStatus)node.dataset.review=o.communityStatus;
+    node.innerHTML=`<span class="system">${escapeHtml(o.system)}</span><strong>${escapeHtml(o.title)}</strong><small>${escapeHtml(o.place||'')}${o.communityStatus?' · '+escapeHtml(window.WorldThreadsCommunityUI?.statusLabel(o.communityStatus)||o.communityStatus):''}</small>`;
+    node.dataset.observationId=o.id; node.addEventListener('click',()=>openDetail(o)); root.appendChild(node);
+
   });
+  const connections=document.createElement('section'); connections.className='thread-connections';
+  const extend=document.createElement('button');extend.className='nav-btn';extend.textContent='Investigate an unanswered question';extend.addEventListener('click',()=>{const region=thread.scope||'';const gap=state.gaps.find(g=>g.region===region||g.region.includes(region));if(gap){const select=document.getElementById('researchGap');select.value=gap.id;select.dispatchEvent(new Event('change'));}window.WorldThreadsExplore?.show('research');document.getElementById('contribute').scrollIntoView({behavior:'smooth'});document.getElementById('researchGap').focus();});connections.appendChild(extend);
+  const heading=document.createElement('h4'); heading.textContent='Connections and hypotheses'; connections.appendChild(heading);
+  (thread.relationshipIds||[]).forEach(id=>{
+    const r=state.relationships.find(r=>r.id===id); if(!r)return;
+    const el=document.createElement('div'); el.className='relation-item'; if(r.communityStatus)el.dataset.review=r.communityStatus;
+    [r.subjectId,r.objectId].forEach((nodeId,i)=>{
+      if(i){const label=document.createElement('span');label.textContent=` → ${r.predicate.replaceAll('_',' ')} → `;el.appendChild(label);}
+      const button=document.createElement('button');button.className='connection-node';button.textContent=obs(nodeId)?.title||nodeId;button.addEventListener('click',()=>openDetail(obs(nodeId)));el.appendChild(button);
+    });
+    const detail=document.createElement('p'); detail.textContent=`${r.causalStatus} · ${r.confidence} confidence · ${r.lag||'Lag unknown'} — ${r.explanation}`;el.appendChild(detail);const inspect=document.createElement('button');inspect.className='nav-btn';inspect.textContent='Evidence for this connection';inspect.addEventListener('click',()=>openRelationship(r));el.appendChild(inspect);if(r.communityStatus){const label=document.createElement('p');label.className='review-label';label.textContent=window.WorldThreadsCommunityUI?.statusLabel(r.communityStatus)||r.communityStatus;el.appendChild(label);}connections.appendChild(el);
+  });
+  const outgoing=new Set((thread.relationshipIds||[]).map(id=>state.relationships.find(r=>r.id===id)?.subjectId));
+  const ends=thread.nodeIds.filter(id=>!outgoing.has(id)).map(id=>obs(id)?.title||id);
+  const invitation=document.createElement('div');invitation.className='thread-invitation';
+  const text=document.createElement('p');text.textContent=`Our mapped research currently reaches ${ends.join('; ')||'the records shown here'}. Does this interest you? Follow a consequence, test another cause, or explore a related perspective.`;invitation.appendChild(text);
+  for(const [label,direction] of [['Investigate what happened next','continue_thread'],['Investigate another explanation','new_thread']]){const button=document.createElement('button');button.className='nav-btn';button.textContent=label;button.addEventListener('click',()=>{document.getElementById('researchDirection').value=direction;document.getElementById('researchKit').hidden=true;window.WorldThreadsExplore?.show('research');document.getElementById('contribute').scrollIntoView({behavior:'smooth'});document.getElementById('personalQuestion').focus();});invitation.appendChild(button);}
+  connections.appendChild(invitation);
+  root.after(connections);
+  drawThreadRelationships(thread,root);
+  window.dispatchEvent(new Event('worldthreads-rendered'));
+
 }
 
 function renderCards(){
@@ -66,7 +93,7 @@ function renderCards(){
   root.innerHTML='';
   filtered.forEach(o=>{
     const el=document.createElement('article'); el.className='card';
-    el.innerHTML=`<div class="card-top"><span class="pill">${escapeHtml(o.system)}</span><span class="confidence">${escapeHtml(o.confidence)}</span></div><h4>${escapeHtml(o.title)}</h4><p>${escapeHtml(o.observation)}</p><div class="meta"><span>${escapeHtml(o.startDate)}</span><span>${escapeHtml(o.continent)}</span><span>${escapeHtml(o.place)}</span><span>${escapeHtml(o.coverageType)}</span></div>`;
+    el.innerHTML=`<div class="card-top"><span class="pill">${escapeHtml(o.system)}</span><span class="confidence">${escapeHtml(o.communityStatus?(window.WorldThreadsCommunityUI?.statusLabel(o.communityStatus)||o.communityStatus):o.confidence)}</span></div><h4>${escapeHtml(o.title)}</h4><p>${escapeHtml(o.observation)}</p><div class="meta"><span>${escapeHtml(o.startDate)}</span><span>${escapeHtml(o.continent)}</span><span>${escapeHtml(o.place)}</span><span>${escapeHtml(o.coverageType)}</span></div>`;
     el.addEventListener('click',()=>openDetail(o)); root.appendChild(el);
   });
 }
@@ -75,14 +102,100 @@ function openDetail(o){
   const dlg=document.getElementById('detailDialog'); const content=document.getElementById('dialogContent');
   const rels=state.relationships.filter(r=>r.subjectId===o.id||r.objectId===o.id);
   const sourceLinks=(o.sourceRefs||[]).map(id=>source(id)).filter(Boolean).map(s=>`<a class="source-badge" href="${escapeAttr(s.url)}" target="_blank" rel="noreferrer">${escapeHtml(s.id)} · ${escapeHtml(s.authorOrOrg)}</a>`).join('');
-  const relHtml=rels.map(r=>{const other=obs(r.subjectId===o.id?r.objectId:r.subjectId);const direction=r.subjectId===o.id?'→':'←';return `<div class="relation-item"><b>${direction} ${escapeHtml(r.predicate.replaceAll('_',' '))}</b> ${escapeHtml(other?.title||'Unknown node')}<br><span>${escapeHtml(r.explanation||'')} · ${escapeHtml(r.confidence)} confidence</span></div>`}).join('');
-  content.innerHTML=`<p class="eyebrow">${escapeHtml(o.id)}</p><h2>${escapeHtml(o.title)}</h2><p>${escapeHtml(o.observation)}</p><dl class="detail-grid"><dt>Date</dt><dd>${escapeHtml(o.startDate)}${o.endDate&&o.endDate!==o.startDate?' → '+escapeHtml(o.endDate):''}</dd><dt>System</dt><dd>${escapeHtml(o.system)}</dd><dt>Role</dt><dd>${escapeHtml((o.analyticalRole||[]).join(', '))}</dd><dt>Coverage</dt><dd>${escapeHtml(o.coverageType)}</dd><dt>Region</dt><dd>${escapeHtml(o.region)}</dd><dt>Entity</dt><dd>${escapeHtml(o.historicalEntity)}</dd><dt>Place</dt><dd>${escapeHtml(o.place)}</dd><dt>Confidence</dt><dd>${escapeHtml(o.confidence)}</dd><dt>Evidence</dt><dd>${escapeHtml((o.evidenceType||[]).join(', '))}</dd>${o.value?`<dt>Value</dt><dd>${escapeHtml(o.value)} ${escapeHtml(o.unit||'')}</dd>`:''}${o.baseline?`<dt>Baseline</dt><dd>${escapeHtml(o.baseline)}</dd>`:''}${o.anomaly?`<dt>Anomaly</dt><dd>${escapeHtml(o.anomaly)}</dd>`:''}</dl><h3>Sources</h3><div class="source-badges">${sourceLinks||'No source registry entries yet.'}</div><h3>Connections</h3><div class="relation-list">${relHtml||'<div class="relation-item">No explicit graph relationships added yet.</div>'}</div>`;
+  const relHtml=rels.map(r=>{const other=obs(r.subjectId===o.id?r.objectId:r.subjectId);const direction=r.subjectId===o.id?'→':'←';return `<div class="relation-item"><b>${direction} ${escapeHtml(r.predicate.replaceAll('_',' '))}</b> ${escapeHtml(other?.title||'Unknown node')}<br><span>${escapeHtml(r.explanation||'')} · ${escapeHtml(r.confidence)} confidence</span>${renderCausalReview(r)}${renderEvidence(r)}</div>`}).join('');
+  content.innerHTML=`<p class="eyebrow">${escapeHtml(o.id)}</p><h2>${escapeHtml(o.title)}</h2><p>${escapeHtml(o.observation)}</p><dl class="detail-grid"><dt>Date</dt><dd>${escapeHtml(o.startDate)}${o.endDate&&o.endDate!==o.startDate?' → '+escapeHtml(o.endDate):''}</dd><dt>System</dt><dd>${escapeHtml(o.system)}</dd><dt>Role</dt><dd>${escapeHtml((o.analyticalRole||[]).join(', '))}</dd><dt>Coverage</dt><dd>${escapeHtml(o.coverageType)}</dd><dt>Region</dt><dd>${escapeHtml(o.region)}</dd><dt>Entity</dt><dd>${escapeHtml(o.historicalEntity)}</dd><dt>Place</dt><dd>${escapeHtml(o.place)}</dd><dt>Review status</dt><dd>${escapeHtml(String(o.researchStatus||'').replace(/independent review pending/gi,'automatic assessment not yet recorded'))}</dd><dt>Confidence</dt><dd>${escapeHtml(o.confidence)}</dd><dt>Evidence</dt><dd>${escapeHtml((o.evidenceType||[]).join(', '))}</dd>${o.value?`<dt>Value</dt><dd>${escapeHtml(o.value)} ${escapeHtml(o.unit||'')}</dd>`:''}${o.baseline?`<dt>Baseline</dt><dd>${escapeHtml(o.baseline)}</dd>`:''}${o.anomaly?`<dt>Anomaly</dt><dd>${escapeHtml(o.anomaly)}</dd>`:''}</dl><h3>Sources</h3><div class="source-badges">${sourceLinks||'No source registry entries yet.'}</div>${renderEvidence(o)}<h3>Connections</h3><div class="relation-list">${relHtml||'<div class="relation-item">No explicit graph relationships added yet.</div>'}</div>`;
+  window.WorldThreadsCommunityUI?.attachActions(o,content);
   dlg.showModal();
 }
 
+function renderEvidence(claim){
+  const records=(claim.evidenceRefs||[]).map(id=>state.evidence.find(e=>e.id===id)).filter(Boolean);
+  if(!records.length)return '<p class="review-note">Passage-level evidence not yet registered.</p>';
+  return '<div class="evidence-records">'+records.map(e=>{
+    const source=state.sources.find(s=>s.id===e.sourceId);
+    const url=source?.fullTextUrl||source?.url;
+    const label=`${escapeHtml(e.sourceId)} · ${escapeHtml(e.locator)}`;
+    return `<p><strong>${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${label}</a>`:label}</strong><br>${escapeHtml(e.provenance)}<br>${escapeHtml(e.limitations)}<br>Review: ${escapeHtml(e.reviewStatus==='pending_independent_review'?'Legacy source check; automatic assessment not yet recorded':e.reviewStatus.replaceAll('_',' '))}</p>`;
+  }).join('')+'</div>';
+}
+function renderCausalReview(r){
+  const c=r.causalReview;
+  if(!c)return '<p class="review-note">Competing explanations have not yet been systematically reviewed.</p>';
+  const alternatives=(c.alternatives||[]).map(a=>`<li><strong>${escapeHtml(a.assessment)} · ${escapeHtml(a.kind.replaceAll('_',' '))}</strong>: ${escapeHtml(a.explanation)}<br>${escapeHtml(a.evidenceNote||'')} ${escapeHtml((a.sourceRefs||[]).join(', '))} ${escapeHtml(a.locator||'')}<br>Evidence to seek: ${escapeHtml((a.distinguishingEvidence||[]).join(' '))}</li>`).join('');
+  return `<details class="causal-review"><summary>Other explanations and open questions</summary><p>${escapeHtml(c.searchStatus)}</p>${alternatives?'<ul>'+alternatives+'</ul>':'<p>No alternatives registered yet; review remains open.</p>'}<p>Counterevidence: ${escapeHtml((c.counterevidence||[]).map(e=>e.description).join(' ')||'Not yet registered.')}</p><p>Next evidence: ${escapeHtml((c.distinguishingEvidence||[]).join(' '))}</p></details>`;
+}
 function obs(id){return state.observations.find(o=>o.id===id)}
 function source(id){return state.sources.find(s=>s.id===id)}
 function escapeHtml(str=''){return String(str).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
 function escapeAttr(str=''){return escapeHtml(str)}
 
 load().catch(err=>{document.getElementById('cards').innerHTML=`<p>Could not load prototype data: ${escapeHtml(err.message)}</p>`;});
+
+let pendingContribution=null;
+let selectedMission=null;
+function researchTemplate(gap,thread){
+  return {schemaVersion:1,context:{gapId:gap.id,threadId:thread.id,question:gap.question,year:1816,place:document.getElementById('researchPlace').value.trim()},contributor:{name:'Your name or alias'},review:{status:'pending'},sources:[{id:'C-SRC-001',type:'Source type',authorOrOrg:'Author or institution',title:'Source title',year:null,url:'https://example.org/replace-with-inspected-source',quality:'Unassessed',topics:[],notes:'Record publication version and dependence on other sources.'}],observations:[{id:'C-OBS-001',title:'Bounded proposed observation',startDate:'1816',endDate:'1816',datePrecision:'YEAR',continent:gap.region,region:gap.region,historicalEntity:'Specify historical entity',place:'Specify locality',observation:'Replace with a claim supported by the inspected passage.',coverageType:'EVENT',system:'HUMAN SYSTEMS',topic:gap.domain,analyticalRole:['OUTCOME'],evidenceType:['Specify evidence type'],confidence:'Low',sourceRefs:['C-SRC-001'],researchStatus:'Contributor draft; independent review pending',evidenceRefs:['C-EV-001']}],relationships:[],evidence:[{id:'C-EV-001',claimId:'C-OBS-001',sourceId:'C-SRC-001',locator:'Page, section or dated entry',accessedAt:new Date().toISOString().slice(0,10),provenance:'Describe exactly what was inspected',limitations:'State source limits and uninspected originals',reviewer:'Your name or alias',reviewStatus:'pending_independent_review',accessScope:'full_text',quote:'Replace with a short exact source quote (20–500 characters)'}],searchLog:[{query:'Search for rival causes, vulnerabilities, counterexamples and resilience',result:'Record inspected sources, findings and unsuccessful searches.'}]};
+}
+function downloadText(name,text,type='text/plain'){
+  const url=URL.createObjectURL(new Blob([text],{type}));const link=document.createElement('a');link.href=url;link.download=name;link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+function bindContributions(){
+  const badgeRoot=document.getElementById('contributionBadges');
+  const future=document.createElement('details');const futureTitle=document.createElement('summary');futureTitle.textContent='Planned badges · unavailable in this release';future.append(futureTitle);badgeRoot.append(future);state.badges.forEach(b=>{const card=document.createElement('article');card.className='badge-card';const title=document.createElement('h4');title.textContent=b.title;const description=document.createElement('p');description.textContent=b.description;card.append(title,description);if(b.availability){const note=document.createElement('p');note.textContent='Not awarded by this release; further verification checks are planned.';note.className='review-note';card.appendChild(note);}(b.availability?future:badgeRoot).appendChild(card);});
+  const select=document.getElementById('researchGap');
+  state.gaps.forEach(g=>{const option=document.createElement('option');option.value=g.id;option.textContent=`${g.region} · ${g.status}`;select.appendChild(option);});
+  select.value='GAP-010';
+  const missionSelect=document.getElementById('researchMission');
+  state.missions.forEach(m=>{const option=document.createElement('option');option.value=m.id;option.textContent=m.title;missionSelect.appendChild(option);});
+  missionSelect.addEventListener('change',()=>{selectedMission=state.missions.find(m=>m.id===missionSelect.value)||null;const brief=document.getElementById('missionBrief');brief.replaceChildren();brief.hidden=!selectedMission;if(!selectedMission)return;const m=selectedMission;select.value=m.gapId;select.dispatchEvent(new Event('change'));if(m.threadId){state.threadId=m.threadId;document.getElementById('threadSelect').value=m.threadId;renderThread();}for(const [label,value] of [['Theory to test',m.theory],['What we have',m.known],['Missing evidence',m.missing.join(' ')],['Would support',m.supportWouldLookLike.join(' ')],['Would challenge',m.challengeWouldLookLike.join(' ')],['Useful outcomes',m.possibleOutcomes.join(' · ')]]){const p=document.createElement('p');const strong=document.createElement('strong');strong.textContent=label+': ';p.append(strong,document.createTextNode(value));brief.appendChild(p);}});
+  const selected=()=>state.gaps.find(g=>g.id===select.value);
+  const update=()=>{if(selectedMission&&selectedMission.gapId!==select.value){selectedMission=null;missionSelect.value='';document.getElementById('missionBrief').hidden=true;}document.getElementById('gapQuestion').textContent=selected()?.question||'';document.getElementById('researchKit').hidden=true;};update();select.addEventListener('change',update);
+  let kit=null,prompt='';
+  document.getElementById('makeResearchPrompt').addEventListener('click',()=>{
+    const gap=selected(),thread=state.threads.find(t=>t.id===state.threadId);if(!gap||!thread)return;
+    kit=researchTemplate(gap,thread);
+    const startingFact=window.WorldThreadsExplore?.startingFact();
+    if(startingFact){kit.context.startingFactId=startingFact.id;kit.observations[0].continent=startingFact.continent;kit.observations[0].region=startingFact.region;kit.observations[0].topic=startingFact.topic;}
+    const direction=document.getElementById('researchDirection').value,question=document.getElementById('personalQuestion').value.trim(),title=document.getElementById('proposedThreadTitle').value.trim();
+    kit.context.direction=direction;
+    if(window.WorldThreadsApp.challengeContext)kit.context.challenge=window.WorldThreadsApp.challengeContext;
+    if(question)kit.context.question=question;
+    if(direction==='new_thread')kit.proposedThread={title:title||'Proposed related thread',perspective:question||'Describe the new perspective',nodeIds:[]};
+    if(selectedMission&&!question&&direction==='continue_thread'){kit.context.missionId=selectedMission.id;kit.context.question=selectedMission.title;kit.missionResult={outcome:'Insufficient evidence',reason:'Explain what the inspected evidence supports, challenges or leaves unresolved',claimRefs:[]};}
+    prompt=`Research contribution for WorldThreads\n\nStarting thread: ${thread.title} (${thread.id})\nResearch question: ${kit.context.question} (${gap.id})\nContribution year: 1816. New observations must describe 1816 facts, and proposed relationships must concern those facts. Earlier/later material may supply comparisons or antecedents, never replace the 1816 focus. Later-published scholarship about 1816 is valid.\n\nFollow research → review → audit → fix:\n1. Bound the place, dates and question. Inspect relevant original or scholarly passages. Record source title, author, URL, version, access date and precise page/section locator. Say when only an abstract, transcription or retelling was accessible.\n2. Make the smallest supported observations. Separate measurements, reported expectations and later inferences. Preserve historical names and source bias. Do not invent missing figures.\n3. Review every proposed connection separately. Search for rival explanations, prior conditions, interacting cofactors, counterevidence and resilience. Record failed searches. Chronology alone is not causation. Several retellings of one text are not independent corroboration.\n4. Return a JSON file using the output template below. Use unique local IDs; connect each claim to passage-level evidence. For causal or contested relationships include causalReview with primaryExplanation, assessment, priorConditions, alternatives (id, explanation, kind, assessment, sourceRefs, locator, evidenceNote, distinguishingEvidence), counterevidence, distinguishingEvidence, searchStatus and reviewStatus.\n5. Fix unsupported wording and unresolved references before returning. Leave all records as contributor drafts. Include a short exact quote (20–500 characters) on each evidence record for automatic source retrieval and review. Include uncertainty and what evidence could change your conclusion. Do not claim approval or publish directly.\n\nExisting observation IDs that may be referenced: ${[...new Set([...thread.nodeIds,...(startingFact?[startingFact.id]:[])])].join(', ')}.\nAn empty relationships array is valid when no connection is supported.\nReplace all template placeholders; do not submit them as findings.\n\nOUTPUT TEMPLATE\n${JSON.stringify(kit,null,2)}`;
+    if(kit.context.missionId){const m=selectedMission;prompt=`MISSION: ${m.title} (${m.id})\nStatus: ${m.status}\nTheory: ${m.theory}\nExisting evidence: ${m.known}\nClaims to inspect: ${m.claimRefs.join(', ')}\nMissing: ${m.missing.join(' ')}\nWould support: ${m.supportWouldLookLike.join(' ')}\nWould challenge: ${m.challengeWouldLookLike.join(' ')}\nSteps: ${m.researchSteps.join(' ')}\nReturn a missionResult with one of: ${m.possibleOutcomes.join('; ')}. Explain your evidence and remaining limits. Disproof and inconclusive results are valuable.\n\n`+prompt;}
+    if(kit.context.challenge){const c=kit.context.challenge;prompt=`CLAIM TO TEST (not established): ${c.claim}\nRecorded narrower claim: ${c.recordedClaim||'See the existing relationship'}\nOptional working position: ${c.workingPosition}\nOptional reasoning: ${c.reasoning||'None yet'}\nCompared passages: ${JSON.stringify(c.passages||[])}\nPrivate synthesis (unverified reasoning): ${JSON.stringify(c.synthesis||{})}\nSource dependence: ${c.sourceDependence}\n\n`+prompt;}
+    prompt=`STARTING FACT: ${startingFact?startingFact.title+' ('+startingFact.id+')':'Current thread'}\nPLACE: ${kit.context.place||'Choose and specify a locality before submitting'}\nYEAR: 1816\nEXPLORATION: ${direction==='new_thread'?'Explicitly propose a related thread if supported':'Investigate the question; decide how findings attach after research'}\nYour question: ${kit.context.question}\n${direction==='new_thread'?'Proposed title: '+kit.proposedThread.title+'\nKeep the new perspective provisional; shared context is not a causal link. Return proposedThread with the IDs of supported records.':''}\n\n`+prompt;
+    const existingTarget=document.getElementById('researchTarget').value||kit.context.challenge?.targetClaimId||startingFact?.id||thread.nodeIds[0];const targetClaim=[...state.observations,...state.relationships].find(c=>c.id===existingTarget);const targetText=targetClaim?.title||targetClaim?.explanation||'Inspect the recorded claim';
+    const evidenceTemplate={kind:'evidence',claimId:existingTarget,stance:'supports OR counterevidence',alias:'Your chosen alias',sourceTitle:'Inspected source title',sourceUrl:'https://replace-with-inspected-source',locator:'Precise page, section or dated entry',quote:'Short exact passage (20–500 characters)',relevance:'Explain what this passage supports or weakens about the ACTUAL recorded claim, not an opinion or stronger teaching claim.',limitations:'What this source cannot establish; include dependence on other accounts.'};
+    prompt=`INVESTIGATE FIRST. Do not invent a new fact, relationship or thread just to fill a template. Seek evidence against your initial explanation as well as for it.\nAfter research choose the supported result: (A) passage evidence for/against an EXISTING claim: return the evidence JSON format below; (B) genuinely new facts or connections: use the research template; (C) no supported finding: return {"kind":"research_note","question":"...","conclusion":"...","searchLog":[{"query":"...","result":"..."}]}. Research notes are saved on the device; they do not publish unsupported graph changes.\nExisting evidence target: ${existingTarget}: ${targetText}. Inspect that actual claim before deciding stance. The deliberate challenge is not an accepted graph claim.\nEVIDENCE OUTPUT OPTION\n${JSON.stringify(evidenceTemplate,null,2)}\n\n`+prompt;
+    document.getElementById('makeResearchPrompt').textContent='Update research prompt';document.getElementById('researchPrompt').value=prompt;document.getElementById('researchKit').hidden=false;
+  });
+  document.getElementById('downloadResearchPrompt').addEventListener('click',()=>downloadText('worldthreads-research-prompt.txt',prompt));
+  document.getElementById('downloadResearchTemplate').addEventListener('click',()=>downloadText('worldthreads-output-template.json',JSON.stringify(kit,null,2),'application/json'));
+}
+
+function openRelationship(r){
+  const content=document.getElementById('dialogContent');
+  content.innerHTML=`<p class="eyebrow">${escapeHtml(r.id)} · RELATIONSHIP</p><h2>${escapeHtml(obs(r.subjectId)?.title||r.subjectId)} → ${escapeHtml(obs(r.objectId)?.title||r.objectId)}</h2><p>${escapeHtml(r.predicate.replaceAll('_',' '))} · ${escapeHtml(r.causalStatus)}</p><p>${escapeHtml(r.explanation)}</p><p>${escapeHtml(r.confidence)} confidence · ${escapeHtml(String(r.researchStatus||'Review pending').replace(/independent review pending/gi,'automatic assessment not yet recorded'))}</p>${renderCausalReview(r)}${renderEvidence(r)}`;
+  window.WorldThreadsCommunityUI?.attachActions(r,content);document.getElementById('detailDialog').showModal();
+}
+window.WorldThreadsApp={state,render,obs,downloadText,closeDialog:()=>document.getElementById('detailDialog').close()};
+
+let graphResizeObserver=null;
+function drawThreadRelationships(thread,root){
+  graphResizeObserver?.disconnect();
+  const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.classList.add('graph-links');svg.setAttribute('aria-hidden','true');root.prepend(svg);
+  const draw=()=>{
+    svg.replaceChildren();const box=root.getBoundingClientRect();svg.setAttribute('viewBox',`0 0 ${box.width} ${box.height}`);
+    const defs=document.createElementNS(ns,'defs'),marker=document.createElementNS(ns,'marker');marker.id='thread-arrow';marker.setAttribute('viewBox','0 0 10 10');marker.setAttribute('refX','9');marker.setAttribute('refY','5');marker.setAttribute('markerWidth','7');marker.setAttribute('markerHeight','7');marker.setAttribute('orient','auto-start-reverse');const arrow=document.createElementNS(ns,'path');arrow.setAttribute('d','M 0 0 L 10 5 L 0 10 z');marker.append(arrow);defs.append(marker);svg.append(defs);
+    for(const id of thread.relationshipIds||[]){
+      const r=state.relationships.find(x=>x.id===id);if(!r)continue;
+      const a=[...root.querySelectorAll('[data-observation-id]')].find(n=>n.dataset.observationId===r.subjectId),b=[...root.querySelectorAll('[data-observation-id]')].find(n=>n.dataset.observationId===r.objectId);if(!a||!b)continue;
+      const ar=a.getBoundingClientRect(),br=b.getBoundingClientRect();let x1=ar.x+ar.width/2-box.x,y1=ar.y+ar.height/2-box.y,x2=br.x+br.width/2-box.x,y2=br.y+br.height/2-box.y;const horizontal=Math.abs(x2-x1)>Math.abs(y2-y1);
+      if(horizontal){const sign=Math.sign(x2-x1);x1+=sign*ar.width/2;x2-=sign*br.width/2;}else{const sign=Math.sign(y2-y1);y1+=sign*ar.height/2;y2-=sign*br.height/2;}
+      const path=document.createElementNS(ns,'path');path.setAttribute('d',horizontal?`M ${x1} ${y1} C ${(x1+x2)/2} ${y1}, ${(x1+x2)/2} ${y2}, ${x2} ${y2}`:`M ${x1} ${y1} C ${x1} ${(y1+y2)/2}, ${x2} ${(y1+y2)/2}, ${x2} ${y2}`);path.setAttribute('marker-end','url(#thread-arrow)');path.dataset.status=r.communityStatus||r.causalStatus;path.addEventListener('click',()=>openRelationship(r));svg.append(path);
+    }
+  };
+  requestAnimationFrame(draw);graphResizeObserver=new ResizeObserver(draw);graphResizeObserver.observe(root);
+}

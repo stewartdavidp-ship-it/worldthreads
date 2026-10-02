@@ -1,23 +1,1029 @@
 [
-{"id":"WT-1816-0001","title":"Gulf of Maine temperature shock","startDate":"1816","endDate":"1816","datePrecision":"YEAR","continent":"North America","region":"Northeastern United States / Gulf of Maine","historicalEntity":"United States","place":"Gulf of Maine","observation":"Daily average and low temperatures in 1816 were more than one standard deviation lower, while temperature differential was more than one standard deviation higher, than the other years in the 1814–1818 comparison.","coverageType":"CONDITION","system":"EARTH","topic":"Temperature","analyticalRole":["SHOCK"],"baseline":"1814–1818 comparison","anomaly":">1 SD differences","evidenceType":["Instrumental measurement","Scholarly analysis"],"confidence":"High","sourceRefs":["SRC-002"],"researchStatus":"Verified"},
-{"id":"WT-1816-0002","title":"Migratory fish populations respond","startDate":"1816","endDate":"1817","datePrecision":"DATE_RANGE","continent":"North America","region":"Gulf of Maine","historicalEntity":"United States","place":"Gulf of Maine watersheds","observation":"Abnormal temperatures affected alewives, shad, herring and mackerel differently according to migration/spawning phenology and temperature tolerance; alewives were particularly affected.","coverageType":"TREND","system":"BIOSPHERE","topic":"Fish populations / phenology","analyticalRole":["OUTCOME"],"evidenceType":["Administrative fish records","Climate records","Scholarly reconstruction"],"confidence":"High","sourceRefs":["SRC-002"],"researchStatus":"Verified"},
-{"id":"WT-1816-0003","title":"Food pressure shifts fishing effort","startDate":"1816","endDate":"1817","datePrecision":"DATE_RANGE","continent":"North America","region":"New England","historicalEntity":"United States","place":"New England / Gulf of Maine","observation":"Crop failure and threat of famine increased pressure on fisheries; insufficient alewife runs contributed to fishers shifting effort toward mackerel, making 1816 remembered as the 'mackerel year'.","coverageType":"TRANSITION","system":"PRODUCTION & RESOURCES","topic":"Food systems / fisheries","analyticalRole":["PRESSURE","ADAPTATION"],"evidenceType":["Administrative/economic record","Documentary observation","Scholarly interpretation"],"confidence":"High","sourceRefs":["SRC-002"],"researchStatus":"Verified"},
-{"id":"WT-1816-0004","title":"Temporary shock produces structural fishery change","startDate":"1816","endDate":"1820","datePrecision":"DATE_RANGE","continent":"North America","region":"Gulf of Maine","historicalEntity":"United States","place":"Gulf of Maine","observation":"The shift from riparian toward marine fisheries persisted and expanded after temperatures moderated and alewife populations recovered, indicating a lasting human-system adaptation after the short climate shock.","coverageType":"TREND","system":"HUMAN SYSTEMS","topic":"Economic adaptation / fisheries","analyticalRole":["ADAPTATION","OUTCOME"],"baseline":"pre-1816 fishery structure","evidenceType":["Administrative/economic record","Scholarly interpretation"],"confidence":"High","sourceRefs":["SRC-002"],"researchStatus":"Verified"},
-{"id":"WT-1816-0005","title":"Extremely cold summer in the Czech Lands","startDate":"1816","endDate":"1816","datePrecision":"YEAR","continent":"Europe","region":"Central Europe","historicalEntity":"Czech Lands","place":"Bohemia and Moravia","observation":"Instrumental and documentary evidence records an extremely cold summer in 1816; documentary evidence also records damaging weather and poor grain harvests.","coverageType":"CONDITION","system":"EARTH","topic":"Temperature / precipitation","analyticalRole":["SHOCK"],"evidenceType":["Instrumental measurement","Documentary observation"],"confidence":"High","sourceRefs":["SRC-001","SRC-003"],"researchStatus":"Verified"},
-{"id":"WT-1816-0006","title":"Harvest losses become grain-price pressure","startDate":"1816","endDate":"1817","datePrecision":"DATE_RANGE","continent":"Europe","region":"Central Europe","historicalEntity":"Czech Lands","place":"Bohemia and Moravia","observation":"Bad grain harvests associated with the 1815–1816 weather were followed by widespread grain-price increases culminating in 1817.","coverageType":"TREND","system":"PRODUCTION & RESOURCES","topic":"Grain harvest / food prices","analyticalRole":["OUTCOME","PRESSURE"],"baseline":"pre-crisis grain prices","anomaly":"large increases; crop-specific","evidenceType":["Administrative/economic records","Documentary evidence"],"confidence":"High","sourceRefs":["SRC-001"],"researchStatus":"Verified"},
-{"id":"WT-1816-0007","title":"Persistent rain in southwestern Bohemia","startDate":"1816-06-08","endDate":"1816-08","datePrecision":"DATE_RANGE","continent":"Europe","region":"Southwestern Bohemia","historicalEntity":"Czech Lands","place":"Vodokrty / southwestern Bohemia","observation":"A documentary account reports rain beginning 8 June 1816 and continuing for about eight weeks with few rain-free days; cereals became wet, yields were poor, prices high, hunger was reported, and lack of grain left some fields unsown in autumn.","coverageType":"EVENT","system":"EARTH","topic":"Rainfall → crops → prices → food security","analyticalRole":["SHOCK","OUTCOME"],"value":"~8 weeks rain","unit":"duration","baseline":"normal seasonal conditions","anomaly":"exceptionally persistent rain","evidenceType":["Contemporary documentary observation","Peer-reviewed analysis"],"confidence":"Medium-High","sourceRefs":["SRC-001"],"researchStatus":"Verified"},
-{"id":"WT-1816-0008","title":"Tambora eruption as an antecedent global shock","startDate":"1815-04","endDate":"1815-04","datePrecision":"MONTH","continent":"Asia","region":"Southeast Asia","historicalEntity":"Dutch East Indies","place":"Mount Tambora, Sumbawa","observation":"The April 1815 eruption of Mount Tambora injected volcanic material into the atmosphere and is identified as a major contributor to the unusually cold 1816 summer in much of Europe and other Northern Hemisphere climate anomalies.","coverageType":"EVENT","system":"EARTH","topic":"Volcanism / atmospheric forcing","analyticalRole":["SHOCK"],"evidenceType":["Volcanological reconstruction","Climate reconstruction","Scholarly synthesis"],"confidence":"High","sourceRefs":["SRC-016","SRC-003"],"researchStatus":"Verified","contextNode":true},
-{"id":"WT-1816-0009","title":"Geneva summer afternoons shift 3–4°C colder","startDate":"1816-06","endDate":"1816-08","datePrecision":"DATE_RANGE","continent":"Europe","region":"Western Europe / Alps","historicalEntity":"Swiss Confederation","place":"Geneva","observation":"Compared with the 1799–1821 reference period, the distribution of afternoon summer temperature anomalies in Geneva shifted by roughly 3–4°C toward colder conditions; increased cloudiness contributed substantially to the pattern.","coverageType":"STATISTIC","system":"EARTH","topic":"Temperature / cloudiness","analyticalRole":["SHOCK"],"value":"3–4","unit":"°C distribution shift","baseline":"1799–1821","evidenceType":["Instrumental measurement","Peer-reviewed analysis"],"confidence":"High","sourceRefs":["SRC-004"],"researchStatus":"Verified"},
-{"id":"WT-1816-0010","title":"Exceptional Alpine snow storage","startDate":"1816","endDate":"1817","datePrecision":"DATE_RANGE","continent":"Europe","region":"Alpine Rhine Basin","historicalEntity":"Swiss Confederation","place":"Swiss Alps / Rhine Basin","observation":"Historical reports and hydrological reconstruction indicate substantial snow storage in 1816 and 1817; snowfall events reached unusually low elevations and snow conditions helped set up the hydrological sensitivity of 1817.","coverageType":"CONDITION","system":"EARTH","topic":"Snowpack / hydrology","analyticalRole":["STATE","PRESSURE"],"evidenceType":["Historical observations","Hydrological reconstruction","Model simulation"],"confidence":"High","sourceRefs":["SRC-005"],"researchStatus":"Verified"},
-{"id":"WT-1816-0011","title":"Lake Constance and Rhine flooding in 1817","startDate":"1817-07-06","endDate":"1817-07-07","datePrecision":"DATE_RANGE","continent":"Europe","region":"Alpine Rhine Basin","historicalEntity":"Swiss Confederation / neighboring states","place":"Rhine at Basel and Lake Constance","observation":"On 6–7 July 1817 major flooding affected the Rhine at Basel and Lake Constance; Lake Constance reached the highest documented flood level in the cited reconstruction. Snowmelt combined with intense rainfall was central to the event.","coverageType":"EVENT","system":"EARTH","topic":"Flooding / snowmelt / rainfall","analyticalRole":["OUTCOME"],"evidenceType":["Historical water-level records","Hydrological reconstruction"],"confidence":"High","sourceRefs":["SRC-005"],"researchStatus":"Verified","contextNode":true},
-{"id":"WT-1816-0012","title":"Southern China experiences unusual cold, frost and snow","startDate":"1816","endDate":"1816","datePrecision":"YEAR","continent":"Asia","region":"Southern China","historicalEntity":"Qing Empire","place":"Southern China","observation":"Tree-ring and Chinese documentary proxies show a Tambora-era cold excursion with severe frost damage and snow and ice accumulations unusual for southern China.","coverageType":"CONDITION","system":"EARTH","topic":"Cold / frost / snow","analyticalRole":["SHOCK"],"evidenceType":["Tree-ring proxy","Documentary proxy","Scholarly reconstruction"],"confidence":"High","sourceRefs":["SRC-006"],"researchStatus":"Verified"},
-{"id":"WT-1816-0013","title":"China hydroclimate signal is spatially uneven","startDate":"1816","endDate":"1817","datePrecision":"DATE_RANGE","continent":"Asia","region":"Monsoon China","historicalEntity":"Qing Empire","place":"China","observation":"Tree-ring drought reconstructions indicate drying tendencies consistent with weakened monsoonal circulation, while documentary drought and flood records show much milder responses outside southern China. The divergence is itself important evidence about proxy sensitivity and regional variation.","coverageType":"CONDITION","system":"EARTH","topic":"Drought / monsoon / proxy disagreement","analyticalRole":["OUTCOME"],"evidenceType":["Tree-ring proxy","Documentary records","Multiproxy comparison"],"confidence":"Medium","sourceRefs":["SRC-006"],"researchStatus":"Verified"},
-{"id":"WT-1816-0014","title":"Laennec invents the stethoscope","startDate":"1816","endDate":"1816","datePrecision":"YEAR","continent":"Europe","region":"Western Europe","historicalEntity":"Kingdom of France","place":"Paris","observation":"René-Théophile-Hyacinthe Laennec developed mediate auscultation in 1816 by using a rolled paper tube to transmit chest sounds; he then spent several years refining the instrument and correlating clinical signs with pathology.","coverageType":"OBJECT","system":"POWER & CULTURE","topic":"Medicine / diagnostic technology","analyticalRole":["RESPONSE"],"evidenceType":["Medical history","Biographical evidence"],"confidence":"High","sourceRefs":["SRC-012"],"researchStatus":"Verified"},
-{"id":"WT-1816-0015","title":"Frankenstein begins in the cold, stormy summer of 1816","startDate":"1816-06","endDate":"1816-12","datePrecision":"DATE_RANGE","continent":"Europe","region":"Western Europe / Alps","historicalEntity":"Swiss Confederation / British literary circle","place":"Geneva / Cologny and later England","observation":"Mary Godwin conceived the story that became Frankenstein during the cold, rainy summer near Geneva; surviving Notebook A contains draft material written from August to early December 1816.","coverageType":"WORK","system":"POWER & CULTURE","topic":"Literature / climate and culture","analyticalRole":["OUTCOME"],"evidenceType":["Manuscript evidence","Library scholarship"],"confidence":"High","sourceRefs":["SRC-013","SRC-014"],"researchStatus":"Verified"},
-{"id":"WT-1816-0016","title":"United Provinces declare independence","startDate":"1816-07-09","endDate":"1816-07-09","datePrecision":"EXACT_DAY","continent":"South America","region":"Río de la Plata","historicalEntity":"United Provinces of the Río de la Plata","place":"San Miguel de Tucumán","observation":"On 9 July 1816 the Congress of Tucumán declared the formal break of the United Provinces from the Spanish monarchy; the declaration formed part of the wider Spanish American independence process.","coverageType":"EVENT","system":"POWER & CULTURE","topic":"Independence / state formation","analyticalRole":["OUTCOME"],"evidenceType":["Government historical record"],"confidence":"High","sourceRefs":["SRC-007"],"researchStatus":"Verified"},
-{"id":"WT-1816-0017","title":"Treaty of Sugauli ratified","startDate":"1816-03-04","endDate":"1816-03-04","datePrecision":"EXACT_DAY","continent":"Asia","region":"South Asia / Himalaya","historicalEntity":"Kingdom of Nepal / East India Company","place":"Makwanpur region / Nepal","observation":"The Treaty of Sugauli was exchanged/ratified on 4 March 1816 after the Anglo-Nepalese War. Its articles recognized territorial cessions to the East India Company and provided for accredited ministers between the two states.","coverageType":"EVENT","system":"POWER & CULTURE","topic":"War settlement / diplomacy / territorial change","analyticalRole":["OUTCOME","TRANSITION"],"evidenceType":["Treaty text"],"confidence":"High","sourceRefs":["SRC-008"],"researchStatus":"Verified"},
-{"id":"WT-1816-0018","title":"Anglo-Dutch fleet bombards Algiers","startDate":"1816-08-27","endDate":"1816-08-27","datePrecision":"EXACT_DAY","continent":"Africa","region":"North Africa / Mediterranean","historicalEntity":"Regency of Algiers","place":"Algiers","observation":"An Anglo-Dutch fleet under Edward Pellew bombarded Algiers on 27 August 1816 after demands for the release of captives were not met. Royal Museums Greenwich records that 1,083 Christian slaves and the British consul were subsequently liberated and restitution and peace terms secured.","coverageType":"EVENT","system":"POWER & CULTURE","topic":"Naval warfare / captivity / Mediterranean power","analyticalRole":["RESPONSE","OUTCOME"],"value":"1083","unit":"captives liberated (museum account)","evidenceType":["Museum historical record","Naval history"],"confidence":"High","sourceRefs":["SRC-009"],"researchStatus":"Verified"},
-{"id":"WT-1816-0019","title":"Shaka assumes AmaZulu chieftaincy and begins expansion","startDate":"1816","endDate":"1817","datePrecision":"DATE_RANGE","continent":"Africa","region":"Southeastern Africa","historicalEntity":"AmaZulu chiefdom","place":"KwaZulu-Natal region","observation":"Following the death of Senzangakhona in 1816, Shaka returned and took the AmaZulu chieftaincy. Scholarly chronology describes campaigns and incorporation of nearby chiefdoms during 1816–1817 as part of an expanding political formation.","coverageType":"TRANSITION","system":"POWER & CULTURE","topic":"Political consolidation / warfare / state formation","analyticalRole":["TRANSITION","OUTCOME"],"evidenceType":["Oral traditions analyzed by historians","Scholarly reconstruction"],"confidence":"Medium-High","sourceRefs":["SRC-010"],"researchStatus":"Verified"},
-{"id":"WT-1816-0020","title":"Slachter’s Nek rebels executed","startDate":"1816-03-09","endDate":"1816-03-09","datePrecision":"EXACT_DAY","continent":"Africa","region":"Southern Africa / Cape frontier","historicalEntity":"Cape Colony","place":"Van Aardtspos / Slachter’s Nek area","observation":"Five men convicted after the 1815 Slachter’s Nek rebellion were publicly hanged on 9 March 1816. The episode later acquired substantial political memory among Afrikaners, though interpretations of its longer-term causal importance differ.","coverageType":"EVENT","system":"POWER & CULTURE","topic":"Colonial rule / rebellion / political memory","analyticalRole":["OUTCOME"],"evidenceType":["Historical reference","Secondary historical sources"],"confidence":"Medium-High","sourceRefs":["SRC-011"],"researchStatus":"Verified"},
-{"id":"WT-1816-0021","title":"The Barber of Seville premieres","startDate":"1816-02-20","endDate":"1816-08","datePrecision":"DATE_RANGE","continent":"Europe","region":"Southern Europe","historicalEntity":"Papal States / Italian opera world","place":"Rome; later Bologna","observation":"Rossini's Il Barbiere di Siviglia premiered at Rome's Teatro Argentina on 20 February 1816. Its opening night was poorly received, but a revised Bologna performance in August was highly successful, preceding rapid wider diffusion.","coverageType":"WORK","system":"POWER & CULTURE","topic":"Music / opera / cultural diffusion","analyticalRole":["OUTCOME"],"evidenceType":["Performing arts institutional history"],"confidence":"High","sourceRefs":["SRC-015"],"researchStatus":"Verified"}
+  {
+    "id": "WT-1816-0001",
+    "title": "Salem air-temperature anomaly in 1816",
+    "startDate": "1816",
+    "endDate": "1816",
+    "datePrecision": "YEAR",
+    "continent": "North America",
+    "region": "Northeastern United States / Gulf of Maine",
+    "historicalEntity": "United States",
+    "place": "Salem, Massachusetts",
+    "observation": "The fisheries study analyzes unusually low average and minimum air temperatures and larger daily ranges at Salem in 1816 against 1814–1818.",
+    "coverageType": "CONDITION",
+    "system": "EARTH",
+    "topic": "Temperature",
+    "analyticalRole": [
+      "SHOCK"
+    ],
+    "baseline": "1814–1818 comparison",
+    "anomaly": "Temperature anomaly; see source tables",
+    "evidenceType": [
+      "Instrumental measurement",
+      "Scholarly analysis"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0001"
+    ]
+  },
+  {
+    "id": "WT-1816-0002",
+    "title": "Historical analysis infers species-specific fish responses",
+    "startDate": "1816",
+    "endDate": "1817",
+    "datePrecision": "DATE_RANGE",
+    "continent": "North America",
+    "region": "Gulf of Maine",
+    "historicalEntity": "United States",
+    "place": "Gulf of Maine watersheds",
+    "observation": "Export records and thermal-window analysis suggest alewives were especially vulnerable; biological responses are historical inferences, not direct population counts.",
+    "coverageType": "TREND",
+    "system": "BIOSPHERE",
+    "topic": "Fish populations / phenology",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Administrative fish records",
+      "Climate records",
+      "Scholarly reconstruction"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0002"
+    ]
+  },
+  {
+    "id": "WT-1816-0003",
+    "title": "Food pressure shifts fishing effort",
+    "startDate": "1816",
+    "endDate": "1817",
+    "datePrecision": "DATE_RANGE",
+    "continent": "North America",
+    "region": "New England",
+    "historicalEntity": "United States",
+    "place": "New England / Gulf of Maine",
+    "observation": "Crop failure and threat of famine increased pressure on fisheries; insufficient alewife runs contributed to fishers shifting effort toward mackerel, making 1816 remembered as the 'mackerel year'.",
+    "coverageType": "TRANSITION",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "Food systems / fisheries",
+    "analyticalRole": [
+      "PRESSURE",
+      "ADAPTATION"
+    ],
+    "evidenceType": [
+      "Administrative/economic record",
+      "Documentary observation",
+      "Scholarly interpretation"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0003"
+    ]
+  },
+  {
+    "id": "WT-1816-0004",
+    "title": "Temporary shock produces structural fishery change",
+    "startDate": "1816",
+    "endDate": "1820",
+    "datePrecision": "DATE_RANGE",
+    "continent": "North America",
+    "region": "Gulf of Maine",
+    "historicalEntity": "United States",
+    "place": "Gulf of Maine",
+    "observation": "The shift from riparian toward marine fisheries persisted and expanded after temperatures moderated and alewife populations recovered, indicating a lasting human-system adaptation after the short climate shock.",
+    "coverageType": "TREND",
+    "system": "HUMAN SYSTEMS",
+    "topic": "Economic adaptation / fisheries",
+    "analyticalRole": [
+      "ADAPTATION",
+      "OUTCOME"
+    ],
+    "baseline": "pre-1816 fishery structure",
+    "evidenceType": [
+      "Administrative/economic record",
+      "Scholarly interpretation"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0004"
+    ]
+  },
+  {
+    "id": "WT-1816-0005",
+    "title": "Extremely cold summer in the Czech Lands",
+    "startDate": "1816",
+    "endDate": "1816",
+    "datePrecision": "YEAR",
+    "continent": "Europe",
+    "region": "Central Europe",
+    "historicalEntity": "Czech Lands",
+    "place": "Bohemia and Moravia",
+    "observation": "Instrumental and documentary evidence records an extremely cold summer in 1816; documentary evidence also records damaging weather and poor grain harvests.",
+    "coverageType": "CONDITION",
+    "system": "EARTH",
+    "topic": "Temperature / precipitation",
+    "analyticalRole": [
+      "SHOCK"
+    ],
+    "evidenceType": [
+      "Instrumental measurement",
+      "Documentary observation"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-001"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0005"
+    ]
+  },
+  {
+    "id": "WT-1816-0006",
+    "title": "Harvest losses become grain-price pressure",
+    "startDate": "1816",
+    "endDate": "1817",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Europe",
+    "region": "Central Europe",
+    "historicalEntity": "Czech Lands",
+    "place": "Bohemia and Moravia",
+    "observation": "Bad grain harvests associated with the 1815–1816 weather were followed by widespread grain-price increases culminating in 1817.",
+    "coverageType": "TREND",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "Grain harvest / food prices",
+    "analyticalRole": [
+      "OUTCOME",
+      "PRESSURE"
+    ],
+    "baseline": "pre-crisis grain prices",
+    "anomaly": "large increases; crop-specific",
+    "evidenceType": [
+      "Administrative/economic records",
+      "Documentary evidence"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-001"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0006"
+    ]
+  },
+  {
+    "id": "WT-1816-0007",
+    "title": "Persistent rain in southwestern Bohemia",
+    "startDate": "1816-06-08",
+    "endDate": "1816-08",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Europe",
+    "region": "Southwestern Bohemia",
+    "historicalEntity": "Czech Lands",
+    "place": "Řenče, southwestern Bohemia",
+    "observation": "A chronicle from Řenče describes roughly eight weeks of frequent rain from 8 June 1816, wet grain, poor yields, rising prices and hunger.",
+    "coverageType": "EVENT",
+    "system": "EARTH",
+    "topic": "Rainfall → crops → prices → food security",
+    "analyticalRole": [
+      "SHOCK",
+      "OUTCOME"
+    ],
+    "value": "~8 weeks of frequent rain",
+    "unit": "duration",
+    "baseline": "normal seasonal conditions",
+    "anomaly": "exceptionally persistent rain",
+    "evidenceType": [
+      "Contemporary documentary observation",
+      "Peer-reviewed analysis"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-001"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0007"
+    ]
+  },
+  {
+    "id": "WT-1816-0008",
+    "title": "Tambora eruption as an antecedent global shock",
+    "startDate": "1815-04",
+    "endDate": "1815-04",
+    "datePrecision": "MONTH",
+    "continent": "Asia",
+    "region": "Southeast Asia",
+    "historicalEntity": "Dutch East Indies",
+    "place": "Mount Tambora, Sumbawa",
+    "observation": "The April 1815 eruption of Mount Tambora injected volcanic material into the atmosphere and is identified as a major contributor to the unusually cold 1816 summer in much of Europe and other Northern Hemisphere climate anomalies.",
+    "coverageType": "EVENT",
+    "system": "EARTH",
+    "topic": "Volcanism / atmospheric forcing",
+    "analyticalRole": [
+      "SHOCK"
+    ],
+    "evidenceType": [
+      "Volcanological reconstruction",
+      "Climate reconstruction",
+      "Scholarly synthesis"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-016",
+      "SRC-003",
+      "SRC-001"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "contextNode": true,
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0008-SRC-001"
+    ]
+  },
+  {
+    "id": "WT-1816-0009",
+    "title": "Geneva summer afternoons shift 3–4°C colder",
+    "startDate": "1816-06",
+    "endDate": "1816-08",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Europe",
+    "region": "Western Europe / Alps",
+    "historicalEntity": "Swiss Confederation",
+    "place": "Geneva",
+    "observation": "Compared with the 1799–1821 reference period, the distribution of afternoon summer temperature anomalies in Geneva shifted by roughly 3–4°C toward colder conditions; increased cloudiness contributed substantially to the pattern.",
+    "coverageType": "STATISTIC",
+    "system": "EARTH",
+    "topic": "Temperature / cloudiness",
+    "analyticalRole": [
+      "SHOCK"
+    ],
+    "value": "3–4",
+    "unit": "°C distribution shift",
+    "baseline": "1799–1821",
+    "evidenceType": [
+      "Instrumental measurement",
+      "Peer-reviewed analysis"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-004"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0009"
+    ]
+  },
+  {
+    "id": "WT-1816-0010",
+    "title": "Exceptional Alpine snow storage",
+    "startDate": "1816",
+    "endDate": "1817",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Europe",
+    "region": "Alpine Rhine Basin",
+    "historicalEntity": "Swiss Confederation",
+    "place": "Swiss Alps / Rhine Basin",
+    "observation": "A hydrological reconstruction finds substantial Alpine snow storage in spring 1816 and 1817. It attributes the 1817 flood meltwater principally to fresh spring snowfall rather than surviving 1815/1816 snow.",
+    "coverageType": "CONDITION",
+    "system": "EARTH",
+    "topic": "Snowpack / hydrology",
+    "analyticalRole": [
+      "STATE",
+      "PRESSURE"
+    ],
+    "evidenceType": [
+      "Historical observations",
+      "Hydrological reconstruction",
+      "Model simulation"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-005"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0010-SRC-005",
+      "EV-R13-WT-1816-0010-SRC-005"
+    ]
+  },
+  {
+    "id": "WT-1816-0011",
+    "title": "Lake Constance and Rhine flooding in 1817",
+    "startDate": "1817-07-06",
+    "endDate": "1817-07-07",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Europe",
+    "region": "Alpine Rhine Basin",
+    "historicalEntity": "Swiss Confederation / neighboring states",
+    "place": "Rhine at Basel and Lake Constance",
+    "observation": "On 6–7 July 1817 major flooding affected the Rhine at Basel and Lake Constance; Lake Constance reached the highest documented flood level in the cited reconstruction. Snowmelt combined with intense rainfall was central to the event.",
+    "coverageType": "EVENT",
+    "system": "EARTH",
+    "topic": "Flooding / snowmelt / rainfall",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Historical water-level records",
+      "Hydrological reconstruction"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-005"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "contextNode": true,
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0011-SRC-005",
+      "EV-R13-WT-1816-0011-SRC-005"
+    ]
+  },
+  {
+    "id": "WT-1816-0012",
+    "title": "Southern Chinese records report unusual cold in 1815–1816",
+    "startDate": "1815",
+    "endDate": "1816",
+    "datePrecision": "YEAR",
+    "continent": "Asia",
+    "region": "Southern China",
+    "historicalEntity": "Qing Empire",
+    "place": "Southern China",
+    "observation": "Southern Chinese documents report unusual snow, frost and ice in 1815–1816; the reconstructed temperature response has a different spatial pattern.",
+    "coverageType": "CONDITION",
+    "system": "EARTH",
+    "topic": "Cold / frost / snow",
+    "analyticalRole": [
+      "SHOCK"
+    ],
+    "evidenceType": [
+      "Tree-ring proxy",
+      "Documentary proxy",
+      "Scholarly reconstruction"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-006"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0012"
+    ]
+  },
+  {
+    "id": "WT-1816-0013",
+    "title": "China hydroclimate signal is spatially uneven",
+    "startDate": "1816",
+    "endDate": "1817",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Asia",
+    "region": "Monsoon China",
+    "historicalEntity": "Qing Empire",
+    "place": "China",
+    "observation": "Tree-ring drought reconstructions indicate drying tendencies consistent with weakened monsoonal circulation, while documentary drought and flood records show much milder responses outside southern China. The divergence is itself important evidence about proxy sensitivity and regional variation.",
+    "coverageType": "CONDITION",
+    "system": "EARTH",
+    "topic": "Drought / monsoon / proxy disagreement",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Tree-ring proxy",
+      "Documentary records",
+      "Multiproxy comparison"
+    ],
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-006"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B2-WT-1816-0013"
+    ]
+  },
+  {
+    "id": "WT-1816-0014",
+    "title": "Laennec invents the stethoscope",
+    "startDate": "1816",
+    "endDate": "1816",
+    "datePrecision": "YEAR",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "historicalEntity": "Kingdom of France",
+    "place": "Paris",
+    "observation": "René-Théophile-Hyacinthe Laennec developed mediate auscultation in 1816 by using a rolled paper tube to transmit chest sounds; he then spent several years refining the instrument and correlating clinical signs with pathology.",
+    "coverageType": "OBJECT",
+    "system": "POWER & CULTURE",
+    "topic": "Medicine / diagnostic technology",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Medical history",
+      "Biographical evidence"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-012"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0014-SRC-012"
+    ]
+  },
+  {
+    "id": "WT-1816-0015",
+    "title": "Frankenstein begins in the cold, stormy summer of 1816",
+    "startDate": "1816-06",
+    "endDate": "1816-12",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Europe",
+    "region": "Western Europe / Alps",
+    "historicalEntity": "Swiss Confederation / British literary circle",
+    "place": "Geneva / Cologny and later England",
+    "observation": "Mary Godwin conceived the story that became Frankenstein during the cold, rainy summer near Geneva; surviving Notebook A contains draft material written from August to early December 1816.",
+    "coverageType": "WORK",
+    "system": "POWER & CULTURE",
+    "topic": "Literature / climate and culture",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Manuscript evidence",
+      "Library scholarship"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-013",
+      "SRC-014",
+      "SRC-020"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0015-SRC-013",
+      "EV-B3-WT-1816-0015-SRC-014",
+      "EV-R13-WT-1816-0015-SRC-020"
+    ]
+  },
+  {
+    "id": "WT-1816-0016",
+    "title": "United Provinces declare independence",
+    "startDate": "1816-07-09",
+    "endDate": "1816-07-09",
+    "datePrecision": "EXACT_DAY",
+    "continent": "South America",
+    "region": "Río de la Plata",
+    "historicalEntity": "United Provinces of the Río de la Plata",
+    "place": "San Miguel de Tucumán",
+    "observation": "On 9 July 1816 the Congress of Tucumán declared the formal break of the United Provinces from the Spanish monarchy; the declaration formed part of the wider Spanish American independence process.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "Independence / state formation",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Government historical record"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-007"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0016-SRC-007"
+    ]
+  },
+  {
+    "id": "WT-1816-0017",
+    "title": "Treaty of Sugauli counterparts exchanged",
+    "startDate": "1816-03-04",
+    "endDate": "1816-03-04",
+    "datePrecision": "EXACT_DAY",
+    "continent": "Asia",
+    "region": "South Asia / Himalaya",
+    "historicalEntity": "Kingdom of Nepal / East India Company",
+    "place": "Makwanpur region / Nepal",
+    "observation": "A scanned government compilation records exchange of treaty counterparts on 4 March 1816 at Muckwaunpoor. Articles III and VIII specify territorial cessions and accredited ministers.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "War settlement / diplomacy / territorial change",
+    "analyticalRole": [
+      "OUTCOME",
+      "TRANSITION"
+    ],
+    "evidenceType": [
+      "Treaty text"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-008",
+      "SRC-019"
+    ],
+    "researchStatus": "Text corroborated against scanned compilation; independent review pending",
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0017-SRC-008",
+      "EV-R13-WT-1816-0017-SRC-019"
+    ]
+  },
+  {
+    "id": "WT-1816-0018",
+    "title": "Anglo-Dutch fleet bombards Algiers",
+    "startDate": "1816-08-27",
+    "endDate": "1816-08-27",
+    "datePrecision": "EXACT_DAY",
+    "continent": "Africa",
+    "region": "North Africa / Mediterranean",
+    "historicalEntity": "Regency of Algiers",
+    "place": "Algiers",
+    "observation": "An Anglo-Dutch fleet under Edward Pellew bombarded Algiers on 27 August 1816 after demands for the release of captives were not met. Royal Museums Greenwich records that 1,083 Christian slaves and the British consul were subsequently liberated and restitution and peace terms secured.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "Naval warfare / captivity / Mediterranean power",
+    "analyticalRole": [
+      "RESPONSE",
+      "OUTCOME"
+    ],
+    "value": "1083",
+    "unit": "captives liberated (museum account)",
+    "evidenceType": [
+      "Museum historical record",
+      "Naval history"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-009"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0018-SRC-009"
+    ]
+  },
+  {
+    "id": "WT-1816-0019",
+    "title": "Shaka assumes AmaZulu chieftaincy and begins expansion",
+    "startDate": "1816",
+    "endDate": "1817",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Africa",
+    "region": "Southeastern Africa",
+    "historicalEntity": "AmaZulu chiefdom",
+    "place": "KwaZulu-Natal region",
+    "observation": "Following the death of Senzangakhona in 1816, Shaka returned and took the AmaZulu chieftaincy. Scholarly chronology describes campaigns and incorporation of nearby chiefdoms during 1816–1817 as part of an expanding political formation.",
+    "coverageType": "TRANSITION",
+    "system": "POWER & CULTURE",
+    "topic": "Political consolidation / warfare / state formation",
+    "analyticalRole": [
+      "TRANSITION",
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Oral traditions analyzed by historians",
+      "Scholarly reconstruction"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-010"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0019-SRC-010"
+    ]
+  },
+  {
+    "id": "WT-1816-0020",
+    "title": "Slachter’s Nek rebels executed",
+    "startDate": "1816-03-09",
+    "endDate": "1816-03-09",
+    "datePrecision": "EXACT_DAY",
+    "continent": "Africa",
+    "region": "Southern Africa / Cape frontier",
+    "historicalEntity": "Cape Colony",
+    "place": "Van Aardtspos / Slachter’s Nek area",
+    "observation": "Five men convicted after the 1815 Slachter’s Nek rebellion were publicly hanged on 9 March 1816. The episode later acquired substantial political memory among Afrikaners, though interpretations of its longer-term causal importance differ.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "Colonial rule / rebellion / political memory",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Historical reference",
+      "Secondary historical sources"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-011"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0020-SRC-011"
+    ]
+  },
+  {
+    "id": "WT-1816-0021",
+    "title": "The Barber of Seville premieres",
+    "startDate": "1816-02-20",
+    "endDate": "1816-02-20",
+    "datePrecision": "EXACT_DAY",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "historicalEntity": "Papal States / Italian opera world",
+    "place": "Rome, Teatro Argentina",
+    "observation": "Rossini’s Il Barbiere di Siviglia premiered at Rome’s Teatro Argentina on 20 February 1816.",
+    "coverageType": "WORK",
+    "system": "POWER & CULTURE",
+    "topic": "Music / opera / cultural diffusion",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Performing arts institutional history"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-015"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-B3-WT-1816-0021-SRC-015",
+      "EV-R15-WT-1816-0021"
+    ]
+  },
+  {
+    "id": "WT-1816-0022",
+    "title": "Ash destroys crops and contaminates drinking water",
+    "startDate": "1815-04",
+    "endDate": "1815",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Asia",
+    "region": "Southeast Asia",
+    "historicalEntity": "Sumbawa and neighboring island communities",
+    "place": "Sumbawa",
+    "observation": "De Jong Boers describes ash-damaged crops and ash-contaminated drinking water on Sumbawa (p. 43).",
+    "coverageType": "CONDITION",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "Tambora direct local impacts",
+    "analyticalRole": [
+      "SHOCK"
+    ],
+    "evidenceType": [
+      "Scholarly synthesis of historical reports"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-018"
+    ],
+    "researchStatus": "Corroborated; independent review pending",
+    "contextNode": true,
+    "evidenceRefs": [
+      "EV-0022"
+    ]
+  },
+  {
+    "id": "WT-1816-0023",
+    "title": "Floating pumice hampers a sea route in 1819",
+    "startDate": "1819",
+    "endDate": "1819",
+    "datePrecision": "YEAR",
+    "continent": "Asia",
+    "region": "Southeast Asia",
+    "historicalEntity": "Sumbawa and neighboring island communities",
+    "place": "Tambora / Pekat, Sumbawa",
+    "observation": "De Jong Boers reports Vetter’s 1819 account of difficult sea access and floating pumice near Tambora and Pekat (p. 46).",
+    "coverageType": "CONDITION",
+    "system": "HUMAN SYSTEMS",
+    "topic": "Tambora direct local impacts",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Scholarly synthesis of historical reports"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-018"
+    ],
+    "researchStatus": "Corroborated; independent review pending",
+    "contextNode": true,
+    "evidenceRefs": [
+      "EV-0023"
+    ]
+  },
+  {
+    "id": "WT-1816-0024",
+    "title": "Crop loss contributes to post-eruption famine",
+    "startDate": "1815",
+    "endDate": "1815",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Asia",
+    "region": "Southeast Asia",
+    "historicalEntity": "Sumbawa and neighboring island communities",
+    "place": "Sumbawa",
+    "observation": "De Jong Boers links destroyed crops to immediate famine on Sumbawa (pp. 43–44).",
+    "coverageType": "CONDITION",
+    "system": "HUMAN SYSTEMS",
+    "topic": "Tambora direct local impacts",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Scholarly synthesis of historical reports"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-018"
+    ],
+    "researchStatus": "Corroborated; independent review pending",
+    "contextNode": true,
+    "evidenceRefs": [
+      "EV-0024"
+    ]
+  },
+  {
+    "id": "WT-1816-0025",
+    "title": "Nepal accepts revised Terai settlement terms",
+    "startDate": "1816-12-08",
+    "endDate": "1816-12-11",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Asia",
+    "region": "South Asia / Himalaya",
+    "historicalEntity": "Kingdom of Nepal / East India Company",
+    "place": "Nepal–Company frontier / Terai",
+    "observation": "A memorandum of 8 December 1816 proposed restoring specified Terai lands with exceptions and a surveyed boundary. A letter received on 11 December records the Rajah’s acceptance of the terms; actual implementation dates are not established here.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "Diplomacy / territorial revision",
+    "analyticalRole": [
+      "RESPONSE",
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Scanned government compilation of diplomatic documents"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-019"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-R13-WT-1816-0025-SRC-019"
+    ]
+  },
+  {
+    "continent": "Oceania",
+    "region": "Southeastern Australia",
+    "historicalEntity": "British colony of New South Wales / Aboriginal Country",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "analyticalRole": [
+      "SHOCK",
+      "OUTCOME"
+    ],
+    "confidence": "Medium-High",
+    "researchStatus": "Source checked; independent review pending",
+    "id": "WT-1816-0026",
+    "title": "Macquarie orders a punitive military expedition",
+    "startDate": "1816-04-10",
+    "endDate": "1816-04-10",
+    "datePrecision": "EXACT_DAY",
+    "place": "Sydney and the Cumberland Plain",
+    "observation": "Macquarie’s diary records orders for three detachments, forced removal and hostage-taking, with firing authorized on resistance. His justification is a colonial official’s account, not a neutral description of the conflict.",
+    "topic": "Colonial policy / coercion",
+    "evidenceType": [
+      "Primary diary transcription"
+    ],
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "evidenceRefs": [
+      "EV-R14-WT-1816-0026-SRC-021"
+    ]
+  },
+  {
+    "continent": "Oceania",
+    "region": "Southeastern Australia",
+    "historicalEntity": "British colony of New South Wales / Aboriginal Country",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "analyticalRole": [
+      "SHOCK",
+      "OUTCOME"
+    ],
+    "confidence": "Medium-High",
+    "researchStatus": "Source checked; independent review pending",
+    "id": "WT-1816-0027",
+    "title": "Dharawal people killed at Appin",
+    "startDate": "1816-04-17",
+    "endDate": "1816-04-17",
+    "datePrecision": "EXACT_DAY",
+    "place": "Appin, Cataract River",
+    "observation": "The NSW archive identifies the Appin massacre on 17 April 1816. Wallis’s report describes firing at the fleeing camp and counts fourteen bodies; this is a reported minimum, not an independently complete death toll.",
+    "topic": "Colonial violence / Dharawal history",
+    "evidenceType": [
+      "Archive interpretation",
+      "Contemporary military report transcription"
+    ],
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "evidenceRefs": [
+      "EV-R14-WT-1816-0027-SRC-022"
+    ]
+  },
+  {
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "historicalEntity": "Italian states / European opera networks",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "Opera / reception / diffusion",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Performing arts institutional history"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-015"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "id": "WT-1816-0028",
+    "title": "Revised Barber of Seville receives acclaim in Bologna",
+    "startDate": "1816-08",
+    "endDate": "1816-08",
+    "datePrecision": "MONTH",
+    "place": "Bologna",
+    "observation": "The Metropolitan Opera timeline describes slight revisions followed by a successful Bologna performance in August 1816. Reception is an institutional historical account, not a quantified audience measure.",
+    "evidenceRefs": [
+      "EV-R15-WT-1816-0028"
+    ]
+  },
+  {
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "historicalEntity": "Italian states / European opera networks",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "Opera / reception / diffusion",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Performing arts institutional history"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-015"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "id": "WT-1816-0029",
+    "title": "Barber of Seville reaches more cities in 1817",
+    "startDate": "1817",
+    "endDate": "1817",
+    "datePrecision": "YEAR",
+    "place": "Eight additional Italian cities and Barcelona",
+    "observation": "The Metropolitan Opera timeline reports performances in eight additional Italian cities and Barcelona during 1817. The underlying city-by-city performance records remain uninspected.",
+    "contextNode": true,
+    "evidenceRefs": [
+      "EV-R15-WT-1816-0029"
+    ]
+  },
+  {
+    "id": "WT-1816-0030",
+    "title": "Cholera epidemic reported in Jessore in August 1817",
+    "startDate": "1817-08",
+    "endDate": "1817-08",
+    "datePrecision": "MONTH",
+    "continent": "Asia",
+    "region": "Bengal",
+    "historicalEntity": "Bengal Presidency",
+    "place": "Jessore, present-day Bangladesh",
+    "observation": "Harrison locates the apparent start of the 1817 epidemic in Jessore in August. Earlier disease names and colonial reporting complicate retrospective classification; no exact death toll is asserted.",
+    "coverageType": "EVENT",
+    "system": "HUMAN SYSTEMS",
+    "topic": "Population health",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Historical scholarship"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-024"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "contextNode": true,
+    "evidenceRefs": [
+      "EV-R16-WT-1816-0030"
+    ]
+  },
+  {
+    "continent": "Oceania",
+    "historicalEntity": "British Australian colonies",
+    "researchStatus": "Source checked; independent review pending",
+    "confidence": "Medium-High",
+    "id": "WT-1816-0031",
+    "title": "Macquarie records sustained heavy rain",
+    "startDate": "1816-05-31",
+    "endDate": "1816-05-31",
+    "datePrecision": "DAY",
+    "region": "New South Wales",
+    "place": "Sydney / Hawkesbury catchments",
+    "observation": "The 31 May diary entry describes four days of heavy rain and three days of southeasterly gales. This is a qualitative report, not a rainfall measurement.",
+    "coverageType": "CONDITION",
+    "system": "EARTH",
+    "topic": "Weather / agriculture",
+    "analyticalRole": [
+      "CONDITION"
+    ],
+    "evidenceType": [
+      "Diary transcription"
+    ],
+    "sourceRefs": [
+      "SRC-025"
+    ],
+    "evidenceRefs": [
+      "EV-R17-WT-1816-0031"
+    ]
+  },
+  {
+    "continent": "Oceania",
+    "historicalEntity": "British Australian colonies",
+    "researchStatus": "Source checked; independent review pending",
+    "confidence": "Medium-High",
+    "id": "WT-1816-0032",
+    "title": "Flood and crop losses reported near Windsor",
+    "startDate": "1816-05-31",
+    "endDate": "1816-05-31",
+    "datePrecision": "DAY",
+    "region": "New South Wales",
+    "place": "Hawkesbury River and South Creek",
+    "observation": "A dispatch received on 2 June reports flooding on 31 May and anticipated losses of houses and grain. The 3 June entry relays further crop-loss reports; these are official accounts, not a surveyed damage total.",
+    "coverageType": "EVENT",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "Weather / agriculture",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Diary transcription"
+    ],
+    "sourceRefs": [
+      "SRC-026"
+    ],
+    "evidenceRefs": [
+      "EV-R17-WT-1816-0032"
+    ]
+  },
+  {
+    "continent": "Oceania",
+    "historicalEntity": "British Australian colonies",
+    "researchStatus": "Source checked; independent review pending",
+    "confidence": "Medium-High",
+    "id": "WT-1816-0033",
+    "title": "Hobart newspaper anticipates a plentiful harvest",
+    "startDate": "1816-08-31",
+    "endDate": "1816-08-31",
+    "datePrecision": "DAY",
+    "region": "Van Diemen’s Land",
+    "place": "Hobart / Tasmania",
+    "observation": "The 31 August Hobart Gazette anticipates an abundant harvest and possible supply to Port Jackson despite severe weather. The transcription matches Garden’s quoted account; both concern the same newspaper passage. This is an expectation, not realized output.",
+    "coverageType": "EVENT",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "Weather / agriculture",
+    "analyticalRole": [
+      "RESILIENCE"
+    ],
+    "evidenceType": [
+      "Newspaper quoted through scholarship"
+    ],
+    "sourceRefs": [
+      "SRC-027",
+      "SRC-028"
+    ],
+    "evidenceRefs": [
+      "EV-R17-WT-1816-0033",
+      "EV-R18-WT-1816-0033"
+    ]
+  }
 ]
