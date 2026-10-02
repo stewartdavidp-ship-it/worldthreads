@@ -2,11 +2,11 @@
 (function(){
   const $=id=>document.getElementById(id),model=window.WorldThreadsJourney;
   const node=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
-  let selected=null,currentThread=null,recent=[],arrivedVia=null,view='discover',stage='prepare',initialized=false,saved=null,engaged=false;
+  let selected=null,currentThread=null,recent=[],arrivedVia=null,view='discover',stage='prepare',initialized=false,saved=null,engaged=false,caseMode=false,caseStance='',caseLead='',caseReason='';
   const storageKey='worldthreads-journey-v1';
   const starterId='THREAD-CLIMATE-CULTURE';
   const names={
-    'THREAD-CLIMATE-CULTURE':'What connects a volcano to Frankenstein?',
+    'THREAD-CLIMATE-CULTURE':'Was weather the decisive influence on Frankenstein?',
     'THREAD-GULF-MAINE':'How did a cold summer change fishing?',
     'THREAD-CENTRAL-EUROPE-FOOD':'How did bad weather put food under pressure?',
     'THREAD-ALPINE-HYDRO':'How can a cold year store up flood risk?',
@@ -18,7 +18,7 @@
   function remember(){
     if(!initialized||!engaged)return;
     const fields={};for(const id of ['researchPlace','researchDirection','personalQuestion','proposedThreadTitle','researchGap'])fields[id]=$(id).value;
-    saved={threadId:currentThread,selected,recent,view,stage,fields,startingFactId:WorldThreadsApp.researchStartId||null};
+    saved={threadId:currentThread,selected,recent,view,stage,fields,startingFactId:WorldThreadsApp.researchStartId||null,challengeContext:WorldThreadsApp.challengeContext||null,caseStance,caseLead,caseReason};
     try{localStorage.setItem(storageKey,JSON.stringify(saved));}catch{}
   }
   function show(next){
@@ -32,7 +32,7 @@
   function tab(which){stage=which;for(const [name,id]of [['prepare','prepareResearch'],['return','returnResearch'],['progress','progressResearch']])$(id).hidden=name!==which;document.querySelectorAll('[data-research-tab]').forEach(b=>b.classList.toggle('active',b.dataset.researchTab===which));remember();}
   function showEvidence(){show('research');tab('return');$('evidenceDisclosure').open=true;}
   function chooseThread(t){
-    WorldThreadsApp.state.threadId=t.id;selected=t.nodeIds[0];recent=[selected];currentThread=t.id;arrivedVia=null;
+    WorldThreadsApp.state.threadId=t.id;selected=t.nodeIds[0];recent=[selected];currentThread=t.id;arrivedVia=null;caseMode=t.id===starterId;caseStance='';caseLead='';caseReason='';
     $('connectionDepth').value='0';WorldThreadsApp.render();show('explore');
   }
   function selectFact(id,edge=null){
@@ -42,6 +42,25 @@
   const factNames={'WT-1816-0008':'Tambora erupts in 1815','WT-1816-0009':'Geneva’s summer turns colder','WT-1816-0015':'Frankenstein begins in 1816'};
   const storySummaries={'WT-1816-0008':'An eruption in what is now Indonesia contributed to climate anomalies the following year. How could one event reach so far?', 'WT-1816-0009':'Geneva’s summer afternoons were roughly 3–4°C colder than the reference period. What might weather change in people’s lives?', 'WT-1816-0015':'Mary Shelley conceived Frankenstein near Geneva in the cold, rainy summer of 1816. Weather was part of the setting; ghost stories, scientific ideas and creative choices also mattered.'};
   function factTitle(o){return factNames[o?.id]||o?.title||'Historical fact';}
+  function renderCase(){
+    const c=WorldThreadsInvestigation,root=$('casePanel');root.replaceChildren();
+    const claim=node('div',undefined,'case-claim');claim.append(node('p','CLAIM TO TEST · GENEVA, 1816','eyebrow'),node('h3',c.claim),node('p',c.boundary));
+    const positions=node('div',undefined,'case-positions');positions.setAttribute('role','group');positions.setAttribute('aria-label','Your working position');
+    for(const [value,label]of [['supports','I lean toward agreeing'],['counterevidence','I’m not convinced'],['unresolved','I need more evidence']]){const b=button(label,()=>{caseStance=value;remember();renderCase();},'nav-btn'+(caseStance===value?' active':''));b.setAttribute('aria-pressed',String(caseStance===value));positions.append(b);}
+    claim.append(node('p','1 · What is your working position? You can revise it after reading.'),positions,node('p','A position is a starting point. Only sourced evidence can strengthen or challenge the recorded relationships.','scope-note'));root.append(claim);
+    const layout=node('div',undefined,'case-evidence-layout'),leads=node('div',undefined,'case-leads');leads.append(node('h3','2 · Examine the clues'),node('p','Pick a source passage. Look for what it establishes—and what it does not.'));
+    for(const lead of c.leads){const b=button('',()=>{caseLead=lead.id;remember();renderCase();$('caseSource').scrollIntoView({behavior:'smooth',block:'nearest'});},'case-lead'+(caseLead===lead.id?' selected':''));b.setAttribute('aria-pressed',String(caseLead===lead.id));b.append(node('small',lead.date),node('strong',lead.title),node('span','Examine this passage →'));leads.append(b);}
+    const source=node('article',undefined,'case-source');source.id='caseSource';source.setAttribute('aria-live','polite');const chosen=c.leads.find(l=>l.id===caseLead);
+    if(chosen){source.append(node('p','SOURCE PASSAGE · '+chosen.date,'eyebrow'),node('h3',chosen.title),node('blockquote',chosen.quote),node('p',chosen.locator));const link=node('a','Read the passage in its full source ↗');link.href=c.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';source.append(link,node('h4','Question the connection'),node('p',chosen.question),node('h4','What this cannot establish'),node('p',chosen.limits));}
+    else source.append(node('h3','Which clue would you inspect first?'),node('p','You do not need to read them in order. Start with the clue that might strengthen—or change—your explanation.'));
+    source.append(node('p',c.sourcesNote,'source-warning'));layout.append(leads,source);root.append(layout);
+    const response=node('section',undefined,'case-response');response.append(node('h3','3 · Make the case with evidence'),node('p','Explain what a passage supports or weakens. What additional evidence would distinguish weather, the challenge, scientific ideas and creative choices?'));
+    const label=node('label','Your evidence-based reasoning and unanswered question');label.htmlFor='caseReason';const input=node('textarea');input.id='caseReason';input.rows=4;input.maxLength=1600;input.value=caseReason;input.placeholder='This passage suggests… But it cannot tell us… I would look for…';input.oninput=()=>{caseReason=input.value;remember();};response.append(label,input);
+    const status=node('p',undefined,'scope-note');status.id='caseActionStatus';status.setAttribute('role','status');
+    response.append(button('Research the missing evidence →',()=>{if(!caseStance||!chosen||caseReason.trim().length<30){status.textContent='Choose a working position, inspect a passage, and explain your reasoning (at least 30 characters).';return;}selected=c.startingFactId;startResearch('new_thread',`Test the claim: ${c.claim} My working position: ${caseStance==='supports'?'tentatively support':caseStance==='counterevidence'?'challenge':'unresolved'}. Inspected lead: ${chosen.title}. Reasoning and missing evidence: ${caseReason}. Seek evidence that could support or overturn this position; do not assume it is correct.`,{claim:c.claim,workingPosition:caseStance,sourceUrl:c.sourceUrl,locator:chosen.locator,quote:chosen.quote,limits:chosen.limits,sourceDependence:c.sourcesNote});},'nav-btn primary'));
+    response.append(button('Contribute a passage about the recorded weather connection',()=>{if(!chosen){status.textContent='Inspect a source passage before preparing evidence.';return;}showEvidence();$('evidenceClaim').value=c.targetClaimId;$('evidenceStance').value='';$('evidenceSubmitStatus').textContent='The recorded relationship says weather was a contributing context—not the decisive cause. Choose whether this passage supports or weakens that narrower relationship, and explain its relevance.';$('evidenceTitle').value='Frankenstein (1831): Introduction and reproduced 1817 Preface';$('evidenceUrl').value=c.sourceUrl;$('evidenceLocator').value=chosen.locator;$('evidenceQuote').value=chosen.quote;$('evidenceRelevance').value='';$('evidenceLimits').value=chosen.limits+' '+c.sourcesNote;},'nav-btn'),status,node('p','Your working position stays on this device. It is not a vote, a published comment or a finding. Publishing requires cited evidence and automatic checks.','scope-note'));
+    root.append(response,button('Explore the recorded facts and relationships',()=>{caseMode=false;selected=c.startingFactId;renderNetwork();},'nav-btn'));
+  }
   function palette(o){return {EARTH:'#d99561',BIOSPHERE:'#65ad84','PRODUCTION & RESOURCES':'#c0a553','HUMAN SYSTEMS':'#739bcb','POWER & CULTURE':'#b48aca'}[o?.system]||'#8aa59a';}
   function gallery(){
     const root=$('threadGallery');root.replaceChildren();
@@ -61,6 +80,8 @@
     if(!initialized)return;const app=WorldThreadsApp,s=app.state,t=thread();if(!t)return;
     if(currentThread!==t.id){currentThread=t.id;selected=t.nodeIds[0];recent=[selected];arrivedVia=null;}
     if(!app.obs(selected))selected=t.nodeIds[0];
+    $('casePanel').hidden=!caseMode;document.querySelector('.explorer-workspace').hidden=caseMode;
+    if(caseMode){$('exploreTitle').textContent=WorldThreadsInvestigation.title;$('exploreDescription').textContent='Take a position, inspect the source passages, then decide what evidence you still need. You can change your view.';renderCase();return;}
     $('exploreTitle').textContent=title(t);$('exploreDescription').textContent='Each fact is a clue. Examine how it connects to the next, consider other explanations, and decide what you would investigate.';
     const depth=Number($('connectionDepth').value),ids=model.neighbourhood(t,selected,s.relationships,depth);
     const records=ids.map(id=>app.obs(id)).filter(Boolean),rels=s.relationships.filter(r=>ids.includes(r.subjectId)&&ids.includes(r.objectId)&&(depth||t.relationshipIds?.includes(r.id)||r.id===arrivedVia?.id));
@@ -88,7 +109,8 @@
     const meanings={CAUSAL:'Claimed causal link',CONTRIBUTORY:'Contributing influence',ASSOCIATED:'Association, not established causation',CONTESTED:'Connection is contested'};
     return (meanings[r.causalStatus]||r.causalStatus)+' · '+r.confidence+' confidence'+(r.communityStatus?' · '+WorldThreadsCommunityUI?.statusLabel(r.communityStatus):'');
   }
-  function startResearch(direction='continue_thread',question=''){
+  function startResearch(direction='continue_thread',question='',challengeContext=null){
+    WorldThreadsApp.challengeContext=challengeContext;
     const o=WorldThreadsApp.obs(selected);if(!o)return;
     WorldThreadsApp.researchStartId=o.id;$('researchDirection').value=direction;
     $('researchPlace').value=o.place||'';$('personalQuestion').value=question||(direction==='new_thread'?'What other influences might explain '+o.title+'?':'What happened next, or what other influences mattered, around '+o.place+' in 1816?');
@@ -131,7 +153,7 @@
   }
   function resume(){
     if(!saved)return;engaged=true;const s=WorldThreadsApp.state,t=s.threads.find(t=>t.id===saved.threadId);if(!t)return;
-    s.threadId=t.id;currentThread=t.id;selected=appFact(saved.selected)?saved.selected:t.nodeIds[0];recent=(saved.recent||[]).filter(appFact);WorldThreadsApp.researchStartId=appFact(saved.startingFactId)?saved.startingFactId:null;
+    s.threadId=t.id;currentThread=t.id;caseMode=t.id===starterId;caseStance=saved.caseStance||'';caseLead=saved.caseLead||'';caseReason=saved.caseReason||'';selected=appFact(saved.selected)?saved.selected:t.nodeIds[0];recent=(saved.recent||[]).filter(appFact);WorldThreadsApp.researchStartId=appFact(saved.startingFactId)?saved.startingFactId:null;WorldThreadsApp.challengeContext=saved.challengeContext||null;
     for(const [id,value]of Object.entries(saved.fields||{}))if($(id))$(id).value=value;
     const target=saved.view==='research'?'research':'explore',savedStage=saved.stage;WorldThreadsApp.render();show(target);tab(['prepare','return','progress'].includes(savedStage)?savedStage:'prepare');
   }
