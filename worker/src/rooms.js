@@ -36,7 +36,7 @@ export async function roomRoute(request,env,reply){
   const counts=await statement(env,'SELECT lead_id,count(*) AS count FROM investigation_member WHERE room_id=(SELECT id FROM investigation_room WHERE code=?) AND active=1 GROUP BY lead_id',code).all();
   return reply({caseId:room.case_id,phase:room.phase,activeCount:counts.results.reduce((sum,m)=>sum+m.count,0),leadOccupancy:Object.fromEntries(counts.results.map(m=>[m.lead_id,m.count]))},200);
  }
- const match=path.match(/^\/api\/rooms\/([a-f0-9]{32})(?:\/(notes|compare|next|withdraw))?$/);if(!match)return reply({error:'Session route not found.'},404);
+ const match=path.match(/^\/api\/rooms\/([a-f0-9]{32})(?:\/(notes|compare|next|withdraw|finding))?$/);if(!match)return reply({error:'Session route not found.'},404);
  const secret=request.headers.get('Authorization')?.replace(/^Bearer /,'');if(!secret||!/^[a-f0-9]{64}$/.test(secret))return reply({error:'Use your private session link to rejoin.'},404);
  const member=await statement(env,'SELECT * FROM investigation_member WHERE room_id=? AND token_hash=?',match[1],await digest(secret)).first();if(!member)return reply({error:'Session not found.'},404);
  const room=await statement(env,'SELECT * FROM investigation_room WHERE id=?',match[1]).first();const action=match[2];
@@ -51,6 +51,13 @@ export async function roomRoute(request,env,reply){
   if(!member.is_host)return reply({error:'Only the host can open comparison.'},403);
   const p=await body(request);const proceed=p.proceedWithReady===true;
   const opened=await statement(env,"UPDATE investigation_room SET phase='compare',updated_at=? WHERE id=? AND (SELECT count(*) FROM investigation_member WHERE room_id=? AND active=1 AND ready=1)>=2 AND (?=1 OR NOT EXISTS (SELECT 1 FROM investigation_member WHERE room_id=? AND active=1 AND ready=0)) RETURNING id",at(),room.id,room.id,proceed?1:0,room.id).first();if(!opened)return reply({error:'At least two active investigators must record an interpretation. If others are unfinished, explicitly choose to continue with ready investigators.'},409);return reply({opened:true},200);
+ }
+ if(request.method==='POST'&&action==='finding'){
+  if(room.phase!=='compare'||!member.ready)return reply({error:'Record your interpretation and open comparison before sharing a finding.'},409);
+  const p=await body(request);let url;try{url=new URL(p.sourceUrl);}catch{return reply({error:'Provide a public HTTPS source URL.'},422);}
+  if(p.consent!==true||typeof p.summary!=='string'||p.summary.trim().length<10||p.summary.length>1600||typeof p.quote!=='string'||p.quote.trim().length<20||p.quote.length>500||url.protocol!=='https:'||url.username||url.password||p.sourceUrl.length>1200)return reply({error:'Confirm sharing and include a finding (10–1600 characters), HTTPS source and exact passage (20–500 characters).'},422);
+  const finding={summary:p.summary.trim(),sourceUrl:url.href,quote:p.quote.trim(),status:'unverified',updatedAt:at()};
+  await statement(env,"UPDATE investigation_member SET notes=json_set(COALESCE(notes,'{}'),'$.finding',json(?)),updated_at=? WHERE id=?",JSON.stringify(finding),at(),member.id).run();return reply({saved:true,status:'unverified'},200);
  }
  if(request.method==='POST'&&action==='next'){
   if(room.phase!=='compare')return reply({error:'Open comparison first.'},409);const p=await body(request);if(typeof p.question!=='string'||p.question.trim().length<10||p.question.length>1400)return reply({error:'Write a specific next investigation (10–1400 characters).'},422);

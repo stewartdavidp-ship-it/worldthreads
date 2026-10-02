@@ -13,10 +13,10 @@
   })();
   </script>
   <title>WorldThreads — 1816 Prototype</title>
-  <link rel="stylesheet" href="styles.css?v=20261002-friends3" />
-  <link rel="stylesheet" href="threads.css?v=20261002-friends3" />
-  <link rel="stylesheet" href="appearance.css?v=20261002-friends3" />
-  <link rel="stylesheet" href="explore.css?v=20261002-friends3" />
+  <link rel="stylesheet" href="styles.css?v=20261002-research-bridge" />
+  <link rel="stylesheet" href="threads.css?v=20261002-research-bridge" />
+  <link rel="stylesheet" href="appearance.css?v=20261002-research-bridge" />
+  <link rel="stylesheet" href="explore.css?v=20261002-research-bridge" />
 </head>
 <body>
   <header class="site-header">
@@ -71,7 +71,7 @@
 <details id="sessionOwnWork" class="panel" open><summary id="sessionYourName"></summary><p id="sessionBoundary" class="scope-note"></p><div id="sessionQuestionMap"></div><label for="sessionLead">Your lead</label><select id="sessionLead"></select><article id="sessionPassage"></article><p class="scope-note">Short notes are enough: one sentence in each field. You can revise them later.</p><label for="sessionSupports">What does this clue support?</label><textarea id="sessionSupports" maxlength="1600" rows="2" placeholder="This clue supports…"></textarea><label for="sessionUncertain">What remains uncertain?</label><textarea id="sessionUncertain" maxlength="1600" rows="2" placeholder="It does not establish…"></textarea><label for="sessionNextEvidence">What evidence would distinguish the explanations?</label><textarea id="sessionNextEvidence" maxlength="1600" rows="2" placeholder="I would check…"></textarea><button id="sessionSave" class="nav-btn primary">Record my interpretation</button><p id="sessionWaiting" role="status"></p></details>
 <section id="sessionComparison" class="panel" hidden><h3>Reveal &amp; discuss</h3><p id="sessionDiscussion"></p><p id="sessionSourcesNote" class="source-warning"></p><p>Take turns: name one friend’s clue that changed or limited your explanation. Cite the clue; agreement is not proof.</p><div id="sessionEvidenceBoard" class="session-columns"></div>
 <section id="sessionExtension" hidden><h3 id="sessionExtensionTitle"></h3><p id="sessionExtensionIntro"></p><button id="sessionOpenExtension" class="nav-btn primary">Investigate the rival explanations →</button><div id="sessionExtensionCards" class="session-columns" hidden></div></section>
-<h3>Where should the investigation go next?</h3><p>Record what changed and a specific question your group still needs to investigate. Different questions can remain open.</p><div id="sessionNextSteps"></div><label for="sessionNextQuestion">Your next investigation</label><textarea id="sessionNextQuestion" rows="3" maxlength="1400"></textarea><button id="sessionSaveNext" class="nav-btn primary">Save next investigation</button><p class="scope-note">This saves your question for the group. To inspect a different case, return to the lobby and create a new session.</p><button id="sessionAnotherCase" class="nav-btn">Choose another case</button></section>
+<h3>Where should the investigation go next?</h3><p>Record what changed and a specific question your group still needs to investigate. Different questions can remain open.</p><div id="sessionNextSteps"></div><label for="sessionNextQuestion">Your next investigation</label><textarea id="sessionNextQuestion" rows="3" maxlength="1400"></textarea><button id="sessionSaveNext" class="nav-btn">Save next investigation</button><button id="sessionResearchNext" class="nav-btn primary">Research this question with my tools</button><p>Use your own assistant, browser or archive. Return through the existing research form, then share a finding below.</p><button id="sessionReturnResearch" class="nav-btn">Return research for review</button><button id="sessionLoadReturn" class="nav-btn">Use a finding from my returned research</button><label for="sessionFinding">Finding and what it changes</label><textarea id="sessionFinding" rows="3" maxlength="1600"></textarea><label for="sessionFindingSource">Public source URL</label><input id="sessionFindingSource" type="url"><label for="sessionFindingQuote">Exact source passage</label><textarea id="sessionFindingQuote" rows="3" maxlength="500"></textarea><label><input id="sessionFindingConsent" type="checkbox">Share this finding and passage with this group as unverified working evidence.</label><button id="sessionShareFinding" class="nav-btn">Share finding with group</button><p class="scope-note">Group findings remain working evidence. Use Return research for automatic assessment and incorporation into WorldThreads.</p><button id="sessionAnotherCase" class="nav-btn">Choose another case</button></section>
 <button id="sessionWithdraw" class="nav-btn">Withdraw from this round</button><button id="sessionLeave" class="nav-btn">Return to session lobby</button><p class="scope-note">Returning to the lobby keeps your membership. Guests can withdraw to stop waiting on their contribution; hosts can continue with ready friends.</p>
 </div></section>
 <section id="researchView" class="journey-view" hidden><button class="nav-btn" data-view="explore">← Back to my thread</button><p class="eyebrow">CONTINUE THE DISCOVERY</p><h2>Your investigation</h2><p id="researchContext">Choose a thread, ask a question, and bring back evidence.</p><div id="researchStartingFact" class="research-start"></div><section id="researchClues" class="research-clues" hidden></section><p class="scope-note">Your question and exploration are saved on this device.</p><div class="research-tabs"><button class="nav-btn active" data-research-tab="prepare">1 · Get a research prompt</button><button class="nav-btn" data-research-tab="return">2 · Return findings</button><button class="nav-btn" data-research-tab="progress">3 · Track progress</button></div><div id="researchMount"></div></section>
@@ -211,15 +211,15 @@
   <dialog id="detailDialog"><button id="closeDialog" class="close" aria-label="Close">×</button><div id="dialogContent"></div></dialog>
 
   <footer><span>WorldThreads v0.4</span><span>Prototype year: 1816 · evidence and relationships separated</span></footer>
-  <script src="contribution.js?v=20261002-friends3"></script>
-  <script src="community-core.js?v=20261002-friends3"></script>
-  <script src="app.js?v=20261002-friends3"></script>
-  <script src="appearance.js?v=20261002-friends3"></script>
-  <script src="community.js?v=20261002-friends3"></script>
-  <script src="explore-model.js?v=20261002-friends3"></script>
-  <script src="investigation-case.js?v=20261002-friends3"></script>
-  <script src="explore.js?v=20261002-friends3"></script>
-<script src="group-cases.js?v=20261002-friends3"></script>
-<script src="sessions.js?v=20261002-friends3"></script>
+  <script src="contribution.js?v=20261002-research-bridge"></script>
+  <script src="community-core.js?v=20261002-research-bridge"></script>
+  <script src="app.js?v=20261002-research-bridge"></script>
+  <script src="appearance.js?v=20261002-research-bridge"></script>
+  <script src="community.js?v=20261002-research-bridge"></script>
+  <script src="explore-model.js?v=20261002-research-bridge"></script>
+  <script src="investigation-case.js?v=20261002-research-bridge"></script>
+  <script src="explore.js?v=20261002-research-bridge"></script>
+<script src="group-cases.js?v=20261002-research-bridge"></script>
+<script src="sessions.js?v=20261002-research-bridge"></script>
 </body>
 </html>

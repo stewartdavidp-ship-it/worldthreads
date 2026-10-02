@@ -44,7 +44,7 @@
   $('sessionYourName').textContent='Your investigation · '+me.alias+(room.phase==='compare'?' · inspect or revise':'');
   const first=$('sessionLead').dataset.member!==me.id;
   options($('sessionLead'),c,counts,first?me.leadId:$('sessionLead').value);
-  if(first){$('sessionLead').dataset.member=me.id;for(const [field,key]of [['sessionSupports','supports'],['sessionUncertain','uncertain'],['sessionNextEvidence','nextEvidence'],['sessionNextQuestion','followUp']])$(field).value=me.notes?.[key]||'';sourceCard(lead(me.leadId),$('sessionPassage'));}
+  if(first){$('sessionLead').dataset.member=me.id;for(const [field,key]of [['sessionSupports','supports'],['sessionUncertain','uncertain'],['sessionNextEvidence','nextEvidence'],['sessionNextQuestion','followUp']])$(field).value=me.notes?.[key]||'';sourceCard(lead(me.leadId),$('sessionPassage'));const finding=me.notes?.finding;if(finding){$('sessionFinding').value=finding.summary;$('sessionFindingSource').value=finding.sourceUrl;$('sessionFindingQuote').value=finding.quote;}}
   const active=room.members.filter(m=>m.active),ready=active.filter(m=>m.ready),unfinished=active.some(m=>!m.ready),comparing=room.phase==='compare';
   $('sessionCompare').hidden=!room.isHost||comparing;$('sessionCompare').disabled=ready.length<2||unfinished;
   $('sessionProceed').hidden=!room.isHost||comparing||!unfinished||ready.length<2;
@@ -57,7 +57,7 @@
    const board=$('sessionEvidenceBoard');board.replaceChildren();
    for(const m of room.members.filter(m=>m.contributed&&m.notes)){
     const card=el('article',undefined,'session-evidence-card');card.append(el('h4',m.alias));const excerpt=el('div');sourceCard(lead(m.leadId),excerpt);card.append(excerpt);
-    for(const [key,label]of [['supports','What this supports'],['uncertain','What remains uncertain'],['nextEvidence','Evidence to look for'],['followUp','Next investigation']])if(m.notes[key])card.append(el('strong',label),el('p',m.notes[key]));board.append(card);
+    for(const [key,label]of [['supports','What this supports'],['uncertain','What remains uncertain'],['nextEvidence','Evidence to look for'],['followUp','Next investigation']])if(m.notes[key])card.append(el('strong',label),el('p',m.notes[key]));if(m.notes.finding){const finding=m.notes.finding;card.append(el('strong','Returned finding · unverified working evidence'),el('p',finding.summary),el('blockquote',finding.quote));const source=el('a','Inspect returned source ↗');source.href=finding.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';card.append(source);}board.append(card);
    }
    $('sessionExtension').hidden=!c.extension;
    if(c.extension){$('sessionExtensionTitle').textContent=c.extension.title;$('sessionExtensionIntro').textContent=c.extension.intro;if(extensionKey!==room.id){extensionKey=room.id;$('sessionExtensionCards').hidden=true;$('sessionOpenExtension').hidden=false;const cards=$('sessionExtensionCards');cards.replaceChildren();for(const l of c.extension.cards){const card=el('article',undefined,'session-evidence-card');sourceCard(l,card);cards.append(card);}}}
@@ -93,6 +93,22 @@
   $('sessionProceedConsent').onchange=render;
   $('sessionProceedButton').onclick=()=>busy($('sessionProceedButton'),async()=>{if(!$('sessionProceedConsent').checked)throw Error('Confirm proceeding with ready participants.');await request('/'+access.id+'/compare',{proceedWithReady:true});await refresh();});
   $('sessionSaveNext').onclick=()=>busy($('sessionSaveNext'),async()=>{await request('/'+access.id+'/next',{question:$('sessionNextQuestion').value});await refresh();status('Your next investigation is saved in the group board.');});
+  $('sessionResearchNext').onclick=()=>busy($('sessionResearchNext'),async()=>{
+   const question=$('sessionNextQuestion').value.trim();if(question.length<10)throw Error('Write a specific research question first.');
+   const c=current(),state=WorldThreadsApp.state,me=room.members.find(m=>m.id===room.you),chosen=lead($('sessionLead').value);
+   const target=state.relationships.find(r=>r.id===(c.targetClaimId||(room.caseId==='CASE-FRANKENSTEIN'?WorldThreadsInvestigation.targetClaimId:null)));
+   const fact=state.observations.find(o=>o.id===c.startingFactId||o.id===target?.subjectId)||state.observations.find(o=>o.id===({temperature:'WT-1816-0001',species:'WT-1816-0002',effort:'WT-1816-0003',adaptation:'WT-1816-0004'}[$('sessionLead').value]));
+   if(!fact)throw Error('Choose a recorded fact in Explore to anchor this question.');
+   await request('/'+access.id+'/next',{question});
+   const context={claim:c.claim,recordedClaim:target?.explanation||fact.observation,workingPosition:'Unresolved group question',reasoning:me.notes?.supports||'',sourceDependence:c.sourcesNote,passages:chosen?[{title:chosen.title,sourceUrl:chosen.sourceUrl||c.sourceUrl,locator:chosen.locator,quote:chosen.quote||'',summary:chosen.summary||'',limits:chosen.limits}]:[],synthesis:{uncertainty:me.notes?.uncertain||'',nextEvidence:me.notes?.nextEvidence||''}};
+   if(!WorldThreadsExplore.prepareResearch(fact.id,question,context))throw Error('This fact is not connected to a research thread.');
+  });
+  $('sessionLoadReturn').onclick=()=>{try{const draft=JSON.parse($('researchOutput').value);const evidence=draft.kind==='evidence'?draft:(draft.evidence||[])[0],source=draft.kind==='evidence'?draft:(draft.sources||[]).find(s=>s.id===evidence?.sourceId),claim=(draft.observations||[]).find(o=>o.id===evidence?.claimId)||(draft.relationships||[]).find(r=>r.id===evidence?.claimId);if(!evidence||!source)throw Error('Return a finding with a source passage first.');$('sessionFinding').value=(draft.relevance||claim?.observation||claim?.explanation||'').slice(0,1600);$('sessionFindingSource').value=source.sourceUrl||source.url||'';$('sessionFindingQuote').value=evidence.quote||'';$('sessionFindingConsent').checked=false;status('First returned finding copied. Inspect it before sharing; this does not certify its claims.');}catch(e){status(e instanceof SyntaxError?'Paste your prescribed research output in Return research first.':e.message);}};
+  $('sessionReturnResearch').onclick=()=>WorldThreadsExplore.showReturn();
+  $('sessionShareFinding').onclick=()=>busy($('sessionShareFinding'),async()=>{
+   if(!$('sessionFindingConsent').checked)throw Error('Confirm sharing this finding with your group.');
+   await request('/'+access.id+'/finding',{consent:true,summary:$('sessionFinding').value,sourceUrl:$('sessionFindingSource').value,quote:$('sessionFindingQuote').value});await refresh();status('Finding shared as unverified working evidence. Submit through Return research to extend WorldThreads.');
+  });
   $('sessionOpenExtension').onclick=()=>{$('sessionExtensionCards').hidden=false;$('sessionOpenExtension').hidden=true;status('New clues are open. Take one each and explain what changes your interpretation.');};
   $('sessionWithdraw').onclick=()=>busy($('sessionWithdraw'),async()=>{await request('/'+access.id+'/withdraw',{});await refresh();status('You withdrew from this round. Your friends can continue; your notes remain private.');});
   $('sessionCopyInvite').onclick=async()=>{try{await navigator.clipboard.writeText($('sessionInvite').value);status('Invitation copied. Send it yourself, or share the room code.');}catch{status('Copy the invitation field, or share the room code.');}};

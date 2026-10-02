@@ -39,3 +39,9 @@ Worker code bundles the baseline JSON. Redeploy it whenever the baseline graph c
 `GET /api/health`, `GET /api/graph`, `GET /api/activity`, `GET /api/reviews/:id`, `POST /api/submissions` and receipt-authorized `GET /api/submissions/:id` are the endpoints. Published per-contribution review events remain accessible from their facts/evidence cards even after they leave the recent activity list. Public graph and activity responses are separate from the private draft store. CORS permits the GitHub Pages origin; local browser testing can use a local Worker with `LOCAL_DEV=true`.
 
 Community additions persist in D1 and appear in the live graph. The hourly GitHub export workflow archives only public graph/activity snapshots under `data/community/` on `gh-pages`; the site can read those snapshots when the API is unavailable. Private drafts and receipts never enter GitHub. The baseline JSON remains intact. Deeper scan/PDF retrieval, full source-identity verification and later year expansion remain separate extensions.
+
+## Group research handoff
+
+A group follow-up question can open the existing research preparation flow with its recorded starting fact, chosen source lead, working interpretation and uncertainty. Players may use external assistants or direct source research. The existing return preview and automatic submission review remain the publication path.
+
+After comparison opens, ready members may share one current returned finding (summary, HTTPS source URL and exact passage) with explicit group-sharing consent. The room stores this in the existing member notes, separately from graph claims. It remains labeled unverified, preserves other notes and follow-up questions, and can be revised. No private submission receipt or authorization token is included in the shared finding. This first bridge does not yet synchronize submission status or maintain a multi-finding group research ledger.
