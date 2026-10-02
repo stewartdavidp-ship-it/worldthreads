@@ -1,23 +1,164 @@
-/* A guided route through the evidence, with a bounded neighbourhood graph. */
+/* Guided reading is the default; the original story stays visible while branching. */
 (function(){
- const $=id=>document.getElementById(id),node=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
- let selected=null,currentThread=null,trail=[],view='discover',initialized=false;
- function button(text,action,cls='nav-btn'){const b=node('button',text,cls);b.type='button';b.onclick=action;return b;}
- function show(next){view=next;for(const id of ['discover','explore','research'])$(id+'View').hidden=id!==next;document.querySelectorAll('.site-header [data-view]').forEach(b=>{b.classList.toggle('active',b.dataset.view===next);b.setAttribute('aria-current',b.dataset.view===next?'page':'false');});if(next==='research')$('researchContext').textContent='Starting from: '+(WorldThreadsApp.state.threads.find(t=>t.id===WorldThreadsApp.state.threadId)?.title||'1816');if(next!=='discover')$('evidenceLibrary').hidden=true;else $('evidenceLibrary').hidden=false;window.scrollTo({top:0,behavior:'smooth'});if(next==='explore')renderNetwork();}
- function tab(which){for(const [name,id] of [['prepare','prepareResearch'],['return','returnResearch'],['progress','progressResearch']])$(id).hidden=name!==which;document.querySelectorAll('[data-research-tab]').forEach(b=>b.classList.toggle('active',b.dataset.researchTab===which));}
- function showEvidence(){show('research');tab('return');$('evidenceDisclosure').open=true;}
- function chooseThread(t){WorldThreadsApp.state.threadId=t.id;selected=t.nodeIds[0];trail=[selected];currentThread=t.id;WorldThreadsApp.render();show('explore');}
- function selectFact(id){const s=WorldThreadsApp.state,current=s.threads.find(t=>t.id===s.threadId);if(!current?.nodeIds.includes(id)){const branch=s.threads.find(t=>t.nodeIds.includes(id)&&t.nodeIds.includes(selected))||s.threads.find(t=>t.nodeIds.includes(id));if(branch){s.threadId=branch.id;currentThread=branch.id;}else if($('connectionDepth').value==='0')$('connectionDepth').value='1';}selected=id;if(trail.at(-1)!==id)trail.push(id);WorldThreadsApp.render();renderNetwork();}
- function palette(o){return {EARTH:'#d99561',BIOSPHERE:'#65ad84','PRODUCTION & RESOURCES':'#c0a553','HUMAN SYSTEMS':'#739bcb','POWER & CULTURE':'#b48aca'}[o?.system]||'#8aa59a';}
- function gallery(){const root=$('threadGallery');root.replaceChildren();WorldThreadsApp.state.threads.forEach((t,i)=>{const card=button('',()=>chooseThread(t),'thread-entry');const graphic=node('div',undefined,'entry-graphic');const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 300 90');svg.setAttribute('aria-hidden','true');const ids=t.nodeIds.slice(0,6);ids.forEach((id,j)=>{const cx=30+j*240/Math.max(1,ids.length-1),cy=j%2?56:30;if(j){const line=document.createElementNS(ns,'path');line.setAttribute('d',`M ${30+(j-1)*240/Math.max(1,ids.length-1)} ${j%2?30:56} Q ${cx-20} 12 ${cx} ${cy}`);line.setAttribute('stroke','var(--border)');line.setAttribute('fill','none');svg.append(line);}const c=document.createElementNS(ns,'circle');c.setAttribute('cx',cx);c.setAttribute('cy',cy);c.setAttribute('r',j===0?10:7);c.setAttribute('fill',palette(WorldThreadsApp.obs(id)));svg.append(c);});graphic.append(svg);card.append(graphic,node('small',t.subtitle||t.scope||'1816'),node('h3',t.title),node('p',`${t.nodeIds.length} facts · ${(t.relationshipIds||[]).length} recorded connections`),node('span','Follow this thread →','entry-link'));root.append(card);});}
- function renderNetwork(){if(!initialized)return;const app=WorldThreadsApp,s=app.state,t=s.threads.find(t=>t.id===s.threadId);if(!t)return;if(currentThread!==t.id){currentThread=t.id;selected=t.nodeIds[0];trail=[selected];}if(!app.obs(selected))selected=t.nodeIds[0];$('exploreTitle').textContent=t.title;$('exploreDescription').textContent=t.description;const depth=Number($('connectionDepth').value),ids=new Set(depth?[selected]:t.nodeIds);let frontier=new Set(ids);for(let hop=0;hop<depth;hop++){const next=new Set();for(const r of s.relationships){if(frontier.has(r.subjectId))next.add(r.objectId);if(frontier.has(r.objectId))next.add(r.subjectId);}for(const id of next)ids.add(id);frontier=next;}
- const records=[...ids].map(id=>app.obs(id)).filter(Boolean),rels=s.relationships.filter(r=>ids.has(r.subjectId)&&ids.has(r.objectId)&&(depth||t.relationshipIds?.includes(r.id)));const canvas=$('networkCanvas');canvas.replaceChildren();const positions=new Map(),width=900,height=Math.max(480,Math.ceil(records.length/3)*160+60);canvas.style.minHeight=height+'px';const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox',`0 0 ${width} ${height}`);svg.setAttribute('preserveAspectRatio','none');svg.setAttribute('aria-hidden','true');svg.classList.add('network-lines');canvas.append(svg);const defs=document.createElementNS(ns,'defs'),marker=document.createElementNS(ns,'marker');marker.id='network-direction';marker.setAttribute('viewBox','0 0 10 10');marker.setAttribute('refX','5');marker.setAttribute('refY','5');marker.setAttribute('markerWidth','8');marker.setAttribute('markerHeight','8');marker.setAttribute('orient','auto');const arrow=document.createElementNS(ns,'path');arrow.setAttribute('d','M 1 1 L 9 5 L 1 9 z');arrow.setAttribute('fill','var(--link)');marker.append(arrow);defs.append(marker);svg.append(defs);
- records.forEach((o,i)=>{const col=i%3,row=Math.floor(i/3);positions.set(o.id,{x:150+col*300,y:90+row*160});});for(const r of rels){const a=positions.get(r.subjectId),b=positions.get(r.objectId);const line=document.createElementNS(ns,'path');const mx=(a.x+b.x)/2,my=(a.y+b.y)/2+(a.y===b.y?70:0);line.setAttribute('d',`M ${a.x} ${a.y} Q ${a.x} ${my} ${mx} ${my} Q ${b.x} ${my} ${b.x} ${b.y}`);line.setAttribute('marker-mid','url(#network-direction)');line.setAttribute('fill','none');line.setAttribute('stroke','var(--link)');line.setAttribute('stroke-width',r.confidence==='High'?'3':'2');if(r.communityStatus==='provisional'||r.communityStatus==='disputed')line.setAttribute('stroke-dasharray','2 7');else if(['ASSOCIATED','CONTESTED'].includes(r.causalStatus))line.setAttribute('stroke-dasharray','8 6');svg.append(line);}
- for(const o of records){const p=positions.get(o.id),b=button('',()=>selectFact(o.id),'network-fact'+(o.id===selected?' selected':''));b.style.left=p.x/width*100+'%';b.style.top=p.y+'px';b.style.setProperty('--node-color',palette(o));b.setAttribute('aria-pressed',String(o.id===selected));b.append(node('small',o.place||o.system),node('strong',o.title));canvas.append(b);}reader(rels);
- }
- function reader(){const app=WorldThreadsApp,o=app.obs(selected),root=$('factReader');root.replaceChildren();if(!o)return;const crumbs=node('div',undefined,'journey-trail');crumbs.append(node('small','YOUR PATH'));trail.slice(-4).forEach((id,i)=>crumbs.append(button((i?'→ ':'')+(app.obs(id)?.title||id),()=>{selected=id;trail=trail.slice(0,trail.lastIndexOf(id)+1);renderNetwork();},'trail-link')));root.append(crumbs,node('p',o.system+' · '+o.startDate,'eyebrow'),node('h3',o.title),node('p',o.observation),node('p',o.place+' · '+(o.communityStatus?WorldThreadsCommunityUI?.statusLabel(o.communityStatus):o.confidence+' confidence'),'reader-meta'),button('Inspect sources & evidence',()=>openDetail(o)));
- const connections=app.state.relationships.filter(r=>r.subjectId===selected||r.objectId===selected);root.append(node('h4','Where does this lead?'));if(!connections.length)root.append(node('p','No connection has been recorded here yet. This is an open end to investigate.'));for(const r of connections){const id=r.subjectId===selected?r.objectId:r.subjectId,other=app.obs(id);if(!other)continue;const row=node('div',undefined,'next-connection');row.append(node('small',(r.subjectId===selected?'Leads toward':'Connects from')+' · '+r.causalStatus.toLowerCase().replaceAll('_',' ')+' · '+r.confidence),button(other.title+' →',()=>selectFact(id),'next-fact'),button('Why this connection?',()=>openRelationship(r),'trail-link'));root.append(row);}const research=node('div',undefined,'reader-research');research.append(node('h4','What would you explore next?'),node('p','Follow a consequence, test another cause, or investigate a place you know.'),button('Continue this thread ↗',()=>{show('research');tab('prepare');$('researchDirection').value='continue_thread';$('personalQuestion').value='What follows from '+o.title+' in 1816?';}),button('Explore another perspective',()=>{show('research');tab('prepare');$('researchDirection').value='new_thread';}));root.append(research);
- }
- function initialize(){if(initialized)return;initialized=true;const main=document.querySelector('main');$('originalThreadMount').append(document.querySelector('.thread-panel'));document.querySelector('.layout').remove();document.querySelector('.data-strip').remove();$('libraryMount').append(document.querySelector('.filters'),document.querySelector('.observations-panel'));const contribute=$('contribute'),prepare=node('section',undefined,'research-stage'),returned=node('section',undefined,'research-stage'),progress=node('section',undefined,'research-stage');prepare.id='prepareResearch';returned.id='returnResearch';progress.id='progressResearch';let returning=false;for(const child of [...contribute.children]){if(child.tagName==='H4'&&child.textContent==='Return your findings')returning=true;(returning?returned:prepare).append(child);}progress.append($('receiptPanel'));contribute.replaceChildren(prepare,returned,progress);const evidence=$('evidenceContribute'),details=node('details',undefined,'evidence-disclosure');details.id='evidenceDisclosure';details.append(node('summary','Have a source that supports or questions an existing claim?'),evidence);returned.append(details);const activity=$('communityActivity').closest('section');progress.append(activity);$('researchMount').append(contribute);const badgeTitle=[...prepare.querySelectorAll('h4')].find(x=>x.textContent==='Recognition for discoveries');const badges=node('details',undefined,'collection-context');badges.append(node('summary','Recognition for discoveries'));if(badgeTitle){badges.append(badgeTitle.nextElementSibling,$('contributionBadges'));badgeTitle.remove();prepare.append(badges);}const optional=node('details',undefined,'collection-context');optional.append(node('summary','Choose a suggested mission or refine the research scope'));for(const id of ['proposedThreadTitle','researchMission','missionBrief','researchGap','gapQuestion']){const field=$(id),label=prepare.querySelector('label[for="'+id+'"]');if(label)optional.append(label);optional.append(field);}prepare.insertBefore(optional,$('makeResearchPrompt'));document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>show(b.dataset.view));document.querySelectorAll('[data-research-tab]').forEach(b=>b.onclick=()=>tab(b.dataset.researchTab));$('connectionDepth').onchange=renderNetwork;$('resetJourney').onclick=()=>{selected=WorldThreadsApp.state.threads.find(t=>t.id===WorldThreadsApp.state.threadId).nodeIds[0];trail=[selected];renderNetwork();};$('startExploring').onclick=()=>$('threadGallery').scrollIntoView({behavior:'smooth'});tab('prepare');gallery();renderNetwork();show('discover');if(location.hash.startsWith('#receipt=')){show('research');tab('progress');} }
- window.WorldThreadsExplore={show,showEvidence,showProgress:()=>{show('research');tab('progress');}};if(window.WorldThreadsApp?.state.observations.length)initialize();window.addEventListener('worldthreads-ready',initialize);window.addEventListener('worldthreads-rendered',()=>{if(initialized){gallery();renderNetwork();}});
+  const $=id=>document.getElementById(id),model=window.WorldThreadsJourney;
+  const node=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
+  let selected=null,currentThread=null,recent=[],arrivedVia=null,view='discover',stage='prepare',initialized=false,saved=null,engaged=false;
+  const storageKey='worldthreads-journey-v1';
+  const starterId='THREAD-CLIMATE-CULTURE';
+  const names={
+    'THREAD-CLIMATE-CULTURE':'What connects a volcano to Frankenstein?',
+    'THREAD-GULF-MAINE':'How did a cold summer change fishing?',
+    'THREAD-CENTRAL-EUROPE-FOOD':'How did bad weather put food under pressure?',
+    'THREAD-ALPINE-HYDRO':'How can a cold year store up flood risk?',
+    'THREAD-CHINA-CLIMATE':'Why did the same climate shock look different in China?'
+  };
+  function button(text,action,cls='nav-btn'){const b=node('button',text,cls);b.type='button';b.onclick=action;return b;}
+  function thread(){return WorldThreadsApp.state.threads.find(t=>t.id===WorldThreadsApp.state.threadId);}
+  function title(t){return names[t.id]||t.title;}
+  function remember(){
+    if(!initialized||!engaged)return;
+    const fields={};for(const id of ['researchPlace','researchDirection','personalQuestion','proposedThreadTitle','researchGap'])fields[id]=$(id).value;
+    saved={threadId:currentThread,selected,recent,view,stage,fields,startingFactId:WorldThreadsApp.researchStartId||null};
+    try{localStorage.setItem(storageKey,JSON.stringify(saved));}catch{}
+  }
+  function show(next){
+    if(next!=='discover')engaged=true;view=next;for(const id of ['discover','explore','research'])$(id+'View').hidden=id!==next;
+    document.querySelectorAll('.site-header [data-view]').forEach(b=>{b.classList.toggle('active',b.dataset.view===next);b.setAttribute('aria-current',b.dataset.view===next?'page':'false');});
+    $('evidenceLibrary').hidden=next!=='discover';
+    if(next==='research')researchContext();
+    if(next==='explore')renderNetwork();
+    window.scrollTo({top:0,behavior:'smooth'});remember();
+  }
+  function tab(which){stage=which;for(const [name,id]of [['prepare','prepareResearch'],['return','returnResearch'],['progress','progressResearch']])$(id).hidden=name!==which;document.querySelectorAll('[data-research-tab]').forEach(b=>b.classList.toggle('active',b.dataset.researchTab===which));remember();}
+  function showEvidence(){show('research');tab('return');$('evidenceDisclosure').open=true;}
+  function chooseThread(t){
+    WorldThreadsApp.state.threadId=t.id;selected=t.nodeIds[0];recent=[selected];currentThread=t.id;arrivedVia=null;
+    $('connectionDepth').value='0';WorldThreadsApp.render();show('explore');
+  }
+  function selectFact(id,edge=null){
+    selected=id;arrivedVia=edge;if(recent.at(-1)!==id)recent.push(id);renderNetwork();remember();
+    if(matchMedia('(max-width:1000px)').matches){$('factReader').scrollIntoView({behavior:'smooth',block:'start'});$('factReader').focus({preventScroll:true});}
+  }
+  const factNames={'WT-1816-0008':'Tambora erupts in 1815','WT-1816-0009':'Geneva’s summer turns colder','WT-1816-0015':'Frankenstein begins in 1816'};
+  const storySummaries={'WT-1816-0008':'An eruption in what is now Indonesia contributed to climate anomalies the following year. How could one event reach so far?', 'WT-1816-0009':'Geneva’s summer afternoons were roughly 3–4°C colder than the reference period. What might weather change in people’s lives?', 'WT-1816-0015':'Mary Shelley conceived Frankenstein near Geneva in the cold, rainy summer of 1816. Weather was part of the setting; ghost stories, scientific ideas and creative choices also mattered.'};
+  function factTitle(o){return factNames[o?.id]||o?.title||'Historical fact';}
+  function palette(o){return {EARTH:'#d99561',BIOSPHERE:'#65ad84','PRODUCTION & RESOURCES':'#c0a553','HUMAN SYSTEMS':'#739bcb','POWER & CULTURE':'#b48aca'}[o?.system]||'#8aa59a';}
+  function gallery(){
+    const root=$('threadGallery');root.replaceChildren();
+    WorldThreadsApp.state.threads.forEach(t=>{
+      const card=button('',()=>chooseThread(t),'thread-entry'),graphic=node('div',undefined,'entry-graphic');
+      const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 300 90');svg.setAttribute('aria-hidden','true');
+      const ids=t.nodeIds.slice(0,6),positions=new Map(ids.map((id,j)=>[id,{x:30+j*240/Math.max(1,ids.length-1),y:j%2?56:30}]));
+      for(const r of model.storyEdges(t,WorldThreadsApp.state.relationships)){
+        const a=positions.get(r.subjectId),b=positions.get(r.objectId);if(!a||!b)continue;
+        const line=document.createElementNS(ns,'path');line.setAttribute('d',`M ${a.x} ${a.y} Q ${(a.x+b.x)/2} 12 ${b.x} ${b.y}`);line.setAttribute('stroke','var(--border)');line.setAttribute('fill','none');svg.append(line);
+      }
+      for(const id of ids){const p=positions.get(id),c=document.createElementNS(ns,'circle');c.setAttribute('cx',p.x);c.setAttribute('cy',p.y);c.setAttribute('r',id===ids[0]?10:7);c.setAttribute('fill',palette(WorldThreadsApp.obs(id)));svg.append(c);}
+      graphic.append(svg);card.append(graphic,node('small',t.subtitle||t.scope||'1816'),node('h3',title(t)),node('p',`${t.nodeIds.length} facts · ${(t.relationshipIds||[]).length} recorded connections`),node('span','Start this story →','entry-link'));root.append(card);
+    });
+  }
+  function renderNetwork(){
+    if(!initialized)return;const app=WorldThreadsApp,s=app.state,t=thread();if(!t)return;
+    if(currentThread!==t.id){currentThread=t.id;selected=t.nodeIds[0];recent=[selected];arrivedVia=null;}
+    if(!app.obs(selected))selected=t.nodeIds[0];
+    $('exploreTitle').textContent=title(t);$('exploreDescription').textContent='Each fact is a clue. Examine how it connects to the next, consider other explanations, and decide what you would investigate.';
+    const depth=Number($('connectionDepth').value),ids=model.neighbourhood(t,selected,s.relationships,depth);
+    const records=ids.map(id=>app.obs(id)).filter(Boolean),rels=s.relationships.filter(r=>ids.includes(r.subjectId)&&ids.includes(r.objectId)&&(depth||t.relationshipIds?.includes(r.id)||r.id===arrivedVia?.id));
+    const canvas=$('networkCanvas');canvas.replaceChildren();const positions=new Map(),width=900,height=Math.max(240,Math.ceil(records.length/3)*160+80);canvas.style.minHeight=height+'px';
+    const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox',`0 0 ${width} ${height}`);svg.setAttribute('preserveAspectRatio','none');svg.setAttribute('aria-hidden','true');svg.classList.add('network-lines');canvas.append(svg);
+    const defs=document.createElementNS(ns,'defs'),marker=document.createElementNS(ns,'marker');marker.id='network-direction';marker.setAttribute('viewBox','0 0 10 10');marker.setAttribute('refX','5');marker.setAttribute('refY','5');marker.setAttribute('markerWidth','8');marker.setAttribute('markerHeight','8');marker.setAttribute('orient','auto');
+    const arrow=document.createElementNS(ns,'path');arrow.setAttribute('d','M 1 1 L 9 5 L 1 9 z');arrow.setAttribute('fill','var(--link)');marker.append(arrow);defs.append(marker);svg.append(defs);
+    records.forEach((o,i)=>positions.set(o.id,{x:150+(i%3)*300,y:90+Math.floor(i/3)*160}));
+    for(const r of rels){
+      const a=positions.get(r.subjectId),b=positions.get(r.objectId);if(!a||!b)continue;
+      const line=document.createElementNS(ns,'path'),mx=(a.x+b.x)/2,my=(a.y+b.y)/2+(a.y===b.y?70:0);
+      line.setAttribute('d',`M ${a.x} ${a.y} Q ${a.x} ${my} ${mx} ${my} Q ${b.x} ${my} ${b.x} ${b.y}`);line.setAttribute('marker-mid','url(#network-direction)');line.setAttribute('fill','none');line.setAttribute('stroke','var(--link)');line.setAttribute('stroke-width',r.id===arrivedVia?.id?'4':'2');
+      if(['provisional','disputed'].includes(r.communityStatus))line.setAttribute('stroke-dasharray','2 7');else if(['ASSOCIATED','CONTESTED'].includes(r.causalStatus))line.setAttribute('stroke-dasharray','8 6');line.addEventListener('click',()=>openRelationship(r));svg.append(line);
+    }
+    for(const o of records){
+      const p=positions.get(o.id),inStory=t.nodeIds.includes(o.id),b=button('',()=>selectFact(o.id),'network-fact'+(o.id===selected?' selected':'')+(!inStory?' related-fact':''));b.style.left=p.x/width*100+'%';b.style.top=p.y+'px';b.style.setProperty('--node-color',palette(o));b.setAttribute('aria-pressed',String(o.id===selected));b.append(node('small',inStory?'Fact '+(t.nodeIds.indexOf(o.id)+1):'Related branch'),node('strong',factTitle(o)));canvas.append(b);
+    }
+    reader();
+  }
+  function connectionCard(r,destination,label){
+    const row=node('div',undefined,'next-connection'),other=WorldThreadsApp.obs(destination);
+    row.append(node('small',label),button(other?.title||destination,()=>selectFact(destination,r),'next-fact'),node('p',r.explanation),node('small',connectionStatus(r)),button('Inspect this connection’s evidence',()=>openRelationship(r),'trail-link'));return row;
+  }
+  function connectionStatus(r){
+    const meanings={CAUSAL:'Claimed causal link',CONTRIBUTORY:'Contributing influence',ASSOCIATED:'Association, not established causation',CONTESTED:'Connection is contested'};
+    return (meanings[r.causalStatus]||r.causalStatus)+' · '+r.confidence+' confidence'+(r.communityStatus?' · '+WorldThreadsCommunityUI?.statusLabel(r.communityStatus):'');
+  }
+  function startResearch(direction='continue_thread',question=''){
+    const o=WorldThreadsApp.obs(selected);if(!o)return;
+    WorldThreadsApp.researchStartId=o.id;$('researchDirection').value=direction;
+    $('researchPlace').value=o.place||'';$('personalQuestion').value=question||(direction==='new_thread'?'What other influences might explain '+o.title+'?':'What happened next, or what other influences mattered, around '+o.place+' in 1816?');
+    $('proposedThreadTitle').value='';$('researchMission').value='';$('researchMission').dispatchEvent(new Event('change'));
+    $('researchGap').value='GAP-010';$('researchGap').dispatchEvent(new Event('change'));
+    show('research');tab('prepare');
+  }
+  function researchContext(){
+    const t=thread(),o=WorldThreadsApp.obs(WorldThreadsApp.researchStartId||selected);$('researchContext').textContent='Story: '+(t?title(t):'1816');
+    const root=$('researchStartingFact');root.replaceChildren();if(o)root.append(node('small','STARTING FROM THIS FACT'),node('strong',o.title),node('p',o.place+' · '+o.startDate),button('Return to this fact',()=>{selectFact(o.id);show('explore');}));
+  }
+  function reader(){
+    const app=WorldThreadsApp,t=thread(),o=app.obs(selected),root=$('factReader');root.replaceChildren();if(!o)return;
+    const index=t.nodeIds.indexOf(selected),next=index>=0?model.nextConnection(t,selected,app.state.relationships):null;
+    const connections=app.state.relationships.filter(r=>r.subjectId===selected||r.objectId===selected);
+    root.append(node('p',index>=0?`CLUE ${index+1} OF ${t.nodeIds.length} · ${title(t)}`:'RELATED BRANCH · YOUR ORIGINAL STORY IS STILL ON THE MAP','eyebrow'),node('h3',factTitle(o)));if(storySummaries[o.id])root.append(node('p',storySummaries[o.id],'story-instruction'));
+    if(index===0&&!storySummaries[o.id])root.append(node('p','Our story starts here. Follow the recorded connections to see how this fact relates to what happened next.','story-instruction'));
+    if(next){
+      const onward=node('div',undefined,'guided-next');onward.append(node('small','FOLLOW THE NEXT RECORDED CONNECTION'),button('Next clue: '+factTitle(app.obs(next.objectId))+' →',()=>selectFact(next.objectId,next),'nav-btn primary'),node('p',next.explanation),node('small',connectionStatus(next)),button('Why this connection?',()=>openRelationship(next),'trail-link'));root.append(onward);
+    }else{
+      const end=node('div',undefined,'guided-next');end.append(node('strong',index>=0?'You’ve followed the recorded clues. What’s missing?':'You’re exploring beyond the original story.'),node('p','No further connection is recorded in this thread. The evidence does not settle every cause or consequence. What would you investigate next?'),button('Investigate an unanswered question',()=>startResearch(),'nav-btn primary'));root.append(end);
+      if(index<0)root.append(button('Return to the original story',()=>selectFact(t.nodeIds[0])));
+    }
+    root.append(node('p',o.observation,'fact-observation'),node('p',o.place+' · '+o.startDate+' · '+(o.communityStatus?WorldThreadsCommunityUI?.statusLabel(o.communityStatus):o.confidence+' confidence'),'reader-meta'),button('Sources for this fact',()=>openDetail(o)));
+    if(arrivedVia){const arrived=node('details',undefined,'arrived-connection');arrived.append(node('summary','The connection you just followed'),node('p',arrivedVia.explanation),node('small',connectionStatus(arrivedVia)),button('Inspect connection evidence',()=>openRelationship(arrivedVia)));root.append(arrived);}
+    const otherOutgoing=connections.filter(r=>r.subjectId===selected&&r.id!==next?.id),incoming=connections.filter(r=>r.objectId===selected);
+    if(otherOutgoing.length){const branches=node('details',undefined,'other-connections');branches.append(node('summary',`Explore ${otherOutgoing.length} other connection${otherOutgoing.length===1?'':'s'}`));for(const r of otherOutgoing)branches.append(connectionCard(r,r.objectId,'FOLLOW ANOTHER CONSEQUENCE OR ASSOCIATION'));root.append(branches);}
+    if(incoming.length){const earlier=node('details',undefined,'other-connections');earlier.append(node('summary','What led here?'));for(const r of incoming)earlier.append(connectionCard(r,r.subjectId,'LOOK BACK AT AN EARLIER INFLUENCE'));root.append(earlier);}
+    const suggestions={
+      'WT-1816-0008':'Why did the same eruption affect places differently?',
+      'WT-1816-0009':'Did the weather change what people did, or just the setting?',
+      'WT-1816-0015':'How did ghost stories, scientific ideas and creative choices contribute alongside the weather?'
+    };
+    const wonder=node('section',undefined,'curiosity-card'),suggestion=suggestions[o.id]||'What other influences could explain this—and what evidence would help distinguish them?';
+    wonder.append(node('h4','What would you investigate?'),node('p',suggestion),button('Investigate this question',()=>startResearch('new_thread',suggestion),'trail-link'));
+    const question=node('input');question.type='text';question.id='visitorQuestion';question.placeholder='What if…? How could I check?';question.maxLength=1200;
+    const questionLabel=node('label','Ask your own question about the clues');questionLabel.htmlFor=question.id;wonder.append(questionLabel,question,button('Start my investigation →',()=>{if(!question.value.trim()){question.focus();return;}startResearch('new_thread',question.value.trim());}));root.append(wonder);
+    const investigation=node('details',undefined,'reader-research');investigation.append(node('summary','Want to add new evidence?'),node('p','Research a missing connection or test another explanation. This takes you to the research tools.'),button('Investigate an unanswered question',()=>startResearch()),button('Investigate another explanation',()=>startResearch('new_thread')));root.append(investigation);
+    if(recent.length>1){const visits=node('details',undefined,'journey-trail');visits.append(node('summary','Recently viewed facts'));for(const id of [...new Set(recent.slice(-6))])visits.append(button(app.obs(id)?.title||id,()=>selectFact(id),'trail-link'));root.append(visits);}
+  }
+  function resume(){
+    if(!saved)return;engaged=true;const s=WorldThreadsApp.state,t=s.threads.find(t=>t.id===saved.threadId);if(!t)return;
+    s.threadId=t.id;currentThread=t.id;selected=appFact(saved.selected)?saved.selected:t.nodeIds[0];recent=(saved.recent||[]).filter(appFact);WorldThreadsApp.researchStartId=appFact(saved.startingFactId)?saved.startingFactId:null;
+    for(const [id,value]of Object.entries(saved.fields||{}))if($(id))$(id).value=value;
+    const target=saved.view==='research'?'research':'explore',savedStage=saved.stage;WorldThreadsApp.render();show(target);tab(['prepare','return','progress'].includes(savedStage)?savedStage:'prepare');
+  }
+  function appFact(id){return Boolean(WorldThreadsApp.obs(id));}
+  function initialize(){
+    if(initialized)return;initialized=true;
+    try{saved=JSON.parse(localStorage.getItem(storageKey)||'null');}catch{}
+    $('originalThreadMount').append(document.querySelector('.thread-panel'));document.querySelector('.layout').remove();document.querySelector('.data-strip').remove();$('libraryMount').append(document.querySelector('.filters'),document.querySelector('.observations-panel'));
+    const contribute=$('contribute'),prepare=node('section',undefined,'research-stage'),returned=node('section',undefined,'research-stage'),progress=node('section',undefined,'research-stage');prepare.id='prepareResearch';returned.id='returnResearch';progress.id='progressResearch';let returning=false;
+    for(const child of [...contribute.children]){if(child.tagName==='H4'&&child.textContent==='Return your findings')returning=true;(returning?returned:prepare).append(child);}
+    progress.append($('receiptPanel'));contribute.replaceChildren(prepare,returned,progress);
+    const evidence=$('evidenceContribute'),details=node('details',undefined,'evidence-disclosure');details.id='evidenceDisclosure';details.append(node('summary','Have a source that supports or questions an existing claim?'),evidence);returned.append(details);
+    const activity=$('communityActivity').closest('section'),activityDisclosure=node('details',undefined,'collection-context');activityDisclosure.append(node('summary','Recent community findings'),activity);progress.append(activityDisclosure);$('researchMount').append(contribute);
+    const badgeTitle=[...prepare.querySelectorAll('h4')].find(x=>x.textContent==='Recognition for discoveries'),badges=node('details',undefined,'collection-context');badges.append(node('summary','Recognition for discoveries'));if(badgeTitle){badges.append(badgeTitle.nextElementSibling,$('contributionBadges'));badgeTitle.remove();prepare.append(badges);}
+    const optional=node('details',undefined,'collection-context');optional.append(node('summary','Choose a suggested mission or refine the research scope'));for(const id of ['proposedThreadTitle','researchMission','missionBrief','researchGap','gapQuestion']){const field=$(id),label=prepare.querySelector('label[for="'+id+'"]');if(label)optional.append(label);optional.append(field);}prepare.insertBefore(optional,$('makeResearchPrompt'));
+    document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>show(b.dataset.view));document.querySelectorAll('[data-research-tab]').forEach(b=>b.onclick=()=>tab(b.dataset.researchTab));$('connectionDepth').onchange=()=>{renderNetwork();remember();};$('resetJourney').onclick=()=>chooseThread(thread());
+    $('startExploring').onclick=()=>chooseThread(WorldThreadsApp.state.threads.find(t=>t.id===starterId)||WorldThreadsApp.state.threads[0]);$('browseThreads').onclick=()=>$('threadGallery').scrollIntoView({behavior:'smooth'});
+    $('resumeJourney').hidden=!saved?.threadId;$('resumeJourney').onclick=resume;
+    $('factReader').tabIndex=-1;if(matchMedia('(max-width:1000px)').matches)$('mapDisclosure').open=false;
+    $('copyResearchPrompt').onclick=async()=>{try{await navigator.clipboard.writeText($('researchPrompt').value);$('copyPromptStatus').textContent='Copied. Paste into your research assistant, then return its completed research file here.';}catch{$('copyPromptStatus').textContent='Copy is unavailable here. Open the prompt below, or download it.';document.querySelector('.prompt-detail').open=true;}};
+    $('goReturnFindings').onclick=()=>tab('return');
+    $('makeResearchPrompt').addEventListener('click',()=>{$('copyPromptStatus').textContent='';});
+    $('researchMission').addEventListener('change',()=>{const mission=WorldThreadsApp.state.missions.find(m=>m.id===$('researchMission').value);if(mission){WorldThreadsApp.researchStartId=mission.claimRefs.find(appFact)||null;$('personalQuestion').value=mission.title;researchContext();remember();}});
+    for(const id of ['researchPlace','researchDirection','personalQuestion','proposedThreadTitle','researchGap'])$(id).addEventListener('input',remember);
+    const prior=saved;tab('prepare');gallery();renderNetwork();show('discover');saved=prior;if(prior)try{localStorage.setItem(storageKey,JSON.stringify(prior));}catch{}
+    if(location.hash.startsWith('#receipt=')){show('research');tab('progress');}
+  }
+  window.WorldThreadsExplore={show,showEvidence,showProgress:()=>{show('research');tab('progress');},startingFact:()=>WorldThreadsApp.obs(WorldThreadsApp.researchStartId||selected)};
+  if(window.WorldThreadsApp?.state.observations.length)initialize();window.addEventListener('worldthreads-ready',initialize);window.addEventListener('worldthreads-rendered',()=>{if(initialized){gallery();renderNetwork();}});
 })();

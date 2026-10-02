@@ -46,18 +46,18 @@
             </div>
       <button class="nav-btn active" data-view="discover">Discover</button>
       <button class="nav-btn" data-view="explore">Follow a thread</button>
-      <button class="nav-btn" data-view="research">My research</button>
+      <button class="nav-btn" data-view="research">Contribute research</button>
     </nav>
   </header>
 
   <main>
     <section id="discoverView" class="journey-view">
-      <div class="discovery-hero"><p class="eyebrow">1816 · A WORLD OF CONNECTIONS</p><h1>One year.<br>Countless threads.</h1><p>A volcanic eruption. A failed harvest. A story told on a rainy evening. Follow the evidence and discover how lives, places and ideas connect.</p><button class="nav-btn primary" id="startExploring">Find a thread to follow ↗</button><p class="scope-note">Start in 1816. Follow recorded context before and after the year.</p></div>
+      <div class="discovery-hero"><p class="eyebrow">1816 · A WORLD OF CONNECTIONS</p><h1>How does history<br>connect?</h1><p>Start with a short story: <strong>what connects a volcano to Frankenstein?</strong> Follow the clues. Test a connection. Ask what’s missing—and begin an investigation of your own.</p><button class="nav-btn primary" id="startExploring">Try a 2-minute investigation →</button><button class="nav-btn" id="browseThreads">Browse all threads</button><button class="nav-btn" id="resumeJourney" hidden>Resume your exploration</button><p class="scope-note">Three facts · no account needed · sources available at every step</p></div>
       <div class="section-head"><p class="eyebrow">CHOOSE YOUR STARTING POINT</p><h2>What draws your curiosity?</h2><p>Each thread is a route through the evidence. You can branch off at any fact.</p></div><div id="threadGallery" class="thread-gallery"></div>
       <details class="collection-context"><summary>About this growing collection</summary><div class="collection-stats"><span><b id="statObservations">—</b> facts</span><span><b id="statThreads">—</b> threads</span><span><b id="statSources">—</b> sources</span><span><b id="statRelations">—</b> relationships</span></div><p>Facts and inferred relationships are separate. Confidence reflects recorded evidence, not popularity. <span id="highConfidence"></span> high-confidence observations across <span id="regionsCovered"></span> continents.</p></details>
     </section>
-    <section id="exploreView" class="journey-view" hidden><button class="nav-btn" data-view="discover">← All threads</button><div class="explore-heading"><p class="eyebrow">FOLLOW THE CONNECTIONS</p><h2 id="exploreTitle"></h2><p id="exploreDescription"></p></div><div class="explore-controls"><label for="connectionDepth">Connections around the selected fact</label><select id="connectionDepth"><option value="0">This thread</option><option value="1">One connection away</option><option value="2">Two connections away</option></select><button id="resetJourney" class="nav-btn">Back to the beginning</button></div><div class="explorer-workspace"><div><div class="network-viewport"><div id="networkCanvas" class="network-canvas" aria-label="Historical connections"></div></div><div class="network-legend"><span>━━ Causal / contributing</span><span>┄┄ Associated / contested</span><span>··· Provisional / disputed</span></div><p class="scope-note">Line styles describe recorded claims, not proof of causality. Select a fact, then choose where to go next.</p></div><aside id="factReader" class="fact-reader" aria-live="polite"></aside></div><details class="technical-thread"><summary>Read the complete thread and relationship evidence</summary><div id="originalThreadMount"></div></details></section>
-    <section id="researchView" class="journey-view" hidden><button class="nav-btn" data-view="explore">← Back to my thread</button><p class="eyebrow">CONTINUE THE DISCOVERY</p><h2>Your next chapter</h2><p id="researchContext">Choose a thread, ask a question, and bring back evidence.</p><div class="research-tabs"><button class="nav-btn active" data-research-tab="prepare">1 · Get a research prompt</button><button class="nav-btn" data-research-tab="return">2 · Return findings</button><button class="nav-btn" data-research-tab="progress">3 · Track progress</button></div><div id="researchMount"></div></section>
+    <section id="exploreView" class="journey-view" hidden><button class="nav-btn" data-view="discover">← All threads</button><div class="explore-heading"><p class="eyebrow">FOLLOW THE CLUES</p><h2 id="exploreTitle"></h2><p id="exploreDescription"></p></div><div class="explorer-workspace"><aside id="factReader" class="fact-reader" aria-live="polite"></aside><details id="mapDisclosure" class="story-map" open><summary>See the evidence map and related branches</summary><div class="explore-controls"><label for="connectionDepth">Show on the map</label><select id="connectionDepth"><option value="0">The story only</option><option value="1">Story + nearby branches</option><option value="2">Story + wider connections</option></select><button id="resetJourney" class="nav-btn">Restart this story</button></div><div class="network-viewport"><div id="networkCanvas" class="network-canvas" aria-label="Historical connections"></div></div><div class="network-legend"><span>━━ Causal / contributing</span><span>┄┄ Associated / contested</span><span>··· Provisional / disputed</span></div><p class="scope-note">Read connection explanations beside the selected fact. Colors distinguish subjects; they do not indicate confidence. Added branches are marked “Related.”</p></details></div><details class="technical-thread"><summary>Read the complete thread and relationship evidence</summary><div id="originalThreadMount"></div></details></section>
+    <section id="researchView" class="journey-view" hidden><button class="nav-btn" data-view="explore">← Back to my thread</button><p class="eyebrow">CONTINUE THE DISCOVERY</p><h2>Your investigation</h2><p id="researchContext">Choose a thread, ask a question, and bring back evidence.</p><div id="researchStartingFact" class="research-start"></div><p class="scope-note">Your question and exploration are saved on this device.</p><div class="research-tabs"><button class="nav-btn active" data-research-tab="prepare">1 · Get a research prompt</button><button class="nav-btn" data-research-tab="return">2 · Return findings</button><button class="nav-btn" data-research-tab="progress">3 · Track progress</button></div><div id="researchMount"></div></section>
     <details id="evidenceLibrary" class="collection-context"><summary>Browse all facts and evidence</summary><div id="libraryMount"></div></details>
     <section class="filters">
       <button class="filter active" data-system="ALL">All systems</button>
@@ -105,8 +105,8 @@
 
     <section class="panel contribution-panel" id="contribute">
       <p class="eyebrow">EXTEND THE RESEARCH</p>
-      <h3>Where does this thread lead next?</h3>
-      <p>Explore 1816 facts and relationships in a place that interests you—your town, region or community. Return your findings as a draft for review.</p>
+      <h3>What would you like to investigate?</h3>
+      <p>Choose a place and a question. We’ll prepare a prompt you can use with your research assistant to look for supporting evidence, competing causes and uncertainty.</p>
       <label for="researchPlace">Place you want to investigate</label>
       <input id="researchPlace" type="text" placeholder="Your town, district, watershed or community">
       <label for="researchDirection">How would you like to explore?</label>
@@ -126,15 +126,15 @@
       <p id="gapQuestion"></p>
       <button id="makeResearchPrompt" class="nav-btn">Prepare research prompt</button>
       <div id="researchKit" hidden>
-        <label for="researchPrompt">Your research prompt</label>
+        <div class="prompt-handoff"><h4>Take your question into research</h4><ol><li><strong>Copy the prompt</strong> below.</li><li><strong>Paste it into your research assistant</strong> and ask it to inspect the sources and return the completed research file.</li><li><strong>Return here and upload the file</strong> under “Return findings.” We’ll check the evidence automatically.</li></ol><button id="copyResearchPrompt" class="nav-btn primary">Copy research prompt</button><p id="copyPromptStatus" role="status"></p><button id="goReturnFindings" class="nav-btn">I have findings to return →</button></div><details class="prompt-detail"><summary>Read the prompt and prescribed output format</summary><label for="researchPrompt">Your research prompt</label>
         <textarea id="researchPrompt" rows="12" readonly></textarea>
         <button id="downloadResearchPrompt" class="nav-btn">Download prompt</button>
-        <button id="downloadResearchTemplate" class="nav-btn">Download output template</button>
+        <button id="downloadResearchTemplate" class="nav-btn">Download output template</button></details>
       </div>
       <h4>Recognition for discoveries</h4>
       <p>Discovery badges recognize recorded research outcomes. A submission alone earns no badge; provisional findings remain visibly unresolved.</p>
       <div id="contributionBadges" class="badge-grid"></div>
-      <h4>Return your findings</h4>
+      <h4>Return your findings</h4><p>Upload the completed JSON file returned by your research assistant. This structured file connects each proposed fact and relationship to its source passages. You can also paste its contents below.</p><details class="finding-example"><summary>What does a sourced finding look like?</summary><p><strong>Bounded finding:</strong> Mary Shelley later recalled frequent rain during the summer when Frankenstein began.</p><p><strong>Exact passage:</strong> “But it proved a wet, ungenial summer, and incessant rain often confined us for days to the house.”</p><p><strong>Source:</strong> <a href="https://www.gutenberg.org/files/42324/42324-h/42324-h.htm" target="_blank" rel="noopener noreferrer">Shelley’s 1831 introduction to Frankenstein</a>.</p><p><strong>Limit:</strong> This is a retrospective account. It supports the rainy setting; it does not establish weather as the sole cause of the story.</p><p>This illustrates claim, passage and limitation. Use the full prescribed format from your prompt for the file you upload.</p></details>
       <p id="communityService" role="status">Connecting to the research service…</p>
       <label for="contributionFile">Choose your research output file</label>
       <input id="contributionFile" type="file" accept=".json,application/json">
@@ -199,6 +199,7 @@
   <script src="app.js"></script>
   <script src="appearance.js"></script>
   <script src="community.js"></script>
+  <script src="explore-model.js"></script>
   <script src="explore.js"></script>
 </body>
 </html>
