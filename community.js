@@ -119,7 +119,7 @@
    try{sessionStorage.setItem('worldthreads-pending-request',JSON.stringify({fingerprint,capability}));}catch{}
    const result=await api('/api/submissions',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...payload,receipt:capability})});
    saveReceipt({id:result.id,receipt:result.receipt});status.textContent='Saved. Automatic review is running; keep your private receipt to follow progress.';
-   await checkReceipt();$('receiptPanel').scrollIntoView({behavior:'smooth'});
+   window.WorldThreadsExplore?.showProgress();await checkReceipt();$('receiptPanel').scrollIntoView({behavior:'smooth'});
   }catch(error){status.textContent=error.message;}finally{button.disabled=false;}
  }
  function bind(){
