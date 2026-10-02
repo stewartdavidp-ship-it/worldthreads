@@ -1,0 +1,85 @@
+{
+  "patches": [],
+  "evidenceUpdates": [
+    {
+      "submissionId": "b1f5be8a8a6c46ec8270ead3a342a925",
+      "claimId": "WT-1816-0015",
+      "stance": "supports",
+      "alias": "WorldThreads source check",
+      "at": "2026-10-01T22:01:54.447Z",
+      "sourceTitle": "Mary Shelley, Frankenstein (1831), Introduction",
+      "sourceUrl": "https://www.gutenberg.org/files/42324/42324-h/42324-h.htm",
+      "locator": "Introduction, paragraph beginning “But it proved”; signed 15 October 1831",
+      "quote": "But it proved a wet, ungenial summer, and incessant rain often confined us for days to the house.",
+      "relevance": "Shelley’s retrospective account supplies supporting evidence for the rainy weather context of the 1816 story-writing gathering. It does not establish the Notebook A writing dates or prove that climate alone caused the novel.",
+      "limitations": "Written in 1831 about 1816. This is the same author recollection already cited as SRC-020, not an independent witness or a quantitative climate measurement.",
+      "assessment": "automated_support",
+      "review": {
+        "claims": [
+          {
+            "claimId": "WT-1816-0015",
+            "status": "automated_support",
+            "passageMatched": true,
+            "reasons": [
+              "The passage describes the summer of 1816 as 'wet' and 'ungenial', which supports the claim of a cold and stormy summer.",
+              "The provided quote from Mary Shelley's introduction to Frankenstein describes the summer of 1816 as 'wet' and 'ungenial', supporting the claim that the story was conceived during a period of bad weather."
+            ],
+            "limitations": [
+              "The evidence is based on a retrospective account by Mary Shelley, which may be subject to biases or inaccuracies.",
+              "The text only provides indirect evidence of the weather conditions through descriptive language.",
+              "The evidence relies on Mary Shelley's retrospective account, which may be subject to biases or inaccuracies.",
+              "The quote only mentions the weather and does not provide direct evidence for the novel's creation."
+            ],
+            "alternatives": [
+              "Other factors, such as social influences or personal experiences, may have also contributed to the conception of Frankenstein.",
+              "The weather may have been a coincidence rather than a causal factor.",
+              "Other factors, such as social influences or personal experiences, may have also contributed to Mary Godwin's conception of the story.",
+              "The weather may have been a catalyst, but not the sole cause of the novel's creation."
+            ],
+            "evidenceIds": [
+              "submitted-evidence"
+            ]
+          }
+        ],
+        "sourceChecks": [
+          {
+            "id": "submitted-evidence",
+            "claimId": "WT-1816-0015",
+            "sourceId": "submitted-source",
+            "locator": "Introduction, paragraph beginning “But it proved”; signed 15 October 1831",
+            "matched": true,
+            "reason": "Exact quote found in retrieved text; locator is contributor supplied.",
+            "url": "https://www.gutenberg.org/files/42324/42324-h/42324-h.htm",
+            "sourceHash": "21d91d8c554b13336b4e74902d50291d0f829a5271f50a73af43e9809414d780",
+            "accessedAt": "2026-10-01T22:01:44.067Z",
+            "limits": "HTML/plain text only; supplied page locator is not independently resolved."
+          }
+        ],
+        "search": {
+          "status": "Bibliographic leads only; these titles are not inspected corroboration.",
+          "query": "Frankenstein begins in the cold, stormy summer of 1816",
+          "leads": [
+            {
+              "title": "Why a volcano, Frankenstein, and the summer of 1816 are relevant to the Anthropocene",
+              "url": "https://doi.org/10.64628/ab.qy3dngswk",
+              "doi": "10.64628/ab.qy3dngswk"
+            },
+            {
+              "title": "The Tempest-toss'd Summer of 1816: Mary Shelley's\n                    <i>Frankenstein</i>",
+              "url": "https://doi.org/10.3828/bj.1991.2",
+              "doi": "10.3828/bj.1991.2"
+            },
+            {
+              "title": "THE COLD SUMMER OF 1816",
+              "url": "https://doi.org/10.1175/1520-0493(1895)23[299a:tcso]2.0.co;2",
+              "doi": "10.1175/1520-0493(1895)23[299a:tcso]2.0.co;2"
+            }
+          ]
+        },
+        "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+        "reviewerPasses": 2,
+        "policy": "Two automated assessments of retrieved passages; no human approval or guarantee of historical truth."
+      }
+    }
+  ]
+}
