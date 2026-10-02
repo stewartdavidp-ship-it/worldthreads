@@ -15,3 +15,5 @@
 .proposed-connection{display:flex;align-items:center;gap:1rem;margin:1rem 0;padding:1rem;border:1px dashed var(--border);border-radius:12px;flex-wrap:wrap}.proposed-connection strong{flex:1;min-width:140px;color:var(--ink)}
 
 @media(max-width:500px){.clue-board{display:flex;flex-direction:column;gap:.6rem}.clue-board .case-board-lines{display:none}.clue-board .case-outcome{order:-1}.clue-board .case-lead{font-size:1rem;min-height:88px}.clue-board .case-lead strong{font-size:1rem}}
+
+.case-synthesis,.rival-leads,.case-contribute{margin:1.5rem 0;padding:1.2rem;border:1px solid var(--border);border-radius:14px}.case-synthesis textarea{width:100%;display:block;margin:.5rem 0 1rem;padding:.8rem;background:var(--surface);color:var(--ink);border:1px solid var(--border);border-radius:8px;font:inherit}.rival-leads button{margin:.4rem}.case-synthesis label{display:block}
