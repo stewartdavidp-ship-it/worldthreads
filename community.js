@@ -72,7 +72,7 @@
    const result=await api('/api/submissions/'+receipt.id,{headers:{Authorization:'Bearer '+receipt.receipt}});
    $('receiptStatus').textContent=statusLabel(result.status);const log=$('receiptEvents');log.replaceChildren();
    for(const e of result.events||[]){const entry=el('li',`${e.phase.replaceAll('_',' ')}: ${e.message||e.status||'Complete'}`);log.appendChild(entry);}
-   $('receiptReview').replaceChildren();if(result.review?.message)$('receiptReview').appendChild(el('p',result.review.message));reviewSummary(result.review,$('receiptReview'));if(result.status==='needs_correction')$('receiptReview').appendChild(Object.assign(el('button','Revise these findings','nav-btn'),{onclick:()=>window.WorldThreadsExplore?.showReturn()}));
+   $('receiptReview').replaceChildren();if(result.review?.message)$('receiptReview').appendChild(el('p',result.review.message));reviewSummary(result.review,$('receiptReview'));if(result.status==='needs_correction')$('receiptReview').appendChild(Object.assign(el('button','Revise these findings','nav-btn'),{onclick:()=>reviseFindings(result)}));
    if(['queued','reviewing','retry'].includes(result.status)){
     clearTimeout(pollTimer);if(document.visibilityState!=='hidden')pollTimer=setTimeout(checkReceipt,15000);
    }else{clearTimeout(pollTimer);await refreshGraph();await refreshActivity();if(['automated_support','automated_counterevidence','provisional'].includes(result.status)){const record=[...app.state.observations,...app.state.relationships].find(r=>r.submissionId===receipt.id||r.communityEvidence?.some(e=>e.submissionId===receipt.id));if(record)$('receiptReview').appendChild(Object.assign(el('button',result.status==='provisional'?'Explore the unresolved finding':'See your contribution in the thread','nav-btn'),{onclick:()=>window.WorldThreadsExplore?.showRecord(record.id)}));}}
@@ -92,6 +92,14 @@
    }
   }catch{$('communityActivity').textContent='Community findings will appear here when the research service is reachable.';}
  }
+ function reviseFindings(result){
+  let draft;try{draft=JSON.parse(localStorage.getItem('worldthreads-submitted-draft')||'null');}catch{}
+  if(draft?.id===receipt.id&&draft.route==='passage'){
+   const p=draft.payload;$('researchTarget').value=p.claimId;window.WorldThreadsExplore?.showEvidence();
+   for(const [field,key] of [['evidenceClaim','claimId'],['evidenceStance','stance'],['evidenceAlias','alias'],['evidenceTitle','sourceTitle'],['evidenceUrl','sourceUrl'],['evidenceLocator','locator'],['evidenceQuote','quote'],['evidenceRelevance','relevance'],['evidenceLimits','limitations']])$(field).value=p[key]||'';
+   $('evidenceConsent').checked=false;let corrections=$('evidenceCorrections');if(!corrections){corrections=el('div',undefined,'review-result');corrections.id='evidenceCorrections';$('evidenceForm').prepend(corrections);}corrections.replaceChildren(el('h4','Corrections requested'));if(result.review?.message)corrections.append(el('p',result.review.message));reviewSummary(result.review,corrections);$('evidenceSubmitStatus').textContent='Revise the passage below, then confirm publication again.';corrections.scrollIntoView({behavior:'smooth'});$('evidenceRelevance').focus({preventScroll:true});
+  }else{window.WorldThreadsExplore?.showReturn();if(draft?.id===receipt.id){$('researchOutput').value=JSON.stringify(draft.payload.kind==='research'?draft.payload.draft:draft.payload,null,2);$('researchOutput').dispatchEvent(new Event('input'));} $('communitySubmitStatus').textContent=result.review?.message||'Revise your findings using the corrections in Track progress.';}
+ }
  function errorList(errors){const root=$('communityErrors');root.replaceChildren();for(const error of errors)root.appendChild(el('li',error));}
  function readDraft(){const text=$('researchOutput').value.trim();if(!text)throw Error('Paste your research output or choose its JSON file first.');return JSON.parse(text);}
  function previewDraft(forSubmission=false){
@@ -100,10 +108,10 @@
    const draft=readDraft();$('researchConsent').closest('label').hidden=draft.kind==='research_note';$('submitResearch').hidden=draft.kind==='research_note';if(draft.kind==='research_note'){root.appendChild(el('h4','Research notes · no proposed graph changes'));root.appendChild(el('p',draft.conclusion||'No supported finding recorded.'));$('communitySubmitStatus').textContent='These notes are saved on this device. Download them or continue investigating; they are not published as a finding.';errorList([]);return null;}const payload=draft.kind==='evidence'?{...draft,consent:$('researchConsent').checked}:{kind:'research',draft,consent:$('researchConsent').checked};
    const errors=core.validateCommunity(forSubmission?payload:{...payload,consent:true},app.state,WorldThreadsIntake);errorList(errors);
    if(errors.length){$('communitySubmitStatus').textContent='Please correct the listed items.';return null;}
-   if(payload.kind==='evidence'){root.appendChild(el('h4','Evidence for an existing claim'));root.appendChild(el('p',payload.claimId+' · '+payload.stance));root.appendChild(el('blockquote',payload.quote));root.appendChild(el('p',payload.relevance));$('communitySubmitStatus').textContent='Evidence structure checks passed. Automatic review will assess the passage against the recorded claim.';return payload;}root.appendChild(el('h4','Proposed graph changes'));
+   if(payload.kind==='evidence'){root.appendChild(el('h4','Evidence for an existing claim'));root.appendChild(el('p',payload.claimId+' · '+payload.stance));root.appendChild(el('blockquote',payload.quote));root.appendChild(el('p',payload.relevance));const target=app.state.observations.find(o=>o.id===payload.claimId)||app.state.relationships.find(r=>r.id===payload.claimId);root.appendChild(el('p',target?.title||`${app.obs(target?.subjectId)?.title||payload.claimId} → ${target?.predicate?.replaceAll('_',' ')||'recorded connection'} → ${app.obs(target?.objectId)?.title||'recorded claim'}`));root.append(el('p','Public alias: '+payload.alias),publicLink(payload.sourceTitle,payload.sourceUrl),el('p','Passage location: '+payload.locator),el('p','Limitations: '+payload.limitations));root.appendChild(el('p','Proposed effect: attach this source passage to the existing claim. Automatic assessment may strengthen support, record counterevidence or leave it unresolved; this adds no new causal arrow.')); $('communitySubmitStatus').textContent='Evidence structure checks passed. Automatic review will assess the passage against the recorded claim.';return payload;}root.appendChild(el('h4','Proposed graph changes'));
    for(const o of draft.observations)root.appendChild(el('p',`New fact: ${o.title} · ${o.startDate} · ${o.place}`));
    const find=id=>draft.observations.find(o=>o.id===id)||app.obs(id);
-   for(const r of draft.relationships)root.appendChild(el('p',`${find(r.subjectId)?.title||r.subjectId} → ${r.predicate.replaceAll('_',' ')} → ${find(r.objectId)?.title||r.objectId}`));
+   for(const r of draft.relationships){const connection=el('div',undefined,'proposed-connection');connection.append(el('strong',find(r.subjectId)?.title||r.subjectId),el('span','→ '+r.predicate.replaceAll('_',' ')+' →'),el('strong',find(r.objectId)?.title||r.objectId));root.appendChild(connection);}
    root.appendChild(el('p',draft.proposedThread?'New branch: '+draft.proposedThread.title:'Extend: '+(app.state.threads.find(t=>t.id===draft.context.threadId)?.title||'research findings')));
    root.appendChild(el('p','Source review sets the status of each fact and relationship. Contradicted new claims stay in the review history.'));
    $('communitySubmitStatus').textContent='Structure checks passed. Review the proposed changes, then submit for automatic assessment.';return payload;
@@ -118,7 +126,7 @@
    if(!capability)capability=[...crypto.getRandomValues(new Uint8Array(32))].map(n=>n.toString(16).padStart(2,'0')).join('');
    try{sessionStorage.setItem('worldthreads-pending-request',JSON.stringify({fingerprint,capability}));}catch{}
    const result=await api('/api/submissions',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...payload,receipt:capability})});
-   saveReceipt({id:result.id,receipt:result.receipt});status.textContent='Saved. Automatic review is running; keep your private receipt to follow progress.';
+   saveReceipt({id:result.id,receipt:result.receipt});try{localStorage.setItem('worldthreads-submitted-draft',JSON.stringify({id:result.id,route:button.id==='submitEvidence'?'passage':'research',payload}));}catch{}status.textContent='Saved. Automatic review is running; keep your private receipt to follow progress.';
    window.WorldThreadsExplore?.showProgress();await checkReceipt();$('receiptPanel').scrollIntoView({behavior:'smooth'});
   }catch(error){status.textContent=error.message;}finally{button.disabled=false;}
  }

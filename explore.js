@@ -17,7 +17,7 @@
   function title(t){return names[t.id]||t.title;}
   function remember(){
     if(!initialized||!engaged)return;
-    const fields={};for(const id of ['researchPlace','researchDirection','personalQuestion','proposedThreadTitle','researchGap','researchPrompt','researchOutput'])fields[id]=$(id).value;
+    const fields={};for(const id of ['researchPlace','researchDirection','personalQuestion','proposedThreadTitle','researchGap','researchPrompt','researchOutput','researchTarget'])fields[id]=$(id).value;
     saved={threadId:currentThread,selected,recent,view,stage,fields,startingFactId:WorldThreadsApp.researchStartId||null,challengeContext:WorldThreadsApp.challengeContext||null,caseStance,caseLead,caseReason,caseQuestion,casePins,caseMode};
     try{localStorage.setItem(storageKey,JSON.stringify(saved));}catch{}
   }
@@ -29,8 +29,8 @@
     if(next==='explore')renderNetwork();
     window.scrollTo({top:0,behavior:'smooth'});remember();
   }
-  function tab(which){stage=which;for(const [name,id]of [['prepare','prepareResearch'],['return','returnResearch'],['progress','progressResearch']])$(id).hidden=name!==which;document.querySelectorAll('[data-research-tab]').forEach(b=>b.classList.toggle('active',b.dataset.researchTab===which));remember();}
-  function showEvidence(){show('research');tab('return');$('evidenceDisclosure').open=true;}
+  function tab(which){stage=which;if($('emptyProgress'))$('emptyProgress').hidden=!$('receiptPanel').hidden;for(const [name,id]of [['prepare','prepareResearch'],['return','returnResearch'],['progress','progressResearch']])$(id).hidden=name!==which;document.querySelectorAll('[data-research-tab]').forEach(b=>b.classList.toggle('active',b.dataset.researchTab===which));remember();}
+  function showEvidence(){show('research');tab('return');$('evidenceDisclosure').open=true;const target=$('researchTarget').value;if(target)$('evidenceClaim').value=target;}
   function chooseThread(t){
     WorldThreadsApp.state.threadId=t.id;selected=t.nodeIds[0];recent=[selected];currentThread=t.id;arrivedVia=null;caseMode=t.id===starterId;caseStance='';caseLead='';caseReason='';caseQuestion='';casePins=[];
     $('connectionDepth').value='0';WorldThreadsApp.render();show('explore');
@@ -46,13 +46,13 @@
     const c=WorldThreadsInvestigation,root=$('casePanel');
     if(root.dataset.caseId===c.id){updateCase();return;}
     root.dataset.caseId=c.id;root.replaceChildren();
-    const intro=node('div',undefined,'case-intro');intro.append(node('p','Inspect a clue first. Compare passages, ask a question, and decide what evidence would distinguish the explanations.'));
+    const intro=node('div',undefined,'case-intro');
     const claims=node('div',undefined,'claim-comparison');claims.append(node('p','CHALLENGE TO EXAMINE','eyebrow'),node('strong',c.claim),node('p',c.boundary,'scope-note'),node('p','CURRENT RECORDED CONNECTION','eyebrow'),node('span','Weather contributed to the setting; the record does not claim it was the decisive or sole cause.'),button('Inspect the recorded connection',()=>openRelationship(WorldThreadsApp.state.relationships.find(r=>r.id===c.targetClaimId)),'trail-link'));intro.append(claims);root.append(intro);
     const layout=node('div',undefined,'case-evidence-layout'),board=node('section',undefined,'case-board');board.append(node('h3','Follow a lead'),node('p','Dashed links below are possible influences to investigate, not newly established relationships.','scope-note'));
     const clues=node('div',undefined,'clue-board');clues.setAttribute('aria-label','Evidence leads around Frankenstein');const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 600 450');svg.setAttribute('preserveAspectRatio','none');svg.setAttribute('aria-hidden','true');svg.classList.add('case-board-lines');
     for(const [x,y]of [[100,75],[300,75],[500,75],[100,345],[500,345]]){const p=document.createElementNS(ns,'path');p.setAttribute('d',`M ${x} ${y} L 300 220`);p.setAttribute('stroke','var(--border)');p.setAttribute('stroke-dasharray','5 7');p.setAttribute('fill','none');svg.append(p);}clues.append(svg);
     const center=node('div',undefined,'case-outcome');center.append(node('small','RECORDED FACT'),node('strong','Frankenstein begins in 1816'),button('Inspect this fact',()=>openDetail(WorldThreadsApp.obs(c.startingFactId)),'trail-link'));clues.append(center);
-    c.leads.forEach((lead,i)=>{const b=button('',()=>{caseLead=lead.id;updateCase();remember();},'case-lead');b.dataset.leadId=lead.id;b.style.gridArea=['1 / 1','1 / 2','1 / 3','3 / 1','3 / 3'][i];b.append(node('small',i===4?'1817 preface · Percy attribution':'Mary Shelley · 1831 recollection'),node('strong',lead.title),node('span',['Possible setting','Possible trigger','Possible inspiration','Creative choice','Tests chronology'][i]),node('span','Inspect passage'));clues.append(b);});board.append(clues,node('p','Source groups: four passages from Mary Shelley’s 1831 recollection; one from the 1817 preface attributed to Percy Shelley. Five passages are not five independent witnesses.','source-warning'));
+    c.leads.forEach((lead,i)=>{const b=button('',()=>{caseLead=lead.id;updateCase();remember();},'case-lead');b.dataset.leadId=lead.id;b.style.gridArea=['1 / 1','1 / 2','1 / 3','3 / 1','3 / 3'][i];b.append(node('small',i===4?'1817 preface · Percy attribution':'Mary Shelley · 1831 recollection'),node('strong',lead.title),node('span',['Possible setting','Possible trigger','Possible inspiration','Creative choice','Tests chronology'][i]),node('span','Inspect passage'));clues.append(b);});board.append(clues,button('Investigate another explanation →',()=>{$('caseQuestion').value='';caseQuestion='';$('caseQuestion').placeholder='What other influence could explain the story’s beginning in 1816?';$('caseQuestion').scrollIntoView({behavior:'smooth',block:'center'});$('caseQuestion').focus();remember();},'nav-btn alternative-lead'),node('p','Source groups: four passages from Mary Shelley’s 1831 recollection; one from the 1817 preface attributed to Percy Shelley. Five passages are not five independent witnesses.','source-warning'));
     const source=node('article',undefined,'case-source');source.id='caseSource';
     const controls=node('div',undefined,'clue-controls'),picker=node('select');picker.id='caseCluePicker';picker.setAttribute('aria-label','Choose a source passage');picker.append(node('option','Choose a clue'));picker.firstChild.value='';for(const lead of c.leads){const option=node('option',lead.title);option.value=lead.id;picker.append(option);}picker.onchange=()=>{caseLead=picker.value;updateCase();remember();};
     const move=step=>{const i=c.leads.findIndex(l=>l.id===caseLead);caseLead=c.leads[(Math.max(0,i)+step+c.leads.length)%c.leads.length].id;updateCase();remember();};controls.append(button('Previous clue',()=>move(-1)),picker,button('Next clue',()=>move(1)));source.append(controls);
@@ -134,8 +134,11 @@
     show('research');tab('prepare');
   }
   function researchContext(){
+    const target=$('researchTarget');if(!target.options.length)for(const record of [...WorldThreadsApp.state.observations,...WorldThreadsApp.state.relationships]){const option=node('option',record.title||`${WorldThreadsApp.obs(record.subjectId)?.title||record.subjectId} → ${record.predicate.replaceAll('_',' ')} → ${WorldThreadsApp.obs(record.objectId)?.title||record.objectId}`);option.value=record.id;target.append(option);}const start=WorldThreadsApp.researchStartId||selected;if(target.dataset.start!==start){target.value=WorldThreadsApp.challengeContext?.targetClaimId||start;target.dataset.start=start;}
     const t=thread(),o=WorldThreadsApp.obs(WorldThreadsApp.researchStartId||selected);$('researchContext').textContent='Story: '+(t?title(t):'1816');
     const root=$('researchStartingFact');root.replaceChildren();if(o)root.append(node('small','STARTING FROM THIS FACT'),node('strong',o.title),node('p',o.place+' · '+o.startDate),button('Return to this fact',()=>{caseMode=false;selectFact(o.id);show('explore');}));
+    const clues=$('researchClues');clues.replaceChildren();const passages=WorldThreadsApp.challengeContext?.passages||[];clues.hidden=!passages.length;if(passages.length){clues.append(node('h3','Clues you are following'),node('p','Your question can test this connection, uncover another influence, or leave the evidence unresolved.','scope-note'));const cards=node('div',undefined,'research-clue-cards');for(const passage of passages){const card=node('article',undefined,'pinned-card');card.append(node('strong',passage.title),node('small',passage.date),node('blockquote',passage.quote),node('p',passage.limits));const link=node('a','Full source ↗');link.href=passage.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';card.append(link);cards.append(card);}clues.append(cards);}
+
   }
   function reader(){
     const app=WorldThreadsApp,t=thread(),o=app.obs(selected),root=$('factReader');root.replaceChildren();if(!o)return;
@@ -179,8 +182,8 @@
     $('originalThreadMount').append(document.querySelector('.thread-panel'));document.querySelector('.layout').remove();document.querySelector('.data-strip').remove();$('libraryMount').append(document.querySelector('.filters'),document.querySelector('.observations-panel'));
     const contribute=$('contribute'),prepare=node('section',undefined,'research-stage'),returned=node('section',undefined,'research-stage'),progress=node('section',undefined,'research-stage');prepare.id='prepareResearch';returned.id='returnResearch';progress.id='progressResearch';let returning=false;
     for(const child of [...contribute.children]){if(child.tagName==='H4'&&child.textContent==='Return your findings')returning=true;(returning?returned:prepare).append(child);}
-    progress.append($('receiptPanel'));contribute.replaceChildren(prepare,returned,progress);
-    const evidence=$('evidenceContribute'),details=node('details',undefined,'evidence-disclosure');details.id='evidenceDisclosure';details.append(node('summary','Have a source that supports or questions an existing claim?'),evidence);returned.append(details);
+    const empty=node('section',undefined,'review-result');empty.id='emptyProgress';empty.append(node('h3','Your investigation is saved on this device'),node('p','No submission is being tracked yet. Preparing a prompt does not submit research.'),button('Continue researching',()=>tab('prepare')),button('Return findings',()=>tab('return')));progress.append(empty,returned.querySelector('#receiptPanel')); contribute.replaceChildren(prepare,returned,progress);
+    const evidence=$('evidenceContribute'),details=node('details',undefined,'evidence-disclosure');details.id='evidenceDisclosure';details.addEventListener('toggle',()=>{if(details.open&&$('researchTarget').value)$('evidenceClaim').value=$('researchTarget').value;});details.append(node('summary','Have a source that supports or questions an existing claim?'),evidence);returned.append(details);
     const activity=$('communityActivity').closest('section'),activityDisclosure=node('details',undefined,'collection-context');activityDisclosure.append(node('summary','Recent community findings'),activity);progress.append(activityDisclosure);$('researchMount').append(contribute);
     const badgeTitle=[...prepare.querySelectorAll('h4')].find(x=>x.textContent==='Recognition for discoveries'),badges=node('details',undefined,'collection-context');badges.append(node('summary','Recognition for discoveries'));if(badgeTitle){badges.append(badgeTitle.nextElementSibling,$('contributionBadges'));badgeTitle.remove();prepare.append(badges);}
     const optional=node('details',undefined,'collection-context');optional.append(node('summary','Choose a suggested mission or refine the research scope'));for(const id of ['researchDirection','proposedThreadTitle','researchMission','missionBrief','researchGap','gapQuestion']){const field=$(id),label=prepare.querySelector('label[for="'+id+'"]');if(label)optional.append(label);optional.append(field);}prepare.insertBefore(optional,$('makeResearchPrompt'));
@@ -193,7 +196,7 @@
     $('makeResearchPrompt').addEventListener('click',()=>{$('copyPromptStatus').textContent='';});
     $('researchMission').addEventListener('change',()=>{const mission=WorldThreadsApp.state.missions.find(m=>m.id===$('researchMission').value);if(mission){WorldThreadsApp.researchStartId=mission.claimRefs.find(appFact)||null;$('personalQuestion').value=mission.title;researchContext();remember();}});
     $('makeResearchPrompt').addEventListener('click',remember);
-    for(const id of ['researchPlace','researchDirection','personalQuestion','proposedThreadTitle','researchGap','researchPrompt','researchOutput'])$(id).addEventListener('input',remember);
+    for(const id of ['researchPlace','researchDirection','personalQuestion','proposedThreadTitle','researchGap','researchPrompt','researchOutput','researchTarget'])$(id).addEventListener('input',remember);
     const prior=saved;tab('prepare');gallery();renderNetwork();show('discover');saved=prior;if(prior)try{localStorage.setItem(storageKey,JSON.stringify(prior));}catch{}
     if(location.hash.startsWith('#receipt=')){show('research');tab('progress');}
   }
