@@ -1,0 +1,45 @@
+name: Preserve community research in GitHub
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: worldthreads-community-export
+  cancel-in-progress: false
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Retrieve published research only
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const base='https://worldthreads-community.stewartd.workers.dev';
+          const results=await Promise.all(['/api/graph','/api/activity'].map(async path=>{
+            const r=await fetch(base+path,{signal:AbortSignal.timeout(30000)});
+            if(!r.ok)throw Error('Research service returned '+r.status);
+            return r.json();
+          }));
+          if(!Array.isArray(results[0].patches)||!Array.isArray(results[0].evidenceUpdates)||!Array.isArray(results[1]))throw Error('Unexpected public research format');
+          fs.mkdirSync('data/community',{recursive:true});
+          for(const [i,name]of ['graph','activity'].entries())fs.writeFileSync('data/community/'+name+'.json',JSON.stringify(results[i],null,2)+'\n');
+          JS
+      - name: Preserve the public snapshot
+        run: |
+          if git diff --quiet -- data/community && test -z "$(git ls-files --others --exclude-standard data/community)"; then
+            exit 0
+          fi
+          git config user.name 'WorldThreads research archive'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/community/graph.json data/community/activity.json
+          git commit -m 'Archive automatically reviewed community findings'
+          git pull --rebase origin gh-pages
+          git push origin HEAD:gh-pages

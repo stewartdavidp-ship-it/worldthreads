@@ -1,7 +1,34 @@
 [
-  {"id":"THREAD_FINDER","title":"Thread Finder","description":"Connect accepted observations into a new historical thread.","awardRule":"Independent review accepts a new thread and its supporting claims."},
-  {"id":"CAUSALITY_EXPLORER","title":"Causality Explorer","description":"Support a connection after testing other explanations.","awardRule":"Independent review accepts a causal or contributory relationship with passage evidence, source-dependence checks and documented alternative search."},
-  {"id":"THEORY_CHALLENGER","title":"Theory Challenger","description":"Find evidence that changes a preferred explanation.","awardRule":"Independent review accepts a rival explanation, counterexample or correction that materially changes an existing interpretation."},
-  {"id":"RESILIENCE_SPOTTER","title":"Resilience Spotter","description":"Show how people or systems avoided an expected outcome.","awardRule":"Independent review accepts a bounded resilience record and its significance without assuming a universal outcome."},
-  {"id":"SOURCE_DETECTIVE","title":"Source Detective","description":"Resolve a source gap or expose a shared underlying account.","awardRule":"Independent review confirms a newly inspected original, material provenance correction or source-dependence finding."}
+  {
+    "id": "THREAD_FINDER",
+    "title": "Thread Finder",
+    "description": "Connect accepted observations into a new historical thread.",
+    "awardRule": "Automated review accepts a new thread and its supporting claims."
+  },
+  {
+    "id": "CAUSALITY_EXPLORER",
+    "title": "Causality Explorer",
+    "description": "Support a connection after testing other explanations.",
+    "awardRule": "Automated review accepts a causal or contributory relationship with passage evidence, source-dependence checks and documented alternative search."
+  },
+  {
+    "id": "THEORY_CHALLENGER",
+    "title": "Theory Challenger",
+    "description": "Find evidence that changes a preferred explanation.",
+    "awardRule": "Automated review accepts a rival explanation, counterexample or correction that materially changes an existing interpretation."
+  },
+  {
+    "id": "RESILIENCE_SPOTTER",
+    "title": "Resilience Spotter",
+    "description": "Show how people or systems avoided an expected outcome.",
+    "awardRule": "Automated review accepts a bounded resilience record and its significance without assuming a universal outcome.",
+    "availability": "Additional specialized verification required; no automatic award in v0.4."
+  },
+  {
+    "id": "SOURCE_DETECTIVE",
+    "title": "Source Detective",
+    "description": "Resolve a source gap or expose a shared underlying account.",
+    "awardRule": "Automated review confirms a newly inspected original, material provenance correction or source-dependence finding.",
+    "availability": "Additional specialized verification required; no automatic award in v0.4."
+  }
 ]

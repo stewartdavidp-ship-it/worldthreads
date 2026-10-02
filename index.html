@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="threads.css" />
   <link rel="stylesheet" href="appearance.css" />
+  <link rel="stylesheet" href="explore.css" />
 </head>
 <body>
   <header class="site-header">
@@ -43,28 +44,21 @@
                     <p class="disp-note">Saved on this device.</p>
                 </div>
             </div>
-      <button class="nav-btn active">1816</button>
-      <button class="nav-btn">Threads</button>
-      <button class="nav-btn">Evidence</button>
+      <button class="nav-btn active" data-view="discover">Discover</button>
+      <button class="nav-btn" data-view="explore">Follow a thread</button>
+      <button class="nav-btn" data-view="research">My research</button>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div>
-        <p class="eyebrow">PROTOTYPE YEAR · CORE CONTEXT 1814–1818 · SELECTED LATER OUTCOMES</p>
-        <h1>1816</h1>
-        <h2>The world in motion</h2>
-        <p class="intro">Explore evidence as a historical systems graph: Earth, biosphere, production, people, power and culture. Facts remain separate from the relationships historians infer between them.</p>
-      </div>
-      <div class="hero-card">
-        <div class="hero-stat"><span id="statObservations">—</span><small>observations</small></div>
-        <div class="hero-stat"><span id="statThreads">—</span><small>traceable threads</small></div>
-        <div class="hero-stat"><span id="statSources">—</span><small>sources</small></div>
-        <div class="hero-stat"><span id="statRelations">—</span><small>relationships</small></div>
-      </div>
+    <section id="discoverView" class="journey-view">
+      <div class="discovery-hero"><p class="eyebrow">1816 · A WORLD OF CONNECTIONS</p><h1>One year.<br>Countless threads.</h1><p>A volcanic eruption. A failed harvest. A story told on a rainy evening. Follow the evidence and discover how lives, places and ideas connect.</p><button class="nav-btn primary" id="startExploring">Find a thread to follow ↗</button><p class="scope-note">Start in 1816. Follow recorded context before and after the year.</p></div>
+      <div class="section-head"><p class="eyebrow">CHOOSE YOUR STARTING POINT</p><h2>What draws your curiosity?</h2><p>Each thread is a route through the evidence. You can branch off at any fact.</p></div><div id="threadGallery" class="thread-gallery"></div>
+      <details class="collection-context"><summary>About this growing collection</summary><div class="collection-stats"><span><b id="statObservations">—</b> facts</span><span><b id="statThreads">—</b> threads</span><span><b id="statSources">—</b> sources</span><span><b id="statRelations">—</b> relationships</span></div><p>Facts and inferred relationships are separate. Confidence reflects recorded evidence, not popularity. <span id="highConfidence"></span> high-confidence observations across <span id="regionsCovered"></span> continents.</p></details>
     </section>
-
+    <section id="exploreView" class="journey-view" hidden><button class="nav-btn" data-view="discover">← All threads</button><div class="explore-heading"><p class="eyebrow">FOLLOW THE CONNECTIONS</p><h2 id="exploreTitle"></h2><p id="exploreDescription"></p></div><div class="explore-controls"><label for="connectionDepth">Connections around the selected fact</label><select id="connectionDepth"><option value="0">This thread</option><option value="1">One connection away</option><option value="2">Two connections away</option></select><button id="resetJourney" class="nav-btn">Back to the beginning</button></div><div class="explorer-workspace"><div><div class="network-viewport"><div id="networkCanvas" class="network-canvas" aria-label="Historical connections"></div></div><div class="network-legend"><span>━━ Causal / contributing</span><span>┄┄ Associated / contested</span><span>··· Provisional / disputed</span></div><p class="scope-note">Line styles describe recorded claims, not proof of causality. Select a fact, then choose where to go next.</p></div><aside id="factReader" class="fact-reader" aria-live="polite"></aside></div><details class="technical-thread"><summary>Read the complete thread and relationship evidence</summary><div id="originalThreadMount"></div></details></section>
+    <section id="researchView" class="journey-view" hidden><button class="nav-btn" data-view="explore">← Back to my thread</button><p class="eyebrow">CONTINUE THE DISCOVERY</p><h2>Your next chapter</h2><p id="researchContext">Choose a thread, ask a question, and bring back evidence.</p><div class="research-tabs"><button class="nav-btn active" data-research-tab="prepare">1 · Get a research prompt</button><button class="nav-btn" data-research-tab="return">2 · Return findings</button><button class="nav-btn" data-research-tab="progress">3 · Track progress</button></div><div id="researchMount"></div></section>
+    <details id="evidenceLibrary" class="collection-context"><summary>Browse all facts and evidence</summary><div id="libraryMount"></div></details>
     <section class="filters">
       <button class="filter active" data-system="ALL">All systems</button>
       <button class="filter earth" data-system="EARTH">Earth</button>
@@ -105,6 +99,7 @@
         <div class="thread-toolbar"><select id="threadSelect" class="thread-select" aria-label="Choose a historical thread"></select></div>
         <p id="threadDescription" class="thread-description"></p>
         <div id="threadGraph" class="thread-graph"></div>
+        <p class="review-note">Arrows connect recorded facts through explicit relationships. Dashed lines mark provisional, associated or disputed connections. Select a fact or inspect the evidence for a connection below.</p>
       </section>
     </section>
 
@@ -137,17 +132,54 @@
         <button id="downloadResearchTemplate" class="nav-btn">Download output template</button>
       </div>
       <h4>Recognition for discoveries</h4>
-      <p>Badges recognize independently verified work, including evidence that challenges a theory. Uploading a draft starts review; it does not earn a badge.</p>
+      <p>Discovery badges recognize recorded research outcomes. A submission alone earns no badge; provisional findings remain visibly unresolved.</p>
       <div id="contributionBadges" class="badge-grid"></div>
       <h4>Return your findings</h4>
-      <label for="contributionFile">Upload research output for local checks</label>
+      <p id="communityService" role="status">Connecting to the research service…</p>
+      <label for="contributionFile">Choose your research output file</label>
       <input id="contributionFile" type="file" accept=".json,application/json">
-      <p>This prototype checks the file on your device. It does not send it to the repository. After checking your draft, copy its contents into the GitHub review form below. Posting requires a GitHub account and creates a public submission.</p>
-      <p><a class="nav-btn submission-link" href="https://github.com/stewartdavidp-ship-it/worldthreads/issues/new?template=research-contribution.yml" target="_blank" rel="noopener">Post research for review</a> <a href="https://github.com/stewartdavidp-ship-it/worldthreads/issues?q=is%3Aissue+label%3Aresearch" target="_blank" rel="noopener">See submitted research</a></p>
-      <p id="contributionStatus" role="status" aria-live="polite"></p>
-      <ul id="contributionErrors"></ul>
-      <button id="copySubmission" class="nav-btn" hidden>Copy checked research</button>
-      <button id="downloadSubmission" class="nav-btn" hidden>Download pending review draft</button>
+      <label for="researchOutput">Or paste the prescribed research output</label>
+      <textarea id="researchOutput" rows="8" placeholder="Paste your completed JSON research output here"></textarea>
+      <p>Include a short exact quote for every evidence record so the service can inspect the cited passage. The current checker retrieves public HTML and plain text; inaccessible sources and PDFs remain provisional.</p>
+      <label class="consent"><input id="researchConsent" type="checkbox"> Publish my research, source excerpts and chosen alias after automated checks. I have omitted private information.</label>
+      <button id="previewResearch" class="nav-btn">Preview facts and connections</button>
+      <button id="submitResearch" class="nav-btn">Submit research · no account needed</button>
+      <button id="downloadResearchOutput" class="nav-btn">Save my draft</button>
+      <p id="communitySubmitStatus" role="status" aria-live="polite"></p>
+      <ul id="communityErrors"></ul>
+      <div id="graphPreview"></div>
+      <section id="receiptPanel" class="review-result" hidden>
+        <h4>Your research receipt</h4><p id="receiptId"></p>
+        <p><a id="receiptLink" rel="noreferrer">Keep this private progress link</a></p>
+        <p>This link is saved on this browser. Bookmark it to follow progress on another device. It contains your private receipt; do not share it.</p>
+        <button id="checkReceipt" class="nav-btn">Check progress</button>
+        <p id="receiptStatus" role="status"></p><ol id="receiptEvents"></ol><div id="receiptReview"></div>
+      </section>
+    </section>
+
+
+    <section class="panel contribution-panel" id="evidenceContribute">
+      <p class="eyebrow">EVIDENCE, NOT ARGUMENT</p><h3>Support or question a fact or connection</h3>
+      <p>Identify the claim, cite an exact passage, and explain its relevance and limitations. The automatic review assesses evidence rather than opinions or votes. It may strengthen support, mark a connection disputed, or leave the question unresolved.</p>
+      <form id="evidenceForm">
+        <label for="evidenceClaim">Fact or relationship</label><select id="evidenceClaim" class="thread-select"></select>
+        <label for="evidenceStance">How does your evidence bear on it?</label><select id="evidenceStance" class="thread-select"><option value="supports">Supporting evidence</option><option value="counterevidence">Counterevidence</option></select>
+        <label for="evidenceAlias">Public name or alias</label><input id="evidenceAlias" type="text" required maxlength="80" autocomplete="nickname">
+        <label for="evidenceTitle">Source title</label><input id="evidenceTitle" type="text" required maxlength="250">
+        <label for="evidenceUrl">Public source URL</label><input id="evidenceUrl" type="url" required placeholder="https://…">
+        <label for="evidenceLocator">Page, section or dated entry</label><input id="evidenceLocator" type="text" required maxlength="200">
+        <label for="evidenceQuote">Short exact source passage (20–500 characters)</label><textarea id="evidenceQuote" rows="3" required minlength="20" maxlength="500"></textarea>
+        <label for="evidenceRelevance">What does this evidence support or weaken? Be factual.</label><textarea id="evidenceRelevance" rows="4" required minlength="30" maxlength="1600"></textarea>
+        <label for="evidenceLimits">What can this source not establish?</label><textarea id="evidenceLimits" rows="2" required minlength="10" maxlength="700"></textarea>
+        <div hidden aria-hidden="true"><label for="evidenceWebsite">Website</label><input id="evidenceWebsite" type="text" tabindex="-1" autocomplete="off"></div>
+        <label class="consent"><input id="evidenceConsent" type="checkbox" required> Publish this evidence and my chosen alias after automated checks. I have omitted private information.</label>
+        <button id="submitEvidence" class="nav-btn" type="submit">Submit evidence · no account needed</button>
+        <p id="evidenceSubmitStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <section class="panel contribution-panel"><p class="eyebrow">COMMUNITY RESEARCH</p><h3>Findings and review history</h3>
+      <p>New facts and relationships extend the graph with their assessment status attached. Provisional findings are research leads, and may change as further evidence arrives. Two automated passes use the same model; they are not two independent historical witnesses.</p>
+      <button id="refreshCommunity" class="nav-btn">Refresh findings and threads</button><div id="communityActivity"></div>
     </section>
 
     <section class="panel observations-panel">
@@ -161,9 +193,12 @@
 
   <dialog id="detailDialog"><button id="closeDialog" class="close" aria-label="Close">×</button><div id="dialogContent"></div></dialog>
 
-  <footer><span>WorldThreads v0.3</span><span>Prototype year: 1816 · evidence and relationships separated</span></footer>
+  <footer><span>WorldThreads v0.4</span><span>Prototype year: 1816 · evidence and relationships separated</span></footer>
   <script src="contribution.js"></script>
+  <script src="community-core.js"></script>
   <script src="app.js"></script>
   <script src="appearance.js"></script>
+  <script src="community.js"></script>
+  <script src="explore.js"></script>
 </body>
 </html>

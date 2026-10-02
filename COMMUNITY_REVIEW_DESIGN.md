@@ -1,6 +1,6 @@
 # Account-free contributions and automated evidence debate
 
-Agreed direction: participation must not require a GitHub account, and routine review must not depend on a human reviewer. This is a design for the next release, not a deployed capability.
+Agreed direction: participation must not require a GitHub account, and routine review must not depend on a human reviewer. Implemented in v0.4 through the account-free Worker/D1 service. See docs/COMMUNITY_SERVICE.md for exact deployed behavior and remaining extensions.
 
 ## Contribution flow
 
@@ -28,9 +28,9 @@ The public interface uses “Submit supporting evidence” and “Submit counter
 
 Popularity and vote totals never determine historical confidence. Several retellings of one account count as one witness. Supporting, disconfirming and inconclusive findings are all useful. Badges depend on recorded review results and can be revised when their underlying evidence changes.
 
-## Remaining implementation
+## Implementation scope and further extensions
 
-Build submission API and receipt page, queue and bounded review jobs, source-retrieval checks, structured reviewer outputs, debate/challenge interface, revision history, publication/export workflow and badge rules. Add spam/rate controls and spending limits. Replace current interface wording about GitHub posting and independent review only when the replacement service is deployed and tested.
+The submission API, private receipts, bounded review jobs, HTML/plain-text retrieval, factual evidence forms, review events, graph publication, hourly public repository snapshots and three automated recognition rules are implemented. Deep PDF/scan retrieval, specialized provenance/resilience badges and later-year expansion remain future extensions. The service labels unresolved claims explicitly rather than creating a human review dependency.
 
 ## Showing contributions in the historical graph
 

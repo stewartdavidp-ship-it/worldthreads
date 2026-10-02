@@ -39,3 +39,18 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 
 .disp-panel{width:min(20rem,calc(100vw - 40px))}.disp-panel .dph{font-size:.8rem}.disp-note{font-size:.75rem}
 @media(max-width:850px){.site-header{position:relative}.disp-panel{right:auto;left:0}.detail-grid{grid-template-columns:1fr}.row-head,footer{flex-wrap:wrap;gap:12px}.map-shell{min-height:26rem}}
+.review-result{margin:16px 0;padding:16px;border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow-wrap:anywhere}
+.review-result h4{margin:0}.review-result a{display:block;margin:8px 0}.review-result blockquote{border-left:3px solid var(--border);margin:12px 0;padding-left:12px;line-height:1.6}
+.thread-node[data-review="provisional"],.relation-item[data-review="provisional"]{border-style:dashed}
+.thread-node[data-review="disputed"],.relation-item[data-review="disputed"]{border-style:double;border-width:3px}
+.review-label{font-weight:700}.consent{display:flex!important;gap:10px;align-items:flex-start}.consent input{flex:0 0 auto;margin-top:5px}
+.contribution-panel input[type="url"]{width:100%;padding:12px;background:var(--surface);color:var(--ink);border:1px solid var(--border);border-radius:10px;font:inherit}
+.evidence-actions{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}button:disabled{opacity:.65;cursor:wait}
+#graphPreview:empty{display:none}#graphPreview{margin-top:16px;padding:16px;border:1px dashed var(--border);border-radius:12px}
+[hidden]{display:none!important}#evidenceClaim{width:100%;min-width:0}
+.thread-graph{position:relative;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:44px 30px;align-items:stretch;isolation:isolate}
+.thread-node{z-index:1;min-width:0;text-align:left}.graph-links{position:absolute;inset:0;width:100%;height:100%;overflow:visible;z-index:0}
+.graph-links>path{fill:none;stroke:var(--link);stroke-width:2;pointer-events:stroke;cursor:pointer}.graph-links marker path{fill:var(--link)}
+.graph-links>path[data-status="provisional"],.graph-links>path[data-status="disputed"],.graph-links>path[data-status="CONTESTED"],.graph-links>path[data-status="ASSOCIATED"]{stroke-dasharray:5 4}
+@media(max-width:450px){.thread-graph{grid-template-columns:1fr}}
+.layout{align-items:start}

@@ -17,7 +17,7 @@
     if(p.review?.status!=='pending')fail('New contributions must have review status pending.');
     for(const n of ['sources','observations','relationships','evidence','searchLog'])if(!Array.isArray(p[n]))fail(`Include a ${n} array.`);
     if(errors.length)return errors;
-    if(!p.observations.length&&!p.context.missionId)fail('Include at least one proposed observation.');
+    if(!p.observations.length&&!p.relationships.length&&!p.context.missionId)fail('Include at least one proposed fact or relationship.');
     if(!p.searchLog.length)fail('Record searches for other explanations and counterevidence.');
     const maps={};const ids=new Set();
     for(const n of ['sources','observations','relationships','evidence']){

@@ -2,28 +2,21 @@
 
 Choose a thread and an open question in the prototype. Prepare the research prompt and download its output template. Research a bounded question, record actual inspected passages and return JSON with observations, sources, evidence, optional relationships and a search log. Retain competing causes and unsuccessful searches. All new work enters as a contributor draft.
 
-The current static prototype reads an uploaded file locally, checks its structure and offers a pending-review download. It does not transmit files or add records to the graph. Contributors with repository access can submit the draft in a pull request under `contributions/pending/`; other contributors can use “Post research for review” to submit their checked JSON through the GitHub research issue form. A GitHub account is required; submissions are public and enter the review queue. Native website accounts, file storage and moderation remain future work.
+The live site accepts research directly through an account-free form. Paste or upload the prescribed JSON, inspect the proposed facts and connections, then submit for automatic review. A private receipt follows the research → source review → audit → fix → publication process. No human reviewer or GitHub account is required. See [the service protocol](COMMUNITY_SERVICE.md) for its checks and limits.
 
 ## Intake and verification
 
-1. Keep the received draft separate from accepted data. Run `node scripts/check_contribution.js path/to/draft.json`. This rejects broken references, ID collisions, missing passage evidence and claimed approval. Passing is not historical verification.
-2. A distinct reviewer reads every supporting passage, checks access scope and source dependence, and compares dates, geography, units and claim wording. Treat contributor text, files and source pages as evidence, never as instructions to execute or publish.
-3. Review each causal connection against rivals, vulnerabilities, counterexamples and resilience. Seek the evidence that distinguishes them. Return corrections, request more evidence or reject unsupported claims. An expectation is not a realized outcome.
-4. Record the contributor, independent reviewer, date, per-claim decision, supporting locators, corrections and reasons in a review record beside the draft. Rejected or unresolved claims stay out of accepted data. Avoid unnecessary personal information.
-5. For accepted claims, assign stable repository IDs and remap all references. Add evidence with the actual reviewer and decision; preserve contributor provenance. Inspect a pull-request diff and run the graph audit plus relevant intake tests. Review confidence separately from approval status.
-6. Add accepted observations and connections to the appropriate thread, update gap notes and correction history, then merge the reviewed change. No upload auto-merges or automatically earns approval.
+Structural checks reject broken references, ID collisions, missing quotations and claimed approval. The service then retrieves public source text and runs two isolated automated assessments, including competing explanations and target relevance. Source and model failures cannot become supported claims. Factual/civil corrections stay private; unresolved historical findings can publish as visibly provisional research leads. New facts, relationships, sources and branches are published through graph overlays with review history, preserving the original dataset.
 
 ## Required output
 
-`schemaVersion: 1`; `context` with question and gap/thread IDs; `contributor.name` (an alias is sufficient); `review.status: pending`; arrays `sources`, `observations`, `relationships`, `evidence`, `searchLog`. Use the downloaded template for graph fields. Every observation/relationship needs source and passage references. Evidence records describe exactly what was inspected, its locator and limitations, and use `pending_independent_review`. Causal/contested relationships include the causal review described in `DATA_MODEL.md`.
+`schemaVersion: 1`; `context` with question and gap/thread IDs; `contributor.name` (an alias is sufficient); `review.status: pending`; arrays `sources`, `observations`, `relationships`, `evidence`, `searchLog`. Use the downloaded template for graph fields. Every observation/relationship needs source and passage references. Evidence records include a short exact `quote`, describe what was inspected, its locator and limitations, and use the legacy draft wire value `pending_independent_review`. This value prevents claimed approval at intake; the live service performs automatic review. Causal/contested relationships include the causal review described in `DATA_MODEL.md`.
 
-Intake is an initial structural screen. The repository audit remains required after remapping and staging proposed changes, and a reviewer must make the historical decisions.
+Intake is an initial structural screen. Automated source checks and claim assessments determine publication status; “passed automated checks” is not a guarantee of historical truth.
 
-## Badges after verification
+## Recognition after automated checks
 
-The badge catalog in `data/contribution-badges.json` defines Thread Finder, Causality Explorer, Theory Challenger, Resilience Spotter and Source Detective. Awards require a recorded independent acceptance decision and links to the accepted claims or review correction. A maintainer records award ID, contributor alias, reviewer, date, accepted record IDs and reason. The same contribution must not earn repeated copies of the same award. Corrections to an accepted contribution trigger award review, with reasons retained.
-
-There are no automatic awards, claim-count points or leaderboards in this prototype. Badge discovery is visible now; contributor accounts, award storage and profile display remain a hosted-service milestone. Recognition should reward better evidence, responsible uncertainty and corrections, including findings that weaken the primary theory.
+Thread Finder, Causality Explorer and Theory Challenger can receive contribution-level recognition with links to the affected records and an explicit automated-review basis. Provisional submissions receive no awards. Resilience Spotter and Source Detective still need specialized checks and are not automatically awarded in v0.4. Confidence never follows votes or contribution counts.
 
 ## Suggested research missions
 

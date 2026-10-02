@@ -73,3 +73,9 @@ Run `python3 scripts/audit.py --report data/1816/audit-report.json` to refresh t
 Choose an open question, generate a research prompt and output template, and load a returned JSON draft for local intake checks. Drafts stay separate from accepted graph data. See `docs/CONTRIBUTING_RESEARCH.md` for independent verification and repository submission. Badge criteria recognize accepted threads, causal research, challenges, resilience and source work; account-based uploads and awards require a hosted service.
 
 Year-by-year expansion and cross-year relationship review: `docs/YEAR_EXPANSION.md`. The active contribution year is 1816; later-year readiness remains an editorial decision.
+
+## v0.4 community research
+
+Visitors can submit research and factual supporting/counterevidence without a GitHub account. Automatic source inspection, two assessment passes, audit and correction steps publish labelled graph additions and preserve review history. New facts and relationships extend existing threads or form new branches. Private receipts show progress.
+
+The GitHub Pages site uses a Cloudflare Worker with its own D1 database. Read [the service protocol](docs/COMMUNITY_SERVICE.md) for setup, checks, daily limits and current HTML/plain-text retrieval constraints. Run `npm ci` and `npm test` to verify the browser protocol and Worker service. The baseline dataset retains its earlier provenance; community assessments do not imply retrospective review of every existing claim.
