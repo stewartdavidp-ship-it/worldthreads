@@ -13,10 +13,10 @@
   })();
   </script>
   <title>WorldThreads — 1816 Prototype</title>
-  <link rel="stylesheet" href="styles.css?v=20261002-investigation" />
-  <link rel="stylesheet" href="threads.css?v=20261002-investigation" />
-  <link rel="stylesheet" href="appearance.css?v=20261002-investigation" />
-  <link rel="stylesheet" href="explore.css?v=20261002-investigation" />
+  <link rel="stylesheet" href="styles.css?v=20261002-groups" />
+  <link rel="stylesheet" href="threads.css?v=20261002-groups" />
+  <link rel="stylesheet" href="appearance.css?v=20261002-groups" />
+  <link rel="stylesheet" href="explore.css?v=20261002-groups" />
 </head>
 <body>
   <header class="site-header">
@@ -46,7 +46,7 @@
             </div>
       <button class="nav-btn active" data-view="discover">Discover</button>
       <button class="nav-btn" data-view="explore">Follow a thread</button>
-      <button class="nav-btn" data-view="research">Contribute research</button>
+      <button class="nav-btn" data-view="group">Investigate together</button><button class="nav-btn" data-view="research">Contribute research</button>
     </nav>
   </header>
 
@@ -57,7 +57,12 @@
       <details class="collection-context"><summary>About this growing collection</summary><div class="collection-stats"><span><b id="statObservations">—</b> facts</span><span><b id="statThreads">—</b> threads</span><span><b id="statSources">—</b> sources</span><span><b id="statRelations">—</b> relationships</span></div><p>Facts and inferred relationships are separate. Confidence reflects recorded evidence, not popularity. <span id="highConfidence"></span> high-confidence observations across <span id="regionsCovered"></span> continents.</p></details>
     </section>
     <section id="exploreView" class="journey-view" hidden><button class="nav-btn" data-view="discover">← All threads</button><div class="explore-heading"><p class="eyebrow">FOLLOW THE CLUES</p><h2 id="exploreTitle"></h2><p id="exploreDescription"></p></div><section id="casePanel" class="case-panel" hidden></section><div class="explorer-workspace"><aside id="factReader" class="fact-reader" aria-live="polite"></aside><details id="mapDisclosure" class="story-map" open><summary>Open the evidence board and related leads</summary><div class="explore-controls"><label for="connectionDepth">Show on the evidence board</label><select id="connectionDepth"><option value="0">The story only</option><option value="1">Story + nearby leads</option><option value="2">Story + wider leads</option></select><button id="resetJourney" class="nav-btn">Restart this story</button></div><div class="network-viewport"><div id="networkCanvas" class="network-canvas" aria-label="Historical connections"></div></div><div class="network-legend"><span>━━ Causal / contributing</span><span>┄┄ Associated / contested</span><span>··· Provisional / disputed</span></div><p class="scope-note">Read connection explanations beside the selected fact. Colors distinguish subjects; they do not indicate confidence. Additional leads are marked “Related.”</p></details></div><details class="technical-thread"><summary>Read the complete thread and relationship evidence</summary><div id="originalThreadMount"></div></details></section>
-    <section id="researchView" class="journey-view" hidden><button class="nav-btn" data-view="explore">← Back to my thread</button><p class="eyebrow">CONTINUE THE DISCOVERY</p><h2>Your investigation</h2><p id="researchContext">Choose a thread, ask a question, and bring back evidence.</p><div id="researchStartingFact" class="research-start"></div><section id="researchClues" class="research-clues" hidden></section><p class="scope-note">Your question and exploration are saved on this device.</p><div class="research-tabs"><button class="nav-btn active" data-research-tab="prepare">1 · Get a research prompt</button><button class="nav-btn" data-research-tab="return">2 · Return findings</button><button class="nav-btn" data-research-tab="progress">3 · Track progress</button></div><div id="researchMount"></div></section>
+    <section id="groupView" class="journey-view" hidden><button class="nav-btn" data-view="discover">← All threads</button><p class="eyebrow">INVESTIGATE TOGETHER · 1816</p><h2>Was weather the decisive influence on Frankenstein?</h2><p>Create a session for 2–6 people. Invite your group, follow separate leads, then compare what the evidence supports. No account needed.</p><p class="scope-note">Group interpretations are shared with your session, not published into the historical record. Use nicknames and omit private information. Anyone with the invitation code can join while the session is open.</p><p id="sessionStatus" role="status" aria-live="polite"></p>
+<div id="sessionLobby" class="session-columns"><section class="panel"><h3>Host a session</h3><label for="sessionHostAlias">Your nickname</label><input id="sessionHostAlias" maxlength="40"><label for="sessionHostLead">Your first lead</label><select id="sessionHostLead"></select><button id="sessionCreate" class="nav-btn primary">Create group session</button></section><section class="panel"><h3>Join a session</h3><label for="sessionJoinCode">Room code</label><input id="sessionJoinCode" maxlength="12" autocomplete="off"><label for="sessionJoinAlias">Your nickname</label><input id="sessionJoinAlias" maxlength="40"><label for="sessionJoinLead">Choose a lead</label><select id="sessionJoinLead"></select><button id="sessionJoin" class="nav-btn primary">Join group</button></section></div>
+<div id="sessionBoard" hidden><section class="panel"><h3>Invite your group</h3><p>Room code: <strong id="sessionCode"></strong></p><label for="sessionInvite">Invitation link · share this with your group</label><input id="sessionInvite" readonly><button id="sessionCopyInvite" class="nav-btn">Copy invitation</button><p class="scope-note">Your current browser address is your private rejoin link. Bookmark it for yourself; share the invitation above instead.</p><h3 id="sessionPhase"></h3><ul id="sessionMembers"></ul><button id="sessionRefresh" class="nav-btn">Refresh session</button><button id="sessionCompare" class="nav-btn primary">Open group comparison</button><p class="scope-note">The host can open comparison after at least two people join and everyone records an interpretation.</p></section>
+<section class="panel"><h3 id="sessionYourName"></h3><label for="sessionLead">Your lead</label><select id="sessionLead"></select><article id="sessionPassage"></article><label for="sessionSupports">What does this passage support?</label><textarea id="sessionSupports" maxlength="1600" rows="3"></textarea><label for="sessionUncertain">What remains uncertain?</label><textarea id="sessionUncertain" maxlength="1600" rows="3"></textarea><label for="sessionNextEvidence">What evidence would distinguish the explanations?</label><textarea id="sessionNextEvidence" maxlength="1600" rows="3"></textarea><button id="sessionSave" class="nav-btn primary">Record my interpretation</button><p id="sessionWaiting" role="status"></p></section>
+<section id="sessionComparison" class="panel" hidden><h3>Compare your evidence</h3><p>Which passages concern setting, trigger, inspiration or continued writing? Describe differences with evidence. Agreement is not proof.</p><p class="source-warning">These are dependent passages from one transcribed edition. More investigators do not create more independent witnesses.</p><div id="sessionEvidenceBoard" class="session-columns"></div><h3>What changed your explanation?</h3><p>Record a specific next question. You can disagree and keep uncertainty visible.</p><div id="sessionNextSteps"></div><article id="sessionNextLead"></article><label for="sessionNextQuestion">Your next investigation</label><textarea id="sessionNextQuestion" rows="3" maxlength="1400"></textarea><button id="sessionSaveNext" class="nav-btn primary">Save next investigation</button></section><button id="sessionLeave" class="nav-btn">Leave session view</button></div></section>
+<section id="researchView" class="journey-view" hidden><button class="nav-btn" data-view="explore">← Back to my thread</button><p class="eyebrow">CONTINUE THE DISCOVERY</p><h2>Your investigation</h2><p id="researchContext">Choose a thread, ask a question, and bring back evidence.</p><div id="researchStartingFact" class="research-start"></div><section id="researchClues" class="research-clues" hidden></section><p class="scope-note">Your question and exploration are saved on this device.</p><div class="research-tabs"><button class="nav-btn active" data-research-tab="prepare">1 · Get a research prompt</button><button class="nav-btn" data-research-tab="return">2 · Return findings</button><button class="nav-btn" data-research-tab="progress">3 · Track progress</button></div><div id="researchMount"></div></section>
     <details id="evidenceLibrary" class="collection-context"><summary>Browse all facts and evidence</summary><div id="libraryMount"></div></details>
     <section class="filters">
       <button class="filter active" data-system="ALL">All systems</button>
@@ -194,13 +199,14 @@
   <dialog id="detailDialog"><button id="closeDialog" class="close" aria-label="Close">×</button><div id="dialogContent"></div></dialog>
 
   <footer><span>WorldThreads v0.4</span><span>Prototype year: 1816 · evidence and relationships separated</span></footer>
-  <script src="contribution.js?v=20261002-investigation"></script>
-  <script src="community-core.js?v=20261002-investigation"></script>
-  <script src="app.js?v=20261002-investigation"></script>
-  <script src="appearance.js?v=20261002-investigation"></script>
-  <script src="community.js?v=20261002-investigation"></script>
-  <script src="explore-model.js?v=20261002-investigation"></script>
-  <script src="investigation-case.js?v=20261002-investigation"></script>
-  <script src="explore.js?v=20261002-investigation"></script>
+  <script src="contribution.js?v=20261002-groups"></script>
+  <script src="community-core.js?v=20261002-groups"></script>
+  <script src="app.js?v=20261002-groups"></script>
+  <script src="appearance.js?v=20261002-groups"></script>
+  <script src="community.js?v=20261002-groups"></script>
+  <script src="explore-model.js?v=20261002-groups"></script>
+  <script src="investigation-case.js?v=20261002-groups"></script>
+  <script src="explore.js?v=20261002-groups"></script>
+<script src="sessions.js?v=20261002-groups"></script>
 </body>
 </html>

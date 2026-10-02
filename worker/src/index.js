@@ -1,3 +1,4 @@
+import {roomRoute} from './rooms.js';
 import core from '../../community-core.js';
 import intake from '../../contribution.js';
 import observations from '../../data/1816/observations.json';
@@ -134,6 +135,7 @@ export default {
   if(request.method==='OPTIONS')return new Response(null,{status:204,headers:{'Access-Control-Allow-Origin':origin,'Access-Control-Allow-Methods':'GET,POST,OPTIONS','Access-Control-Allow-Headers':'Content-Type,Authorization','Access-Control-Max-Age':'600'}});
   const url=new URL(request.url),path=url.pathname;
   try{
+   const roomResult=await roomRoute(request,env,(data,status)=>json(data,status,origin));if(roomResult)return roomResult;
    if(path==='/api/health'&&request.method==='GET')return json({ok:true,year:1816,accountRequired:false,review:'automated'},200,origin);
    if(path==='/api/graph'&&request.method==='GET')return json(await graph(env),200,origin);
    if(path==='/api/activity'&&request.method==='GET'){

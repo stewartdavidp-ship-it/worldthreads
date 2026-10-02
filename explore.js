@@ -2,7 +2,7 @@
 (function(){
   const $=id=>document.getElementById(id),model=window.WorldThreadsJourney;
   const node=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
-  let selected=null,currentThread=null,recent=[],arrivedVia=null,view='discover',stage='prepare',initialized=false,saved=null,engaged=false,caseMode=false,caseStance='',caseLead='',caseReason='',caseQuestion='',casePins=[],caseSeen=[],synthesis={supports:'',uncertain:'',next:''},synthesisSaved=false;
+  let selected=null,currentThread=null,recent=[],arrivedVia=null,view='discover',stage='prepare',initialized=false,saved=null,engaged=false,caseMode=false,caseStance='',caseLead='',caseReason='',caseQuestion='',casePins=[],caseSeen=[],synthesis={supports:'',uncertain:'',next:''},synthesisSaved=false,visitedFacts=[];
   const storageKey='worldthreads-journey-v1';
   const starterId='THREAD-CLIMATE-CULTURE';
   const names={
@@ -18,11 +18,11 @@
   function remember(){
     if(!initialized||!engaged)return;
     const fields={};for(const id of ['researchPlace','researchDirection','personalQuestion','proposedThreadTitle','researchGap','researchPrompt','researchOutput','researchTarget'])fields[id]=$(id).value;
-    saved={threadId:currentThread,selected,recent,view,stage,fields,startingFactId:WorldThreadsApp.researchStartId||null,challengeContext:WorldThreadsApp.challengeContext||null,caseStance,caseLead,caseReason,caseQuestion,casePins,caseSeen,synthesis,synthesisSaved,caseMode};
+    saved={threadId:currentThread,selected,recent,view,stage,fields,startingFactId:WorldThreadsApp.researchStartId||null,challengeContext:WorldThreadsApp.challengeContext||null,caseStance,caseLead,caseReason,caseQuestion,casePins,caseSeen,synthesis,synthesisSaved,visitedFacts,caseMode};
     try{localStorage.setItem(storageKey,JSON.stringify(saved));}catch{}
   }
   function show(next){
-    if(next!=='discover')engaged=true;view=next;for(const id of ['discover','explore','research'])$(id+'View').hidden=id!==next;
+    if(next!=='discover')engaged=true;view=next;for(const id of ['discover','explore','research','group'])$(id+'View').hidden=id!==next;
     document.querySelectorAll('.site-header [data-view]').forEach(b=>{b.classList.toggle('active',b.dataset.view===next);b.setAttribute('aria-current',b.dataset.view===next?'page':'false');});
     $('evidenceLibrary').hidden=next!=='discover';
     if(next==='research')researchContext();
@@ -31,12 +31,12 @@
   }
   function tab(which){stage=which;renderInvestigationProgress();if($('emptyProgress'))$('emptyProgress').hidden=!$('receiptPanel').hidden;for(const [name,id]of [['prepare','prepareResearch'],['return','returnResearch'],['progress','progressResearch']])$(id).hidden=name!==which;document.querySelectorAll('[data-research-tab]').forEach(b=>b.classList.toggle('active',b.dataset.researchTab===which));remember();}
   function showEvidence(){show('research');tab('return');$('evidenceDisclosure').open=true;const target=$('researchTarget').value;if(target)$('evidenceClaim').value=target;}
-  function chooseThread(t){
-    WorldThreadsApp.state.threadId=t.id;selected=t.nodeIds[0];recent=[selected];currentThread=t.id;arrivedVia=null;caseMode=t.id===starterId;caseStance='';caseLead='';caseReason='';caseQuestion='';casePins=[];caseSeen=[];synthesis={supports:'',uncertain:'',next:''};synthesisSaved=false;
+  function chooseThread(t,restart=false){
+    WorldThreadsApp.state.threadId=t.id;selected=t.nodeIds[0];recent=[selected];currentThread=t.id;arrivedVia=null;caseMode=t.id===starterId;if(restart){caseStance='';caseLead='';caseReason='';caseQuestion='';casePins=[];caseSeen=[];synthesis={supports:'',uncertain:'',next:''};synthesisSaved=false;}if(!visitedFacts.includes(selected))visitedFacts.push(selected);
     $('connectionDepth').value='0';WorldThreadsApp.render();show('explore');
   }
   function selectFact(id,edge=null){
-    selected=id;arrivedVia=edge;if(recent.at(-1)!==id)recent.push(id);renderNetwork();remember();
+    selected=id;if(!visitedFacts.includes(id))visitedFacts.push(id);arrivedVia=edge;if(recent.at(-1)!==id)recent.push(id);renderNetwork();remember();
     if(matchMedia('(max-width:1000px)').matches){$('factReader').scrollIntoView({behavior:'smooth',block:'start'});$('factReader').focus({preventScroll:true});}
   }
   const factNames={'WT-1816-0008':'Tambora erupts in 1815','WT-1816-0009':'Geneva’s summer turns colder','WT-1816-0015':'Frankenstein begins in 1816'};
@@ -73,6 +73,7 @@
   }
   function updateCase(){
     const c=WorldThreadsInvestigation,chosen=c.leads.find(l=>l.id===caseLead);if(chosen&&!caseSeen.includes(chosen.id))caseSeen.push(chosen.id);document.querySelectorAll('[data-lead-id]').forEach(b=>{const active=b.dataset.leadId===caseLead;b.classList.toggle('selected',active);b.setAttribute('aria-pressed',String(active));});document.querySelectorAll('[data-stance]').forEach(b=>{const active=b.dataset.stance===caseStance;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});
+    for(const key of ['supports','uncertain','next']){const input=$('synthesis-'+key);if(input&&input.value!==synthesis[key])input.value=synthesis[key];}if($('synthesisStatus'))$('synthesisStatus').textContent=synthesisSaved?'Evidence synthesis saved · private reasoning, not a verified historical finding.':Object.values(synthesis).some(v=>v.trim())?'Notes saved on this device; synthesis still in progress.':'';
     $('caseCluePicker').value=caseLead;$('caseQuestion').value=caseQuestion;$('caseReason').value=caseReason;
     const passage=$('casePassage');if(passage.dataset.lead!==caseLead){passage.dataset.lead=caseLead;passage.replaceChildren();if(chosen){passage.append(node('p',`CLUE ${c.leads.indexOf(chosen)+1} OF ${c.leads.length} · ${chosen.date}`,'eyebrow'),node('h3',chosen.title),node('blockquote',chosen.quote),node('p',chosen.locator));const link=node('a','Read the full source ↗');link.href=c.sourceUrl;link.target='_blank';link.rel='noopener noreferrer';passage.append(link,node('h4','Question the connection'),node('p',chosen.question),node('h4','What this cannot establish'),node('p',chosen.limits));}else passage.append(node('h3','Pick a clue from the evidence board'),node('p','Read first; you do not have to choose a side. Pin two passages to compare what they can and cannot establish.'));}
     $('casePinCurrent').disabled=!chosen;$('casePinCurrent').textContent=casePins.includes(caseLead)?'Unpin this passage':'Pin this passage for comparison';$('casePinStatus').textContent=casePins.length+' of 2 comparison slots used.';
@@ -137,8 +138,8 @@
   }
   function renderInvestigationProgress(){
     const diary=$('investigationProgress');if(!diary)return;diary.replaceChildren(node('h3','Your discovery journal'),node('p','Private exploration milestones do not change historical confidence.'));
-    const list=node('ul');for(const id of caseSeen){const lead=WorldThreadsInvestigation.leads.find(l=>l.id===id);if(lead)list.append(node('li','Inspected: '+lead.title));}if(!caseSeen.length)list.append(node('li',recent.length+' recorded facts visited'));
-    list.append(node('li',casePins.length+' passages pinned for comparison'));const q=caseQuestion||$('personalQuestion').value;if(q)list.append(node('li','Saved question: '+q));list.append(node('li',synthesisSaved?'Evidence synthesis completed — reasoning recorded, not historically verified':'Evidence synthesis is still open'));diary.append(list,button('Return to my investigation',()=>show('explore')));if(synthesisSaved)for(const [key,label]of [['supports','Supported'],['uncertain','Uncertain'],['next','Next evidence']])diary.append(node('strong',label),node('p',synthesis[key]));
+    const list=node('ul');for(const id of caseSeen){const lead=WorldThreadsInvestigation.leads.find(l=>l.id===id);if(lead)list.append(node('li','Inspected: '+lead.title));}if(!caseSeen.length)list.append(node('li',visitedFacts.length+' recorded facts visited across threads'));
+    if(caseSeen.length)list.append(node('li',visitedFacts.length+' recorded facts visited across threads'));list.append(node('li',casePins.length+' passages pinned for comparison'));const q=caseQuestion||$('personalQuestion').value;if(q)list.append(node('li','Saved question: '+q));list.append(node('li',synthesisSaved?'Evidence synthesis completed — reasoning recorded, not historically verified':'Evidence synthesis is still open'));diary.append(list,button('Return to my investigation',()=>show('explore')));if(synthesisSaved)for(const [key,label]of [['supports','Supported'],['uncertain','Uncertain'],['next','Next evidence']])diary.append(node('strong',label),node('p',synthesis[key]));
   }
   function researchContext(){
     const target=$('researchTarget');if(!target.options.length)for(const record of [...WorldThreadsApp.state.observations,...WorldThreadsApp.state.relationships]){const option=node('option',record.title||`${WorldThreadsApp.obs(record.subjectId)?.title||record.subjectId} → ${record.predicate.replaceAll('_',' ')} → ${WorldThreadsApp.obs(record.objectId)?.title||record.objectId}`);option.value=record.id;target.append(option);}const start=WorldThreadsApp.researchStartId||selected;if(target.dataset.start!==start){target.value=WorldThreadsApp.challengeContext?.targetClaimId||start;target.dataset.start=start;}
@@ -178,7 +179,7 @@
   }
   function resume(){
     if(!saved)return;engaged=true;const s=WorldThreadsApp.state,t=s.threads.find(t=>t.id===saved.threadId);if(!t)return;
-    caseSeen=(saved.caseSeen||[]).filter(id=>WorldThreadsInvestigation.leads.some(l=>l.id===id));synthesis={supports:'',uncertain:'',next:'',...(saved.synthesis||{})};synthesisSaved=!!saved.synthesisSaved;
+    visitedFacts=(saved.visitedFacts||saved.recent||[]).filter(appFact);caseSeen=(saved.caseSeen||[]).filter(id=>WorldThreadsInvestigation.leads.some(l=>l.id===id));synthesis={supports:'',uncertain:'',next:'',...(saved.synthesis||{})};synthesisSaved=!!saved.synthesisSaved;
     s.threadId=t.id;currentThread=t.id;caseMode=typeof saved.caseMode==='boolean'?saved.caseMode:t.id===starterId;caseQuestion=saved.caseQuestion||'';casePins=(saved.casePins||[]).filter(id=>WorldThreadsInvestigation.leads.some(l=>l.id===id)).slice(0,2);caseStance=saved.caseStance||'';caseLead=saved.caseLead||'';caseReason=saved.caseReason||'';selected=appFact(saved.selected)?saved.selected:t.nodeIds[0];recent=(saved.recent||[]).filter(appFact);WorldThreadsApp.researchStartId=appFact(saved.startingFactId)?saved.startingFactId:null;WorldThreadsApp.challengeContext=saved.challengeContext||null;
     for(const [id,value]of Object.entries(saved.fields||{}))if($(id))$(id).value=value;
     const target=saved.view==='research'?'research':'explore',savedStage=saved.stage;WorldThreadsApp.render();show(target);if(target==='research'&&$('researchPrompt').value)$('makeResearchPrompt').click();tab(['prepare','return','progress'].includes(savedStage)?savedStage:'prepare');
@@ -195,7 +196,7 @@
     const activity=$('communityActivity').closest('section'),activityDisclosure=node('details',undefined,'collection-context');activityDisclosure.append(node('summary','Recent community findings'),activity);progress.append(activityDisclosure);$('researchMount').append(contribute);
     const badgeTitle=[...prepare.querySelectorAll('h4')].find(x=>x.textContent==='Recognition for discoveries'),badges=node('details',undefined,'collection-context');badges.append(node('summary','Recognition for discoveries'));if(badgeTitle){badges.append(badgeTitle.nextElementSibling,$('contributionBadges'));badgeTitle.remove();prepare.append(badges);}
     const optional=node('details',undefined,'collection-context');optional.append(node('summary','Choose a suggested mission or refine the research scope'));for(const id of ['researchDirection','proposedThreadTitle','researchMission','missionBrief','researchGap','gapQuestion']){const field=$(id),label=prepare.querySelector('label[for="'+id+'"]');if(label)optional.append(label);optional.append(field);}prepare.insertBefore(optional,$('makeResearchPrompt'));prepare.insertBefore(button('Contribute a source passage here · no research assistant needed',()=>{showEvidence();$('evidenceForm').scrollIntoView({behavior:'smooth',block:'start'});},'nav-btn primary'),$('makeResearchPrompt'));const direct=button('Contribute one source passage',()=>{showEvidence();$('evidenceForm').scrollIntoView({behavior:'smooth',block:'start'});},'nav-btn primary');returned.insertBefore(direct,returned.firstChild);
-    document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>show(b.dataset.view));document.querySelectorAll('[data-research-tab]').forEach(b=>b.onclick=()=>tab(b.dataset.researchTab));$('connectionDepth').onchange=()=>{renderNetwork();remember();};$('resetJourney').onclick=()=>chooseThread(thread());
+    document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>show(b.dataset.view));document.querySelectorAll('[data-research-tab]').forEach(b=>b.onclick=()=>tab(b.dataset.researchTab));$('connectionDepth').onchange=()=>{renderNetwork();remember();};$('resetJourney').onclick=()=>chooseThread(thread(),true);
     $('startExploring').onclick=()=>chooseThread(WorldThreadsApp.state.threads.find(t=>t.id===starterId)||WorldThreadsApp.state.threads[0]);$('browseThreads').onclick=()=>$('threadGallery').scrollIntoView({behavior:'smooth'});
     $('resumeJourney').hidden=!saved?.threadId;$('resumeJourney').onclick=resume;
     $('factReader').tabIndex=-1;if(matchMedia('(max-width:1000px)').matches)$('mapDisclosure').open=false;

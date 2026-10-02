@@ -81,3 +81,11 @@ Visitors can submit research and factual supporting/counterevidence without a Gi
 The GitHub Pages site uses a Cloudflare Worker with its own D1 database. Read [the service protocol](docs/COMMUNITY_SERVICE.md) for setup, checks, daily limits and current HTML/plain-text retrieval constraints. Run `npm ci` and `npm test` to verify the browser protocol and Worker service. The baseline dataset retains its earlier provenance; community assessments do not imply retrospective review of every existing claim.
 
 The entry investigation challenges the claim that weather was the decisive influence on Frankenstein. Visitors choose a provisional position, inspect five source passages with limits and dependence disclosed, and explain what evidence they still need. These positions stay local; publication assesses cited evidence against actual recorded claims, not the deliberately stronger teaching claim. Research prompts retain the selected fact, passage, uncertainty and a request to seek evidence against the visitor’s position. The full fact/relationship board remains available, preserving the original thread when expanding leads. Exploration and questions can be resumed on the current device; publication receipts remain private.
+
+## Shared investigation sessions
+
+Choose **Investigate together** to host or join a Frankenstein case session. The host chooses a nickname and lead, then shares the invitation link or eight-character code. Up to six people join without accounts. Initial interpretations stay hidden until everyone records support, uncertainty and next evidence; only the host opens comparison. The group then compares passages and saves individual follow-up questions.
+
+Session notes are private to people with session access and never become public historical claims. Share the invitation field, not the private rejoin address. Bookmark your private address to resume on another device. Shared updates refresh every ten seconds while the session view is open. This release offers one cooperative case; more evidence rounds are a content priority.
+
+Database migration: `worker/migrations/0002_shared_sessions.sql` creates separate session tables. Tests cover access isolation, host controls, capacity and publication separation.
