@@ -72,10 +72,10 @@
    const result=await api('/api/submissions/'+receipt.id,{headers:{Authorization:'Bearer '+receipt.receipt}});
    $('receiptStatus').textContent=statusLabel(result.status);const log=$('receiptEvents');log.replaceChildren();
    for(const e of result.events||[]){const entry=el('li',`${e.phase.replaceAll('_',' ')}: ${e.message||e.status||'Complete'}`);log.appendChild(entry);}
-   $('receiptReview').replaceChildren();if(result.review?.message)$('receiptReview').appendChild(el('p',result.review.message));reviewSummary(result.review,$('receiptReview'));
+   $('receiptReview').replaceChildren();if(result.review?.message)$('receiptReview').appendChild(el('p',result.review.message));reviewSummary(result.review,$('receiptReview'));if(result.status==='needs_correction')$('receiptReview').appendChild(Object.assign(el('button','Revise these findings','nav-btn'),{onclick:()=>window.WorldThreadsExplore?.showReturn()}));
    if(['queued','reviewing','retry'].includes(result.status)){
     clearTimeout(pollTimer);if(document.visibilityState!=='hidden')pollTimer=setTimeout(checkReceipt,15000);
-   }else{clearTimeout(pollTimer);await refreshGraph();await refreshActivity();}
+   }else{clearTimeout(pollTimer);await refreshGraph();await refreshActivity();if(['automated_support','automated_counterevidence','provisional'].includes(result.status)){const record=[...app.state.observations,...app.state.relationships].find(r=>r.submissionId===receipt.id||r.communityEvidence?.some(e=>e.submissionId===receipt.id));if(record)$('receiptReview').appendChild(Object.assign(el('button',result.status==='provisional'?'Explore the unresolved finding':'See your contribution in the thread','nav-btn'),{onclick:()=>window.WorldThreadsExplore?.showRecord(record.id)}));}}
   }catch(error){$('receiptStatus').textContent=error.message;}
  }
  async function refreshActivity(){
@@ -94,13 +94,13 @@
  }
  function errorList(errors){const root=$('communityErrors');root.replaceChildren();for(const error of errors)root.appendChild(el('li',error));}
  function readDraft(){const text=$('researchOutput').value.trim();if(!text)throw Error('Paste your research output or choose its JSON file first.');return JSON.parse(text);}
- function previewDraft(){
+ function previewDraft(forSubmission=false){
   const root=$('graphPreview');root.replaceChildren();
   try{
-   const draft=readDraft();const payload={kind:'research',draft,consent:$('researchConsent').checked};
-   const errors=core.validateCommunity(payload,app.state,WorldThreadsIntake);errorList(errors);
+   const draft=readDraft();$('researchConsent').closest('label').hidden=draft.kind==='research_note';$('submitResearch').hidden=draft.kind==='research_note';if(draft.kind==='research_note'){root.appendChild(el('h4','Research notes · no proposed graph changes'));root.appendChild(el('p',draft.conclusion||'No supported finding recorded.'));$('communitySubmitStatus').textContent='These notes are saved on this device. Download them or continue investigating; they are not published as a finding.';errorList([]);return null;}const payload=draft.kind==='evidence'?{...draft,consent:$('researchConsent').checked}:{kind:'research',draft,consent:$('researchConsent').checked};
+   const errors=core.validateCommunity(forSubmission?payload:{...payload,consent:true},app.state,WorldThreadsIntake);errorList(errors);
    if(errors.length){$('communitySubmitStatus').textContent='Please correct the listed items.';return null;}
-   root.appendChild(el('h4','Proposed graph changes'));
+   if(payload.kind==='evidence'){root.appendChild(el('h4','Evidence for an existing claim'));root.appendChild(el('p',payload.claimId+' · '+payload.stance));root.appendChild(el('blockquote',payload.quote));root.appendChild(el('p',payload.relevance));$('communitySubmitStatus').textContent='Evidence structure checks passed. Automatic review will assess the passage against the recorded claim.';return payload;}root.appendChild(el('h4','Proposed graph changes'));
    for(const o of draft.observations)root.appendChild(el('p',`New fact: ${o.title} · ${o.startDate} · ${o.place}`));
    const find=id=>draft.observations.find(o=>o.id===id)||app.obs(id);
    for(const r of draft.relationships)root.appendChild(el('p',`${find(r.subjectId)?.title||r.subjectId} → ${r.predicate.replaceAll('_',' ')} → ${find(r.objectId)?.title||r.objectId}`));
@@ -123,9 +123,10 @@
   }catch(error){status.textContent=error.message;}finally{button.disabled=false;}
  }
  function bind(){
-  $('contributionFile').addEventListener('change',async e=>{const file=e.target.files[0];if(!file)return;if(file.size>core.MAX_BYTES){$('communitySubmitStatus').textContent='Keep submissions under 80 KB.';return;}try{$('researchOutput').value=await file.text();$('communitySubmitStatus').textContent='Research loaded. Confirm public publication, preview the graph changes, then submit.';}catch{$('communitySubmitStatus').textContent='Could not read this file.';}});
-  $('previewResearch').addEventListener('click',previewDraft);
-  $('submitResearch').addEventListener('click',()=>{const payload=previewDraft();if(payload)submit(payload,$('submitResearch'),$('communitySubmitStatus'));});
+  $('contributionFile').addEventListener('change',async e=>{const file=e.target.files[0];if(!file)return;if(file.size>core.MAX_BYTES){$('communitySubmitStatus').textContent='Keep submissions under 80 KB.';return;}try{$('researchOutput').value=await file.text();$('researchOutput').dispatchEvent(new Event('input')); $('communitySubmitStatus').textContent='Research loaded. Confirm public publication, preview the graph changes, then submit.';}catch{$('communitySubmitStatus').textContent='Could not read this file.';}});
+  $('researchOutput').addEventListener('input',()=>{$('researchConsent').closest('label').hidden=false;$('submitResearch').hidden=false;});
+  $('previewResearch').addEventListener('click',()=>previewDraft());
+  $('submitResearch').addEventListener('click',()=>{const payload=previewDraft(true);if(payload)submit(payload,$('submitResearch'),$('communitySubmitStatus'));});
   $('downloadResearchOutput').addEventListener('click',()=>app.downloadText('worldthreads-research-draft.json',$('researchOutput').value,'application/json'));
   $('evidenceForm').addEventListener('submit',e=>{e.preventDefault();const payload={kind:'evidence',claimId:$('evidenceClaim').value,stance:$('evidenceStance').value,alias:$('evidenceAlias').value.trim(),sourceTitle:$('evidenceTitle').value.trim(),sourceUrl:$('evidenceUrl').value.trim(),locator:$('evidenceLocator').value.trim(),quote:$('evidenceQuote').value.trim(),relevance:$('evidenceRelevance').value.trim(),limitations:$('evidenceLimits').value.trim(),consent:$('evidenceConsent').checked,honeypot:$('evidenceWebsite').value};const errors=core.validateCommunity(payload,app.state,WorldThreadsIntake);if(errors.length){$('evidenceSubmitStatus').textContent=errors.join(' ');return;}submit(payload,$('submitEvidence'),$('evidenceSubmitStatus'));});
   $('checkReceipt').addEventListener('click',checkReceipt);

@@ -52,7 +52,7 @@
 
   <main>
     <section id="discoverView" class="journey-view">
-      <div class="discovery-hero"><p class="eyebrow">1816 · A WORLD OF CONNECTIONS</p><h1>How does history<br>connect?</h1><p>Try a claim worth challenging: <strong>was bad weather the decisive influence on Frankenstein?</strong> Examine the clues, test your explanation, and find the evidence that could change your mind.</p><button class="nav-btn primary" id="startExploring">Take the Frankenstein challenge →</button><button class="nav-btn" id="browseThreads">Browse all threads</button><button class="nav-btn" id="resumeJourney" hidden>Resume your exploration</button><p class="scope-note">Competing explanations · source passages · your own investigation</p></div>
+      <div class="discovery-hero"><p class="eyebrow">1816 · A WORLD OF CONNECTIONS</p><h1>How does history<br>connect?</h1><p>Try a claim worth challenging: <strong>was bad weather the decisive influence on Frankenstein?</strong> Inspect a clue, compare explanations, and follow a question of your own. You don’t need to choose a side.</p><button class="nav-btn primary" id="startExploring">Take the Frankenstein challenge →</button><button class="nav-btn" id="browseThreads">Browse all threads</button><button class="nav-btn" id="resumeJourney" hidden>Resume your exploration</button><p class="scope-note">Competing explanations · source passages · your own investigation</p></div>
       <div class="section-head"><p class="eyebrow">CHOOSE YOUR STARTING POINT</p><h2>What draws your curiosity?</h2><p>Each thread is a route through the evidence. You can branch off at any fact.</p></div><div id="threadGallery" class="thread-gallery"></div>
       <details class="collection-context"><summary>About this growing collection</summary><div class="collection-stats"><span><b id="statObservations">—</b> facts</span><span><b id="statThreads">—</b> threads</span><span><b id="statSources">—</b> sources</span><span><b id="statRelations">—</b> relationships</span></div><p>Facts and inferred relationships are separate. Confidence reflects recorded evidence, not popularity. <span id="highConfidence"></span> high-confidence observations across <span id="regionsCovered"></span> continents.</p></details>
     </section>
@@ -111,8 +111,8 @@
       <input id="researchPlace" type="text" placeholder="Your town, district, watershed or community">
       <label for="researchDirection">How would you like to explore?</label>
       <select id="researchDirection" class="thread-select">
-        <option value="continue_thread">Continue this thread</option>
-        <option value="new_thread">Start a related thread from another perspective</option>
+        <option value="continue_thread">Investigate this question</option>
+        <option value="new_thread">I specifically want to propose a related thread</option>
       </select>
       <label for="personalQuestion">Your question or provisional theory (optional)</label>
       <textarea id="personalQuestion" rows="3" placeholder="What might happen next, or what other force could explain this? For example: did rising population affect climate?"></textarea>
@@ -126,7 +126,7 @@
       <p id="gapQuestion"></p>
       <button id="makeResearchPrompt" class="nav-btn">Prepare research prompt</button>
       <div id="researchKit" hidden>
-        <div class="prompt-handoff"><h4>Take your question into research</h4><ol><li><strong>Copy the prompt</strong> below.</li><li><strong>Paste it into your research assistant</strong> and ask it to inspect the sources and return the completed research file.</li><li><strong>Return here and upload the file</strong> under “Return findings.” We’ll check the evidence automatically.</li></ol><button id="copyResearchPrompt" class="nav-btn primary">Copy research prompt</button><p id="copyPromptStatus" role="status"></p><button id="goReturnFindings" class="nav-btn">I have findings to return →</button></div><details class="prompt-detail"><summary>Read the prompt and prescribed output format</summary><label for="researchPrompt">Your research prompt</label>
+        <div class="prompt-handoff"><h4>Take your question into research</h4><p>Your research assistant handles the structured format. You do not need to understand or edit the JSON yourself.</p><ol><li><strong>Copy the prompt</strong> below.</li><li><strong>Paste it into your research assistant</strong> and ask it to inspect the sources and return the completed research file.</li><li><strong>Return here and upload the file</strong> under “Return findings.” We’ll check the evidence automatically.</li></ol><button id="copyResearchPrompt" class="nav-btn primary">Copy research prompt</button><p id="copyPromptStatus" role="status"></p><button id="goReturnFindings" class="nav-btn">I have findings to return →</button></div><details class="prompt-detail"><summary>Read the prompt and prescribed output format</summary><label for="researchPrompt">Your research prompt</label>
         <textarea id="researchPrompt" rows="12" readonly></textarea>
         <button id="downloadResearchPrompt" class="nav-btn">Download prompt</button>
         <button id="downloadResearchTemplate" class="nav-btn">Download output template</button></details>
@@ -134,7 +134,7 @@
       <h4>Recognition for discoveries</h4>
       <p>Discovery badges recognize recorded research outcomes. A submission alone earns no badge; provisional findings remain visibly unresolved.</p>
       <div id="contributionBadges" class="badge-grid"></div>
-      <h4>Return your findings</h4><p>Upload the completed JSON file returned by your research assistant. This structured file connects each proposed fact and relationship to its source passages. You can also paste its contents below.</p><details class="finding-example"><summary>What does a sourced finding look like?</summary><p><strong>Bounded finding:</strong> Mary Shelley later recalled frequent rain during the summer when Frankenstein began.</p><p><strong>Exact passage:</strong> “But it proved a wet, ungenial summer, and incessant rain often confined us for days to the house.”</p><p><strong>Source:</strong> <a href="https://www.gutenberg.org/files/42324/42324-h/42324-h.htm" target="_blank" rel="noopener noreferrer">Shelley’s 1831 introduction to Frankenstein</a>.</p><p><strong>Limit:</strong> This is a retrospective account. It supports the rainy setting; it does not establish weather as the sole cause of the story.</p><p>This illustrates claim, passage and limitation. Use the full prescribed format from your prompt for the file you upload.</p></details>
+      <h4>Return your findings</h4><p>Upload the completed JSON file returned by your research assistant. The file can contain evidence for an existing claim, new facts or connections, or inconclusive investigation notes. Notes stay on your device; supported proposals can go through automatic review. You can also paste its contents below.</p><details class="finding-example"><summary>What does a sourced finding look like?</summary><p><strong>Bounded finding:</strong> Mary Shelley later recalled frequent rain during the summer when Frankenstein began.</p><p><strong>Exact passage:</strong> “But it proved a wet, ungenial summer, and incessant rain often confined us for days to the house.”</p><p><strong>Source:</strong> <a href="https://www.gutenberg.org/files/42324/42324-h/42324-h.htm" target="_blank" rel="noopener noreferrer">Shelley’s 1831 introduction to Frankenstein</a>.</p><p><strong>Limit:</strong> This is a retrospective account. It supports the rainy setting; it does not establish weather as the sole cause of the story.</p><p>This illustrates claim, passage and limitation. Use the full prescribed format from your prompt for the file you upload.</p></details>
       <p id="communityService" role="status">Connecting to the research service…</p>
       <label for="contributionFile">Choose your research output file</label>
       <input id="contributionFile" type="file" accept=".json,application/json">
@@ -142,7 +142,7 @@
       <textarea id="researchOutput" rows="8" placeholder="Paste your completed JSON research output here"></textarea>
       <p>Include a short exact quote for every evidence record so the service can inspect the cited passage. The current checker retrieves public HTML and plain text; inaccessible sources and PDFs remain provisional.</p>
       <label class="consent"><input id="researchConsent" type="checkbox"> Publish my research, source excerpts and chosen alias after automated checks. I have omitted private information.</label>
-      <button id="previewResearch" class="nav-btn">Preview facts and connections</button>
+      <button id="previewResearch" class="nav-btn">Preview findings</button>
       <button id="submitResearch" class="nav-btn">Submit research · no account needed</button>
       <button id="downloadResearchOutput" class="nav-btn">Save my draft</button>
       <p id="communitySubmitStatus" role="status" aria-live="polite"></p>
