@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS investigation_room (
 CREATE TABLE IF NOT EXISTS investigation_member (
  id TEXT PRIMARY KEY, room_id TEXT NOT NULL REFERENCES investigation_room(id),
  token_hash TEXT NOT NULL, alias TEXT NOT NULL, is_host INTEGER NOT NULL DEFAULT 0,
- lead_id TEXT NOT NULL, notes TEXT, ready INTEGER NOT NULL DEFAULT 0,
+ lead_id TEXT NOT NULL, notes TEXT, ready INTEGER NOT NULL DEFAULT 0, active INTEGER NOT NULL DEFAULT 1,
  joined_at TEXT NOT NULL, updated_at TEXT NOT NULL
 );
 CREATE INDEX IF NOT EXISTS room_members ON investigation_member(room_id);

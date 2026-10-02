@@ -89,3 +89,10 @@ Choose **Investigate together** to host or join a Frankenstein case session. The
 Session notes are private to people with session access and never become public historical claims. Share the invitation field, not the private rejoin address. Bookmark your private address to resume on another device. Shared updates refresh every ten seconds while the session view is open. This release offers one cooperative case; more evidence rounds are a content priority.
 
 Database migration: `worker/migrations/0002_shared_sessions.sql` creates separate session tables. Tests cover access isolation, host controls, capacity and publication separation.
+
+### Friends investigation update
+Group hosts can choose Frankenstein or the Gulf of Maine mackerel case. Fisheries adds four source summaries plus three rival-explanation clues, each with a locator and a limit. All fisheries cards currently depend on Alexander et al. (2017); different data types are not independent corroboration. Summaries are labeled and do not become graph facts.
+
+Lead counts suggest uncovered questions. Notes can be brief. Guests can withdraw, and hosts may explicitly open comparison with at least two ready participants while unfinished notes stay hidden. Follow-up questions survive note revisions. Follow-up evidence is revealed independently per browser; play in person or on a call. There is no built-in chat or host succession.
+
+Migration `worker/migrations/0003_session_members_active.sql` adds non-destructive withdrawal status. Validation includes 47 automated checks and published browser testing.
