@@ -13,10 +13,10 @@
   })();
   </script>
   <title>WorldThreads — 1816 Prototype</title>
-  <link rel="stylesheet" href="styles.css?v=20261002-friends2" />
-  <link rel="stylesheet" href="threads.css?v=20261002-friends2" />
-  <link rel="stylesheet" href="appearance.css?v=20261002-friends2" />
-  <link rel="stylesheet" href="explore.css?v=20261002-friends2" />
+  <link rel="stylesheet" href="styles.css?v=20261002-friends3" />
+  <link rel="stylesheet" href="threads.css?v=20261002-friends3" />
+  <link rel="stylesheet" href="appearance.css?v=20261002-friends3" />
+  <link rel="stylesheet" href="explore.css?v=20261002-friends3" />
 </head>
 <body>
   <header class="site-header">
@@ -68,7 +68,7 @@
 <section class="panel"><h3>Join your friends</h3><label for="sessionJoinCode">Room code</label><input id="sessionJoinCode" maxlength="12" autocomplete="off"><button id="sessionFind" class="nav-btn">Find session</button><p id="sessionJoinPreview">Enter a code to see the case and available leads.</p><label for="sessionJoinAlias">Your nickname</label><input id="sessionJoinAlias" maxlength="40"><label for="sessionJoinLead">Choose a lead</label><select id="sessionJoinLead" disabled></select><button id="sessionJoin" class="nav-btn primary" disabled>Join group</button></section></div>
 <div id="sessionBoard" hidden>
 <section class="panel"><details><summary>Invite &amp; rejoin</summary><p>Room code: <strong id="sessionCode"></strong></p><label for="sessionInvite">Invitation link · share this with your group</label><input id="sessionInvite" readonly><button id="sessionCopyInvite" class="nav-btn">Copy invitation</button><p class="scope-note">Bookmark your current browser address as your private rejoin link. Share the invitation above instead.</p></details><h3 id="sessionPhase"></h3><ul id="sessionMembers"></ul><p id="sessionCoordination"></p><button id="sessionRefresh" class="nav-btn">Refresh session</button><button id="sessionCompare" class="nav-btn primary">Open group comparison</button><div id="sessionProceed" hidden><p>Some friends have not recorded an interpretation. Their unfinished notes will stay hidden.</p><label><input id="sessionProceedConsent" type="checkbox">Open comparison with the ready participants. Joining closes for this round.</label><button id="sessionProceedButton" class="nav-btn">Continue with ready friends</button></div></section>
-<section id="sessionOwnWork" class="panel"><h3 id="sessionYourName"></h3><p id="sessionBoundary" class="scope-note"></p><div id="sessionQuestionMap"></div><label for="sessionLead">Your lead</label><select id="sessionLead"></select><article id="sessionPassage"></article><p class="scope-note">Short notes are enough: one sentence in each field. You can revise them later.</p><label for="sessionSupports">What does this clue support?</label><textarea id="sessionSupports" maxlength="1600" rows="2" placeholder="This clue supports…"></textarea><label for="sessionUncertain">What remains uncertain?</label><textarea id="sessionUncertain" maxlength="1600" rows="2" placeholder="It does not establish…"></textarea><label for="sessionNextEvidence">What evidence would distinguish the explanations?</label><textarea id="sessionNextEvidence" maxlength="1600" rows="2" placeholder="I would check…"></textarea><button id="sessionSave" class="nav-btn primary">Record my interpretation</button><p id="sessionWaiting" role="status"></p></section>
+<details id="sessionOwnWork" class="panel" open><summary id="sessionYourName"></summary><p id="sessionBoundary" class="scope-note"></p><div id="sessionQuestionMap"></div><label for="sessionLead">Your lead</label><select id="sessionLead"></select><article id="sessionPassage"></article><p class="scope-note">Short notes are enough: one sentence in each field. You can revise them later.</p><label for="sessionSupports">What does this clue support?</label><textarea id="sessionSupports" maxlength="1600" rows="2" placeholder="This clue supports…"></textarea><label for="sessionUncertain">What remains uncertain?</label><textarea id="sessionUncertain" maxlength="1600" rows="2" placeholder="It does not establish…"></textarea><label for="sessionNextEvidence">What evidence would distinguish the explanations?</label><textarea id="sessionNextEvidence" maxlength="1600" rows="2" placeholder="I would check…"></textarea><button id="sessionSave" class="nav-btn primary">Record my interpretation</button><p id="sessionWaiting" role="status"></p></details>
 <section id="sessionComparison" class="panel" hidden><h3>Reveal &amp; discuss</h3><p id="sessionDiscussion"></p><p id="sessionSourcesNote" class="source-warning"></p><p>Take turns: name one friend’s clue that changed or limited your explanation. Cite the clue; agreement is not proof.</p><div id="sessionEvidenceBoard" class="session-columns"></div>
 <section id="sessionExtension" hidden><h3 id="sessionExtensionTitle"></h3><p id="sessionExtensionIntro"></p><button id="sessionOpenExtension" class="nav-btn primary">Investigate the rival explanations →</button><div id="sessionExtensionCards" class="session-columns" hidden></div></section>
 <h3>Where should the investigation go next?</h3><p>Record what changed and a specific question your group still needs to investigate. Different questions can remain open.</p><div id="sessionNextSteps"></div><label for="sessionNextQuestion">Your next investigation</label><textarea id="sessionNextQuestion" rows="3" maxlength="1400"></textarea><button id="sessionSaveNext" class="nav-btn primary">Save next investigation</button><p class="scope-note">This saves your question for the group. To inspect a different case, return to the lobby and create a new session.</p><button id="sessionAnotherCase" class="nav-btn">Choose another case</button></section>
@@ -211,15 +211,15 @@
   <dialog id="detailDialog"><button id="closeDialog" class="close" aria-label="Close">×</button><div id="dialogContent"></div></dialog>
 
   <footer><span>WorldThreads v0.4</span><span>Prototype year: 1816 · evidence and relationships separated</span></footer>
-  <script src="contribution.js?v=20261002-friends2"></script>
-  <script src="community-core.js?v=20261002-friends2"></script>
-  <script src="app.js?v=20261002-friends2"></script>
-  <script src="appearance.js?v=20261002-friends2"></script>
-  <script src="community.js?v=20261002-friends2"></script>
-  <script src="explore-model.js?v=20261002-friends2"></script>
-  <script src="investigation-case.js?v=20261002-friends2"></script>
-  <script src="explore.js?v=20261002-friends2"></script>
-<script src="group-cases.js?v=20261002-friends2"></script>
-<script src="sessions.js?v=20261002-friends2"></script>
+  <script src="contribution.js?v=20261002-friends3"></script>
+  <script src="community-core.js?v=20261002-friends3"></script>
+  <script src="app.js?v=20261002-friends3"></script>
+  <script src="appearance.js?v=20261002-friends3"></script>
+  <script src="community.js?v=20261002-friends3"></script>
+  <script src="explore-model.js?v=20261002-friends3"></script>
+  <script src="investigation-case.js?v=20261002-friends3"></script>
+  <script src="explore.js?v=20261002-friends3"></script>
+<script src="group-cases.js?v=20261002-friends3"></script>
+<script src="sessions.js?v=20261002-friends3"></script>
 </body>
 </html>

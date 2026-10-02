@@ -41,22 +41,22 @@
   for(const m of room.members){const state=!m.active?'withdrew':m.ready?'ready':room.phase==='compare'?'did not contribute yet':'investigating';members.append(el('li',m.alias+(m.isHost?' · host':'')+' · '+(lead(m.leadId)?.title||m.leadId)+' · '+state));}
   const counts=occupancy(room.members),uncovered=c.leads.filter(l=>!counts[l.id]);
   $('sessionCoordination').textContent=uncovered.length?'Uncovered leads: '+uncovered.map(l=>l.title).join(' · ')+'. Choose one to widen your group’s investigation.':'Every lead has an investigator. Duplicate readings can test whether you interpret the same clue differently.';
-  $('sessionYourName').textContent='Your investigation · '+me.alias;
+  $('sessionYourName').textContent='Your investigation · '+me.alias+(room.phase==='compare'?' · inspect or revise':'');
   const first=$('sessionLead').dataset.member!==me.id;
   options($('sessionLead'),c,counts,first?me.leadId:$('sessionLead').value);
   if(first){$('sessionLead').dataset.member=me.id;for(const [field,key]of [['sessionSupports','supports'],['sessionUncertain','uncertain'],['sessionNextEvidence','nextEvidence'],['sessionNextQuestion','followUp']])$(field).value=me.notes?.[key]||'';sourceCard(lead(me.leadId),$('sessionPassage'));}
   const active=room.members.filter(m=>m.active),ready=active.filter(m=>m.ready),unfinished=active.some(m=>!m.ready),comparing=room.phase==='compare';
   $('sessionCompare').hidden=!room.isHost||comparing;$('sessionCompare').disabled=ready.length<2||unfinished;
-  $('sessionProceed').hidden=!room.isHost||comparing||!unfinished;
+  $('sessionProceed').hidden=!room.isHost||comparing||!unfinished||ready.length<2;
   $('sessionProceedButton').disabled=ready.length<2||!$('sessionProceedConsent').checked;
-  $('sessionOwnWork').hidden=!me.active;$('sessionWithdraw').hidden=room.isHost||!me.active;
+  $('sessionOwnWork').hidden=!me.active;if($('sessionOwnWork').dataset.phase!==room.phase){$('sessionOwnWork').dataset.phase=room.phase;$('sessionOwnWork').open=!comparing;}$('sessionWithdraw').hidden=room.isHost||!me.active;
   $('sessionWaiting').hidden=comparing;$('sessionComparison').hidden=!comparing;
   $('sessionWaiting').textContent=me.ready?'Your interpretation is ready. Ask a friend what record they would look for next while you wait. Peer notes stay hidden until comparison.':'Read the clue and jot three short notes. Discuss in person or on your call after the reveal.';
   if(comparing){
    $('sessionDiscussion').textContent=c.comparisonPrompt;$('sessionSourcesNote').textContent=c.sourcesNote;
    const board=$('sessionEvidenceBoard');board.replaceChildren();
    for(const m of room.members.filter(m=>m.contributed&&m.notes)){
-    const card=el('article',undefined,'session-evidence-card');card.append(el('h4',m.alias+' · '+lead(m.leadId).title));const excerpt=el('div');sourceCard(lead(m.leadId),excerpt);card.append(excerpt);
+    const card=el('article',undefined,'session-evidence-card');card.append(el('h4',m.alias));const excerpt=el('div');sourceCard(lead(m.leadId),excerpt);card.append(excerpt);
     for(const [key,label]of [['supports','What this supports'],['uncertain','What remains uncertain'],['nextEvidence','Evidence to look for'],['followUp','Next investigation']])if(m.notes[key])card.append(el('strong',label),el('p',m.notes[key]));board.append(card);
    }
    $('sessionExtension').hidden=!c.extension;
@@ -74,7 +74,7 @@
  async function findSession(){
   joinCase=null;foundCode='';$('sessionJoin').disabled=true;$('sessionJoinLead').disabled=true;
   const requestedCode=code();const data=await request('/lookup?code='+encodeURIComponent(requestedCode));if(code()!==requestedCode)throw Error('The code changed. Find the session again.');const c=cases()[data.caseId];if(!c)throw Error('This case requires the current app release. Refresh and try again.');
-  $('sessionJoinPreview').textContent=c.title+' · '+data.activeCount+' friends joined. '+c.boundary;
+  $('sessionJoinPreview').textContent=c.title+' · '+data.activeCount+(data.activeCount===1?' friend joined.':' friends joined.')+' '+c.boundary;
   options($('sessionJoinLead'),c,data.leadOccupancy,c.leads.find(l=>!data.leadOccupancy[l.id])?.id);
   if(data.phase!=='investigating')throw Error('Comparison has already opened. Ask the host to create the next session.');if(data.activeCount>=6)throw Error('Six friends are already in this session.');
   joinCase=c;foundCode=code();$('sessionJoinLead').disabled=false;$('sessionJoin').disabled=false;status('Choose an uncovered lead, or read an existing lead from a different perspective.');
