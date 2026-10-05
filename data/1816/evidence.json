@@ -1207,5 +1207,19 @@
     "reviewStatus": "pending_independent_review",
     "accessScope": "full_text",
     "dependencyGroup": "CHRIST-MCE165-AEN-ASSISTANCE"
+  },
+  {
+    "id": "EV-R24-WT-1816-0044",
+    "claimId": "WT-1816-0044",
+    "sourceId": "SRC-034",
+    "locator": "Catalog date/location KB-015011; Transkription, food table and final weaving-pay paragraph",
+    "accessedAt": "2026-10-05",
+    "support": "Food prices and weaving earnings co-recorded",
+    "provenance": "Full online transcription inspected; original handwriting not compared",
+    "limitations": "Long comparison interval and unknown maker; textile specification and material costs complicate pay comparison. No 1816 date inferred or precise purchasing-power ratio adopted.",
+    "reviewer": "Codex",
+    "reviewStatus": "pending_independent_review",
+    "accessScope": "transcription",
+    "dependencyGroup": "URNAESCH-KB015011"
   }
 ]

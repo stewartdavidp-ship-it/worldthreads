@@ -521,5 +521,21 @@
     ],
     "notes": "Full PDF inspected, printed p. 975, note 78: BPUN 6R370, Avis au public (19 December 1816) and Information au public (2 April 1817). Originals not inspected. Also inspected pp. 1192–1194: MCE 165 complaint and AEN Assistance 3/IV counteraccount; separate underlying records, originals pending.",
     "dependencyGroup": "CHRIST-BPUN-6R370"
+  },
+  {
+    "id": "SRC-034",
+    "type": "Library-held contemporary price-table transcription",
+    "authorOrOrg": "Unknown maker; transcription and catalog description by Nina Sonderegger, Zeitzeugnisse",
+    "title": "Urnäscher Hungertäfeli, Kantonsbibliothek Appenzell Ausserrhoden KB-015011",
+    "year": 1817,
+    "url": "https://www.zeitzeugnisse.ch/detail.php?id=91&stype=4",
+    "quality": "Primary-object transcription; original comparison pending",
+    "topics": [
+      "food prices",
+      "weaving pay",
+      "Appenzell"
+    ],
+    "notes": "Full catalog entry and transcription inspected. Dated 1817; compares food prices and weaving pay with 1760/1761. Not a continuous series. Distinct from Thäler’s 1830–1835 painting, museum G 11811.",
+    "dependencyGroup": "URNAESCH-KB015011"
   }
 ]

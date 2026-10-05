@@ -1318,5 +1318,35 @@
     "evidenceRefs": [
       "EV-R23-WT-1816-0043"
     ]
+  },
+  {
+    "id": "WT-1816-0044",
+    "title": "An Urnäsch table records food prices alongside weaving pay",
+    "startDate": "1817",
+    "endDate": "1817",
+    "datePrecision": "YEAR",
+    "contextNode": true,
+    "continent": "Europe",
+    "region": "Appenzell Ausserrhoden / Switzerland",
+    "historicalEntity": "Canton of Appenzell Ausserrhoden",
+    "place": "Urnäsch",
+    "observation": "A table cataloged as 1817 contrasts expensive food and lower weaving pay with 1760/1761, and notes insufficient weaving work. This is an attributed local retrospective comparison, not a measured regional wage or price series.",
+    "coverageType": "CONDITION",
+    "system": "HUMAN SYSTEMS",
+    "topic": "Food affordability / textile earnings",
+    "analyticalRole": [
+      "PRESSURE"
+    ],
+    "evidenceType": [
+      "Contemporary documentary observation"
+    ],
+    "confidence": "Medium",
+    "researchStatus": "Source checked; independent review pending",
+    "sourceRefs": [
+      "SRC-034"
+    ],
+    "evidenceRefs": [
+      "EV-R24-WT-1816-0044"
+    ]
   }
 ]
