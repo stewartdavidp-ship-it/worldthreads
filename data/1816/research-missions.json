@@ -47,7 +47,7 @@
     "gapId": "GAP-006",
     "status": "Open hypothesis",
     "theory": "Floodplain exposure helped determine damage; severe weather did not produce identical agricultural outcomes everywhere.",
-    "known": "The graph separates qualitative rain, reported Windsor flood losses and Hobart\u2019s harvest expectation.",
+    "known": "The graph separates qualitative rain, reported Windsor flood losses and Hobart’s harvest expectation.",
     "claimRefs": [
       "WT-1816-0031",
       "WT-1816-0032",
@@ -116,6 +116,44 @@
     ],
     "badgeIds": [
       "THREAD_FINDER",
+      "THEORY_CHALLENGER",
+      "SOURCE_DETECTIVE"
+    ]
+  },
+  {
+    "id": "MISSION-BARBADOS-EXPECTATIONS",
+    "title": "Whose explanation of the Barbados uprising survives comparison?",
+    "threadId": "THREAD-BARBADOS-RESISTANCE",
+    "gapId": "GAP-009",
+    "status": "Provisional research question",
+    "theory": "Registration proposals may have shaped emancipation expectations, but the colonial report alone cannot establish their contribution to resistance.",
+    "known": "Codd attributes motives; Leith forwards his report. These are not independent witnesses to participants’ intentions.",
+    "claimRefs": [
+      "WT-1816-0036"
+    ],
+    "missing": [
+      "Participant perspectives and Barbadian scholarship",
+      "Dated evidence of communication and planning",
+      "Existing coercive conditions and competing explanations"
+    ],
+    "supportWouldLookLike": [
+      "Independent evidence links particular expectations to organizers’ choices."
+    ],
+    "challengeWouldLookLike": [
+      "Records support other motives or show the official explanation misrepresents participants."
+    ],
+    "researchSteps": [
+      "Inspect sources beyond Codd’s source family.",
+      "Separate prior conditions, new proposals, communication, organization and military response.",
+      "Record geographic and temporal limits; do not add a climate explanation without evidence."
+    ],
+    "possibleOutcomes": [
+      "Supports part of the theory",
+      "Weakens part of the theory",
+      "Suggests another explanation",
+      "Insufficient evidence"
+    ],
+    "badgeIds": [
       "THEORY_CHALLENGER",
       "SOURCE_DETECTIVE"
     ]

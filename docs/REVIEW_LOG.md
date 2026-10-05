@@ -100,3 +100,11 @@ Final scope checks: the suggested missions now cover fisheries, flood exposure a
 ## 2026-10-01 — Public research posting
 
 Added a GitHub issue form on the default branch and linked it from the published contribution flow. Contributors can check a JSON draft locally, copy it, and post it publicly using a GitHub account. Required form fields preserve the starting thread, locality, findings, uncertainty and structured evidence. Research and pending-review labels identify submissions. Posts do not auto-promote claims; maintainers still run intake and independent historical review. No test finding was posted as real research.
+
+## 2026-10-04 — Round 19: Barbados correspondence recovered
+
+Recovered previously blocked GAP-009 through the National Archives PDF lesson. Inspected source transcriptions on printed pages 9, 11, 23 and 25. Added three narrowly attributed observations and one documentary association: Leith reports an uprising and forwards Codd; Codd describes military deployment and attributes motives to emancipation expectations. Leith/Codd dependence is explicit. No causal relationship from registration proposals to rebellion, climate attribution, casualty reconstruction or participant motive claim was added.
+
+Research branch and mission invite scrutiny of colonial explanations using participant perspectives, Barbadian scholarship, communication/planning records and existing coercive conditions. Codd's denial of ill treatment is not adopted as a fact. Original-manuscript comparison and independent historical review remain pending. Swiss food-policy comparison identified as a strong next lead, but university access was blocked and an older PDF link failed; no Swiss claim added from snippets.
+
+Audit: zero errors/warnings, with 62 claims awaiting independent review. All 48 automated checks passed. These are structural/service checks, not historical approval.

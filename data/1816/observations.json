@@ -1025,5 +1025,92 @@
       "EV-R17-WT-1816-0033",
       "EV-R18-WT-1816-0033"
     ]
+  },
+  {
+    "id": "WT-1816-0034",
+    "title": "Leith reports rebellion and martial law",
+    "startDate": "1816-04-30",
+    "endDate": "1816-04-30",
+    "datePrecision": "DAY",
+    "continent": "North America",
+    "region": "Caribbean / Barbados",
+    "historicalEntity": "British colony of Barbados",
+    "place": "Barbados",
+    "observation": "Leith’s letter reports an uprising on April 14, martial law and his return on April 24.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "Colonial governance",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Contemporary documentary observation"
+    ],
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "evidenceRefs": [
+      "EV-R19-WT-1816-0034"
+    ],
+    "researchStatus": "Source checked; independent review pending"
+  },
+  {
+    "id": "WT-1816-0035",
+    "title": "Codd reports deploying troops with the militia",
+    "startDate": "1816-04-25",
+    "endDate": "1816-04-25",
+    "datePrecision": "DAY",
+    "continent": "North America",
+    "region": "Caribbean / Barbados",
+    "historicalEntity": "British colony of Barbados",
+    "place": "Barbados",
+    "observation": "Codd reports receiving notice on April 15 and marching with troops and artillery to cooperate with the militia.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "Military response",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Contemporary documentary observation"
+    ],
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "evidenceRefs": [
+      "EV-R19-WT-1816-0035"
+    ],
+    "researchStatus": "Source checked; independent review pending"
+  },
+  {
+    "id": "WT-1816-0036",
+    "title": "Codd attributes resistance to emancipation expectations",
+    "startDate": "1816-04-25",
+    "endDate": "1816-04-25",
+    "datePrecision": "DAY",
+    "continent": "North America",
+    "region": "Caribbean / Barbados",
+    "historicalEntity": "British colony of Barbados",
+    "place": "Barbados",
+    "observation": "Codd attributes the uprising to expectations associated with the proposed Registry Bill. This records his explanation, not established participant motives.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "Political expectations",
+    "analyticalRole": [
+      "PRESSURE"
+    ],
+    "evidenceType": [
+      "Contemporary documentary observation"
+    ],
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "evidenceRefs": [
+      "EV-R19-WT-1816-0036"
+    ],
+    "researchStatus": "Source checked; independent review pending"
   }
 ]

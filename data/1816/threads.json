@@ -243,5 +243,25 @@
     ],
     "scope": "Oceania",
     "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-BARBADOS-RESISTANCE",
+    "title": "Political expectations, resistance and colonial response",
+    "subtitle": "Barbados, April 1816",
+    "description": "Follow attributed colonial reports and investigate whose expectations and choices they omit. The link from registration proposals to resistance remains a research question.",
+    "nodeIds": [
+      "WT-1816-0034",
+      "WT-1816-0035",
+      "WT-1816-0036"
+    ],
+    "relationshipIds": [
+      "REL-0026"
+    ],
+    "mechanisms": [
+      "political expectations",
+      "institutional response"
+    ],
+    "scope": "Caribbean / Barbados",
+    "confidence": "Medium"
   }
 ]

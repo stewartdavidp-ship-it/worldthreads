@@ -440,5 +440,22 @@
       "New South Wales"
     ],
     "notes": "Article text on page 2 read through Chrome. Digitized page viewer available; detailed visual comparison with print not completed. OCR and volunteer corrections may affect wording."
+  },
+  {
+    "id": "SRC-029",
+    "type": "Archive transcription of contemporary correspondence",
+    "authorOrOrg": "James Leith / Edward Codd; The National Archives",
+    "title": "Bussa’s rebellion: CO 28/85 extracts",
+    "year": 1816,
+    "url": "https://cdn.nationalarchives.gov.uk/documents/education/bussa.pdf",
+    "quality": "Primary accounts with colonial perspective",
+    "topics": [
+      "Barbados",
+      "resistance",
+      "political expectations",
+      "military response"
+    ],
+    "notes": "PDF transcriptions inspected October 4, 2026 (America/New_York); printed pages 9, 11, 23 and 25. Leith forwards Codd: these accounts cannot automatically be counted as independent corroboration. No original manuscript transcription comparison completed.",
+    "dependencyGroup": "CO28-85-CODD-LEITH-1816"
   }
 ]

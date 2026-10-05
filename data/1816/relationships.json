@@ -1055,5 +1055,22 @@
       "EV-R17-REL-0025",
       "EV-R18-REL-0025"
     ]
+  },
+  {
+    "id": "REL-0026",
+    "subjectId": "WT-1816-0034",
+    "predicate": "ASSOCIATED_WITH",
+    "objectId": "WT-1816-0035",
+    "causalStatus": "ASSOCIATED",
+    "lag": "Reports dated five days apart",
+    "explanation": "Leith forwards Codd’s report: the records link an uprising report to a military response, not independent corroboration.",
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "evidenceRefs": [
+      "EV-R19-REL-0026"
+    ],
+    "researchStatus": "Source checked; independent review pending"
   }
 ]
