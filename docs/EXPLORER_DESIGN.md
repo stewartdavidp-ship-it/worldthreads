@@ -49,3 +49,19 @@ Stages make the destination explicit: Discover, Investigate, Build the case, Cas
 The thesis workspace is informed by [Harvard History’s dissertation prospectus guidance](https://history.fas.harvard.edu/graduate-program-dissertation-prospectus), [thesis guidance](https://writingcenter.fas.harvard.edu/thesis) and [counterargument guidance](https://writingcenter.fas.harvard.edu/counterargument). It separates the writer’s provisional argument from registered observations and asks for research significance, scholarship, scope, method, claim–evidence entries, checked passage references, counterargument, response, revision criteria, chapters and schedule. It saves locally and exports a Markdown research draft with a bibliography from selected records. Empty fields remain marked as unfinished; the app neither supplies invented citations nor grades scholarly originality.
 
 Tests cover missing evidence and unsupported limits at case submission, unique case/expedition rewards, locked challenges, case downloads, persisted completion and thesis draft saving/reopening/export. The downloaded plan is not a finished PhD thesis. Primary-source research, historiographical engagement, revision and external scholarly feedback remain necessary.
+
+## Enter through an object, then follow forces
+
+People, places & things is an independent entry alongside stories and the library. Search/filter opens a focused object with incoming/outgoing roles and historical claims, collapsible context and source-backed observation links. One shared person identity can connect several actions. A work can receive a climate-context claim and an attributed creator role without conflating them. Object navigation enters existing threads and preserves inspector breadcrumbs. No missing personal motivation or regional influence is invented.
+
+## One-thread thesis pilot and the research loop
+
+A single thread can start a thesis investigation immediately; completing unrelated cases is no longer a prerequisite. An earned case offers a direct Develop this thread into a thesis action, and the library offers the same entry for any thread. The full expedition remains an optional broader goal. Switching thesis threads archives the prior thread draft locally.
+
+The Dutch relief pilot was run through the real game: four evidence layers, case assembly, a thread-scoped thesis, an explicit household-distribution dead end, a local import and document export. The imported entry deliberately repeats a registered authorization claim to show that import mechanics do not supply new delivery evidence. Source passages were not independently rechecked during this pilot; registered locators and that limitation remain in the exported draft.
+
+Research prompts teach readers to define the unsupported link, identify a source capable of testing it, check provenance/date/place/purpose, preserve contrary evidence and negative searches, then revise the premise. Proposal imports are local, unreviewed candidate evidence. The export separates them from registered observations and includes research tasks and dead ends. Accepting a file is not accepting a historical claim.
+
+Browser checks cover object identities, indirect context, role versus causal labels, source backlinks, object-to-thread entry, the single-thread game-to-thesis route, malformed/unsafe imports, duplicate protection, local extension persistence, exports and mobile width.
+
+Object profiles also offer a direct influence-research entry, including when no curated thread exists. The stethoscope pilot entry preserves the lack of a recorded outgoing influence claim and starts an object-scoped question instead of inventing an impact story. Thread and object drafts are archived separately when changing investigation context.

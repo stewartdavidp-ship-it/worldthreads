@@ -1,4 +1,4 @@
-# WorldThreads Historical Knowledge Graph — Data Model v0.2
+# WorldThreads Historical Knowledge Graph — Data Model v0.5
 
 WorldThreads separates **what is observed** from **what is inferred**.
 
@@ -123,3 +123,19 @@ Each gap can include `observationIds[]`, `threadIds[]`, `remainingQuestions[]` a
 `DOCUMENT_DATE` means the dated report/letter is known; its described event can precede that date. `dateBasis` states this distinction. `SEASON_RANGE` preserves reconstructed seasonal support. `extendedContextReason` explains why a multi-year record extends beyond 1814–1818. Region value `Oceans` is not counted as an additional continent.
 
 Evidence type filters use the original evidence labels. Search, region, time-window and system filters combine. The 1816 filter includes any record whose date support overlaps 1816, including multi-year reconstructions; it does not turn them into annual measurements. Source `alternateUrl` may point to a university-hosted copy when publisher or archive delivery is limited.
+
+## Historical objects (v0.5)
+
+An object identifies a person, movement, polity, institution, place, natural feature, environmental episode, biological system, technology, work, event, policy, process or condition. These are stable things studied across observations, not evidence-bearing claims in themselves. `data/object-types.json` records allowed types/subtypes, including future categories such as earthquakes, wars, strikes and protests without inventing instances.
+
+`data/objects.json` contains `id`, `type`, `subtype`, `label`, `description`, `observationIds[]`, `sourceRefs[]`, `focusDates`, `regions[]`, `researchStatus` and `identityNote`. A focus window is the span of linked evidence; it is not a person’s lifetime or the complete duration of a work or institution. The seed represents existing corpus evidence rather than comprehensive biographies or ranked influence. Composite legacy polity strings are retained on observations instead of being guessed into individual identities.
+
+Each observation now has `primaryObjectId` and `objectRefs[]`. Object/observation membership is reciprocal. Sources on objects are the union of their linked observation sources. Person identities span their different actions; Mount Tambora and its eruption are distinct objects.
+
+`data/1816/object-relationships.json` contains actual object endpoints, predicate, `relationshipKind`, causal status, confidence, explanation, source references, `evidenceObservationRefs[]` and `evidenceRelationshipRefs[]`. `HISTORICAL_CLAIM` edges project an existing observation relationship onto its primary objects while preserving its direction, wording, confidence, status and sources exactly. `PARTICIPATION` edges document attributed roles such as ordering or reporting. `CONTEXT` edges record location, identity or political context. Participation/context use ASSOCIATED and do not measure causal impact. Original observation relationships and threads remain intact.
+
+A person’s role in an action does not establish the person’s motives. Connections affecting their work or actions are shown as indirect context, not silently promoted into personal influence claims. Missing incoming or outgoing influence links remain explicit gaps.
+
+## Local research additions
+
+Imported proposal JSON requires a claim, http(s) source URL, locator, date/place and limits. Local additions retain proposal kind, thread context, import time and Unreviewed status. They are stored separately in the browser and are not accepted observations, projected object links or changes to the registered graph. They can be selected in a thesis evidence table as explicitly labeled candidate evidence. A repeated import of the same claim/source/locator is not additional evidence.

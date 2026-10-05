@@ -1,22 +1,32 @@
-const state={observations:[],relationships:[],threads:[],sources:[],mechanisms:[],gaps:[],region:'ALL',query:'',period:'ALL',evidence:'ALL',sort:'date',system:'ALL',threadId:null};
+const state={observations:[],relationships:[],threads:[],sources:[],mechanisms:[],gaps:[],objects:[],objectRelationships:[],objectTypes:[],region:'ALL',query:'',period:'ALL',evidence:'ALL',sort:'date',system:'ALL',threadId:null};
 
 async function load(){
-  const [observations,relationships,threads,sources,mechanisms,gaps]=await Promise.all([
+  const [observations,relationships,threads,sources,mechanisms,gaps,objects,objectRelationships,objectTypes]=await Promise.all([
     fetch('data/1816/observations.json').then(r=>r.json()),
     fetch('data/1816/relationships.json').then(r=>r.json()),
     fetch('data/1816/threads.json').then(r=>r.json()),
     fetch('data/1816/sources.json').then(r=>r.json()),
     fetch('data/mechanisms.json').then(r=>r.json()),
-    fetch('data/1816/research-gaps.json').then(r=>r.json())
+    fetch('data/1816/research-gaps.json').then(r=>r.json()),
+    fetch('data/objects.json').then(r=>r.json()),
+    fetch('data/1816/object-relationships.json').then(r=>r.json()),
+    fetch('data/object-types.json').then(r=>r.json())
   ]);
-  Object.assign(state,{observations,relationships,threads,sources,mechanisms,gaps,threadId:threads[0]?.id||null});
+  Object.assign(state,{observations,relationships,threads,sources,mechanisms,gaps,objects,objectRelationships,objectTypes,threadId:threads[0]?.id||null});
   bind(); render(); renderStory();
 }
 
 function bind(){
+  document.getElementById('threadThesis').onclick=()=>startThreadThesis(state.threadId);
+  document.getElementById('objectsMode').onclick=()=>{setExperience('objects');renderObjects();};
+  document.getElementById('objectExplorer').addEventListener('click',e=>{const o=e.target.closest('[data-object]');if(o)openObject(o.dataset.object);if(e.target.id==='moreObjects'){objectBrowse.limit+=12;renderObjects();}});
+  document.getElementById('objectExplorer').addEventListener('input',e=>{if(e.target.id==='objectSearch'){objectBrowse.query=e.target.value;objectBrowse.limit=12;renderObjects();}});
+  document.getElementById('objectExplorer').addEventListener('change',e=>{if(e.target.id==='objectType'){objectBrowse.type=e.target.value;objectBrowse.limit=12;renderObjects();}});
   document.getElementById('storyMode').onclick=()=>{story.id=null;setExperience('story');renderStory();};
   document.getElementById('researchMode').onclick=()=>setExperience('research');
   document.getElementById('storyJourney').addEventListener('click',e=>{
+    const threadThesis=e.target.closest('[data-thread-thesis]');if(threadThesis){startThreadThesis(threadThesis.dataset.threadThesis);return;}
+    const returnThread=e.target.closest('[data-return-thread]');if(returnThread){setExperience('research');selectThread(returnThread.dataset.returnThread);return;}
     const thesis=e.target.closest('[data-open-thesis]');if(thesis){openThesisWorkspace();return;}
     const thesisDownload=e.target.closest('[data-download-thesis]');if(thesisDownload){downloadThesisDraft();return;}
     const extend=e.target.closest('[data-extend-case]');if(extend){story.id=extend.dataset.extendCase;const config=storyCatalog.find(s=>s.id===story.id);story.step=(config.chapters||storyChapters).length-1;story.clue=null;renderStory(true);document.getElementById('storyContribution').open=true;return;}
@@ -49,13 +59,16 @@ function bind(){
   document.getElementById('storyJourney').addEventListener('submit',saveProposal);
   document.getElementById('storyJourney').addEventListener('submit',submitCaseFile);
   document.getElementById('storyJourney').addEventListener('submit',saveThesisDraft);
-  document.getElementById('storyJourney').addEventListener('change',e=>{if(e.target.matches('[data-thesis-record]'))showThesisRecord(Number(e.target.dataset.thesisRecord),e.target.value);});
+  document.getElementById('storyJourney').addEventListener('change',e=>{if(e.target.matches('[data-thesis-record]'))showThesisRecord(Number(e.target.dataset.thesisRecord),e.target.value);if(e.target.id==='researchImport')importResearch(e.target.files[0]);});
   document.getElementById('dialogContent').addEventListener('click',e=>{
+    const objectResearch=e.target.closest('[data-object-research]');if(objectResearch){startObjectResearch(objectResearch.dataset.objectResearch);return;}
+    const object=e.target.closest('[data-object]');if(object){openObject(object.dataset.object);return;}
+    const objectLink=e.target.closest('[data-object-link]');if(objectLink){openObjectLink(objectLink.dataset.objectLink);return;}
     const o=e.target.closest('[data-observation]');if(o){openDetail(obs(o.dataset.observation));return;}
     const r=e.target.closest('[data-relationship]');if(r){openRelationship(state.relationships.find(x=>x.id===r.dataset.relationship));return;}
     const h=e.target.closest('[data-history]');if(h){const index=Number(h.dataset.history);if(index>=0&&index<=inspector.index){inspector.index=index;inspector.tab='connections';inspector.linkFilter='all';renderInspector(true);}return;}
     const tab=e.target.closest('[data-inspector-tab]');if(tab){inspector.tab=tab.dataset.inspectorTab;renderInspector();return;}
-    const thread=e.target.closest('[data-thread]');if(thread){selectThread(thread.dataset.thread);document.getElementById('detailDialog').close();}
+    const thread=e.target.closest('[data-thread]');if(thread){if(!document.getElementById('objectExplorer').hidden)setExperience('research');selectThread(thread.dataset.thread);document.getElementById('detailDialog').close();}
   });
   document.getElementById('dialogContent').addEventListener('toggle',e=>{if(e.target.matches('.evidence-source[open]')&&sourceBelongsToStory(e.target.dataset.source))recordProgress('sources',e.target.dataset.source);},true);
   document.getElementById('dialogContent').addEventListener('change',e=>{if(e.target.id==='linkFilter'){inspector.linkFilter=e.target.value;renderInspector();document.getElementById('linkFilter').focus();}});
@@ -148,9 +161,9 @@ function visitInspector(item){
   if(!dlg.open){inspector.history=[];inspector.index=-1;}
   const current=inspector.history[inspector.index];
   if(!current||current.kind!==item.kind||current.id!==item.id){inspector.history=inspector.history.slice(0,inspector.index+1);inspector.history.push(item);inspector.index++;}
-  inspector.tab=item.kind==='relationship'?'claim':'connections';inspector.linkFilter='all';renderInspector(true);
+  inspector.tab=['relationship','objectLink'].includes(item.kind)?'claim':'connections';inspector.linkFilter='all';renderInspector(true);
 }
-function inspectorLabel(item){return item.kind==='observation'?obs(item.id)?.title:'Connection: '+state.relationships.find(r=>r.id===item.id)?.predicate.replaceAll('_',' ').toLowerCase();}
+function inspectorLabel(item){if(item.kind==='object')return historicalObject(item.id)?.label;if(item.kind==='objectLink')return 'Connection: '+state.objectRelationships.find(r=>r.id===item.id)?.predicate.replaceAll('_',' ').toLowerCase();return item.kind==='observation'?obs(item.id)?.title:'Connection: '+state.relationships.find(r=>r.id===item.id)?.predicate.replaceAll('_',' ').toLowerCase();}
 function inspectorNavigation(){
   return `<div class="inspector-controls"><button class="inspector-back" data-history="${inspector.index-1}" ${inspector.index===0?'disabled':''}>← Back</button><p>Your exploration path <span>· navigation, not a causal claim</span></p></div><nav class="exploration-trail" aria-label="Exploration history">${inspector.history.slice(0,inspector.index+1).map((item,i)=>`<button data-history="${i}" ${i===inspector.index?'aria-current="step"':''}>${escapeHtml(inspectorLabel(item))}</button>`).join('<span aria-hidden="true">›</span>')}</nav>`;
 }
@@ -186,12 +199,14 @@ function relationshipHtml(r){
 function renderInspector(focus=false){
   const item=inspector.history[inspector.index];if(!item)return;
   const dlg=document.getElementById('detailDialog'),content=document.getElementById('dialogContent');
-  if(item.kind==='relationship'){
+  if(item.kind==='object'){content.innerHTML=renderObjectInspector(historicalObject(item.id));}
+  else if(item.kind==='objectLink'){content.innerHTML=renderObjectLinkInspector(state.objectRelationships.find(r=>r.id===item.id));}
+  else if(item.kind==='relationship'){
     const r=state.relationships.find(r=>r.id===item.id);
     content.innerHTML=`${inspectorNavigation()}<header class="inspector-heading"><p class="eyebrow">Assess one connection</p><h2 id="detailTitle" tabindex="-1">Why are these linked?</h2></header>${relationshipHtml(r)}`;
   }else{
     const o=obs(item.id),n=state.relationships.filter(r=>r.subjectId===o.id||r.objectId===o.id).length;
-    content.innerHTML=`${inspectorNavigation()}<header class="inspector-heading"><p class="eyebrow">${escapeHtml(o.startDate)} · ${escapeHtml(o.place)}</p><h2 id="detailTitle" tabindex="-1">${escapeHtml(o.title)}</h2><div class="fact-badges"><span>${escapeHtml(evidenceClass(o))}</span><span>${escapeHtml(o.confidence)} observation confidence</span></div><p class="selected-fact">${escapeHtml(o.observation)}</p></header><nav class="inspector-tabs" aria-label="Record views">${[['connections',`Connections · ${n}`],['evidence',`Evidence · ${o.sourceRefs.length}`],['facts','Record details']].map(([id,label])=>`<button data-inspector-tab="${id}" aria-pressed="${inspector.tab===id}" ${inspector.tab===id?'class="selected"':''}>${label}</button>`).join('')}</nav><section id="inspectorBody" class="inspector-body" aria-live="polite">${inspector.tab==='connections'?neighborhoodHtml(o):inspector.tab==='evidence'?observationEvidenceHtml(o):factsHtml(o)}</section>`;
+    content.innerHTML=`${inspectorNavigation()}<header class="inspector-heading"><p class="eyebrow">${escapeHtml(o.startDate)} · ${escapeHtml(o.place)}</p><h2 id="detailTitle" tabindex="-1">${escapeHtml(o.title)}</h2><div class="fact-badges"><span>${escapeHtml(evidenceClass(o))}</span><span>${escapeHtml(o.confidence)} observation confidence</span></div><p class="selected-fact">${escapeHtml(o.observation)}</p>${observationObjectsHtml(o)}</header><nav class="inspector-tabs" aria-label="Record views">${[['connections',`Connections · ${n}`],['evidence',`Evidence · ${o.sourceRefs.length}`],['facts','Record details']].map(([id,label])=>`<button data-inspector-tab="${id}" aria-pressed="${inspector.tab===id}" ${inspector.tab===id?'class="selected"':''}>${label}</button>`).join('')}</nav><section id="inspectorBody" class="inspector-body" aria-live="polite">${inspector.tab==='connections'?neighborhoodHtml(o):inspector.tab==='evidence'?observationEvidenceHtml(o):factsHtml(o)}</section>`;
   }
   if(!dlg.open)dlg.showModal();
   if(focus){dlg.scrollTop=0;document.getElementById('detailTitle').focus();}
@@ -210,8 +225,8 @@ load().catch(err=>{document.getElementById('cards').innerHTML=`<p>Could not load
 
 const story={step:0,choice:null,id:null};
 function setExperience(mode){
-  const research=mode==='research';document.getElementById('researchLibrary').hidden=!research;document.getElementById('storyJourney').hidden=research;
-  for(const [id,active] of [['storyMode',!research],['researchMode',research]]){const b=document.getElementById(id);b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));}
+  const research=mode==='research',objects=mode==='objects';document.getElementById('researchLibrary').hidden=!research;document.getElementById('storyJourney').hidden=research||objects;document.getElementById('objectExplorer').hidden=!objects;document.getElementById('investigationProgress').hidden=objects;
+  for(const [id,active] of [['storyMode',!research&&!objects],['researchMode',research],['objectsMode',objects]]){const b=document.getElementById(id);b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));}
   window.scrollTo({top:0,behavior:'smooth'});
 }
 const storyChapters=[

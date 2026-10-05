@@ -13,12 +13,13 @@
       <div class="brand">WorldThreads</div>
       <div class="tagline">History isn't a collection of events. It's the threads that connect them.</div>
     </div>
-    <nav aria-label="Experience"><button class="nav-btn active" id="storyMode" aria-pressed="true">Choose a story</button><button class="nav-btn" id="researchMode" aria-pressed="false">Research library</button></nav>
+    <nav aria-label="Experience"><button class="nav-btn active" id="storyMode" aria-pressed="true">Choose a story</button><button class="nav-btn" id="objectsMode" aria-pressed="false">People, places & things</button><button class="nav-btn" id="researchMode" aria-pressed="false">Research library</button></nav>
   </header>
 
   <main>
     <section id="investigationProgress" class="investigation-progress" aria-label="Investigation progress"></section>
     <section id="storyJourney" class="story-journey" aria-label="Guided historical investigation"></section>
+    <section id="objectExplorer" class="object-explorer" hidden aria-label="Explore people places and things"></section>
     <div id="researchLibrary" hidden>
     <section class="hero" id="year">
       <div>
@@ -72,7 +73,7 @@
           <p id="threadSubtitle"></p>
         </div>
         <div class="thread-toolbar"><select id="threadSelect" class="thread-select" aria-label="Choose a historical thread"></select></div>
-        <p id="threadDescription" class="thread-description"></p>
+        <p id="threadDescription" class="thread-description"></p><button class="story-back" id="threadThesis">Use this thread as a thesis investigation →</button>
         <p class="thread-description">Each row is a sourced connection. Click its label to assess the claim; association and chronology do not establish causation.</p><div id="threadGraph" class="thread-graph"></div><div id="mechanismPanel"></div>
       </section>
     </section>
@@ -90,12 +91,14 @@
 
   <dialog id="detailDialog" aria-labelledby="detailTitle"><button id="closeDialog" class="close" aria-label="Close">×</button><div id="dialogContent"></div></dialog>
 
-  <footer><span>WorldThreads v0.4</span><span>Prototype year: 1816 · evidence and relationships separated</span></footer>
+  <footer><span>WorldThreads v0.5</span><span>Prototype year: 1816 · evidence and relationships separated</span></footer>
   <script src="stories.js"></script>
   <script src="progress.js"></script>
   <script src="investigations.js"></script>
   <script src="casefiles.js"></script>
   <script src="thesis.js"></script>
+  <script src="objects.js"></script>
+  <script src="research.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

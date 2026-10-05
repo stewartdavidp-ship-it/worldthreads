@@ -2,9 +2,23 @@
 
 History isn't a collection of events. It's the threads that connect them.
 
-WorldThreads v0.4 explores the 1816 world through **Source → Observation → Relationship → Thread → Mechanism**. The main context window includes antecedents and later outcomes; the dataset count includes these records. A clearly labeled 1807–1816 coral reconstruction is retained because it cannot responsibly be presented as an annual 1816 measurement.
+WorldThreads v0.5 explores the 1816 world through sources, observations, historical objects, relationships, threads and mechanisms. Objects identify people, movements, places, institutions, inventions, works, events, natural hazards and other factors. Observations remain the sourced claims about them.
 
-The dark-mode prototype contains 78 observations, 48 sources, 55 relationship claims, 23 curated threads and 12 mechanism hypotheses. It covers six continents plus marine records, with major research gaps still open. New coverage includes Asante exchange, Madagascar diplomacy, Korean harvest recovery, seasonal Himalayan drought, Bengal cholera reports, Bali’s prolonged crisis, Dutch relief, Swiss crop models, Virginia measurements, Brazil patronage, Andean workshops, Australian flooding and Pacific exchange.
+The dark-mode prototype contains 78 observations, 48 sources, 55 observation relationship claims, 23 threads, 12 mechanism hypotheses and 173 objects, including 15 people. Its 197 object links include 55 exact projections of existing claims and 142 documented roles/context links. Coverage spans six continents plus marine records; gaps remain open. Dated antecedents, later outcomes and multi-year reconstructions retain their actual scope.
+
+## Ways into the investigation
+
+- **Choose a story:** three guided starting points, with an unfolding diagram, evidence detours and open questions. Dutch relief uses four clue-interpretation tasks before advancing.
+- **People, places & things:** start with a familiar object, follow its incoming/outgoing roles and change claims, inspect sources, then enter a thread. Forces affecting a person’s actions or works are distinguished from evidence of their motives. Missing influences can start an object-scoped research question.
+- **Research library:** search/filter all observations, inspect actual relationship endpoints, compare mechanisms and follow research gaps. Context and association never automatically become causal claims.
+
+## Progress and the research loop
+
+The optional 1816 Evidence Expedition goal is three case files and two evidence challenges. Each case requires supporting records, an evidence limit and a next research move. Unique rewards, badges, stages and resume positions persist in this browser. Badges recognise activities and supported in-app interpretations; they do not certify historical truth.
+
+Any thread can start a thesis investigation without completing unrelated stories. An earned case also leads directly into its thread’s thesis workspace. Readers write a provisional argument, methods, claim–evidence entries, counterargument, revision criteria, chapters and a research plan, then export a Markdown draft with registered-source bibliography.
+
+Dead ends become research tasks: specify the missing link, identify a source capable of testing it, check provenance and scope, preserve conflicting evidence and revise the premise. Sourced proposal JSON can be imported into a separate local corpus and selected as explicitly unreviewed candidate evidence. Imports do not change the registered graph; a repeated claim is not new evidence. Drafts, proposals and progress are local, not shared or synced.
 
 ## Explore locally
 
@@ -14,8 +28,6 @@ python3 -m http.server 8000
 
 Open http://localhost:8000. No build or runtime package installation is required.
 
-Search by place, topic, date or evidence type; combine region and system filters. Regional markers filter gathered evidence. Choose a thread, open observations, or click a connection to examine its sources, causal status, alternatives and lag. Follow incoming/outgoing connections from the evidence dialog. Filter evidence types and 1816 coverage separately from earlier/later context; sort observations chronologically or by title. Research gaps link to added records, related threads and remaining questions. Mechanisms expose possible buffers, sourced counterexamples and related threads. Similarity is a hypothesis, not proof of a shared cause.
-
 ## Verify
 
 ```bash
@@ -23,24 +35,17 @@ python3 tests/validate-data.py
 node --check app.js
 ```
 
-The optional browser regression requires Playwright and installed Chromium, plus a running local server on port 8765:
+Optional browser suites require Playwright, installed Chromium and a local server on port 8765:
 
 ```bash
 node tests/explorer.cjs
+node tests/progress.cjs
+node tests/objects.cjs
+node tests/research-flow.cjs
 ```
 
-Set `WORLDTHREADS_URL` to use another local port. Browser tests check every rendered relationship endpoint, claim dialogs, filtering, keyboard access, evidence traversal and mobile width. Validation checks graph references and evidence metadata; it cannot certify historical truth.
+Set `WORLDTHREADS_URL` for another port. The research-flow suite runs the Dutch thread through the real game, a case, a thesis, a dead end, a local import and draft export. Its import deliberately repeats a registered authorization claim, demonstrating that file acceptance does not resolve the missing delivery evidence. Set `WORLDTHREADS_PILOT_OUTPUT` to save the pilot document to a chosen path.
 
-Research stress-test findings and limitations are in [docs/RESEARCH_AUDIT.md](docs/RESEARCH_AUDIT.md). The model is documented in [docs/DATA_MODEL.md](docs/DATA_MODEL.md) and the project scope in [docs/PROJECT_SPEC.md](docs/PROJECT_SPEC.md).
+Validation checks identifiers, dates, reciprocal object membership, provenance and exact preservation of relationship claims. Browser suites check navigation, game gates, rewards, case files, object/thread entry, imports, exports and mobile width. They do not certify historical truth or thesis quality.
 
-### Exploring linked facts
-
-Opening a fact focuses on its incoming and outgoing connections. Follow a neighboring fact to recenter, select “Why linked?” to inspect the relationship, and use Back or the exploration breadcrumbs to retrace your steps. Evidence and record details have separate views; sources expand on demand. Navigation history is not presented as a causal chain.
-
-The default opening is now a six-step guided investigation: **why did a weather shock become a food crisis in some places, while others had good harvests?** Readers choose a working hypothesis, examine a counterexample, and reach a qualified conclusion. The full explorer remains available under **Research library**.
-
-The opening **Choose a story** shelf offers three guided journeys. Each includes an unfolding interactive diagram and an explicit unanswered question. **Help extend this story** saves a sourced proposal locally and downloads it for review; proposals are not submitted or added to the established evidence graph.
-
-Dutch relief now includes a four-layer **evidence workbench**: inspect actual record summaries, compare clues and interpret what they support before advancing. A local field journal tracks unique milestones, badges, ranks and resume points. Investigating one story unlocks a claim challenge; all three unlock a comparison challenge. Rewards track participation and supported in-app interpretations, not historical truth or approval of proposals.
-
-The main progression goal is now **3 case files + 2 evidence challenges**. Each case requires supporting records, an evidence limit and the next research move. Expedition completion unlocks a local **thesis workspace** for your provisional argument, methods, claim–evidence table, counterargument and chapter plan, with Markdown export and registered-source bibliography. Badges remain optional skill markers, and in-app completion does not certify scholarly validity.
+See [the data model](docs/DATA_MODEL.md), [exploration design](docs/EXPLORER_DESIGN.md), [research audit and limits](docs/RESEARCH_AUDIT.md) and [project scope](docs/PROJECT_SPEC.md).

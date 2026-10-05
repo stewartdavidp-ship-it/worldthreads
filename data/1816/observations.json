@@ -28,7 +28,13 @@
     ],
     "researchStatus": "Verified",
     "uncertainty": "Salem air-temperature observations provide regional context; these are not direct sea-temperature measurements or a Gulf-wide instrumental network.",
-    "sourceLocator": "Alexander et al., results and temperature-series methods"
+    "sourceLocator": "Alexander et al., results and temperature-series methods",
+    "objectRefs": [
+      "OBJ-1816-0001",
+      "OBJ-PLACE-001",
+      "OBJ-POLITY-united-states"
+    ],
+    "primaryObjectId": "OBJ-1816-0001"
   },
   {
     "id": "WT-1816-0002",
@@ -57,7 +63,13 @@
       "SRC-002"
     ],
     "researchStatus": "Verified",
-    "uncertainty": "Species responses are inferred from fisheries records, air temperatures and later phenological knowledge; direct fish behavior and mortality were not measured in 1816."
+    "uncertainty": "Species responses are inferred from fisheries records, air temperatures and later phenological knowledge; direct fish behavior and mortality were not measured in 1816.",
+    "objectRefs": [
+      "OBJ-1816-0002",
+      "OBJ-PLACE-002",
+      "OBJ-POLITY-united-states"
+    ],
+    "primaryObjectId": "OBJ-1816-0002"
   },
   {
     "id": "WT-1816-0003",
@@ -86,7 +98,13 @@
     "sourceRefs": [
       "SRC-002"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Verified",
+    "objectRefs": [
+      "OBJ-1816-0003",
+      "OBJ-PLACE-003",
+      "OBJ-POLITY-united-states"
+    ],
+    "primaryObjectId": "OBJ-1816-0003"
   },
   {
     "id": "WT-1816-0004",
@@ -115,7 +133,13 @@
     "sourceRefs": [
       "SRC-002"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Verified",
+    "objectRefs": [
+      "OBJ-1816-0004",
+      "OBJ-PLACE-001",
+      "OBJ-POLITY-united-states"
+    ],
+    "primaryObjectId": "OBJ-1816-0004"
   },
   {
     "id": "WT-1816-0005",
@@ -143,7 +167,12 @@
       "SRC-001",
       "SRC-003"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Verified",
+    "objectRefs": [
+      "OBJ-1816-0005",
+      "OBJ-PLACE-004"
+    ],
+    "primaryObjectId": "OBJ-1816-0005"
   },
   {
     "id": "WT-1816-0006",
@@ -173,7 +202,12 @@
     "sourceRefs": [
       "SRC-001"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Verified",
+    "objectRefs": [
+      "OBJ-1816-0006",
+      "OBJ-PLACE-004"
+    ],
+    "primaryObjectId": "OBJ-1816-0006"
   },
   {
     "id": "WT-1816-0007",
@@ -207,7 +241,13 @@
     ],
     "researchStatus": "Verified",
     "sourceLocator": "Brázdil et al., pp. 1367–1368",
-    "uncertainty": "Local documentary account; not a measured regional rainfall total."
+    "uncertainty": "Local documentary account; not a measured regional rainfall total.",
+    "objectRefs": [
+      "OBJ-1816-0007",
+      "OBJ-PERSON-masek",
+      "OBJ-PLACE-005"
+    ],
+    "primaryObjectId": "OBJ-1816-0007"
   },
   {
     "id": "WT-1816-0008",
@@ -237,7 +277,13 @@
       "SRC-003"
     ],
     "researchStatus": "Verified",
-    "contextNode": true
+    "contextNode": true,
+    "objectRefs": [
+      "OBJ-1816-0008",
+      "OBJ-tambora",
+      "OBJ-PLACE-006"
+    ],
+    "primaryObjectId": "OBJ-1816-0008"
   },
   {
     "id": "WT-1816-0009",
@@ -267,7 +313,12 @@
     "sourceRefs": [
       "SRC-004"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Verified",
+    "objectRefs": [
+      "OBJ-1816-0009",
+      "OBJ-PLACE-007"
+    ],
+    "primaryObjectId": "OBJ-1816-0009"
   },
   {
     "id": "WT-1816-0010",
@@ -296,7 +347,12 @@
     "sourceRefs": [
       "SRC-005"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Verified",
+    "objectRefs": [
+      "OBJ-1816-0010",
+      "OBJ-PLACE-008"
+    ],
+    "primaryObjectId": "OBJ-1816-0010"
   },
   {
     "id": "WT-1816-0011",
@@ -324,7 +380,12 @@
       "SRC-005"
     ],
     "researchStatus": "Verified",
-    "contextNode": true
+    "contextNode": true,
+    "objectRefs": [
+      "OBJ-1816-0011",
+      "OBJ-PLACE-009"
+    ],
+    "primaryObjectId": "OBJ-1816-0011"
   },
   {
     "id": "WT-1816-0012",
@@ -354,7 +415,13 @@
     ],
     "researchStatus": "Verified",
     "sourceLocator": "Gao et al., Table 1 and section 3.1",
-    "uncertainty": "Reported snow and ice include late 1815–January 1816; events are not all confined to calendar 1816."
+    "uncertainty": "Reported snow and ice include late 1815–January 1816; events are not all confined to calendar 1816.",
+    "objectRefs": [
+      "OBJ-1816-0012",
+      "OBJ-PLACE-010",
+      "OBJ-POLITY-qing"
+    ],
+    "primaryObjectId": "OBJ-1816-0012"
   },
   {
     "id": "WT-1816-0013",
@@ -384,7 +451,13 @@
     ],
     "researchStatus": "Verified",
     "sourceLocator": "Gao et al., section 3.2",
-    "uncertainty": "Drying is not uniformly supported across regions or reconstruction methods."
+    "uncertainty": "Drying is not uniformly supported across regions or reconstruction methods.",
+    "objectRefs": [
+      "OBJ-1816-0013",
+      "OBJ-PLACE-011",
+      "OBJ-POLITY-qing"
+    ],
+    "primaryObjectId": "OBJ-1816-0013"
   },
   {
     "id": "WT-1816-0014",
@@ -411,7 +484,13 @@
     "sourceRefs": [
       "SRC-012"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Verified",
+    "objectRefs": [
+      "OBJ-1816-0014",
+      "OBJ-PERSON-laennec",
+      "OBJ-PLACE-012"
+    ],
+    "primaryObjectId": "OBJ-1816-0014"
   },
   {
     "id": "WT-1816-0015",
@@ -439,7 +518,13 @@
       "SRC-013",
       "SRC-014"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Verified",
+    "objectRefs": [
+      "OBJ-1816-0015",
+      "OBJ-PERSON-mary-godwin",
+      "OBJ-PLACE-013"
+    ],
+    "primaryObjectId": "OBJ-1816-0015"
   },
   {
     "id": "WT-1816-0016",
@@ -465,7 +550,15 @@
     "sourceRefs": [
       "SRC-007"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Verified",
+    "objectRefs": [
+      "OBJ-1816-0016",
+      "OBJ-tucuman-congress",
+      "OBJ-independence",
+      "OBJ-PLACE-014",
+      "OBJ-POLITY-rio-plata"
+    ],
+    "primaryObjectId": "OBJ-1816-0016"
   },
   {
     "id": "WT-1816-0017",
@@ -491,7 +584,12 @@
     "sourceRefs": [
       "SRC-008"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Verified",
+    "objectRefs": [
+      "OBJ-1816-0017",
+      "OBJ-PLACE-015"
+    ],
+    "primaryObjectId": "OBJ-1816-0017"
   },
   {
     "id": "WT-1816-0018",
@@ -521,7 +619,13 @@
     "sourceRefs": [
       "SRC-009"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Verified",
+    "objectRefs": [
+      "OBJ-1816-0018",
+      "OBJ-PERSON-pellew",
+      "OBJ-PLACE-016"
+    ],
+    "primaryObjectId": "OBJ-1816-0018"
   },
   {
     "id": "WT-1816-0019",
@@ -548,7 +652,13 @@
     "sourceRefs": [
       "SRC-010"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Verified",
+    "objectRefs": [
+      "OBJ-1816-0019",
+      "OBJ-PERSON-shaka",
+      "OBJ-PLACE-017"
+    ],
+    "primaryObjectId": "OBJ-1816-0019"
   },
   {
     "id": "WT-1816-0020",
@@ -575,7 +685,12 @@
     "sourceRefs": [
       "SRC-011"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Verified",
+    "objectRefs": [
+      "OBJ-1816-0020",
+      "OBJ-PLACE-018"
+    ],
+    "primaryObjectId": "OBJ-1816-0020"
   },
   {
     "id": "WT-1816-0021",
@@ -601,7 +716,13 @@
     "sourceRefs": [
       "SRC-015"
     ],
-    "researchStatus": "Verified"
+    "researchStatus": "Verified",
+    "objectRefs": [
+      "OBJ-1816-0021",
+      "OBJ-PERSON-rossini",
+      "OBJ-PLACE-019"
+    ],
+    "primaryObjectId": "OBJ-1816-0021"
   },
   {
     "id": "WT-1816-0022",
@@ -631,7 +752,12 @@
     "confidence": "High",
     "coverageType": "EVENT",
     "researchStatus": "Source checked",
-    "contextNode": true
+    "contextNode": true,
+    "objectRefs": [
+      "OBJ-1816-0022",
+      "OBJ-PLACE-020"
+    ],
+    "primaryObjectId": "OBJ-1816-0022"
   },
   {
     "id": "WT-1816-0023",
@@ -661,7 +787,12 @@
     "confidence": "High",
     "coverageType": "CONDITION",
     "researchStatus": "Source checked",
-    "contextNode": true
+    "contextNode": true,
+    "objectRefs": [
+      "OBJ-1816-0023",
+      "OBJ-PLACE-021"
+    ],
+    "primaryObjectId": "OBJ-1816-0023"
   },
   {
     "id": "WT-1816-0024",
@@ -691,7 +822,12 @@
     "confidence": "High",
     "coverageType": "EVENT",
     "researchStatus": "Source checked",
-    "contextNode": true
+    "contextNode": true,
+    "objectRefs": [
+      "OBJ-1816-0024",
+      "OBJ-PLACE-022"
+    ],
+    "primaryObjectId": "OBJ-1816-0024"
   },
   {
     "id": "WT-1816-0025",
@@ -721,7 +857,12 @@
     "confidence": "Medium-High",
     "coverageType": "CONDITION",
     "researchStatus": "Source checked",
-    "contextNode": false
+    "contextNode": false,
+    "objectRefs": [
+      "OBJ-1816-0025",
+      "OBJ-PLACE-023"
+    ],
+    "primaryObjectId": "OBJ-1816-0025"
   },
   {
     "id": "WT-1816-0026",
@@ -751,7 +892,13 @@
     "confidence": "High",
     "coverageType": "EVENT",
     "researchStatus": "Source checked",
-    "contextNode": false
+    "contextNode": false,
+    "objectRefs": [
+      "OBJ-1816-0026",
+      "OBJ-PERSON-macquarie",
+      "OBJ-PLACE-024"
+    ],
+    "primaryObjectId": "OBJ-1816-0026"
   },
   {
     "id": "WT-1816-0027",
@@ -781,7 +928,12 @@
     "confidence": "High",
     "coverageType": "EVENT",
     "researchStatus": "Source checked",
-    "contextNode": false
+    "contextNode": false,
+    "objectRefs": [
+      "OBJ-1816-0027",
+      "OBJ-PLACE-025"
+    ],
+    "primaryObjectId": "OBJ-1816-0027"
   },
   {
     "id": "WT-1816-0028",
@@ -810,7 +962,13 @@
     "confidence": "High",
     "coverageType": "EVENT",
     "researchStatus": "Source checked",
-    "contextNode": false
+    "contextNode": false,
+    "objectRefs": [
+      "OBJ-1816-0028",
+      "OBJ-PERSON-macquarie",
+      "OBJ-PLACE-026"
+    ],
+    "primaryObjectId": "OBJ-1816-0028"
   },
   {
     "id": "WT-1816-0029",
@@ -839,7 +997,15 @@
     "confidence": "High",
     "coverageType": "EVENT",
     "researchStatus": "Source checked",
-    "contextNode": false
+    "contextNode": false,
+    "objectRefs": [
+      "OBJ-1816-0029",
+      "OBJ-PERSON-san-martin",
+      "OBJ-army-andes",
+      "OBJ-PLACE-027",
+      "OBJ-POLITY-rio-plata"
+    ],
+    "primaryObjectId": "OBJ-1816-0029"
   },
   {
     "id": "WT-1816-0030",
@@ -868,7 +1034,13 @@
     "confidence": "High",
     "coverageType": "EVENT",
     "researchStatus": "Source checked",
-    "contextNode": true
+    "contextNode": true,
+    "objectRefs": [
+      "OBJ-1816-0030",
+      "OBJ-army-andes",
+      "OBJ-PLACE-028"
+    ],
+    "primaryObjectId": "OBJ-1816-0030"
   },
   {
     "id": "WT-1816-0031",
@@ -897,7 +1069,14 @@
     "confidence": "High",
     "coverageType": "EVENT",
     "researchStatus": "Source checked",
-    "contextNode": true
+    "contextNode": true,
+    "objectRefs": [
+      "OBJ-1816-0031",
+      "OBJ-PERSON-san-martin",
+      "OBJ-army-andes",
+      "OBJ-PLACE-029"
+    ],
+    "primaryObjectId": "OBJ-1816-0031"
   },
   {
     "id": "WT-1816-0032",
@@ -927,7 +1106,13 @@
     "uncertainty": "Commodity-specific city series; no national household average is implied.",
     "researchStatus": "Source checked; limits recorded",
     "contextNode": false,
-    "gapRefs": []
+    "gapRefs": [],
+    "objectRefs": [
+      "OBJ-1816-0032",
+      "OBJ-PLACE-030",
+      "OBJ-POLITY-netherlands"
+    ],
+    "primaryObjectId": "OBJ-1816-0032"
   },
   {
     "id": "WT-1816-0033",
@@ -957,7 +1142,13 @@
     "uncertainty": "An inventory establishes administrative action, not adequate reserves.",
     "researchStatus": "Source checked; limits recorded",
     "contextNode": false,
-    "gapRefs": []
+    "gapRefs": [],
+    "objectRefs": [
+      "OBJ-1816-0033",
+      "OBJ-PLACE-031",
+      "OBJ-POLITY-netherlands"
+    ],
+    "primaryObjectId": "OBJ-1816-0033"
   },
   {
     "id": "WT-1816-0034",
@@ -988,7 +1179,13 @@
     "uncertainty": "Imports alone do not establish effective price relief.",
     "researchStatus": "Source checked; limits recorded",
     "contextNode": false,
-    "gapRefs": []
+    "gapRefs": [],
+    "objectRefs": [
+      "OBJ-1816-0034",
+      "OBJ-PLACE-032",
+      "OBJ-POLITY-netherlands"
+    ],
+    "primaryObjectId": "OBJ-1816-0034"
   },
   {
     "id": "WT-1816-0035",
@@ -1021,7 +1218,13 @@
     "contextNode": true,
     "gapRefs": [],
     "value": 500,
-    "unit": "lasts of rye authorized"
+    "unit": "lasts of rye authorized",
+    "objectRefs": [
+      "OBJ-1816-0035",
+      "OBJ-PLACE-030",
+      "OBJ-POLITY-netherlands"
+    ],
+    "primaryObjectId": "OBJ-1816-0035"
   },
   {
     "id": "WT-1816-0036",
@@ -1054,7 +1257,12 @@
     "contextNode": false,
     "gapRefs": [],
     "value": "20–50",
-    "unit": "percent simulated potential yield reduction"
+    "unit": "percent simulated potential yield reduction",
+    "objectRefs": [
+      "OBJ-1816-0036",
+      "OBJ-PLACE-033"
+    ],
+    "primaryObjectId": "OBJ-1816-0036"
   },
   {
     "id": "WT-1816-0037",
@@ -1085,7 +1293,12 @@
     "uncertainty": "Differences suggest potential buffers; realized crop diversification is not established.",
     "researchStatus": "Source checked; limits recorded",
     "contextNode": false,
-    "gapRefs": []
+    "gapRefs": [],
+    "objectRefs": [
+      "OBJ-1816-0037",
+      "OBJ-PLACE-033"
+    ],
+    "primaryObjectId": "OBJ-1816-0037"
   },
   {
     "id": "WT-1816-0038",
@@ -1117,7 +1330,12 @@
     "contextNode": true,
     "gapRefs": [
       "GAP-008"
-    ]
+    ],
+    "objectRefs": [
+      "OBJ-1816-0038",
+      "OBJ-PLACE-034"
+    ],
+    "primaryObjectId": "OBJ-1816-0038"
   },
   {
     "id": "WT-1816-0039",
@@ -1147,7 +1365,12 @@
     "uncertainty": "The headline increase of up to about 100 times is a model result, not a uniform regional probability.",
     "researchStatus": "Source checked; limits recorded",
     "contextNode": false,
-    "gapRefs": []
+    "gapRefs": [],
+    "objectRefs": [
+      "OBJ-1816-0039",
+      "OBJ-PLACE-035"
+    ],
+    "primaryObjectId": "OBJ-1816-0039"
   },
   {
     "id": "WT-1816-0040",
@@ -1178,7 +1401,12 @@
     "uncertainty": "Temperature and rainfall have different attribution strengths; precipitation must not be assigned to Tambora alone.",
     "researchStatus": "Source checked; limits recorded",
     "contextNode": false,
-    "gapRefs": []
+    "gapRefs": [],
+    "objectRefs": [
+      "OBJ-1816-0040",
+      "OBJ-PLACE-035"
+    ],
+    "primaryObjectId": "OBJ-1816-0040"
   },
   {
     "id": "WT-1816-0041",
@@ -1211,7 +1439,14 @@
     "gapRefs": [],
     "value": 53,
     "unit": "degrees Fahrenheit, reported partial-month morning mean",
-    "baseline": "63°F reported mean in other years"
+    "baseline": "63°F reported mean in other years",
+    "objectRefs": [
+      "OBJ-1816-0041",
+      "OBJ-PERSON-jefferson",
+      "OBJ-PLACE-036",
+      "OBJ-POLITY-united-states"
+    ],
+    "primaryObjectId": "OBJ-1816-0041"
   },
   {
     "id": "WT-1816-0042",
@@ -1241,7 +1476,14 @@
     "uncertainty": "Fruit damage is reported; the wheat/tobacco statement is a forecast, not a final yield count.",
     "researchStatus": "Source checked; limits recorded",
     "contextNode": false,
-    "gapRefs": []
+    "gapRefs": [],
+    "objectRefs": [
+      "OBJ-1816-0042",
+      "OBJ-PERSON-jefferson",
+      "OBJ-PLACE-037",
+      "OBJ-POLITY-united-states"
+    ],
+    "primaryObjectId": "OBJ-1816-0042"
   },
   {
     "id": "WT-1816-0043",
@@ -1272,7 +1514,14 @@
     "researchStatus": "Source checked; limits recorded",
     "contextNode": false,
     "gapRefs": [],
-    "baseline": "Jefferson’s stated June/August averages, drawn from Notes on the State of Virginia"
+    "baseline": "Jefferson’s stated June/August averages, drawn from Notes on the State of Virginia",
+    "objectRefs": [
+      "OBJ-1816-0043",
+      "OBJ-PERSON-jefferson",
+      "OBJ-PLACE-036",
+      "OBJ-POLITY-united-states"
+    ],
+    "primaryObjectId": "OBJ-1816-0043"
   },
   {
     "id": "WT-1816-0044",
@@ -1302,7 +1551,14 @@
     "uncertainty": "Contemporary estimate, not an independently compiled realized harvest statistic.",
     "researchStatus": "Source checked; limits recorded",
     "contextNode": false,
-    "gapRefs": []
+    "gapRefs": [],
+    "objectRefs": [
+      "OBJ-1816-0044",
+      "OBJ-PERSON-jefferson",
+      "OBJ-PLACE-038",
+      "OBJ-POLITY-united-states"
+    ],
+    "primaryObjectId": "OBJ-1816-0044"
   },
   {
     "id": "WT-1816-0045",
@@ -1336,7 +1592,13 @@
     "gapRefs": [
       "GAP-010"
     ],
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0045",
+      "OBJ-PLACE-039",
+      "OBJ-POLITY-choson"
+    ],
+    "primaryObjectId": "OBJ-1816-0045"
   },
   {
     "id": "WT-1816-0046",
@@ -1369,7 +1631,13 @@
     "gapRefs": [
       "GAP-010"
     ],
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0046",
+      "OBJ-PLACE-040",
+      "OBJ-POLITY-choson"
+    ],
+    "primaryObjectId": "OBJ-1816-0046"
   },
   {
     "id": "WT-1816-0047",
@@ -1403,7 +1671,13 @@
     "gapRefs": [
       "GAP-010"
     ],
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0047",
+      "OBJ-PLACE-039",
+      "OBJ-POLITY-choson"
+    ],
+    "primaryObjectId": "OBJ-1816-0047"
   },
   {
     "id": "WT-1816-0048",
@@ -1436,7 +1710,13 @@
     "gapRefs": [
       "GAP-010"
     ],
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0048",
+      "OBJ-PLACE-041",
+      "OBJ-POLITY-choson"
+    ],
+    "primaryObjectId": "OBJ-1816-0048"
   },
   {
     "id": "WT-1816-0049",
@@ -1472,7 +1752,12 @@
     ],
     "value": -1.92,
     "unit": "reconstructed SPI7-May",
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0049",
+      "OBJ-PLACE-042"
+    ],
+    "primaryObjectId": "OBJ-1816-0049"
   },
   {
     "id": "WT-1816-0050",
@@ -1508,7 +1793,12 @@
       "GAP-009"
     ],
     "dateBasis": "Report/letter date, not necessarily event onset.",
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0050",
+      "OBJ-PLACE-043"
+    ],
+    "primaryObjectId": "OBJ-1816-0050"
   },
   {
     "id": "WT-1816-0051",
@@ -1542,7 +1832,12 @@
       "GAP-008",
       "GAP-009"
     ],
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0051",
+      "OBJ-PLACE-044"
+    ],
+    "primaryObjectId": "OBJ-1816-0051"
   },
   {
     "id": "WT-1816-0052",
@@ -1578,7 +1873,12 @@
       "GAP-009"
     ],
     "dateBasis": "Report/letter date, not necessarily event onset.",
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0052",
+      "OBJ-PLACE-045"
+    ],
+    "primaryObjectId": "OBJ-1816-0052"
   },
   {
     "id": "WT-1816-0053",
@@ -1611,7 +1911,12 @@
     "gapRefs": [
       "GAP-008"
     ],
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0053",
+      "OBJ-PLACE-046"
+    ],
+    "primaryObjectId": "OBJ-1816-0053"
   },
   {
     "id": "WT-1816-0054",
@@ -1644,7 +1949,13 @@
     "gapRefs": [
       "GAP-008"
     ],
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0054",
+      "OBJ-dublin-hospital",
+      "OBJ-PLACE-047"
+    ],
+    "primaryObjectId": "OBJ-1816-0054"
   },
   {
     "id": "WT-1816-0055",
@@ -1679,7 +1990,12 @@
       "GAP-008"
     ],
     "dateBasis": "Report/letter date, not necessarily event onset.",
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0055",
+      "OBJ-PLACE-048"
+    ],
+    "primaryObjectId": "OBJ-1816-0055"
   },
   {
     "id": "WT-1816-0056",
@@ -1712,7 +2028,12 @@
     "gapRefs": [
       "GAP-004"
     ],
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0056",
+      "OBJ-PLACE-049"
+    ],
+    "primaryObjectId": "OBJ-1816-0056"
   },
   {
     "id": "WT-1816-0057",
@@ -1745,7 +2066,12 @@
     "gapRefs": [
       "GAP-004"
     ],
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0057",
+      "OBJ-PLACE-050"
+    ],
+    "primaryObjectId": "OBJ-1816-0057"
   },
   {
     "id": "WT-1816-0058",
@@ -1778,7 +2104,12 @@
     "gapRefs": [
       "GAP-005"
     ],
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0058",
+      "OBJ-PLACE-051"
+    ],
+    "primaryObjectId": "OBJ-1816-0058"
   },
   {
     "id": "WT-1816-0059",
@@ -1811,7 +2142,12 @@
     "gapRefs": [
       "GAP-005"
     ],
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0059",
+      "OBJ-PLACE-051"
+    ],
+    "primaryObjectId": "OBJ-1816-0059"
   },
   {
     "id": "WT-1816-0060",
@@ -1847,7 +2183,15 @@
     ],
     "value": 371,
     "unit": "workers, approximate heritage-account estimate",
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0060",
+      "OBJ-army-andes",
+      "OBJ-mendoza-workshops",
+      "OBJ-PLACE-052",
+      "OBJ-POLITY-rio-plata"
+    ],
+    "primaryObjectId": "OBJ-1816-0060"
   },
   {
     "id": "WT-1816-0061",
@@ -1880,7 +2224,13 @@
     "gapRefs": [
       "GAP-006"
     ],
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0061",
+      "OBJ-PERSON-macquarie",
+      "OBJ-PLACE-053"
+    ],
+    "primaryObjectId": "OBJ-1816-0061"
   },
   {
     "id": "WT-1816-0062",
@@ -1914,7 +2264,12 @@
       "GAP-006",
       "GAP-007"
     ],
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0062",
+      "OBJ-PLACE-054"
+    ],
+    "primaryObjectId": "OBJ-1816-0062"
   },
   {
     "id": "WT-1816-0063",
@@ -1947,7 +2302,13 @@
     "gapRefs": [
       "GAP-006"
     ],
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0063",
+      "OBJ-PERSON-macquarie",
+      "OBJ-PLACE-055"
+    ],
+    "primaryObjectId": "OBJ-1816-0063"
   },
   {
     "id": "WT-1816-0064",
@@ -1980,7 +2341,13 @@
     "gapRefs": [
       "GAP-006"
     ],
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0064",
+      "OBJ-PERSON-macquarie",
+      "OBJ-PLACE-056"
+    ],
+    "primaryObjectId": "OBJ-1816-0064"
   },
   {
     "id": "WT-1816-0065",
@@ -2013,7 +2380,13 @@
     "gapRefs": [
       "GAP-006"
     ],
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0065",
+      "OBJ-PERSON-macquarie",
+      "OBJ-PLACE-057"
+    ],
+    "primaryObjectId": "OBJ-1816-0065"
   },
   {
     "id": "WT-1816-0066",
@@ -2046,7 +2419,13 @@
     "gapRefs": [
       "GAP-006"
     ],
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "objectRefs": [
+      "OBJ-1816-0066",
+      "OBJ-PERSON-macquarie",
+      "OBJ-PLACE-058"
+    ],
+    "primaryObjectId": "OBJ-1816-0066"
   },
   {
     "id": "WT-1816-0067",
@@ -2080,7 +2459,14 @@
       "GAP-001"
     ],
     "latitude": 6.6885,
-    "longitude": -1.6244
+    "longitude": -1.6244,
+    "objectRefs": [
+      "OBJ-1816-0067",
+      "OBJ-PERSON-daendels",
+      "OBJ-PERSON-huydecoper",
+      "OBJ-PLACE-059"
+    ],
+    "primaryObjectId": "OBJ-1816-0067"
   },
   {
     "id": "WT-1816-0068",
@@ -2114,7 +2500,14 @@
       "GAP-001"
     ],
     "latitude": 6.6885,
-    "longitude": -1.6244
+    "longitude": -1.6244,
+    "objectRefs": [
+      "OBJ-1816-0068",
+      "OBJ-PERSON-huydecoper",
+      "OBJ-PERSON-asantehene",
+      "OBJ-PLACE-060"
+    ],
+    "primaryObjectId": "OBJ-1816-0068"
   },
   {
     "id": "WT-1816-0069",
@@ -2148,7 +2541,14 @@
       "GAP-001"
     ],
     "latitude": 5.0847,
-    "longitude": -1.3509
+    "longitude": -1.3509,
+    "objectRefs": [
+      "OBJ-1816-0069",
+      "OBJ-PERSON-daendels",
+      "OBJ-PERSON-asantehene",
+      "OBJ-PLACE-061"
+    ],
+    "primaryObjectId": "OBJ-1816-0069"
   },
   {
     "id": "WT-1816-0070",
@@ -2183,7 +2583,14 @@
     ],
     "latitude": -20.16,
     "longitude": 57.5,
-    "dateBasis": "Dispatch date; arrival occurred by this date."
+    "dateBasis": "Dispatch date; arrival occurred by this date.",
+    "objectRefs": [
+      "OBJ-1816-0070",
+      "OBJ-PERSON-radama",
+      "OBJ-PERSON-farquhar",
+      "OBJ-PLACE-062"
+    ],
+    "primaryObjectId": "OBJ-1816-0070"
   },
   {
     "id": "WT-1816-0071",
@@ -2217,7 +2624,14 @@
       "GAP-002"
     ],
     "latitude": -18.8792,
-    "longitude": 47.5079
+    "longitude": 47.5079,
+    "objectRefs": [
+      "OBJ-1816-0071",
+      "OBJ-PERSON-radama",
+      "OBJ-PERSON-lesage",
+      "OBJ-PLACE-063"
+    ],
+    "primaryObjectId": "OBJ-1816-0071"
   },
   {
     "id": "WT-1816-0072",
@@ -2251,7 +2665,15 @@
       "GAP-002"
     ],
     "latitude": -18.8792,
-    "longitude": 47.5079
+    "longitude": 47.5079,
+    "objectRefs": [
+      "OBJ-1816-0072",
+      "OBJ-PERSON-radama",
+      "OBJ-PERSON-farquhar",
+      "OBJ-PERSON-lesage",
+      "OBJ-PLACE-063"
+    ],
+    "primaryObjectId": "OBJ-1816-0072"
   },
   {
     "id": "WT-1816-0073",
@@ -2285,7 +2707,14 @@
       "GAP-002"
     ],
     "latitude": -18.1492,
-    "longitude": 49.4023
+    "longitude": 49.4023,
+    "objectRefs": [
+      "OBJ-1816-0073",
+      "OBJ-PERSON-radama",
+      "OBJ-PERSON-farquhar",
+      "OBJ-PLACE-064"
+    ],
+    "primaryObjectId": "OBJ-1816-0073"
   },
   {
     "id": "WT-1816-0074",
@@ -2324,7 +2753,12 @@
     "longitude": 50,
     "value": -0.6,
     "unit": "degrees Celsius, reconstructed shipboard air anomaly",
-    "baseline": "1794–1833 shipping-corridor series average"
+    "baseline": "1794–1833 shipping-corridor series average",
+    "objectRefs": [
+      "OBJ-1816-0074",
+      "OBJ-PLACE-065"
+    ],
+    "primaryObjectId": "OBJ-1816-0074"
   },
   {
     "id": "WT-1816-0075",
@@ -2363,7 +2797,12 @@
     "extendedContextReason": "Multi-year proxy baseline overlaps 1816; retained to avoid inventing an annual value.",
     "value": -0.8,
     "unit": "degrees Celsius, approximate decadal SST reconstruction anomaly",
-    "baseline": "1961–1990"
+    "baseline": "1961–1990",
+    "objectRefs": [
+      "OBJ-1816-0075",
+      "OBJ-PLACE-066"
+    ],
+    "primaryObjectId": "OBJ-1816-0075"
   },
   {
     "id": "WT-1816-0076",
@@ -2397,7 +2836,12 @@
       "GAP-007"
     ],
     "latitude": 77,
-    "longitude": 0
+    "longitude": 0,
+    "objectRefs": [
+      "OBJ-1816-0076",
+      "OBJ-PLACE-067"
+    ],
+    "primaryObjectId": "OBJ-1816-0076"
   },
   {
     "id": "WT-1816-0077",
@@ -2431,7 +2875,12 @@
       "GAP-007"
     ],
     "latitude": 0,
-    "longitude": -30
+    "longitude": -30,
+    "objectRefs": [
+      "OBJ-1816-0077",
+      "OBJ-PLACE-068"
+    ],
+    "primaryObjectId": "OBJ-1816-0077"
   },
   {
     "id": "WT-1816-0078",
@@ -2466,6 +2915,11 @@
       "GAP-001"
     ],
     "latitude": 16.03,
-    "longitude": -16.5
+    "longitude": -16.5,
+    "objectRefs": [
+      "OBJ-1816-0078",
+      "OBJ-PLACE-069"
+    ],
+    "primaryObjectId": "OBJ-1816-0078"
   }
 ]

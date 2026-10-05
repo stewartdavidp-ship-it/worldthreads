@@ -1,0 +1,4059 @@
+[
+  {
+    "id": "OBJ-1816-0001",
+    "type": "ENVIRONMENTAL_EPISODE",
+    "subtype": "cold_episode",
+    "label": "Gulf of Maine regional cold conditions",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0001"
+    ],
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "North America"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0002",
+    "type": "BIOLOGICAL_SYSTEM",
+    "subtype": "fish_population",
+    "label": "Gulf of Maine migratory fish populations",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0002"
+    ],
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "North America"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0003",
+    "type": "PROCESS",
+    "subtype": "adaptation",
+    "label": "Gulf of Maine fishing-effort adaptation",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0003"
+    ],
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "North America"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0004",
+    "type": "PROCESS",
+    "subtype": "adaptation",
+    "label": "Gulf of Maine fishery transition",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0004"
+    ],
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1820",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "North America"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0005",
+    "type": "ENVIRONMENTAL_EPISODE",
+    "subtype": "cold_episode",
+    "label": "Czech Lands cold summer",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0005"
+    ],
+    "sourceRefs": [
+      "SRC-001",
+      "SRC-003"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0006",
+    "type": "CONDITION",
+    "subtype": "prices",
+    "label": "Czech grain harvest and price crisis",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0006"
+    ],
+    "sourceRefs": [
+      "SRC-001"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0007",
+    "type": "ENVIRONMENTAL_EPISODE",
+    "subtype": "persistent_rain",
+    "label": "Southwestern Bohemian persistent rain",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0007"
+    ],
+    "sourceRefs": [
+      "SRC-001"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-06-08",
+      "end": "1816-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0008",
+    "type": "ENVIRONMENTAL_EPISODE",
+    "subtype": "eruption",
+    "label": "Tambora eruption of April 1815",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0008"
+    ],
+    "sourceRefs": [
+      "SRC-003",
+      "SRC-016"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1815-04",
+      "end": "1815-04",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0009",
+    "type": "ENVIRONMENTAL_EPISODE",
+    "subtype": "cold_episode",
+    "label": "Geneva cold and cloudy summer",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0009"
+    ],
+    "sourceRefs": [
+      "SRC-004"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-06",
+      "end": "1816-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0010",
+    "type": "ENVIRONMENTAL_EPISODE",
+    "subtype": "snow_storage",
+    "label": "Alpine snow storage conditions",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0010"
+    ],
+    "sourceRefs": [
+      "SRC-005"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0011",
+    "type": "ENVIRONMENTAL_EPISODE",
+    "subtype": "flood",
+    "label": "Rhine and Lake Constance flooding",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0011"
+    ],
+    "sourceRefs": [
+      "SRC-005"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817-07-06",
+      "end": "1817-07-07",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0012",
+    "type": "ENVIRONMENTAL_EPISODE",
+    "subtype": "cold_episode",
+    "label": "Southern China cold conditions",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0012"
+    ],
+    "sourceRefs": [
+      "SRC-006"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1815",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0013",
+    "type": "CONDITION",
+    "subtype": "climate_reconstruction",
+    "label": "Regional Chinese hydroclimate conditions",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0013"
+    ],
+    "sourceRefs": [
+      "SRC-006"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0014",
+    "type": "TECHNOLOGY",
+    "subtype": "medical_instrument",
+    "label": "Stethoscope",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0014"
+    ],
+    "sourceRefs": [
+      "SRC-012"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0015",
+    "type": "WORK",
+    "subtype": "novel",
+    "label": "Frankenstein",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0015"
+    ],
+    "sourceRefs": [
+      "SRC-013",
+      "SRC-014"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-06",
+      "end": "1816-12",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0016",
+    "type": "EVENT",
+    "subtype": "declaration",
+    "label": "Tucumán declaration of independence",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0016"
+    ],
+    "sourceRefs": [
+      "SRC-007"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-07-09",
+      "end": "1816-07-09",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0017",
+    "type": "EVENT",
+    "subtype": "treaty",
+    "label": "Treaty of Sugauli ratification",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0017"
+    ],
+    "sourceRefs": [
+      "SRC-008"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-03-04",
+      "end": "1816-03-04",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0018",
+    "type": "EVENT",
+    "subtype": "battle",
+    "label": "Bombardment of Algiers",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0018"
+    ],
+    "sourceRefs": [
+      "SRC-009"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-08-27",
+      "end": "1816-08-27",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0019",
+    "type": "PROCESS",
+    "subtype": "political_expansion",
+    "label": "AmaZulu political and military expansion",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0019"
+    ],
+    "sourceRefs": [
+      "SRC-010"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0020",
+    "type": "EVENT",
+    "subtype": "execution",
+    "label": "Slachter’s Nek executions",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0020"
+    ],
+    "sourceRefs": [
+      "SRC-011"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-03-09",
+      "end": "1816-03-09",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0021",
+    "type": "WORK",
+    "subtype": "opera",
+    "label": "Il Barbiere di Siviglia",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0021"
+    ],
+    "sourceRefs": [
+      "SRC-015"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-02-20",
+      "end": "1816-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0022",
+    "type": "ENVIRONMENTAL_EPISODE",
+    "subtype": "eruption",
+    "label": "Sumbawa ashfall and crop damage",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0022"
+    ],
+    "sourceRefs": [
+      "SRC-017"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1815-04",
+      "end": "1815-04",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0023",
+    "type": "CONDITION",
+    "subtype": "food_pressure",
+    "label": "Sumbawa subsistence and health crisis",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0023"
+    ],
+    "sourceRefs": [
+      "SRC-018",
+      "SRC-019"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1815",
+      "end": "1815",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0024",
+    "type": "PROCESS",
+    "subtype": "trade",
+    "label": "Sumbawa rice relief and livestock sales",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0024"
+    ],
+    "sourceRefs": [
+      "SRC-018"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1815",
+      "end": "1815",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0025",
+    "type": "CONDITION",
+    "subtype": "climate_reconstruction",
+    "label": "Monsoon Asia reconstructed dry conditions",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0025"
+    ],
+    "sourceRefs": [
+      "SRC-019"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05",
+      "end": "1816-09",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0026",
+    "type": "EVENT",
+    "subtype": "war",
+    "label": "New South Wales punitive expeditions",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0026"
+    ],
+    "sourceRefs": [
+      "SRC-020",
+      "SRC-036"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-04-09",
+      "end": "1816-04-09",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceania"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0027",
+    "type": "EVENT",
+    "subtype": "massacre",
+    "label": "Appin massacre",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0027"
+    ],
+    "sourceRefs": [
+      "SRC-020"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-04-17",
+      "end": "1816-04-17",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceania"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0028",
+    "type": "POLICY",
+    "subtype": "restriction",
+    "label": "New South Wales Aboriginal restrictions proclamation",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0028"
+    ],
+    "sourceRefs": [
+      "SRC-020"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05-04",
+      "end": "1816-05-04",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceania"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0029",
+    "type": "PROCESS",
+    "subtype": "military_preparation",
+    "label": "Army of the Andes command and training",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0029"
+    ],
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-08-01",
+      "end": "1816-09-30",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0030",
+    "type": "EVENT",
+    "subtype": "military_crossing",
+    "label": "Army of the Andes crossing",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0030"
+    ],
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817-01-12",
+      "end": "1817-02-10",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0031",
+    "type": "EVENT",
+    "subtype": "battle",
+    "label": "Battle of Chacabuco",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0031"
+    ],
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817-02-12",
+      "end": "1817-02-12",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0032",
+    "type": "CONDITION",
+    "subtype": "prices",
+    "label": "Amsterdam staple-price crisis",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0032"
+    ],
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0033",
+    "type": "EVENT",
+    "subtype": "stock_inventory",
+    "label": "Delft grain-stock inventory",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0033"
+    ],
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-12",
+      "end": "1816-12",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0034",
+    "type": "PROCESS",
+    "subtype": "trade",
+    "label": "Dutch public grain purchases and transport",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0034"
+    ],
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-10",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0035",
+    "type": "POLICY",
+    "subtype": "subsidy",
+    "label": "Amsterdam subsidized rye authorization",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0035"
+    ],
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817-06-27",
+      "end": "1817-06-27",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0036",
+    "type": "CONDITION",
+    "subtype": "harvest",
+    "label": "Swiss modeled potato yields",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0036"
+    ],
+    "sourceRefs": [
+      "SRC-023"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0037",
+    "type": "BIOLOGICAL_SYSTEM",
+    "subtype": "crop",
+    "label": "Swiss crop sensitivity comparison",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0037"
+    ],
+    "sourceRefs": [
+      "SRC-023"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0038",
+    "type": "CONDITION",
+    "subtype": "nutrition",
+    "label": "Swiss malnutrition patterns",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0038"
+    ],
+    "sourceRefs": [
+      "SRC-023"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817",
+      "end": "1818",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0039",
+    "type": "CONDITION",
+    "subtype": "climate_reconstruction",
+    "label": "European cold attribution estimates",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0039"
+    ],
+    "sourceRefs": [
+      "SRC-024"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-06",
+      "end": "1816-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0040",
+    "type": "CONDITION",
+    "subtype": "climate_reconstruction",
+    "label": "European wetness attribution estimates",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0040"
+    ],
+    "sourceRefs": [
+      "SRC-024"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-06",
+      "end": "1816-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0041",
+    "type": "ENVIRONMENTAL_EPISODE",
+    "subtype": "cold_episode",
+    "label": "Virginia cold spring",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0041"
+    ],
+    "sourceRefs": [
+      "SRC-025"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05-01",
+      "end": "1816-05-17",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "North America"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0042",
+    "type": "CONDITION",
+    "subtype": "harvest",
+    "label": "Virginia early-fruit frost damage",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0042"
+    ],
+    "sourceRefs": [
+      "SRC-025"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05",
+      "end": "1816-05",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "North America"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0043",
+    "type": "ENVIRONMENTAL_EPISODE",
+    "subtype": "drought",
+    "label": "Monticello seasonal dryness",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0043"
+    ],
+    "sourceRefs": [
+      "SRC-026"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-06",
+      "end": "1816-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "North America"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0044",
+    "type": "CONDITION",
+    "subtype": "harvest",
+    "label": "Atlantic-state maize-shortfall forecast",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0044"
+    ],
+    "sourceRefs": [
+      "SRC-026"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-09-08",
+      "end": "1816-09-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "North America"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0045",
+    "type": "CONDITION",
+    "subtype": "harvest",
+    "label": "Korean rice and barley harvest conditions in 1816",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0045"
+    ],
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0046",
+    "type": "CONDITION",
+    "subtype": "climate_reconstruction",
+    "label": "Seoul rainfall reconstruction",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0046"
+    ],
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0047",
+    "type": "CONDITION",
+    "subtype": "harvest",
+    "label": "Korean rice harvest conditions in 1817",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0047"
+    ],
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0048",
+    "type": "CONDITION",
+    "subtype": "food_pressure",
+    "label": "Korean pre-Tambora famine and price crisis",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0048"
+    ],
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1814",
+      "end": "1815",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0049",
+    "type": "ENVIRONMENTAL_EPISODE",
+    "subtype": "drought",
+    "label": "Kumaun reconstructed winter–spring drought",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0049"
+    ],
+    "sourceRefs": [
+      "SRC-028"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1815-11-01",
+      "end": "1816-05-31",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0050",
+    "type": "PROCESS",
+    "subtype": "epidemic",
+    "label": "Jessore reported cholera outbreak",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0050"
+    ],
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817-08-23",
+      "end": "1817-08-23",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0051",
+    "type": "PROCESS",
+    "subtype": "migration",
+    "label": "Flight from Jessore during cholera reports",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0051"
+    ],
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817-08",
+      "end": "1817-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0052",
+    "type": "CONDITION",
+    "subtype": "health_exposure",
+    "label": "Calcutta reported cholera exposure",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0052"
+    ],
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817-09-15",
+      "end": "1817-09-15",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0053",
+    "type": "CONDITION",
+    "subtype": "food_pressure",
+    "label": "Irish scarcity and fever conditions",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0053"
+    ],
+    "sourceRefs": [
+      "SRC-031"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0054",
+    "type": "CONDITION",
+    "subtype": "health_capacity",
+    "label": "Dublin fever-hospital capacity",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0054"
+    ],
+    "sourceRefs": [
+      "SRC-032"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1818-01-01",
+      "end": "1818-12-31",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0055",
+    "type": "CONDITION",
+    "subtype": "food_pressure",
+    "label": "Bali reported mortality and subsistence crisis",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0055"
+    ],
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-10-26",
+      "end": "1816-10-26",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0056",
+    "type": "CONDITION",
+    "subtype": "harvest",
+    "label": "Bali and Lombok rice ash damage",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0056"
+    ],
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1815",
+      "end": "1815",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0057",
+    "type": "PROCESS",
+    "subtype": "epidemic",
+    "label": "Badung reported unspecified epidemic",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0057"
+    ],
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0058",
+    "type": "EVENT",
+    "subtype": "voyage",
+    "label": "French artists’ arrival in Rio",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0058"
+    ],
+    "sourceRefs": [
+      "SRC-033"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-03-26",
+      "end": "1816-03-26",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0059",
+    "type": "POLICY",
+    "subtype": "decree",
+    "label": "Brazilian artists’ pension and instruction decree",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0059"
+    ],
+    "sourceRefs": [
+      "SRC-034"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-08-12",
+      "end": "1816-08-12",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0060",
+    "type": "PROCESS",
+    "subtype": "manufacturing",
+    "label": "Mendoza military workshop production",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0060"
+    ],
+    "sourceRefs": [
+      "SRC-035"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0061",
+    "type": "EVENT",
+    "subtype": "diplomatic_dispatch",
+    "label": "Sydney dispatch of gifts for the Hawaiian king",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0061"
+    ],
+    "sourceRefs": [
+      "SRC-037"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05-01",
+      "end": "1816-05-01",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceania"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0062",
+    "type": "EVENT",
+    "subtype": "voyage",
+    "label": "Tahiti pork shipment to Sydney",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0062"
+    ],
+    "sourceRefs": [
+      "SRC-037"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05-28",
+      "end": "1816-05-28",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceania"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0063",
+    "type": "ENVIRONMENTAL_EPISODE",
+    "subtype": "storm",
+    "label": "Hawkesbury heavy rain and gales",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0063"
+    ],
+    "sourceRefs": [
+      "SRC-037"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05-31",
+      "end": "1816-05-31",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceania"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0064",
+    "type": "ENVIRONMENTAL_EPISODE",
+    "subtype": "flood",
+    "label": "Hawkesbury flood reports",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0064"
+    ],
+    "sourceRefs": [
+      "SRC-038"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-06-02",
+      "end": "1816-06-03",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceania"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0065",
+    "type": "EVENT",
+    "subtype": "official_account",
+    "label": "Official accounts of Appin conflict",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0065"
+    ],
+    "sourceRefs": [
+      "SRC-020"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-06-08",
+      "end": "1816-06-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceania"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0066",
+    "type": "EVENT",
+    "subtype": "forced_transfer",
+    "label": "Transfer of captured Aboriginal children to Parramatta",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0066"
+    ],
+    "sourceRefs": [
+      "SRC-038"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-06-06",
+      "end": "1816-06-06",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceania"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0067",
+    "type": "EVENT",
+    "subtype": "diplomatic_mission",
+    "label": "Huydecoper mission to the Asante court",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0067"
+    ],
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05-22",
+      "end": "1816-05-22",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0068",
+    "type": "EVENT",
+    "subtype": "diplomatic_exchange",
+    "label": "Asante court inquiry about imported silver",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0068"
+    ],
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05-24",
+      "end": "1816-05-24",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0069",
+    "type": "EVENT",
+    "subtype": "diplomatic_exchange",
+    "label": "Dutch silver gift for the Asante court",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0069"
+    ],
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0070",
+    "type": "EVENT",
+    "subtype": "reported_visit",
+    "label": "Reported visit of Radama’s relatives to Mauritius",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0070"
+    ],
+    "sourceRefs": [
+      "SRC-041"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-09-12",
+      "end": "1816-09-12",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0071",
+    "type": "EVENT",
+    "subtype": "diplomatic_mission",
+    "label": "Lesage mission to Imerina",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0071"
+    ],
+    "sourceRefs": [
+      "SRC-040"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-11",
+      "end": "1817-04",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0072",
+    "type": "EVENT",
+    "subtype": "treaty",
+    "label": "Preliminary Radama–Lesage agreement",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0072"
+    ],
+    "sourceRefs": [
+      "SRC-040"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817-02-04",
+      "end": "1817-02-04",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0073",
+    "type": "POLICY",
+    "subtype": "proclamation",
+    "label": "Radama slave-export prohibition proclamation",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0073"
+    ],
+    "sourceRefs": [
+      "SRC-042"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817-10-23",
+      "end": "1817-10-23",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0074",
+    "type": "CONDITION",
+    "subtype": "climate_reconstruction",
+    "label": "Atlantic–Indian route air-temperature reconstruction",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0074"
+    ],
+    "sourceRefs": [
+      "SRC-019",
+      "SRC-044"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceans"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0075",
+    "type": "CONDITION",
+    "subtype": "climate_reconstruction",
+    "label": "Indian Ocean coral temperature reconstruction",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0075"
+    ],
+    "sourceRefs": [
+      "SRC-043"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1807",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceans"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0076",
+    "type": "CONDITION",
+    "subtype": "climate_reconstruction",
+    "label": "Greenland Sea temperature and ice contrast",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0076"
+    ],
+    "sourceRefs": [
+      "SRC-045"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceans"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0077",
+    "type": "CONDITION",
+    "subtype": "climate_reconstruction",
+    "label": "Modeled upper-ocean heat loss",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0077"
+    ],
+    "sourceRefs": [
+      "SRC-046"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceans"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0078",
+    "type": "EVENT",
+    "subtype": "voyage",
+    "label": "Méduse expedition and Saint-Louis restoration",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0078"
+    ],
+    "sourceRefs": [
+      "SRC-047",
+      "SRC-048"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817-06-25",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-PERSON-san-martin",
+    "type": "PERSON",
+    "subtype": "commander",
+    "label": "San Martín",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0029",
+      "WT-1816-0031"
+    ],
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-08-01",
+      "end": "1817-02-12",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-PERSON-macquarie",
+    "type": "PERSON",
+    "subtype": "colonial_governor",
+    "label": "Macquarie",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0026",
+      "WT-1816-0028",
+      "WT-1816-0061",
+      "WT-1816-0063",
+      "WT-1816-0064",
+      "WT-1816-0065",
+      "WT-1816-0066"
+    ],
+    "sourceRefs": [
+      "SRC-020",
+      "SRC-036",
+      "SRC-037",
+      "SRC-038"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-04-09",
+      "end": "1816-06-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceania"
+    ]
+  },
+  {
+    "id": "OBJ-PERSON-mary-godwin",
+    "type": "PERSON",
+    "subtype": "writer",
+    "label": "Mary Godwin",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0015"
+    ],
+    "sourceRefs": [
+      "SRC-013",
+      "SRC-014"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-06",
+      "end": "1816-12",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PERSON-laennec",
+    "type": "PERSON",
+    "subtype": "inventor",
+    "label": "Laennec",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0014"
+    ],
+    "sourceRefs": [
+      "SRC-012"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PERSON-rossini",
+    "type": "PERSON",
+    "subtype": "composer",
+    "label": "Rossini",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0021"
+    ],
+    "sourceRefs": [
+      "SRC-015"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-02-20",
+      "end": "1816-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PERSON-shaka",
+    "type": "PERSON",
+    "subtype": "ruler",
+    "label": "Shaka",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0019"
+    ],
+    "sourceRefs": [
+      "SRC-010"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-PERSON-jefferson",
+    "type": "PERSON",
+    "subtype": "observer",
+    "label": "Jefferson",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0041",
+      "WT-1816-0042",
+      "WT-1816-0043",
+      "WT-1816-0044"
+    ],
+    "sourceRefs": [
+      "SRC-025",
+      "SRC-026"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05",
+      "end": "1816-09-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "North America"
+    ]
+  },
+  {
+    "id": "OBJ-PERSON-masek",
+    "type": "PERSON",
+    "subtype": "observer",
+    "label": "Václav Jan Mašek",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0007"
+    ],
+    "sourceRefs": [
+      "SRC-001"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-06-08",
+      "end": "1816-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PERSON-pellew",
+    "type": "PERSON",
+    "subtype": "commander",
+    "label": "Edward Pellew",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0018"
+    ],
+    "sourceRefs": [
+      "SRC-009"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-08-27",
+      "end": "1816-08-27",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-PERSON-radama",
+    "type": "PERSON",
+    "subtype": "ruler",
+    "label": "Radama",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0070",
+      "WT-1816-0071",
+      "WT-1816-0072",
+      "WT-1816-0073"
+    ],
+    "sourceRefs": [
+      "SRC-040",
+      "SRC-041",
+      "SRC-042"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-09-12",
+      "end": "1817-10-23",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-PERSON-farquhar",
+    "type": "PERSON",
+    "subtype": "colonial_governor",
+    "label": "Farquhar",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0070",
+      "WT-1816-0072",
+      "WT-1816-0073"
+    ],
+    "sourceRefs": [
+      "SRC-040",
+      "SRC-041",
+      "SRC-042"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-09-12",
+      "end": "1817-10-23",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-PERSON-lesage",
+    "type": "PERSON",
+    "subtype": "envoy",
+    "label": "Captain Lesage",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0071",
+      "WT-1816-0072"
+    ],
+    "sourceRefs": [
+      "SRC-040"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-11",
+      "end": "1817-04",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-PERSON-daendels",
+    "type": "PERSON",
+    "subtype": "colonial_administrator",
+    "label": "Daendels",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0067",
+      "WT-1816-0069"
+    ],
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1816-05-22",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-PERSON-huydecoper",
+    "type": "PERSON",
+    "subtype": "envoy",
+    "label": "Willem Huydecoper",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0067",
+      "WT-1816-0068"
+    ],
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05-22",
+      "end": "1816-05-24",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-PERSON-asantehene",
+    "type": "PERSON",
+    "subtype": "ruler",
+    "label": "Asantehene in the 1816 mission records",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0068",
+      "WT-1816-0069"
+    ],
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "researchStatus": "Provisional person identity",
+    "identityNote": "The evidence identifies the Asante court officeholder in the 1816 mission context. A personal name is not resolved in this registry; the title is not a complete biographical identity.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1816-05-24",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-army-andes",
+    "type": "INSTITUTION",
+    "subtype": "army",
+    "label": "Army of the Andes",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0029",
+      "WT-1816-0030",
+      "WT-1816-0031",
+      "WT-1816-0060"
+    ],
+    "sourceRefs": [
+      "SRC-021",
+      "SRC-035"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817-02-12",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-tucuman-congress",
+    "type": "INSTITUTION",
+    "subtype": "assembly",
+    "label": "Congress of Tucumán",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0016"
+    ],
+    "sourceRefs": [
+      "SRC-007"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-07-09",
+      "end": "1816-07-09",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-mendoza-workshops",
+    "type": "INSTITUTION",
+    "subtype": "workshop",
+    "label": "Mendoza maestranza",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0060"
+    ],
+    "sourceRefs": [
+      "SRC-035"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-dublin-hospital",
+    "type": "INSTITUTION",
+    "subtype": "hospital",
+    "label": "Dublin fever hospital",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0054"
+    ],
+    "sourceRefs": [
+      "SRC-032"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1818-01-01",
+      "end": "1818-12-31",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-independence",
+    "type": "MOVEMENT",
+    "subtype": "independence",
+    "label": "Spanish American independence process",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0016"
+    ],
+    "sourceRefs": [
+      "SRC-007"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-07-09",
+      "end": "1816-07-09",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-tambora",
+    "type": "NATURAL_FEATURE",
+    "subtype": "volcano",
+    "label": "Mount Tambora",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0008"
+    ],
+    "sourceRefs": [
+      "SRC-003",
+      "SRC-016"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1815-04",
+      "end": "1815-04",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-001",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Gulf of Maine",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0001",
+      "WT-1816-0004"
+    ],
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1820",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "North America"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-002",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Gulf of Maine watersheds",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0002"
+    ],
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "North America"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-003",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "New England / Gulf of Maine",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0003"
+    ],
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "North America"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-004",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Bohemia and Moravia",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0005",
+      "WT-1816-0006"
+    ],
+    "sourceRefs": [
+      "SRC-001",
+      "SRC-003"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-005",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Řenče / southwestern Bohemia",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0007"
+    ],
+    "sourceRefs": [
+      "SRC-001"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-06-08",
+      "end": "1816-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-006",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Mount Tambora, Sumbawa",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0008"
+    ],
+    "sourceRefs": [
+      "SRC-003",
+      "SRC-016"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1815-04",
+      "end": "1815-04",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-007",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Geneva",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0009"
+    ],
+    "sourceRefs": [
+      "SRC-004"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-06",
+      "end": "1816-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-008",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Swiss Alps / Rhine Basin",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0010"
+    ],
+    "sourceRefs": [
+      "SRC-005"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-009",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Rhine at Basel and Lake Constance",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0011"
+    ],
+    "sourceRefs": [
+      "SRC-005"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817-07-06",
+      "end": "1817-07-07",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-010",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Southern China",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0012"
+    ],
+    "sourceRefs": [
+      "SRC-006"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1815",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-011",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "China",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0013"
+    ],
+    "sourceRefs": [
+      "SRC-006"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-012",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Paris",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0014"
+    ],
+    "sourceRefs": [
+      "SRC-012"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-013",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Geneva / Cologny and later England",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0015"
+    ],
+    "sourceRefs": [
+      "SRC-013",
+      "SRC-014"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-06",
+      "end": "1816-12",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-014",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "San Miguel de Tucumán",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0016"
+    ],
+    "sourceRefs": [
+      "SRC-007"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-07-09",
+      "end": "1816-07-09",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-015",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Makwanpur region / Nepal",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0017"
+    ],
+    "sourceRefs": [
+      "SRC-008"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-03-04",
+      "end": "1816-03-04",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-016",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Algiers",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0018"
+    ],
+    "sourceRefs": [
+      "SRC-009"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-08-27",
+      "end": "1816-08-27",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-017",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "KwaZulu-Natal region",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0019"
+    ],
+    "sourceRefs": [
+      "SRC-010"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-018",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Van Aardtspos / Slachter’s Nek area",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0020"
+    ],
+    "sourceRefs": [
+      "SRC-011"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-03-09",
+      "end": "1816-03-09",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-019",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Rome; later Bologna",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0021"
+    ],
+    "sourceRefs": [
+      "SRC-015"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-02-20",
+      "end": "1816-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-020",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Sanggar Peninsula / Sumbawa",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0022"
+    ],
+    "sourceRefs": [
+      "SRC-017"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1815-04",
+      "end": "1815-04",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-021",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Sumbawa / Lombok",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0023"
+    ],
+    "sourceRefs": [
+      "SRC-018",
+      "SRC-019"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1815",
+      "end": "1815",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-022",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Sanggar / Sumbawa",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0024"
+    ],
+    "sourceRefs": [
+      "SRC-018"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1815",
+      "end": "1815",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-023",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "India / Southeast Asia",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0025"
+    ],
+    "sourceRefs": [
+      "SRC-019"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05",
+      "end": "1816-09",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-024",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Sydney hinterland",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0026"
+    ],
+    "sourceRefs": [
+      "SRC-020",
+      "SRC-036"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-04-09",
+      "end": "1816-04-09",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceania"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-025",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Appin / Cataract River",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0027"
+    ],
+    "sourceRefs": [
+      "SRC-020"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-04-17",
+      "end": "1816-04-17",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceania"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-026",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "New South Wales",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0028"
+    ],
+    "sourceRefs": [
+      "SRC-020"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05-04",
+      "end": "1816-05-04",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceania"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-027",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Mendoza / El Plumerillo",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0029"
+    ],
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-08-01",
+      "end": "1816-09-30",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-028",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Cuyo–Chile mountain passes",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0030"
+    ],
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817-01-12",
+      "end": "1817-02-10",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-029",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Chacabuco",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0031"
+    ],
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817-02-12",
+      "end": "1817-02-12",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-030",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Amsterdam",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0032",
+      "WT-1816-0035"
+    ],
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817-06-27",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-031",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Delft",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0033"
+    ],
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-12",
+      "end": "1816-12",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-032",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Amsterdam / Antwerp / Baltic ports",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0034"
+    ],
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-10",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-033",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Switzerland",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0036",
+      "WT-1816-0037"
+    ],
+    "sourceRefs": [
+      "SRC-023"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-034",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Switzerland, east–west comparison",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0038"
+    ],
+    "sourceRefs": [
+      "SRC-023"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817",
+      "end": "1818",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-035",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "European study domain",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0039",
+      "WT-1816-0040"
+    ],
+    "sourceRefs": [
+      "SRC-024"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-06",
+      "end": "1816-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-036",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Monticello / Virginia",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0041",
+      "WT-1816-0043"
+    ],
+    "sourceRefs": [
+      "SRC-025",
+      "SRC-026"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05-01",
+      "end": "1816-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "North America"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-037",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Virginia / Monticello correspondence",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0042"
+    ],
+    "sourceRefs": [
+      "SRC-025"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05",
+      "end": "1816-05",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "North America"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-038",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Atlantic states, as described from Virginia",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0044"
+    ],
+    "sourceRefs": [
+      "SRC-026"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-09-08",
+      "end": "1816-09-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "North America"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-039",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Chosŏn Korea",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0045",
+      "WT-1816-0047"
+    ],
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-040",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Seoul, Chosŏn Korea",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0046"
+    ],
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-041",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Sŏnsan / Andong, Chosŏn Korea",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0048"
+    ],
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1814",
+      "end": "1815",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-042",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Kumaun Himalaya, India",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0049"
+    ],
+    "sourceRefs": [
+      "SRC-028"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1815-11-01",
+      "end": "1816-05-31",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-043",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Jessore, Bengal Presidency (present-day Bangladesh)",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0050"
+    ],
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817-08-23",
+      "end": "1817-08-23",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-044",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Jessore, Bengal Presidency",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0051"
+    ],
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817-08",
+      "end": "1817-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-045",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Calcutta / Kolkata, Bengal Presidency",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0052"
+    ],
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817-09-15",
+      "end": "1817-09-15",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-046",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Ireland",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0053"
+    ],
+    "sourceRefs": [
+      "SRC-031"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-047",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Dublin, Ireland",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0054"
+    ],
+    "sourceRefs": [
+      "SRC-032"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1818-01-01",
+      "end": "1818-12-31",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-048",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Bali, Dutch East Indies",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0055"
+    ],
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-10-26",
+      "end": "1816-10-26",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-049",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Bali and Lombok",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0056"
+    ],
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1815",
+      "end": "1815",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-050",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Badung, Bali",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0057"
+    ],
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-051",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Rio de Janeiro, Brazil",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0058",
+      "WT-1816-0059"
+    ],
+    "sourceRefs": [
+      "SRC-033",
+      "SRC-034"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-03-26",
+      "end": "1816-08-12",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-052",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Mendoza, Río de la Plata",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0060"
+    ],
+    "sourceRefs": [
+      "SRC-035"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-053",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Sydney–Hawaiʻi–Northwest America–China",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0061"
+    ],
+    "sourceRefs": [
+      "SRC-037"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05-01",
+      "end": "1816-05-01",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceania"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-054",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Tahiti–Sydney",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0062"
+    ],
+    "sourceRefs": [
+      "SRC-037"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05-28",
+      "end": "1816-05-28",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceania"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-055",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Hawkesbury / Nepean / South Creek, Australia",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0063"
+    ],
+    "sourceRefs": [
+      "SRC-037"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05-31",
+      "end": "1816-05-31",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceania"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-056",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Windsor / Hawkesbury / Nepean, Australia",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0064"
+    ],
+    "sourceRefs": [
+      "SRC-038"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-06-02",
+      "end": "1816-06-03",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceania"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-057",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "New South Wales–London",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0065"
+    ],
+    "sourceRefs": [
+      "SRC-020"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-06-08",
+      "end": "1816-06-08",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceania"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-058",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Sydney–Parramatta, Australia",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0066"
+    ],
+    "sourceRefs": [
+      "SRC-038"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-06-06",
+      "end": "1816-06-06",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceania"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-059",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Kumase, Asante (present-day Ghana)",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0067"
+    ],
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05-22",
+      "end": "1816-05-22",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-060",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Kumase, Asante",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0068"
+    ],
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-05-24",
+      "end": "1816-05-24",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-061",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Elmina–Kumase, Gold Coast/Asante",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0069"
+    ],
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-062",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Port Louis, Mauritius",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0070"
+    ],
+    "sourceRefs": [
+      "SRC-041"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-09-12",
+      "end": "1816-09-12",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-063",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Imerina, Madagascar",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0071",
+      "WT-1816-0072"
+    ],
+    "sourceRefs": [
+      "SRC-040"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816-11",
+      "end": "1817-04",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-064",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Tamatave (Toamasina), Madagascar",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0073"
+    ],
+    "sourceRefs": [
+      "SRC-042"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1817-10-23",
+      "end": "1817-10-23",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-065",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Atlantic and Indian Ocean East India Company shipping corridors",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0074"
+    ],
+    "sourceRefs": [
+      "SRC-019",
+      "SRC-044"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceans"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-066",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Tropical Indian Ocean reconstruction target20°N–15°S,40°E–100°E",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0075"
+    ],
+    "sourceRefs": [
+      "SRC-043"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1807",
+      "end": "1816",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceans"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-067",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Greenland Sea/Fram Strait whaling grounds",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0076"
+    ],
+    "sourceRefs": [
+      "SRC-045"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceans"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-068",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Global ocean",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0077"
+    ],
+    "sourceRefs": [
+      "SRC-046"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Oceans"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-069",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Arguin Bank/Saint-Louis, Senegal",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0078"
+    ],
+    "sourceRefs": [
+      "SRC-047",
+      "SRC-048"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817-06-25",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "OBJ-POLITY-united-states",
+    "type": "POLITY",
+    "subtype": "historical_polity",
+    "label": "United States",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0001",
+      "WT-1816-0002",
+      "WT-1816-0003",
+      "WT-1816-0004",
+      "WT-1816-0041",
+      "WT-1816-0042",
+      "WT-1816-0043",
+      "WT-1816-0044"
+    ],
+    "sourceRefs": [
+      "SRC-002",
+      "SRC-025",
+      "SRC-026"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1820",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "North America"
+    ]
+  },
+  {
+    "id": "OBJ-POLITY-netherlands",
+    "type": "POLITY",
+    "subtype": "historical_polity",
+    "label": "United Kingdom of the Netherlands",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0032",
+      "WT-1816-0033",
+      "WT-1816-0034",
+      "WT-1816-0035"
+    ],
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1817-06-27",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "OBJ-POLITY-choson",
+    "type": "POLITY",
+    "subtype": "historical_polity",
+    "label": "Chosŏn dynasty",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0045",
+      "WT-1816-0046",
+      "WT-1816-0047",
+      "WT-1816-0048"
+    ],
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1814",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-POLITY-qing",
+    "type": "POLITY",
+    "subtype": "historical_polity",
+    "label": "Qing Empire",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0012",
+      "WT-1816-0013"
+    ],
+    "sourceRefs": [
+      "SRC-006"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1815",
+      "end": "1817",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-POLITY-rio-plata",
+    "type": "POLITY",
+    "subtype": "historical_polity",
+    "label": "United Provinces of the Río de la Plata",
+    "description": "An object represented by the linked evidence. Inspect observations for the specific claims, dates, methods and limits.",
+    "observationIds": [
+      "WT-1816-0016",
+      "WT-1816-0029",
+      "WT-1816-0060"
+    ],
+    "sourceRefs": [
+      "SRC-007",
+      "SRC-021",
+      "SRC-035"
+    ],
+    "researchStatus": "Evidence-linked seed",
+    "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
+    "focusDates": {
+      "start": "1816",
+      "end": "1816-09-30",
+      "meaning": "Window of the linked evidence; not a lifetime, founding date or exhaustive historical duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  }
+]

@@ -59,3 +59,9 @@ Every original gap now links to partial evidence and concrete next questions. We
 ## Validation
 
 Expanded integrity validation covers gap and counterexample references, reciprocal mechanism/thread links, date ordering, role/status vocabularies and source metadata. Browser checks cover all 23 threads and every edge, time/evidence filters, linked gaps, counterexample navigation, dialog focus, nested evidence traversal and mobile width. Dark mode remains intact.
+
+## v0.5 object and thesis pilot checks
+
+The 78 observations now reference 173 historical objects, including 15 person identities. There are 197 object links: 55 projections of existing sourced relationship claims and 142 role/context links grounded in existing observations. Validation checks reciprocal membership and exact preservation of every projected causal/association claim. This is a model/identity expansion, not a new independent historical fact audit or a comprehensive influence ranking.
+
+The Dutch thesis pilot demonstrates a supported research workflow, not proof of relief effectiveness. The article metadata was checked against publisher/university search results; direct full-text retrieval was unavailable in this run. The pilot retains passage-verification tasks and treats household receipt as an unresolved question. Its imported authorization record is explicitly a repeated, unreviewed candidate—not new evidence resolving the gap. Independent-agent review has not been repeated for this interface/object-layer change.
