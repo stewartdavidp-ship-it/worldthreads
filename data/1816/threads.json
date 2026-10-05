@@ -1,7 +1,295 @@
 [
-{"id":"THREAD-GULF-MAINE","title":"Climate shock becomes economic adaptation","subtitle":"Gulf of Maine, 1815–1820","description":"A volcanic-climate shock altered temperatures, fish phenology and food pressure; fishers shifted effort and the emergency response became a lasting economic transition.","nodeIds":["WT-1816-0008","WT-1816-0001","WT-1816-0002","WT-1816-0003","WT-1816-0004"],"relationshipIds":["REL-0001","REL-0002","REL-0003","REL-0004"],"mechanisms":["environmental shock","ecological response","food pressure","adaptation","path dependence"],"scope":"North America","confidence":"High"},
-{"id":"THREAD-CENTRAL-EUROPE-FOOD","title":"Weather shock becomes a subsistence crisis","subtitle":"Czech Lands, 1816–1817","description":"Cold and persistent wet weather damaged grain production; the harvest shock propagated into food scarcity and grain-price pressure with a measurable lag into 1817.","nodeIds":["WT-1816-0008","WT-1816-0005","WT-1816-0007","WT-1816-0006"],"relationshipIds":["REL-0005","REL-0006","REL-0007"],"mechanisms":["climate shock","crop damage","scarcity","price transmission","lag"],"scope":"Europe","confidence":"High"},
-{"id":"THREAD-ALPINE-HYDRO","title":"Cold years store risk in the water system","subtitle":"Alpine Rhine Basin, 1816–1817","description":"Post-eruption cold and snow conditions increased snow storage. In 1817, spring snowfall, snowmelt and intense rain combined in major Rhine and Lake Constance flooding.","nodeIds":["WT-1816-0008","WT-1816-0010","WT-1816-0011"],"relationshipIds":["REL-0010","REL-0011"],"mechanisms":["climate forcing","snow storage","hydrologic lag","compound flooding"],"scope":"Europe","confidence":"Medium-High"},
-{"id":"THREAD-CLIMATE-CULTURE","title":"Climate becomes cultural context","subtitle":"Geneva, summer 1816","description":"The unusually cold and cloudy Geneva summer created the documented setting in which Mary Godwin's literary circle stayed indoors, exchanged ghost stories and generated the story that became Frankenstein.","nodeIds":["WT-1816-0008","WT-1816-0009","WT-1816-0015"],"relationshipIds":["REL-0008","REL-0009"],"mechanisms":["environmental context","behavioral response","cultural production"],"scope":"Europe","confidence":"Medium-High"},
-{"id":"THREAD-CHINA-CLIMATE","title":"The same volcanic forcing, a different regional expression","subtitle":"Qing China, 1816","description":"Proxy evidence shows severe cold, frost, snow and ice in southern China while hydroclimate evidence is spatially mixed, illustrating why WorldThreads must preserve regional variation and proxy disagreement.","nodeIds":["WT-1816-0008","WT-1816-0012","WT-1816-0013"],"relationshipIds":["REL-0012","REL-0013"],"mechanisms":["volcanic forcing","regional climate response","proxy disagreement","monsoon response"],"scope":"Asia","confidence":"Medium-High"}
+  {
+    "id": "THREAD-GULF-MAINE",
+    "title": "Climate shock becomes economic adaptation",
+    "subtitle": "Gulf of Maine, 1815–1820",
+    "description": "Historical export and temperature analysis links unusual conditions to inferred fish responses and changing fishing effort. Dams, trade reopening, markets and population also matter; their relative contributions require further review.",
+    "nodeIds": [
+      "WT-1816-0008",
+      "WT-1816-0001",
+      "WT-1816-0002",
+      "WT-1816-0003",
+      "WT-1816-0004"
+    ],
+    "relationshipIds": [
+      "REL-0001",
+      "REL-0002",
+      "REL-0003",
+      "REL-0004"
+    ],
+    "mechanisms": [
+      "environmental shock",
+      "ecological response",
+      "food pressure",
+      "adaptation",
+      "path dependence"
+    ],
+    "scope": "North America",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-CENTRAL-EUROPE-FOOD",
+    "title": "Weather shock becomes a subsistence crisis",
+    "subtitle": "Czech Lands, 1816–1817",
+    "description": "Cold and wet weather damaged crops and contributed to grain-price pressure into 1817. Crop differences, postwar demand and market conditions complicate attribution.",
+    "nodeIds": [
+      "WT-1816-0008",
+      "WT-1816-0005",
+      "WT-1816-0007",
+      "WT-1816-0006"
+    ],
+    "relationshipIds": [
+      "REL-0005",
+      "REL-0006",
+      "REL-0007"
+    ],
+    "mechanisms": [
+      "climate shock",
+      "crop damage",
+      "scarcity",
+      "price transmission",
+      "lag"
+    ],
+    "scope": "Europe",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-ALPINE-HYDRO",
+    "title": "Cold years store risk in the water system",
+    "subtitle": "Alpine Rhine Basin, 1816–1817",
+    "description": "Cold conditions formed the background to substantial snow storage. The model favors fresh spring 1817 snowfall over enduring 1816 snow as flood meltwater, combined with intense rainfall that the reconstruction underestimates.",
+    "nodeIds": [
+      "WT-1816-0008",
+      "WT-1816-0010",
+      "WT-1816-0011"
+    ],
+    "relationshipIds": [
+      "REL-0010",
+      "REL-0011"
+    ],
+    "mechanisms": [
+      "climate forcing",
+      "snow storage",
+      "hydrologic lag",
+      "compound flooding"
+    ],
+    "scope": "Europe",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-CLIMATE-CULTURE",
+    "title": "Climate becomes cultural context",
+    "subtitle": "Geneva, summer 1816",
+    "description": "Stormy Geneva weather forms part of the reported setting for Frankenstein’s conception. The ghost-story challenge, scientific debates and Mary Shelley’s creative choices are additional influences; manuscript dates establish drafting chronology.",
+    "nodeIds": [
+      "WT-1816-0008",
+      "WT-1816-0009",
+      "WT-1816-0015"
+    ],
+    "relationshipIds": [
+      "REL-0008",
+      "REL-0009"
+    ],
+    "mechanisms": [
+      "environmental context",
+      "behavioral response",
+      "cultural production"
+    ],
+    "scope": "Europe",
+    "confidence": "Medium"
+  },
+  {
+    "id": "THREAD-CHINA-CLIMATE",
+    "title": "The same volcanic forcing, a different regional expression",
+    "subtitle": "Qing China, 1815–1816",
+    "description": "Southern Chinese documents report unusual cold in 1815–1816. Temperature and hydroclimate reconstructions differ spatially; regional variation and proxy disagreement remain part of the evidence.",
+    "nodeIds": [
+      "WT-1816-0008",
+      "WT-1816-0012",
+      "WT-1816-0013"
+    ],
+    "relationshipIds": [
+      "REL-0012",
+      "REL-0013"
+    ],
+    "mechanisms": [
+      "volcanic forcing",
+      "regional climate response",
+      "proxy disagreement",
+      "monsoon response"
+    ],
+    "scope": "Asia",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-TAMBORA-LOCAL",
+    "title": "Direct eruption damage disrupts local livelihoods",
+    "subtitle": "Sumbawa, 1815–1819 context",
+    "description": "Direct food and water damage and later maritime difficulty are distinct branches. Long-term recovery remains only partly documented.",
+    "nodeIds": [
+      "WT-1816-0008",
+      "WT-1816-0022",
+      "WT-1816-0023",
+      "WT-1816-0024"
+    ],
+    "relationshipIds": [
+      "REL-0016",
+      "REL-0017",
+      "REL-0018"
+    ],
+    "mechanisms": [
+      "direct hazard",
+      "food loss",
+      "transport disruption"
+    ],
+    "scope": "Asia",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-NEPAL-SETTLEMENT",
+    "title": "A peace settlement is revised within the year",
+    "subtitle": "Nepal–Company frontier, March–December 1816",
+    "description": "The treaty exchange is followed by agreed changes to Terai provisions. The documents state diplomatic, boundary and financial terms; the causes and implementation of the revision remain research questions.",
+    "nodeIds": [
+      "WT-1816-0017",
+      "WT-1816-0025"
+    ],
+    "relationshipIds": [
+      "REL-0019"
+    ],
+    "mechanisms": [
+      "negotiated settlement",
+      "territorial revision"
+    ],
+    "scope": "Asia",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-APPIN",
+    "title": "Colonial orders become violence at Appin",
+    "subtitle": "Dharawal Country / New South Wales, April 1816",
+    "description": "The governor’s orders and commander’s report document a military sequence. Colonial expansion, resistance and local decisions require separate assessment, including Dharawal perspectives.",
+    "nodeIds": [
+      "WT-1816-0026",
+      "WT-1816-0027"
+    ],
+    "relationshipIds": [
+      "REL-0020"
+    ],
+    "mechanisms": [
+      "colonial coercion",
+      "military implementation"
+    ],
+    "scope": "Oceania",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-ROSSINI",
+    "title": "An opera moves from premiere to wider performance",
+    "subtitle": "Rome, Bologna and other cities, 1816–1817",
+    "description": "Separate records distinguish the Rome premiere, Bologna reception and later performances. The sequence is documented; artistic changes, existing reputation and performance networks remain questions for causal research.",
+    "nodeIds": [
+      "WT-1816-0021",
+      "WT-1816-0028",
+      "WT-1816-0029"
+    ],
+    "relationshipIds": [
+      "REL-0021",
+      "REL-0022"
+    ],
+    "mechanisms": [
+      "cultural circulation",
+      "changing reception"
+    ],
+    "scope": "Europe",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-BENGAL-HEALTH",
+    "title": "An epidemic with unresolved explanations",
+    "subtitle": "Bengal, 1817",
+    "description": "A documented epidemic is kept separate from the proposed climate connection. Mobility and working conditions remain competing research considerations.",
+    "nodeIds": [
+      "WT-1816-0008",
+      "WT-1816-0030"
+    ],
+    "relationshipIds": [
+      "REL-0023"
+    ],
+    "mechanisms": [
+      "disease vulnerability",
+      "population mobility"
+    ],
+    "scope": "South Asia",
+    "confidence": "Low"
+  },
+  {
+    "id": "THREAD-OCEANIA-WEATHER",
+    "title": "Flood exposure and differing harvest prospects",
+    "subtitle": "New South Wales and Van Diemen’s Land, 1816",
+    "description": "Official rain and flood reports sit beside a different harvest expectation in Hobart. Local vulnerability matters; volcanic attribution remains a separate research question.",
+    "nodeIds": [
+      "WT-1816-0031",
+      "WT-1816-0032",
+      "WT-1816-0033"
+    ],
+    "relationshipIds": [
+      "REL-0024",
+      "REL-0025"
+    ],
+    "mechanisms": [
+      "flood exposure",
+      "regional resilience"
+    ],
+    "scope": "Oceania",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-BARBADOS-RESISTANCE",
+    "title": "Political expectations, resistance and colonial response",
+    "subtitle": "Barbados, April 1816",
+    "description": "Follow attributed colonial reports and investigate whose expectations and choices they omit. The link from registration proposals to resistance remains a research question.",
+    "nodeIds": [
+      "WT-1816-0034",
+      "WT-1816-0035",
+      "WT-1816-0036"
+    ],
+    "relationshipIds": [
+      "REL-0026"
+    ],
+    "mechanisms": [
+      "political expectations",
+      "institutional response"
+    ],
+    "scope": "Caribbean / Barbados",
+    "confidence": "Medium"
+  },
+  {
+    "id": "THREAD-SWISS-FOOD-ACCESS",
+    "title": "Why could some communities obtain food more readily?",
+    "subtitle": "Swiss procurement and regional differences, 1816",
+    "description": "Compare procurement and local exposure: failed coordination and private buying in Neuchâtel, uneven crop and pasture reports in Valais, and limits of crop models. These are distinct records with uncertain mechanisms, not equivalent measured outcomes. A separately documented home-work offer opens an income and eligibility question; no causal link to procurement is established. An 1817 Urnäsch table supplies a local affordability lead, explicitly contextual.",
+    "nodeIds": [
+      "WT-1816-0037",
+      "WT-1816-0038",
+      "WT-1816-0039",
+      "WT-1816-0040",
+      "WT-1816-0041",
+      "WT-1816-0042",
+      "WT-1816-0043",
+      "WT-1816-0044",
+      "WT-1816-0045"
+    ],
+    "relationshipIds": [
+      "REL-0027",
+      "REL-0028"
+    ],
+    "mechanisms": [
+      "food access",
+      "institutional coordination",
+      "regional resilience"
+    ],
+    "scope": "Switzerland",
+    "confidence": "Medium"
+  }
 ]

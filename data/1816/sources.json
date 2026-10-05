@@ -1,18 +1,557 @@
 [
-  {"id":"SRC-001","type":"Peer-reviewed article","authorOrOrg":"Brázdil et al., Climate of the Past","title":"Climatic effects and impacts of the 1815 eruption of Mount Tambora in the Czech Lands","year":2016,"url":"https://cp.copernicus.org/articles/12/1361/2016/index.html","quality":"High","topics":["climate","harvests","grain prices","Czech Lands"]},
-  {"id":"SRC-002","type":"Peer-reviewed article","authorOrOrg":"Alexander et al., Science Advances","title":"The 1816 'year without a summer' in an ecology of marine fisheries","year":2017,"url":"https://doi.org/10.1126/sciadv.1601635","quality":"High","topics":["Gulf of Maine","temperature","fisheries","adaptation"]},
-  {"id":"SRC-003","type":"Peer-reviewed article","authorOrOrg":"Brugnara et al., Climate of the Past","title":"A collection of sub-daily pressure and temperature observations for the early instrumental period with a focus on 1816","year":2015,"url":"https://cp.copernicus.org/articles/11/1027/2015/cp-11-1027-2015.html","quality":"High","topics":["instrumental climate","Europe","1816"]},
-  {"id":"SRC-004","type":"Peer-reviewed article","authorOrOrg":"Auchmann et al., Climate of the Past","title":"Extreme climate, not extreme weather: the summer of 1816 in Geneva, Switzerland","year":2012,"url":"https://cp.copernicus.org/articles/8/325/2012/","quality":"High","topics":["Geneva","temperature","cloudiness","precipitation"]},
-  {"id":"SRC-005","type":"Peer-reviewed article","authorOrOrg":"Rössler et al., Science of the Total Environment","title":"The effect of the Tambora eruption on Swiss flood generation in 1816/1817","year":2018,"url":"https://pubmed.ncbi.nlm.nih.gov/30857086/","quality":"High","topics":["Switzerland","snowpack","Lake Constance","Rhine","flooding"]},
-  {"id":"SRC-006","type":"Peer-reviewed article","authorOrOrg":"Gao et al., Journal of Meteorological Research","title":"Climatic Aftermath of the 1815 Tambora Eruption in China","year":2017,"url":"https://pubs-en.cstam.org.cn/article/doi/10.1007/s13351-017-6091-9","quality":"High","topics":["China","frost","snow","drought","proxies"]},
-  {"id":"SRC-007","type":"Government history","authorOrOrg":"Argentina.gob.ar","title":"9 de julio de 1816 – Declaración de la Independencia de la Argentina","year":2026,"url":"https://www.argentina.gob.ar/noticias/9-de-julio-de-1816-declaracion-de-la-independencia-de-la-argentina","quality":"High","topics":["Argentina","independence","politics"]},
-  {"id":"SRC-008","type":"Primary treaty text","authorOrOrg":"Treaty of Sugauli transcript","title":"Treaty of Sugauli","year":1815,"url":"https://en.wikisource.org/wiki/Treaty_of_Sugauli","quality":"Medium-High","topics":["Nepal","East India Company","territory","diplomacy"]},
-  {"id":"SRC-009","type":"Museum collection record","authorOrOrg":"Royal Museums Greenwich","title":"The Bombardment of Algiers, 27 August 1816","year":1816,"url":"https://www.rmg.co.uk/collections/objects/rmgc-object-12109","quality":"High","topics":["Algiers","Royal Navy","slavery","Mediterranean"]},
-  {"id":"SRC-010","type":"Scholarly monograph / Cambridge","authorOrOrg":"Elizabeth A. Eldredge","title":"Kingdoms and Chiefdoms of Southeastern Africa — chronology and Zulu consolidation","year":2018,"url":"https://www.cambridge.org/core/books/abs/kingdoms-and-chiefdoms-of-southeastern-africa/chronology-of-conflicts-migrations-and-political-reconfiguration-east-of-the-drakensberg-in-the-era-of-shaka/A9658A686F8C58794A2441343AF0AC41","quality":"High","topics":["Shaka","AmaZulu","southern Africa","political reconfiguration"]},
-  {"id":"SRC-011","type":"Historical reference","authorOrOrg":"South African History Online","title":"Slachter’s Nek rebels are hanged","year":2019,"url":"https://sahistory.org.za/dated-event/slachters-nek-rebels-are-hanged","quality":"Medium-High","topics":["Cape Colony","Slachter's Nek","colonial rule"]},
-  {"id":"SRC-012","type":"Medical history / NCBI","authorOrOrg":"NCBI Bookshelf","title":"The Origins of the History and Physical Examination — Laennec: The Stethoscope, 1816","year":1990,"url":"https://www.ncbi.nlm.nih.gov/books/NBK458/","quality":"High","topics":["medicine","stethoscope","Laennec","diagnosis"]},
-  {"id":"SRC-013","type":"Digital scholarly archive","authorOrOrg":"Shelley-Godwin Archive / Bodleian materials","title":"Frankenstein Notebook A","year":1816,"url":"https://shelleygodwinarchive.org/contents/frankenstein_notebook_a/","quality":"High","topics":["Mary Shelley","Frankenstein","literature","Geneva"]},
-  {"id":"SRC-014","type":"Library interpretation","authorOrOrg":"British Library","title":"Mary Shelley’s Frankenstein","year":2026,"url":"https://www.britishlibrary.cn/en/works/frankenstein/","quality":"High","topics":["Mary Shelley","Frankenstein","1816 weather","literature"]},
-  {"id":"SRC-015","type":"Performing arts institution","authorOrOrg":"Metropolitan Opera","title":"Timeline: Rossini","year":2026,"url":"https://www.metopera.org/learn/education/timeline-rossini/","quality":"High","topics":["Rossini","Barber of Seville","opera"]},
-  {"id":"SRC-016","type":"Peer-reviewed commentary","authorOrOrg":"Luterbacher & Pfister, Nature Geoscience","title":"The year without a summer","year":2015,"url":"https://www.nature.com/articles/ngeo2404","quality":"High","topics":["Tambora","Europe","harvests","adaptation"]}
+  {
+    "id": "SRC-001",
+    "type": "Peer-reviewed article",
+    "authorOrOrg": "Brázdil et al., Climate of the Past",
+    "title": "Climatic effects and impacts of the 1815 eruption of Mount Tambora in the Czech Lands",
+    "year": 2016,
+    "url": "https://cp.copernicus.org/articles/12/1361/2016/index.html",
+    "quality": "High",
+    "topics": [
+      "climate",
+      "harvests",
+      "grain prices",
+      "Czech Lands"
+    ]
+  },
+  {
+    "id": "SRC-002",
+    "type": "Peer-reviewed article",
+    "authorOrOrg": "Alexander et al., Science Advances",
+    "title": "Tambora and the mackerel year: Phenology and fisheries during an extreme climate event",
+    "year": 2017,
+    "url": "https://doi.org/10.1126/sciadv.1601635",
+    "quality": "High",
+    "topics": [
+      "Gulf of Maine",
+      "temperature",
+      "fisheries",
+      "adaptation"
+    ],
+    "fullTextUrl": "https://repository.library.noaa.gov/view/noaa/59268/noaa_59268_DS1.pdf"
+  },
+  {
+    "id": "SRC-003",
+    "type": "Peer-reviewed article",
+    "authorOrOrg": "Brugnara et al., Climate of the Past",
+    "title": "A collection of sub-daily pressure and temperature observations for the early instrumental period with a focus on 1816",
+    "year": 2015,
+    "url": "https://cp.copernicus.org/articles/11/1027/2015/cp-11-1027-2015.html",
+    "quality": "High",
+    "topics": [
+      "instrumental climate",
+      "Europe",
+      "1816"
+    ]
+  },
+  {
+    "id": "SRC-004",
+    "type": "Peer-reviewed article",
+    "authorOrOrg": "Auchmann et al., Climate of the Past",
+    "title": "Extreme climate, not extreme weather: the summer of 1816 in Geneva, Switzerland",
+    "year": 2012,
+    "url": "https://cp.copernicus.org/articles/8/325/2012/",
+    "quality": "High",
+    "topics": [
+      "Geneva",
+      "temperature",
+      "cloudiness",
+      "precipitation"
+    ]
+  },
+  {
+    "id": "SRC-005",
+    "type": "Peer-reviewed article",
+    "authorOrOrg": "Rössler et al., Science of the Total Environment",
+    "title": "The effect of the Tambora eruption on Swiss flood generation in 1816/1817",
+    "year": 2018,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30857086/",
+    "quality": "High",
+    "topics": [
+      "Switzerland",
+      "snowpack",
+      "Lake Constance",
+      "Rhine",
+      "flooding"
+    ],
+    "fullTextUrl": "https://boris-portal.unibe.ch/bitstreams/0387908a-4dd0-4942-806e-a3af211bb476/download",
+    "notes": "University-hosted preprint methods, results and discussion inspected. Final published text and datasets not replicated.",
+    "dependencyGroup": "ROESSLER-BROENNIMANN-FLOOD-STUDY"
+  },
+  {
+    "id": "SRC-006",
+    "type": "Peer-reviewed article",
+    "authorOrOrg": "Gao et al., Journal of Meteorological Research",
+    "title": "Climatic Aftermath of the 1815 Tambora Eruption in China",
+    "year": 2017,
+    "url": "https://pubs-en.cstam.org.cn/article/doi/10.1007/s13351-017-6091-9",
+    "quality": "High",
+    "topics": [
+      "China",
+      "frost",
+      "snow",
+      "drought",
+      "proxies"
+    ],
+    "fullTextUrl": "https://html.rhhz.net/qxxb_en/html/20170104.htm"
+  },
+  {
+    "id": "SRC-007",
+    "type": "Government history",
+    "authorOrOrg": "Argentina.gob.ar",
+    "title": "9 de julio de 1816 – Declaración de la Independencia de la Argentina",
+    "year": 2026,
+    "url": "https://www.argentina.gob.ar/noticias/9-de-julio-de-1816-declaracion-de-la-independencia-de-la-argentina",
+    "quality": "High",
+    "topics": [
+      "Argentina",
+      "independence",
+      "politics"
+    ]
+  },
+  {
+    "id": "SRC-008",
+    "type": "Unscanned treaty transcription",
+    "authorOrOrg": "Treaty of Sugauli transcript",
+    "title": "Treaty of Sugauli",
+    "year": 1815,
+    "url": "https://en.wikisource.org/wiki/Treaty_of_Sugauli",
+    "quality": "Medium",
+    "topics": [
+      "Nepal",
+      "East India Company",
+      "territory",
+      "diplomacy"
+    ],
+    "notes": "Wikisource warns that the text is not backed by a scanned edition; original verification pending.",
+    "dependencyGroup": "SUGAULI-TREATY-TEXT"
+  },
+  {
+    "id": "SRC-009",
+    "type": "Museum collection record",
+    "authorOrOrg": "Royal Museums Greenwich",
+    "title": "The Bombardment of Algiers, 27 August 1816",
+    "year": null,
+    "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-12109",
+    "quality": "High",
+    "topics": [
+      "Algiers",
+      "Royal Navy",
+      "slavery",
+      "Mediterranean"
+    ],
+    "objectDate": 1836,
+    "notes": "1816 is the depicted event; the painting dates to 1836. Collection webpage publication date is unspecified."
+  },
+  {
+    "id": "SRC-010",
+    "type": "Scholarly monograph / Cambridge",
+    "authorOrOrg": "Elizabeth A. Eldredge; Boydell & Brewer, hosted by Cambridge Core",
+    "title": "Kingdoms and Chiefdoms of Southeastern Africa — chronology and Zulu consolidation",
+    "year": 2015,
+    "url": "https://www.cambridge.org/core/books/abs/kingdoms-and-chiefdoms-of-southeastern-africa/chronology-of-conflicts-migrations-and-political-reconfiguration-east-of-the-drakensberg-in-the-era-of-shaka/A9658A686F8C58794A2441343AF0AC41",
+    "quality": "High",
+    "topics": [
+      "Shaka",
+      "AmaZulu",
+      "southern Africa",
+      "political reconfiguration"
+    ],
+    "onlinePublicationYear": 2018,
+    "notes": "Print publication 2015; online publication 14 March 2018. Appendix B summary inspected."
+  },
+  {
+    "id": "SRC-011",
+    "type": "Historical reference",
+    "authorOrOrg": "South African History Online",
+    "title": "Slachter’s Nek rebels are hanged",
+    "year": 2019,
+    "url": "https://sahistory.org.za/dated-event/slachters-nek-rebels-are-hanged",
+    "quality": "Medium-High",
+    "topics": [
+      "Cape Colony",
+      "Slachter's Nek",
+      "colonial rule"
+    ]
+  },
+  {
+    "id": "SRC-012",
+    "type": "Medical history / NCBI",
+    "authorOrOrg": "NCBI Bookshelf",
+    "title": "The Origins of the History and Physical Examination — Laennec: The Stethoscope, 1816",
+    "year": 1990,
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK458/",
+    "quality": "High",
+    "topics": [
+      "medicine",
+      "stethoscope",
+      "Laennec",
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "SRC-013",
+    "type": "Digital scholarly archive",
+    "authorOrOrg": "Shelley-Godwin Archive / Bodleian materials",
+    "title": "Frankenstein Notebook A",
+    "year": 1816,
+    "url": "https://shelleygodwinarchive.org/contents/frankenstein_notebook_a/",
+    "quality": "High",
+    "topics": [
+      "Mary Shelley",
+      "Frankenstein",
+      "literature",
+      "Geneva"
+    ]
+  },
+  {
+    "id": "SRC-014",
+    "type": "Library interpretation",
+    "authorOrOrg": "British Library",
+    "title": "Mary Shelley’s Frankenstein",
+    "year": null,
+    "url": "https://www.britishlibrary.cn/en/works/frankenstein/",
+    "quality": "High",
+    "topics": [
+      "Mary Shelley",
+      "Frankenstein",
+      "1816 weather",
+      "literature"
+    ],
+    "notes": "Webpage publication date unspecified; accessed 2026-10-01.",
+    "dependencyGroup": "FRANKENSTEIN-CREATION-RECOLLECTION"
+  },
+  {
+    "id": "SRC-015",
+    "type": "Performing arts institution",
+    "authorOrOrg": "Metropolitan Opera",
+    "title": "The Creation of Il Barbiere di Siviglia",
+    "year": null,
+    "url": "https://www.metopera.org/learn/education/timeline-rossini/",
+    "quality": "High",
+    "topics": [
+      "Rossini",
+      "Barber of Seville",
+      "opera"
+    ],
+    "notes": "Full institutional timeline read through Chrome on 2026-10-01. Publication date unspecified. Reception and spread are institutional synthesis; underlying performance records not inspected."
+  },
+  {
+    "id": "SRC-016",
+    "type": "Peer-reviewed commentary",
+    "authorOrOrg": "Luterbacher & Pfister, Nature Geoscience",
+    "title": "The year without a summer",
+    "year": 2015,
+    "url": "https://www.nature.com/articles/ngeo2404",
+    "quality": "High",
+    "topics": [
+      "Tambora",
+      "Europe",
+      "harvests",
+      "adaptation"
+    ]
+  },
+  {
+    "id": "SRC-017",
+    "type": "Institutional magazine synthesis",
+    "authorOrOrg": "Robert Evans / Smithsonian Magazine",
+    "title": "Blast from the Past",
+    "year": 2002,
+    "url": "https://www.smithsonianmag.com/history/blast-from-the-past-65102374/",
+    "quality": "Medium",
+    "topics": [
+      "Tambora",
+      "Sumbawa",
+      "crops",
+      "water",
+      "shipping"
+    ],
+    "notes": "Secondary synthesis checked 2026-10-01. Local records require corroboration from archival and scholarly sources; mortality estimates are not imported."
+  },
+  {
+    "id": "SRC-018",
+    "type": "Scholarly historical article",
+    "authorOrOrg": "Bernice de Jong Boers",
+    "title": "Mount Tambora in 1815: A Volcanic Eruption in Indonesia and Its Aftermath",
+    "year": 1995,
+    "url": "https://doi.org/10.2307/3351140",
+    "quality": "High",
+    "topics": [
+      "Tambora",
+      "Sumbawa",
+      "subsistence",
+      "recovery"
+    ],
+    "notes": "Indonesia 60, pp. 37–60. Full text checked; archival references are cited through this article, not independently inspected.",
+    "fullTextUrl": "https://web.english.upenn.edu/~cavitch/pdf-library/Boers_Mount_Tambora_in_1815.pdf"
+  },
+  {
+    "id": "SRC-019",
+    "type": "Scanned government treaty compilation",
+    "authorOrOrg": "C. U. Aitchison; Government of India",
+    "title": "A Collection of Treaties, Engagements and Sanads, Vol. XIV",
+    "year": 1929,
+    "url": "https://dl.tufts.edu/downloads/f7623q75r?filename=q811kw83k.pdf",
+    "quality": "High",
+    "topics": [
+      "Nepal",
+      "treaties",
+      "territorial settlement"
+    ],
+    "dependencyGroup": "SUGAULI-TREATY-TEXT",
+    "notes": "Tufts digital scan, printed pp. 55–58 (PDF pp. 65–68) visually inspected. Later official compilation, not original signed instruments."
+  },
+  {
+    "id": "SRC-020",
+    "type": "Primary author recollection in transcribed edition",
+    "authorOrOrg": "Mary W. Shelley; Project Gutenberg",
+    "title": "Frankenstein (1831): Introduction and reproduced 1817 Preface",
+    "year": 1831,
+    "url": "https://www.gutenberg.org/files/42324/42324-h/42324-h.htm",
+    "quality": "Medium-High",
+    "topics": [
+      "Frankenstein",
+      "creation narrative",
+      "weather",
+      "galvanism"
+    ],
+    "dependencyGroup": "FRANKENSTEIN-CREATION-RECOLLECTION",
+    "notes": "Transcription from a photo-reprint; Introduction dated 15 October 1831 is retrospective. Reproduced Preface dated September 1817 attributed to Percy Shelley in Introduction."
+  },
+  {
+    "id": "SRC-021",
+    "type": "Primary diary transcription",
+    "authorOrOrg": "Lachlan Macquarie; Macquarie University",
+    "title": "Governor’s Diary, April 1816",
+    "year": 1816,
+    "url": "https://www.mq.edu.au/macquarie-archive/lema/1816/1816april.html",
+    "quality": "Medium-High",
+    "topics": [
+      "colonial policy",
+      "military expedition",
+      "New South Wales"
+    ],
+    "notes": "Entry 10 April; Mitchell Library A773 pp. 1–8. University transcription inspected; manuscript scan not inspected."
+  },
+  {
+    "id": "SRC-022",
+    "type": "Archive interpretation and primary report transcription",
+    "authorOrOrg": "Museums of History NSW; James Wallis",
+    "title": "Massacre at Appin, 17 April 1816",
+    "year": 2022,
+    "url": "https://mhnsw.au/stories/first-nations/massacre-appin-17-april-1816/",
+    "quality": "High",
+    "topics": [
+      "Appin",
+      "Dharawal",
+      "colonial violence"
+    ],
+    "notes": "Chrome page and expanded Wallis transcription inspected. Diary reference [4/1735] pp. 55–57; archival report date 1816, webpage publication 5 December 2022."
+  },
+  {
+    "id": "SRC-023",
+    "type": "Library-hosted historical research",
+    "authorOrOrg": "Stephen Gapps; State Library of New South Wales",
+    "title": "The Sydney wars",
+    "year": 2018,
+    "url": "https://www.sl.nsw.gov.au/stories/sydney-wars",
+    "quality": "Medium-High",
+    "topics": [
+      "Aboriginal resistance",
+      "colonial expansion",
+      "military history"
+    ],
+    "notes": "Full article read in Chrome. Cited Hassall correspondence and other originals not inspected."
+  },
+  {
+    "id": "SRC-024",
+    "type": "Peer-reviewed historical article",
+    "authorOrOrg": "Mark Harrison, Modern Asian Studies",
+    "title": "A Dreadful Scourge: Cholera in early nineteenth-century India",
+    "year": 2020,
+    "onlineYear": 2019,
+    "url": "https://www.cambridge.org/core/journals/modern-asian-studies/article/dreadful-scourge-cholera-in-early-nineteenthcentury-india/7277A51FD55951F1D22F1166CFF9A064",
+    "quality": "High",
+    "topics": [
+      "Bengal",
+      "cholera",
+      "migration",
+      "colonial records"
+    ],
+    "notes": "Full article inspected, Acts of God section and methodological introduction. Underlying archival letters and registers remain uninspected."
+  },
+  {
+    "id": "SRC-025",
+    "type": "Primary diary transcription",
+    "authorOrOrg": "Lachlan Macquarie; Macquarie University archive",
+    "title": "1816 journal, May",
+    "year": 1816,
+    "url": "https://www.mq.edu.au/macquarie-archive/lema/1816/1816may.html",
+    "quality": "Medium-High",
+    "topics": [
+      "weather",
+      "floods",
+      "New South Wales"
+    ],
+    "notes": "University transcription inspected; manuscript not inspected. June reports relay magistrates’ dispatches."
+  },
+  {
+    "id": "SRC-026",
+    "type": "Primary diary transcription",
+    "authorOrOrg": "Lachlan Macquarie; Macquarie University archive",
+    "title": "1816 journal, June",
+    "year": 1816,
+    "url": "https://www.mq.edu.au/macquarie-archive/lema/1816/1816june.html",
+    "quality": "Medium-High",
+    "topics": [
+      "weather",
+      "floods",
+      "New South Wales"
+    ],
+    "notes": "University transcription inspected; manuscript not inspected. June reports relay magistrates’ dispatches."
+  },
+  {
+    "id": "SRC-027",
+    "type": "Historical research article",
+    "authorOrOrg": "Don Garden; Journal of the Royal Australian Historical Society",
+    "title": "A Wet and Cold El Niño: the Tambora volcano’s impact in the Australian colonies",
+    "year": 2021,
+    "url": "https://www.rahs.org.au/wp-content/uploads/2023/02/4.-Garden-JRAHS-Vol-107-Pt-2-Dec-2021.pdf",
+    "quality": "Medium-High",
+    "topics": [
+      "Australian colonies",
+      "weather",
+      "flood vulnerability",
+      "harvests"
+    ],
+    "notes": "Published version inspected, pp. 186–188; primary newspaper passages quoted through this article remain uninspected. Its volcanic attribution is not independently established here."
+  },
+  {
+    "id": "SRC-028",
+    "type": "Primary newspaper transcription",
+    "authorOrOrg": "The Hobart Town Gazette and Southern Reporter; National Library of Australia Trove",
+    "title": "Hobart Town, Saturday 31 August 1816",
+    "year": 1816,
+    "url": "https://trove.nla.gov.au/newspaper/article/651461",
+    "quality": "Medium-High",
+    "topics": [
+      "harvest expectations",
+      "Van Diemen’s Land",
+      "New South Wales"
+    ],
+    "notes": "Article text on page 2 read through Chrome. Digitized page viewer available; detailed visual comparison with print not completed. OCR and volunteer corrections may affect wording."
+  },
+  {
+    "id": "SRC-029",
+    "type": "Archive transcription of contemporary correspondence",
+    "authorOrOrg": "James Leith / Edward Codd; The National Archives",
+    "title": "Bussa’s rebellion: CO 28/85 extracts",
+    "year": 1816,
+    "url": "https://cdn.nationalarchives.gov.uk/documents/education/bussa.pdf",
+    "quality": "Primary accounts with colonial perspective",
+    "topics": [
+      "Barbados",
+      "resistance",
+      "political expectations",
+      "military response"
+    ],
+    "notes": "PDF transcriptions inspected October 4, 2026 (America/New_York); printed pages 9, 11, 23 and 25. Leith forwards Codd: these accounts cannot automatically be counted as independent corroboration. No original manuscript transcription comparison completed.",
+    "dependencyGroup": "CO28-85-CODD-LEITH-1816"
+  },
+  {
+    "id": "SRC-030",
+    "type": "Scholarly review of historical research",
+    "authorOrOrg": "Jean-René Suratteau, reviewing Philippe Gern",
+    "title": "Review: L’approvisionnement de Neuchâtel pendant la disette de 1816–1817",
+    "year": 1981,
+    "url": "https://www.persee.fr/doc/ahrf_0003-4436_1981_num_245_1_4259_t1_0498_0000_2",
+    "quality": "Attributed secondary account; original study pending",
+    "topics": [
+      "grain procurement",
+      "Neuchâtel",
+      "cantonal coordination"
+    ],
+    "notes": "Full one-page review inspected, p. 498. Gern’s 1977 study and underlying records not inspected; one source family.",
+    "dependencyGroup": "GERN-NEUCHATEL-1977"
+  },
+  {
+    "id": "SRC-031",
+    "type": "University research thesis",
+    "authorOrOrg": "Simon Flückiger, University of Bern",
+    "title": "Tambora 1815: Impacts of a volcanic eruption on climate and crop yields in Switzerland",
+    "year": 2015,
+    "url": "https://occrdata.unibe.ch/students/theses/msc/141.pdf",
+    "quality": "Model-based research; limitations explicit",
+    "topics": [
+      "crop models",
+      "regional comparison"
+    ],
+    "notes": "Downloaded full PDF; inspected introduction pp. 4–5 and Discussion 5.3.3 pp. 66–67. Historical and present-day scenarios must be distinguished. Thesis and 2017 paper share research, not independent corroboration.",
+    "dependencyGroup": "FLUCKIGER-SWISS-CROPS"
+  },
+  {
+    "id": "SRC-032",
+    "type": "Edited primary memoir transcription",
+    "authorOrOrg": "Anne-Joseph de Rivaz; edited by André Donnet; Société d’histoire de la Suisse romande",
+    "title": "Mémoires historiques sur le Valais, volume II, Disette de 1816–1817",
+    "year": 1961,
+    "url": "https://www.shsr.ch/mdr/MDR3_06_01.html",
+    "quality": "Near-contemporary attributed account; edited transcription",
+    "topics": [
+      "crop differences",
+      "pasture access",
+      "rodents",
+      "Valais"
+    ],
+    "notes": "1961 edition, digital transcription inspected October 5, 2026, pp. 220–221. Passage explicitly says written November 1817; dated details may be retrospective. Manuscript/print comparison not performed.",
+    "dependencyGroup": "DERIVAZ-VALAIS-MEMOIRS"
+  },
+  {
+    "id": "SRC-033",
+    "type": "University historical thesis",
+    "authorOrOrg": "Thierry Christ, Université de Neuchâtel",
+    "title": "Des solidarités coutumières à la bienfaisance privée: l’Etat et les pauvres à Neuchâtel (1773–1830), volume II",
+    "year": 2009,
+    "url": "https://libra.unine.ch/bitstreams/328362e0-8462-49ac-9962-41074f1fc31d/download",
+    "quality": "Scholarly secondary account; cited originals pending",
+    "topics": [
+      "work relief",
+      "household income",
+      "Neuchâtel"
+    ],
+    "notes": "Full PDF inspected, printed p. 975, note 78: BPUN 6R370, Avis au public (19 December 1816) and Information au public (2 April 1817). Originals not inspected. Also inspected pp. 1192–1194: MCE 165 complaint and AEN Assistance 3/IV counteraccount; separate underlying records, originals pending.",
+    "dependencyGroup": "CHRIST-BPUN-6R370"
+  },
+  {
+    "id": "SRC-034",
+    "type": "Library-held contemporary price-table transcription",
+    "authorOrOrg": "Unknown maker; transcription and catalog description by Nina Sonderegger, Zeitzeugnisse",
+    "title": "Urnäscher Hungertäfeli, Kantonsbibliothek Appenzell Ausserrhoden KB-015011",
+    "year": 1817,
+    "url": "https://www.zeitzeugnisse.ch/detail.php?id=91&stype=4",
+    "quality": "Primary-object transcription; original comparison pending",
+    "topics": [
+      "food prices",
+      "weaving pay",
+      "Appenzell"
+    ],
+    "notes": "Full catalog entry and transcription inspected. Dated 1817; compares food prices and weaving pay with 1760/1761. Not a continuous series. Distinct from Thäler’s 1830–1835 painting, museum G 11811.",
+    "dependencyGroup": "URNAESCH-KB015011"
+  },
+  {
+    "id": "SRC-035",
+    "type": "Near-contemporary relief account, digitized scan",
+    "authorOrOrg": "Ruprecht Zollikofer; ETH-Bibliothek Zürich",
+    "title": "Das Hungerjahr 1817, second part",
+    "year": 1819,
+    "url": "https://www.e-rara.ch/doi/10.3931/e-rara-65216",
+    "quality": "Attributed contemporary compilation; dated passage scan checked",
+    "topics": [
+      "Appenzell",
+      "grain imports",
+      "diplomacy"
+    ],
+    "notes": "ETH Rar 27518, published 1818–1819. OCR inspected, then compared visually with section PDF https://www.e-rara.ch/download/pdf/17801438.pdf pages 29–30 (second part pp. 208–209). December confirmation/arrival and instructions checked. Quantities excluded. Relief-society author; archival originals pending.",
+    "dependencyGroup": "ZOLLIKOFER-APPENZELL-RELIEF"
+  }
 ]

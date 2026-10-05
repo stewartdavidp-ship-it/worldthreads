@@ -1,17 +1,1110 @@
 [
-{"id":"REL-0001","subjectId":"WT-1816-0008","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0001","causalStatus":"CONTRIBUTORY","lag":"~1 year","explanation":"Tambora is identified as a major volcanic forcing behind the anomalous 1816 Northern Hemisphere climate, while local atmospheric variability also mattered.","confidence":"High","sourceRefs":["SRC-002","SRC-016"],"alternatives":["internal climate variability"]},
-{"id":"REL-0002","subjectId":"WT-1816-0001","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0002","causalStatus":"CONTRIBUTORY","lag":"weeks to months","explanation":"Temperature anomalies affected migratory fish species differently because of species-specific phenology and thermal sensitivity.","confidence":"High","sourceRefs":["SRC-002"]},
-{"id":"REL-0003","subjectId":"WT-1816-0002","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0003","causalStatus":"CONTRIBUTORY","lag":"same season","explanation":"Weak alewife availability interacted with crop failure and food demand, shifting fishing effort toward marine species including mackerel.","confidence":"High","sourceRefs":["SRC-002"]},
-{"id":"REL-0004","subjectId":"WT-1816-0003","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0004","causalStatus":"CONTRIBUTORY","lag":"years","explanation":"The emergency shift in fishing effort persisted after the immediate climate anomaly, creating a path-dependent structural adaptation.","confidence":"High","sourceRefs":["SRC-002"]},
-{"id":"REL-0005","subjectId":"WT-1816-0008","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0005","causalStatus":"CONTRIBUTORY","lag":"~1 year","explanation":"Tambora forcing contributed to the exceptionally cold 1816 summer in the Czech Lands; background climate and circulation variability also influenced conditions.","confidence":"High","sourceRefs":["SRC-001","SRC-016"]},
-{"id":"REL-0006","subjectId":"WT-1816-0007","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0006","causalStatus":"CONTRIBUTORY","lag":"months","explanation":"Persistent wet conditions damaged cereals and yields, contributing to shortage and later grain-price pressure.","confidence":"Medium-High","sourceRefs":["SRC-001"]},
-{"id":"REL-0007","subjectId":"WT-1816-0005","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0006","causalStatus":"CONTRIBUTORY","lag":"6–18 months","explanation":"Cold and damaging 1816 weather contributed to poor grain harvests followed by widespread price increases in 1817.","confidence":"High","sourceRefs":["SRC-001"]},
-{"id":"REL-0008","subjectId":"WT-1816-0008","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0009","causalStatus":"CONTRIBUTORY","lag":"~1 year","explanation":"The Geneva cold summer occurred in the post-Tambora climate anomaly, with regional circulation and cloudiness shaping the local expression.","confidence":"High","sourceRefs":["SRC-004","SRC-016"]},
-{"id":"REL-0009","subjectId":"WT-1816-0009","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0015","causalStatus":"CONTRIBUTORY","lag":"same summer","explanation":"The cold, rainy Geneva summer helped keep the literary group indoors and formed the documented setting for the ghost-story challenge from which Frankenstein emerged. This is a contributing cultural context, not a claim that climate alone caused the work.","confidence":"Medium-High","sourceRefs":["SRC-013","SRC-014"]},
-{"id":"REL-0010","subjectId":"WT-1816-0008","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0010","causalStatus":"CONTRIBUTORY","lag":"1–2 years","explanation":"Post-eruption cold conditions contributed to unusual Alpine snow conditions during 1816–1817.","confidence":"High","sourceRefs":["SRC-005"]},
-{"id":"REL-0011","subjectId":"WT-1816-0010","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0011","causalStatus":"CONTRIBUTORY","lag":"months","explanation":"Snow storage increased the water available for melt, but modeling indicates spring 1817 snowfall and intense triggering rainfall were more immediate drivers than surviving 1816 snow alone.","confidence":"Medium-High","sourceRefs":["SRC-005"],"alternatives":["spring 1817 snowfall","heavy July 1817 rainfall"]},
-{"id":"REL-0012","subjectId":"WT-1816-0008","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0012","causalStatus":"CONTRIBUTORY","lag":"~1 year","explanation":"Multiple proxy lines attribute a significant part of the southern China 1816 cold excursion to Tambora-era volcanic forcing.","confidence":"High","sourceRefs":["SRC-006"]},
-{"id":"REL-0013","subjectId":"WT-1816-0012","predicate":"COINCIDED_WITH","objectId":"WT-1816-0013","causalStatus":"ASSOCIATED","lag":"same year","explanation":"Cold conditions and reconstructed drying tendencies occurred together, but proxy systems disagree spatially, so the hydroclimate connection is stored as associated rather than simple deterministic causation.","confidence":"Medium","sourceRefs":["SRC-006"]},
-{"id":"REL-0014","subjectId":"WT-1816-0017","predicate":"PRECEDED","objectId":"WT-1816-0016","causalStatus":"ASSOCIATED","lag":"4 months","explanation":"These are distinct state-formation/diplomatic processes in different regions. The link is chronological only and exists to support comparative political timelines, not causation.","confidence":"High","sourceRefs":["SRC-007","SRC-008"]},
-{"id":"REL-0015","subjectId":"WT-1816-0019","predicate":"COINCIDED_WITH","objectId":"WT-1816-0020","causalStatus":"ASSOCIATED","lag":"same year","explanation":"Both occurred in southern Africa in 1816 but arose from different political systems. This relationship is explicitly non-causal and useful for regional comparison.","confidence":"High","sourceRefs":["SRC-010","SRC-011"]}
+  {
+    "id": "REL-0001",
+    "subjectId": "WT-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0001",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "~1 year",
+    "explanation": "Tambora is identified as a major volcanic forcing behind the anomalous 1816 Northern Hemisphere climate, while local atmospheric variability also mattered.",
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "evidenceRefs": [
+      "EV-B2-REL-0001"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Tambora is identified as a major volcanic forcing behind the anomalous 1816 Northern Hemisphere climate, while local atmospheric variability also mattered.",
+      "assessment": "supported",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0001",
+          "explanation": "Weather varies within the region.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-002"
+          ],
+          "locator": "Introduction",
+          "evidenceNote": "The temperature series is local, and attribution is not isolated.",
+          "distinguishingEvidence": [
+            "Compare independent records and test the competing mechanism."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "No contrary source independently inspected.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent replication and comparison across locations or periods."
+      ],
+      "searchStatus": "Alternative discussion in the supporting paper inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0002",
+    "subjectId": "WT-1816-0001",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0002",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "weeks to months",
+    "explanation": "Temperature anomalies affected migratory fish species differently because of species-specific phenology and thermal sensitivity.",
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "evidenceRefs": [
+      "EV-B2-REL-0002"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Temperature anomalies affected migratory fish species differently because of species-specific phenology and thermal sensitivity.",
+      "assessment": "plausible",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0002",
+          "explanation": "Dams and settlement also affect fish exports.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-002"
+          ],
+          "locator": "Results: anthropogenic pressures; Discussion",
+          "evidenceNote": "Export patterns combine human and biological effects.",
+          "distinguishingEvidence": [
+            "Compare independent records and test the competing mechanism."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "No contrary source independently inspected.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent replication and comparison across locations or periods."
+      ],
+      "searchStatus": "Alternative discussion in the supporting paper inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0003",
+    "subjectId": "WT-1816-0002",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0003",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "same season",
+    "explanation": "Weak alewife availability interacted with crop failure and food demand, shifting fishing effort toward marine species including mackerel.",
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "evidenceRefs": [
+      "EV-B2-REL-0003"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Weak alewife availability interacted with crop failure and food demand, shifting fishing effort toward marine species including mackerel.",
+      "assessment": "supported",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0003",
+          "explanation": "Trade reopening and market demand also affect export shifts.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-002"
+          ],
+          "locator": "Introduction; Discussion",
+          "evidenceNote": "War and embargo affected trade; relative contributions need further testing.",
+          "distinguishingEvidence": [
+            "Compare independent records and test the competing mechanism."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "No contrary source independently inspected.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent replication and comparison across locations or periods."
+      ],
+      "searchStatus": "Alternative discussion in the supporting paper inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0004",
+    "subjectId": "WT-1816-0003",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0004",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "years",
+    "explanation": "The emergency shift in fishing effort persisted after the immediate climate anomaly, creating a path-dependent structural adaptation.",
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "evidenceRefs": [
+      "EV-B2-REL-0004"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "The emergency shift in fishing effort persisted after the immediate climate anomaly, creating a path-dependent structural adaptation.",
+      "assessment": "supported",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0004",
+          "explanation": "Population, transport and markets support longer-term expansion.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-002"
+          ],
+          "locator": "Discussion, p. 13",
+          "evidenceNote": "Authors discuss these forces alongside contingent adaptation.",
+          "distinguishingEvidence": [
+            "Compare independent records and test the competing mechanism."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "No contrary source independently inspected.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent replication and comparison across locations or periods."
+      ],
+      "searchStatus": "Alternative discussion in the supporting paper inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0005",
+    "subjectId": "WT-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0005",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "~1 year",
+    "explanation": "Tambora forcing contributed to the exceptionally cold 1816 summer in the Czech Lands; background climate and circulation variability also influenced conditions.",
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-001"
+    ],
+    "evidenceRefs": [
+      "EV-B2-REL-0005"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Tambora forcing contributed to the exceptionally cold 1816 summer in the Czech Lands; background climate and circulation variability also influenced conditions.",
+      "assessment": "supported",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0005",
+          "explanation": "Earlier cooling and circulation also matter.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-001"
+          ],
+          "locator": "Sections 5.1 and 6",
+          "evidenceNote": "Regional responses differ from the global signal.",
+          "distinguishingEvidence": [
+            "Compare independent records and test the competing mechanism."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "No contrary source independently inspected.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent replication and comparison across locations or periods."
+      ],
+      "searchStatus": "Alternative discussion in the supporting paper inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0006",
+    "subjectId": "WT-1816-0007",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0006",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "months",
+    "explanation": "Persistent wet conditions damaged cereals and yields, contributing to shortage and later grain-price pressure.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-001"
+    ],
+    "evidenceRefs": [
+      "EV-B2-REL-0006"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Persistent wet conditions damaged cereals and yields, contributing to shortage and later grain-price pressure.",
+      "assessment": "supported",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0006",
+          "explanation": "Postwar demand, inflation and agricultural change also influence prices.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-001"
+          ],
+          "locator": "Section 5.3",
+          "evidenceNote": "The paper discusses economic interpretations alongside harvest failure.",
+          "distinguishingEvidence": [
+            "Compare independent records and test the competing mechanism."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "Oats had a better yield and less volatile prices; crops did not respond uniformly.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent replication and comparison across locations or periods."
+      ],
+      "searchStatus": "Alternative discussion in the supporting paper inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0007",
+    "subjectId": "WT-1816-0005",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0006",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "6–18 months",
+    "explanation": "Cold and damaging 1816 weather contributed to poor grain harvests followed by widespread price increases in 1817.",
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-001"
+    ],
+    "evidenceRefs": [
+      "EV-B2-REL-0007"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Cold and damaging 1816 weather contributed to poor grain harvests followed by widespread price increases in 1817.",
+      "assessment": "supported",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0007",
+          "explanation": "Postwar demand, inflation and agricultural change also influence prices.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-001"
+          ],
+          "locator": "Section 5.3",
+          "evidenceNote": "The paper discusses economic interpretations alongside harvest failure.",
+          "distinguishingEvidence": [
+            "Compare independent records and test the competing mechanism."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "Oats had a better yield and less volatile prices; crops did not respond uniformly.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent replication and comparison across locations or periods."
+      ],
+      "searchStatus": "Alternative discussion in the supporting paper inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0008",
+    "subjectId": "WT-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0009",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "~1 year",
+    "explanation": "The Geneva cold summer occurred in the post-Tambora climate anomaly, with regional circulation and cloudiness shaping the local expression.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-004"
+    ],
+    "evidenceRefs": [
+      "EV-B2-REL-0008"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "The Geneva cold summer occurred in the post-Tambora climate anomaly, with regional circulation and cloudiness shaping the local expression.",
+      "assessment": "plausible",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0008",
+          "explanation": "Circulation, cloudiness, ocean state and solar activity interact.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-004"
+          ],
+          "locator": "Section 4",
+          "evidenceNote": "Observations cannot uniquely separate mechanisms.",
+          "distinguishingEvidence": [
+            "Compare independent records and test the competing mechanism."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "The authors explicitly state attribution is not possible from these observations alone.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent replication and comparison across locations or periods."
+      ],
+      "searchStatus": "Alternative discussion in the supporting paper inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0009",
+    "subjectId": "WT-1816-0009",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0015",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "same summer",
+    "explanation": "The cold, rainy Geneva summer helped keep the literary group indoors and formed the documented setting for the ghost-story challenge from which Frankenstein emerged. This is a contributing cultural context, not a claim that climate alone caused the work.",
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-013",
+      "SRC-014",
+      "SRC-020"
+    ],
+    "evidenceRefs": [
+      "EV-B3-REL-0009-SRC-014",
+      "EV-R13-REL-0009-SRC-020"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "The cold, rainy Geneva summer helped keep the literary group indoors and formed the documented setting for the ghost-story challenge from which Frankenstein emerged. This is a contributing cultural context, not a claim that climate alone caused the work.",
+      "assessment": "plausible",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B3-0009",
+          "explanation": "Byron’s challenge, Gothic storytelling, scientific debates and Mary Shelley’s creative choices also mattered.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-014",
+            "SRC-020"
+          ],
+          "locator": "1831 Introduction, ghost-story and galvanism paragraphs",
+          "evidenceNote": "The account discusses the challenge and galvanism alongside stormy weather.",
+          "distinguishingEvidence": [
+            "Compare independent accounts and test the relative contribution."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "The reproduced 1817 Preface says the weather became serene. Rain should not be treated as a continuous constraint throughout creation.",
+          "assessment": "qualified_counterexample"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Date-specific contemporary diaries compared with weather records and manuscript chronology."
+      ],
+      "searchStatus": "Earlier Preface and retrospective Introduction compared; independent diaries and wider alternatives pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0010",
+    "subjectId": "WT-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0010",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "1–2 years",
+    "explanation": "Post-eruption cold conditions contributed to unusual Alpine snow conditions during 1816–1817.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-005"
+    ],
+    "evidenceRefs": [
+      "EV-B3-REL-0010-SRC-005",
+      "EV-R13-REL-0010-SRC-005"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Post-eruption cold conditions contributed to unusual Alpine snow conditions during 1816–1817.",
+      "assessment": "plausible",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B3-0010",
+          "explanation": "Atmospheric variability and individual snowfall events also shape snow storage.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-005"
+          ],
+          "locator": "Abstract",
+          "evidenceNote": "Regional hydrology combines climate background with weather events.",
+          "distinguishingEvidence": [
+            "Compare independent accounts and test the relative contribution."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "The source does not isolate the volcanic share of snow accumulation.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent historical records and explicit comparison of mechanisms."
+      ],
+      "searchStatus": "Supporting source discussion inspected; wider alternative search pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0011",
+    "subjectId": "WT-1816-0010",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0011",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "months",
+    "explanation": "Snow storage increased the water available for melt, but modeling indicates spring 1817 snowfall and intense triggering rainfall were more immediate drivers than surviving 1816 snow alone.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-005"
+    ],
+    "evidenceRefs": [
+      "EV-B3-REL-0011-SRC-005",
+      "EV-R13-REL-0011-SRC-005"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Snow storage increased the water available for melt, but modeling indicates spring 1817 snowfall and intense triggering rainfall were more immediate drivers than surviving 1816 snow alone.",
+      "assessment": "plausible",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B3-0011",
+          "explanation": "Fresh spring 1817 snowfall and intense rainfall drive the flood.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-005"
+          ],
+          "locator": "Abstract",
+          "evidenceNote": "Fresh snow is favored over the proposed two-winter accumulation mechanism.",
+          "distinguishingEvidence": [
+            "Compare independent accounts and test the relative contribution."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "The model underestimates the largest peaks and may overstate required rainfall. Its authors argue a flood could occur with normal summer 1816 snow storage.",
+          "assessment": "model_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent catchment rainfall records and reconstruction using historical land use and hydraulic conditions."
+      ],
+      "searchStatus": "Preprint methods and limitations checked; independent hydrological studies and wider alternatives pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0012",
+    "subjectId": "WT-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0012",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "months to ~1 year",
+    "explanation": "Multiple proxy lines attribute a significant part of the southern China 1816 cold excursion to Tambora-era volcanic forcing.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-006"
+    ],
+    "evidenceRefs": [
+      "EV-B2-REL-0012"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Multiple proxy lines attribute a significant part of the southern China 1816 cold excursion to Tambora-era volcanic forcing.",
+      "assessment": "plausible",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0012",
+          "explanation": "Earlier eruption, solar background and reporting sensitivity affect attribution.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-006"
+          ],
+          "locator": "Sections 3.3–3.4",
+          "evidenceNote": "The paper discusses background cooling and archive sensitivity.",
+          "distinguishingEvidence": [
+            "Compare independent records and test the competing mechanism."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "No contrary source independently inspected.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent replication and comparison across locations or periods."
+      ],
+      "searchStatus": "Alternative discussion in the supporting paper inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0013",
+    "subjectId": "WT-1816-0012",
+    "predicate": "COINCIDED_WITH",
+    "objectId": "WT-1816-0013",
+    "causalStatus": "ASSOCIATED",
+    "lag": "same year",
+    "explanation": "Cold conditions and reconstructed drying tendencies occurred together, but proxy systems disagree spatially, so the hydroclimate connection is stored as associated rather than simple deterministic causation.",
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-006"
+    ],
+    "evidenceRefs": [
+      "EV-B2-REL-0013"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "Association only; no directional causal claim.",
+      "assessment": "unresolved",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-B2-0013",
+          "explanation": "Proxy coverage and sensitivity may explain disagreement.",
+          "kind": "rival_explanation",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-006"
+          ],
+          "locator": "Sections 3.2 and 3.4",
+          "evidenceNote": "No single reconstruction is established as more reliable.",
+          "distinguishingEvidence": [
+            "Independent regional hydroclimate records."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "Reconstructions disagree spatially.",
+          "assessment": "documented"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Independent regional hydroclimate records."
+      ],
+      "searchStatus": "Paper comparison inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0014",
+    "subjectId": "WT-1816-0017",
+    "predicate": "PRECEDED",
+    "objectId": "WT-1816-0016",
+    "causalStatus": "ASSOCIATED",
+    "lag": "4 months",
+    "explanation": "These are distinct state-formation/diplomatic processes in different regions. The link is chronological only and exists to support comparative political timelines, not causation.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-007",
+      "SRC-008",
+      "SRC-019"
+    ],
+    "evidenceRefs": [
+      "EV-B3-REL-0014-SRC-007",
+      "EV-B3-REL-0014-SRC-008",
+      "EV-R13-REL-0014-SRC-019"
+    ],
+    "researchStatus": "Source checked; independent review pending"
+  },
+  {
+    "id": "REL-0015",
+    "subjectId": "WT-1816-0019",
+    "predicate": "COINCIDED_WITH",
+    "objectId": "WT-1816-0020",
+    "causalStatus": "ASSOCIATED",
+    "lag": "same year",
+    "explanation": "Both occurred in southern Africa in 1816 but arose from different political systems. This relationship is explicitly non-causal and useful for regional comparison.",
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-010",
+      "SRC-011"
+    ],
+    "evidenceRefs": [
+      "EV-B3-REL-0015-SRC-010",
+      "EV-B3-REL-0015-SRC-011"
+    ],
+    "researchStatus": "Source checked; independent review pending"
+  },
+  {
+    "id": "REL-0016",
+    "subjectId": "WT-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0022",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "days to weeks",
+    "explanation": "Local ashfall damaged food and water resources.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-018"
+    ],
+    "evidenceRefs": [
+      "EV-REL-0016"
+    ],
+    "causalReview": {
+      "primaryExplanation": "Local ashfall damaged food and water resources.",
+      "assessment": "supported",
+      "priorConditions": [],
+      "alternatives": [],
+      "counterevidence": [],
+      "distinguishingEvidence": [
+        "Inspect the underlying dated reports and compare conditions before and after the eruption."
+      ],
+      "searchStatus": "Initial scholarly check complete; targeted alternative search pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0017",
+    "subjectId": "WT-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0023",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "~4 years",
+    "explanation": "The 1819 report records lingering maritime difficulty; it does not measure continuous harbor closure.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-018"
+    ],
+    "evidenceRefs": [
+      "EV-REL-0017"
+    ],
+    "causalReview": {
+      "primaryExplanation": "The 1819 report records lingering maritime difficulty; it does not measure continuous harbor closure.",
+      "assessment": "supported",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-REL0017-ACCESS",
+          "explanation": "Other navigation conditions may have contributed to the reported difficulty.",
+          "kind": "cofactor",
+          "assessment": "unresolved",
+          "sourceRefs": [],
+          "evidenceNote": "No independent assessment of navigation conditions is registered.",
+          "distinguishingEvidence": [
+            "Route logs distinguishing pumice obstruction from other navigation hazards."
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "distinguishingEvidence": [
+        "Inspect the underlying dated reports and compare conditions before and after the eruption."
+      ],
+      "searchStatus": "Initial scholarly check complete; targeted alternative search pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0018",
+    "subjectId": "WT-1816-0022",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0024",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "weeks to months",
+    "explanation": "Lost crops contributed to a subsistence crisis; other pressures remain unresolved.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-018"
+    ],
+    "evidenceRefs": [
+      "EV-REL-0018"
+    ],
+    "causalReview": {
+      "primaryExplanation": "Lost crops contributed to a subsistence crisis; other pressures remain unresolved.",
+      "assessment": "supported",
+      "priorConditions": [],
+      "alternatives": [
+        {
+          "id": "ALT-REL0018-RELIEF",
+          "explanation": "Food access and relief capacity may also have shaped famine severity.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-018"
+          ],
+          "locator": "printed page 44",
+          "evidenceNote": "The article describes limited relief capacity; its relative contribution is not quantified.",
+          "distinguishingEvidence": [
+            "Dated relief deliveries, food stocks and prices across affected communities."
+          ]
+        },
+        {
+          "id": "ALT-REL0018-BASELINE",
+          "explanation": "Pre-eruption food insecurity may have increased vulnerability.",
+          "kind": "prior_condition",
+          "assessment": "unresolved",
+          "sourceRefs": [],
+          "evidenceNote": "Research question; no supporting evidence registered.",
+          "distinguishingEvidence": [
+            "Pre-April 1815 harvest, price and food-stock records."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "No counterevidence registered; this does not establish that none exists.",
+          "assessment": "not_searched"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Inspect the underlying dated reports and compare conditions before and after the eruption."
+      ],
+      "searchStatus": "Initial scholarly check complete; targeted alternative search pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0019",
+    "subjectId": "WT-1816-0017",
+    "predicate": "PRECEDED",
+    "objectId": "WT-1816-0025",
+    "causalStatus": "ASSOCIATED",
+    "lag": "~9 months",
+    "explanation": "The March treaty exchange preceded December negotiations explicitly modifying some treaty provisions. This documents a connected diplomatic sequence; it does not isolate the causes of renegotiation.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-019"
+    ],
+    "evidenceRefs": [
+      "EV-R13-REL-0019-SRC-019"
+    ],
+    "researchStatus": "Source checked; independent review pending"
+  },
+  {
+    "id": "REL-0020",
+    "subjectId": "WT-1816-0026",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0027",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "7 days",
+    "explanation": "The governor’s expedition orders provided the policy and military framework for Wallis’s action at Appin. The documents do not isolate every cause of the massacre.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-021",
+      "SRC-022",
+      "SRC-023"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "causalReview": {
+      "primaryExplanation": "The governor’s expedition orders provided the policy and military framework for Wallis’s action at Appin. The documents do not isolate every cause of the massacre.",
+      "assessment": "supported",
+      "priorConditions": [
+        "Colonial settlement expansion and Indigenous resistance require contextual investigation."
+      ],
+      "alternatives": [
+        {
+          "id": "ALT-R14-0020-A",
+          "explanation": "Colonial expansion and concern for the Bathurst supply route also shaped the military campaign.",
+          "kind": "prior_condition",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-023"
+          ],
+          "locator": "Paragraphs on April campaign and Cox’s road",
+          "evidenceNote": "Gapps interprets the campaign in the wider history of resistance and settlement expansion.",
+          "distinguishingEvidence": [
+            "Compare military instructions, settler correspondence and Dharawal histories."
+          ]
+        },
+        {
+          "id": "ALT-R14-0020-B",
+          "explanation": "Local tactical decisions, darkness and the rocky terrain shaped deaths during flight.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-022"
+          ],
+          "locator": "Wallis transcription, 17 April",
+          "evidenceNote": "The report describes these conditions from the commander’s perspective.",
+          "distinguishingEvidence": [
+            "Compare the report with site evidence and community histories."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "Official reports are not neutral accounts and cannot establish the motives or experiences of the Dharawal victims.",
+          "assessment": "source_limitation"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Dharawal-led historical research, original instructions and independently assessed site evidence."
+      ],
+      "searchStatus": "Governor and commander accounts compared with library scholarship; Indigenous perspectives and wider alternatives pending",
+      "reviewStatus": "pending_independent_review"
+    },
+    "evidenceRefs": [
+      "EV-R14-REL-0020-SRC-021",
+      "EV-R14-REL-0020-SRC-022",
+      "EV-R14-REL-0020-SRC-023"
+    ]
+  },
+  {
+    "id": "REL-0021",
+    "subjectId": "WT-1816-0021",
+    "predicate": "PRECEDED",
+    "objectId": "WT-1816-0028",
+    "causalStatus": "ASSOCIATED",
+    "lag": "~6 months",
+    "explanation": "The Rome premiere preceded the revised Bologna performance. Their different reception is reported by the timeline, but revision alone is not established as its cause.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-015"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-R15-REL-0021"
+    ]
+  },
+  {
+    "id": "REL-0022",
+    "subjectId": "WT-1816-0028",
+    "predicate": "PRECEDED",
+    "objectId": "WT-1816-0029",
+    "causalStatus": "ASSOCIATED",
+    "lag": "months to ~1 year",
+    "explanation": "Bologna acclaim preceded broader performance in 1817. The timeline links these narratively; this edge preserves the sequence without isolating the causes of diffusion.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-015"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-R15-REL-0022"
+    ]
+  },
+  {
+    "id": "REL-0023",
+    "subjectId": "WT-1816-0008",
+    "predicate": "CONTESTED_CONNECTION",
+    "objectId": "WT-1816-0030",
+    "causalStatus": "CONTESTED",
+    "lag": "~28 months",
+    "explanation": "A Tambora–cholera connection has been proposed, but the inspected literature does not establish attribution. This is a research hypothesis.",
+    "confidence": "Low",
+    "sourceRefs": [
+      "SRC-018",
+      "SRC-024"
+    ],
+    "researchStatus": "Hypothesis checked; independent review pending",
+    "evidenceRefs": [
+      "EV-R16-REL-0023-A",
+      "EV-R16-REL-0023-B"
+    ],
+    "causalReview": {
+      "primaryExplanation": "Proposed climatic contribution to the epidemic",
+      "assessment": "unresolved",
+      "priorConditions": [
+        "Earlier regional disease reports have uncertain retrospective classification."
+      ],
+      "alternatives": [
+        {
+          "id": "ALT-REL0023-MOBILITY",
+          "explanation": "Migrant labour associated with indigo production may have contributed to spread.",
+          "kind": "cofactor",
+          "assessment": "plausible",
+          "sourceRefs": [
+            "SRC-024"
+          ],
+          "locator": "Acts of God, paragraphs on Jessore and migrant labour; notes 30–32",
+          "evidenceNote": "Harrison explicitly calls the hypothesis unproven.",
+          "distinguishingEvidence": [
+            "Compare dated labour movements with local outbreaks."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "De Jong Boers reports that the climate hypothesis could not be substantiated. Failure to substantiate is not disproof.",
+          "assessment": "unresolved"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Inspect contemporary epidemic reports and regional weather, harvest and movement records."
+      ],
+      "searchStatus": "Initial alternatives inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0024",
+    "subjectId": "WT-1816-0031",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0032",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "same episode",
+    "explanation": "Heavy rain accompanied the flood episode; damage also depended on exposure. The diary does not isolate rainfall’s contribution.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-025",
+      "SRC-026",
+      "SRC-027"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-R17-REL-0024-A",
+      "EV-R17-REL-0024-B",
+      "EV-R17-REL-0024-C"
+    ],
+    "causalReview": {
+      "primaryExplanation": "Rainfall contributed to inundation",
+      "assessment": "supported",
+      "priorConditions": [
+        "Floodplain exposure"
+      ],
+      "alternatives": [
+        {
+          "id": "ALT-REL0024-EXPOSURE",
+          "explanation": "Settlement on low ground increased exposure.",
+          "kind": "prior_condition",
+          "assessment": "supported",
+          "sourceRefs": [
+            "SRC-027"
+          ],
+          "locator": "Published p. 186",
+          "evidenceNote": "Garden discusses residences on vulnerable floodplains.",
+          "distinguishingEvidence": [
+            "Compare losses on high and low ground."
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "description": "Hobart’s harvest expectation cautions against uniform agricultural failure across colonies.",
+          "assessment": "supported"
+        }
+      ],
+      "distinguishingEvidence": [
+        "Inspect local damage, land-use and rainfall records."
+      ],
+      "searchStatus": "Exposure inspected; wider search pending",
+      "reviewStatus": "pending_independent_review"
+    }
+  },
+  {
+    "id": "REL-0025",
+    "subjectId": "WT-1816-0032",
+    "predicate": "ASSOCIATED_WITH",
+    "objectId": "WT-1816-0033",
+    "causalStatus": "ASSOCIATED",
+    "lag": "~3 months",
+    "explanation": "The newspaper contrasted the colonies’ agricultural prospects. This is comparison, not evidence that one outcome caused the other.",
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-027",
+      "SRC-028"
+    ],
+    "researchStatus": "Source checked; independent review pending",
+    "evidenceRefs": [
+      "EV-R17-REL-0025",
+      "EV-R18-REL-0025"
+    ]
+  },
+  {
+    "id": "REL-0026",
+    "subjectId": "WT-1816-0034",
+    "predicate": "ASSOCIATED_WITH",
+    "objectId": "WT-1816-0035",
+    "causalStatus": "ASSOCIATED",
+    "lag": "Reports dated five days apart",
+    "explanation": "Leith forwards Codd’s report: the records link an uprising report to a military response, not independent corroboration.",
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "evidenceRefs": [
+      "EV-R19-REL-0026"
+    ],
+    "researchStatus": "Source checked; independent review pending"
+  },
+  {
+    "id": "REL-0027",
+    "subjectId": "WT-1816-0038",
+    "predicate": "RESPONDED_TO",
+    "objectId": "WT-1816-0037",
+    "causalStatus": "ASSOCIATED",
+    "lag": "September to November–December 1816",
+    "explanation": "The review presents private procurement as a response to failed coordination; relief effectiveness is not established here.",
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "evidenceRefs": [
+      "EV-R20-REL-0027"
+    ],
+    "researchStatus": "Source checked; independent review pending"
+  },
+  {
+    "id": "REL-0028",
+    "subjectId": "WT-1816-0040",
+    "predicate": "ASSOCIATED_WITH",
+    "objectId": "WT-1816-0041",
+    "causalStatus": "ASSOCIATED",
+    "lag": "Within retrospectively described 1816–1817 crisis",
+    "explanation": "The account reports crop/pasture difficulty and local rodent damage together. It does not quantify their interaction or establish that weather caused rodent damage.",
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-032"
+    ],
+    "evidenceRefs": [
+      "EV-R21-REL-0028"
+    ],
+    "researchStatus": "Source checked; independent review pending"
+  }
 ]

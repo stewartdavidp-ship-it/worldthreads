@@ -3,9 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+  (function(){
+    var theme='auto',size='normal',sizes={normal:'100%',large:'112.5%',xl:'125%',xxl:'140%'};
+    try{theme=localStorage.getItem('worldthreads-theme')||theme;size=localStorage.getItem('worldthreads-text-size')||size;}catch(e){}
+    var dark=theme==='dark'||(theme!=='light'&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+    document.documentElement.setAttribute('data-theme',dark?'dark':'light');
+    document.documentElement.style.fontSize=sizes[size]||'100%';
+  })();
+  </script>
   <title>WorldThreads — 1816 Prototype</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="threads.css" />
+  <link rel="stylesheet" href="styles.css?v=20261002-research-bridge" />
+  <link rel="stylesheet" href="threads.css?v=20261002-research-bridge" />
+  <link rel="stylesheet" href="appearance.css?v=20261002-research-bridge" />
+  <link rel="stylesheet" href="explore.css?v=20261002-research-bridge" />
 </head>
 <body>
   <header class="site-header">
@@ -14,28 +25,57 @@
       <div class="tagline">History isn't a collection of events. It's the threads that connect them.</div>
     </div>
     <nav>
-      <button class="nav-btn active">1816</button>
-      <button class="nav-btn">Threads</button>
-      <button class="nav-btn">Evidence</button>
+<div class="disp">
+                <button class="disp-btn" id="dispBtn" type="button" aria-label="Display settings: theme and text size" aria-haspopup="dialog" aria-expanded="false" aria-controls="dispPanel"><span class="a1">A</span><span class="a2">a</span></button>
+                <div class="disp-panel" id="dispPanel" role="dialog" aria-label="Display settings">
+                    <p class="dph" id="dispThemeLbl">Theme</p>
+                    <div class="disp-row" id="dispTheme" role="group" aria-labelledby="dispThemeLbl">
+                        <button type="button" data-theme-choice="auto" aria-pressed="true" title="Match your device">Auto</button>
+                        <button type="button" data-theme-choice="light" aria-pressed="false" title="Light theme">Light</button>
+                        <button type="button" data-theme-choice="dark" aria-pressed="false" title="Dark theme">Dark</button>
+                    </div>
+                    <p class="dph mt" id="dispSizeLbl">Text size</p>
+                    <div class="disp-sizes" role="group" aria-labelledby="dispSizeLbl">
+                        <button type="button" data-size="normal" aria-pressed="true" aria-label="Normal text size" title="Normal">A</button>
+                        <button type="button" data-size="large" aria-pressed="false" aria-label="Large text size" title="Large">A</button>
+                        <button type="button" data-size="xl" aria-pressed="false" aria-label="Extra-large text size" title="Extra large">A</button>
+                        <button type="button" data-size="xxl" aria-pressed="false" aria-label="Largest text size" title="Largest">A</button>
+                    </div>
+                    <p class="disp-note">Saved on this device.</p>
+                </div>
+            </div>
+      <button class="nav-btn active" data-view="discover">Discover</button>
+      <button class="nav-btn" data-view="explore">Follow a thread</button>
+      <button class="nav-btn" data-view="group">Investigate together</button><button class="nav-btn" data-view="research">Contribute research</button>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div>
-        <p class="eyebrow">PROTOTYPE YEAR · CONTEXT 1814–1818</p>
-        <h1>1816</h1>
-        <h2>The world in motion</h2>
-        <p class="intro">Explore evidence as a historical systems graph: Earth, biosphere, production, people, power and culture. Facts remain separate from the relationships historians infer between them.</p>
-      </div>
-      <div class="hero-card">
-        <div class="hero-stat"><span id="statObservations">—</span><small>observations</small></div>
-        <div class="hero-stat"><span id="statThreads">—</span><small>traceable threads</small></div>
-        <div class="hero-stat"><span id="statSources">—</span><small>sources</small></div>
-        <div class="hero-stat"><span id="statRelations">—</span><small>relationships</small></div>
-      </div>
+    <section id="discoverView" class="journey-view">
+      <div class="discovery-hero"><p class="eyebrow">1816 · A WORLD OF CONNECTIONS</p><h1>How does history<br>connect?</h1><p>Try a claim worth challenging: <strong>was bad weather the decisive influence on Frankenstein?</strong> Inspect a clue, compare explanations, and follow a question of your own. You don’t need to choose a side.</p><button class="nav-btn primary" id="startExploring">Take the Frankenstein challenge →</button><button class="nav-btn" id="browseThreads">Browse all threads</button><button class="nav-btn" id="resumeJourney" hidden>Resume your exploration</button><p class="scope-note">Competing explanations · source passages · your own investigation</p></div>
+      <div class="section-head"><p class="eyebrow">CHOOSE YOUR STARTING POINT</p><h2>What draws your curiosity?</h2><p>Each thread is a route through the evidence. You can branch off at any fact.</p></div><div id="threadGallery" class="thread-gallery"></div>
+      <details class="collection-context"><summary>About this growing collection</summary><div class="collection-stats"><span><b id="statObservations">—</b> facts</span><span><b id="statThreads">—</b> threads</span><span><b id="statSources">—</b> sources</span><span><b id="statRelations">—</b> relationships</span></div><p>Facts and inferred relationships are separate. Confidence reflects recorded evidence, not popularity. <span id="highConfidence"></span> high-confidence observations across <span id="regionsCovered"></span> continents.</p></details>
     </section>
-
+    <section id="exploreView" class="journey-view" hidden><button class="nav-btn" data-view="discover">← All threads</button><div class="explore-heading"><p class="eyebrow">FOLLOW THE CLUES</p><h2 id="exploreTitle"></h2><p id="exploreDescription"></p></div><section id="casePanel" class="case-panel" hidden></section><div class="explorer-workspace"><aside id="factReader" class="fact-reader" aria-live="polite"></aside><details id="mapDisclosure" class="story-map" open><summary>Open the evidence board and related leads</summary><div class="explore-controls"><label for="connectionDepth">Show on the evidence board</label><select id="connectionDepth"><option value="0">The story only</option><option value="1">Story + nearby leads</option><option value="2">Story + wider leads</option></select><button id="resetJourney" class="nav-btn">Restart this story</button></div><div class="network-viewport"><div id="networkCanvas" class="network-canvas" aria-label="Historical connections"></div></div><div class="network-legend"><span>━━ Causal / contributing</span><span>┄┄ Associated / contested</span><span>··· Provisional / disputed</span></div><p class="scope-note">Read connection explanations beside the selected fact. Colors distinguish subjects; they do not indicate confidence. Additional leads are marked “Related.”</p></details></div><details class="technical-thread"><summary>Read the complete thread and relationship evidence</summary><div id="originalThreadMount"></div></details></section>
+    <section id="groupView" class="journey-view" hidden>
+<button class="nav-btn" data-view="discover">← All threads</button><p class="eyebrow">INVESTIGATE TOGETHER · 1816</p>
+<h2 id="sessionTitle">Choose a case with your friends</h2><p>Create a session for 2–6 people. Share its code, follow different leads, then put your explanations to the test. No account needed.</p>
+<p class="scope-note">Use nicknames and omit private information. Session notes stay with your group and do not enter the historical record. Anyone with the invitation code can join while it is open.</p>
+<ol class="session-steps"><li>Choose a lead</li><li>Read &amp; jot</li><li>Reveal &amp; discuss</li><li>Challenge the explanation</li></ol><p class="scope-note">Play together or on your usual call. The session has no built-in voice or chat.</p>
+<p id="sessionStatus" role="status" aria-live="polite"></p>
+<div id="sessionLobby" class="session-columns">
+<section class="panel"><h3>Host a session</h3><label for="sessionCase">Choose your case</label><select id="sessionCase"></select><p id="sessionCasePreview"></p><label for="sessionHostAlias">Your nickname</label><input id="sessionHostAlias" maxlength="40"><label for="sessionHostLead">Your first lead</label><select id="sessionHostLead"></select><button id="sessionCreate" class="nav-btn primary">Create group session</button></section>
+<section class="panel"><h3>Join your friends</h3><label for="sessionJoinCode">Room code</label><input id="sessionJoinCode" maxlength="12" autocomplete="off"><button id="sessionFind" class="nav-btn">Find session</button><p id="sessionJoinPreview">Enter a code to see the case and available leads.</p><label for="sessionJoinAlias">Your nickname</label><input id="sessionJoinAlias" maxlength="40"><label for="sessionJoinLead">Choose a lead</label><select id="sessionJoinLead" disabled></select><button id="sessionJoin" class="nav-btn primary" disabled>Join group</button></section></div>
+<div id="sessionBoard" hidden>
+<section class="panel"><details><summary>Invite &amp; rejoin</summary><p>Room code: <strong id="sessionCode"></strong></p><label for="sessionInvite">Invitation link · share this with your group</label><input id="sessionInvite" readonly><button id="sessionCopyInvite" class="nav-btn">Copy invitation</button><p class="scope-note">Bookmark your current browser address as your private rejoin link. Share the invitation above instead.</p></details><h3 id="sessionPhase"></h3><ul id="sessionMembers"></ul><p id="sessionCoordination"></p><button id="sessionRefresh" class="nav-btn">Refresh session</button><button id="sessionCompare" class="nav-btn primary">Open group comparison</button><div id="sessionProceed" hidden><p>Some friends have not recorded an interpretation. Their unfinished notes will stay hidden.</p><label><input id="sessionProceedConsent" type="checkbox">Open comparison with the ready participants. Joining closes for this round.</label><button id="sessionProceedButton" class="nav-btn">Continue with ready friends</button></div></section>
+<details id="sessionOwnWork" class="panel" open><summary id="sessionYourName"></summary><p id="sessionBoundary" class="scope-note"></p><div id="sessionQuestionMap"></div><label for="sessionLead">Your lead</label><select id="sessionLead"></select><article id="sessionPassage"></article><p class="scope-note">Short notes are enough: one sentence in each field. You can revise them later.</p><label for="sessionSupports">What does this clue support?</label><textarea id="sessionSupports" maxlength="1600" rows="2" placeholder="This clue supports…"></textarea><label for="sessionUncertain">What remains uncertain?</label><textarea id="sessionUncertain" maxlength="1600" rows="2" placeholder="It does not establish…"></textarea><label for="sessionNextEvidence">What evidence would distinguish the explanations?</label><textarea id="sessionNextEvidence" maxlength="1600" rows="2" placeholder="I would check…"></textarea><button id="sessionSave" class="nav-btn primary">Record my interpretation</button><p id="sessionWaiting" role="status"></p></details>
+<section id="sessionComparison" class="panel" hidden><h3>Reveal &amp; discuss</h3><p id="sessionDiscussion"></p><p id="sessionSourcesNote" class="source-warning"></p><p>Take turns: name one friend’s clue that changed or limited your explanation. Cite the clue; agreement is not proof.</p><div id="sessionEvidenceBoard" class="session-columns"></div>
+<section id="sessionExtension" hidden><h3 id="sessionExtensionTitle"></h3><p id="sessionExtensionIntro"></p><button id="sessionOpenExtension" class="nav-btn primary">Investigate the rival explanations →</button><div id="sessionExtensionCards" class="session-columns" hidden></div></section>
+<h3>Where should the investigation go next?</h3><p>Record what changed and a specific question your group still needs to investigate. Different questions can remain open.</p><div id="sessionNextSteps"></div><label for="sessionNextQuestion">Your next investigation</label><textarea id="sessionNextQuestion" rows="3" maxlength="1400"></textarea><button id="sessionSaveNext" class="nav-btn">Save next investigation</button><button id="sessionResearchNext" class="nav-btn primary">Research this question with my tools</button><p>Use your own assistant, browser or archive. Return through the existing research form, then share a finding below.</p><button id="sessionReturnResearch" class="nav-btn">Return research for review</button><button id="sessionLoadReturn" class="nav-btn">Use a finding from my returned research</button><label for="sessionFinding">Finding and what it changes</label><textarea id="sessionFinding" rows="3" maxlength="1600"></textarea><label for="sessionFindingSource">Public source URL</label><input id="sessionFindingSource" type="url"><label for="sessionFindingQuote">Exact source passage</label><textarea id="sessionFindingQuote" rows="3" maxlength="500"></textarea><label><input id="sessionFindingConsent" type="checkbox">Share this finding and passage with this group as unverified working evidence.</label><button id="sessionShareFinding" class="nav-btn">Share finding with group</button><p class="scope-note">Group findings remain working evidence. Use Return research for automatic assessment and incorporation into WorldThreads.</p><button id="sessionAnotherCase" class="nav-btn">Choose another case</button></section>
+<button id="sessionWithdraw" class="nav-btn">Withdraw from this round</button><button id="sessionLeave" class="nav-btn">Return to session lobby</button><p class="scope-note">Returning to the lobby keeps your membership. Guests can withdraw to stop waiting on their contribution; hosts can continue with ready friends.</p>
+</div></section>
+<section id="researchView" class="journey-view" hidden><button class="nav-btn" data-view="explore">← Back to my thread</button><p class="eyebrow">CONTINUE THE DISCOVERY</p><h2>Your investigation</h2><p id="researchContext">Choose a thread, ask a question, and bring back evidence.</p><div id="researchStartingFact" class="research-start"></div><section id="researchClues" class="research-clues" hidden></section><p class="scope-note">Your question and exploration are saved on this device.</p><div class="research-tabs"><button class="nav-btn active" data-research-tab="prepare">1 · Get a research prompt</button><button class="nav-btn" data-research-tab="return">2 · Return findings</button><button class="nav-btn" data-research-tab="progress">3 · Track progress</button></div><div id="researchMount"></div></section>
+    <details id="evidenceLibrary" class="collection-context"><summary>Browse all facts and evidence</summary><div id="libraryMount"></div></details>
     <section class="filters">
       <button class="filter active" data-system="ALL">All systems</button>
       <button class="filter earth" data-system="EARTH">Earth</button>
@@ -61,6 +101,7 @@
           <div class="map-label asia">Asia</div><button class="map-node asia-node" data-region="Asia" aria-label="Asia"></button>
           <div class="map-label africa">Africa</div><button class="map-node africa-node" data-region="Africa" aria-label="Africa"></button>
           <div class="map-label sa">South America</div><button class="map-node sa-node" data-region="South America" aria-label="South America"></button>
+          <div class="map-label oceania">Oceania</div><button class="map-node oceania-node" data-region="Oceania" aria-label="Oceania"></button>
           <div class="map-empty">Coverage shows evidence gathered so far, not historical importance. Research gaps remain explicit.</div>
         </div>
         <div class="legend"><span><i class="dot high"></i> High confidence</span><span><i class="dot medium"></i> Medium / mixed evidence</span></div>
@@ -75,7 +116,87 @@
         <div class="thread-toolbar"><select id="threadSelect" class="thread-select" aria-label="Choose a historical thread"></select></div>
         <p id="threadDescription" class="thread-description"></p>
         <div id="threadGraph" class="thread-graph"></div>
+        <p class="review-note">Arrows connect recorded facts through explicit relationships. Dashed lines mark provisional, associated or disputed connections. Select a fact or inspect the evidence for a connection below.</p>
       </section>
+    </section>
+
+    <section class="panel contribution-panel" id="contribute">
+      <p class="eyebrow">EXTEND THE RESEARCH</p>
+      <h3>What would you like to investigate?</h3>
+      <p>Choose a place and a question. We’ll prepare a prompt you can use with your research assistant to look for supporting evidence, competing causes and uncertainty.</p>
+      <label for="researchPlace">Place you want to investigate</label>
+      <input id="researchPlace" type="text" placeholder="Your town, district, watershed or community">
+      <label for="researchDirection">How would you like to explore?</label>
+      <select id="researchDirection" class="thread-select">
+        <option value="continue_thread">Investigate this question</option>
+        <option value="new_thread">I specifically want to propose a related thread</option>
+      </select>
+      <label for="personalQuestion">Your question or provisional theory (optional)</label>
+      <textarea id="personalQuestion" rows="3" placeholder="What might happen next, or what other force could explain this? For example: did rising population affect climate?"></textarea>
+      <label for="proposedThreadTitle">Title for a related thread (optional)</label>
+      <input id="proposedThreadTitle" type="text" placeholder="Name the perspective you want to explore">
+      <label for="researchMission">Suggested research mission</label>
+      <select id="researchMission" class="thread-select"><option value="">Explore an open question</option></select>
+      <div id="missionBrief" hidden></div>
+      <label for="researchGap">Open research question</label>
+      <select id="researchGap" class="thread-select"></select>
+      <p id="gapQuestion"></p>
+      <label for="researchTarget">Which recorded fact or connection would your evidence test?</label><select id="researchTarget"></select><p class="scope-note">Choose the actual claim your source addresses. Evidence about another cause does not necessarily dispute the weather itself. New discoveries can instead use the new-finding output.</p><button id="makeResearchPrompt" class="nav-btn">Prepare research prompt</button>
+      <div id="researchKit" hidden>
+        <div class="prompt-handoff"><h4>Take your question into research</h4><p>A research assistant is an AI tool that can inspect linked sources and prepare a research file. Copy this prompt into the tool you use. Ask: “Inspect the sources, then return a completed JSON file in the requested format.” If it returns prose, ask it to convert the findings to that format without adding unsupported claims. You can also inspect sources yourself and use the source-passage form under Return findings; no AI tool is required.</p><ol><li><strong>Copy the prompt</strong> below.</li><li><strong>Paste it into your research assistant</strong> and ask it to inspect the sources and return the completed research file.</li><li><strong>Return here and upload the file</strong> under “Return findings.” We’ll check the evidence automatically.</li></ol><button id="copyResearchPrompt" class="nav-btn primary">Copy research prompt</button><p id="copyPromptStatus" role="status"></p><button id="goReturnFindings" class="nav-btn">I have findings to return →</button></div><details class="prompt-detail"><summary>Read the prompt and prescribed output format</summary><label for="researchPrompt">Your research prompt</label>
+        <textarea id="researchPrompt" rows="12" readonly></textarea>
+        <button id="downloadResearchPrompt" class="nav-btn">Download prompt</button>
+        <button id="downloadResearchTemplate" class="nav-btn">Download output template</button></details>
+      </div>
+      <h4>Recognition for discoveries</h4>
+      <p>Discovery badges recognize recorded research outcomes. A submission alone earns no badge; provisional findings remain visibly unresolved.</p>
+      <div id="contributionBadges" class="badge-grid"></div>
+      <h4>Return your findings</h4><p>Upload the completed JSON file returned by your research assistant. The file can contain evidence for an existing claim, new facts or connections, or inconclusive investigation notes. Notes stay on your device; supported proposals can go through automatic review. You can also paste its contents below.</p><details class="finding-example"><summary>What does a sourced finding look like?</summary><p><strong>Bounded finding:</strong> Mary Shelley later recalled frequent rain during the summer when Frankenstein began.</p><p><strong>Exact passage:</strong> “But it proved a wet, ungenial summer, and incessant rain often confined us for days to the house.”</p><p><strong>Source:</strong> <a href="https://www.gutenberg.org/files/42324/42324-h/42324-h.htm" target="_blank" rel="noopener noreferrer">Shelley’s 1831 introduction to Frankenstein</a>.</p><p><strong>Limit:</strong> This is a retrospective account. It supports the rainy setting; it does not establish weather as the sole cause of the story.</p><p>This illustrates claim, passage and limitation. Use the full prescribed format from your prompt for the file you upload.</p></details>
+      <p id="communityService" role="status">Connecting to the research service…</p>
+      <label for="contributionFile">Choose your research output file</label>
+      <input id="contributionFile" type="file" accept=".json,application/json">
+      <label for="researchOutput">Or paste the prescribed research output</label>
+      <textarea id="researchOutput" rows="8" placeholder="Paste your completed JSON research output here"></textarea>
+      <p>Include a short exact quote for every evidence record so the service can inspect the cited passage. The current checker retrieves public HTML and plain text; inaccessible sources and PDFs remain provisional.</p>
+      <label class="consent"><input id="researchConsent" type="checkbox"> Publish my research, source excerpts and chosen alias after automated checks. I have omitted private information.</label>
+      <button id="previewResearch" class="nav-btn">Preview findings</button>
+      <button id="submitResearch" class="nav-btn">Submit research · no account needed</button>
+      <button id="downloadResearchOutput" class="nav-btn">Save my draft</button>
+      <p id="communitySubmitStatus" role="status" aria-live="polite"></p>
+      <ul id="communityErrors"></ul>
+      <div id="graphPreview"></div>
+      <section id="receiptPanel" class="review-result" hidden>
+        <h4>Your research receipt</h4><p id="receiptId"></p>
+        <p><a id="receiptLink" rel="noreferrer">Keep this private progress link</a></p>
+        <p>This link is saved on this browser. Bookmark it to follow progress on another device. It contains your private receipt; do not share it.</p>
+        <button id="checkReceipt" class="nav-btn">Check progress</button>
+        <p id="receiptStatus" role="status"></p><ol id="receiptEvents"></ol><div id="receiptReview"></div>
+      </section>
+    </section>
+
+
+    <section class="panel contribution-panel" id="evidenceContribute">
+      <p class="eyebrow">EVIDENCE, NOT ARGUMENT</p><h3>Support or question a fact or connection</h3>
+      <p>Identify the claim, cite an exact passage, and explain its relevance and limitations. The automatic review assesses evidence rather than opinions or votes. It may strengthen support, mark a connection disputed, or leave the question unresolved.</p>
+      <form id="evidenceForm">
+        <label for="evidenceClaim">Fact or relationship</label><select id="evidenceClaim" class="thread-select"></select>
+        <label for="evidenceStance">How does your evidence bear on it?</label><select id="evidenceStance" class="thread-select" required><option value="">Choose how the passage bears on this claim</option><option value="supports">Supporting evidence</option><option value="counterevidence">Counterevidence</option></select>
+        <label for="evidenceAlias">Public name or alias</label><input id="evidenceAlias" type="text" required maxlength="80" autocomplete="nickname">
+        <label for="evidenceTitle">Source title</label><input id="evidenceTitle" type="text" required maxlength="250">
+        <label for="evidenceUrl">Public source URL</label><input id="evidenceUrl" type="url" required placeholder="https://…">
+        <label for="evidenceLocator">Page, section or dated entry</label><input id="evidenceLocator" type="text" required maxlength="200">
+        <label for="evidenceQuote">Short exact source passage (20–500 characters)</label><textarea id="evidenceQuote" rows="3" required minlength="20" maxlength="500"></textarea>
+        <label for="evidenceRelevance">What does this evidence support or weaken? Be factual.</label><textarea id="evidenceRelevance" rows="4" required minlength="30" maxlength="1600"></textarea>
+        <label for="evidenceLimits">What can this source not establish?</label><textarea id="evidenceLimits" rows="2" required minlength="10" maxlength="700"></textarea>
+        <div hidden aria-hidden="true"><label for="evidenceWebsite">Website</label><input id="evidenceWebsite" type="text" tabindex="-1" autocomplete="off"></div>
+        <label class="consent"><input id="evidenceConsent" type="checkbox" required> Publish this evidence and my chosen alias after automated checks. I have omitted private information.</label>
+        <button id="submitEvidence" class="nav-btn" type="submit">Submit evidence · no account needed</button>
+        <p id="evidenceSubmitStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <section class="panel contribution-panel"><p class="eyebrow">COMMUNITY RESEARCH</p><h3>Findings and review history</h3>
+      <p>New facts and relationships extend the graph with their assessment status attached. Provisional findings are research leads, and may change as further evidence arrives. Two automated passes use the same model; they are not two independent historical witnesses.</p>
+      <button id="refreshCommunity" class="nav-btn">Refresh findings and threads</button><div id="communityActivity"></div>
     </section>
 
     <section class="panel observations-panel">
@@ -89,7 +210,16 @@
 
   <dialog id="detailDialog"><button id="closeDialog" class="close" aria-label="Close">×</button><div id="dialogContent"></div></dialog>
 
-  <footer><span>WorldThreads v0.2</span><span>Prototype year: 1816 · evidence and relationships separated</span></footer>
-  <script src="app.js"></script>
+  <footer><span>WorldThreads v0.4</span><span>Prototype year: 1816 · evidence and relationships separated</span></footer>
+  <script src="contribution.js?v=20261002-research-bridge"></script>
+  <script src="community-core.js?v=20261002-research-bridge"></script>
+  <script src="app.js?v=20261002-research-bridge"></script>
+  <script src="appearance.js?v=20261002-research-bridge"></script>
+  <script src="community.js?v=20261002-research-bridge"></script>
+  <script src="explore-model.js?v=20261002-research-bridge"></script>
+  <script src="investigation-case.js?v=20261002-research-bridge"></script>
+  <script src="explore.js?v=20261002-research-bridge"></script>
+<script src="group-cases.js?v=20261002-research-bridge"></script>
+<script src="sessions.js?v=20261002-research-bridge"></script>
 </body>
 </html>

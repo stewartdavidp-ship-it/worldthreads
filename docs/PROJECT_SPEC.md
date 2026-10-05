@@ -60,3 +60,34 @@ Apply the same depth of inquiry to each major world region. Do not force equal n
 
 ## Working slogan
 History isn't a collection of events. It's the threads that connect them.
+
+## Year-by-year community expansion
+
+Build a reviewed annual foundation, invite local research, verify and incorporate contributions, then open another deliberately selected year. Earlier years remain open to corrections and new threads. Recognition rewards verified evidence and challenges. Annual views eventually reference one shared graph, enabling separately reviewed connections across years with explicit lag and competing causes. See `YEAR_EXPANSION.md` for readiness and cross-year review rules. The active contribution year remains 1816.
+
+## Product grounding: exploration before game structure
+
+Reaffirmed with the project owner on 2026-10-02 after the cooperative case design drifted toward isolated mysteries.
+
+WorldThreads should build curiosity about relationships between historical events, conditions, people and places. Readers enter through something that interests them, follow evidence-bearing connections, encounter alternative explanations and local differences, and help extend the network at its research frontier.
+
+The core progression is:
+
+**Interest → observation → relationship → branching thread → question → research → review → audit → fix → network extension.**
+
+A richer experience comes from meaningful branches across systems and places, intersecting threads, competing mechanisms, resilience and unanswered questions. More cards, longer text or an isolated mystery do not establish that depth. A linear volcanic shock-to-outcome story must not become the organizing explanation for all of 1816.
+
+Group play and recognition serve this progression. Friends may pursue different leads, compare evidence and join their findings into the shared historical network. They do not need to agree. Disagreement concerns sourced claims and relationships, not adversarial argument. Votes, points and consensus cannot establish historical truth. Cooperative session notes are exploratory work until their claims pass the contribution process.
+
+At a mapped frontier, a reader can continue the thread, start a related perspective or investigate a local example. Provide a methodology-based prompt and prescribed output, accept an account-free submission, and process it automatically with explicit uncertainty and correction history. A missing connection is a research opportunity, not a historical endpoint.
+
+Keep new contribution observations anchored in 1816. Preserve dated antecedents and consequences as explicit context under the existing temporal rules. Expand to additional years deliberately, allowing separately evidenced cross-year relationships to emerge.
+
+Before proposing a case or feature, check:
+- What historical network does this open, beyond its central event?
+- Which supported branches, intersections and different local outcomes can readers explore?
+- Where are rival explanations and gaps visible?
+- How can a reader's research extend or challenge the shared graph?
+- Does the interaction build curiosity about relationships rather than completion of a predetermined answer?
+
+The Méduse proposal is a standalone investigation candidate, not the new product direction. Do not prioritize implementing it without demonstrating its fit to these principles.

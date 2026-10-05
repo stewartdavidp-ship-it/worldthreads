@@ -1,0 +1,213 @@
+[
+  {
+    "id": "MISSION-FISHERIES",
+    "title": "What drove the move toward mackerel?",
+    "threadId": "THREAD-GULF-MAINE",
+    "gapId": "GAP-007",
+    "status": "Open hypothesis",
+    "theory": "Food pressure and fish availability contributed to a lasting shift in fishing effort, alongside markets and prior river damage.",
+    "known": "The current graph contains temperature analysis, export-based biological inference and a proposed adaptation sequence.",
+    "claimRefs": [
+      "REL-0002",
+      "REL-0003",
+      "REL-0004"
+    ],
+    "missing": [
+      "Independent catch or effort records",
+      "Dated market, trade and river-obstruction evidence",
+      "Comparison with places under different food pressure"
+    ],
+    "supportWouldLookLike": [
+      "Effort changes track local food pressure and fish availability after accounting for trade and access."
+    ],
+    "challengeWouldLookLike": [
+      "A similar shift predates the shock or follows trade incentives more closely than local food pressure."
+    ],
+    "researchSteps": [
+      "Compare dated records across at least two locations or periods.",
+      "Identify whether exports reflect catch, demand, reporting or trade access.",
+      "Retain interacting causes and uncertainty; do not infer populations directly from exports."
+    ],
+    "possibleOutcomes": [
+      "Supports part of the theory",
+      "Weakens part of the theory",
+      "Suggests another explanation",
+      "Insufficient evidence"
+    ],
+    "badgeIds": [
+      "CAUSALITY_EXPLORER",
+      "THEORY_CHALLENGER",
+      "SOURCE_DETECTIVE"
+    ]
+  },
+  {
+    "id": "MISSION-FLOOD-EXPOSURE",
+    "title": "Did exposure explain differing flood losses?",
+    "threadId": "THREAD-OCEANIA-WEATHER",
+    "gapId": "GAP-006",
+    "status": "Open hypothesis",
+    "theory": "Floodplain exposure helped determine damage; severe weather did not produce identical agricultural outcomes everywhere.",
+    "known": "The graph separates qualitative rain, reported Windsor flood losses and Hobart’s harvest expectation.",
+    "claimRefs": [
+      "WT-1816-0031",
+      "WT-1816-0032",
+      "WT-1816-0033",
+      "REL-0024"
+    ],
+    "missing": [
+      "Actual harvest and damage records",
+      "High-ground versus low-ground comparisons",
+      "Comparable rainfall and river conditions",
+      "Original Hobart newspaper passage"
+    ],
+    "supportWouldLookLike": [
+      "Under comparable conditions, exposed farms suffered greater losses than less exposed farms."
+    ],
+    "challengeWouldLookLike": [
+      "Loss patterns are better explained by rainfall, crop timing or other conditions than residence location."
+    ],
+    "researchSteps": [
+      "Check comparable localities and crop calendars.",
+      "Distinguish forecast harvests from realized returns.",
+      "Treat volcanic attribution as a separate question."
+    ],
+    "possibleOutcomes": [
+      "Supports part of the theory",
+      "Weakens part of the theory",
+      "Suggests another explanation",
+      "Insufficient evidence"
+    ],
+    "badgeIds": [
+      "RESILIENCE_SPOTTER",
+      "THEORY_CHALLENGER",
+      "SOURCE_DETECTIVE"
+    ]
+  },
+  {
+    "id": "MISSION-LOCAL-1816",
+    "title": "What changed where you live in 1816?",
+    "threadId": null,
+    "gapId": "GAP-010",
+    "status": "Open local question",
+    "theory": "A local change in 1816 may connect to the wider systems in this thread; that connection needs evidence.",
+    "known": "The graph contains some regional records, but local coverage remains incomplete.",
+    "claimRefs": [],
+    "missing": [
+      "Dated 1816 records for your place",
+      "Local prior conditions and alternative explanations",
+      "Evidence that distinguishes a local connection from coincidental timing"
+    ],
+    "supportWouldLookLike": [
+      "Local 1816 records support a specific mechanism and its timing."
+    ],
+    "challengeWouldLookLike": [
+      "Local records contradict the proposed mechanism or fit another explanation better."
+    ],
+    "researchSteps": [
+      "Choose a town, district, watershed or community.",
+      "Inspect 1816 records of weather, harvests, prices, population, work, health, politics or culture.",
+      "Use earlier/later records as comparison only; keep proposed observations in 1816."
+    ],
+    "possibleOutcomes": [
+      "Supports part of the theory",
+      "Weakens part of the theory",
+      "Suggests another explanation",
+      "Insufficient evidence"
+    ],
+    "badgeIds": [
+      "THREAD_FINDER",
+      "THEORY_CHALLENGER",
+      "SOURCE_DETECTIVE"
+    ]
+  },
+  {
+    "id": "MISSION-BARBADOS-EXPECTATIONS",
+    "title": "Whose explanation of the Barbados uprising survives comparison?",
+    "threadId": "THREAD-BARBADOS-RESISTANCE",
+    "gapId": "GAP-009",
+    "status": "Provisional research question",
+    "theory": "Registration proposals may have shaped emancipation expectations, but the colonial report alone cannot establish their contribution to resistance.",
+    "known": "Codd attributes motives; Leith forwards his report. These are not independent witnesses to participants’ intentions.",
+    "claimRefs": [
+      "WT-1816-0036"
+    ],
+    "missing": [
+      "Participant perspectives and Barbadian scholarship",
+      "Dated evidence of communication and planning",
+      "Existing coercive conditions and competing explanations"
+    ],
+    "supportWouldLookLike": [
+      "Independent evidence links particular expectations to organizers’ choices."
+    ],
+    "challengeWouldLookLike": [
+      "Records support other motives or show the official explanation misrepresents participants."
+    ],
+    "researchSteps": [
+      "Inspect sources beyond Codd’s source family.",
+      "Separate prior conditions, new proposals, communication, organization and military response.",
+      "Record geographic and temporal limits; do not add a climate explanation without evidence."
+    ],
+    "possibleOutcomes": [
+      "Supports part of the theory",
+      "Weakens part of the theory",
+      "Suggests another explanation",
+      "Insufficient evidence"
+    ],
+    "badgeIds": [
+      "THEORY_CHALLENGER",
+      "SOURCE_DETECTIVE"
+    ]
+  },
+  {
+    "id": "MISSION-SWISS-FOOD-ACCESS",
+    "title": "Did purchasing networks change who could obtain food?",
+    "threadId": "THREAD-SWISS-FOOD-ACCESS",
+    "gapId": "GAP-011",
+    "status": "Provisional comparison",
+    "theory": "Trade access and coordination may help explain different food outcomes alongside crop losses.",
+    "known": "A later review describes failed talks and private buying; a model study does not fully explain regional disparity.",
+    "claimRefs": [
+      "WT-1816-0037",
+      "WT-1816-0038",
+      "WT-1816-0039",
+      "WT-1816-0040",
+      "WT-1816-0041",
+      "WT-1816-0042",
+      "WT-1816-0043",
+      "WT-1816-0044",
+      "WT-1816-0045"
+    ],
+    "missing": [
+      "Original conference and procurement records",
+      "Actual delivery and distribution dates",
+      "Comparable prices, wages, reserves and household access",
+      "Local crop, pasture and pest records with dates; exposure may differ before policy effects are compared.",
+      "BPUN 6R370 originals; eligibility, earnings and household food access before and after home-work relief.",
+      "MCE 165, 30 December 1816, pp. 1421–1422; AEN Assistance 3/IV reply of 4 February 1817. Test relief eligibility by domicile and origin using individual cases.",
+      "1816 Appenzell wage and price records, comparable work specifications, material costs and employment; compare KB-015011 handwriting with transcription.",
+      "Scan check completed for Zollikofer mission passage; inspect Appenzell December 1816 council/embassy papers; trace permission, payment, shipment and household access separately."
+    ],
+    "supportWouldLookLike": [
+      "Dated records connect purchasing access to supply reaching households."
+    ],
+    "challengeWouldLookLike": [
+      "Purchases failed to arrive or local differences fit exposure, income or other conditions better."
+    ],
+    "researchSteps": [
+      "Choose two localities and check comparability.",
+      "Inspect 1816 records and trace the purchase-to-delivery-to-access chain.",
+      "Keep 1817 outcomes contextual; record inconclusive searches and rivals.",
+      "Distinguish crop-specific exposure and animal damage from access and income; do not treat all localities as equally exposed."
+    ],
+    "possibleOutcomes": [
+      "Supports part of the theory",
+      "Weakens part of the theory",
+      "Suggests another explanation",
+      "Insufficient evidence"
+    ],
+    "badgeIds": [
+      "THEORY_CHALLENGER",
+      "SOURCE_DETECTIVE"
+    ]
+  }
+]

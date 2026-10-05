@@ -1,0 +1,7 @@
+const {test}=require('node:test');const assert=require('node:assert/strict');const model=require('../explore-model.js');
+const thread={nodeIds:['eruption','weather','writing'],relationshipIds:['climate','setting']};
+const relationships=[{id:'other',subjectId:'eruption',objectId:'fishing'},{id:'climate',subjectId:'eruption',objectId:'weather'},{id:'setting',subjectId:'weather',objectId:'writing'},{id:'rival',subjectId:'reading',objectId:'writing'}];
+test('guided next follows the chosen story rather than an unrelated first edge',()=>assert.equal(model.nextConnection(thread,'eruption',relationships).id,'climate'));
+test('the end of a story is distinct from incoming or alternative connections',()=>assert.equal(model.nextConnection(thread,'writing',relationships),null));
+test('expanding nearby and wider branches preserves the original story and positions',()=>{for(const depth of [0,1,2])assert.deepEqual(model.neighbourhood(thread,'weather',relationships,depth).slice(0,3),thread.nodeIds);assert.ok(model.neighbourhood(thread,'weather',relationships,1).includes('fishing'));assert.ok(model.neighbourhood(thread,'weather',relationships,1).includes('reading'));});
+test('gallery previews only include recorded relationships, never inferred adjacency',()=>{const disconnected={nodeIds:['eruption','writing'],relationshipIds:['climate','setting']};assert.deepEqual(model.storyEdges(disconnected,relationships),[]);});
