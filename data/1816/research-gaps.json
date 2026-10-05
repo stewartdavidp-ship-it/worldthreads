@@ -82,5 +82,14 @@
     "question": "What changed in your town, region or community in 1816, and what evidence connects those changes?",
     "priority": "High",
     "status": "Open"
+  },
+  {
+    "id": "GAP-011",
+    "region": "Switzerland",
+    "domain": "trade + food access + relief",
+    "question": "Which 1816 procurement, delivery, price and relief records distinguish Swiss local experiences beyond modeled crop losses?",
+    "priority": "High",
+    "status": "Partially researched",
+    "notes": "Later review and model limitations inspected; original minutes, Gern study, deliveries and household access remain open. Comparative outcomes may lie in 1817 context."
   }
 ]

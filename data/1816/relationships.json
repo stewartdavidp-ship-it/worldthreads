@@ -1072,5 +1072,22 @@
       "EV-R19-REL-0026"
     ],
     "researchStatus": "Source checked; independent review pending"
+  },
+  {
+    "id": "REL-0027",
+    "subjectId": "WT-1816-0038",
+    "predicate": "RESPONDED_TO",
+    "objectId": "WT-1816-0037",
+    "causalStatus": "ASSOCIATED",
+    "lag": "September to November–December 1816",
+    "explanation": "The review presents private procurement as a response to failed coordination; relief effectiveness is not established here.",
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "evidenceRefs": [
+      "EV-R20-REL-0027"
+    ],
+    "researchStatus": "Source checked; independent review pending"
   }
 ]

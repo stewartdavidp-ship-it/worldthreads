@@ -263,5 +263,26 @@
     ],
     "scope": "Caribbean / Barbados",
     "confidence": "Medium"
+  },
+  {
+    "id": "THREAD-SWISS-FOOD-ACCESS",
+    "title": "Why could some communities obtain food more readily?",
+    "subtitle": "Swiss procurement and regional differences, 1816",
+    "description": "Failed coordination and private purchases open questions about trade, resources and relief. Crop models leave regional hardship incompletely explained. Compare local records rather than assume equal exposure or a single cause.",
+    "nodeIds": [
+      "WT-1816-0037",
+      "WT-1816-0038",
+      "WT-1816-0039"
+    ],
+    "relationshipIds": [
+      "REL-0027"
+    ],
+    "mechanisms": [
+      "food access",
+      "institutional coordination",
+      "regional resilience"
+    ],
+    "scope": "Switzerland",
+    "confidence": "Medium"
   }
 ]

@@ -157,5 +157,45 @@
       "THEORY_CHALLENGER",
       "SOURCE_DETECTIVE"
     ]
+  },
+  {
+    "id": "MISSION-SWISS-FOOD-ACCESS",
+    "title": "Did purchasing networks change who could obtain food?",
+    "threadId": "THREAD-SWISS-FOOD-ACCESS",
+    "gapId": "GAP-011",
+    "status": "Provisional comparison",
+    "theory": "Trade access and coordination may help explain different food outcomes alongside crop losses.",
+    "known": "A later review describes failed talks and private buying; a model study does not fully explain regional disparity.",
+    "claimRefs": [
+      "WT-1816-0037",
+      "WT-1816-0038",
+      "WT-1816-0039"
+    ],
+    "missing": [
+      "Original conference and procurement records",
+      "Actual delivery and distribution dates",
+      "Comparable prices, wages, reserves and household access"
+    ],
+    "supportWouldLookLike": [
+      "Dated records connect purchasing access to supply reaching households."
+    ],
+    "challengeWouldLookLike": [
+      "Purchases failed to arrive or local differences fit exposure, income or other conditions better."
+    ],
+    "researchSteps": [
+      "Choose two localities and check comparability.",
+      "Inspect 1816 records and trace the purchase-to-delivery-to-access chain.",
+      "Keep 1817 outcomes contextual; record inconclusive searches and rivals."
+    ],
+    "possibleOutcomes": [
+      "Supports part of the theory",
+      "Weakens part of the theory",
+      "Suggests another explanation",
+      "Insufficient evidence"
+    ],
+    "badgeIds": [
+      "THEORY_CHALLENGER",
+      "SOURCE_DETECTIVE"
+    ]
   }
 ]

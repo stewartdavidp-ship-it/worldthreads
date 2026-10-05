@@ -1112,5 +1112,93 @@
       "EV-R19-WT-1816-0036"
     ],
     "researchStatus": "Source checked; independent review pending"
+  },
+  {
+    "id": "WT-1816-0037",
+    "title": "Joint grain purchasing talks fail",
+    "startDate": "1816-09",
+    "endDate": "1816-09",
+    "datePrecision": "MONTH",
+    "continent": "Europe",
+    "region": "Switzerland",
+    "historicalEntity": "Swiss cantons",
+    "place": "Bern / Swiss cantons",
+    "observation": "Suratteau’s review reports that September talks on joint foreign grain purchases failed.",
+    "coverageType": "EVENT",
+    "system": "HUMAN SYSTEMS",
+    "topic": "Food access / regional differences",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Scholarly interpretation"
+    ],
+    "confidence": "Medium",
+    "researchStatus": "Source checked; independent review pending",
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "evidenceRefs": [
+      "EV-R20-WT-1816-0037"
+    ]
+  },
+  {
+    "id": "WT-1816-0038",
+    "title": "Private procurement follows failed coordination",
+    "startDate": "1816-11-24",
+    "endDate": "1816-12-29",
+    "datePrecision": "DAY",
+    "continent": "Europe",
+    "region": "Switzerland",
+    "historicalEntity": "Swiss cantons",
+    "place": "Neuchâtel / Rhenish Germany",
+    "observation": "The review describes a November–December grain-buying journey by Claude Bovet-Fels after coordination failed.",
+    "coverageType": "EVENT",
+    "system": "HUMAN SYSTEMS",
+    "topic": "Food access / regional differences",
+    "analyticalRole": [
+      "RESILIENCE"
+    ],
+    "evidenceType": [
+      "Scholarly interpretation"
+    ],
+    "confidence": "Medium",
+    "researchStatus": "Source checked; independent review pending",
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "evidenceRefs": [
+      "EV-R20-WT-1816-0038"
+    ]
+  },
+  {
+    "id": "WT-1816-0039",
+    "title": "Crop-model comparison leaves regional hardship unexplained",
+    "startDate": "1816",
+    "endDate": "1817",
+    "datePrecision": "YEAR",
+    "continent": "Europe",
+    "region": "Switzerland",
+    "historicalEntity": "Swiss cantons",
+    "place": "Western and eastern Swiss Plateau",
+    "observation": "Flückiger’s modeled yield gradient cannot fully explain the east–west disparity; trade and crisis management require separate investigation. This is analysis, not measured harvest output.",
+    "coverageType": "CONDITION",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "Food access / regional differences",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Modern reconstruction"
+    ],
+    "confidence": "Medium",
+    "researchStatus": "Source checked; independent review pending",
+    "sourceRefs": [
+      "SRC-031"
+    ],
+    "evidenceRefs": [
+      "EV-R20-WT-1816-0039"
+    ],
+    "contextNode": true
   }
 ]

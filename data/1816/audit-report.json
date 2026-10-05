@@ -28,6 +28,7 @@
     "REL-0024",
     "REL-0025",
     "REL-0026",
+    "REL-0027",
     "WT-1816-0001",
     "WT-1816-0002",
     "WT-1816-0003",
@@ -63,7 +64,10 @@
     "WT-1816-0033",
     "WT-1816-0034",
     "WT-1816-0035",
-    "WT-1816-0036"
+    "WT-1816-0036",
+    "WT-1816-0037",
+    "WT-1816-0038",
+    "WT-1816-0039"
   ],
   "alternativeSearchPending": [
     "REL-0001",
@@ -291,6 +295,11 @@
       "status": "pending"
     },
     {
+      "claimId": "REL-0027",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
       "claimId": "WT-1816-0001",
       "task": "Independent source and claim review",
       "status": "pending"
@@ -467,6 +476,21 @@
     },
     {
       "claimId": "WT-1816-0036",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0037",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0038",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0039",
       "task": "Independent source and claim review",
       "status": "pending"
     },

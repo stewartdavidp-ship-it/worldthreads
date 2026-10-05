@@ -457,5 +457,36 @@
     ],
     "notes": "PDF transcriptions inspected October 4, 2026 (America/New_York); printed pages 9, 11, 23 and 25. Leith forwards Codd: these accounts cannot automatically be counted as independent corroboration. No original manuscript transcription comparison completed.",
     "dependencyGroup": "CO28-85-CODD-LEITH-1816"
+  },
+  {
+    "id": "SRC-030",
+    "type": "Scholarly review of historical research",
+    "authorOrOrg": "Jean-René Suratteau, reviewing Philippe Gern",
+    "title": "Review: L’approvisionnement de Neuchâtel pendant la disette de 1816–1817",
+    "year": 1981,
+    "url": "https://www.persee.fr/doc/ahrf_0003-4436_1981_num_245_1_4259_t1_0498_0000_2",
+    "quality": "Attributed secondary account; original study pending",
+    "topics": [
+      "grain procurement",
+      "Neuchâtel",
+      "cantonal coordination"
+    ],
+    "notes": "Full one-page review inspected, p. 498. Gern’s 1977 study and underlying records not inspected; one source family.",
+    "dependencyGroup": "GERN-NEUCHATEL-1977"
+  },
+  {
+    "id": "SRC-031",
+    "type": "University research thesis",
+    "authorOrOrg": "Simon Flückiger, University of Bern",
+    "title": "Tambora 1815: Impacts of a volcanic eruption on climate and crop yields in Switzerland",
+    "year": 2015,
+    "url": "https://occrdata.unibe.ch/students/theses/msc/141.pdf",
+    "quality": "Model-based research; limitations explicit",
+    "topics": [
+      "crop models",
+      "regional comparison"
+    ],
+    "notes": "Downloaded full PDF; inspected introduction pp. 4–5 and Discussion 5.3.3 pp. 66–67. Historical and present-day scenarios must be distinguished. Thesis and 2017 paper share research, not independent corroboration.",
+    "dependencyGroup": "FLUCKIGER-SWISS-CROPS"
   }
 ]

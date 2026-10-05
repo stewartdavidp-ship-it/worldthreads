@@ -108,3 +108,11 @@ Recovered previously blocked GAP-009 through the National Archives PDF lesson. I
 Research branch and mission invite scrutiny of colonial explanations using participant perspectives, Barbadian scholarship, communication/planning records and existing coercive conditions. Codd's denial of ill treatment is not adopted as a fact. Original-manuscript comparison and independent historical review remain pending. Swiss food-policy comparison identified as a strong next lead, but university access was blocked and an older PDF link failed; no Swiss claim added from snippets.
 
 Audit: zero errors/warnings, with 62 claims awaiting independent review. All 48 automated checks passed. These are structural/service checks, not historical approval.
+
+## 2026-10-04 — Round 20: Swiss food access and comparison
+
+Inspected the full Suratteau review of Gern (1981, p. 498) and downloaded Flückiger’s full 2015 thesis, checking introduction pp. 4–5 and Discussion 5.3.3 pp. 66–67. Added attributed September 1816 coordination failure and November–December private procurement records, plus an explicitly model-based 1816–1817 comparison limitation. The private-procurement response edge is associated, not a proven causal relief effect. Corrected RESPONDED_TO direction during self-review: private procurement responds to failed coordination.
+
+No purchase volume, delivered quantity, mortality effect or model percentage was imported. Model outputs are not measured yields; historical and present-day scenarios differ. Thesis and 2017 paper are one research family. Gern’s original study and archival minutes remain uninspected; the later review does not supply independent corroboration. New mission asks for comparable exposure, purchases, delivery, household access, wages, reserves and prices. No arrow asserts that modeled loss caused procurement or explains regional hardship.
+
+Source access: Bern repository API blocked; publisher link denied; thesis successfully downloaded from university host. Aargau relief archive and Zollikofer’s 1818–1819 account located but not yet inspected. These are next-pass leads, not corroborating evidence. Audit zero errors/warnings; 66 claims remain pending independent review; all 48 automated checks passed.
