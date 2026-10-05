@@ -1179,5 +1179,19 @@
     "reviewStatus": "pending_independent_review",
     "accessScope": "transcription",
     "dependencyGroup": "DERIVAZ-VALAIS-MEMOIRS"
+  },
+  {
+    "id": "EV-R22-WT-1816-0042",
+    "claimId": "WT-1816-0042",
+    "sourceId": "SRC-033",
+    "locator": "Volume II, printed p. 975 (PDF index 272), paragraph beginning En sus; note 78",
+    "accessedAt": "2026-10-05",
+    "support": "Attributed December program and funding mechanism",
+    "provenance": "Full thesis passage inspected",
+    "limitations": "Original notices uninspected. April 1817 totals excluded; offer is not proof of participation or improved nutrition.",
+    "reviewer": "Codex",
+    "reviewStatus": "pending_independent_review",
+    "accessScope": "full_text",
+    "dependencyGroup": "CHRIST-BPUN-6R370"
   }
 ]

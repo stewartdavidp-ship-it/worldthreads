@@ -505,5 +505,21 @@
     ],
     "notes": "1961 edition, digital transcription inspected October 5, 2026, pp. 220–221. Passage explicitly says written November 1817; dated details may be retrospective. Manuscript/print comparison not performed.",
     "dependencyGroup": "DERIVAZ-VALAIS-MEMOIRS"
+  },
+  {
+    "id": "SRC-033",
+    "type": "University historical thesis",
+    "authorOrOrg": "Thierry Christ, Université de Neuchâtel",
+    "title": "Des solidarités coutumières à la bienfaisance privée: l’Etat et les pauvres à Neuchâtel (1773–1830), volume II",
+    "year": 2009,
+    "url": "https://libra.unine.ch/bitstreams/328362e0-8462-49ac-9962-41074f1fc31d/download",
+    "quality": "Scholarly secondary account; cited originals pending",
+    "topics": [
+      "work relief",
+      "household income",
+      "Neuchâtel"
+    ],
+    "notes": "Full PDF inspected, printed p. 975, note 78: BPUN 6R370, Avis au public (19 December 1816) and Information au public (2 April 1817). Originals not inspected.",
+    "dependencyGroup": "CHRIST-BPUN-6R370"
   }
 ]

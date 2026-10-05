@@ -1260,5 +1260,34 @@
     "evidenceRefs": [
       "EV-R21-WT-1816-0041"
     ]
+  },
+  {
+    "id": "WT-1816-0042",
+    "title": "Relief work at home widens the proposed route to assistance",
+    "startDate": "1816-12",
+    "endDate": "1816-12",
+    "datePrecision": "MONTH",
+    "continent": "Europe",
+    "region": "Neuchâtel / Switzerland",
+    "historicalEntity": "Principality of Neuchâtel",
+    "place": "Neuchâtel",
+    "observation": "Christ describes a December 1816 home-work scheme for women, children and less able people outside Pierrabot land-clearing work. Subscriptions funded raw materials. Household food outcomes remain unverified.",
+    "coverageType": "EVENT",
+    "system": "SOCIETY",
+    "topic": "Work relief / household access",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Historical research"
+    ],
+    "confidence": "Medium",
+    "researchStatus": "Source checked; independent review pending",
+    "sourceRefs": [
+      "SRC-033"
+    ],
+    "evidenceRefs": [
+      "EV-R22-WT-1816-0042"
+    ]
   }
 ]

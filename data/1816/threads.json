@@ -268,13 +268,14 @@
     "id": "THREAD-SWISS-FOOD-ACCESS",
     "title": "Why could some communities obtain food more readily?",
     "subtitle": "Swiss procurement and regional differences, 1816",
-    "description": "Compare procurement and local exposure: failed coordination and private buying in Neuchâtel, uneven crop and pasture reports in Valais, and limits of crop models. These are distinct records with uncertain mechanisms, not equivalent measured outcomes.",
+    "description": "Compare procurement and local exposure: failed coordination and private buying in Neuchâtel, uneven crop and pasture reports in Valais, and limits of crop models. These are distinct records with uncertain mechanisms, not equivalent measured outcomes. A separately documented home-work offer opens an income and eligibility question; no causal link to procurement is established.",
     "nodeIds": [
       "WT-1816-0037",
       "WT-1816-0038",
       "WT-1816-0039",
       "WT-1816-0040",
-      "WT-1816-0041"
+      "WT-1816-0041",
+      "WT-1816-0042"
     ],
     "relationshipIds": [
       "REL-0027",

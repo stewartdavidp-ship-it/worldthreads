@@ -124,3 +124,9 @@ Inspected de Rivaz’s edited memoir transcription, 1961 edition volume II, pp. 
 Chronology review: November 1817 text includes exports, soup provision and government response, but these were not imported as 1816 facts. Troop timing needs separate checking. No manuscript/print comparison or independent approval claimed. Neuchâtel primary bread-distribution report located through indexed RERO PDF, but live URL returns 410: its indexed quantities were not added. Aargau catalog and eastern Swiss book metadata read; underlying relief records remain uninspected. Original Gern study still open.
 
 Audit clean; 69 claims await independent review. All 48 automated checks passed. Research addition strengthens the comparison but does not establish equivalent exposure or measured comparative outcomes.
+
+## 2026-10-05 — Round 22: household eligibility and work relief
+
+Inspected Christ’s 2009 thesis, volume II, printed p. 975 and note 78. Added one attributed December 1816 home-work offer. Kept it separate from grain procurement: no supported connecting edge. The dated primary notices remain a research mission, not independently inspected evidence. April 1817 participation totals were excluded. A proposed route to income does not establish food access or nutrition.
+
+Self-review checked chronology, attribution and absence of unsupported causal edges. Audit: zero errors/warnings; 70 claims await independent review. All 48 automated checks passed. No independent historical approval claimed. Original bread-distribution PDF still unavailable; indexed quantities remain excluded.
