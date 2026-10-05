@@ -40,3 +40,5 @@ Opening a fact focuses on its incoming and outgoing connections. Follow a neighb
 The default opening is now a six-step guided investigation: **why did a weather shock become a food crisis in some places, while others had good harvests?** Readers choose a working hypothesis, examine a counterexample, and reach a qualified conclusion. The full explorer remains available under **Research library**.
 
 The opening **Choose a story** shelf offers three guided journeys. Each includes an unfolding interactive diagram and an explicit unanswered question. **Help extend this story** saves a sourced proposal locally and downloads it for review; proposals are not submitted or added to the established evidence graph.
+
+Dutch relief now includes a four-layer **evidence workbench**: inspect actual record summaries, compare clues and interpret what they support before advancing. A local field journal tracks unique milestones, badges, ranks and resume points. Investigating one story unlocks a claim challenge; all three unlock a comparison challenge. Rewards track participation and supported in-app interpretations, not historical truth or approval of proposals.

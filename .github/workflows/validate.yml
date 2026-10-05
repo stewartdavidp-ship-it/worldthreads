@@ -16,3 +16,5 @@ jobs:
       - run: python3 tests/validate-data.py
       - run: node --check app.js
       - run: node --check stories.js
+      - run: node --check progress.js
+      - run: node --check investigations.js

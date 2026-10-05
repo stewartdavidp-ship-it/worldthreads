@@ -29,3 +29,13 @@ The opening shelf offers three complete guided starting points: different harves
 Each story ends at an explicit evidence frontier with a question and the kinds of sources needed to extend it. A proposal form collects the claim, source URL, passage reference, date/place, proposed claim category and limitations. Drafts are stored locally and downloaded as unreviewed JSON proposals. They do not enter the graph or a shared review queue. Shared submission/review is outside this interface; local saving must not imply publication.
 
 Browser tests cover all three story entrances and endings, revealed/unreached stops, evidence detours, chronological versus contributory labels, local draft saving and proposal download. The design intentionally offers selected stories rather than pretending every existing thread has a complete narrative.
+
+## Investigation mechanics and progress
+
+Dutch relief is the first story with an evidence workbench. A reader selects surviving record summaries, inspects the relevant clues, and makes an inference before the next scene unlocks. Four tasks test price evidence versus household outcomes, chronology across different towns, shipment timing versus purchase authorization, and the missing delivery/recipient evidence. Wrong interpretations cost no points and invite another evidence check. Correct interpretations reveal existing sourced connections. Completed clue panels collapse so the page does not accumulate information.
+
+No manuscripts, transcriptions, artifacts or discoveries are fabricated. The workbench identifies summaries as summaries and provides a source lens for checking passages, evidence basis and limitations. The other two stories retain their guided form; their deeper workbench tasks are not yet authored. The research library stays freely accessible.
+
+Progress persists locally: visited scenes, expanded relevant sources, examined relevant connections, working hypothesis, interpreted layers and saved unreviewed drafts. Unique milestones award points once, with badges and ranks in a field journal. One fully investigated story unlocks a claim-evaluation challenge; all three unlock a cross-story evidence comparison. Completing Dutch relief also requires its four interpretation tasks. A draft earns participation credit, not an endorsement of its accuracy.
+
+Browser checks verify locked steps, prerequisite clue inspection, wrong-answer handling, completion bonuses, repeated-action protection, resume after reload, saved clues, badges, challenge unlocks and corrupt-storage recovery. Progress is not an account, a peer-review result or proof that a source was understood. It does not sync between browsers.
