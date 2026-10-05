@@ -65,3 +65,8 @@ Research prompts teach readers to define the unsupported link, identify a source
 Browser checks cover object identities, indirect context, role versus causal labels, source backlinks, object-to-thread entry, the single-thread game-to-thesis route, malformed/unsafe imports, duplicate protection, local extension persistence, exports and mobile width.
 
 Object profiles also offer a direct influence-research entry, including when no curated thread exists. The stethoscope pilot entry preserves the lack of a recorded outgoing influence claim and starts an object-scoped question instead of inventing an impact story. Thread and object drafts are archived separately when changing investigation context.
+
+
+### Case-to-thesis handoff and defense rehearsal
+
+A completed learning case seeds its paired evidence, explicit limit and next research move into a new thread thesis. It does not fill in the writer's argument. The thesis includes three self-directed defense challenges: the missing causal link, a rival explanation and revision under credible counterevidence. Preparation reminders identify absent argument or interpretation fields without scoring quality or awarding scholarly certification. Responses and the carried case limit are retained locally and exported.

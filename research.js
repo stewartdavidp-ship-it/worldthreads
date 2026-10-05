@@ -6,7 +6,11 @@ function canUseThesis(){return expeditionFinished()||filedCases().length>0||vali
 function startThreadThesis(id){const thread=state.threads.find(t=>t.id===id);if(!thread)return;const existing=readThesisDraft();const previous=existing.threadId||existing.objectId;if(previous&&previous!==id){try{localStorage.setItem(THESIS_KEY+'-archive-'+previous,JSON.stringify(existing));}catch{}}
  let draft=existing.threadId===id?existing:{};try{if(!Object.keys(draft).length)draft=JSON.parse(localStorage.getItem(THESIS_KEY+'-archive-'+id)||'{}');}catch{draft={};}
  draft={...draft,threadId:id,objectId:null,title:draft.title||thread.title,question:draft.question||'How far does the available evidence support this thread’s proposed explanation?',argument:draft.argument||'',status:'Unreviewed research draft'};
- for(let i=0;i<3;i++)if(!draft['record'+i])draft['record'+i]=thread.nodeIds[i]||'';
+ const learningCase=storyCatalog.find(s=>s.thread===id&&storyProgress(s.id).caseFiled),task=learningCase&&caseFileTasks[learningCase.id];
+ const seeds=task?[...task.required,...thread.nodeIds.filter(n=>!task.required.includes(n))]:thread.nodeIds;
+ for(let i=0;i<3;i++)if(!draft['record'+i])draft['record'+i]=seeds[i]||'';
+ if(task){draft.researchQuestion=draft.researchQuestion||learningCase.question;draft.researchSource=draft.researchSource||task.next[0];draft.caseLimit=draft.caseLimit||task.limits[0];}
+
  try{localStorage.setItem(THESIS_KEY,JSON.stringify(draft));}catch{}
  story.id=null;setExperience('story');openThesisWorkspace(draft);
 }
