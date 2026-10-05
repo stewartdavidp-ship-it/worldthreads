@@ -1348,5 +1348,34 @@
     "evidenceRefs": [
       "EV-R24-WT-1816-0044"
     ]
+  },
+  {
+    "id": "WT-1816-0045",
+    "title": "Appenzell sends an envoy to negotiate grain access",
+    "startDate": "1816-12-11",
+    "endDate": "1816-12-13",
+    "datePrecision": "DAY",
+    "continent": "Europe",
+    "region": "Appenzell Ausserrhoden / Switzerland",
+    "historicalEntity": "Canton of Appenzell Ausserrhoden",
+    "place": "Trogen / Stuttgart",
+    "observation": "Zollikofer reports that the council confirmed Zellweger’s grain-negotiation mission on 11 December 1816 and that he reached Stuttgart on 13 December. Instructions concerned purchases, payment and delivery terms; an embassy is not proof of food reaching households.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "Grain access / diplomatic procurement",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Contemporary documentary observation"
+    ],
+    "confidence": "Medium",
+    "researchStatus": "Source checked; independent review pending",
+    "sourceRefs": [
+      "SRC-035"
+    ],
+    "evidenceRefs": [
+      "EV-R25-WT-1816-0045"
+    ]
   }
 ]

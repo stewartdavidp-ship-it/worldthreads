@@ -73,7 +73,8 @@
     "WT-1816-0041",
     "WT-1816-0042",
     "WT-1816-0043",
-    "WT-1816-0044"
+    "WT-1816-0044",
+    "WT-1816-0045"
   ],
   "alternativeSearchPending": [
     "REL-0001",
@@ -527,6 +528,11 @@
     },
     {
       "claimId": "WT-1816-0044",
+      "task": "Independent source and claim review",
+      "status": "pending"
+    },
+    {
+      "claimId": "WT-1816-0045",
       "task": "Independent source and claim review",
       "status": "pending"
     },

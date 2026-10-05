@@ -537,5 +537,21 @@
     ],
     "notes": "Full catalog entry and transcription inspected. Dated 1817; compares food prices and weaving pay with 1760/1761. Not a continuous series. Distinct from Thäler’s 1830–1835 painting, museum G 11811.",
     "dependencyGroup": "URNAESCH-KB015011"
+  },
+  {
+    "id": "SRC-035",
+    "type": "Near-contemporary relief account, digitized OCR",
+    "authorOrOrg": "Ruprecht Zollikofer; ETH-Bibliothek Zürich",
+    "title": "Das Hungerjahr 1817, second part",
+    "year": 1819,
+    "url": "https://www.e-rara.ch/doi/10.3931/e-rara-65216",
+    "quality": "Attributed contemporary compilation; OCR and archival comparison pending",
+    "topics": [
+      "Appenzell",
+      "grain imports",
+      "diplomacy"
+    ],
+    "notes": "ETH Rar 27518, two volumes published 1818–1819. Full OCR accessed at https://www.e-rara.ch/zut/download/ftpack/plain/17729179; second part pp. 208–210 inspected. Scan comparison pending; author is a relief-society member, not a neutral observer.",
+    "dependencyGroup": "ZOLLIKOFER-APPENZELL-RELIEF"
   }
 ]

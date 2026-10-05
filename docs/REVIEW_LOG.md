@@ -142,3 +142,9 @@ Audit zero errors/warnings; 71 claims await independent review. All 48 automated
 Read the full Zeitzeugnisse catalog entry and transcription for Urnäsch KB-015011. Added an explicitly 1817 contextual observation on food prices, weaving pay and work shortage. No regional purchasing-power ratio or 1816 event date inferred. Maker and manuscript comparison remain unresolved; long comparison interval, work specifications and material costs limit interpretation. No causal edge to western Swiss relief introduced.
 
 Read Kulturmuseum St Gallen object 3038/G 11811: Thäler’s painting dates 1830–1835, recalled from childhood, and is distinct from KB-015011. This is a provenance caution, not corroboration. Geneva purchasing claims and eastern mortality claims found in search results were not imported without original passage inspection. Mission retains 1816 price/work records and manuscript checks. Self-review, audit and all 48 tests pass; 72 claims pending independent review.
+
+## 2026-10-05 — Round 25: eastern diplomatic procurement
+
+Reached Zollikofer’s full library-hosted OCR, second part pp. 208–210. Added narrowly attributed December 11/13 mission confirmation and arrival dates. Payment and delivery terms were sought, not assumed achieved. OCR is visibly noisy: quantities, conversions and later outcomes excluded; scan and archival comparison remain mission tasks. Preface shows author collected reports and sought relief donations; no independence from his underlying correspondents assumed.
+
+No causal edge to Neuchâtel or the Urnäsch affordability record. Self-review retained the distinction between authorization, negotiation, delivery and household access. Audit zero errors/warnings; all 48 checks pass; 73 claims await independent historical review.

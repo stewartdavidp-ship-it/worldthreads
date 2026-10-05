@@ -1221,5 +1221,19 @@
     "reviewStatus": "pending_independent_review",
     "accessScope": "transcription",
     "dependencyGroup": "URNAESCH-KB015011"
+  },
+  {
+    "id": "EV-R25-WT-1816-0045",
+    "claimId": "WT-1816-0045",
+    "sourceId": "SRC-035",
+    "locator": "Second part, printed pp. 208–210; OCR paragraphs Den 11. December and Den 13. December 1816",
+    "accessedAt": "2026-10-05",
+    "support": "Attributed mission confirmation and arrival dates",
+    "provenance": "Library-hosted full OCR passage inspected",
+    "limitations": "OCR contains errors; image comparison and original council/diplomatic documents pending. Praise of envoy is author framing. Quantities and later results excluded.",
+    "reviewer": "Codex",
+    "reviewStatus": "pending_independent_review",
+    "accessScope": "full_text",
+    "dependencyGroup": "ZOLLIKOFER-APPENZELL-RELIEF"
   }
 ]
