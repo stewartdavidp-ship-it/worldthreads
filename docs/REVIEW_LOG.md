@@ -148,3 +148,9 @@ Read Kulturmuseum St Gallen object 3038/G 11811: Thäler’s painting dates 1830
 Reached Zollikofer’s full library-hosted OCR, second part pp. 208–210. Added narrowly attributed December 11/13 mission confirmation and arrival dates. Payment and delivery terms were sought, not assumed achieved. OCR is visibly noisy: quantities, conversions and later outcomes excluded; scan and archival comparison remain mission tasks. Preface shows author collected reports and sought relief donations; no independence from his underlying correspondents assumed.
 
 No causal edge to Neuchâtel or the Urnäsch affordability record. Self-review retained the distinction between authorization, negotiation, delivery and household access. Audit zero errors/warnings; all 48 checks pass; 73 claims await independent historical review.
+
+## 2026-10-05 — Round 26: eastern source image verification
+
+Downloaded the original e-rara section PDF 17801438.pdf after browser retrieval exceeded its size limit. Visually inspected PDF pages 29–30 (second part pp. 208–209). Confirmed December 11 council confirmation, Zellweger selection, December 13 arrival and instructions. Updated source/evidence access provenance, tightened locator and removed completed scan task from mission. Nearby numeric OCR differs from scan: quantities remain excluded. No new claim or independent witness added. Original administrative papers and household effects remain open.
+
+Self-review is distinct from independent approval. Audit zero errors/warnings; 73 claims pending independent review. All 48 checks passed.

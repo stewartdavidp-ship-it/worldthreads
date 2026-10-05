@@ -540,18 +540,18 @@
   },
   {
     "id": "SRC-035",
-    "type": "Near-contemporary relief account, digitized OCR",
+    "type": "Near-contemporary relief account, digitized scan",
     "authorOrOrg": "Ruprecht Zollikofer; ETH-Bibliothek Zürich",
     "title": "Das Hungerjahr 1817, second part",
     "year": 1819,
     "url": "https://www.e-rara.ch/doi/10.3931/e-rara-65216",
-    "quality": "Attributed contemporary compilation; OCR and archival comparison pending",
+    "quality": "Attributed contemporary compilation; dated passage scan checked",
     "topics": [
       "Appenzell",
       "grain imports",
       "diplomacy"
     ],
-    "notes": "ETH Rar 27518, two volumes published 1818–1819. Full OCR accessed at https://www.e-rara.ch/zut/download/ftpack/plain/17729179; second part pp. 208–210 inspected. Scan comparison pending; author is a relief-society member, not a neutral observer.",
+    "notes": "ETH Rar 27518, published 1818–1819. OCR inspected, then compared visually with section PDF https://www.e-rara.ch/download/pdf/17801438.pdf pages 29–30 (second part pp. 208–209). December confirmation/arrival and instructions checked. Quantities excluded. Relief-society author; archival originals pending.",
     "dependencyGroup": "ZOLLIKOFER-APPENZELL-RELIEF"
   }
 ]
