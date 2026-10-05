@@ -169,12 +169,15 @@
     "claimRefs": [
       "WT-1816-0037",
       "WT-1816-0038",
-      "WT-1816-0039"
+      "WT-1816-0039",
+      "WT-1816-0040",
+      "WT-1816-0041"
     ],
     "missing": [
       "Original conference and procurement records",
       "Actual delivery and distribution dates",
-      "Comparable prices, wages, reserves and household access"
+      "Comparable prices, wages, reserves and household access",
+      "Local crop, pasture and pest records with dates; exposure may differ before policy effects are compared."
     ],
     "supportWouldLookLike": [
       "Dated records connect purchasing access to supply reaching households."
@@ -185,7 +188,8 @@
     "researchSteps": [
       "Choose two localities and check comparability.",
       "Inspect 1816 records and trace the purchase-to-delivery-to-access chain.",
-      "Keep 1817 outcomes contextual; record inconclusive searches and rivals."
+      "Keep 1817 outcomes contextual; record inconclusive searches and rivals.",
+      "Distinguish crop-specific exposure and animal damage from access and income; do not treat all localities as equally exposed."
     ],
     "possibleOutcomes": [
       "Supports part of the theory",

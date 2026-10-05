@@ -488,5 +488,22 @@
     ],
     "notes": "Downloaded full PDF; inspected introduction pp. 4–5 and Discussion 5.3.3 pp. 66–67. Historical and present-day scenarios must be distinguished. Thesis and 2017 paper share research, not independent corroboration.",
     "dependencyGroup": "FLUCKIGER-SWISS-CROPS"
+  },
+  {
+    "id": "SRC-032",
+    "type": "Edited primary memoir transcription",
+    "authorOrOrg": "Anne-Joseph de Rivaz; edited by André Donnet; Société d’histoire de la Suisse romande",
+    "title": "Mémoires historiques sur le Valais, volume II, Disette de 1816–1817",
+    "year": 1961,
+    "url": "https://www.shsr.ch/mdr/MDR3_06_01.html",
+    "quality": "Near-contemporary attributed account; edited transcription",
+    "topics": [
+      "crop differences",
+      "pasture access",
+      "rodents",
+      "Valais"
+    ],
+    "notes": "1961 edition, digital transcription inspected October 5, 2026, pp. 220–221. Passage explicitly says written November 1817; dated details may be retrospective. Manuscript/print comparison not performed.",
+    "dependencyGroup": "DERIVAZ-VALAIS-MEMOIRS"
   }
 ]

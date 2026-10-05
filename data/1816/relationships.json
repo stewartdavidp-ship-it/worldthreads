@@ -1089,5 +1089,22 @@
       "EV-R20-REL-0027"
     ],
     "researchStatus": "Source checked; independent review pending"
+  },
+  {
+    "id": "REL-0028",
+    "subjectId": "WT-1816-0040",
+    "predicate": "ASSOCIATED_WITH",
+    "objectId": "WT-1816-0041",
+    "causalStatus": "ASSOCIATED",
+    "lag": "Within retrospectively described 1816–1817 crisis",
+    "explanation": "The account reports crop/pasture difficulty and local rodent damage together. It does not quantify their interaction or establish that weather caused rodent damage.",
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-032"
+    ],
+    "evidenceRefs": [
+      "EV-R21-REL-0028"
+    ],
+    "researchStatus": "Source checked; independent review pending"
   }
 ]

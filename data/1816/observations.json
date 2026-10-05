@@ -1200,5 +1200,65 @@
       "EV-R20-WT-1816-0039"
     ],
     "contextNode": true
+  },
+  {
+    "id": "WT-1816-0040",
+    "title": "Valais account distinguishes crops and pasture access",
+    "startDate": "1816",
+    "endDate": "1817",
+    "datePrecision": "YEAR",
+    "contextNode": true,
+    "continent": "Europe",
+    "region": "Valais / Switzerland",
+    "historicalEntity": "Canton of Valais",
+    "place": "Valais",
+    "observation": "De Rivaz describes abundant hay but little second growth, delayed grain and limited alpine grazing in the 1816–1817 crisis. These are qualitative reports, not measured yields.",
+    "coverageType": "CONDITION",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "Agriculture / pasture",
+    "analyticalRole": [
+      "PRESSURE"
+    ],
+    "evidenceType": [
+      "Contemporary documentary observation"
+    ],
+    "confidence": "Medium",
+    "researchStatus": "Source checked; independent review pending",
+    "sourceRefs": [
+      "SRC-032"
+    ],
+    "evidenceRefs": [
+      "EV-R21-WT-1816-0040"
+    ]
+  },
+  {
+    "id": "WT-1816-0041",
+    "title": "Local rodent damage appears alongside weather pressures",
+    "startDate": "1816",
+    "endDate": "1817",
+    "datePrecision": "YEAR",
+    "contextNode": true,
+    "continent": "Europe",
+    "region": "Valais / Switzerland",
+    "historicalEntity": "Canton of Valais",
+    "place": "Conches / Monthey, Valais",
+    "observation": "The same account reports rats in Conches and moles in Monthey damaging potatoes and gardens. Exact event dates and relative contributions remain unresolved.",
+    "coverageType": "CONDITION",
+    "system": "BIOSPHERE",
+    "topic": "Rodents / local crop pressure",
+    "analyticalRole": [
+      "PRESSURE"
+    ],
+    "evidenceType": [
+      "Contemporary documentary observation"
+    ],
+    "confidence": "Medium",
+    "researchStatus": "Source checked; independent review pending",
+    "sourceRefs": [
+      "SRC-032"
+    ],
+    "evidenceRefs": [
+      "EV-R21-WT-1816-0041"
+    ]
   }
 ]

@@ -1135,5 +1135,49 @@
     "reviewStatus": "pending_independent_review",
     "accessScope": "full_text",
     "dependencyGroup": "GERN-NEUCHATEL-1977"
+  },
+  {
+    "id": "EV-R21-WT-1816-0040",
+    "claimId": "WT-1816-0040",
+    "sourceId": "SRC-032",
+    "locator": "p. 220, section 6 Disette de 1816–1817, paragraphs beginning Une des plus and Il n’y eut",
+    "accessedAt": "2026-10-05",
+    "support": "Qualitative attributed report only",
+    "provenance": "Historical society digital transcription inspected with surrounding paragraphs and edition metadata",
+    "limitations": "Written November 1817; individual event dates uncertain. Clerical local perspective; no quantified losses or independent manuscript comparison.",
+    "reviewer": "Codex",
+    "reviewStatus": "pending_independent_review",
+    "accessScope": "transcription",
+    "dependencyGroup": "DERIVAZ-VALAIS-MEMOIRS",
+    "quote": "Les foins furent assez abondants, mais les regains, presque nuls."
+  },
+  {
+    "id": "EV-R21-WT-1816-0041",
+    "claimId": "WT-1816-0041",
+    "sourceId": "SRC-032",
+    "locator": "p. 220, section 6 Disette de 1816–1817, paragraph beginning Le blé",
+    "accessedAt": "2026-10-05",
+    "support": "Qualitative attributed report only",
+    "provenance": "Historical society digital transcription inspected with surrounding paragraphs and edition metadata",
+    "limitations": "Written November 1817; individual event dates uncertain. Clerical local perspective; no quantified losses or independent manuscript comparison.",
+    "reviewer": "Codex",
+    "reviewStatus": "pending_independent_review",
+    "accessScope": "transcription",
+    "dependencyGroup": "DERIVAZ-VALAIS-MEMOIRS",
+    "quote": "Les rats dans le dizain de Conches et les taupes dans celui de Monthey"
+  },
+  {
+    "id": "EV-R21-REL-0028",
+    "claimId": "REL-0028",
+    "sourceId": "SRC-032",
+    "locator": "p. 220, section 6 Disette de 1816–1817, first three paragraphs",
+    "accessedAt": "2026-10-05",
+    "support": "Co-reporting, not causal attribution",
+    "provenance": "Digital transcription inspected",
+    "limitations": "One account and uncertain individual dates; no independently measured relative effects.",
+    "reviewer": "Codex",
+    "reviewStatus": "pending_independent_review",
+    "accessScope": "transcription",
+    "dependencyGroup": "DERIVAZ-VALAIS-MEMOIRS"
   }
 ]

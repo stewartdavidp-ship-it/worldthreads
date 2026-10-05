@@ -116,3 +116,11 @@ Inspected the full Suratteau review of Gern (1981, p. 498) and downloaded Flück
 No purchase volume, delivered quantity, mortality effect or model percentage was imported. Model outputs are not measured yields; historical and present-day scenarios differ. Thesis and 2017 paper are one research family. Gern’s original study and archival minutes remain uninspected; the later review does not supply independent corroboration. New mission asks for comparable exposure, purchases, delivery, household access, wages, reserves and prices. No arrow asserts that modeled loss caused procurement or explains regional hardship.
 
 Source access: Bern repository API blocked; publisher link denied; thesis successfully downloaded from university host. Aargau relief archive and Zollikofer’s 1818–1819 account located but not yet inspected. These are next-pass leads, not corroborating evidence. Audit zero errors/warnings; 66 claims remain pending independent review; all 48 automated checks passed.
+
+## 2026-10-05 — Round 21: local exposure in Valais
+
+Inspected de Rivaz’s edited memoir transcription, 1961 edition volume II, pp. 220–221, section Disette de 1816–1817; identified author, editor and explicit November 1817 writing date. Added qualitative crop/pasture differences and local rodent reports as 1816–1817 contextual records. The association records co-reporting, not weather-caused pest damage or a quantified causal effect. Do not equate abundant hay with food security, or call moles insects. Expanded the Swiss comparison mission to test exposure differences before attributing outcomes to policy.
+
+Chronology review: November 1817 text includes exports, soup provision and government response, but these were not imported as 1816 facts. Troop timing needs separate checking. No manuscript/print comparison or independent approval claimed. Neuchâtel primary bread-distribution report located through indexed RERO PDF, but live URL returns 410: its indexed quantities were not added. Aargau catalog and eastern Swiss book metadata read; underlying relief records remain uninspected. Original Gern study still open.
+
+Audit clean; 69 claims await independent review. All 48 automated checks passed. Research addition strengthens the comparison but does not establish equivalent exposure or measured comparative outcomes.
