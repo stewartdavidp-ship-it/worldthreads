@@ -1,6 +1,6 @@
 # Next research → review → audit → fix passes
 
-The current graph has 33 observations and 25 relationships. All have evidence locators; none has independent approval. Zero structural warnings means the records are connected correctly, not that historical interpretation is settled.
+The current graph has 45 observations and 28 relationships. All have evidence locators; none has independent approval. Zero structural warnings means the records are connected correctly, not that historical interpretation is settled.
 
 1. **Sugauli:** scanned Aitchison compilation inspected for March exchange and December revision. Seek original instruments, implementation records and another underlying witness; the scan and transcription share one text family.
 2. **Alpine floods:** university preprint methods and counterfactual inspected. Compare final publication, historical hydraulics and independent rainfall evidence; distinguish modeled rainfall from measurement.
@@ -15,3 +15,5 @@ The current graph has 33 observations and 25 relationships. All have evidence lo
 11. **Global expansion:** research the open regional questions in `research-gaps.json`, especially Africa, South Asia, South America, Oceania and health. Existing evidence density must not determine historical importance.
 
 After each pass, update evidence and correction history, regenerate the audit report, and check the affected thread in the browser. Source checks, corroboration and independent approval remain separate milestones.
+
+12. **Swiss food access:** compare Neuchâtel and Appenzell procurement without assuming comparable exposure or household benefits. Inspect Gern’s original study, BPUN 6R370 notices, MCE 165 December 30 complaint and AEN Assistance 3/IV counteraccount. Follow purchases through delivery, distribution, eligibility, earnings and prices. Urnäsch 1817 table and Valais 1816–1817 memoir are contextual; preserve their chronology. Zollikofer’s December mission passage is scan checked, but council originals are pending. Restore unavailable Neuchâtel bread-distribution source before adopting indexed quantities.

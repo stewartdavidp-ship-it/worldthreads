@@ -154,3 +154,7 @@ No causal edge to Neuchâtel or the Urnäsch affordability record. Self-review r
 Downloaded the original e-rara section PDF 17801438.pdf after browser retrieval exceeded its size limit. Visually inspected PDF pages 29–30 (second part pp. 208–209). Confirmed December 11 council confirmation, Zellweger selection, December 13 arrival and instructions. Updated source/evidence access provenance, tightened locator and removed completed scan task from mission. Nearby numeric OCR differs from scan: quantities remain excluded. No new claim or independent witness added. Original administrative papers and household effects remain open.
 
 Self-review is distinct from independent approval. Audit zero errors/warnings; 73 claims pending independent review. All 48 checks passed.
+
+## 2026-10-05 — Round 27: final overnight audit and publication verification
+
+Rechecked project grounding and workflow. No additional historical claim added merely to fill the final scheduled pass. Current graph: 45 observations, 28 relationships, 35 sources. Audit zero errors/warnings; 73 claims still await independent review. GitHub Pages reports da8518b built; fetched published observations match local JSON exactly. Last research change passed all 48 checks; no code or dataset change in this pass warranted repeating them. Updated stale queue counts and consolidated Swiss original-record tasks. Morning report preserves blocked/inconclusive searches, competing causes and review limitations. Eight-run schedule not extended.
