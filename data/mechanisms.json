@@ -1,7 +1,186 @@
 [
-{"id":"MECH-001","name":"Environmental shock → production stress → price pressure","description":"A physical climate or environmental disruption reduces production or access to staples; scarcity then propagates into prices and food security, often with a lag.","inputs":["climate shock","staple dependence","limited buffers"],"intermediateProcesses":["yield loss","scarcity","market transmission"],"possibleOutcomes":["food-price spike","malnutrition","migration","unrest","substitution"],"resilienceFactors":["imports","reserves","transport capacity","crop diversity","relief policy"],"prototypeThreads":["THREAD-CENTRAL-EUROPE-FOOD"],"status":"Hypothesis"},
-{"id":"MECH-002","name":"Ecological disruption → substitution → path dependence","description":"A temporary ecological disruption changes resource availability; people substitute toward another resource or technology, and the emergency adaptation can persist after the original shock fades.","inputs":["resource disruption","alternative resource","market demand"],"intermediateProcesses":["behavioral substitution","capital/skill reallocation"],"possibleOutcomes":["structural economic change","new industry pattern"],"resilienceFactors":["diversified resources","mobility","market access"],"prototypeThreads":["THREAD-GULF-MAINE"],"status":"Hypothesis"},
-{"id":"MECH-003","name":"Stored environmental risk → compound hazard","description":"Conditions accumulated over months or seasons store risk in a physical system; a later trigger produces an extreme outcome larger than either factor would produce alone.","inputs":["snow/water storage","persistent cold","later trigger"],"intermediateProcesses":["accumulation","melt","runoff"],"possibleOutcomes":["flooding","infrastructure loss","crop damage"],"resilienceFactors":["storage capacity","drainage","warning","settlement location"],"prototypeThreads":["THREAD-ALPINE-HYDRO"],"status":"Hypothesis"},
-{"id":"MECH-004","name":"Environmental context → altered behavior → cultural production","description":"Environmental conditions alter where and how people spend time, creating conditions that may contribute to creative or intellectual work without determining it.","inputs":["unusual environmental conditions","social network","creative capacity"],"intermediateProcesses":["behavioral change","shared activity","idea generation"],"possibleOutcomes":["artistic work","literature","innovation"],"resilienceFactors":[],"prototypeThreads":["THREAD-CLIMATE-CULTURE"],"status":"Hypothesis"},
-{"id":"MECH-005","name":"Common forcing → divergent regional expression","description":"A large-scale forcing affects many places, but local circulation, ecology, institutions and evidence systems produce different observed outcomes.","inputs":["shared forcing","regional context"],"intermediateProcesses":["local climate response","ecological/social mediation"],"possibleOutcomes":["different hazards","different social effects","proxy disagreement"],"resilienceFactors":["regional buffers","institutional response"],"prototypeThreads":["THREAD-CHINA-CLIMATE","THREAD-GULF-MAINE","THREAD-CENTRAL-EUROPE-FOOD"],"status":"Hypothesis"}
+  {
+    "id": "MECH-001",
+    "name": "Environmental shock → production stress → price pressure",
+    "description": "A physical climate or environmental disruption reduces production or access to staples; scarcity then propagates into prices and food security, often with a lag.",
+    "inputs": [
+      "climate shock",
+      "staple dependence",
+      "limited buffers"
+    ],
+    "intermediateProcesses": [
+      "yield loss",
+      "scarcity",
+      "market transmission"
+    ],
+    "possibleOutcomes": [
+      "food-price spike",
+      "malnutrition",
+      "migration",
+      "unrest",
+      "substitution"
+    ],
+    "resilienceFactors": [
+      "imports",
+      "reserves",
+      "transport capacity",
+      "crop diversity",
+      "relief policy"
+    ],
+    "prototypeThreads": [
+      "THREAD-CENTRAL-EUROPE-FOOD",
+      "THREAD-SUMBAWA"
+    ],
+    "status": "Hypothesis",
+    "counterexamples": []
+  },
+  {
+    "id": "MECH-002",
+    "name": "Ecological disruption → substitution → path dependence",
+    "description": "A temporary ecological disruption changes resource availability; people substitute toward another resource or technology, and the emergency adaptation can persist after the original shock fades.",
+    "inputs": [
+      "resource disruption",
+      "alternative resource",
+      "market demand"
+    ],
+    "intermediateProcesses": [
+      "behavioral substitution",
+      "capital/skill reallocation"
+    ],
+    "possibleOutcomes": [
+      "structural economic change",
+      "new industry pattern"
+    ],
+    "resilienceFactors": [
+      "diversified resources",
+      "mobility",
+      "market access"
+    ],
+    "prototypeThreads": [
+      "THREAD-GULF-MAINE"
+    ],
+    "status": "Hypothesis",
+    "counterexamples": []
+  },
+  {
+    "id": "MECH-003",
+    "name": "Stored environmental risk → compound hazard",
+    "description": "Conditions accumulated over months or seasons store risk in a physical system; a later trigger produces an extreme outcome larger than either factor would produce alone.",
+    "inputs": [
+      "snow/water storage",
+      "persistent cold",
+      "later trigger"
+    ],
+    "intermediateProcesses": [
+      "accumulation",
+      "melt",
+      "runoff"
+    ],
+    "possibleOutcomes": [
+      "flooding",
+      "infrastructure loss",
+      "crop damage"
+    ],
+    "resilienceFactors": [
+      "storage capacity",
+      "drainage",
+      "warning",
+      "settlement location"
+    ],
+    "prototypeThreads": [
+      "THREAD-ALPINE-HYDRO"
+    ],
+    "status": "Hypothesis",
+    "counterexamples": []
+  },
+  {
+    "id": "MECH-004",
+    "name": "Environmental context → altered behavior → cultural production",
+    "description": "Environmental conditions alter where and how people spend time, creating conditions that may contribute to creative or intellectual work without determining it.",
+    "inputs": [
+      "unusual environmental conditions",
+      "social network",
+      "creative capacity"
+    ],
+    "intermediateProcesses": [
+      "behavioral change",
+      "shared activity",
+      "idea generation"
+    ],
+    "possibleOutcomes": [
+      "artistic work",
+      "literature",
+      "innovation"
+    ],
+    "resilienceFactors": [],
+    "prototypeThreads": [
+      "THREAD-CLIMATE-CULTURE"
+    ],
+    "status": "Hypothesis",
+    "counterexamples": []
+  },
+  {
+    "id": "MECH-005",
+    "name": "Common forcing → divergent regional expression",
+    "description": "A large-scale forcing affects many places, but local circulation, ecology, institutions and evidence systems produce different observed outcomes.",
+    "inputs": [
+      "shared forcing",
+      "regional context"
+    ],
+    "intermediateProcesses": [
+      "local climate response",
+      "ecological/social mediation"
+    ],
+    "possibleOutcomes": [
+      "different hazards",
+      "different social effects",
+      "proxy disagreement"
+    ],
+    "resilienceFactors": [
+      "regional buffers",
+      "institutional response"
+    ],
+    "prototypeThreads": [
+      "THREAD-CHINA-CLIMATE",
+      "THREAD-GULF-MAINE",
+      "THREAD-CENTRAL-EUROPE-FOOD",
+      "THREAD-MONSOON"
+    ],
+    "status": "Hypothesis",
+    "counterexamples": []
+  },
+  {
+    "id": "MECH-006",
+    "name": "Coercive policy, violence and subsequent restrictions",
+    "description": "A hypothesis about institutional coercion; chronology and competing accounts must be assessed separately.",
+    "inputs": [],
+    "intermediateProcesses": [],
+    "possibleOutcomes": [],
+    "resilienceFactors": [
+      "limits on executive power",
+      "accountability"
+    ],
+    "prototypeThreads": [
+      "THREAD-APPIN"
+    ],
+    "status": "Hypothesis",
+    "counterexamples": []
+  },
+  {
+    "id": "MECH-007",
+    "name": "Organized capacity → geographic access → campaign",
+    "description": "Preparation can enable access across a barrier without determining a military outcome.",
+    "inputs": [],
+    "intermediateProcesses": [],
+    "possibleOutcomes": [],
+    "resilienceFactors": [
+      "route knowledge",
+      "supply capacity"
+    ],
+    "prototypeThreads": [
+      "THREAD-ANDES"
+    ],
+    "status": "Hypothesis",
+    "counterexamples": []
+  }
 ]

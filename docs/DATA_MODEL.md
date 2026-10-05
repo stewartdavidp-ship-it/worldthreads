@@ -105,3 +105,11 @@ Mechanisms must track counterexamples and resilience factors. They are not deter
 ## Context window
 
 The prototype year is 1816, but the graph may include nodes from 1814–1818 whenever they are necessary to explain antecedents, lagged outcomes or persistence.
+
+## Explorer contract (v0.3)
+
+`mechanismIds[]` on each thread references the mechanism registry. Legacy `mechanisms[]` tags remain descriptive. Draw relationships from `subjectId` to `objectId`, never from neighboring positions in `nodeIds`: threads may branch and response predicates may point backward in time. `RESPONDED_TO` reads response → pressure; `PRECEDED` establishes chronology only.
+
+Observations may include `sourceLocator` and `uncertainty`. `contextNode` identifies antecedent/outcome records outside the prototype year, not a separate evidence class. Approximate source dates must retain their actual precision; a publication date must not be mistaken for the date of an observation. Source `year: null` means publication year unknown.
+
+Mechanism registries include `counterexamples[]`. Empty arrays mean counterexamples have not been documented, not that none exist. A thread may illustrate only part of a mechanism; say which steps lack evidence. Thread confidence is a curated assessment, not a computed probability.

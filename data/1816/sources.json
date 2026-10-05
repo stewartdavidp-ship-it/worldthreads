@@ -1,18 +1,322 @@
 [
-  {"id":"SRC-001","type":"Peer-reviewed article","authorOrOrg":"Brázdil et al., Climate of the Past","title":"Climatic effects and impacts of the 1815 eruption of Mount Tambora in the Czech Lands","year":2016,"url":"https://cp.copernicus.org/articles/12/1361/2016/index.html","quality":"High","topics":["climate","harvests","grain prices","Czech Lands"]},
-  {"id":"SRC-002","type":"Peer-reviewed article","authorOrOrg":"Alexander et al., Science Advances","title":"The 1816 'year without a summer' in an ecology of marine fisheries","year":2017,"url":"https://doi.org/10.1126/sciadv.1601635","quality":"High","topics":["Gulf of Maine","temperature","fisheries","adaptation"]},
-  {"id":"SRC-003","type":"Peer-reviewed article","authorOrOrg":"Brugnara et al., Climate of the Past","title":"A collection of sub-daily pressure and temperature observations for the early instrumental period with a focus on 1816","year":2015,"url":"https://cp.copernicus.org/articles/11/1027/2015/cp-11-1027-2015.html","quality":"High","topics":["instrumental climate","Europe","1816"]},
-  {"id":"SRC-004","type":"Peer-reviewed article","authorOrOrg":"Auchmann et al., Climate of the Past","title":"Extreme climate, not extreme weather: the summer of 1816 in Geneva, Switzerland","year":2012,"url":"https://cp.copernicus.org/articles/8/325/2012/","quality":"High","topics":["Geneva","temperature","cloudiness","precipitation"]},
-  {"id":"SRC-005","type":"Peer-reviewed article","authorOrOrg":"Rössler et al., Science of the Total Environment","title":"The effect of the Tambora eruption on Swiss flood generation in 1816/1817","year":2018,"url":"https://pubmed.ncbi.nlm.nih.gov/30857086/","quality":"High","topics":["Switzerland","snowpack","Lake Constance","Rhine","flooding"]},
-  {"id":"SRC-006","type":"Peer-reviewed article","authorOrOrg":"Gao et al., Journal of Meteorological Research","title":"Climatic Aftermath of the 1815 Tambora Eruption in China","year":2017,"url":"https://pubs-en.cstam.org.cn/article/doi/10.1007/s13351-017-6091-9","quality":"High","topics":["China","frost","snow","drought","proxies"]},
-  {"id":"SRC-007","type":"Government history","authorOrOrg":"Argentina.gob.ar","title":"9 de julio de 1816 – Declaración de la Independencia de la Argentina","year":2026,"url":"https://www.argentina.gob.ar/noticias/9-de-julio-de-1816-declaracion-de-la-independencia-de-la-argentina","quality":"High","topics":["Argentina","independence","politics"]},
-  {"id":"SRC-008","type":"Primary treaty text","authorOrOrg":"Treaty of Sugauli transcript","title":"Treaty of Sugauli","year":1815,"url":"https://en.wikisource.org/wiki/Treaty_of_Sugauli","quality":"Medium-High","topics":["Nepal","East India Company","territory","diplomacy"]},
-  {"id":"SRC-009","type":"Museum collection record","authorOrOrg":"Royal Museums Greenwich","title":"The Bombardment of Algiers, 27 August 1816","year":1816,"url":"https://www.rmg.co.uk/collections/objects/rmgc-object-12109","quality":"High","topics":["Algiers","Royal Navy","slavery","Mediterranean"]},
-  {"id":"SRC-010","type":"Scholarly monograph / Cambridge","authorOrOrg":"Elizabeth A. Eldredge","title":"Kingdoms and Chiefdoms of Southeastern Africa — chronology and Zulu consolidation","year":2018,"url":"https://www.cambridge.org/core/books/abs/kingdoms-and-chiefdoms-of-southeastern-africa/chronology-of-conflicts-migrations-and-political-reconfiguration-east-of-the-drakensberg-in-the-era-of-shaka/A9658A686F8C58794A2441343AF0AC41","quality":"High","topics":["Shaka","AmaZulu","southern Africa","political reconfiguration"]},
-  {"id":"SRC-011","type":"Historical reference","authorOrOrg":"South African History Online","title":"Slachter’s Nek rebels are hanged","year":2019,"url":"https://sahistory.org.za/dated-event/slachters-nek-rebels-are-hanged","quality":"Medium-High","topics":["Cape Colony","Slachter's Nek","colonial rule"]},
-  {"id":"SRC-012","type":"Medical history / NCBI","authorOrOrg":"NCBI Bookshelf","title":"The Origins of the History and Physical Examination — Laennec: The Stethoscope, 1816","year":1990,"url":"https://www.ncbi.nlm.nih.gov/books/NBK458/","quality":"High","topics":["medicine","stethoscope","Laennec","diagnosis"]},
-  {"id":"SRC-013","type":"Digital scholarly archive","authorOrOrg":"Shelley-Godwin Archive / Bodleian materials","title":"Frankenstein Notebook A","year":1816,"url":"https://shelleygodwinarchive.org/contents/frankenstein_notebook_a/","quality":"High","topics":["Mary Shelley","Frankenstein","literature","Geneva"]},
-  {"id":"SRC-014","type":"Library interpretation","authorOrOrg":"British Library","title":"Mary Shelley’s Frankenstein","year":2026,"url":"https://www.britishlibrary.cn/en/works/frankenstein/","quality":"High","topics":["Mary Shelley","Frankenstein","1816 weather","literature"]},
-  {"id":"SRC-015","type":"Performing arts institution","authorOrOrg":"Metropolitan Opera","title":"Timeline: Rossini","year":2026,"url":"https://www.metopera.org/learn/education/timeline-rossini/","quality":"High","topics":["Rossini","Barber of Seville","opera"]},
-  {"id":"SRC-016","type":"Peer-reviewed commentary","authorOrOrg":"Luterbacher & Pfister, Nature Geoscience","title":"The year without a summer","year":2015,"url":"https://www.nature.com/articles/ngeo2404","quality":"High","topics":["Tambora","Europe","harvests","adaptation"]}
+  {
+    "id": "SRC-001",
+    "type": "Peer-reviewed article",
+    "authorOrOrg": "Brázdil et al., Climate of the Past",
+    "title": "Climatic effects and impacts of the 1815 eruption of Mount Tambora in the Czech Lands",
+    "year": 2016,
+    "url": "https://cp.copernicus.org/articles/12/1361/2016/index.html",
+    "quality": "High",
+    "topics": [
+      "climate",
+      "harvests",
+      "grain prices",
+      "Czech Lands"
+    ]
+  },
+  {
+    "id": "SRC-002",
+    "type": "Peer-reviewed article",
+    "authorOrOrg": "Alexander et al., Science Advances",
+    "title": "Tambora and the mackerel year: Phenology and fisheries during an extreme climate event",
+    "year": 2017,
+    "url": "https://doi.org/10.1126/sciadv.1601635",
+    "quality": "High",
+    "topics": [
+      "Gulf of Maine",
+      "temperature",
+      "fisheries",
+      "adaptation"
+    ],
+    "notes": "Analysis uses Holyoke’s Salem air-temperature series and fisheries/export records. Fish thermal responses include historical likelihood scenarios, not directly observed fish mortality."
+  },
+  {
+    "id": "SRC-003",
+    "type": "Peer-reviewed article",
+    "authorOrOrg": "Brugnara et al., Climate of the Past",
+    "title": "A collection of sub-daily pressure and temperature observations for the early instrumental period with a focus on 1816",
+    "year": 2015,
+    "url": "https://cp.copernicus.org/articles/11/1027/2015/cp-11-1027-2015.html",
+    "quality": "High",
+    "topics": [
+      "instrumental climate",
+      "Europe",
+      "1816"
+    ]
+  },
+  {
+    "id": "SRC-004",
+    "type": "Peer-reviewed article",
+    "authorOrOrg": "Auchmann et al., Climate of the Past",
+    "title": "Extreme climate, not extreme weather: the summer of 1816 in Geneva, Switzerland",
+    "year": 2012,
+    "url": "https://cp.copernicus.org/articles/8/325/2012/",
+    "quality": "High",
+    "topics": [
+      "Geneva",
+      "temperature",
+      "cloudiness",
+      "precipitation"
+    ]
+  },
+  {
+    "id": "SRC-005",
+    "type": "Peer-reviewed article",
+    "authorOrOrg": "Rössler et al., Science of the Total Environment",
+    "title": "The effect of the Tambora eruption on Swiss flood generation in 1816/1817",
+    "year": 2018,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30857086/",
+    "quality": "High",
+    "topics": [
+      "Switzerland",
+      "snowpack",
+      "Lake Constance",
+      "Rhine",
+      "flooding"
+    ]
+  },
+  {
+    "id": "SRC-006",
+    "type": "Peer-reviewed article",
+    "authorOrOrg": "Gao et al., Journal of Meteorological Research",
+    "title": "Climatic Aftermath of the 1815 Tambora Eruption in China",
+    "year": 2017,
+    "url": "https://pubs-en.cstam.org.cn/article/doi/10.1007/s13351-017-6091-9",
+    "quality": "High",
+    "topics": [
+      "China",
+      "frost",
+      "snow",
+      "drought",
+      "proxies"
+    ]
+  },
+  {
+    "id": "SRC-007",
+    "type": "Government history",
+    "authorOrOrg": "Argentina.gob.ar",
+    "title": "9 de julio de 1816 – Declaración de la Independencia de la Argentina",
+    "year": 2026,
+    "url": "https://www.argentina.gob.ar/noticias/9-de-julio-de-1816-declaracion-de-la-independencia-de-la-argentina",
+    "quality": "High",
+    "topics": [
+      "Argentina",
+      "independence",
+      "politics"
+    ]
+  },
+  {
+    "id": "SRC-008",
+    "type": "Primary treaty text",
+    "authorOrOrg": "Treaty of Sugauli transcript",
+    "title": "Treaty of Sugauli",
+    "year": 1815,
+    "url": "https://en.wikisource.org/wiki/Treaty_of_Sugauli",
+    "quality": "Medium-High",
+    "topics": [
+      "Nepal",
+      "East India Company",
+      "territory",
+      "diplomacy"
+    ]
+  },
+  {
+    "id": "SRC-009",
+    "type": "Museum collection record",
+    "authorOrOrg": "Royal Museums Greenwich",
+    "title": "The Bombardment of Algiers, 27 August 1816",
+    "year": 1816,
+    "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-12109",
+    "quality": "High",
+    "topics": [
+      "Algiers",
+      "Royal Navy",
+      "slavery",
+      "Mediterranean"
+    ]
+  },
+  {
+    "id": "SRC-010",
+    "type": "Scholarly monograph / Cambridge",
+    "authorOrOrg": "Elizabeth A. Eldredge",
+    "title": "Appendix B — Chronology of Conflicts, Migrations, and Political Reconfiguration East of the Drakensberg in the Era of Shaka",
+    "year": 2015,
+    "url": "https://www.cambridge.org/core/books/abs/kingdoms-and-chiefdoms-of-southeastern-africa/chronology-of-conflicts-migrations-and-political-reconfiguration-east-of-the-drakensberg-in-the-era-of-shaka/A9658A686F8C58794A2441343AF0AC41",
+    "quality": "High",
+    "topics": [
+      "Shaka",
+      "AmaZulu",
+      "southern Africa",
+      "political reconfiguration"
+    ],
+    "notes": "Kingdoms and Chiefdoms of Southeastern Africa; print publication 2015, chapter online 2018."
+  },
+  {
+    "id": "SRC-011",
+    "type": "Historical reference",
+    "authorOrOrg": "South African History Online",
+    "title": "Slachter’s Nek rebels are hanged",
+    "year": 2019,
+    "url": "https://sahistory.org.za/dated-event/slachters-nek-rebels-are-hanged",
+    "quality": "Medium-High",
+    "topics": [
+      "Cape Colony",
+      "Slachter's Nek",
+      "colonial rule"
+    ]
+  },
+  {
+    "id": "SRC-012",
+    "type": "Medical history / NCBI",
+    "authorOrOrg": "NCBI Bookshelf",
+    "title": "The Origins of the History and Physical Examination — Laennec: The Stethoscope, 1816",
+    "year": 1990,
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK458/",
+    "quality": "High",
+    "topics": [
+      "medicine",
+      "stethoscope",
+      "Laennec",
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "SRC-013",
+    "type": "Digital scholarly archive",
+    "authorOrOrg": "Shelley-Godwin Archive / Bodleian materials",
+    "title": "Frankenstein Notebook A",
+    "year": 1816,
+    "url": "https://shelleygodwinarchive.org/contents/frankenstein_notebook_a/",
+    "quality": "High",
+    "topics": [
+      "Mary Shelley",
+      "Frankenstein",
+      "literature",
+      "Geneva"
+    ]
+  },
+  {
+    "id": "SRC-014",
+    "type": "Library interpretation",
+    "authorOrOrg": "British Library",
+    "title": "Mary Shelley’s Frankenstein",
+    "year": 2026,
+    "url": "https://www.britishlibrary.cn/en/works/frankenstein/",
+    "quality": "High",
+    "topics": [
+      "Mary Shelley",
+      "Frankenstein",
+      "1816 weather",
+      "literature"
+    ]
+  },
+  {
+    "id": "SRC-015",
+    "type": "Performing arts institution",
+    "authorOrOrg": "Metropolitan Opera",
+    "title": "Timeline: Rossini",
+    "year": 2026,
+    "url": "https://www.metopera.org/learn/education/timeline-rossini/",
+    "quality": "High",
+    "topics": [
+      "Rossini",
+      "Barber of Seville",
+      "opera"
+    ]
+  },
+  {
+    "id": "SRC-016",
+    "type": "Peer-reviewed commentary",
+    "authorOrOrg": "Luterbacher & Pfister, Nature Geoscience",
+    "title": "The year without a summer",
+    "year": 2015,
+    "url": "https://www.nature.com/articles/ngeo2404",
+    "quality": "High",
+    "topics": [
+      "Tambora",
+      "Europe",
+      "harvests",
+      "adaptation"
+    ]
+  },
+  {
+    "id": "SRC-017",
+    "type": "Institutional historical record",
+    "authorOrOrg": "Smithsonian Global Volcanism Program",
+    "title": "Tambora",
+    "year": null,
+    "url": "https://volcano.si.edu/volcano.cfm?vn=264040",
+    "quality": "High",
+    "topics": [
+      "volcanism",
+      "Sumbawa",
+      "croplands"
+    ],
+    "notes": "Geological Summary and April 1815 eruption entries; fatalities are estimates, not a census.",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-018",
+    "type": "Scholarly review",
+    "authorOrOrg": "Clive Oppenheimer",
+    "title": "Climatic, environmental and human consequences of the largest known historic eruption: Tambora volcano (Indonesia) 1815",
+    "year": 2003,
+    "url": "https://doi.org/10.1191/0309133303pp379ra",
+    "quality": "High",
+    "topics": [
+      "Tambora",
+      "famine",
+      "relief"
+    ],
+    "notes": "Abstract and pp. 248–249: aftermath, Philipps report via Raffles of livestock sales and rice relief; precise report date not established here. The separately dated August 1815 letter concerns Bali/east Java.",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-019",
+    "type": "Scholarly review",
+    "authorOrOrg": "Raible et al., WIREs Climate Change",
+    "title": "Tambora 1815 as a test case for high impact volcanic eruptions: Earth system effects",
+    "year": 2016,
+    "url": "https://climate.envsci.rutgers.edu/pdf/RaibleTambora_wcc407.pdf",
+    "quality": "High",
+    "topics": [
+      "monsoon",
+      "climate proxies",
+      "volcanic forcing"
+    ],
+    "notes": "pp. 7–8: drought reconstructions and monsoon simulations; reconstructed regional dryness does not establish Bengal crop loss or cholera attribution.",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-020",
+    "type": "Institutional historical record",
+    "authorOrOrg": "Australian Museum, Unsettled exhibition",
+    "title": "The Appin Massacre",
+    "year": 2021,
+    "url": "https://australian.museum/learn/first-nations/unsettled/fighting-wars/appin-massacre/",
+    "quality": "High",
+    "topics": [
+      "Aboriginal history",
+      "colonial violence",
+      "policy"
+    ],
+    "notes": "Instructions (9 April), Wallis diary (17 April), Bathurst despatch (8 June), and proclamation (4 May); museum explicitly compares conflicting colonial accounts.",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-021",
+    "type": "Institutional historical record",
+    "authorOrOrg": "Instituto Nacional Sanmartiniano",
+    "title": "Cronología Sanmartiniana",
+    "year": 2019,
+    "url": "https://sanmartiniano.cultura.gob.ar/noticia/cronologia-sanmartiniana/",
+    "quality": "High",
+    "topics": [
+      "Andes",
+      "military preparation",
+      "independence"
+    ],
+    "notes": "Entries for 1 August and 30 September 1816, January–February 1817; institutional chronology, not a causal attribution study.",
+    "accessedDate": "2026-10-05"
+  }
 ]

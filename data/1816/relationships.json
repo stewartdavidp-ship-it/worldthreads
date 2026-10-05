@@ -1,17 +1,346 @@
 [
-{"id":"REL-0001","subjectId":"WT-1816-0008","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0001","causalStatus":"CONTRIBUTORY","lag":"~1 year","explanation":"Tambora is identified as a major volcanic forcing behind the anomalous 1816 Northern Hemisphere climate, while local atmospheric variability also mattered.","confidence":"High","sourceRefs":["SRC-002","SRC-016"],"alternatives":["internal climate variability"]},
-{"id":"REL-0002","subjectId":"WT-1816-0001","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0002","causalStatus":"CONTRIBUTORY","lag":"weeks to months","explanation":"Temperature anomalies affected migratory fish species differently because of species-specific phenology and thermal sensitivity.","confidence":"High","sourceRefs":["SRC-002"]},
-{"id":"REL-0003","subjectId":"WT-1816-0002","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0003","causalStatus":"CONTRIBUTORY","lag":"same season","explanation":"Weak alewife availability interacted with crop failure and food demand, shifting fishing effort toward marine species including mackerel.","confidence":"High","sourceRefs":["SRC-002"]},
-{"id":"REL-0004","subjectId":"WT-1816-0003","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0004","causalStatus":"CONTRIBUTORY","lag":"years","explanation":"The emergency shift in fishing effort persisted after the immediate climate anomaly, creating a path-dependent structural adaptation.","confidence":"High","sourceRefs":["SRC-002"]},
-{"id":"REL-0005","subjectId":"WT-1816-0008","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0005","causalStatus":"CONTRIBUTORY","lag":"~1 year","explanation":"Tambora forcing contributed to the exceptionally cold 1816 summer in the Czech Lands; background climate and circulation variability also influenced conditions.","confidence":"High","sourceRefs":["SRC-001","SRC-016"]},
-{"id":"REL-0006","subjectId":"WT-1816-0007","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0006","causalStatus":"CONTRIBUTORY","lag":"months","explanation":"Persistent wet conditions damaged cereals and yields, contributing to shortage and later grain-price pressure.","confidence":"Medium-High","sourceRefs":["SRC-001"]},
-{"id":"REL-0007","subjectId":"WT-1816-0005","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0006","causalStatus":"CONTRIBUTORY","lag":"6–18 months","explanation":"Cold and damaging 1816 weather contributed to poor grain harvests followed by widespread price increases in 1817.","confidence":"High","sourceRefs":["SRC-001"]},
-{"id":"REL-0008","subjectId":"WT-1816-0008","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0009","causalStatus":"CONTRIBUTORY","lag":"~1 year","explanation":"The Geneva cold summer occurred in the post-Tambora climate anomaly, with regional circulation and cloudiness shaping the local expression.","confidence":"High","sourceRefs":["SRC-004","SRC-016"]},
-{"id":"REL-0009","subjectId":"WT-1816-0009","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0015","causalStatus":"CONTRIBUTORY","lag":"same summer","explanation":"The cold, rainy Geneva summer helped keep the literary group indoors and formed the documented setting for the ghost-story challenge from which Frankenstein emerged. This is a contributing cultural context, not a claim that climate alone caused the work.","confidence":"Medium-High","sourceRefs":["SRC-013","SRC-014"]},
-{"id":"REL-0010","subjectId":"WT-1816-0008","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0010","causalStatus":"CONTRIBUTORY","lag":"1–2 years","explanation":"Post-eruption cold conditions contributed to unusual Alpine snow conditions during 1816–1817.","confidence":"High","sourceRefs":["SRC-005"]},
-{"id":"REL-0011","subjectId":"WT-1816-0010","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0011","causalStatus":"CONTRIBUTORY","lag":"months","explanation":"Snow storage increased the water available for melt, but modeling indicates spring 1817 snowfall and intense triggering rainfall were more immediate drivers than surviving 1816 snow alone.","confidence":"Medium-High","sourceRefs":["SRC-005"],"alternatives":["spring 1817 snowfall","heavy July 1817 rainfall"]},
-{"id":"REL-0012","subjectId":"WT-1816-0008","predicate":"CONTRIBUTED_TO","objectId":"WT-1816-0012","causalStatus":"CONTRIBUTORY","lag":"~1 year","explanation":"Multiple proxy lines attribute a significant part of the southern China 1816 cold excursion to Tambora-era volcanic forcing.","confidence":"High","sourceRefs":["SRC-006"]},
-{"id":"REL-0013","subjectId":"WT-1816-0012","predicate":"COINCIDED_WITH","objectId":"WT-1816-0013","causalStatus":"ASSOCIATED","lag":"same year","explanation":"Cold conditions and reconstructed drying tendencies occurred together, but proxy systems disagree spatially, so the hydroclimate connection is stored as associated rather than simple deterministic causation.","confidence":"Medium","sourceRefs":["SRC-006"]},
-{"id":"REL-0014","subjectId":"WT-1816-0017","predicate":"PRECEDED","objectId":"WT-1816-0016","causalStatus":"ASSOCIATED","lag":"4 months","explanation":"These are distinct state-formation/diplomatic processes in different regions. The link is chronological only and exists to support comparative political timelines, not causation.","confidence":"High","sourceRefs":["SRC-007","SRC-008"]},
-{"id":"REL-0015","subjectId":"WT-1816-0019","predicate":"COINCIDED_WITH","objectId":"WT-1816-0020","causalStatus":"ASSOCIATED","lag":"same year","explanation":"Both occurred in southern Africa in 1816 but arose from different political systems. This relationship is explicitly non-causal and useful for regional comparison.","confidence":"High","sourceRefs":["SRC-010","SRC-011"]}
+  {
+    "id": "REL-0001",
+    "subjectId": "WT-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0001",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "~1 year",
+    "explanation": "Tambora is identified as a major volcanic forcing behind the anomalous 1816 Northern Hemisphere climate, while local atmospheric variability also mattered.",
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-002",
+      "SRC-016"
+    ],
+    "alternatives": [
+      "internal climate variability"
+    ]
+  },
+  {
+    "id": "REL-0002",
+    "subjectId": "WT-1816-0001",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0002",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "weeks to months",
+    "explanation": "The study infers species-specific responses from fisheries records, air temperatures and phenological knowledge. Direct fish behavior and mortality were not measured in 1816.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "alternatives": [
+      "river conditions and habitat constraints",
+      "inference from later phenological knowledge"
+    ]
+  },
+  {
+    "id": "REL-0003",
+    "subjectId": "WT-1816-0002",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0003",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "same season",
+    "explanation": "Weak alewife availability interacted with crop failure and food demand, shifting fishing effort toward marine species including mackerel.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-002"
+    ]
+  },
+  {
+    "id": "REL-0004",
+    "subjectId": "WT-1816-0003",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0004",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "years",
+    "explanation": "The emergency shift in fishing effort persisted after the immediate climate anomaly, creating a path-dependent structural adaptation.",
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-002"
+    ]
+  },
+  {
+    "id": "REL-0005",
+    "subjectId": "WT-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0005",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "~1 year",
+    "explanation": "Tambora forcing contributed to the exceptionally cold 1816 summer in the Czech Lands; background climate and circulation variability also influenced conditions.",
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-001",
+      "SRC-016"
+    ]
+  },
+  {
+    "id": "REL-0006",
+    "subjectId": "WT-1816-0007",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0006",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "months",
+    "explanation": "Persistent wet conditions damaged cereals and yields, contributing to shortage and later grain-price pressure.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-001"
+    ]
+  },
+  {
+    "id": "REL-0007",
+    "subjectId": "WT-1816-0005",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0006",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "6–18 months",
+    "explanation": "Cold and damaging 1816 weather contributed to poor grain harvests followed by widespread price increases in 1817.",
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-001"
+    ]
+  },
+  {
+    "id": "REL-0008",
+    "subjectId": "WT-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0009",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "~1 year",
+    "explanation": "The Geneva cold summer occurred in the post-Tambora climate anomaly, with regional circulation and cloudiness shaping the local expression.",
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-004",
+      "SRC-016"
+    ]
+  },
+  {
+    "id": "REL-0009",
+    "subjectId": "WT-1816-0009",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0015",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "same summer",
+    "explanation": "The cold, rainy Geneva summer helped keep the literary group indoors and formed the documented setting for the ghost-story challenge from which Frankenstein emerged. This is a contributing cultural context, not a claim that climate alone caused the work.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-013",
+      "SRC-014"
+    ]
+  },
+  {
+    "id": "REL-0010",
+    "subjectId": "WT-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0010",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "1–2 years",
+    "explanation": "Post-eruption cold conditions contributed to unusual Alpine snow conditions during 1816–1817.",
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-005"
+    ]
+  },
+  {
+    "id": "REL-0011",
+    "subjectId": "WT-1816-0010",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0011",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "months",
+    "explanation": "Snow storage increased the water available for melt, but modeling indicates spring 1817 snowfall and intense triggering rainfall were more immediate drivers than surviving 1816 snow alone.",
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-005"
+    ],
+    "alternatives": [
+      "spring 1817 snowfall",
+      "heavy July 1817 rainfall"
+    ]
+  },
+  {
+    "id": "REL-0012",
+    "subjectId": "WT-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "WT-1816-0012",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "~1 year",
+    "explanation": "Multiple proxy lines attribute a significant part of the southern China 1816 cold excursion to Tambora-era volcanic forcing.",
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-006"
+    ]
+  },
+  {
+    "id": "REL-0013",
+    "subjectId": "WT-1816-0012",
+    "predicate": "COINCIDED_WITH",
+    "objectId": "WT-1816-0013",
+    "causalStatus": "ASSOCIATED",
+    "lag": "same year",
+    "explanation": "Cold conditions and reconstructed drying tendencies occurred together, but proxy systems disagree spatially, so the hydroclimate connection is stored as associated rather than simple deterministic causation.",
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-006"
+    ]
+  },
+  {
+    "id": "REL-0014",
+    "subjectId": "WT-1816-0017",
+    "predicate": "PRECEDED",
+    "objectId": "WT-1816-0016",
+    "causalStatus": "ASSOCIATED",
+    "lag": "4 months",
+    "explanation": "These are distinct state-formation/diplomatic processes in different regions. The link is chronological only and exists to support comparative political timelines, not causation.",
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-007",
+      "SRC-008"
+    ]
+  },
+  {
+    "id": "REL-0015",
+    "subjectId": "WT-1816-0019",
+    "predicate": "COINCIDED_WITH",
+    "objectId": "WT-1816-0020",
+    "causalStatus": "ASSOCIATED",
+    "lag": "same year",
+    "explanation": "Both occurred in southern Africa in 1816 but arose from different political systems. This relationship is explicitly non-causal and useful for regional comparison.",
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-010",
+      "SRC-011"
+    ]
+  },
+  {
+    "id": "REL-0016",
+    "subjectId": "WT-1816-0008",
+    "objectId": "WT-1816-0022",
+    "predicate": "CONTRIBUTED_TO",
+    "causalStatus": "CAUSAL",
+    "explanation": "Local tephra deposition damaged croplands directly; this differs from remote aerosol climate effects.",
+    "sourceRefs": [
+      "SRC-017"
+    ],
+    "alternatives": [],
+    "lag": "same eruption",
+    "confidence": "High"
+  },
+  {
+    "id": "REL-0017",
+    "subjectId": "WT-1816-0022",
+    "objectId": "WT-1816-0023",
+    "predicate": "CONTRIBUTED_TO",
+    "causalStatus": "CONTRIBUTORY",
+    "explanation": "Loss of food production contributed to starvation in the local aftermath.",
+    "sourceRefs": [
+      "SRC-017",
+      "SRC-018"
+    ],
+    "alternatives": [
+      "disease",
+      "disruption of exchange"
+    ],
+    "lag": "months",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "REL-0018",
+    "subjectId": "WT-1816-0024",
+    "objectId": "WT-1816-0023",
+    "predicate": "RESPONDED_TO",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Rice relief and distress sales are documented responses to famine. This edge reads response → crisis; it does not establish relief effectiveness.",
+    "sourceRefs": [
+      "SRC-018"
+    ],
+    "alternatives": [
+      "unequal access to relief"
+    ],
+    "lag": "same aftermath",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "REL-0019",
+    "subjectId": "WT-1816-0008",
+    "objectId": "WT-1816-0025",
+    "predicate": "CONTRIBUTED_TO",
+    "causalStatus": "CONTRIBUTORY",
+    "explanation": "Review combines drying proxies with simulations of weakened monsoon circulation following volcanic forcing.",
+    "sourceRefs": [
+      "SRC-019"
+    ],
+    "alternatives": [
+      "internal circulation variability",
+      "proxy sensitivity"
+    ],
+    "lag": "~1 year",
+    "confidence": "Medium"
+  },
+  {
+    "id": "REL-0020",
+    "subjectId": "WT-1816-0026",
+    "objectId": "WT-1816-0027",
+    "predicate": "ENABLED",
+    "causalStatus": "CONTRIBUTORY",
+    "explanation": "Punitive orders enabled the expedition; Wallis’s conduct exceeded instructions to spare women and children.",
+    "sourceRefs": [
+      "SRC-020"
+    ],
+    "alternatives": [
+      "commander decisions"
+    ],
+    "lag": "8 days",
+    "confidence": "High"
+  },
+  {
+    "id": "REL-0021",
+    "subjectId": "WT-1816-0027",
+    "objectId": "WT-1816-0028",
+    "predicate": "PRECEDED",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "The massacre preceded the proclamation within the same colonial campaign; chronology does not prove that the massacre caused the policy.",
+    "sourceRefs": [
+      "SRC-020"
+    ],
+    "alternatives": [
+      "prior colonial policy"
+    ],
+    "lag": "17 days",
+    "confidence": "High"
+  },
+  {
+    "id": "REL-0022",
+    "subjectId": "WT-1816-0029",
+    "objectId": "WT-1816-0030",
+    "predicate": "ENABLED",
+    "causalStatus": "CONTRIBUTORY",
+    "explanation": "Organization and training provided capacity for the later campaign; this is a curated interpretation of the chronology.",
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "alternatives": [
+      "supply organization",
+      "route selection",
+      "local support"
+    ],
+    "lag": "months",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "REL-0023",
+    "subjectId": "WT-1816-0030",
+    "objectId": "WT-1816-0031",
+    "predicate": "PRECEDED",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Crossing placed the army in Chile before Chacabuco; the chronology alone does not establish why the battle was won.",
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "alternatives": [
+      "tactics",
+      "royalist decisions"
+    ],
+    "lag": "days",
+    "confidence": "High"
+  }
 ]
