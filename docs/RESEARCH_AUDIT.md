@@ -65,3 +65,8 @@ Expanded integrity validation covers gap and counterexample references, reciproc
 The 78 observations now reference 173 historical objects, including 15 person identities. There are 197 object links: 55 projections of existing sourced relationship claims and 142 role/context links grounded in existing observations. Validation checks reciprocal membership and exact preservation of every projected causal/association claim. This is a model/identity expansion, not a new independent historical fact audit or a comprehensive influence ranking.
 
 The Dutch thesis pilot demonstrates a supported research workflow, not proof of relief effectiveness. The article metadata was checked against publisher/university search results; direct full-text retrieval was unavailable in this run. The pilot retains passage-verification tasks and treats household receipt as an unresolved question. Its imported authorization record is explicitly a repeated, unreviewed candidate—not new evidence resolving the gap. Independent-agent review has not been repeated for this interface/object-layer change.
+
+
+### Thesis workflow regression audit
+
+A further browser audit found two workflow weaknesses: edits could be lost on navigation unless explicitly saved, and local-candidate exports omitted the writer's verification note. The workspace now saves field changes locally, including form-associated research-task fields, and exports candidate verification notes. Regression checks cover return navigation, reload, separate thread drafts and restoration of archived context. These are workflow checks, not a fresh independent historical review.
