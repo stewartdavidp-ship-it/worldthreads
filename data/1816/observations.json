@@ -1273,7 +1273,7 @@
     "place": "Neuchâtel",
     "observation": "Christ describes a December 1816 home-work scheme for women, children and less able people outside Pierrabot land-clearing work. Subscriptions funded raw materials. Household food outcomes remain unverified.",
     "coverageType": "EVENT",
-    "system": "SOCIETY",
+    "system": "HUMAN SYSTEMS",
     "topic": "Work relief / household access",
     "analyticalRole": [
       "RESPONSE"
@@ -1288,6 +1288,35 @@
     ],
     "evidenceRefs": [
       "EV-R22-WT-1816-0042"
+    ]
+  },
+  {
+    "id": "WT-1816-0043",
+    "title": "Relief across cantonal boundaries becomes a disputed obligation",
+    "startDate": "1816-12",
+    "endDate": "1816-12",
+    "datePrecision": "MONTH",
+    "continent": "Europe",
+    "region": "Vaud / Neuchâtel, Switzerland",
+    "historicalEntity": "Cantons of Vaud and Neuchâtel",
+    "place": "Vaud / Neuchâtel",
+    "observation": "Christ reports a December 1816 Vaud complaint: Neuchâtel sought home-commune reimbursement guarantees for poor outsiders, while several communes allegedly failed to answer assistance requests. A February 1817 municipal reply disputes the generalization.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "Relief eligibility / cantonal boundaries",
+    "analyticalRole": [
+      "PRESSURE"
+    ],
+    "evidenceType": [
+      "Scholarly interpretation"
+    ],
+    "confidence": "Medium",
+    "researchStatus": "Source checked; independent review pending",
+    "sourceRefs": [
+      "SRC-033"
+    ],
+    "evidenceRefs": [
+      "EV-R23-WT-1816-0043"
     ]
   }
 ]

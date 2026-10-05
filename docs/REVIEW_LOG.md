@@ -130,3 +130,9 @@ Audit clean; 69 claims await independent review. All 48 automated checks passed.
 Inspected Christ’s 2009 thesis, volume II, printed p. 975 and note 78. Added one attributed December 1816 home-work offer. Kept it separate from grain procurement: no supported connecting edge. The dated primary notices remain a research mission, not independently inspected evidence. April 1817 participation totals were excluded. A proposed route to income does not establish food access or nutrition.
 
 Self-review checked chronology, attribution and absence of unsupported causal edges. Audit: zero errors/warnings; 70 claims await independent review. All 48 automated checks passed. No independent historical approval claimed. Original bread-distribution PDF still unavailable; indexed quantities remain excluded.
+
+## 2026-10-05 — Round 23: disputed cross-cantonal relief obligations
+
+Inspected Christ volume II pp. 1192–1194, notes 490/495. Added an attributed December 1816 complaint, retaining the February 1817 counteraccount as a limitation. Neither official position establishes universal practice or household outcomes. No edge asserts that procurement or weather caused the dispute. Preserved original-record leads in the Swiss mission. Self-review corrected round 22’s system tag from SOCIETY to the specification’s HUMAN SYSTEMS; claim wording unchanged.
+
+Audit zero errors/warnings; 71 claims await independent review. All 48 automated checks passed. This is source inspection and self-review, not independent historical approval.

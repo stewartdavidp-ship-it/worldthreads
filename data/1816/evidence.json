@@ -1193,5 +1193,19 @@
     "reviewStatus": "pending_independent_review",
     "accessScope": "full_text",
     "dependencyGroup": "CHRIST-BPUN-6R370"
+  },
+  {
+    "id": "EV-R23-WT-1816-0043",
+    "claimId": "WT-1816-0043",
+    "sourceId": "SRC-033",
+    "locator": "Volume II, printed pp. 1192–1194 (PDF indices 489–491), notes 490 and 495",
+    "accessedAt": "2026-10-05",
+    "support": "Dated complaint with later counteraccount",
+    "provenance": "Full relevant thesis passage inspected; cited originals not inspected",
+    "limitations": "Complaint is not a verified universal rule. Municipal defense is interested testimony; no denial rate or household outcome established.",
+    "reviewer": "Codex",
+    "reviewStatus": "pending_independent_review",
+    "accessScope": "full_text",
+    "dependencyGroup": "CHRIST-MCE165-AEN-ASSISTANCE"
   }
 ]
