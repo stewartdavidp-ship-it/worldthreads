@@ -21,3 +21,11 @@ This is evidence assessment, not a scored game. Korea is not a controlled experi
 What worked in the library: explicit link explanations, source provenance, uncertainty, and neighboring records. What did not work as an opening experience: competing map, counts, filters, long record lists and no central question or destination. The library is now a separate mode. Each story scene gives one primary next action, with optional evidence detours that return to the same scene.
 
 The current story covers selected climate and subsistence evidence, not all histories of 1816. Additional stories should each have their own question, human stakes, evidence that changes an explanation, and a qualified ending rather than funneling unrelated histories into Tambora.
+
+## Story selection and evidence frontiers
+
+The opening shelf offers three complete guided starting points: different harvest outcomes, Dutch relief and the Andean campaign. Readers choose a question before entering a journey. An interactive stop diagram reveals records as each scene is reached and lets readers revisit stops. Labeled relationship claims come from the underlying graph and retain their actual direction and causal status; story order is never rendered as a causal arrow. Connection lists remain collapsed by default to limit clutter.
+
+Each story ends at an explicit evidence frontier with a question and the kinds of sources needed to extend it. A proposal form collects the claim, source URL, passage reference, date/place, proposed claim category and limitations. Drafts are stored locally and downloaded as unreviewed JSON proposals. They do not enter the graph or a shared review queue. Shared submission/review is outside this interface; local saving must not imply publication.
+
+Browser tests cover all three story entrances and endings, revealed/unreached stops, evidence detours, chronological versus contributory labels, local draft saving and proposal download. The design intentionally offers selected stories rather than pretending every existing thread has a complete narrative.

@@ -14,9 +14,13 @@ async function load(){
 }
 
 function bind(){
-  document.getElementById('storyMode').onclick=()=>setExperience('story');
+  document.getElementById('storyMode').onclick=()=>{story.id=null;setExperience('story');renderStory();};
   document.getElementById('researchMode').onclick=()=>setExperience('research');
   document.getElementById('storyJourney').addEventListener('click',e=>{
+    const start=e.target.closest('[data-start-story]');if(start){story.id=start.dataset.startStory;story.step=0;story.choice=null;renderStory(true);return;}
+    const home=e.target.closest('[data-story-home]');if(home){story.id=null;renderStory(true);return;}
+    const frontier=e.target.closest('[data-story-frontier]');if(frontier){document.getElementById('storyContribution').open=true;document.getElementById('proposalClaim').focus();return;}
+    const download=e.target.closest('[data-download-proposal]');if(download){downloadProposal();return;}
     const step=e.target.closest('[data-story-step]');if(step){story.step=Number(step.dataset.storyStep);renderStory(true);return;}
     const evidence=e.target.closest('[data-story-evidence]');if(evidence){openDetail(obs(evidence.dataset.storyEvidence));inspector.tab='evidence';renderInspector(true);return;}
     const claim=e.target.closest('[data-story-claim]');if(claim){openRelationship(state.relationships.find(r=>r.id===claim.dataset.storyClaim));return;}
@@ -34,6 +38,7 @@ function bind(){
   document.getElementById('searchInput').addEventListener('input',e=>{state.query=e.target.value;renderCards();});
   document.getElementById('regionSelect').addEventListener('change',e=>{state.region=e.target.value;renderCards();});
   document.getElementById('clearFilters').addEventListener('click',()=>{state.query='';state.region='ALL';state.system='ALL';state.period='ALL';state.evidence='ALL';state.sort='date';document.getElementById('periodSelect').value='ALL';document.getElementById('evidenceSelect').value='ALL';document.getElementById('sortSelect').value='date';document.getElementById('searchInput').value='';document.getElementById('regionSelect').value='ALL';document.querySelectorAll('.filter[data-system]').forEach(b=>b.classList.toggle('active',b.dataset.system==='ALL'));renderCards();});
+  document.getElementById('storyJourney').addEventListener('submit',saveProposal);
   document.getElementById('dialogContent').addEventListener('click',e=>{
     const o=e.target.closest('[data-observation]');if(o){openDetail(obs(o.dataset.observation));return;}
     const r=e.target.closest('[data-relationship]');if(r){openRelationship(state.relationships.find(x=>x.id===r.dataset.relationship));return;}
@@ -190,7 +195,7 @@ function escapeAttr(str=''){return escapeHtml(str)}
 
 load().catch(err=>{document.getElementById('cards').innerHTML=`<p>Could not load prototype data: ${escapeHtml(err.message)}</p>`;});
 
-const story={step:0,choice:null};
+const story={step:0,choice:null,id:null};
 function setExperience(mode){
   const research=mode==='research';document.getElementById('researchLibrary').hidden=!research;document.getElementById('storyJourney').hidden=research;
   for(const [id,active] of [['storyMode',!research],['researchMode',research]]){const b=document.getElementById(id);b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));}
@@ -205,8 +210,10 @@ const storyChapters=[
  {label:'What we can say',title:'A shock is the beginning of an explanation.',text:'The Czech evidence supports a path from damaging weather through poor grain harvests to food-price pressure. Korean harvest reports limit how widely we can apply that account. Regional conditions and crop responses matter; relief and access to food need their own evidence.',record:'WT-1816-0035',prompt:'Amsterdam authorized subsidized rye sales in 1817. That gives us a next question—not a proven solution: did the food reach the households that needed it?',finish:true}
 ];
 function renderStory(moveFocus=false){
- const c=storyChapters[story.step];const o=c.record?obs(c.record):null;
+ if(!story.id){renderStoryShelf(moveFocus);return;}
+ const config=storyCatalog.find(s=>s.id===story.id),chapters=config.chapters||storyChapters;
+ const c=chapters[story.step];const o=c.record?obs(c.record):null;
  const feedback=story.choice==='universal'?'That predicts widespread failure. The next record will test how far that prediction holds.':story.choice==='regional'?'That predicts differences between regions. The next record can challenge a universal story, but it cannot establish which local factor explains the difference.':'';
- document.getElementById('storyJourney').innerHTML=`<div class="story-progress"><span>1816 · A world connected, unevenly</span><span>Step ${story.step+1} of ${storyChapters.length}</span></div><div class="story-track" aria-hidden="true">${storyChapters.map((x,i)=>`<span class="${i<=story.step?'reached':''}"></span>`).join('')}</div><article class="story-scene"><p class="eyebrow">${escapeHtml(c.label)}</p><h1 id="storyHeading" tabindex="-1">${escapeHtml(c.title)}</h1><p class="story-narrative">${escapeHtml(c.text)}</p>${o?`<aside class="story-proof"><p class="eyebrow">One piece of evidence · ${escapeHtml(o.place)}</p><p>${escapeHtml(o.observation)}</p><button class="story-link" data-story-evidence="${o.id}">Check the source and its limits ↗</button>${c.claim?`<button class="story-link" data-story-claim="${c.claim}">Examine this connection ↗</button>`:''}</aside>`:''}${c.choice?`<div class="story-choices"><button data-story-choice="universal" aria-pressed="${story.choice==='universal'}">A global shock should mean poor harvests everywhere.</button><button data-story-choice="regional" aria-pressed="${story.choice==='regional'}">Local conditions should change the outcome.</button></div><p class="story-feedback" role="status">${feedback||'Choose a hypothesis to continue.'}</p>`:''}${c.prompt?`<p class="story-question">${escapeHtml(c.prompt)}</p>`:''}<div class="story-actions">${story.step?`<button class="story-back" data-story-step="${story.step-1}">← Previous</button>`:''}${!c.finish?`<button class="story-next" data-story-step="${story.step+1}" ${c.choice&&!story.choice?'disabled':''}>${escapeHtml(c.next)} →</button>`:`<button class="story-next" data-story-library="THREAD-DUTCH-RELIEF">Investigate the relief effort →</button><button class="story-back" data-story-step="0">Start again</button>`}</div></article><p class="story-footnote">A guided investigation from selected records. The full research library contains other histories of 1816; they do not all share a volcanic cause.</p>`;
+ document.getElementById('storyJourney').innerHTML=`<button class="story-link" data-story-home>← Choose another story</button><div class="story-progress"><span>${escapeHtml(config.short)}</span><span>Step ${story.step+1} of ${chapters.length}</span></div><div class="story-track" aria-hidden="true">${chapters.map((x,i)=>`<span class="${i<=story.step?'reached':''}"></span>`).join('')}</div><article class="story-scene"><p class="eyebrow">${escapeHtml(c.label)}</p><h1 id="storyHeading" tabindex="-1">${escapeHtml(c.title)}</h1>${storyGraphic(config,chapters)}<p class="story-narrative">${escapeHtml(c.text)}</p>${o?`<aside class="story-proof"><p class="eyebrow">One piece of evidence · ${escapeHtml(o.place)}</p><button class="story-link" data-story-evidence="${o.id}">Check the source and its limits ↗</button>${c.claim?`<button class="story-link" data-story-claim="${c.claim}">Examine this connection ↗</button>`:''}</aside>`:''}${c.choice?`<div class="story-choices"><button data-story-choice="universal" aria-pressed="${story.choice==='universal'}">A global shock should mean poor harvests everywhere.</button><button data-story-choice="regional" aria-pressed="${story.choice==='regional'}">Local conditions should change the outcome.</button></div><p class="story-feedback" role="status">${feedback||'Choose a hypothesis to continue.'}</p>`:''}${c.finish?frontierHtml(config):''}${c.prompt?`<p class="story-question">${escapeHtml(c.prompt)}</p>`:''}<div class="story-actions">${story.step?`<button class="story-back" data-story-step="${story.step-1}">← Previous</button>`:''}${!c.finish?`<button class="story-next" data-story-step="${story.step+1}" ${c.choice&&!story.choice?'disabled':''}>${escapeHtml(c.next)} →</button>`:`<button class="story-next" data-story-library="${config.thread}">Explore the full evidence →</button><button class="story-back" data-story-step="0">Start again</button>`}</div></article><p class="story-footnote">A guided investigation from selected records. The full research library contains other histories of 1816; they do not all share a volcanic cause.</p>`;
  if(moveFocus){document.getElementById('storyHeading').focus();document.getElementById('storyJourney').scrollIntoView({behavior:'smooth',block:'start'});}
 }
