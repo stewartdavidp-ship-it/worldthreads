@@ -5,7 +5,22 @@
     "domain": "climate + agriculture + politics",
     "question": "What 1815–1817 weather, harvest, food-price and political records survive for Asante, Oyo, Dahomey, Sokoto and neighboring systems?",
     "priority": "High",
-    "status": "Open"
+    "status": "Partially addressed",
+    "updatedDate": "2026-10-05",
+    "observationIds": [
+      "WT-1816-0067",
+      "WT-1816-0068",
+      "WT-1816-0069",
+      "WT-1816-0078"
+    ],
+    "threadIds": [
+      "THREAD-ASANTE-EXCHANGE"
+    ],
+    "remainingQuestions": [
+      "No verified local 1816 rainfall, harvest or grain-price series for Asante, Oyo, Dahomey or Sokoto.",
+      "Add Asante court and oral-history scholarship alongside European envoy narratives."
+    ],
+    "notes": "Evidence added with source-specific limits; the broader research question remains open."
   },
   {
     "id": "GAP-002",
@@ -13,7 +28,25 @@
     "domain": "climate + trade + disease",
     "question": "What documentary or proxy evidence can connect 1816 climate variability to ports, monsoon trade, crops, livestock or disease ecology?",
     "priority": "High",
-    "status": "Open"
+    "status": "Partially addressed",
+    "updatedDate": "2026-10-05",
+    "observationIds": [
+      "WT-1816-0070",
+      "WT-1816-0071",
+      "WT-1816-0072",
+      "WT-1816-0073",
+      "WT-1816-0074",
+      "WT-1816-0075"
+    ],
+    "threadIds": [
+      "THREAD-MADAGASCAR-DIPLOMACY",
+      "THREAD-OCEAN-CONTRASTS"
+    ],
+    "remainingQuestions": [
+      "Find port/customs volumes, local rainfall and harvest evidence for East African coasts and Mauritius.",
+      "Resolve visitor identities and distinguish slave-export prohibition from enforcement."
+    ],
+    "notes": "Evidence added with source-specific limits; the broader research question remains open."
   },
   {
     "id": "GAP-003",
@@ -22,7 +55,20 @@
     "question": "Resolve regional rainfall/temperature anomalies and crop/price effects across Bengal, Madras, Bombay and inland polities for 1815–1817.",
     "priority": "High",
     "status": "Partially addressed",
-    "notes": "Initial evidence added; the full regional research question remains open."
+    "notes": "Evidence added with source-specific limits; the broader research question remains open.",
+    "updatedDate": "2026-10-05",
+    "observationIds": [
+      "WT-1816-0049",
+      "WT-1816-0050",
+      "WT-1816-0052"
+    ],
+    "threadIds": [
+      "THREAD-BENGAL-CHOLERA"
+    ],
+    "remainingQuestions": [
+      "Find dated Bengal, Madras and Bombay grain prices and yields.",
+      "Kumaun winter–spring drought does not resolve summer-monsoon conditions across India."
+    ]
   },
   {
     "id": "GAP-004",
@@ -31,7 +77,20 @@
     "question": "Build local Sumbawa, Bali, Java and maritime trade threads that distinguish direct eruption impacts from distant climatic effects.",
     "priority": "High",
     "status": "Partially addressed",
-    "notes": "Initial evidence added; the full regional research question remains open."
+    "notes": "Evidence added with source-specific limits; the broader research question remains open.",
+    "updatedDate": "2026-10-05",
+    "observationIds": [
+      "WT-1816-0056",
+      "WT-1816-0055",
+      "WT-1816-0057"
+    ],
+    "threadIds": [
+      "THREAD-BALI-RECOVERY"
+    ],
+    "remainingQuestions": [
+      "Quantify actual rice imports and local access to food.",
+      "Establish annual recovery and independently assess conflicting mortality estimates."
+    ]
   },
   {
     "id": "GAP-005",
@@ -40,7 +99,21 @@
     "question": "Add climate, harvest, trade and military observations around the Río de la Plata, Andes and Brazil alongside political events.",
     "priority": "High",
     "status": "Partially addressed",
-    "notes": "Initial evidence added; the full regional research question remains open."
+    "notes": "Evidence added with source-specific limits; the broader research question remains open.",
+    "updatedDate": "2026-10-05",
+    "observationIds": [
+      "WT-1816-0058",
+      "WT-1816-0059",
+      "WT-1816-0060"
+    ],
+    "threadIds": [
+      "THREAD-ANDES",
+      "THREAD-BRAZIL-PATRONAGE"
+    ],
+    "remainingQuestions": [
+      "Find South American weather and crop series without inferring European climate patterns.",
+      "Find Mendoza supply accounts and Brazil pension disbursement/teaching records."
+    ]
   },
   {
     "id": "GAP-006",
@@ -49,7 +122,25 @@
     "question": "Identify documentary, oral-history and proxy evidence for 1816 conditions without imposing European archival density as the standard of historical importance.",
     "priority": "High",
     "status": "Partially addressed",
-    "notes": "Initial evidence added; the full regional research question remains open."
+    "notes": "Evidence added with source-specific limits; the broader research question remains open.",
+    "updatedDate": "2026-10-05",
+    "observationIds": [
+      "WT-1816-0061",
+      "WT-1816-0062",
+      "WT-1816-0063",
+      "WT-1816-0064",
+      "WT-1816-0066",
+      "WT-1816-0065"
+    ],
+    "threadIds": [
+      "THREAD-APPIN",
+      "THREAD-HAWKESBURY-FLOOD",
+      "THREAD-PACIFIC-NETWORKS"
+    ],
+    "remainingQuestions": [
+      "Add Indigenous community and family histories; colonial descriptions do not establish consent.",
+      "Find actual NSW harvest/price outcomes, Tahitian producer records and Hawaiian gift reception."
+    ]
   },
   {
     "id": "GAP-007",
@@ -57,7 +148,24 @@
     "domain": "sea surface / storms / fisheries / trade routes",
     "question": "Map marine and atmospheric observations that connect ocean conditions to shipping, fisheries and commodity flows.",
     "priority": "Medium",
-    "status": "Open"
+    "status": "Partially addressed",
+    "updatedDate": "2026-10-05",
+    "observationIds": [
+      "WT-1816-0074",
+      "WT-1816-0075",
+      "WT-1816-0076",
+      "WT-1816-0077",
+      "WT-1816-0062"
+    ],
+    "threadIds": [
+      "THREAD-PACIFIC-NETWORKS",
+      "THREAD-OCEAN-CONTRASTS"
+    ],
+    "remainingQuestions": [
+      "Distinguish shipboard air, coral SST and model heat content.",
+      "Find local storm, cargo loss, fish catch and trade-volume records before drawing economic causal edges."
+    ],
+    "notes": "Evidence added with source-specific limits; the broader research question remains open."
   },
   {
     "id": "GAP-008",
@@ -65,7 +173,28 @@
     "domain": "population health",
     "question": "Add mortality, epidemic, nutrition, birth/death and migration evidence while separating contemporary observation from later reconstruction.",
     "priority": "High",
-    "status": "Open"
+    "status": "Partially addressed",
+    "updatedDate": "2026-10-05",
+    "observationIds": [
+      "WT-1816-0053",
+      "WT-1816-0054",
+      "WT-1816-0050",
+      "WT-1816-0051",
+      "WT-1816-0052",
+      "WT-1816-0055",
+      "WT-1816-0038"
+    ],
+    "threadIds": [
+      "THREAD-SWISS-VULNERABILITY",
+      "THREAD-BENGAL-CHOLERA",
+      "THREAD-BALI-RECOVERY",
+      "THREAD-IRISH-FEVER"
+    ],
+    "remainingQuestions": [
+      "Inspect original hospital registers and compare historical fever categories.",
+      "Add local birth/death and nutrition records; report counts must retain their actual populations and denominators."
+    ],
+    "notes": "Evidence added with source-specific limits; the broader research question remains open."
   },
   {
     "id": "GAP-009",
@@ -73,6 +202,43 @@
     "domain": "health + monsoon",
     "question": "Test any proposed Tambora–cholera link against dated epidemic records, local climate evidence and alternative transmission explanations; no causal edge is currently justified.",
     "priority": "High",
-    "status": "Open"
+    "status": "Partially addressed",
+    "updatedDate": "2026-10-05",
+    "observationIds": [
+      "WT-1816-0050",
+      "WT-1816-0051",
+      "WT-1816-0052",
+      "WT-1816-0049"
+    ],
+    "threadIds": [
+      "THREAD-BENGAL-CHOLERA"
+    ],
+    "remainingQuestions": [
+      "The dated 1817 cholera reports do not demonstrate Tambora causation.",
+      "Require local exposure/transmission evidence and competing explanations before adding any climate–disease edge."
+    ],
+    "notes": "Evidence added with source-specific limits; the broader research question remains open."
+  },
+  {
+    "id": "GAP-010",
+    "region": "Korea / East Asia",
+    "domain": "crop resilience + administrative evidence",
+    "question": "Why did Korean rice recover during 1816–1817 while other regions suffered?",
+    "priority": "High",
+    "status": "Partially addressed",
+    "updatedDate": "2026-10-05",
+    "observationIds": [
+      "WT-1816-0045",
+      "WT-1816-0046",
+      "WT-1816-0047",
+      "WT-1816-0048"
+    ],
+    "threadIds": [
+      "THREAD-KOREA-RECOVERY"
+    ],
+    "remainingQuestions": [
+      "Compare provincial crop calendars, tax records and household access.",
+      "Do not infer absence of local hardship from aggregate harvest classifications."
+    ]
   }
 ]

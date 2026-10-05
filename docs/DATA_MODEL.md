@@ -113,3 +113,13 @@ The prototype year is 1816, but the graph may include nodes from 1814–1818 whe
 Observations may include `sourceLocator` and `uncertainty`. `contextNode` identifies antecedent/outcome records outside the prototype year, not a separate evidence class. Approximate source dates must retain their actual precision; a publication date must not be mistaken for the date of an observation. Source `year: null` means publication year unknown.
 
 Mechanism registries include `counterexamples[]`. Empty arrays mean counterexamples have not been documented, not that none exist. A thread may illustrate only part of a mechanism; say which steps lack evidence. Thread confidence is a curated assessment, not a computed probability.
+
+## Research gap provenance (v0.4)
+
+Each gap can include `observationIds[]`, `threadIds[]`, `remainingQuestions[]` and `updatedDate`. Partial progress must name the linked evidence and retain unresolved questions. Observation `gapRefs[]` links back to research questions. A new observation does not automatically close a broad gap.
+
+`counterexampleObservationIds[]` on mechanisms references inspectable observations; `counterexamples[]` retains explanations. Counterexamples qualify deterministic/general claims and do not themselves establish a different cause.
+
+`DOCUMENT_DATE` means the dated report/letter is known; its described event can precede that date. `dateBasis` states this distinction. `SEASON_RANGE` preserves reconstructed seasonal support. `extendedContextReason` explains why a multi-year record extends beyond 1814–1818. Region value `Oceans` is not counted as an additional continent.
+
+Evidence type filters use the original evidence labels. Search, region, time-window and system filters combine. The 1816 filter includes any record whose date support overlaps 1816, including multi-year reconstructions; it does not turn them into annual measurements. Source `alternateUrl` may point to a university-hosted copy when publisher or archive delivery is limited.

@@ -342,5 +342,594 @@
     ],
     "lag": "days",
     "confidence": "High"
+  },
+  {
+    "id": "REL-0024",
+    "subjectId": "WT-1816-0032",
+    "objectId": "WT-1816-0033",
+    "predicate": "PRECEDED",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Price pressure preceded the stock survey; the survey’s specific trigger was a provincial request.",
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "confidence": "High",
+    "lag": "months",
+    "alternatives": [
+      "administrative stock monitoring"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0025",
+    "subjectId": "WT-1816-0034",
+    "objectId": "WT-1816-0032",
+    "predicate": "RESPONDED_TO",
+    "causalStatus": "CONTRIBUTORY",
+    "explanation": "Public imports addressed scarcity; beneficial price effects remain contested.",
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "confidence": "Medium-High",
+    "lag": "1816–1817",
+    "alternatives": [
+      "private imports",
+      "late arrivals",
+      "distribution constraints"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0026",
+    "subjectId": "WT-1816-0035",
+    "objectId": "WT-1816-0032",
+    "predicate": "RESPONDED_TO",
+    "causalStatus": "CONTRIBUTORY",
+    "explanation": "Reduced-price sales targeted food access after price escalation.",
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "confidence": "Medium-High",
+    "lag": "months",
+    "alternatives": [
+      "delivery and beneficiary coverage unresolved"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0027",
+    "subjectId": "WT-1816-0036",
+    "objectId": "WT-1816-0038",
+    "predicate": "CONTESTED_CONNECTION",
+    "causalStatus": "CONTESTED",
+    "explanation": "Modeled production losses alone do not explain the regional malnutrition gradient.",
+    "sourceRefs": [
+      "SRC-023"
+    ],
+    "confidence": "Medium-High",
+    "lag": "1–2 years",
+    "alternatives": [
+      "social vulnerability",
+      "market access",
+      "policy",
+      "waterlogging"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0028",
+    "subjectId": "WT-1816-0036",
+    "objectId": "WT-1816-0037",
+    "predicate": "COINCIDED_WITH",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "The same reconstructed weather produced differing modeled crop responses.",
+    "sourceRefs": [
+      "SRC-023"
+    ],
+    "confidence": "Medium-High",
+    "lag": "same simulations",
+    "alternatives": [
+      "cultivar calibration",
+      "management assumptions"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0029",
+    "subjectId": "WT-1816-0008",
+    "objectId": "WT-1816-0039",
+    "predicate": "CONTRIBUTED_TO",
+    "causalStatus": "CONTRIBUTORY",
+    "explanation": "Simulations attribute a substantial increase in cold-event likelihood to volcanic forcing.",
+    "sourceRefs": [
+      "SRC-024"
+    ],
+    "confidence": "Medium-High",
+    "lag": "~1 year",
+    "alternatives": [
+      "circulation variability",
+      "forcing magnitude",
+      "model differences"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0030",
+    "subjectId": "WT-1816-0039",
+    "objectId": "WT-1816-0040",
+    "predicate": "COINCIDED_WITH",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Cold and wet anomalies co-occurred; their attribution strengths differ.",
+    "sourceRefs": [
+      "SRC-024"
+    ],
+    "confidence": "High",
+    "lag": "same summer",
+    "alternatives": [
+      "rainfall driven partly by internal circulation variability"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0031",
+    "subjectId": "WT-1816-0041",
+    "objectId": "WT-1816-0042",
+    "predicate": "COINCIDED_WITH",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Reported low morning temperatures accompany frost damage in the same letter; no regional crop-loss model is implied.",
+    "sourceRefs": [
+      "SRC-025"
+    ],
+    "confidence": "High",
+    "lag": "same spring",
+    "alternatives": [
+      "timing and phenology"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0032",
+    "subjectId": "WT-1816-0043",
+    "objectId": "WT-1816-0044",
+    "predicate": "CONTRIBUTED_TO",
+    "causalStatus": "CONTRIBUTORY",
+    "explanation": "Jefferson describes drought and frost as crop pressures; the resulting harvest figure remains his forecast.",
+    "sourceRefs": [
+      "SRC-026"
+    ],
+    "confidence": "Medium",
+    "lag": "weeks to months",
+    "alternatives": [
+      "frost",
+      "regional reporting limits"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0033",
+    "subjectId": "WT-1816-0046",
+    "objectId": "WT-1816-0045",
+    "predicate": "CONTRIBUTED_TO",
+    "causalStatus": "CONTRIBUTORY",
+    "explanation": "Author argues sufficient growing-season water helped rice; rainfall cannot be isolated from varieties, institutions and local conditions.",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "confidence": "Medium",
+    "lag": "Dated sequence; exact lag varies",
+    "alternatives": [
+      "Contemporary reporting limits",
+      "Local conditions and evidence scale"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0034",
+    "subjectId": "WT-1816-0048",
+    "objectId": "WT-1816-0045",
+    "predicate": "PRECEDED",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Recovery follows an existing crisis; no Tambora→1814 edge.",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "confidence": "High",
+    "lag": "Dated sequence; exact lag varies",
+    "alternatives": [
+      "Contemporary reporting limits",
+      "Local conditions and evidence scale"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0035",
+    "subjectId": "WT-1816-0045",
+    "objectId": "WT-1816-0047",
+    "predicate": "PRECEDED",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Administrative harvest classifications show continuing recovery; no universal volcanic crop-failure sequence is established.",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "confidence": "High",
+    "lag": "1 year",
+    "alternatives": [
+      "Local hardship despite aggregate classifications"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0036",
+    "subjectId": "WT-1816-0050",
+    "objectId": "WT-1816-0051",
+    "predicate": "COINCIDED_WITH",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Cholera fear and flight observed; no quantified transmission claim.",
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "confidence": "High",
+    "lag": "Dated sequence; exact lag varies",
+    "alternatives": [
+      "Contemporary reporting limits",
+      "Local conditions and evidence scale"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0037",
+    "subjectId": "WT-1816-0050",
+    "objectId": "WT-1816-0052",
+    "predicate": "PRECEDED",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Two epidemic records; direction of transmission not proven by ordering.",
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "confidence": "High",
+    "lag": "Dated sequence; exact lag varies",
+    "alternatives": [
+      "Contemporary reporting limits",
+      "Local conditions and evidence scale"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0038",
+    "subjectId": "WT-1816-0056",
+    "objectId": "WT-1816-0055",
+    "predicate": "CONTRIBUTED_TO",
+    "causalStatus": "CONTRIBUTORY",
+    "explanation": "Synthesis supports prolonged crisis; not all mortality attributable to starvation or volcano alone.",
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "confidence": "Medium",
+    "lag": "Dated sequence; exact lag varies",
+    "alternatives": [
+      "Contemporary reporting limits",
+      "Local conditions and evidence scale"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0039",
+    "subjectId": "WT-1816-0055",
+    "objectId": "WT-1816-0057",
+    "predicate": "PRECEDED",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Subsequent epidemic, with no disease identification or proven nutritional cause.",
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "confidence": "Medium",
+    "lag": "Dated sequence; exact lag varies",
+    "alternatives": [
+      "Contemporary reporting limits",
+      "Local conditions and evidence scale"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0040",
+    "subjectId": "WT-1816-0053",
+    "objectId": "WT-1816-0054",
+    "predicate": "PRECEDED",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Context and later response; multifactorial disease causation remains uncertain.",
+    "sourceRefs": [
+      "SRC-031",
+      "SRC-032"
+    ],
+    "confidence": "Medium",
+    "lag": "Dated sequence; exact lag varies",
+    "alternatives": [
+      "Contemporary reporting limits",
+      "Local conditions and evidence scale"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0041",
+    "subjectId": "WT-1816-0058",
+    "objectId": "WT-1816-0059",
+    "predicate": "ENABLED",
+    "causalStatus": "CONTRIBUTORY",
+    "explanation": "Arrival made foreign artists available for the decree’s proposed recruitment; instruction and disbursement require separate records.",
+    "sourceRefs": [
+      "SRC-033",
+      "SRC-034"
+    ],
+    "confidence": "Medium-High",
+    "lag": "~5 months",
+    "alternatives": [
+      "Policy planning",
+      "Pension payments not verified"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0042",
+    "subjectId": "WT-1816-0026",
+    "objectId": "WT-1816-0066",
+    "predicate": "PRECEDED",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Punitive orders precede the diary’s transfer of captive children; individual capture circumstances are not established.",
+    "sourceRefs": [
+      "SRC-036",
+      "SRC-038"
+    ],
+    "confidence": "Medium",
+    "lag": "~2 months",
+    "alternatives": [
+      "Individual family histories needed"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0043",
+    "subjectId": "WT-1816-0027",
+    "objectId": "WT-1816-0065",
+    "predicate": "DOCUMENTED_BY",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "A later official account conflicts with Wallis’s attack narrative as assessed by the museum. Documentation is not corroboration of the resistance claim.",
+    "sourceRefs": [
+      "SRC-020"
+    ],
+    "confidence": "High",
+    "lag": "~7 weeks",
+    "alternatives": [
+      "Colonial self-justification",
+      "Unequal archival representation"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0044",
+    "subjectId": "WT-1816-0063",
+    "objectId": "WT-1816-0064",
+    "predicate": "CONTRIBUTED_TO",
+    "causalStatus": "CONTRIBUTORY",
+    "explanation": "Contemporaneous diary reports connect heavy rain, flooding and threatened crops; losses are forecasts, not audited totals.",
+    "sourceRefs": [
+      "SRC-037",
+      "SRC-038"
+    ],
+    "confidence": "Medium-High",
+    "lag": "days",
+    "alternatives": [
+      "Local floodplain exposure",
+      "No volcanic attribution"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0045",
+    "subjectId": "WT-1816-0061",
+    "objectId": "WT-1816-0062",
+    "predicate": "COINCIDED_WITH",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Two independent May records illustrate shipping used for diplomacy and food exchange; neither shipment caused the other.",
+    "sourceRefs": [
+      "SRC-037"
+    ],
+    "confidence": "High",
+    "lag": "same month",
+    "alternatives": [
+      "Gift receipt and Tahitian producer perspectives unverified"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0046",
+    "subjectId": "WT-1816-0060",
+    "objectId": "WT-1816-0030",
+    "predicate": "ENABLED",
+    "causalStatus": "CONTRIBUTORY",
+    "explanation": "The heritage account describes workshops producing campaign supplies; their exact share of total equipment is unresolved.",
+    "sourceRefs": [
+      "SRC-035",
+      "SRC-021"
+    ],
+    "confidence": "Medium",
+    "lag": "months",
+    "alternatives": [
+      "Other supply sources",
+      "Labor and requisition records needed"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0047",
+    "subjectId": "WT-1816-0067",
+    "objectId": "WT-1816-0068",
+    "predicate": "PRECEDED",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "The documented sequence frames diplomatic exchange; it does not establish that the supply inquiry caused the later gift.",
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "confidence": "Medium-High",
+    "lag": "days to months",
+    "alternatives": [
+      "European envoy perspective",
+      "Asante court evidence needed"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0048",
+    "subjectId": "WT-1816-0068",
+    "objectId": "WT-1816-0069",
+    "predicate": "PRECEDED",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "The documented sequence frames diplomatic exchange; it does not establish that the supply inquiry caused the later gift.",
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "confidence": "Medium-High",
+    "lag": "days to months",
+    "alternatives": [
+      "European envoy perspective",
+      "Asante court evidence needed"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0049",
+    "subjectId": "WT-1816-0070",
+    "objectId": "WT-1816-0071",
+    "predicate": "PRECEDED",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Reported visitors and later mission form a diplomatic sequence; influence of specific individuals is not isolated.",
+    "sourceRefs": [
+      "SRC-041",
+      "SRC-040"
+    ],
+    "confidence": "Medium",
+    "lag": "months",
+    "alternatives": [
+      "Visitor identities disputed"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0050",
+    "subjectId": "WT-1816-0071",
+    "objectId": "WT-1816-0072",
+    "predicate": "ENABLED",
+    "causalStatus": "CONTRIBUTORY",
+    "explanation": "Lesage’s mission provided the setting for the preliminary agreement; exact legal scope remains limited to the source account.",
+    "sourceRefs": [
+      "SRC-040"
+    ],
+    "confidence": "Medium",
+    "lag": "within mission",
+    "alternatives": [
+      "Negotiation and local political aims"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0051",
+    "subjectId": "WT-1816-0072",
+    "objectId": "WT-1816-0073",
+    "predicate": "PRECEDED",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Separate agreements occurred in February and October; legal continuity and enforcement require additional records.",
+    "sourceRefs": [
+      "SRC-040",
+      "SRC-042"
+    ],
+    "confidence": "High",
+    "lag": "~8 months",
+    "alternatives": [
+      "Domestic slavery persisted",
+      "Proclamation is not enforcement"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0052",
+    "subjectId": "WT-1816-0074",
+    "objectId": "WT-1816-0075",
+    "predicate": "COINCIDED_WITH",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Evidence overlaps in time but differs in variable, region and temporal resolution; this comparison does not establish causal transfer. ",
+    "sourceRefs": [
+      "SRC-019",
+      "SRC-044",
+      "SRC-043"
+    ],
+    "confidence": "Medium",
+    "lag": "overlapping windows",
+    "alternatives": [
+      "Route-biased air measurements",
+      "Proxy isotope confounds",
+      "Simulations are not measurements"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0053",
+    "subjectId": "WT-1816-0074",
+    "objectId": "WT-1816-0076",
+    "predicate": "COINCIDED_WITH",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Evidence overlaps in time but differs in variable, region and temporal resolution; this comparison does not establish causal transfer. ",
+    "sourceRefs": [
+      "SRC-019",
+      "SRC-044",
+      "SRC-045"
+    ],
+    "confidence": "Medium",
+    "lag": "overlapping windows",
+    "alternatives": [
+      "Route-biased air measurements",
+      "Proxy isotope confounds",
+      "Simulations are not measurements"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0054",
+    "subjectId": "WT-1816-0074",
+    "objectId": "WT-1816-0077",
+    "predicate": "COINCIDED_WITH",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Evidence overlaps in time but differs in variable, region and temporal resolution; this comparison does not establish causal transfer. ",
+    "sourceRefs": [
+      "SRC-019",
+      "SRC-046",
+      "SRC-044"
+    ],
+    "confidence": "Medium",
+    "lag": "overlapping windows",
+    "alternatives": [
+      "Route-biased air measurements",
+      "Proxy isotope confounds",
+      "Simulations are not measurements"
+    ],
+    "researchStatus": "Source checked; research cross-review 2026-10-05"
+  },
+  {
+    "id": "REL-0055",
+    "subjectId": "WT-1816-0008",
+    "objectId": "WT-1816-0077",
+    "predicate": "CONTRIBUTED_TO",
+    "causalStatus": "CONTRIBUTORY",
+    "lag": "1–2 years in simulation",
+    "explanation": "Volcanically forced model experiments produce persistent ocean cooling and heat loss. This is a model-supported mechanism, not directly measured historical ocean heat content.",
+    "sourceRefs": [
+      "SRC-046"
+    ],
+    "confidence": "Medium-High",
+    "alternatives": [
+      "Aerosol-forcing estimates",
+      "Model physics",
+      "Internal variability",
+      "Earlier 1809 forcing"
+    ],
+    "researchStatus": "Source checked; model limitation explicit"
   }
 ]

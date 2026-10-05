@@ -318,5 +318,405 @@
     ],
     "notes": "Entries for 1 August and 30 September 1816, January–February 1817; institutional chronology, not a causal attribution study.",
     "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-022",
+    "type": "Peer-reviewed article",
+    "authorOrOrg": "Jessica Dijkman, Past & Present",
+    "title": "Managing Food Crises: Urban Relief Stocks in Pre-Industrial Holland",
+    "year": 2021,
+    "url": "https://doi.org/10.1093/pastj/gtaa014",
+    "quality": "High",
+    "topics": [
+      "grain prices",
+      "relief",
+      "Netherlands",
+      "trade"
+    ],
+    "notes": "Section IV and Figure 3: archival economic analysis; public imports and price effects require separate assessment.",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-023",
+    "type": "Peer-reviewed modeling study",
+    "authorOrOrg": "Flückiger et al., Environmental Research Letters",
+    "title": "Simulating crop yield losses in Switzerland for historical and present Tambora climate scenarios",
+    "year": 2017,
+    "url": "https://doi.org/10.1088/1748-9326/aa7246",
+    "quality": "High",
+    "topics": [
+      "crop modeling",
+      "potatoes",
+      "barley",
+      "food vulnerability"
+    ],
+    "notes": "Abstract and results; CropSyst calibrated for current cultivars. Potential yields are simulated, not measured 1816 harvest totals.",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-024",
+    "type": "Peer-reviewed attribution study",
+    "authorOrOrg": "Schurer et al., Environmental Research Letters",
+    "title": "Disentangling the causes of the 1816 European year without a summer",
+    "year": 2019,
+    "url": "https://doi.org/10.1088/1748-9326/ab3a10",
+    "quality": "High",
+    "topics": [
+      "climate attribution",
+      "circulation",
+      "volcanic forcing"
+    ],
+    "notes": "Abstract, Table 1 and conclusions. Risk ratios vary by model/forcing; they are not observational probabilities for all regions.",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-025",
+    "type": "Primary correspondence, scholarly transcription",
+    "authorOrOrg": "Thomas Jefferson / Founders Online, National Archives",
+    "title": "Thomas Jefferson to David Bailie Warden, 17 May 1816",
+    "year": 1816,
+    "url": "https://founders.archives.gov/documents/Jefferson/03-10-02-0034",
+    "quality": "High",
+    "topics": [
+      "Virginia",
+      "temperature",
+      "frost",
+      "crops"
+    ],
+    "notes": "Dated letter; local measurements and crop expectations are distinct from audited harvest returns.",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-026",
+    "type": "Primary correspondence, scholarly transcription",
+    "authorOrOrg": "Thomas Jefferson / Founders Online, National Archives",
+    "title": "Thomas Jefferson to Albert Gallatin, 8 September 1816",
+    "year": 1816,
+    "url": "https://founders.archives.gov/documents/Jefferson/03-10-02-0263",
+    "quality": "High",
+    "topics": [
+      "rainfall",
+      "Virginia",
+      "maize",
+      "crop forecasts"
+    ],
+    "notes": "Dated letter reports measured rainfall and forecasts regional crops; forecast is not a realized statistical harvest total. Editors note that the stated rainfall baselines derive from Notes on the State of Virginia.",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-027",
+    "type": "Historical analysis using Annual Crop Reports, Royal Secretariat records, diaries and rain-gauge reconstructions",
+    "authorOrOrg": "Sungwoo Kim, Climatic Change",
+    "title": "Successive volcanic eruptions (1809–1815) and two severe famines of Korea (1809–1810, 1814–1815) seen through historical records",
+    "year": 2023,
+    "url": "https://link.springer.com/article/10.1007/s10584-023-03480-w",
+    "quality": "Medium-High",
+    "topics": [
+      "EARTH",
+      "PRODUCTION & RESOURCES"
+    ],
+    "notes": "Do not adopt inferred population losses as exact mortality; do not treat proposed multi-volcano attribution as experimentally established. Full article read",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-028",
+    "type": "Peer-reviewed original dendroclimatic reconstruction",
+    "authorOrOrg": "R. R. Yadav et al.",
+    "title": "Tree-ring footprints of drought variability in last ~300 years over Kumaun Himalaya, India and its relationship with crop productivity",
+    "year": 2015,
+    "url": "https://repository.ias.ac.in/135635/1/Tree-ring_footprints_drought_variability_2015_Yadav.pdf",
+    "quality": "Medium-High",
+    "topics": [
+      "EARTH"
+    ],
+    "notes": "SPI7-May is November–May precipitation, NOT the June–September summer monsoon. Crop calibration is 1974–2010, not direct 1816 harvest observation. Full PDF text read",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-029",
+    "type": "Peer-reviewed historical analysis of colonial medical and judicial archives",
+    "authorOrOrg": "Mark Harrison",
+    "title": "A Dreadful Scourge: Cholera in early nineteenth-century India",
+    "year": 2019,
+    "url": "https://www.cambridge.org/core/journals/modern-asian-studies/article/dreadful-scourge-cholera-in-early-nineteenthcentury-india/7277A51FD55951F1D22F1166CFF9A064",
+    "quality": "Medium-High",
+    "topics": [
+      "HUMAN SYSTEMS"
+    ],
+    "notes": "Colonial archival perspective and under-registration; contemporary environmental explanations are beliefs, not modern established disease mechanisms. Full article read",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-030",
+    "type": "Scholarly historical analysis, Indonesia 60:37–59",
+    "authorOrOrg": "Bernice de Jong Boers",
+    "title": "Mount Tambora in 1815: A Volcanic Eruption in Indonesia and Its Aftermath",
+    "year": 1995,
+    "url": "https://ecommons.cornell.edu/bitstream/handle/1813/54071/INDO_60_0_1106964018_37_59.pdf?sequence=1",
+    "quality": "Medium-High",
+    "topics": [
+      "HUMAN SYSTEMS",
+      "PRODUCTION & RESOURCES"
+    ],
+    "notes": "Many accounts retrospective; mortality estimates conflict. Distinguish immediate ash effects from multi-year famine/epidemic aftermath. Search-index full passages verified, PDF open fails",
+    "accessedDate": "2026-10-05",
+    "alternateUrl": "https://web.english.upenn.edu/~cavitch/pdf-library/Boers_Mount_Tambora_in_1815.pdf"
+  },
+  {
+    "id": "SRC-031",
+    "type": "Primary parliamentary record containing retrospective 1816–1818 account",
+    "authorOrOrg": "UK House of Commons / Hansard",
+    "title": "Famine And Disease In Ireland, House of Commons debate, 17 February 1846",
+    "year": 1846,
+    "url": "https://hansard.parliament.uk/commons/1846-02-17/debates/e5a0788d-e79f-4176-bd55-4b3e3453d526/FamineAndDiseaseInIreland",
+    "quality": "Medium-High",
+    "topics": [
+      "HUMAN SYSTEMS"
+    ],
+    "notes": "A political speech in 1846 retrospectively describing 1816–1818, not contemporaneous 1816 testimony; fever diagnoses not bacteriologically confirmed. Full official page read",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-032",
+    "type": "Institutional history quoting hospital records and Barker/Cheyne 1821",
+    "authorOrOrg": "Cork Street Fever Hospital historical archive",
+    "title": "Fever part 2 1811–1820",
+    "year": null,
+    "url": "https://corkstreetfeverhospital.ie/fever-part-2-1811-1820/",
+    "quality": "Medium-High",
+    "topics": [
+      "HUMAN SYSTEMS"
+    ],
+    "notes": "Primary material accessed through institutional transcription/summary; distinguish committee opinion from disease causation. Source excerpt read",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-033",
+    "type": "institutional historical synthesis",
+    "authorOrOrg": "Lúcia Maria Bastos Pereira das Neves",
+    "title": "A missão artística francesa",
+    "year": null,
+    "url": "https://bndigital.bn.gov.br/dossies/rede-da-memoria-virtual-brasileira/costumes/a-missao-artistica-francesa/",
+    "quality": "Medium-High",
+    "topics": [
+      "POWER & CULTURE"
+    ],
+    "notes": "Source entry: Opening paragraph under A missão artística francesa; cites Gazeta do Rio de Janeiro, 6 April 1816",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-034",
+    "type": "primary legislation transcription",
+    "authorOrOrg": "Câmara dos Deputados",
+    "title": "Decreto de 12 de Agosto de 1816",
+    "year": 1816,
+    "url": "https://www2.camara.leg.br/legin/fed/decret_sn/anterioresa1824/decreto-39494-12-agosto-1816-569795-publicacaooriginal-93002-pe.html",
+    "quality": "Medium-High",
+    "topics": [
+      "POWER & CULTURE"
+    ],
+    "notes": "Source entry: Coleção de Leis do Império do Brasil 1816, vol.1 p.77; operative paragraph granting pensions",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-035",
+    "type": "institutional historical synthesis",
+    "authorOrOrg": "Argentina.gob.ar; text supplied by Municipalidad de Mendoza",
+    "title": "Maestranza del Ejercito de los Andes",
+    "year": null,
+    "url": "https://www.argentina.gob.ar/node/416978",
+    "quality": "Medium-High",
+    "topics": [
+      "PRODUCTION & RESOURCES"
+    ],
+    "notes": "Source entry: Paragraphs beginning La Maestranza se convirtió hacia 1816 and En total",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-036",
+    "type": "primary diary transcription",
+    "authorOrOrg": "Macquarie University Library",
+    "title": "Lachlan Macquarie diary April 1816",
+    "year": 1816,
+    "url": "https://www.mq.edu.au/macquarie-archive/lema/1816/1816april.html",
+    "quality": "Medium-High",
+    "topics": [
+      "POWER & CULTURE"
+    ],
+    "notes": "Governor and perpetrator perspective; self-justifying descriptions are not neutral evidence of Indigenous motives. Source entry: Mitchell Library A773 pp.1–8; CY301 frames 237–245",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-037",
+    "type": "primary diary transcription",
+    "authorOrOrg": "Macquarie University Library",
+    "title": "Lachlan Macquarie diary May 1816",
+    "year": 1816,
+    "url": "https://www.mq.edu.au/macquarie-archive/lema/1816/1816may.html",
+    "quality": "Medium-High",
+    "topics": [
+      "EARTH",
+      "POWER & CULTURE",
+      "PRODUCTION & RESOURCES"
+    ],
+    "notes": "Governor perspective; promises and intended voyages do not prove implementation or arrival. Source entry: Mitchell Library A773 pp.8–18; CY301 frames 245–255",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-038",
+    "type": "primary diary transcription",
+    "authorOrOrg": "Macquarie University Library",
+    "title": "Lachlan Macquarie diary June 1816",
+    "year": 1816,
+    "url": "https://www.mq.edu.au/macquarie-archive/lema/1816/1816june.html",
+    "quality": "Medium-High",
+    "topics": [
+      "POWER & CULTURE",
+      "PRODUCTION & RESOURCES"
+    ],
+    "notes": "Governor perspective; flood entries summarize magistrates' reports and crop-loss expectations, not harvest accounting. Source entry: Mitchell Library A773 pp.19–28; CY301 frames 256–265",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-039",
+    "type": "doctoral thesis interpreting primary diaries and correspondence",
+    "authorOrOrg": "Fiona Sheales",
+    "title": "Sights/Sites of Spectacle: Anglo/Asante Appropriations, Diplomacy and Displays of Power 1816–1820",
+    "year": 2011,
+    "url": "https://ueaeprints.uea.ac.uk/id/eprint/48152/",
+    "quality": "Medium-High",
+    "topics": [
+      "POWER & CULTURE",
+      "PRODUCTION & RESOURCES"
+    ],
+    "notes": "Repository abstract and indexed PDF passages inspected; PDF exceeds browser fetch size limit.",
+    "accessedDate": "2026-10-05",
+    "alternateUrl": "https://ueaeprints.uea.ac.uk/id/eprint/48152/1/Sheales.pdf"
+  },
+  {
+    "id": "SRC-040",
+    "type": "scholarly historical article",
+    "authorOrOrg": "Jean Valette",
+    "title": "Le traité conclu entre Radama Ier et Lesage le 4 février 1817",
+    "year": 1974,
+    "url": "https://www.persee.fr/doc/outre_0300-9513_1974_num_61_225_1801",
+    "quality": "Medium-High",
+    "topics": [
+      "POWER & CULTURE"
+    ],
+    "notes": "Full first page inspected, printed page 572.",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-041",
+    "type": "contemporary official letter reproduced in historical account",
+    "authorOrOrg": "Robert Townsend Farquhar",
+    "title": "Farquhar to Earl Bathurst, Port Louis, 12 September 1816",
+    "year": 1816,
+    "url": "https://en.wikisource.org/wiki/The_Island_of_Madagascar/Chapter_4",
+    "quality": "Medium-High",
+    "topics": [
+      "POWER & CULTURE"
+    ],
+    "notes": "Transcribed reproduced letter inspected; original manuscript and scan not independently inspected.",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-042",
+    "type": "peer-reviewed legal history",
+    "authorOrOrg": "Benedetta Rossi",
+    "title": "The Abolition of Slavery in Africa’s Legal Histories",
+    "year": 2024,
+    "url": "https://www.cambridge.org/core/journals/law-and-history-review/article/abolition-of-slavery-in-africas-legal-histories/47A74EA1672DB9EF11881137DB43796A",
+    "quality": "Medium-High",
+    "topics": [
+      "POWER & CULTURE"
+    ],
+    "notes": "Full article inspected; section The Problem of Apparent Homogeneity, Madagascar paragraphs and footnotes 56–59.",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-043",
+    "type": "peer-reviewed proxy reconstruction",
+    "authorOrOrg": "Jessica E. Tierney et al.",
+    "title": "Tropical sea surface temperatures for the past four centuries reconstructed from coral archives",
+    "year": 2015,
+    "url": "https://repository.library.noaa.gov/view/noaa/59376/noaa_59376_DS1.pdf",
+    "quality": "Medium-High",
+    "topics": [
+      "EARTH"
+    ],
+    "notes": "Full PDF inspected, especially section3.1 p233 and conclusions p247.",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-044",
+    "type": "peer-reviewed instrumental-data reconstruction",
+    "authorOrOrg": "P. Brohan et al.",
+    "title": "Constraining the temperature history of the past millennium using early instrumental observations",
+    "year": 2012,
+    "url": "https://cp.copernicus.org/articles/8/1551/2012/",
+    "quality": "Medium-High",
+    "topics": [
+      "EARTH"
+    ],
+    "notes": "Article abstract inspected; exact 1816 value additionally verified in Raible2016 section Climate response in observations.",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-045",
+    "type": "peer-reviewed analysis of contemporary ship records",
+    "authorOrOrg": "P. Brohan et al.",
+    "title": "Arctic marine climate of the early nineteenth century",
+    "year": 2010,
+    "url": "https://cp.copernicus.org/articles/6/315/2010/cp-6-315-2010.pdf",
+    "quality": "Medium-High",
+    "topics": [
+      "EARTH"
+    ],
+    "notes": "Full PDF inspected, section2 p316 and section3 p317.",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-046",
+    "type": "peer-reviewed model experiment",
+    "authorOrOrg": "J. T. Fasullo et al.",
+    "title": "The amplifying influence of increased ocean stratification on a future year without a summer",
+    "year": 2017,
+    "url": "https://www.nature.com/articles/s41467-017-01302-z",
+    "quality": "Medium-High",
+    "topics": [
+      "EARTH"
+    ],
+    "notes": "Full article inspected, Results/Figures5–6 and Methods/Model runs.",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-047",
+    "type": "institutional historical chronology",
+    "authorOrOrg": "State Party nomination archived by UNESCO World Heritage Centre",
+    "title": "Island of Saint-Louis nomination dossier, historical overview",
+    "year": null,
+    "url": "https://whc.unesco.org/uploads/nominations/956bis.pdf",
+    "quality": "Medium-High",
+    "topics": [
+      "POWER & CULTURE"
+    ],
+    "notes": "Indexed Annex I historical chronology inspected; full PDF fetch unavailable.",
+    "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-048",
+    "type": "institutional historical synthesis",
+    "authorOrOrg": "Central Bank of West African States (BCEAO)",
+    "title": "History of WAMU, Volume I",
+    "year": null,
+    "url": "https://www.bceao.int/sites/default/files/inline-files/Vol.-I_History_of_WAMU.pdf",
+    "quality": "Medium-High",
+    "topics": [
+      "POWER & CULTURE"
+    ],
+    "notes": "Indexed printed p129 inspected; full PDF fetch unavailable.",
+    "accessedDate": "2026-10-05"
   }
 ]

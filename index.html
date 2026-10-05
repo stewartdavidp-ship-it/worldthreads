@@ -23,7 +23,7 @@
   <main>
     <section class="hero" id="year">
       <div>
-        <p class="eyebrow">PROTOTYPE YEAR · CONTEXT 1814–1818</p>
+        <p class="eyebrow">PROTOTYPE YEAR · DATED CONTEXT · ANTECEDENTS AND OUTCOMES</p>
         <h1>1816</h1>
         <h2>The world in motion</h2>
         <p class="intro">Explore evidence as a historical systems graph: Earth, biosphere, production, people, power and culture. Facts remain separate from the relationships historians infer between them.</p>
@@ -45,11 +45,11 @@
       <button class="filter power" data-system="POWER & CULTURE">Power & culture</button>
     </section>
 
-    <section class="data-strip">
+    <p class="thread-description"><span id="yearRecords">—</span> records cover 1816 or an overlapping window; <span id="contextRecords">—</span> are antecedents or later outcomes. Counts reflect gathered evidence, not completeness.</p><section class="data-strip">
       <div class="data-chip"><strong id="highConfidence">—</strong><span>high-confidence observations</span></div>
       <div class="data-chip"><strong id="regionsCovered">—</strong><span>continents represented</span></div>
       <div class="data-chip"><strong>5</strong><span>interacting systems</span></div>
-      <div class="data-chip"><strong>1814–18</strong><span>causal context window</span></div>
+      <div class="data-chip"><strong>1814–18</strong><span>main context window; proxy baselines may extend earlier</span></div>
     </section>
 
     <section class="layout">
@@ -61,7 +61,7 @@
           <div class="map-label asia">Asia</div><button class="map-node asia-node" data-region="Asia" aria-label="Asia"></button>
           <div class="map-label africa">Africa</div><button class="map-node africa-node" data-region="Africa" aria-label="Africa"></button>
           <div class="map-label sa">South America</div><button class="map-node sa-node" data-region="South America" aria-label="South America"></button>
-          <div class="map-label oceania">Oceania</div><button class="map-node oceania-node" data-region="Oceania" aria-label="Oceania"></button><div class="map-empty">Coverage shows evidence gathered so far, not historical importance. Research gaps remain explicit.</div>
+          <div class="map-label oceans">Oceans</div><button class="map-node oceans-node" data-region="Oceans" aria-label="Oceans"></button><div class="map-label oceania">Oceania</div><button class="map-node oceania-node" data-region="Oceania" aria-label="Oceania"></button><div class="map-empty">Coverage shows evidence gathered so far, not historical importance. Research gaps remain explicit.</div>
         </div>
         <p class="legend">Markers indicate gathered evidence, not a regional confidence rating.</p>
       </aside>
@@ -83,14 +83,14 @@
         <div><p class="eyebrow">1816 KNOWLEDGE GRAPH</p><h3>Observations</h3></div>
         <div id="countLabel" class="count-label"></div>
       </div>
-      <div class="evidence-toolbar"><label>Search evidence <input id="searchInput" type="search" placeholder="Place, topic, date or evidence type"></label><label>Region <select id="regionSelect"><option value="ALL">All regions</option></select></label><button class="filter" id="clearFilters">Clear filters</button></div><div id="cards" class="cards" aria-live="polite"></div>
+      <div class="evidence-toolbar"><label>Search evidence <input id="searchInput" type="search" placeholder="Place, topic, date or evidence type"></label><label>Region <select id="regionSelect"><option value="ALL">All regions</option></select></label><label>Time window <select id="periodSelect"><option value="ALL">All dated context</option><option value="YEAR">1816 and overlapping windows</option><option value="CONTEXT">Antecedents and later outcomes</option></select></label><label>Evidence basis <select id="evidenceSelect"><option value="ALL">All evidence types</option></select></label><label>Order <select id="sortSelect"><option value="date">Earliest first</option><option value="title">Title</option></select></label><button class="filter" id="clearFilters">Clear filters</button></div><div id="cards" class="cards" aria-live="polite"></div>
     </section>
-    <section class="panel observations-panel"><h3>Research gaps</h3><p>Missing evidence is not absence of history. Partial coverage leaves the wider question open.</p><div id="researchGaps" class="cards"></div></section>
+    <section class="panel observations-panel"><h3>Research gaps</h3><p>Open each gap to inspect the evidence added and its related threads. The remaining questions stay visible; partial coverage does not close a gap.</p><div id="researchGaps" class="cards"></div></section>
   </main>
 
   <dialog id="detailDialog" aria-labelledby="detailTitle"><button id="closeDialog" class="close" aria-label="Close">×</button><div id="dialogContent"></div></dialog>
 
-  <footer><span>WorldThreads v0.3</span><span>Prototype year: 1816 · evidence and relationships separated</span></footer>
+  <footer><span>WorldThreads v0.4</span><span>Prototype year: 1816 · evidence and relationships separated</span></footer>
   <script src="app.js"></script>
 </body>
 </html>

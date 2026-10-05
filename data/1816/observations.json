@@ -742,10 +742,11 @@
       "Contemporary instructions presented by museum"
     ],
     "sourceRefs": [
-      "SRC-020"
+      "SRC-020",
+      "SRC-036"
     ],
     "observation": "Macquarie issued instructions for military expeditions against Aboriginal people, authorizing violence and hostage-taking.",
-    "uncertainty": "Colonial records encode the administration’s viewpoint; orders and subsequent conduct must be distinguished.",
+    "uncertainty": "Colonial records encode the administration’s viewpoint; orders and subsequent conduct must be distinguished. Instructions dated 9 April are distinct from the governor’s 10 April diary entry.",
     "sourceLocator": "Governor Macquarie’s instructions, 9 April 1816",
     "confidence": "High",
     "coverageType": "EVENT",
@@ -803,8 +804,8 @@
     "sourceRefs": [
       "SRC-020"
     ],
-    "observation": "A proclamation published in the Sydney Gazette restricted Aboriginal gatherings, movement and what people could carry.",
-    "uncertainty": "Policy text establishes imposed rules; enforcement and local responses need separate records.",
+    "observation": "Macquarie issued a proclamation on 4 May restricting Aboriginal movement, gatherings and weapons; principal weapons and gathering controls were to take effect on 4 June.",
+    "uncertainty": "Policy text establishes imposed rules; enforcement and local responses need separate records. Issuance is distinct from effective dates and actual enforcement.",
     "sourceLocator": "Macquarie’s proclamation, Sydney Gazette, 4 May 1816",
     "confidence": "High",
     "coverageType": "EVENT",
@@ -897,5 +898,1574 @@
     "coverageType": "EVENT",
     "researchStatus": "Source checked",
     "contextNode": true
+  },
+  {
+    "id": "WT-1816-0032",
+    "title": "Amsterdam staple prices surge",
+    "startDate": "1816",
+    "endDate": "1817",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Europe",
+    "region": "Northwestern Europe",
+    "historicalEntity": "United Kingdom of the Netherlands",
+    "place": "Amsterdam",
+    "observation": "Rye prices more than doubled; potato prices rose still more during the crisis.",
+    "coverageType": "TREND",
+    "system": "HUMAN SYSTEMS",
+    "topic": "Food prices",
+    "analyticalRole": [
+      "PRESSURE"
+    ],
+    "evidenceType": [
+      "Administrative/economic record analyzed in scholarship"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "sourceLocator": "Section IV, Figure 3",
+    "uncertainty": "Commodity-specific city series; no national household average is implied.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": []
+  },
+  {
+    "id": "WT-1816-0033",
+    "title": "Delft inventories grain stocks",
+    "startDate": "1816-12",
+    "endDate": "1816-12",
+    "datePrecision": "MONTH",
+    "continent": "Europe",
+    "region": "Northwestern Europe",
+    "historicalEntity": "United Kingdom of the Netherlands",
+    "place": "Delft",
+    "observation": "Delft authorities inventoried merchants’ and bakers’ grain stocks following a provincial request.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "Food governance",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Municipal records analyzed in scholarship"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "sourceLocator": "Section IV, Public grain purchases",
+    "uncertainty": "An inventory establishes administrative action, not adequate reserves.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": []
+  },
+  {
+    "id": "WT-1816-0034",
+    "title": "Dutch public grain purchases face shipping lag",
+    "startDate": "1816-10",
+    "endDate": "1817",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Europe",
+    "region": "Northwestern Europe / Baltic trade",
+    "historicalEntity": "United Kingdom of the Netherlands",
+    "place": "Amsterdam / Antwerp / Baltic ports",
+    "observation": "Government-backed grain purchases used commercial networks, but much stock arrived only in late spring or summer 1817.",
+    "coverageType": "TREND",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "Grain imports and transport",
+    "analyticalRole": [
+      "RESPONSE",
+      "RESILIENCE"
+    ],
+    "evidenceType": [
+      "Government and merchant records analyzed in scholarship"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "sourceLocator": "Section IV, Public grain purchases",
+    "uncertainty": "Imports alone do not establish effective price relief.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": []
+  },
+  {
+    "id": "WT-1816-0035",
+    "title": "Subsidized rye authorized for Amsterdam",
+    "startDate": "1817-06-27",
+    "endDate": "1817-06-27",
+    "datePrecision": "EXACT_DAY",
+    "continent": "Europe",
+    "region": "Northwestern Europe",
+    "historicalEntity": "United Kingdom of the Netherlands",
+    "place": "Amsterdam",
+    "observation": "A royal decree reserved 500 lasts of rye for reduced-price sales to poorer Amsterdam residents.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "Targeted food relief",
+    "analyticalRole": [
+      "RESPONSE",
+      "RESILIENCE"
+    ],
+    "evidenceType": [
+      "Royal decree analyzed in scholarship"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "sourceLocator": "Section IV, decree of 27 June 1817",
+    "uncertainty": "Authorization does not measure delivery or household benefit.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": true,
+    "gapRefs": [],
+    "value": 500,
+    "unit": "lasts of rye authorized"
+  },
+  {
+    "id": "WT-1816-0036",
+    "title": "Swiss potato losses estimated by crop model",
+    "startDate": "1816",
+    "endDate": "1816",
+    "datePrecision": "YEAR",
+    "continent": "Europe",
+    "region": "Alpine Europe",
+    "historicalEntity": "Swiss Confederation",
+    "place": "Switzerland",
+    "observation": "Reconstructed cold and reduced irradiance produce simulated potential potato-yield reductions of 20–50% in 1816.",
+    "coverageType": "STATISTIC",
+    "system": "BIOSPHERE",
+    "topic": "Crop growth and potential yield",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Modern crop-model simulation",
+      "Reconstructed weather"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-023"
+    ],
+    "sourceLocator": "Abstract and model results",
+    "uncertainty": "Model uses current cultivars; this is not a measured historical harvest series.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [],
+    "value": "20–50",
+    "unit": "percent simulated potential yield reduction"
+  },
+  {
+    "id": "WT-1816-0037",
+    "title": "Swiss crop sensitivity differs by species",
+    "startDate": "1816",
+    "endDate": "1817",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Europe",
+    "region": "Alpine Europe",
+    "historicalEntity": "Swiss Confederation",
+    "place": "Switzerland",
+    "observation": "Winter barley had smaller simulated losses than potatoes. Maize was more sensitive in simulations, but was not yet common locally.",
+    "coverageType": "CONDITION",
+    "system": "BIOSPHERE",
+    "topic": "Crop sensitivity",
+    "analyticalRole": [
+      "STATE",
+      "RESILIENCE"
+    ],
+    "evidenceType": [
+      "Modern crop-model simulation"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-023"
+    ],
+    "sourceLocator": "Abstract and crop comparison",
+    "uncertainty": "Differences suggest potential buffers; realized crop diversification is not established.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": []
+  },
+  {
+    "id": "WT-1816-0038",
+    "title": "Swiss malnutrition gradient exceeds modeled yield pattern",
+    "startDate": "1817",
+    "endDate": "1818",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Europe",
+    "region": "Alpine Europe",
+    "historicalEntity": "Swiss Confederation",
+    "place": "Switzerland, east–west comparison",
+    "observation": "The documented east–west malnutrition gradient was not explained by modeled biophysical yield limits alone; social, economic and political differences mattered.",
+    "coverageType": "CONDITION",
+    "system": "HUMAN SYSTEMS",
+    "topic": "Nutrition and vulnerability",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Historical evidence compared with model simulation"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-023"
+    ],
+    "sourceLocator": "Abstract and discussion",
+    "uncertainty": "Waterlogging may contribute; the model does not isolate every social factor.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": true,
+    "gapRefs": [
+      "GAP-008"
+    ]
+  },
+  {
+    "id": "WT-1816-0039",
+    "title": "European cold anomaly has model-dependent volcanic attribution",
+    "startDate": "1816-06",
+    "endDate": "1816-08",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Europe",
+    "region": "Central and Western Europe",
+    "historicalEntity": "Multiple European polities",
+    "place": "European study domain",
+    "observation": "Model experiments make the European cold anomaly markedly more likely with volcanic forcing; the increase varies by model and forcing estimate.",
+    "coverageType": "CONDITION",
+    "system": "EARTH",
+    "topic": "Temperature attribution",
+    "analyticalRole": [
+      "SHOCK"
+    ],
+    "evidenceType": [
+      "Modern event-attribution simulation"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-024"
+    ],
+    "sourceLocator": "Abstract and Table 1",
+    "uncertainty": "The headline increase of up to about 100 times is a model result, not a uniform regional probability.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": []
+  },
+  {
+    "id": "WT-1816-0040",
+    "title": "European wetness can emerge from circulation variability",
+    "startDate": "1816-06",
+    "endDate": "1816-08",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Europe",
+    "region": "Central and Western Europe",
+    "historicalEntity": "Multiple European polities",
+    "place": "European study domain",
+    "observation": "Circulation analogues reproduce much anomalous wetness without volcanic forcing; simulations nevertheless increase wet-summer likelihood by roughly 1.5–3 times with forcing.",
+    "coverageType": "CONDITION",
+    "system": "EARTH",
+    "topic": "Precipitation attribution",
+    "analyticalRole": [
+      "SHOCK"
+    ],
+    "evidenceType": [
+      "Modern event-attribution simulation",
+      "Circulation analogues"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-024"
+    ],
+    "sourceLocator": "Abstract and conclusions",
+    "uncertainty": "Temperature and rainfall have different attribution strengths; precipitation must not be assigned to Tambora alone.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": []
+  },
+  {
+    "id": "WT-1816-0041",
+    "title": "Jefferson records a cold Virginia spring",
+    "startDate": "1816-05-01",
+    "endDate": "1816-05-17",
+    "datePrecision": "DATE_RANGE",
+    "continent": "North America",
+    "region": "Eastern United States",
+    "historicalEntity": "United States",
+    "place": "Monticello / Virginia",
+    "observation": "Jefferson reports morning temperatures averaging 53°F so far in May, against 63°F in other years, and one morning at 43°F.",
+    "coverageType": "STATISTIC",
+    "system": "EARTH",
+    "topic": "Local air temperature",
+    "analyticalRole": [
+      "SHOCK"
+    ],
+    "evidenceType": [
+      "Contemporary instrumental observations reported in correspondence"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-025"
+    ],
+    "sourceLocator": "17 May letter, weather paragraph",
+    "uncertainty": "Partial month and unspecified reference years; not a daily all-hours or regional mean.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [],
+    "value": 53,
+    "unit": "degrees Fahrenheit, reported partial-month morning mean",
+    "baseline": "63°F reported mean in other years"
+  },
+  {
+    "id": "WT-1816-0042",
+    "title": "Frost damages early fruits in Virginia",
+    "startDate": "1816-05",
+    "endDate": "1816-05",
+    "datePrecision": "MONTH",
+    "continent": "North America",
+    "region": "Eastern United States",
+    "historicalEntity": "United States",
+    "place": "Virginia / Monticello correspondence",
+    "observation": "Jefferson reports repeated frosts killing early fruits and expects poor tobacco and wheat crops.",
+    "coverageType": "EVENT",
+    "system": "BIOSPHERE",
+    "topic": "Frost and crops",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Contemporary documentary observation"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-025"
+    ],
+    "sourceLocator": "17 May letter, weather paragraph",
+    "uncertainty": "Fruit damage is reported; the wheat/tobacco statement is a forecast, not a final yield count.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": []
+  },
+  {
+    "id": "WT-1816-0043",
+    "title": "Monticello rainfall report shows severe seasonal dryness",
+    "startDate": "1816-06",
+    "endDate": "1816-08",
+    "datePrecision": "DATE_RANGE",
+    "continent": "North America",
+    "region": "Eastern United States",
+    "historicalEntity": "United States",
+    "place": "Monticello / Virginia",
+    "observation": "Jefferson reports one-third inch of June rain against a 3¾-inch average, and 0.8 inch in August against a 9⅙-inch average.",
+    "coverageType": "STATISTIC",
+    "system": "EARTH",
+    "topic": "Rainfall",
+    "analyticalRole": [
+      "SHOCK"
+    ],
+    "evidenceType": [
+      "Contemporary instrumental observations reported in correspondence"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-026"
+    ],
+    "sourceLocator": "8 September letter, drought paragraph",
+    "uncertainty": "Reported amounts and historical baselines retain the letter’s wording; not a standardized modern climatology or regional mean.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [],
+    "baseline": "Jefferson’s stated June/August averages, drawn from Notes on the State of Virginia"
+  },
+  {
+    "id": "WT-1816-0044",
+    "title": "Jefferson forecasts an Atlantic-state maize shortfall",
+    "startDate": "1816-09-08",
+    "endDate": "1816-09-08",
+    "datePrecision": "EXACT_DAY",
+    "continent": "North America",
+    "region": "Eastern United States",
+    "historicalEntity": "United States",
+    "place": "Atlantic states, as described from Virginia",
+    "observation": "Jefferson reports August frost damage to corn beyond the mountains and forecasts an Atlantic-state corn crop below one-third of an ordinary crop.",
+    "coverageType": "CONDITION",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "Crop forecast",
+    "analyticalRole": [
+      "PRESSURE"
+    ],
+    "evidenceType": [
+      "Contemporary correspondence forecast"
+    ],
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-026"
+    ],
+    "sourceLocator": "8 September letter, drought paragraph",
+    "uncertainty": "Contemporary estimate, not an independently compiled realized harvest statistic.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": []
+  },
+  {
+    "id": "WT-1816-0045",
+    "title": "Good Korean rice harvest despite wider climate disruption",
+    "startDate": "1816",
+    "endDate": "1816",
+    "datePrecision": "YEAR",
+    "continent": "Asia",
+    "region": "Chosŏn Korea",
+    "historicalEntity": "Chosŏn dynasty",
+    "place": "Chosŏn Korea",
+    "observation": "1816 barley suffered no significant loss; rice harvests were good. Only 17 of 336 prefectures reported poor yields; tax-exempt paddies were 11.2% of assessed area.",
+    "coverageType": "CONDITION",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "agriculture, governance",
+    "analyticalRole": [
+      "STATE",
+      "RESILIENCE"
+    ],
+    "evidenceType": [
+      "Administrative crop/tax records analyzed in scholarship"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "sourceLocator": "Section 3, paragraphs 2–5; Figure 2; Annual Crop Reports in Sŭngjŏngwŏn ilgi",
+    "uncertainty": "Administrative categories and taxation proxies are not crop tonnage; good aggregate conditions do not rule out local hardship. Paddy-tax figures cover six assessed provinces; harvest reporting spans eight.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-010"
+    ],
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0046",
+    "title": "Seoul rainfall reconstruction shows a wet 1816",
+    "startDate": "1816",
+    "endDate": "1816",
+    "datePrecision": "YEAR",
+    "continent": "Asia",
+    "region": "Seoul, Chosŏn Korea",
+    "historicalEntity": "Chosŏn dynasty",
+    "place": "Seoul, Chosŏn Korea",
+    "observation": "Seoul rain-gauge reconstruction gives 1,880 mm in 1816, 48.3% above the cited 1910–1945 average. July–August contributed 1,322 mm.",
+    "coverageType": "CONDITION",
+    "system": "EARTH",
+    "topic": "climate, hydrology",
+    "analyticalRole": [
+      "STATE"
+    ],
+    "evidenceType": [
+      "Rain-gauge reconstruction"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "sourceLocator": "Section 3; Figure 4; Wada rain-gauge compilation",
+    "uncertainty": "Seoul station cannot stand for the whole peninsula; reference-period comparison does not isolate volcanic forcing.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-010"
+    ],
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0047",
+    "title": "Korean rice harvest classified normal in 1817",
+    "startDate": "1817",
+    "endDate": "1817",
+    "datePrecision": "YEAR",
+    "continent": "Asia",
+    "region": "Chosŏn Korea",
+    "historicalEntity": "Chosŏn dynasty",
+    "place": "Chosŏn Korea",
+    "observation": "1817 rice harvest was classified normal overall; 66 prefectures reported crop failures, and tax exemptions covered 18.8% of assessed paddy area.",
+    "coverageType": "CONDITION",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "agriculture, governance",
+    "analyticalRole": [
+      "STATE",
+      "RESILIENCE"
+    ],
+    "evidenceType": [
+      "Administrative crop/tax records analyzed in scholarship"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "sourceLocator": "Section 3; Figures 2–3",
+    "uncertainty": "A normal national classification does not mean every region or crop was unaffected; this is 1817 aftermath context. Paddy-tax denominator concerns six assessed provinces.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": true,
+    "gapRefs": [
+      "GAP-010"
+    ],
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0048",
+    "title": "Korean famine and price crisis precede Tambora",
+    "startDate": "1814",
+    "endDate": "1815",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Asia",
+    "region": "Sŏnsan / Andong, Chosŏn Korea",
+    "historicalEntity": "Chosŏn dynasty",
+    "place": "Sŏnsan / Andong, Chosŏn Korea",
+    "observation": "The 1814–1815 famine followed drought and uneven rainfall in 1814. Local rice prices in summer 1815 were reported about 808–866% above usual levels.",
+    "coverageType": "CONDITION",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "agriculture, economy",
+    "analyticalRole": [
+      "PRESSURE"
+    ],
+    "evidenceType": [
+      "Documentary price and famine reconstruction"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "sourceLocator": "Section 4; Figure 5; diary-based local market prices",
+    "uncertainty": "The 1814 crop crisis predates Tambora; no Tambora causal edge is justified. Local prices are not a national price index.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": true,
+    "gapRefs": [
+      "GAP-010"
+    ],
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0049",
+    "title": "Kumaun winter–spring drought reconstructed from cedar rings",
+    "startDate": "1815-11-01",
+    "endDate": "1816-05-31",
+    "datePrecision": "SEASON_RANGE",
+    "continent": "Asia",
+    "region": "Kumaun Himalaya, India",
+    "historicalEntity": "Kumaun / East India Company rule",
+    "place": "Kumaun Himalaya, India",
+    "observation": "Himalayan cedar reconstruction ranks 1816 as the driest SPI7-May year of 1720–2012, with SPI −1.92; the calibration explains 60% of observed index variance.",
+    "coverageType": "CONDITION",
+    "system": "EARTH",
+    "topic": "climate, hydrology",
+    "analyticalRole": [
+      "PRESSURE"
+    ],
+    "evidenceType": [
+      "Tree-ring precipitation-index reconstruction"
+    ],
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-028"
+    ],
+    "sourceLocator": "Sections 2.5 and 3.1, printed p.118; Table 5 p.120",
+    "uncertainty": "Seven-month November–May index is not summer-monsoon rainfall. No direct 1816 harvest/price measurement is supplied; Tambora attribution remains an interpretation.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-003",
+      "GAP-009"
+    ],
+    "value": -1.92,
+    "unit": "reconstructed SPI7-May",
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0050",
+    "title": "Jessore cholera reported in August 1817",
+    "startDate": "1817-08-23",
+    "endDate": "1817-08-23",
+    "datePrecision": "DOCUMENT_DATE",
+    "continent": "Asia",
+    "region": "Jessore, Bengal Presidency (present-day Bangladesh)",
+    "historicalEntity": "Bengal Presidency / East India Company",
+    "place": "Jessore, Bengal Presidency (present-day Bangladesh)",
+    "observation": "Assistant surgeon R. Tytler reported Jessore's cholera outbreak to magistrate Charles Chapman on 23 August 1817.",
+    "coverageType": "EVENT",
+    "system": "HUMAN SYSTEMS",
+    "topic": "health, knowledge",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Colonial medical/judicial records analyzed in scholarship"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "sourceLocator": "Footnote 104: Tytler to Chapman, 23 August 1817, British Library APAC F/4/678",
+    "uncertainty": "A report date does not establish the first infection or a new pathogen origin; Tambora is not demonstrated as a cause.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": true,
+    "gapRefs": [
+      "GAP-003",
+      "GAP-008",
+      "GAP-009"
+    ],
+    "dateBasis": "Report/letter date, not necessarily event onset.",
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0051",
+    "title": "Fear of cholera prompts flight from Jessore",
+    "startDate": "1817-08",
+    "endDate": "1817-08",
+    "datePrecision": "MONTH",
+    "continent": "Asia",
+    "region": "Jessore, Bengal Presidency",
+    "historicalEntity": "Bengal Presidency / East India Company",
+    "place": "Jessore, Bengal Presidency",
+    "observation": "By late August 1817 Chapman described widespread flight from Jessore in fear of cholera; reports principally represented European and official experience.",
+    "coverageType": "EVENT",
+    "system": "HUMAN SYSTEMS",
+    "topic": "health, migration, governance",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Colonial medical/judicial records analyzed in scholarship"
+    ],
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "sourceLocator": "Retelling around footnotes 38–39; paragraph beginning 'The exact toll of human life...'",
+    "uncertainty": "Colonial observers do not enumerate all residents. Fear-driven movement is supported; its transmission effect is not measured here.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": true,
+    "gapRefs": [
+      "GAP-008",
+      "GAP-009"
+    ],
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0052",
+    "title": "Calcutta magistrate describes uneven cholera exposure",
+    "startDate": "1817-09-15",
+    "endDate": "1817-09-15",
+    "datePrecision": "DOCUMENT_DATE",
+    "continent": "Asia",
+    "region": "Calcutta / Kolkata, Bengal Presidency",
+    "historicalEntity": "Bengal Presidency / East India Company",
+    "place": "Calcutta / Kolkata, Bengal Presidency",
+    "observation": "Magistrate John Eliot reported cholera concentrated in low-lying districts and suburbs, describing crowding by migrants from the countryside.",
+    "coverageType": "EVENT",
+    "system": "HUMAN SYSTEMS",
+    "topic": "health, settlement, migration",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Colonial medical/judicial records analyzed in scholarship"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "sourceLocator": "Paragraph around footnote 107; Eliot to Bayley, 15 September 1817, BL APAC F/4/678",
+    "uncertainty": "Observation of locality is not proof that elevation, crowding or weather caused disease. Modern waterborne mechanisms need separate evidence.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": true,
+    "gapRefs": [
+      "GAP-003",
+      "GAP-008",
+      "GAP-009"
+    ],
+    "dateBasis": "Report/letter date, not necessarily event onset.",
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0053",
+    "title": "Retrospective account links Irish scarcity and fever",
+    "startDate": "1816",
+    "endDate": "1817",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Europe",
+    "region": "Ireland",
+    "historicalEntity": "Ireland / United Kingdom",
+    "place": "Ireland",
+    "observation": "An 1846 parliamentary account recalled deficient 1816 grain and potato crops, scarce turf and bedding straw, and fever becoming prevalent in summer 1817.",
+    "coverageType": "CONDITION",
+    "system": "HUMAN SYSTEMS",
+    "topic": "agriculture, nutrition, energy, health",
+    "analyticalRole": [
+      "PRESSURE"
+    ],
+    "evidenceType": [
+      "Retrospective parliamentary account"
+    ],
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-031"
+    ],
+    "sourceLocator": "17 February 1846 debate; paragraph beginning 'He now came to 1817'; lines 170–172 on official page",
+    "uncertainty": "The food–fever interpretation is the speaker's. Do not equate all historical fever with confirmed epidemic typhus or assign a precise Tambora mortality toll.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-008"
+    ],
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0054",
+    "title": "Dublin fever hospital reports insufficient capacity",
+    "startDate": "1818-01-01",
+    "endDate": "1818-12-31",
+    "datePrecision": "SEASON_RANGE",
+    "continent": "Europe",
+    "region": "Dublin, Ireland",
+    "historicalEntity": "Ireland / United Kingdom",
+    "place": "Dublin, Ireland",
+    "observation": "Cork Street physicians asked for more hospital capacity in 1818, reporting delays of days for admission and deaths among patients waiting.",
+    "coverageType": "CONDITION",
+    "system": "HUMAN SYSTEMS",
+    "topic": "health, institutions, relief",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Hospital correspondence via institutional transcription"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-032"
+    ],
+    "sourceLocator": "1818 government correspondence; Barker and Cheyne 1821, pp.247–250, as transcribed by institutional history",
+    "uncertainty": "Aftermath observation; no count of waiting-list deaths is verified. Does not quantify national mortality or isolate nutrition from transmission.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": true,
+    "gapRefs": [
+      "GAP-008"
+    ],
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0055",
+    "title": "Bali newspaper reports severe mortality and weakened survivors",
+    "startDate": "1816-10-26",
+    "endDate": "1816-10-26",
+    "datePrecision": "DOCUMENT_DATE",
+    "continent": "Asia",
+    "region": "Bali, Dutch East Indies",
+    "historicalEntity": "Bali and Lombok polities",
+    "place": "Bali, Dutch East Indies",
+    "observation": "Bataviasche Courant of 26 October 1816 described daily deaths and survivors too weak or too few to conduct funerals in Bali.",
+    "coverageType": "EVENT",
+    "system": "HUMAN SYSTEMS",
+    "topic": "health, nutrition, society",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Colonial documentary accounts via scholarly synthesis"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "sourceLocator": "Printed p.49, paragraph citing Bataviasche Courant 26 October 1816",
+    "uncertainty": "Report date does not identify disease or count mortality; Boers accessed colonial records. Direct-ash and subsequent food/epidemic effects are distinct.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-004",
+      "GAP-008"
+    ],
+    "dateBasis": "Report/letter date, not necessarily event onset.",
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0056",
+    "title": "Ash damage threatens Bali and Lombok rice supply",
+    "startDate": "1815",
+    "endDate": "1815",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Asia",
+    "region": "Bali and Lombok",
+    "historicalEntity": "Bali and Lombok polities",
+    "place": "Bali and Lombok",
+    "observation": "Historical accounts describe ash destroying standing wet-rice crops in Bali and Lombok, followed by famine and dependence on rice supplied from Java.",
+    "coverageType": "CONDITION",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "volcanism, agriculture, trade",
+    "analyticalRole": [
+      "SHOCK"
+    ],
+    "evidenceType": [
+      "Colonial documentary accounts via scholarly synthesis"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "sourceLocator": "Printed p.49, notes 76–77: Van den Broek 1835 pp.165,183; Olivier 1827 p.451",
+    "uncertainty": "Retrospective source chain; crop losses not independently quantified. Do not infer Java-wide famine from this evidence. Food access also depended on ability to pay for imports, not crop damage alone.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": true,
+    "gapRefs": [
+      "GAP-004"
+    ],
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0057",
+    "title": "An unspecified epidemic reported in Badung",
+    "startDate": "1817",
+    "endDate": "1817",
+    "datePrecision": "YEAR",
+    "continent": "Asia",
+    "region": "Badung, Bali",
+    "historicalEntity": "Bali and Lombok polities",
+    "place": "Badung, Bali",
+    "observation": "A Dubois letter cited in the scholarship reported an epidemic in 1817 killing Badung's ruler Gusti Ngurah Made Kaleran, among others.",
+    "coverageType": "CONDITION",
+    "system": "HUMAN SYSTEMS",
+    "topic": "health, politics",
+    "analyticalRole": [
+      "OUTCOME"
+    ],
+    "evidenceType": [
+      "Colonial documentary accounts via scholarly synthesis"
+    ],
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "sourceLocator": "Printed p.49, note 78, citing Vickers 1989 p.67 and Linda Connor communication",
+    "uncertainty": "Indirect source chain and unspecified disease; no cholera diagnosis or eruption-caused epidemic is established.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": true,
+    "gapRefs": [
+      "GAP-004"
+    ],
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0058",
+    "title": "French artists arrive in Rio de Janeiro",
+    "startDate": "1816-03-26",
+    "endDate": "1816-03-26",
+    "datePrecision": "EXACT_DAY",
+    "continent": "South America",
+    "region": "Rio de Janeiro, Brazil",
+    "historicalEntity": "United Kingdom of Portugal, Brazil and the Algarves",
+    "place": "Rio de Janeiro, Brazil",
+    "observation": "French artists arrived at Rio aboard the Calphe from Le Havre on 26 March; the Gazeta reported their arrival on 6 April.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "culture, migration, education",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Institutional historical interpretation"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-033"
+    ],
+    "sourceLocator": "Opening paragraph under A missão artística francesa; cites Gazeta do Rio de Janeiro, 6 April 1816",
+    "uncertainty": "The later label 'mission' does not establish that all artists arrived under a single formal state invitation.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-005"
+    ],
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0059",
+    "title": "Brazilian decree funds artists toward proposed instruction",
+    "startDate": "1816-08-12",
+    "endDate": "1816-08-12",
+    "datePrecision": "EXACT_DAY",
+    "continent": "South America",
+    "region": "Rio de Janeiro, Brazil",
+    "historicalEntity": "United Kingdom of Portugal, Brazil and the Algarves",
+    "place": "Rio de Janeiro, Brazil",
+    "observation": "The royal decree granted annual pensions totaling 8:032$000 to foreign artists toward planned instruction linking arts, mechanical trades and economic development.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "education, state finance, industry",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Primary legislative transcription"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-034"
+    ],
+    "sourceLocator": "Coleção de Leis do Império do Brasil 1816, vol.1 p.77; operative paragraph granting pensions",
+    "uncertainty": "This is legal authorization and stated purpose, not evidence the proposed school opened in 1816 or improved agricultural output.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-005"
+    ],
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0060",
+    "title": "Mendoza workshops supply the Andean campaign",
+    "startDate": "1816",
+    "endDate": "1816",
+    "datePrecision": "YEAR",
+    "continent": "South America",
+    "region": "Mendoza, Río de la Plata",
+    "historicalEntity": "United Provinces of the Río de la Plata",
+    "place": "Mendoza, Río de la Plata",
+    "observation": "By about 1816 Mendoza’s maestranza supplied equipment, weapons and ammunition for the Army of the Andes; the heritage account estimates approximately 371 workers.",
+    "coverageType": "CONDITION",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "military logistics, manufacturing, labor",
+    "analyticalRole": [
+      "STATE",
+      "RESILIENCE"
+    ],
+    "evidenceType": [
+      "Institutional historical interpretation"
+    ],
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-035"
+    ],
+    "sourceLocator": "Paragraphs beginning La Maestranza se convirtió hacia 1816 and En total",
+    "uncertainty": "The source says 'hacia 1816'; the workforce total is approximate, not a dated census.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-005"
+    ],
+    "value": 371,
+    "unit": "workers, approximate heritage-account estimate",
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0061",
+    "title": "Gifts dispatched from Sydney for the Hawaiian king",
+    "startDate": "1816-05-01",
+    "endDate": "1816-05-01",
+    "datePrecision": "EXACT_DAY",
+    "continent": "Oceania",
+    "region": "Sydney–Hawaiʻi–Northwest America–China",
+    "historicalEntity": "New South Wales colony / regional Pacific societies",
+    "place": "Sydney–Hawaiʻi–Northwest America–China",
+    "observation": "Macquarie sent gifts and a dispatch for the Hawaiian king aboard the American schooner Traveller, whose owner promised to call at Hawaiʻi during a voyage toward China via Northwest America.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "diplomacy, maritime networks",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Primary diary transcription"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-037"
+    ],
+    "sourceLocator": "Wednesday 1 May",
+    "uncertainty": "This documents dispatch and intended route, not successful delivery or Hawaiian reception.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-006"
+    ],
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0062",
+    "title": "Tahiti pork cargo reaches Sydney",
+    "startDate": "1816-05-28",
+    "endDate": "1816-05-28",
+    "datePrecision": "EXACT_DAY",
+    "continent": "Oceania",
+    "region": "Tahiti–Sydney",
+    "historicalEntity": "New South Wales colony / regional Pacific societies",
+    "place": "Tahiti–Sydney",
+    "observation": "The colonial brig Governor Macquarie reached Sydney from Tahiti carrying pork.",
+    "coverageType": "EVENT",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "food trade, maritime networks",
+    "analyticalRole": [
+      "STATE"
+    ],
+    "evidenceType": [
+      "Primary diary transcription"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-037"
+    ],
+    "sourceLocator": "Tuesday 28 May",
+    "uncertainty": "No cargo quantity, producer perspective or transaction terms appear in this entry; no demonstrated connection to subsequent flooding.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-006",
+      "GAP-007"
+    ],
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0063",
+    "title": "Heavy rain and gales reported near the Hawkesbury",
+    "startDate": "1816-05-31",
+    "endDate": "1816-05-31",
+    "datePrecision": "EXACT_DAY",
+    "continent": "Oceania",
+    "region": "Hawkesbury / Nepean / South Creek, Australia",
+    "historicalEntity": "New South Wales colony / regional Pacific societies",
+    "place": "Hawkesbury / Nepean / South Creek, Australia",
+    "observation": "Macquarie recorded four days of heavy rain and three days of southeast gales and anticipated river inundation.",
+    "coverageType": "EVENT",
+    "system": "EARTH",
+    "topic": "weather, hydrology",
+    "analyticalRole": [
+      "SHOCK"
+    ],
+    "evidenceType": [
+      "Primary diary transcription"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-037"
+    ],
+    "sourceLocator": "Friday 31 May",
+    "uncertainty": "Qualitative local report; no instrumental rainfall amount or volcanic attribution.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-006"
+    ],
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0064",
+    "title": "Flood reports forecast wheat and maize losses",
+    "startDate": "1816-06-02",
+    "endDate": "1816-06-03",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Oceania",
+    "region": "Windsor / Hawkesbury / Nepean, Australia",
+    "historicalEntity": "New South Wales colony / regional Pacific societies",
+    "place": "Windsor / Hawkesbury / Nepean, Australia",
+    "observation": "Reports received by Macquarie described flooding from 31 May and expected losses of late-sown wheat, much early wheat and maize still in fields.",
+    "coverageType": "CONDITION",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "hydrology, agriculture, housing",
+    "analyticalRole": [
+      "PRESSURE"
+    ],
+    "evidenceType": [
+      "Primary diary transcription"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-038"
+    ],
+    "sourceLocator": "Sunday 2 June and Monday 3 June",
+    "uncertainty": "Crop losses are contemporary expectations, not measured final totals; diary flood heights lack a modern datum.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-006"
+    ],
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0065",
+    "title": "Official accounts of Appin conflict",
+    "startDate": "1816-06-08",
+    "endDate": "1816-06-08",
+    "datePrecision": "EXACT_DAY",
+    "continent": "Oceania",
+    "region": "New South Wales–London",
+    "historicalEntity": "New South Wales colony / regional Pacific societies",
+    "place": "New South Wales–London",
+    "observation": "The Australian Museum identifies discrepancies between Wallis’s attack account and Macquarie’s 8 June dispatch claiming non-surrender and resistance.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "information, colonial governance, historical evidence",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Institutional historical interpretation"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-020"
+    ],
+    "sourceLocator": "Macquarie to 3rd Earl Bathurst despatch",
+    "uncertainty": "This is a documented conflict between representations, not two independently verified versions of the attack.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-006"
+    ],
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0066",
+    "title": "Captured Aboriginal children transferred to an institution",
+    "startDate": "1816-06-06",
+    "endDate": "1816-06-06",
+    "datePrecision": "EXACT_DAY",
+    "continent": "Oceania",
+    "region": "Sydney–Parramatta, Australia",
+    "historicalEntity": "New South Wales colony / regional Pacific societies",
+    "place": "Sydney–Parramatta, Australia",
+    "observation": "Macquarie recorded transferring four recently captured Aboriginal children to Parramatta’s Native Institution.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "education, colonial coercion, family separation",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Primary diary transcription"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-038"
+    ],
+    "sourceLocator": "Thursday 6 June",
+    "uncertainty": "His assertion that children wished to attend is a colonial claim made in a captivity context; it does not independently establish free consent.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-006"
+    ],
+    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources."
+  },
+  {
+    "id": "WT-1816-0067",
+    "title": "Dutch mission reaches the Asante court",
+    "startDate": "1816-05-22",
+    "endDate": "1816-05-22",
+    "datePrecision": "EXACT_DAY",
+    "continent": "Africa",
+    "region": "Kumase, Asante (present-day Ghana)",
+    "historicalEntity": "Asante / Dutch Gold Coast administration",
+    "place": "Kumase, Asante (present-day Ghana)",
+    "observation": "Sheales places Willem Huydecoper’s arrival in Kumase on 22 May 1816, after Daendels dispatched him to negotiate for the Dutch trading interests.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "diplomacy, trade, governance",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Historical scholarship interpreting documentary records"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "sourceLocator": "Printed p43; Daendels1815–1817 [1964], p111 and p242",
+    "uncertainty": "European company correspondence frames the mission; Asante intentions require separate evidence. Dispatch dates differ between narrative and diary bibliographies; retain arrival date only.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-001"
+    ],
+    "latitude": 6.6885,
+    "longitude": -1.6244
+  },
+  {
+    "id": "WT-1816-0068",
+    "title": "Asante ruler questions interruption of imported silverware",
+    "startDate": "1816-05-24",
+    "endDate": "1816-05-24",
+    "datePrecision": "EXACT_DAY",
+    "continent": "Africa",
+    "region": "Kumase, Asante",
+    "historicalEntity": "Asante / Dutch Gold Coast administration",
+    "place": "Kumase, Asante",
+    "observation": "Huydecoper’s 24 May diary records the Asantehene asking why fine silverware no longer arrived; the envoy attributed the interruption to recent warfare and said reopened sea routes would restore supply.",
+    "coverageType": "EVENT",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "trade, material_culture, diplomacy",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Historical scholarship interpreting documentary records"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "sourceLocator": "Printed p171; Huydecoper1816–1817 [1962], p19",
+    "uncertainty": "The supply explanation is the envoy’s contemporary explanation, not independently measured shipping volume. No Tambora connection.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-001"
+    ],
+    "latitude": 6.6885,
+    "longitude": -1.6244
+  },
+  {
+    "id": "WT-1816-0069",
+    "title": "Daendels sends imported silver as a diplomatic gift",
+    "startDate": "1816",
+    "endDate": "1816",
+    "datePrecision": "YEAR",
+    "continent": "Africa",
+    "region": "Elmina–Kumase, Gold Coast/Asante",
+    "historicalEntity": "Asante / Dutch Gold Coast administration",
+    "place": "Elmina–Kumase, Gold Coast/Asante",
+    "observation": "Sheales reports that Daendels sent the Asantehene a silver cup received from Holland in December 1816.",
+    "coverageType": "CONDITION",
+    "system": "POWER & CULTURE",
+    "topic": "diplomacy, trade, material_culture",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Historical scholarship interpreting documentary records"
+    ],
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "sourceLocator": "Printed p171; Daendels1815–1817 [1964], p273",
+    "uncertainty": "December dates receipt of the cup; exact dispatch date is unspecified. Diplomatic rivalry is scholarly interpretation. Stored year refers to the receipt/dispatch episode; no exact dispatch month is asserted.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-001"
+    ],
+    "latitude": 5.0847,
+    "longitude": -1.3509
+  },
+  {
+    "id": "WT-1816-0070",
+    "title": "Dispatch reports Radama’s relatives in Mauritius",
+    "startDate": "1816-09-12",
+    "endDate": "1816-09-12",
+    "datePrecision": "DOCUMENT_DATE",
+    "continent": "Africa",
+    "region": "Port Louis, Mauritius",
+    "historicalEntity": "Imerina / Madagascar / British Mauritius",
+    "place": "Port Louis, Mauritius",
+    "observation": "Farquhar’s12September 1816 dispatch reports the arrival in Mauritius of two young relatives whom he describes as Radama’s brothers, and plans closer relations with Madagascar.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "diplomacy, education, maritime_connections",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Primary correspondence via historical transcription"
+    ],
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-041"
+    ],
+    "sourceLocator": "Chapter4, reproduced letter beginning In a letter from the Mauritius dated September12th1816",
+    "uncertainty": "The date is the dispatch date, not necessarily arrival. Other historical accounts describe nephews: retain the source’s designation as attributed language until identities are resolved. Colonial language about civilization is authorial rhetoric.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-002"
+    ],
+    "latitude": -20.16,
+    "longitude": 57.5,
+    "dateBasis": "Dispatch date; arrival occurred by this date."
+  },
+  {
+    "id": "WT-1816-0071",
+    "title": "Lesage mission connects Mauritius and Imerina",
+    "startDate": "1816-11",
+    "endDate": "1817-04",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Africa",
+    "region": "Imerina, Madagascar",
+    "historicalEntity": "Imerina / Madagascar / British Mauritius",
+    "place": "Imerina, Madagascar",
+    "observation": "Valette identifies Captain Lesage’s mission to Radama as spanning November 1816–April 1817.",
+    "coverageType": "CONDITION",
+    "system": "POWER & CULTURE",
+    "topic": "diplomacy, governance, maritime_connections",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Historical scholarship interpreting documentary records"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-040"
+    ],
+    "sourceLocator": "Printed p572, footnote1, reference to Valette’s1969 study La mission du capitaine Lesage auprès de Radama Ier",
+    "uncertainty": "Month-range mission chronology; no agricultural or climate effects established.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-002"
+    ],
+    "latitude": -18.8792,
+    "longitude": 47.5079
+  },
+  {
+    "id": "WT-1816-0072",
+    "title": "Preliminary Radama–Lesage agreement",
+    "startDate": "1817-02-04",
+    "endDate": "1817-02-04",
+    "datePrecision": "EXACT_DAY",
+    "continent": "Africa",
+    "region": "Imerina, Madagascar",
+    "historicalEntity": "Imerina / Madagascar / British Mauritius",
+    "place": "Imerina, Madagascar",
+    "observation": "Valette examines the peace agreement reported as concluded between Radama and Lesage on4February 1817, with subsequent approval by the governor of Mauritius envisaged.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "diplomacy, governance",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Historical scholarship interpreting documentary records"
+    ],
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-040"
+    ],
+    "sourceLocator": "Printed p572, opening paragraph and Ellis quote; Ellis1838 History of Madagascar II p158",
+    "uncertainty": "Do not conflate this preliminary agreement with23October 1817 anti-slave-export treaty. First page reports earlier authors; remaining article should be checked before asserting exact legal scope.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": true,
+    "gapRefs": [
+      "GAP-002"
+    ],
+    "latitude": -18.8792,
+    "longitude": 47.5079
+  },
+  {
+    "id": "WT-1816-0073",
+    "title": "Radama prohibits slave export through a treaty proclamation",
+    "startDate": "1817-10-23",
+    "endDate": "1817-10-23",
+    "datePrecision": "EXACT_DAY",
+    "continent": "Africa",
+    "region": "Tamatave (Toamasina), Madagascar",
+    "historicalEntity": "Imerina / Madagascar / British Mauritius",
+    "place": "Tamatave (Toamasina), Madagascar",
+    "observation": "Rossi identifies Radama’s23October 1817 proclamation as an anti-slave-trade treaty signed at Tamatave by his commissioners and approved by Farquhar.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "law, coercion, diplomacy, maritime_trade",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Historical scholarship interpreting documentary records"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-042"
+    ],
+    "sourceLocator": "Section The Problem of Apparent Homogeneity, Madagascar discussion; footnotes56–59",
+    "uncertainty": "Legal prohibition does not demonstrate effective enforcement or abolition of domestic slavery. Promised agricultural benefits in the text are political claims, not proof of famine or successful cultivation.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": true,
+    "gapRefs": [
+      "GAP-002"
+    ],
+    "latitude": -18.1492,
+    "longitude": 49.4023
+  },
+  {
+    "id": "WT-1816-0074",
+    "title": "Atlantic–Indian shipping routes show modest 1816 cooling",
+    "startDate": "1816",
+    "endDate": "1816",
+    "datePrecision": "YEAR",
+    "continent": "Oceans",
+    "region": "Atlantic and Indian Ocean East India Company shipping corridors",
+    "historicalEntity": "Multiple maritime regions",
+    "place": "Atlantic and Indian Ocean East India Company shipping corridors",
+    "observation": "East India Company ship thermometer records place 1816 as the coldest annual value in the1794–1833 regional series, about0.6°C below that period’s average.",
+    "coverageType": "CONDITION",
+    "system": "EARTH",
+    "topic": "climate, maritime_observation",
+    "analyticalRole": [
+      "STATE"
+    ],
+    "evidenceType": [
+      "Marine air-temperature instrumental records analyzed in scholarship"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-044",
+      "SRC-019"
+    ],
+    "sourceLocator": "Raible2016 Climate response in observations, marine paragraphs citing Brohan2012 ref52; Brohan2012 abstract describes900 logbooks and273000 weather records",
+    "uncertainty": "Shipboard air temperature, not sea-surface temperature; coverage follows trade routes, not a complete basin average. Instrument practices and sampling matter.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-002",
+      "GAP-007"
+    ],
+    "latitude": -10,
+    "longitude": 50,
+    "value": -0.6,
+    "unit": "degrees Celsius, reconstructed shipboard air anomaly",
+    "baseline": "1794–1833 shipping-corridor series average"
+  },
+  {
+    "id": "WT-1816-0075",
+    "title": "Indian Ocean coral reconstructions include a cold 1807–1816 interval",
+    "startDate": "1807",
+    "endDate": "1816",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Oceans",
+    "region": "Tropical Indian Ocean reconstruction target20°N–15°S,40°E–100°E",
+    "historicalEntity": "Multiple maritime regions",
+    "place": "Tropical Indian Ocean reconstruction target20°N–15°S,40°E–100°E",
+    "observation": "Tierney’s Indian Ocean reconstruction ensemble shows 1807–1816 about0.8°C below1961–1990, with cooling present in multiple coral series.",
+    "coverageType": "CONDITION",
+    "system": "EARTH",
+    "topic": "climate, marine_proxy",
+    "analyticalRole": [
+      "STATE"
+    ],
+    "evidenceType": [
+      "Coral isotope proxy reconstruction"
+    ],
+    "confidence": "Medium",
+    "sourceRefs": [
+      "SRC-043"
+    ],
+    "sourceLocator": "Section3.1 Indian Ocean, printed p233; target definition p231",
+    "uncertainty": "All early nineteenth-century coral records useδ18O, also sensitive to seawater isotopes/salinity. CE validation is below zero before 1840. This is a decade average, not an 1816 measurement or proof of Tambora-only causation.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-002",
+      "GAP-007"
+    ],
+    "latitude": 0,
+    "longitude": 70,
+    "extendedContextReason": "Multi-year proxy baseline overlaps 1816; retained to avoid inventing an annual value.",
+    "value": -0.8,
+    "unit": "degrees Celsius, approximate decadal SST reconstruction anomaly",
+    "baseline": "1961–1990"
+  },
+  {
+    "id": "WT-1816-0076",
+    "title": "Greenland Sea 1816–1817 contrasts with distant cooling",
+    "startDate": "1816",
+    "endDate": "1817",
+    "datePrecision": "SEASON_RANGE",
+    "continent": "Oceans",
+    "region": "Greenland Sea/Fram Strait whaling grounds",
+    "historicalEntity": "Multiple maritime regions",
+    "place": "Greenland Sea/Fram Strait whaling grounds",
+    "observation": "Scoresby’s voyage observations show summers 1816 and 1817 warmer and less ice-covered than the preceding years in the Greenland Sea.",
+    "coverageType": "CONDITION",
+    "system": "EARTH",
+    "topic": "climate, sea_ice, whaling, navigation",
+    "analyticalRole": [
+      "STATE"
+    ],
+    "evidenceType": [
+      "Contemporary ship logs analyzed in scholarship"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-045"
+    ],
+    "sourceLocator": "Abstract p315; section2 p316; Figure2 p317",
+    "uncertainty": "Relative to preceding voyages, not proof the basin was warmer than a modern baseline. Routes followed the ice edge; measurement exposure is imperfectly documented. Do not infer Tambora caused local warming.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-007"
+    ],
+    "latitude": 77,
+    "longitude": 0
+  },
+  {
+    "id": "WT-1816-0077",
+    "title": "Modelled upper-ocean cooling persists into 1816–1817",
+    "startDate": "1816",
+    "endDate": "1817",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Oceans",
+    "region": "Global ocean",
+    "historicalEntity": "Multiple maritime regions",
+    "place": "Global ocean",
+    "observation": "CESM Last Millennium Ensemble simulations peak in upper100m cold anomalies in early 1816 and full-depth ocean heat loss near7×10²²J in 1817.",
+    "coverageType": "CONDITION",
+    "system": "EARTH",
+    "topic": "climate, ocean_heat_storage, hydrological_cycle",
+    "analyticalRole": [
+      "STATE"
+    ],
+    "evidenceType": [
+      "Modern ocean-model simulation"
+    ],
+    "confidence": "Medium-High",
+    "sourceRefs": [
+      "SRC-046"
+    ],
+    "sourceLocator": "Results Figures5–6; Methods Model runs describes18 volcanically forced members",
+    "uncertainty": "Simulation output, not direct historical ocean measurement. Regional response, aerosol forcing, model physics and earlier 1809 forcing remain uncertain. Supports an ocean-memory mechanism, not quantified historical maritime economic harm.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-007"
+    ],
+    "latitude": 0,
+    "longitude": -30
+  },
+  {
+    "id": "WT-1816-0078",
+    "title": "Méduse expedition and delayed Saint-Louis restoration",
+    "startDate": "1816",
+    "endDate": "1817-06-25",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Africa",
+    "region": "Arguin Bank/Saint-Louis, Senegal",
+    "historicalEntity": "Saint-Louis / French and British colonial administrations",
+    "place": "Arguin Bank/Saint-Louis, Senegal",
+    "observation": "UNESCO’s nomination chronology records the 1816 Méduse expedition to recover Saint-Louis and return occurring only in 1817. BCEAO dates France’s renewed presence to25June 1817.",
+    "coverageType": "CONDITION",
+    "system": "POWER & CULTURE",
+    "topic": "maritime_transport, governance, colonial_diplomacy",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Historical scholarship interpreting documentary records"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-047",
+      "SRC-048"
+    ],
+    "sourceLocator": "UNESCO AnnexI Aperçu historique,1816 entry; BCEAO VolumeI p129 SectionI",
+    "uncertainty": "Institutional syntheses connect wreck and delay; broader logistical or diplomatic factors require contemporary correspondence. No eruption or unusual weather explanation established.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-001"
+    ],
+    "latitude": 16.03,
+    "longitude": -16.5
   }
 ]

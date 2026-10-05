@@ -188,11 +188,15 @@
     "nodeIds": [
       "WT-1816-0026",
       "WT-1816-0027",
-      "WT-1816-0028"
+      "WT-1816-0028",
+      "WT-1816-0066",
+      "WT-1816-0065"
     ],
     "relationshipIds": [
       "REL-0020",
-      "REL-0021"
+      "REL-0021",
+      "REL-0042",
+      "REL-0043"
     ],
     "mechanisms": [],
     "mechanismIds": [
@@ -207,11 +211,13 @@
     "subtitle": "South America · 1815–1817 context",
     "description": "Follow 1816 organization into the 1817 crossing and battle. Preparation is contributory; battle sequence is chronological.",
     "nodeIds": [
+      "WT-1816-0060",
       "WT-1816-0029",
       "WT-1816-0030",
       "WT-1816-0031"
     ],
     "relationshipIds": [
+      "REL-0046",
       "REL-0022",
       "REL-0023"
     ],
@@ -221,5 +227,308 @@
     ],
     "scope": "South America",
     "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-DUTCH-RELIEF",
+    "title": "Grain reserves and imports face delays and access limits",
+    "subtitle": "Netherlands, 1816–1817",
+    "description": "Compare stock monitoring, imports and subsidized sales. Policy intentions do not establish relief effectiveness.",
+    "nodeIds": [
+      "WT-1816-0032",
+      "WT-1816-0033",
+      "WT-1816-0034",
+      "WT-1816-0035"
+    ],
+    "relationshipIds": [
+      "REL-0024",
+      "REL-0025",
+      "REL-0026"
+    ],
+    "mechanismIds": [
+      "MECH-001",
+      "MECH-008"
+    ],
+    "mechanisms": [],
+    "scope": "Europe",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-SWISS-VULNERABILITY",
+    "title": "Crop sensitivity does not fully explain human vulnerability",
+    "subtitle": "Switzerland, 1816–1818",
+    "description": "Model estimates and observed nutrition patterns are distinct. Crop differences and social mediation qualify a simple production-to-hunger chain.",
+    "nodeIds": [
+      "WT-1816-0036",
+      "WT-1816-0037",
+      "WT-1816-0038"
+    ],
+    "relationshipIds": [
+      "REL-0027",
+      "REL-0028"
+    ],
+    "mechanismIds": [
+      "MECH-001",
+      "MECH-005"
+    ],
+    "mechanisms": [],
+    "scope": "Europe",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-EUROPE-ATTRIBUTION",
+    "title": "Cold and rain have different causal attribution",
+    "subtitle": "Europe, summer 1816",
+    "description": "Modern simulations distinguish volcanic cooling from rainfall’s stronger dependence on circulation. Attribution probabilities are model-specific.",
+    "nodeIds": [
+      "WT-1816-0008",
+      "WT-1816-0039",
+      "WT-1816-0040"
+    ],
+    "relationshipIds": [
+      "REL-0029",
+      "REL-0030"
+    ],
+    "mechanismIds": [
+      "MECH-005"
+    ],
+    "mechanisms": [],
+    "scope": "Europe",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-VIRGINIA-CROPS",
+    "title": "Local climate measurements and crop expectations",
+    "subtitle": "Virginia, spring–summer 1816",
+    "description": "Follow contemporaneous weather observations into reported fruit damage and a maize forecast. Forecasts are preserved as forecasts.",
+    "nodeIds": [
+      "WT-1816-0041",
+      "WT-1816-0042",
+      "WT-1816-0043",
+      "WT-1816-0044"
+    ],
+    "relationshipIds": [
+      "REL-0031",
+      "REL-0032"
+    ],
+    "mechanismIds": [
+      "MECH-001"
+    ],
+    "mechanisms": [],
+    "scope": "North America",
+    "confidence": "Medium"
+  },
+  {
+    "id": "THREAD-KOREA-RECOVERY",
+    "title": "Korean harvest counterexample: climate anomaly with rice recovery",
+    "subtitle": "Asia · 1816 and dated context",
+    "description": "Records distinguish reported conditions, administrative classifications and interpretations; no volcanic disease attribution is asserted.",
+    "nodeIds": [
+      "WT-1816-0048",
+      "WT-1816-0046",
+      "WT-1816-0045",
+      "WT-1816-0047"
+    ],
+    "relationshipIds": [
+      "REL-0033",
+      "REL-0034",
+      "REL-0035"
+    ],
+    "mechanismIds": [
+      "MECH-001",
+      "MECH-005"
+    ],
+    "mechanisms": [],
+    "scope": "Asia",
+    "confidence": "Medium"
+  },
+  {
+    "id": "THREAD-BENGAL-CHOLERA",
+    "title": "Bengal epidemic evidence without forced volcanic attribution",
+    "subtitle": "Asia · 1816 and dated context",
+    "description": "Records distinguish reported conditions, administrative classifications and interpretations; no volcanic disease attribution is asserted.",
+    "nodeIds": [
+      "WT-1816-0050",
+      "WT-1816-0051",
+      "WT-1816-0052"
+    ],
+    "relationshipIds": [
+      "REL-0036",
+      "REL-0037"
+    ],
+    "mechanismIds": [
+      "MECH-010"
+    ],
+    "mechanisms": [],
+    "scope": "Asia",
+    "confidence": "Medium"
+  },
+  {
+    "id": "THREAD-BALI-RECOVERY",
+    "title": "Bali direct ash damage and prolonged subsistence-health crisis",
+    "subtitle": "Asia · 1816 and dated context",
+    "description": "Records distinguish reported conditions, administrative classifications and interpretations; no volcanic disease attribution is asserted.",
+    "nodeIds": [
+      "WT-1816-0056",
+      "WT-1816-0055",
+      "WT-1816-0057"
+    ],
+    "relationshipIds": [
+      "REL-0038",
+      "REL-0039"
+    ],
+    "mechanismIds": [
+      "MECH-001",
+      "MECH-010"
+    ],
+    "mechanisms": [],
+    "scope": "Asia",
+    "confidence": "Medium"
+  },
+  {
+    "id": "THREAD-IRISH-FEVER",
+    "title": "Irish scarcity and fever response",
+    "subtitle": "Europe · 1816 and dated context",
+    "description": "Records distinguish reported conditions, administrative classifications and interpretations; no volcanic disease attribution is asserted.",
+    "nodeIds": [
+      "WT-1816-0053",
+      "WT-1816-0054"
+    ],
+    "relationshipIds": [
+      "REL-0040"
+    ],
+    "mechanismIds": [
+      "MECH-010",
+      "MECH-008"
+    ],
+    "mechanisms": [],
+    "scope": "Europe",
+    "confidence": "Medium"
+  },
+  {
+    "id": "THREAD-BRAZIL-PATRONAGE",
+    "title": "Foreign artists → royal patronage → proposed applied instruction",
+    "subtitle": "South America · 1816 and dated context",
+    "description": "Arrival, funding authorization and stated industrial aims are distinct from an institution actually opening.",
+    "nodeIds": [
+      "WT-1816-0058",
+      "WT-1816-0059"
+    ],
+    "relationshipIds": [
+      "REL-0041"
+    ],
+    "mechanismIds": [
+      "MECH-009"
+    ],
+    "mechanisms": [],
+    "scope": "South America",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-HAWKESBURY-FLOOD",
+    "title": "Heavy rain → river inundation → threatened grain supply",
+    "subtitle": "Oceania · 1816 and dated context",
+    "description": "Local weather and inundation threaten food supply. Price effects and final harvest losses remain open.",
+    "nodeIds": [
+      "WT-1816-0063",
+      "WT-1816-0064"
+    ],
+    "relationshipIds": [
+      "REL-0044"
+    ],
+    "mechanismIds": [
+      "MECH-001"
+    ],
+    "mechanisms": [],
+    "scope": "Oceania",
+    "confidence": "Medium-High"
+  },
+  {
+    "id": "THREAD-PACIFIC-NETWORKS",
+    "title": "Pacific routes carry food and diplomatic objects",
+    "subtitle": "Oceania · 1816 and dated context",
+    "description": "A comparison of two maritime exchanges, not a common causal chain. Colonial reports do not supply destination perspectives.",
+    "nodeIds": [
+      "WT-1816-0061",
+      "WT-1816-0062"
+    ],
+    "relationshipIds": [
+      "REL-0045"
+    ],
+    "mechanismIds": [
+      "MECH-011"
+    ],
+    "mechanisms": [],
+    "scope": "Oceania",
+    "confidence": "Medium"
+  },
+  {
+    "id": "THREAD-ASANTE-EXCHANGE",
+    "title": "Asante diplomacy, restored sea routes and prestige goods",
+    "subtitle": "Africa · 1816 and dated context",
+    "description": "Independent of Tambora; envoy’s war explanation is attributed, not independently established.",
+    "nodeIds": [
+      "WT-1816-0067",
+      "WT-1816-0068",
+      "WT-1816-0069"
+    ],
+    "relationshipIds": [
+      "REL-0047",
+      "REL-0048"
+    ],
+    "mechanismIds": [
+      "MECH-011"
+    ],
+    "mechanisms": [],
+    "scope": "Africa",
+    "confidence": "Medium"
+  },
+  {
+    "id": "THREAD-MADAGASCAR-DIPLOMACY",
+    "title": "Mauritius–Madagascar diplomacy and limits of anti-slave-trade law",
+    "subtitle": "Africa · 1816 and dated context",
+    "description": "Preserve Malagasy agency; laws are not enforcement results. No climate attribution.",
+    "nodeIds": [
+      "WT-1816-0070",
+      "WT-1816-0071",
+      "WT-1816-0072",
+      "WT-1816-0073"
+    ],
+    "relationshipIds": [
+      "REL-0049",
+      "REL-0050",
+      "REL-0051"
+    ],
+    "mechanismIds": [
+      "MECH-011"
+    ],
+    "mechanisms": [],
+    "scope": "Africa",
+    "confidence": "Medium"
+  },
+  {
+    "id": "THREAD-OCEAN-CONTRASTS",
+    "title": "Marine cooling, local contrasts and ocean memory",
+    "subtitle": "Oceans · 1816 and dated context",
+    "description": "Do not convert proxy, air thermometer and simulated heat content into interchangeable measurements; do not use basin-scale cooling to infer local crop or fishing failure.",
+    "nodeIds": [
+      "WT-1816-0008",
+      "WT-1816-0074",
+      "WT-1816-0075",
+      "WT-1816-0076",
+      "WT-1816-0077"
+    ],
+    "relationshipIds": [
+      "REL-0052",
+      "REL-0053",
+      "REL-0054",
+      "REL-0055"
+    ],
+    "mechanismIds": [
+      "MECH-005",
+      "MECH-012"
+    ],
+    "mechanisms": [],
+    "scope": "Oceans",
+    "confidence": "Medium"
   }
 ]

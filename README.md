@@ -2,9 +2,9 @@
 
 History isn't a collection of events. It's the threads that connect them.
 
-WorldThreads v0.3 explores the 1816 world through **Source → Observation → Relationship → Thread → Mechanism**. The context window includes antecedents and later outcomes; the dataset count includes these records.
+WorldThreads v0.4 explores the 1816 world through **Source → Observation → Relationship → Thread → Mechanism**. The main context window includes antecedents and later outcomes; the dataset count includes these records. A clearly labeled 1807–1816 coral reconstruction is retained because it cannot responsibly be presented as an annual 1816 measurement.
 
-The dark-mode prototype contains 31 observations, 21 sources, 23 relationship claims, nine curated threads and seven mechanism hypotheses. It covers six continents, with major research gaps still open. New threads cover local Tambora damage and relief, reconstructed monsoon drying, colonial orders and violence at Appin, and preparation for the Andean campaign.
+The dark-mode prototype contains 78 observations, 48 sources, 55 relationship claims, 23 curated threads and 12 mechanism hypotheses. It covers six continents plus marine records, with major research gaps still open. New coverage includes Asante exchange, Madagascar diplomacy, Korean harvest recovery, seasonal Himalayan drought, Bengal cholera reports, Bali’s prolonged crisis, Dutch relief, Swiss crop models, Virginia measurements, Brazil patronage, Andean workshops, Australian flooding and Pacific exchange.
 
 ## Explore locally
 
@@ -14,7 +14,7 @@ python3 -m http.server 8000
 
 Open http://localhost:8000. No build or runtime package installation is required.
 
-Search by place, topic, date or evidence type; combine region and system filters. Regional markers filter gathered evidence. Choose a thread, open observations, or click a connection to examine its sources, causal status, alternatives and lag. Follow incoming/outgoing connections from the evidence dialog. Mechanisms expose possible buffers and related threads. Similarity is a hypothesis, not proof of a shared cause.
+Search by place, topic, date or evidence type; combine region and system filters. Regional markers filter gathered evidence. Choose a thread, open observations, or click a connection to examine its sources, causal status, alternatives and lag. Follow incoming/outgoing connections from the evidence dialog. Filter evidence types and 1816 coverage separately from earlier/later context; sort observations chronologically or by title. Research gaps link to added records, related threads and remaining questions. Mechanisms expose possible buffers, sourced counterexamples and related threads. Similarity is a hypothesis, not proof of a shared cause.
 
 ## Verify
 
@@ -32,3 +32,7 @@ node tests/explorer.cjs
 Set `WORLDTHREADS_URL` to use another local port. Browser tests check every rendered relationship endpoint, claim dialogs, filtering, keyboard access, evidence traversal and mobile width. Validation checks graph references and evidence metadata; it cannot certify historical truth.
 
 Research stress-test findings and limitations are in [docs/RESEARCH_AUDIT.md](docs/RESEARCH_AUDIT.md). The model is documented in [docs/DATA_MODEL.md](docs/DATA_MODEL.md) and the project scope in [docs/PROJECT_SPEC.md](docs/PROJECT_SPEC.md).
+
+### Exploring linked facts
+
+Opening a fact focuses on its incoming and outgoing connections. Follow a neighboring fact to recenter, select “Why linked?” to inspect the relationship, and use Back or the exploration breadcrumbs to retrace your steps. Evidence and record details have separate views; sources expand on demand. Navigation history is not presented as a causal chain.

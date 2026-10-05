@@ -29,10 +29,24 @@
     ],
     "prototypeThreads": [
       "THREAD-CENTRAL-EUROPE-FOOD",
-      "THREAD-SUMBAWA"
+      "THREAD-SUMBAWA",
+      "THREAD-DUTCH-RELIEF",
+      "THREAD-SWISS-VULNERABILITY",
+      "THREAD-VIRGINIA-CROPS",
+      "THREAD-KOREA-RECOVERY",
+      "THREAD-BALI-RECOVERY",
+      "THREAD-HAWKESBURY-FLOOD"
     ],
     "status": "Hypothesis",
-    "counterexamples": []
+    "counterexamples": [
+      "Good Korean rice harvest in 1816 challenges universal crop failure.",
+      "Swiss modeled yield losses alone do not explain the malnutrition gradient."
+    ],
+    "counterexampleObservationIds": [
+      "WT-1816-0045",
+      "WT-1816-0037",
+      "WT-1816-0038"
+    ]
   },
   {
     "id": "MECH-002",
@@ -60,7 +74,8 @@
       "THREAD-GULF-MAINE"
     ],
     "status": "Hypothesis",
-    "counterexamples": []
+    "counterexamples": [],
+    "counterexampleObservationIds": []
   },
   {
     "id": "MECH-003",
@@ -91,7 +106,8 @@
       "THREAD-ALPINE-HYDRO"
     ],
     "status": "Hypothesis",
-    "counterexamples": []
+    "counterexamples": [],
+    "counterexampleObservationIds": []
   },
   {
     "id": "MECH-004",
@@ -117,7 +133,8 @@
       "THREAD-CLIMATE-CULTURE"
     ],
     "status": "Hypothesis",
-    "counterexamples": []
+    "counterexamples": [],
+    "counterexampleObservationIds": []
   },
   {
     "id": "MECH-005",
@@ -141,13 +158,23 @@
       "institutional response"
     ],
     "prototypeThreads": [
-      "THREAD-CHINA-CLIMATE",
       "THREAD-GULF-MAINE",
       "THREAD-CENTRAL-EUROPE-FOOD",
-      "THREAD-MONSOON"
+      "THREAD-CHINA-CLIMATE",
+      "THREAD-MONSOON",
+      "THREAD-SWISS-VULNERABILITY",
+      "THREAD-EUROPE-ATTRIBUTION",
+      "THREAD-KOREA-RECOVERY",
+      "THREAD-OCEAN-CONTRASTS"
     ],
     "status": "Hypothesis",
-    "counterexamples": []
+    "counterexamples": [
+      "Greenland Sea relative warmth and Korean wetness qualify any claim of uniform regional cooling or drying."
+    ],
+    "counterexampleObservationIds": [
+      "WT-1816-0076",
+      "WT-1816-0046"
+    ]
   },
   {
     "id": "MECH-006",
@@ -164,7 +191,8 @@
       "THREAD-APPIN"
     ],
     "status": "Hypothesis",
-    "counterexamples": []
+    "counterexamples": [],
+    "counterexampleObservationIds": []
   },
   {
     "id": "MECH-007",
@@ -181,6 +209,153 @@
       "THREAD-ANDES"
     ],
     "status": "Hypothesis",
-    "counterexamples": []
+    "counterexamples": [],
+    "counterexampleObservationIds": []
+  },
+  {
+    "id": "MECH-008",
+    "name": "Food buffers depend on timing and access",
+    "description": "Reserves, imports and relief may interrupt subsistence pressure, but arrival delays and unequal access can limit benefits.",
+    "inputs": [
+      "imports",
+      "reserves",
+      "administrative capacity"
+    ],
+    "intermediateProcesses": [
+      "transport delays",
+      "distribution",
+      "purchasing power"
+    ],
+    "possibleOutcomes": [
+      "food access",
+      "limited relief"
+    ],
+    "resilienceFactors": [
+      "timely arrivals",
+      "targeted distribution"
+    ],
+    "prototypeThreads": [
+      "THREAD-DUTCH-RELIEF",
+      "THREAD-IRISH-FEVER"
+    ],
+    "counterexamples": [
+      "Dutch public imports arrived late; importing food did not itself establish timely relief."
+    ],
+    "counterexampleObservationIds": [
+      "WT-1816-0034"
+    ],
+    "status": "Hypothesis"
+  },
+  {
+    "id": "MECH-009",
+    "name": "Skilled migration and state patronage",
+    "description": "Authorities may fund skilled migrants toward proposed institutions; authorization and actual teaching or output are distinct.",
+    "inputs": [
+      "skilled migration",
+      "patronage"
+    ],
+    "intermediateProcesses": [
+      "recruitment",
+      "funding authorization"
+    ],
+    "possibleOutcomes": [
+      "proposed institutions"
+    ],
+    "resilienceFactors": [
+      "stable funding",
+      "implementation"
+    ],
+    "prototypeThreads": [
+      "THREAD-BRAZIL-PATRONAGE"
+    ],
+    "counterexamples": [],
+    "counterexampleObservationIds": [],
+    "status": "Hypothesis"
+  },
+  {
+    "id": "MECH-010",
+    "name": "Health crisis, mobility and capacity limits",
+    "description": "Epidemic reports, fear-driven movement and institutional responses interact; historical diagnoses and causal pathways need independent evaluation.",
+    "inputs": [
+      "disease exposure",
+      "food insecurity",
+      "institutional capacity"
+    ],
+    "intermediateProcesses": [
+      "movement",
+      "care demand"
+    ],
+    "possibleOutcomes": [
+      "flight",
+      "hospital pressure"
+    ],
+    "resilienceFactors": [
+      "care capacity",
+      "food access",
+      "safe water"
+    ],
+    "prototypeThreads": [
+      "THREAD-BENGAL-CHOLERA",
+      "THREAD-BALI-RECOVERY",
+      "THREAD-IRISH-FEVER"
+    ],
+    "counterexamples": [],
+    "counterexampleObservationIds": [],
+    "status": "Hypothesis"
+  },
+  {
+    "id": "MECH-011",
+    "name": "Maritime networks support exchange and diplomacy",
+    "description": "Shipping links trade, gifts and negotiations, while reports retain differing regional perspectives and legal outcomes need enforcement evidence.",
+    "inputs": [
+      "shipping",
+      "political agency"
+    ],
+    "intermediateProcesses": [
+      "exchange",
+      "negotiation"
+    ],
+    "possibleOutcomes": [
+      "diplomatic agreements",
+      "commodity movement"
+    ],
+    "resilienceFactors": [
+      "route access",
+      "local bargaining capacity"
+    ],
+    "prototypeThreads": [
+      "THREAD-PACIFIC-NETWORKS",
+      "THREAD-ASANTE-EXCHANGE",
+      "THREAD-MADAGASCAR-DIPLOMACY"
+    ],
+    "counterexamples": [],
+    "counterexampleObservationIds": [],
+    "status": "Hypothesis"
+  },
+  {
+    "id": "MECH-012",
+    "name": "Ocean heat storage and regional climate divergence",
+    "description": "Ocean-model experiments suggest lagged thermal responses; sparse ship and coral evidence can test parts of the mechanism at different scales.",
+    "inputs": [
+      "volcanic forcing",
+      "ocean heat capacity"
+    ],
+    "intermediateProcesses": [
+      "heat storage",
+      "regional circulation"
+    ],
+    "possibleOutcomes": [
+      "lagged cooling",
+      "spatial contrasts"
+    ],
+    "resilienceFactors": [
+      "local circulation"
+    ],
+    "prototypeThreads": [
+      "THREAD-OCEAN-CONTRASTS"
+    ],
+    "counterexamples": [],
+    "counterexampleObservationIds": [],
+    "status": "Hypothesis"
   }
 ]
