@@ -36,3 +36,5 @@ Research stress-test findings and limitations are in [docs/RESEARCH_AUDIT.md](do
 ### Exploring linked facts
 
 Opening a fact focuses on its incoming and outgoing connections. Follow a neighboring fact to recenter, select “Why linked?” to inspect the relationship, and use Back or the exploration breadcrumbs to retrace your steps. Evidence and record details have separate views; sources expand on demand. Navigation history is not presented as a causal chain.
+
+The default opening is now a six-step guided investigation: **why did a weather shock become a food crisis in some places, while others had good harvests?** Readers choose a working hypothesis, examine a counterexample, and reach a qualified conclusion. The full explorer remains available under **Research library**.

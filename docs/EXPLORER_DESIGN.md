@@ -11,3 +11,13 @@ Evidence and record metadata are separate views. Source entries expand on demand
 ## Verification
 
 Browser checks exercise all thread endpoints and relationship explanations, keyboard opening, evidence tabs, collapsed sources, neighbor traversal, breadcrumb return, filtering, research-gap links and mobile width. Data validation checks identifiers, dates, references and mechanism/thread membership.
+
+## Story-first entry
+
+The default experience asks: why did damaging weather become a food crisis in some places while other places reported good harvests? Six scenes introduce the question, connect Tambora to European cooling, follow Czech weather and grain-price evidence, invite a working hypothesis, challenge a universal claim with Korean harvest records, and state a qualified conclusion. The ending offers a specific next investigation into Amsterdam relief.
+
+This is evidence assessment, not a scored game. Korea is not a controlled experiment and does not prove a single cause of resilience. Dutch policy authorization does not establish delivery or household benefit. Those limits are part of the story.
+
+What worked in the library: explicit link explanations, source provenance, uncertainty, and neighboring records. What did not work as an opening experience: competing map, counts, filters, long record lists and no central question or destination. The library is now a separate mode. Each story scene gives one primary next action, with optional evidence detours that return to the same scene.
+
+The current story covers selected climate and subsistence evidence, not all histories of 1816. Additional stories should each have their own question, human stakes, evidence that changes an explanation, and a qualified ending rather than funneling unrelated histories into Tambora.

@@ -10,10 +10,19 @@ async function load(){
     fetch('data/1816/research-gaps.json').then(r=>r.json())
   ]);
   Object.assign(state,{observations,relationships,threads,sources,mechanisms,gaps,threadId:threads[0]?.id||null});
-  bind(); render();
+  bind(); render(); renderStory();
 }
 
 function bind(){
+  document.getElementById('storyMode').onclick=()=>setExperience('story');
+  document.getElementById('researchMode').onclick=()=>setExperience('research');
+  document.getElementById('storyJourney').addEventListener('click',e=>{
+    const step=e.target.closest('[data-story-step]');if(step){story.step=Number(step.dataset.storyStep);renderStory(true);return;}
+    const evidence=e.target.closest('[data-story-evidence]');if(evidence){openDetail(obs(evidence.dataset.storyEvidence));inspector.tab='evidence';renderInspector(true);return;}
+    const claim=e.target.closest('[data-story-claim]');if(claim){openRelationship(state.relationships.find(r=>r.id===claim.dataset.storyClaim));return;}
+    const choice=e.target.closest('[data-story-choice]');if(choice){story.choice=choice.dataset.storyChoice;renderStory();return;}
+    const library=e.target.closest('[data-story-library]');if(library){setExperience('research');selectThread(library.dataset.storyLibrary);}
+  });
   document.querySelectorAll('.filter[data-system]').forEach(btn=>btn.addEventListener('click',()=>{
     document.querySelectorAll('.filter[data-system]').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active'); state.system=btn.dataset.system; renderCards();
@@ -180,3 +189,24 @@ function escapeHtml(str=''){return String(str).replace(/[&<>'"]/g,c=>({'&':'&amp
 function escapeAttr(str=''){return escapeHtml(str)}
 
 load().catch(err=>{document.getElementById('cards').innerHTML=`<p>Could not load prototype data: ${escapeHtml(err.message)}</p>`;});
+
+const story={step:0,choice:null};
+function setExperience(mode){
+  const research=mode==='research';document.getElementById('researchLibrary').hidden=!research;document.getElementById('storyJourney').hidden=research;
+  for(const [id,active] of [['storyMode',!research],['researchMode',research]]){const b=document.getElementById(id);b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));}
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+const storyChapters=[
+ {label:'The question',title:'One eruption. Different lives.',text:'An eruption helped make 1816 unusually cold. In parts of Europe, damaged harvests were followed by hunger and rising prices. Yet Korea reported good rice harvests. Why did the same year produce such different outcomes?',prompt:'Follow one explanation, then test it against evidence that complicates the story.',next:'Start with the shock'},
+ {label:'The shock',title:'A distant eruption changes the conditions.',text:'Tambora erupted in April 1815. Research identifies it as a major contributor to Europe’s unusually cold summer the following year. That connects the eruption to a climate anomaly. It does not yet explain who went hungry.',record:'WT-1816-0008',claim:'REL-0005',prompt:'The next question: how did unusual weather reach people’s food supply?',next:'Follow the weather to the harvest'},
+ {label:'The human stakes',title:'Weather becomes a problem at the table.',text:'In southwestern Bohemia, a local account describes weeks of rain, wet cereals, poor yields and hunger. Across the Czech Lands, poor grain harvests were followed by price increases culminating in 1817. The consequences unfolded over time.',record:'WT-1816-0007',claim:'REL-0007',prompt:'A plausible explanation emerges: damaged crops reduced food supply and increased pressure on households. Would that explanation fit everywhere?',next:'Test the explanation'},
+ {label:'Your hypothesis',title:'What would you expect elsewhere?',text:'Before looking at another region, choose the explanation you would investigate. This is a working hypothesis, not a scored quiz.',choice:true,next:'Look for a counterexample'},
+ {label:'The complication',title:'Korea complicates the simple story.',text:'Korean records report good rice harvests in 1816. This comparison does not hold local weather, crops or institutions constant. It does show why “1816 meant crop failure everywhere” is too broad.',record:'WT-1816-0045',prompt:'The investigation changes: which local conditions, crops and ways of obtaining food made the difference?',next:'Build a better explanation'},
+ {label:'What we can say',title:'A shock is the beginning of an explanation.',text:'The Czech evidence supports a path from damaging weather through poor grain harvests to food-price pressure. Korean harvest reports limit how widely we can apply that account. Regional conditions and crop responses matter; relief and access to food need their own evidence.',record:'WT-1816-0035',prompt:'Amsterdam authorized subsidized rye sales in 1817. That gives us a next question—not a proven solution: did the food reach the households that needed it?',finish:true}
+];
+function renderStory(moveFocus=false){
+ const c=storyChapters[story.step];const o=c.record?obs(c.record):null;
+ const feedback=story.choice==='universal'?'That predicts widespread failure. The next record will test how far that prediction holds.':story.choice==='regional'?'That predicts differences between regions. The next record can challenge a universal story, but it cannot establish which local factor explains the difference.':'';
+ document.getElementById('storyJourney').innerHTML=`<div class="story-progress"><span>1816 · A world connected, unevenly</span><span>Step ${story.step+1} of ${storyChapters.length}</span></div><div class="story-track" aria-hidden="true">${storyChapters.map((x,i)=>`<span class="${i<=story.step?'reached':''}"></span>`).join('')}</div><article class="story-scene"><p class="eyebrow">${escapeHtml(c.label)}</p><h1 id="storyHeading" tabindex="-1">${escapeHtml(c.title)}</h1><p class="story-narrative">${escapeHtml(c.text)}</p>${o?`<aside class="story-proof"><p class="eyebrow">One piece of evidence · ${escapeHtml(o.place)}</p><p>${escapeHtml(o.observation)}</p><button class="story-link" data-story-evidence="${o.id}">Check the source and its limits ↗</button>${c.claim?`<button class="story-link" data-story-claim="${c.claim}">Examine this connection ↗</button>`:''}</aside>`:''}${c.choice?`<div class="story-choices"><button data-story-choice="universal" aria-pressed="${story.choice==='universal'}">A global shock should mean poor harvests everywhere.</button><button data-story-choice="regional" aria-pressed="${story.choice==='regional'}">Local conditions should change the outcome.</button></div><p class="story-feedback" role="status">${feedback||'Choose a hypothesis to continue.'}</p>`:''}${c.prompt?`<p class="story-question">${escapeHtml(c.prompt)}</p>`:''}<div class="story-actions">${story.step?`<button class="story-back" data-story-step="${story.step-1}">← Previous</button>`:''}${!c.finish?`<button class="story-next" data-story-step="${story.step+1}" ${c.choice&&!story.choice?'disabled':''}>${escapeHtml(c.next)} →</button>`:`<button class="story-next" data-story-library="THREAD-DUTCH-RELIEF">Investigate the relief effort →</button><button class="story-back" data-story-step="0">Start again</button>`}</div></article><p class="story-footnote">A guided investigation from selected records. The full research library contains other histories of 1816; they do not all share a volcanic cause.</p>`;
+ if(moveFocus){document.getElementById('storyHeading').focus();document.getElementById('storyJourney').scrollIntoView({behavior:'smooth',block:'start'});}
+}

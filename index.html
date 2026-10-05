@@ -13,14 +13,12 @@
       <div class="brand">WorldThreads</div>
       <div class="tagline">History isn't a collection of events. It's the threads that connect them.</div>
     </div>
-    <nav>
-      <a class="nav-btn active" href="#year">1816</a>
-      <a class="nav-btn" href="#threads">Threads</a>
-      <a class="nav-btn" href="#evidence">Evidence</a>
-    </nav>
+    <nav aria-label="Experience"><button class="nav-btn active" id="storyMode" aria-pressed="true">Follow the story</button><button class="nav-btn" id="researchMode" aria-pressed="false">Research library</button></nav>
   </header>
 
   <main>
+    <section id="storyJourney" class="story-journey" aria-label="Guided historical investigation"></section>
+    <div id="researchLibrary" hidden>
     <section class="hero" id="year">
       <div>
         <p class="eyebrow">PROTOTYPE YEAR · DATED CONTEXT · ANTECEDENTS AND OUTCOMES</p>
@@ -86,6 +84,7 @@
       <div class="evidence-toolbar"><label>Search evidence <input id="searchInput" type="search" placeholder="Place, topic, date or evidence type"></label><label>Region <select id="regionSelect"><option value="ALL">All regions</option></select></label><label>Time window <select id="periodSelect"><option value="ALL">All dated context</option><option value="YEAR">1816 and overlapping windows</option><option value="CONTEXT">Antecedents and later outcomes</option></select></label><label>Evidence basis <select id="evidenceSelect"><option value="ALL">All evidence types</option></select></label><label>Order <select id="sortSelect"><option value="date">Earliest first</option><option value="title">Title</option></select></label><button class="filter" id="clearFilters">Clear filters</button></div><div id="cards" class="cards" aria-live="polite"></div>
     </section>
     <section class="panel observations-panel"><h3>Research gaps</h3><p>Open each gap to inspect the evidence added and its related threads. The remaining questions stay visible; partial coverage does not close a gap.</p><div id="researchGaps" class="cards"></div></section>
+    </div>
   </main>
 
   <dialog id="detailDialog" aria-labelledby="detailTitle"><button id="closeDialog" class="close" aria-label="Close">×</button><div id="dialogContent"></div></dialog>
