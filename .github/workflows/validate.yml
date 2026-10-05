@@ -18,3 +18,5 @@ jobs:
       - run: node --check stories.js
       - run: node --check progress.js
       - run: node --check investigations.js
+      - run: node --check casefiles.js
+      - run: node --check thesis.js
