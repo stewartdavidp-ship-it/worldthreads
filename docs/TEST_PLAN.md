@@ -1,6 +1,6 @@
 # WorldThreads test plan and coverage ledger
 
-Updated: 6 October 2026. Current confirmation candidate: `97918e0` (latest complete 19-run confirmation: `eb09624`) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
+Updated: 6 October 2026. Current confirmation candidate: `c77250d` (22/22 expanded checks passed; earlier complete 19-run confirmation: `eb09624`) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
 
 ## What success means
 
@@ -74,7 +74,7 @@ Stable IDs let future passes update the same case rather than accumulate disconn
 | R03 | Two tabs edit the same investigation | Partial | Competing thesis tabs require explicit choice; archive failure blocks destructive switching. Two tabs retain and display both sets of earned progress; a complete multi-tab race matrix remains open | durability.cjs |
 | R04 | Corrupted stored records / old schema | Partial | Malformed draft, candidate and portfolio shapes recover; unsupported historical schemas still need a complete migration matrix | durability + progress |
 | R05 | Data fetch failure or offline startup | Tested | Failed HTTP or network collection loads show retry; existing saved research survives and editing after load works offline | interruption.cjs; offline first-load HTML/assets not covered |
-| R06 | Browser back, refresh and detour mid-task | Partial | Browser Back/Forward returns to the thesis stage; evidence detours and reload preserve drafts. Object modal Back/Forward and filtered library → thesis stage navigation pass; broader route combinations remain open | interruption + returning |
+| R06 | Browser back, refresh and detour mid-task | Partial | Browser Back/Forward returns to the thesis stage; evidence detours and reload preserve drafts. Object modal Back/Forward and filtered library → thesis stage navigation pass; the evidence-close/next-scene race is fixed and regression-tested; broader route combinations remain open | interruption + returning + navigation-race |
 | U01 | Narrow screen | Partial | Touch emulation and 390/320px reflow pass; physical-device use remains untested | accessibility.cjs + existing suites |
 | U02 | Keyboard-only full winning route | Partial | Full winning route passes with keyboard activation/text entry; shelf Tab access and dialog cycling pass. Actual Tab traversal now completes the route; human discoverability remains open | winning-game keyboard mode + accessibility |
 | U03 | Screen reader, zoom and contrast | Partial | Visible form labeling, modal focus cycling, Escape and global focus styles checked; 13 sampled screens passed automated semantic/contrast checks after a contrast fix; real screen-reader checks remain open; actual Chrome 200% zoom passed on the story, source dialog, five thesis stages and feedback form | accessibility.cjs; no accessibility certification |
@@ -121,7 +121,7 @@ A failure record should describe the player's consequence, not just an exception
 
 ## Release checks
 
-Run the data validator, JavaScript syntax checks and all fifteen functional browser suites, optional semantic accessibility audit, and keyboard/Firefox/WebKit completion on the release candidate. Record exact results here. Complete a live browser smoke test of a fresh and returning investigation. Any unresolved P0 issue blocks a claim of a dependable core journey. Describe partial accessibility, source review and human-study coverage explicitly.
+Run the data validator, JavaScript syntax checks and all functional browser suites listed in tests/run-plan.cjs, optional semantic accessibility audit, and keyboard/Firefox/WebKit completion on the release candidate. Record exact results here. Complete a live browser smoke test of a fresh and returning investigation. Any unresolved P0 issue blocks a claim of a dependable core journey. Describe partial accessibility, source review and human-study coverage explicitly.
 
 There are no multiplayer, login, cloud-sync or automated academic-review capabilities to certify. AI handoff is a manual brief-and-return workflow. Historical review remains a separate, ongoing obligation.
 
@@ -191,3 +191,9 @@ The feedback-enabled baseline `97918e0` passed **20/21** expanded confirmations,
 The fix queues a later route while the evidence-close history traversal is pending, then retains that route when the traversal finishes. A second close during that interval shares the pending transition. The new `navigation-race.cjs` passes in Chromium and WebKit; the existing navigation matrix passes. The full-route test also waits for the evidence return to settle before its next planned step; the separate race test deliberately omits that wait. Chrome’s immediate evidence-close → next-scene walkthrough preserves the later scene. Full final confirmation is recorded only after completion.
 
 A subsequent confirmation at `48fce4f` passed **21/22**; WebKit intermittently could not select a case checkbox while scene scrolling continued, with the checkbox label or sticky header intercepting the target. The isolated full WebKit route had passed, so that isolated pass did not close the final confirmation. Scene changes, thesis-stage navigation and experience switches now scroll immediately instead of animating while the player attempts the next control. This prevents route focus and animated page movement from competing.
+
+### Final confirmation after navigation fixes
+
+**PASS: 22/22 on `c77250d`**, 6 October 2026. The final run includes sixteen core Chromium functional suites (with the new evidence-close race regression), thirteen-screen semantic audit, both feedback frontend suites, actual Tab-only winning route, Firefox winning route and WebKit winning route. The complete WebKit route also passed in isolation after scrolling was made immediate. Four feedback-service cases and the data validator passed separately. Repository validation checks on the pushed candidate passed.
+
+The prior 20/21 and 21/22 reports remain retained. The final JSON report identifies each execution and candidate commit. Remaining partial cases stay partial: a complete tab/schema/route matrix, real screen reader and physical devices, uncoached participants, historian review, and corpus-wide original-source verification. The fixes are in the single-player prototype branch / PR #2. This confirmation does not certify the older published research frontend’s entire journey.
