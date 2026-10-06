@@ -16,7 +16,7 @@ The dark-mode prototype contains 78 observations, 48 sources, 55 observation rel
 
 The optional 1816 Evidence Expedition goal is three case files and two evidence challenges. Each case requires supporting records, an evidence limit and a next research move. Unique rewards, badges, stages and resume positions persist in this browser. Badges recognise activities and supported in-app interpretations; they do not certify historical truth.
 
-Any thread can start a thesis investigation without completing unrelated stories. An earned case also leads directly into its thread’s thesis workspace. Readers write a provisional argument, methods, claim–evidence entries, counterargument, revision criteria, chapters and a research plan, then export a Markdown draft with registered-source bibliography.
+Any thread can start a thesis investigation without completing unrelated stories. An earned case also leads directly into its thread’s thesis workspace. Readers write a provisional argument, methods, claim–evidence entries, counterargument, revision criteria, chapters and a research plan, then export a Markdown draft with registered-source bibliography. An evidence board lets them assign records to support, challenge, context or unresolved roles and explain the decision. These are writer interpretations, not accepted graph relationships.
 
 Dead ends become research tasks: specify the missing link, identify a source capable of testing it, check provenance and scope, preserve conflicting evidence and revise the premise. Sourced proposal JSON can be imported into a separate local corpus and selected as explicitly unreviewed candidate evidence. Imports do not change the registered graph; a repeated claim is not new evidence. Drafts, proposals and progress are local, not shared or synced.
 
@@ -42,6 +42,7 @@ node tests/explorer.cjs
 node tests/progress.cjs
 node tests/objects.cjs
 node tests/research-flow.cjs
+node tests/argument-board.cjs
 ```
 
 Set `WORLDTHREADS_URL` for another port. The research-flow suite runs the Dutch thread through the real game, a case, a thesis, a dead end, a local import and draft export. Its import deliberately repeats a registered authorization claim, demonstrating that file acceptance does not resolve the missing delivery evidence. Set `WORLDTHREADS_PILOT_OUTPUT` to save the pilot document to a chosen path.
