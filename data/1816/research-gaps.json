@@ -100,7 +100,7 @@
     "priority": "High",
     "status": "Partially addressed",
     "notes": "Evidence added with source-specific limits; the broader research question remains open.",
-    "updatedDate": "2026-10-05",
+    "updatedDate": "2026-10-06",
     "observationIds": [
       "WT-1816-0058",
       "WT-1816-0059",
@@ -112,7 +112,8 @@
     ],
     "remainingQuestions": [
       "Find South American weather and crop series without inferring European climate patterns.",
-      "Find Mendoza supply accounts and Brazil pension disbursement/teaching records."
+      "Find Mendoza supply accounts and Brazil pension disbursement/teaching records.",
+      "Resolve conflicting building-readiness dates in Biblioteca Nacional (ready by 1823) and Arquivo Nacional (ready in 1826); distinguish construction, inauguration, private teaching and full operation. Source independence is unverified."
     ]
   },
   {

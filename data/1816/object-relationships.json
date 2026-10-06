@@ -3355,8 +3355,8 @@
     "objectId": "OBJ-1816-0059",
     "relationshipKind": "HISTORICAL_CLAIM",
     "causalStatus": "CONTRIBUTORY",
-    "confidence": "Medium-High",
-    "explanation": "Arrival made foreign artists available for the decree’s proposed recruitment; instruction and disbursement require separate records.",
+    "confidence": "Medium",
+    "explanation": "Inferred contribution: arrival made foreign artists available for proposed recruitment. The sources do not establish that arrival caused policy planning; instruction and disbursement require separate records.",
     "sourceRefs": [
       "SRC-033",
       "SRC-034"

@@ -1,19 +1,21 @@
 const state={observations:[],relationships:[],threads:[],sources:[],mechanisms:[],gaps:[],objects:[],objectRelationships:[],objectTypes:[],region:'ALL',query:'',period:'ALL',evidence:'ALL',sort:'date',system:'ALL',threadId:null};
 
+let appLoaded=false;
+async function fetchCollection(path){const response=await fetch(path);if(!response.ok)throw Error('Evidence collection unavailable ('+response.status+')');const value=await response.json();if(!Array.isArray(value))throw Error('An evidence collection has an invalid format');return value;}
 async function load(){
   const [observations,relationships,threads,sources,mechanisms,gaps,objects,objectRelationships,objectTypes]=await Promise.all([
-    fetch('data/1816/observations.json').then(r=>r.json()),
-    fetch('data/1816/relationships.json').then(r=>r.json()),
-    fetch('data/1816/threads.json').then(r=>r.json()),
-    fetch('data/1816/sources.json').then(r=>r.json()),
-    fetch('data/mechanisms.json').then(r=>r.json()),
-    fetch('data/1816/research-gaps.json').then(r=>r.json()),
-    fetch('data/objects.json').then(r=>r.json()),
-    fetch('data/1816/object-relationships.json').then(r=>r.json()),
-    fetch('data/object-types.json').then(r=>r.json())
+    fetchCollection('data/1816/observations.json'),
+    fetchCollection('data/1816/relationships.json'),
+    fetchCollection('data/1816/threads.json'),
+    fetchCollection('data/1816/sources.json'),
+    fetchCollection('data/mechanisms.json'),
+    fetchCollection('data/1816/research-gaps.json'),
+    fetchCollection('data/objects.json'),
+    fetchCollection('data/1816/object-relationships.json'),
+    fetchCollection('data/object-types.json')
   ]);
   Object.assign(state,{observations,relationships,threads,sources,mechanisms,gaps,objects,objectRelationships,objectTypes,threadId:threads[0]?.id||null});
-  bind(); render(); renderStory();
+  bind(); render(); renderStory();appLoaded=true;setupNavigationHistory();document.getElementById('startupStatus').hidden=true;document.querySelectorAll('.site-header button').forEach(b=>b.disabled=false);
 }
 
 function bind(){
@@ -76,6 +78,8 @@ function bind(){
   document.getElementById('researchGaps').addEventListener('click',e=>{const o=e.target.closest('[data-observation]');if(o)openDetail(obs(o.dataset.observation));const t=e.target.closest('[data-thread]');if(t)selectThread(t.dataset.thread);});
   document.getElementById('mechanismPanel').addEventListener('click',e=>{const o=e.target.closest('[data-observation]');if(o)openDetail(obs(o.dataset.observation));});
   document.getElementById('closeDialog').addEventListener('click',()=>document.getElementById('detailDialog').close());
+  const dialog=document.getElementById('detailDialog');dialog.addEventListener('close',()=>{if(inspector.opener?.isConnected)inspector.opener.focus();});
+  dialog.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const controls=[...dialog.querySelectorAll('button:not(:disabled),a[href],summary,input:not([type=hidden]),select,textarea,[tabindex="0"]')].filter(x=>{if(!x.getClientRects().length)return false;for(let parent=x.parentElement;parent&&parent!==dialog;parent=parent.parentElement)if(parent.tagName==='DETAILS'&&!parent.open&&!parent.querySelector(':scope > summary')?.contains(x))return false;return true;}),first=controls[0],last=controls.at(-1);if(!first)return;if((e.shiftKey&&(document.activeElement===first||document.activeElement.id==='detailTitle'))||(!e.shiftKey&&document.activeElement===last)){e.preventDefault();(e.shiftKey?last:first).focus();}});
   document.getElementById('detailDialog').addEventListener('close',()=>{if(story.id&&!document.getElementById('storyJourney').hidden){const config=storyCatalog.find(s=>s.id===story.id);if(story.step===(config.chapters||storyChapters).length-1){const desk=document.querySelector('.case-goal');if(desk&&!desk.querySelector('#caseFileForm')&&completedStory(config))desk.outerHTML=caseFileHtml(config);}}});
 }
 
@@ -158,7 +162,7 @@ function openDetail(o){if(o)visitInspector({kind:'observation',id:o.id});}
 function openRelationship(r){if(r){visitInspector({kind:'relationship',id:r.id});if(connectionBelongsToStory(r.id))recordProgress('connections',r.id);}}
 function visitInspector(item){
   const dlg=document.getElementById('detailDialog');
-  if(!dlg.open){inspector.history=[];inspector.index=-1;}
+  if(!dlg.open){inspector.opener=document.activeElement;inspector.history=[];inspector.index=-1;}
   const current=inspector.history[inspector.index];
   if(!current||current.kind!==item.kind||current.id!==item.id){inspector.history=inspector.history.slice(0,inspector.index+1);inspector.history.push(item);inspector.index++;}
   inspector.tab=['relationship','objectLink'].includes(item.kind)?'claim':item.kind==='observation'&&!state.relationships.some(r=>r.subjectId===item.id||r.objectId===item.id)?'evidence':'connections';inspector.linkFilter='all';renderInspector(true);
@@ -221,7 +225,8 @@ function source(id){return state.sources.find(s=>s.id===id)}
 function escapeHtml(str=''){return String(str).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
 function escapeAttr(str=''){return escapeHtml(str)}
 
-load().catch(err=>{document.getElementById('cards').innerHTML=`<p>Could not load prototype data: ${escapeHtml(err.message)}</p>`;});
+async function startApp(){document.querySelectorAll('.site-header button').forEach(b=>b.disabled=true);const status=document.getElementById('startupStatus');status.hidden=false;status.innerHTML='<p>Loading the evidence collection… Your saved research stays in this browser.</p>';try{await load();}catch{status.innerHTML='<h1>Evidence could not be loaded</h1><p>The collection is unavailable, not empty. Check your connection and try again. Saved research has not been changed.</p><button class="story-next" id="retryLoad">Try loading again</button>';document.getElementById('retryLoad').onclick=startApp;}}
+startApp();
 
 const story={step:0,choice:null,id:null};
 function setExperience(mode){

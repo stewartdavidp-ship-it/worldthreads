@@ -18,7 +18,7 @@ The optional 1816 Evidence Expedition goal is three case files and two evidence 
 
 Any thread can start a thesis investigation without completing unrelated stories. An earned case also leads directly into its thread’s thesis workspace. Readers write a provisional argument, methods, claim–evidence entries, counterargument, revision criteria, chapters and a research plan, then export a Markdown draft with registered-source bibliography. An evidence board lets them assign records to support, challenge, context or unresolved roles and explain the decision. These are writer interpretations, not accepted graph relationships.
 
-Dead ends become research tasks: specify the missing link, identify a source capable of testing it, check provenance and scope, preserve conflicting evidence and revise the premise. Sourced proposal JSON can be imported into a separate local corpus and selected as explicitly unreviewed candidate evidence. Imports do not change the registered graph; a repeated claim is not new evidence. Drafts, proposals and progress are local, not shared or synced.
+Dead ends become research tasks: specify the missing link, identify a source capable of testing it, check provenance and scope, preserve conflicting evidence and revise the premise. Sourced proposal JSON can be imported into a separate local corpus and selected as explicitly unreviewed candidate evidence. Imports do not change the registered graph; a repeated claim is not new evidence. Drafts, proposals and progress are local, not shared or synced. Failed saves keep the current draft available for recovery download and block filing; competing draft tabs require an explicit choice. Unusable local candidates can be excluded with a reason.
 
 ## Explore locally
 
@@ -49,6 +49,13 @@ node tests/examiner.cjs
 node tests/ai-research.cjs
 node tests/winning-game.cjs
 node tests/returning-player.cjs
+node tests/durability.cjs
+node tests/interruption.cjs
+node tests/adversarial-research.cjs
+node tests/accessibility.cjs
+WORLDTHREADS_KEYBOARD=1 node tests/winning-game.cjs
+WORLDTHREADS_BROWSER=firefox node tests/winning-game.cjs
+WORLDTHREADS_BROWSER=webkit node tests/winning-game.cjs
 ```
 
 Set `WORLDTHREADS_URL` for another port. The research-flow suite runs the Dutch thread through the real game, a case, a thesis, a dead end, a local import and draft export. Its import deliberately repeats a registered authorization claim, demonstrating that file acceptance does not resolve the missing delivery evidence. Set `WORLDTHREADS_PILOT_OUTPUT` to save the pilot document to a chosen path.

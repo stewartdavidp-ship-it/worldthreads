@@ -75,3 +75,7 @@ A further browser audit found two workflow weaknesses: edits could be lost on na
 ### Argument-building workflow pass
 
 The case-to-thesis handoff formerly seeded generic thread nodes rather than the evidence pair used to earn the case. It now carries the required records, case limit and next research move into a new draft. A self-directed defense rehearsal asks for the missing link, rival explanation and revision under counterevidence. Preparation reminders distinguish shared-source records from independent corroboration and flag unreviewed candidates. The end-to-end browser test exercises those reminders and confirms rehearsal text is exported. No automatic assessment of historical truth or argument quality is claimed.
+
+## 6 October: thesis-plan source review
+
+See [the targeted Brazil thesis review](BRAZIL_THESIS_REVIEW.md). This pass records conflicting building-readiness dates, explicit source-access limits and an inferred contribution. An independent agent critique does not replace a historian’s assessment or inspection of the missing original records.

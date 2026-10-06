@@ -24,3 +24,5 @@ jobs:
       - run: node --check objects.js
       - run: node --check research.js
       - run: node --check portfolio.js
+      - run: node --check draft-storage.js
+      - run: node --check navigation.js

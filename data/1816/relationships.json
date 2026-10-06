@@ -655,12 +655,12 @@
     "objectId": "WT-1816-0059",
     "predicate": "ENABLED",
     "causalStatus": "CONTRIBUTORY",
-    "explanation": "Arrival made foreign artists available for the decree’s proposed recruitment; instruction and disbursement require separate records.",
+    "explanation": "Inferred contribution: arrival made foreign artists available for proposed recruitment. The sources do not establish that arrival caused policy planning; instruction and disbursement require separate records.",
     "sourceRefs": [
       "SRC-033",
       "SRC-034"
     ],
-    "confidence": "Medium-High",
+    "confidence": "Medium",
     "lag": "~5 months",
     "alternatives": [
       "Policy planning",
