@@ -23,3 +23,4 @@ jobs:
       - run: node --check examiner.js
       - run: node --check objects.js
       - run: node --check research.js
+      - run: node --check portfolio.js
