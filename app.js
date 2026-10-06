@@ -99,6 +99,7 @@ function renderCards(){
 }
 
 function openDetail(o){
+  Object.assign(document.getElementById('detailDialog').dataset,{feedbackKind:'observation',feedbackId:o.id});
   const dlg=document.getElementById('detailDialog'); const content=document.getElementById('dialogContent');
   const rels=state.relationships.filter(r=>r.subjectId===o.id||r.objectId===o.id);
   const sourceLinks=(o.sourceRefs||[]).map(id=>source(id)).filter(Boolean).map(s=>`<a class="source-badge" href="${escapeAttr(s.url)}" target="_blank" rel="noreferrer">${escapeHtml(s.id)} · ${escapeHtml(s.authorOrOrg)}</a>`).join('');
@@ -176,6 +177,7 @@ function bindContributions(){
 }
 
 function openRelationship(r){
+  Object.assign(document.getElementById('detailDialog').dataset,{feedbackKind:'relationship',feedbackId:r.id});
   const content=document.getElementById('dialogContent');
   content.innerHTML=`<p class="eyebrow">${escapeHtml(r.id)} · RELATIONSHIP</p><h2>${escapeHtml(obs(r.subjectId)?.title||r.subjectId)} → ${escapeHtml(obs(r.objectId)?.title||r.objectId)}</h2><p>${escapeHtml(r.predicate.replaceAll('_',' '))} · ${escapeHtml(r.causalStatus)}</p><p>${escapeHtml(r.explanation)}</p><p>${escapeHtml(r.confidence)} confidence · ${escapeHtml(String(r.researchStatus||'Review pending').replace(/independent review pending/gi,'automatic assessment not yet recorded'))}</p>${renderCausalReview(r)}${renderEvidence(r)}`;
   window.WorldThreadsCommunityUI?.attachActions(r,content);document.getElementById('detailDialog').showModal();

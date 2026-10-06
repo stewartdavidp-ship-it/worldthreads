@@ -1,0 +1,21 @@
+name: Validate private feedback
+on:
+  push:
+    branches: [gh-pages]
+  pull_request:
+    paths: ['feedback*', 'feedback-worker/**', 'tests/feedback*']
+permissions:
+  contents: read
+jobs:
+  feedback:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node --check feedback-log.js
+      - run: node --check feedback.mjs
+      - run: node --check feedback-core.mjs
+      - run: node --check feedback-worker/index.mjs
+      - run: node --test tests/feedback-service.mjs

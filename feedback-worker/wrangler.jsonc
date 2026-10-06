@@ -1,0 +1,8 @@
+{
+ "name":"worldthreads-feedback", "main":"index.mjs", "compatibility_date":"2026-10-01",
+ "account_id":"6135814eafd78ae5ff2ee846043b4e8b", "preview_urls":false,
+ "observability":{"enabled":false},
+ "vars":{"ALLOWED_ORIGINS":"https://stewartdavidp-ship-it.github.io,http://127.0.0.1:8768"},
+ "d1_databases":[{"binding":"DB","database_name":"worldthreads-community","database_id":"8f7f70ea-23c3-416a-80fd-0d5ccd3e378b"}],
+ "triggers":{"crons":["31 9 * * *"]}
+}
