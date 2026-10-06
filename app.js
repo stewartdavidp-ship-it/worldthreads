@@ -52,7 +52,7 @@ function bind(){
     btn.classList.add('active'); state.system=btn.dataset.system; renderCards();
   }));
   document.querySelectorAll('.map-node').forEach(btn=>btn.addEventListener('click',()=>{
-    state.region=btn.dataset.region; document.getElementById('regionSelect').value=state.region; renderCards(); document.getElementById('evidence').scrollIntoView({behavior:'smooth'});
+    state.region=btn.dataset.region; document.getElementById('regionSelect').value=state.region; renderCards(); document.getElementById('evidence').scrollIntoView({behavior:'instant'});
   }));
   document.getElementById('threadSelect').addEventListener('change',e=>{state.threadId=e.target.value;renderThread();});
   document.getElementById('searchInput').addEventListener('input',e=>{state.query=e.target.value;renderCards();});
@@ -218,7 +218,7 @@ function renderInspector(focus=false){
 }
 
 function overlaps1816(o){return Number(o.startDate.slice(0,4))<=1816&&Number(o.endDate.slice(0,4))>=1816;}
-function selectThread(id){state.threadId=id;document.getElementById('threadSelect').value=id;renderThread();document.getElementById('threads').scrollIntoView({behavior:'smooth'});}
+function selectThread(id){state.threadId=id;document.getElementById('threadSelect').value=id;renderThread();document.getElementById('threads').scrollIntoView({behavior:'instant'});}
 
 function obs(id){return state.observations.find(o=>o.id===id)}
 function source(id){return state.sources.find(s=>s.id===id)}
@@ -232,7 +232,7 @@ const story={step:0,choice:null,id:null};
 function setExperience(mode){
   const research=mode==='research',objects=mode==='objects';document.getElementById('researchLibrary').hidden=!research;document.getElementById('storyJourney').hidden=research||objects;document.getElementById('objectExplorer').hidden=!objects;document.getElementById('investigationProgress').hidden=objects;
   for(const [id,active] of [['storyMode',!research&&!objects],['researchMode',research],['objectsMode',objects]]){const b=document.getElementById(id);b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));}
-  window.scrollTo({top:0,behavior:'smooth'});
+  window.scrollTo({top:0,behavior:'instant'});
 }
 const storyChapters=[
  {label:'The question',title:'One eruption. Different lives.',text:'An eruption helped make 1816 unusually cold. In parts of Europe, damaged harvests were followed by hunger and rising prices. Yet Korea reported good rice harvests. Why did the same year produce such different outcomes?',prompt:'Follow one explanation, then test it against evidence that complicates the story.',next:'Start with the shock'},
@@ -250,5 +250,5 @@ function renderStory(moveFocus=false){
  const c=chapters[story.step],task=currentInvestigation(),solved=task?caseSolved():true;const o=c.record?obs(c.record):null;
  const feedback=story.choice==='universal'?'That predicts widespread failure. The next record will test how far that prediction holds.':story.choice==='regional'?'That predicts differences between regions. The next record can challenge a universal story, but it cannot establish which local factor explains the difference.':'';
  document.getElementById('storyJourney').innerHTML=`<button class="story-link" data-story-home>← Choose another story</button><div class="story-progress"><span>${escapeHtml(config.short)}</span><span>Step ${story.step+1} of ${chapters.length}</span></div>${caseStagesHtml(config)}<div class="story-track" aria-hidden="true">${chapters.map((x,i)=>`<span class="${i<=story.step?'reached':''}"></span>`).join('')}</div><article class="story-scene"><p class="eyebrow">${escapeHtml(c.label)}</p><h1 id="storyHeading" tabindex="-1">${escapeHtml(task?task.title:c.title)}</h1>${storyGraphic(config,chapters)}<p class="story-narrative">${escapeHtml(task&&!solved?task.surface:c.text)}</p>${task?caseHtml():''}${o&&!task?`<aside class="story-proof"><p class="eyebrow">One piece of evidence · ${escapeHtml(o.place)}</p><button class="story-link" data-story-evidence="${o.id}">Check the source and its limits ↗</button>${c.claim?`<button class="story-link" data-story-claim="${c.claim}">Examine this connection ↗</button>`:''}</aside>`:''}${c.choice?`<div class="story-choices"><button data-story-choice="universal" aria-pressed="${story.choice==='universal'}">A global shock should mean poor harvests everywhere.</button><button data-story-choice="regional" aria-pressed="${story.choice==='regional'}">Local conditions should change the outcome.</button></div><p class="story-feedback" role="status">${feedback||'Choose a hypothesis to continue.'}</p>`:''}${c.finish&&solved?caseFileHtml(config)+frontierHtml(config):''}${c.prompt?`<p class="story-question">${escapeHtml(c.prompt)}</p>`:''}<div class="story-actions">${story.step?`<button class="story-back" data-story-step="${story.step-1}">← Previous</button>`:''}${(!c.finish||!solved)?`<button class="story-next" data-story-step="${story.step+1}" ${(c.choice&&!story.choice)||(task&&!solved)?'disabled':''}>${escapeHtml(c.next||(task&&!solved?'Interpret the clues to continue':'Continue'))} →</button>`:`<button class="story-next" data-story-library="${config.thread}">Explore the full evidence →</button><button class="story-back" data-story-step="0">Start again</button>`}</div></article><p class="story-footnote">A guided investigation from selected records. The full research library contains other histories of 1816; they do not all share a volcanic cause.</p>`;
- if(moveFocus){document.getElementById('storyHeading').focus();document.getElementById('storyJourney').scrollIntoView({behavior:'smooth',block:'start'});}
+ if(moveFocus){document.getElementById('storyHeading').focus();document.getElementById('storyJourney').scrollIntoView({behavior:'instant',block:'start'});}
 }
