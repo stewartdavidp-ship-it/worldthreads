@@ -70,3 +70,10 @@ Object profiles also offer a direct influence-research entry, including when no 
 ### Case-to-thesis handoff and defense rehearsal
 
 A completed learning case seeds its paired evidence, explicit limit and next research move into a new thread thesis. It does not fill in the writer's argument. The thesis includes three self-directed defense challenges: the missing causal link, a rival explanation and revision under credible counterevidence. Preparation reminders identify absent argument or interpretation fields without scoring quality or awarding scholarly certification. Responses and the carried case limit are retained locally and exported.
+
+
+### Live Chrome first-player pass
+
+Two entry paths were exercised in the visible Chrome UI: Dutch relief through a completed case into a thesis, and Laennec → stethoscope → object-scoped research with zero badges. The landing page now presents story questions before the expedition goal. A completed case hands off its concrete open question. Thesis navigation provides topic, evidence and defense actions; evidence options group the current investigation first. Object drafts offer questions about antecedent conditions or attributed changes without supplying a causal answer. Unconnected observation records open on evidence rather than an empty graph.
+
+Remaining design weakness: the guided interpretation answers are often easy to distinguish and thesis development still relies heavily on text fields. The stethoscope record lacks a passage locator and does not establish wider impact; no missing historical claim was invented to make the journey smoother. Further passes should test argument construction and revision as game actions.

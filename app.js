@@ -161,7 +161,7 @@ function visitInspector(item){
   if(!dlg.open){inspector.history=[];inspector.index=-1;}
   const current=inspector.history[inspector.index];
   if(!current||current.kind!==item.kind||current.id!==item.id){inspector.history=inspector.history.slice(0,inspector.index+1);inspector.history.push(item);inspector.index++;}
-  inspector.tab=['relationship','objectLink'].includes(item.kind)?'claim':'connections';inspector.linkFilter='all';renderInspector(true);
+  inspector.tab=['relationship','objectLink'].includes(item.kind)?'claim':item.kind==='observation'&&!state.relationships.some(r=>r.subjectId===item.id||r.objectId===item.id)?'evidence':'connections';inspector.linkFilter='all';renderInspector(true);
 }
 function inspectorLabel(item){if(item.kind==='object')return historicalObject(item.id)?.label;if(item.kind==='objectLink')return 'Connection: '+state.objectRelationships.find(r=>r.id===item.id)?.predicate.replaceAll('_',' ').toLowerCase();return item.kind==='observation'?obs(item.id)?.title:'Connection: '+state.relationships.find(r=>r.id===item.id)?.predicate.replaceAll('_',' ').toLowerCase();}
 function inspectorNavigation(){
