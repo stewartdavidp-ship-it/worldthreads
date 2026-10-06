@@ -94,3 +94,10 @@ Applying a decision changes the actual thesis text and records the before/after 
 
 
 Source inspection inside the challenge round is available without leaving the player's test. A regression caught an autosave-render race that could replace a source button during a click; stable content now keeps its existing controls. Imported candidates selected in the evidence table become available to the examiner immediately, retaining their unreviewed status.
+
+
+## Single-player interruption and AI handoff pass
+
+The home shelf resumes the active local research draft, including evidence and argument history. Examiner tests retain their original argument frame: changing the thesis blocks applying that old test until the writer explicitly reframes it. Reframing clears the assessment, decision and replacement argument; predictions remain as notes to review.
+
+The research desk prepares a portable AI brief containing the WorldThreads model, current argument, missing link, selected observations, source URLs and limits, and a one-candidate JSON contract. This is a manual copy/paste handoff, not a connected assistant or automatic repository access. The assistant is asked to seek conflicting evidence, distinguish causal inference, disclose access limitations and avoid invented locators. Prose and incomplete returns are rejected; structurally valid candidates stay unreviewed and local. Format validation does not establish source authenticity. No import earns points or certifies a thesis.

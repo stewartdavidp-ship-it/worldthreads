@@ -44,6 +44,7 @@ node tests/objects.cjs
 node tests/research-flow.cjs
 node tests/argument-board.cjs
 node tests/examiner.cjs
+node tests/ai-research.cjs
 ```
 
 Set `WORLDTHREADS_URL` for another port. The research-flow suite runs the Dutch thread through the real game, a case, a thesis, a dead end, a local import and draft export. Its import deliberately repeats a registered authorization claim, demonstrating that file acceptance does not resolve the missing delivery evidence. Set `WORLDTHREADS_PILOT_OUTPUT` to save the pilot document to a chosen path.
