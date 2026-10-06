@@ -1,6 +1,6 @@
 # WorldThreads test plan and coverage ledger
 
-Updated: 6 October 2026. Fix baseline: `3ba2895` (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
+Updated: 6 October 2026. Current confirmation candidate: `eb09624` (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
 
 ## What success means
 
@@ -28,13 +28,13 @@ These are coverage statuses, not a claim that every suite was rerun today. Earli
 | research-flow.cjs | Dutch game-to-thesis route, research gap, local candidate import, export, context resume | Passed in the latest development pass |
 | argument-board.cjs | Evidence roles, explanations, citation notes, missing slot, changed record, resume | Previous passing run; rerun for release |
 | examiner.cjs | Rival predictions, discriminator, retain/narrow/suspend, pending evidence, stale argument prevention | Passed in the latest development pass |
-| ai-research.cjs | Brief reflects the question, rejects prose, accepts structured local candidate, deduplicates | Passed in the latest development pass; no independent external AI session |
+| ai-research.cjs | Brief reflects the question, rejects prose, accepts structured local candidate, deduplicates | Passed in the latest development pass; independent agent brief-and-return checked in Chrome, with manual source review |
 | winning-game.cjs | Fresh full route, ten badges, 890 points for this route, research, revision, filing, exports | Passed in the latest development pass; points vary with optional activities |
 | returning-player.cjs | Stale record assessment, changed evidence, second filing, immutable earlier download, shared candidate, empty slots, reload | Passed at baseline 5da62dc |
 | Live Chrome walkthroughs | Fresh completion and returning-player version comparison | Agent walkthroughs with screenshots; not a human usability study |
 | Research audit | Targeted source and causal corrections, regional and access limits | See RESEARCH_AUDIT.md; not a complete independent verification of the corpus |
 
-The nine browser suites use Chromium. Narrow-viewport assertions check overflow; they do not establish touch usability, accessibility, or cross-browser compatibility.
+The original nine browser suites use Chromium; follow-up suites add durability, interruption, adversarial research, accessibility, concurrent progress and route restoration. Narrow-viewport assertions check overflow; they do not establish touch usability, accessibility, or cross-browser compatibility.
 
 ## Coverage ledger
 
@@ -121,7 +121,7 @@ A failure record should describe the player's consequence, not just an exception
 
 ## Release checks
 
-Run the data validator, JavaScript syntax checks and all thirteen browser suites plus keyboard completion on the release candidate. Record exact results here. Complete a live browser smoke test of a fresh and returning investigation. Any unresolved P0 issue blocks a claim of a dependable core journey. Describe partial accessibility, source review and human-study coverage explicitly.
+Run the data validator, JavaScript syntax checks and all fifteen functional browser suites, optional semantic accessibility audit, and keyboard/Firefox/WebKit completion on the release candidate. Record exact results here. Complete a live browser smoke test of a fresh and returning investigation. Any unresolved P0 issue blocks a claim of a dependable core journey. Describe partial accessibility, source review and human-study coverage explicitly.
 
 There are no multiplayer, login, cloud-sync or automated academic-review capabilities to certify. AI handoff is a manual brief-and-return workflow. Historical review remains a separate, ongoing obligation.
 
@@ -140,3 +140,16 @@ For a human pass, give a new player no procedural coaching. Ask them to choose a
 ### Expanded follow-up confirmation
 
 Additional regressions cover concurrent progress and modal/filter navigation. Candidate source details now expand on demand; AI briefs require the principal claim to match the principal source. The independent AI return was manually narrowed before import because its first version combined documents. A new 19-run confirmation includes these regressions, genuine Tab completion, Firefox/WebKit completion and the optional axe audit. Results are recorded separately; a started run is not a pass.
+
+### Confirmation run history
+
+- `3ba2895`: first complete confirmation passed 16/16.
+- `0afe8b3`: expanded confirmation passed 18/19; interruption reload failed twice. Closing a modal performs asynchronous browser-history navigation; the test tried to reload before that navigation settled.
+- `eb09624`: interruption regression now explicitly waits for the modal route to finish. Isolated rerun passed. Complete confirmation passed **19/19** on `eb09624`: fifteen Chromium functional suites, thirteen-screen axe audit, actual Tab-only completion, Firefox completion and WebKit completion.
+- Live Chrome on port 8768: candidate survives reload, stays unreviewed, can be assigned as a challenge with written limits; Back restores the evidence stage. No import points or accepted graph mutation.
+
+The expanded semantic audit sampled 13 screens with no detected WCAG A/AA violations. Incomplete background/native checks remain manual obligations. This does not certify accessibility.
+
+Manual audit triage: the stage-strip label was corrected with a semantic group role; the × close icon has the accessible name “Close” but still needs speech/reader usability testing. Contrast checks obscured by gradients, pseudo-elements or overlap remain manual. Do not treat axe incomplete checks as passes.
+
+Final functional confirmation: all 19 scenarios passed at `eb09624`. The last change adds only `role="group"` to the investigation-stage strip; its separate thirteen-screen semantic accessibility recheck passed with zero detected violations and removed the stage-strip warning. No game or persistence behavior changed after functional confirmation. The initial expanded failure report is retained alongside the final result.

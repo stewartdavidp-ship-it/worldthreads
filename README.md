@@ -30,7 +30,7 @@ Open http://localhost:8000. No build or runtime package installation is required
 
 ## Verify
 
-Use the [test plan and coverage ledger](docs/TEST_PLAN.md) to distinguish verified behavior, partial checks and untested scenarios, and to record each new testing pass.
+Use the [test plan and coverage ledger](docs/TEST_PLAN.md) to distinguish verified behavior, partial checks and untested scenarios, and to record each new testing pass. The [human test protocol](docs/HUMAN_TEST_PROTOCOL.md) covers uncoached comprehension and delayed return; the [AI handoff review](docs/AI_HANDOFF_REVIEW.md) records source-review limits from the Chrome test.
 
 ```bash
 python3 tests/validate-data.py
