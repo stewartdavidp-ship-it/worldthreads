@@ -112,3 +112,14 @@ The expedition finish and research-round finish are distinct. The local Portfoli
 The playthrough caught stale local-addition feedback after import; the research desk now displays the returned candidate immediately. Portfolio work links use separate selectors from the main research navigation to preserve unambiguous navigation. Tests cover wrong answers, locked gates, repeat protection, all badges, incomplete filing rejection, unsupported AI returns, immutable exports, later argument changes, reload recovery and mobile width. Existing progression, research-loop, examiner and AI-handoff regressions also pass.
 
 Remaining limitation: a player can fill structurally valid fields with weak reasoning. The interface explicitly describes preparation and unreviewed writer assessments; content quality still requires critical source reading and human review.
+
+
+## Returning investigator pass (6 October 2026)
+
+The returning-player perspective exposed a stale defense checkpoint: an old decision could be reused after changing selected evidence while keeping the argument text. Examiner rounds now record the unique evidence selection they evaluated. Reframing updates that selection and clears assessment/decision; changing the test record after a non-pending assessment also requires a fresh assessment. The portfolio checkpoint requires a decision matching both current argument and evidence. Older decisions remain in history but cannot silently establish an evidence selection they did not record.
+
+Players can select a filed portfolio version, compare its argument and evidence with the current draft, see changed interpretations/citations, and download that selected immutable version. A second filing does not award extra points. Snapshot contents remain unreviewed research decisions.
+
+Candidates may be reused through another relevant thread/object entry without making a duplicate observation. A shared candidate retains its ID and unreviewed status; applicability contexts are links, not independent corroboration. Drafts remain separate between investigations. Thread/object resumption also preserves explicitly empty evidence slots instead of reseeding them.
+
+The returning-player regression covers a changed test record, changed evidence, a second defense and filing, older-version download equality, cross-context reuse/deduplication, independent drafts, deliberately empty slots, reload and mobile width. These behaviors were also exercised in live Chrome; the fresh-player winning route and affected examiner/research regressions continue to pass.
