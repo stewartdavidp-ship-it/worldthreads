@@ -67,3 +67,7 @@ Set `WORLDTHREADS_URL` for another port. The research-flow suite runs the Dutch 
 Validation checks identifiers, dates, reciprocal object membership, provenance and exact preservation of relationship claims. Browser suites check navigation, game gates, rewards, case files, object/thread entry, imports, exports and mobile width. They do not certify historical truth or thesis quality.
 
 See [the data model](docs/DATA_MODEL.md), [exploration design](docs/EXPLORER_DESIGN.md), [research audit and limits](docs/RESEARCH_AUDIT.md) and [project scope](docs/PROJECT_SPEC.md).
+
+## Feedback
+
+“Share feedback” is available throughout an investigation, including evidence dialogs. Messages and an inspectable, bounded UI-state snapshot go to a private Cloudflare D1 inbox. Device diagnostics are optional; private thesis/research text and browser storage are excluded. Failed sends preserve the message, and retries do not duplicate reports. See [feedback operation and verification](docs/FEEDBACK.md).

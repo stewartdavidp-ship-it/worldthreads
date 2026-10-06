@@ -153,3 +153,20 @@ The expanded semantic audit sampled 13 screens with no detected WCAG A/AA violat
 Manual audit triage: the stage-strip label was corrected with a semantic group role; the × close icon has the accessible name “Close” but still needs speech/reader usability testing. Contrast checks obscured by gradients, pseudo-elements or overlap remain manual. Do not treat axe incomplete checks as passes.
 
 Final functional confirmation: all 19 scenarios passed at `eb09624`. The last change adds only `role="group"` to the investigation-stage strip; its separate thirteen-screen semantic accessibility recheck passed with zero detected violations and removed the stage-strip warning. No game or persistence behavior changed after functional confirmation. The initial expanded failure report is retained alongside the final result.
+
+## State-aware feedback pass — 6 October 2026
+
+| ID | Check | Status | Evidence / boundary |
+|---|---|---|---|
+| F01 | Capture the actual view, selected records and game progress | Tested | Prototype feedback suite; story/thread context, stage, record IDs and startup status |
+| F02 | Capture published clue-comparison state | Tested | Published-interface preview suite; selected/seen/pinned leads, stance and entered-work flags |
+| F03 | Keep private research out of diagnostics | Tested | Client preview and server whitelist; private thesis/question text, extra fields and private URL parts excluded |
+| F04 | Lost acknowledgement, retry and duplicate click | Tested | Real Worker logic plus in-memory SQLite; same request recovers one stored report |
+| F05 | Malformed input, rate limits, origins and unavailable storage | Tested | Service suite; rejected writes do not claim success, limits use atomic SQL |
+| F06 | Feedback from an evidence dialog | Tested | Both frontend suites; native dialog stacking and focus return preserve investigation state |
+| F07 | Feedback after failed collection startup | Tested | Prototype suite; form remains usable, failure status and resource location captured |
+| F08 | Mobile, keyboard and accessibility | Partial | 390px reflow, sampled axe rules and complete keyboard game pass; physical devices and human discoverability still open |
+
+Four service cases, the prototype feedback suite and the published-interface feedback suite passed. The complete Tab-only winning game also passed with the persistent button and early diagnostic capture. The Worker was built/deployed; its live health and invalid-input responses were checked without submitting a synthetic production message. `tests/run-plan.cjs` includes feedback when axe is enabled; the published preview suite is enabled only with `WORLDTHREADS_PUBLISHED_PREVIEW`.
+
+Feedback is private operator input, not a historical contribution, an AI-reviewed source or a reward activity. See FEEDBACK.md for captured state, storage and retention, inbox operation and test/deployment commands.
