@@ -84,3 +84,13 @@ Remaining design weakness: the guided interpretation answers are often easy to d
 A fresh library-first player was tested in live Chrome on the Brazilian artists and patronage thread. The evidence route now opens a board with the provisional argument, three evidence slots and a focused interpretation task. Players inspect a source, assign the record a role (support, challenge, context or unresolved) and explain the decision. Decisions update the underlying thesis entries, survive navigation and export as unreviewed writer interpretations. Empty slots remain legitimate; no reward or scholarly certification is earned by assigning roles.
 
 A second live pass replaced an arrival record with the decree while retaining its old interpretation. Role assignments are now bound to the selected record ID; a substitution triggers a review warning in the board, table and export, and the stale assignment stops counting as a prepared slot. Repeated records are explicitly distinguished from independent evidence. The automated board suite covers these behaviors, source-dialog return, export and mobile layout. The board still cannot judge whether a written explanation is valid; further passes should test rivalry, scope and argument revision rather than reward field completion.
+
+
+### Skeptical-examiner perspective
+
+A live Chrome pass deliberately started with an overreaching writer premise: funding authorization proves the proposed Brazilian school opened. The examiner round now asks for a rival explanation, predictions under each account, a discriminating source, a provisional assessment and a reasoned decision to retain, narrow or suspend the argument. A non-pending result needs a linked test record. Pending work can remain pending; no contrary historical document is fabricated.
+
+Applying a decision changes the actual thesis text and records the before/after statements, reason, source reference, predictions and provisional assessment in a local history exported with the draft. Evidence assignments are bound to the argument as well as the record, so changing the argument triggers reassessment. Automated checks exercise incomplete decisions, results without a record, narrowing, pending retention, suspension, duplicate protection, navigation, export and mobile width. These checks assess workflow integrity, not validity of a writer's explanation.
+
+
+Source inspection inside the challenge round is available without leaving the player's test. A regression caught an autosave-render race that could replace a source button during a click; stable content now keeps its existing controls. Imported candidates selected in the evidence table become available to the examiner immediately, retaining their unreviewed status.
