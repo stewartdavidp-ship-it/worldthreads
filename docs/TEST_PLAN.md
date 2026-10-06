@@ -1,6 +1,6 @@
 # WorldThreads test plan and coverage ledger
 
-Updated: 6 October 2026. Current confirmation candidate: `eb09624` (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
+Updated: 6 October 2026. Current confirmation candidate: `97918e0` (latest complete 19-run confirmation: `eb09624`) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
 
 ## What success means
 
@@ -77,14 +77,14 @@ Stable IDs let future passes update the same case rather than accumulate disconn
 | R06 | Browser back, refresh and detour mid-task | Partial | Browser Back/Forward returns to the thesis stage; evidence detours and reload preserve drafts. Object modal Back/Forward and filtered library → thesis stage navigation pass; broader route combinations remain open | interruption + returning |
 | U01 | Narrow screen | Partial | Touch emulation and 390/320px reflow pass; physical-device use remains untested | accessibility.cjs + existing suites |
 | U02 | Keyboard-only full winning route | Partial | Full winning route passes with keyboard activation/text entry; shelf Tab access and dialog cycling pass. Actual Tab traversal now completes the route; human discoverability remains open | winning-game keyboard mode + accessibility |
-| U03 | Screen reader, zoom and contrast | Partial | Visible form labeling, modal focus cycling, Escape and global focus styles checked; 13 sampled screens passed automated semantic/contrast checks after a contrast fix; real screen-reader and zoom checks remain open | accessibility.cjs; no accessibility certification |
+| U03 | Screen reader, zoom and contrast | Partial | Visible form labeling, modal focus cycling, Escape and global focus styles checked; 13 sampled screens passed automated semantic/contrast checks after a contrast fix; real screen-reader checks remain open; actual Chrome 200% zoom passed on the story, source dialog, five thesis stages and feedback form | accessibility.cjs; no accessibility certification |
 | U04 | Safari, Firefox and private browsing | Partial | Complete route has passed in Firefox and WebKit engines; branded Safari/private-mode settings require separate checks | winning-game engine runs; final reconfirmation recorded below |
 | U05 | Long text and non-English research notes | Tested | Long multilingual title/notes reflow at narrow widths and retain exact characters/newlines in export | accessibility.cjs |
 | H01 | Uncoached beginner | Not tested | Can explain their question, evidence limit and next research move; record confusion and assistance | Real participant needed |
 | H02 | Skeptical advanced historian | Not tested | Can distinguish author interpretation from graph claims and critique a filed thesis | Independent reviewer needed |
 | H03 | Returning player after several days | Partial | Saved state works; player can recover purpose and next action without rereading everything | Returning automation; delayed human recall untested |
 
-## Next passes, in order
+## Original ordered passes (completed within the recorded automated scopes)
 
 1. **Durability:** R02, R03, R04. Inject write failures, quota exhaustion, malformed stored drafts and conflicting tabs. Try filing immediately after a failed save. Verify downloaded data against the visible current draft.
 2. **Interrupted investigation:** R05, R06. Fail one data fetch, lose network, refresh mid-stage, return from evidence and restart. Preserve a truthful recovery path.
@@ -170,3 +170,22 @@ Final functional confirmation: all 19 scenarios passed at `eb09624`. The last ch
 Four service cases, the prototype feedback suite and the published-interface feedback suite passed. The complete Tab-only winning game also passed with the persistent button and early diagnostic capture. The Worker was built/deployed; its live health and invalid-input responses were checked without submitting a synthetic production message. `tests/run-plan.cjs` includes feedback when axe is enabled; the published preview suite is enabled only with `WORLDTHREADS_PUBLISHED_PREVIEW`.
 
 Feedback is private operator input, not a historical contribution, an AI-reviewed source or a reward activity. See FEEDBACK.md for captured state, storage and retention, inbox operation and test/deployment commands.
+
+## Return to the plan — 6 October 2026
+
+**U03, actual browser zoom:** PASS within the recorded scope at `97918e0`, Chrome desktop, single-player preview on port 8768. Set Chrome to 200% using its native zoom controls (confirmed in Chrome’s accessibility tree). At the resulting 855×426 CSS viewport, the story shelf, Tambora story, expanded source dialog and all five thesis stages had no horizontal page overflow. Source expansion and dialog close worked. The feedback form opened and its Cancel button was reachable; closing restored focus to Share feedback. Existing research text was preserved, and browser zoom was restored to 100%. No code fix was needed. Screenshot: `worldthreads-thesis-200-percent-chrome.png` in the delivered outputs. This does not establish screen-reader usability, a complete zoom/device matrix or human comprehension.
+
+Next: reconfirm the complete functional plan on the feedback-enabled candidate, then broaden the remaining concurrent-draft and navigation cases. Human beginner/historian reviews and original-source verification remain separate obligations.
+
+### Remaining work queue
+
+1. **R03/R04/R06:** broaden races between draft resolution, context switching and filing; unsupported schema versions; combined object/evidence/filter/history detours. Preserve a reproducible failing case before changing behavior.
+2. **D02/D03/D05 and T02/T06:** review another filed thesis against exact passages, source dependence, causal scope and a rival explanation. Inaccessible sources stay unresolved.
+3. **U01/U03/U04:** real screen reader, physical touch device, further zoom sizes and branded/private browser settings. Engine automation does not close these cases.
+4. **G01/G04/G05 and H01–H03:** uncoached participant and historian sessions. Test whether players know their goal, what evidence would change their claim, and what badges actually mean. Agent walkthroughs cannot substitute for these participants.
+
+### Navigation race found during reconfirmation
+
+The feedback-enabled baseline `97918e0` passed **20/21** expanded confirmations, with WebKit failing during the first story’s progression. An isolated rerun also stalled during case filing. A deterministic regression delayed the actual `history.back()` caused by closing evidence, then advanced the story before releasing that history event. Before the fix, the delayed event reopened the old modal instead of preserving the new scene. This is a player-visible navigation race, not a failure to interpret historical evidence.
+
+The fix queues a later route while the evidence-close history traversal is pending, then retains that route when the traversal finishes. A second close during that interval shares the pending transition. The new `navigation-race.cjs` passes in Chromium and WebKit; the existing navigation matrix passes. The full-route test also waits for the evidence return to settle before its next planned step; the separate race test deliberately omits that wait. Chrome’s immediate evidence-close → next-scene walkthrough preserves the later scene. Full final confirmation is recorded only after completion.
