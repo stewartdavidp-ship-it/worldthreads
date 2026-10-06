@@ -30,6 +30,8 @@ Open http://localhost:8000. No build or runtime package installation is required
 
 ## Verify
 
+Use the [test plan and coverage ledger](docs/TEST_PLAN.md) to distinguish verified behavior, partial checks and untested scenarios, and to record each new testing pass.
+
 ```bash
 python3 tests/validate-data.py
 node --check app.js
