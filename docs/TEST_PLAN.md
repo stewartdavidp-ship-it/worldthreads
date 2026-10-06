@@ -1,6 +1,6 @@
 # WorldThreads test plan and coverage ledger
 
-Updated: 6 October 2026. Baseline: `5da62dc`. Scope: single-player, browser-local prototype.
+Updated: 6 October 2026. Fix baseline: `3ba2895` (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
 
 ## What success means
 
@@ -58,28 +58,28 @@ Stable IDs let future passes update the same case rather than accumulate disconn
 | T04 | File, revise and compare versions | Tested | Earlier snapshot remains immutable, selected download matches it, comparison explains changes | Winning + returning |
 | T05 | Superficial text satisfies the gate | Known limit | Structural completion is explicitly distinguished from academic quality; no semantic grading exists | Filing checks inspect completeness |
 | T06 | Contradictory evidence and pending research | Partial | Pending result does not fabricate a conclusion; conflicting-source reasoning still needs human assessment | Examiner; independent review pending |
-| A01 | Ask an AI assistant for research | Partial | Brief contains scope, model, evidence and return schema; actual external assistant session still needed | AI-research |
+| A01 | Ask an AI assistant for research | Partial | Brief contains scope, model, evidence and return schema; independent agent returned a candidate from the exact Chrome brief; manual source review narrowed it before Chrome import | AI-research |
 | A02 | Import candidate and use it | Tested | Candidate remains local/unreviewed, selectable and exportable; registered graph unchanged | Research-flow + winning |
 | A03 | Duplicate candidate in another context | Tested | Reuses one finding with context links; does not count as independent corroboration | Returning |
 | A04 | Malformed prose, missing locator, unsafe URL scheme | Tested | Tested bad inputs reject without changing the corpus | AI + research-flow + winning; limited adversarial set |
-| A05 | Plausible invented citation or irrelevant source | Not tested | UI must not imply validation from schema acceptance; investigator can reject or quarantine it | Test with clearly labeled synthetic fixtures |
-| A06 | Huge files, HTML, Unicode, null/array shapes | Partial | Inputs fail safely or render as text; no execution, crash or data loss | Size guard exists; comprehensive adversarial checks absent |
+| A05 | Plausible invented citation or irrelevant source | Tested | Synthetic fabricated source remains unreviewed; exclusion reason is retained, unusable selection blocks preparation, and restoration stays unreviewed | adversarial-research.cjs; no automatic source authentication |
+| A06 | Huge files, HTML, Unicode, null/array shapes | Tested | Null/array/scalar JSON, oversized fields/files and credential URLs reject; HTML is inert and multilingual text survives | adversarial-research.cjs; bounded adversarial fixtures |
 | D01 | Graph consistency | Tested | All registered references and projected claim directions validate | Python validator |
 | D02 | Source passage supports observation | Partial | Audit records exact passage, date/place scope, source dependence and access limits | Targeted research audit; corpus-wide review incomplete |
 | D03 | Relationship warrants causal language | Partial | Context/role does not become cause; alternative mechanisms and uncertainty retained | Data/UI distinctions + targeted audit; full independent review incomplete |
 | D04 | Coverage represents affected populations | Partial | Coverage gaps are explicit; add regional/local perspectives with provenance | Africa, Indigenous views, household relief and other gaps remain |
-| D05 | Completed thesis withstands scholarly critique | Not tested | Independent reviewer challenges premises, source independence, counterevidence and conclusion | A filed pilot is not a defended thesis |
+| D05 | Completed thesis withstands scholarly critique | Partial | Independent agent source/reasoning critique completed; primary-record research and human historian assessment remain pending | BRAZIL_THESIS_REVIEW.md |
 | R01 | Reload and ordinary autosave | Tested | Draft, decisions, rewards and portfolios survive expected reload/context transitions | Research-flow + returning + winning |
-| R02 | Storage unavailable or full | Not tested | Failed write cannot claim durable success or file a stale draft; recovery preserves current work | P0 next pass |
-| R03 | Two tabs edit the same investigation | Not tested | No silent overwrite; conflict or recovery path is visible | P0 next pass |
-| R04 | Corrupted stored records / old schema | Partial | Corrupted progress JSON resets safely; other keys and migrations need fixtures | Progress only |
-| R05 | Data fetch failure or offline startup | Not tested | Clear retry/recovery state; no misleading empty corpus or broken core flow | P0 next pass |
-| R06 | Browser back, refresh and detour mid-task | Partial | Active context and unsaved state remain intelligible across all entry routes | Some navigation tested; full route matrix absent |
-| U01 | Narrow screen | Partial | Existing 390px overflow checks pass; touch targets and real-device interaction remain | Browser suites |
-| U02 | Keyboard-only full winning route | Partial | Every action reachable, focus visible/returned, no trap; full journey untested | Enter card and dialog focus checks only |
-| U03 | Screen reader, zoom and contrast | Not tested | Understandable reading order/labels, announcements, usable zoom and dark-mode contrast | Dedicated accessibility pass required |
-| U04 | Safari, Firefox and private browsing | Not tested | Core journey works or accurately explains unavailable persistence | Chromium coverage only |
-| U05 | Long text and non-English research notes | Not tested | Labels, imports, comparisons and exports remain readable and preserve text | Include diacritics, long titles and multiline notes |
+| R02 | Storage unavailable or full | Tested | Injected quota/denied writes block stale filing; current session work exports and save recovery succeeds | durability.cjs |
+| R03 | Two tabs edit the same investigation | Partial | Competing thesis tabs require explicit choice; archive failure blocks destructive switching. Two tabs retain and display both sets of earned progress; a complete multi-tab race matrix remains open | durability.cjs |
+| R04 | Corrupted stored records / old schema | Partial | Malformed draft, candidate and portfolio shapes recover; unsupported historical schemas still need a complete migration matrix | durability + progress |
+| R05 | Data fetch failure or offline startup | Tested | Failed HTTP or network collection loads show retry; existing saved research survives and editing after load works offline | interruption.cjs; offline first-load HTML/assets not covered |
+| R06 | Browser back, refresh and detour mid-task | Partial | Browser Back/Forward returns to the thesis stage; evidence detours and reload preserve drafts. Object modal Back/Forward and filtered library → thesis stage navigation pass; broader route combinations remain open | interruption + returning |
+| U01 | Narrow screen | Partial | Touch emulation and 390/320px reflow pass; physical-device use remains untested | accessibility.cjs + existing suites |
+| U02 | Keyboard-only full winning route | Partial | Full winning route passes with keyboard activation/text entry; shelf Tab access and dialog cycling pass. Actual Tab traversal now completes the route; human discoverability remains open | winning-game keyboard mode + accessibility |
+| U03 | Screen reader, zoom and contrast | Partial | Visible form labeling, modal focus cycling, Escape and global focus styles checked; 13 sampled screens passed automated semantic/contrast checks after a contrast fix; real screen-reader and zoom checks remain open | accessibility.cjs; no accessibility certification |
+| U04 | Safari, Firefox and private browsing | Partial | Complete route has passed in Firefox and WebKit engines; branded Safari/private-mode settings require separate checks | winning-game engine runs; final reconfirmation recorded below |
+| U05 | Long text and non-English research notes | Tested | Long multilingual title/notes reflow at narrow widths and retain exact characters/newlines in export | accessibility.cjs |
 | H01 | Uncoached beginner | Not tested | Can explain their question, evidence limit and next research move; record confusion and assistance | Real participant needed |
 | H02 | Skeptical advanced historian | Not tested | Can distinguish author interpretation from graph claims and critique a filed thesis | Independent reviewer needed |
 | H03 | Returning player after several days | Partial | Saved state works; player can recover purpose and next action without rereading everything | Returning automation; delayed human recall untested |
@@ -121,6 +121,22 @@ A failure record should describe the player's consequence, not just an exception
 
 ## Release checks
 
-Run the data validator, JavaScript syntax checks and all nine browser suites on the release candidate. Record exact results here. Complete a live browser smoke test of a fresh and returning investigation. Any unresolved P0 issue blocks a claim of a dependable core journey. Describe partial accessibility, source review and human-study coverage explicitly.
+Run the data validator, JavaScript syntax checks and all thirteen browser suites plus keyboard completion on the release candidate. Record exact results here. Complete a live browser smoke test of a fresh and returning investigation. Any unresolved P0 issue blocks a claim of a dependable core journey. Describe partial accessibility, source review and human-study coverage explicitly.
 
 There are no multiplayer, login, cloud-sync or automated academic-review capabilities to certify. AI handoff is a manual brief-and-return workflow. Historical review remains a separate, ongoing obligation.
+
+## 6 October ordered fix pass
+
+Fix commit: `3ba2895`. Completed durability → interrupted investigation → adversarial research → keyboard/touch/browser-engine passes → targeted Brazil thesis critique. Each functional fix has a regression check. All JavaScript syntax checks and the data validator passed after the fixes.
+
+The earlier confirmation pass found two assertions tied to a renamed export heading; familiar wording was restored, retaining the separate unreviewed candidate bibliography. The first complete confirmation passed 16/16 at `3ba2895`. An expanded confirmation uses `tests/run-plan.cjs`; its JSON output records commit, per-suite result and completion time. Do not count a started run as a pass.
+
+The new suites are durability, interruption, adversarial-research and accessibility. Run the baseline thirteen, keyboard completion, then Firefox and WebKit complete routes. The revised keyboard helper reaches controls through actual Tab traversal, activates with Enter/Space and types text; the complete winning route passed. Human discoverability remains untested.
+
+Remaining human/source checks: G01/G04/G05, H01/H02/H03, physical devices, real screen-reader/zoom/contrast evaluation, complete schema/multi-tab/route matrices, source independence, full original-source corpus review and a historian’s thesis examination. These are open obligations, not defects claimed fixed by browser automation.
+
+For a human pass, give a new player no procedural coaching. Ask them to choose a question, identify one supporting and one challenging record, state a limit, plan missing research and file a bounded argument. Record assistance, confusion, perceived goal, understanding of rewards and what they think would change their conclusion. An experienced reviewer should then challenge the same exported document claim by claim. No participants have yet run this protocol.
+
+### Expanded follow-up confirmation
+
+Additional regressions cover concurrent progress and modal/filter navigation. Candidate source details now expand on demand; AI briefs require the principal claim to match the principal source. The independent AI return was manually narrowed before import because its first version combined documents. A new 19-run confirmation includes these regressions, genuine Tab completion, Firefox/WebKit completion and the optional axe audit. Results are recorded separately; a started run is not a pass.

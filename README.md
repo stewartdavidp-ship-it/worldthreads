@@ -53,10 +53,14 @@ node tests/durability.cjs
 node tests/interruption.cjs
 node tests/adversarial-research.cjs
 node tests/accessibility.cjs
+node tests/concurrent-progress.cjs
+node tests/navigation-matrix.cjs
 WORLDTHREADS_KEYBOARD=1 node tests/winning-game.cjs
 WORLDTHREADS_BROWSER=firefox node tests/winning-game.cjs
 WORLDTHREADS_BROWSER=webkit node tests/winning-game.cjs
 ```
+
+Run the full sequential confirmation with `WORLDTHREADS_CROSS_BROWSER=1 node tests/run-plan.cjs`. The keyboard route uses Tab traversal and keyboard input throughout. Optional semantic accessibility checks require `axe-core`: install it in a test environment, or use `npm install --prefix work/a11y --no-package-lock --no-save axe-core`, then set `WORLDTHREADS_AXE=1` for the confirmation runner. Automated accessibility checks leave manual review obligations.
 
 Set `WORLDTHREADS_URL` for another port. The research-flow suite runs the Dutch thread through the real game, a case, a thesis, a dead end, a local import and draft export. Its import deliberately repeats a registered authorization claim, demonstrating that file acceptance does not resolve the missing delivery evidence. Set `WORLDTHREADS_PILOT_OUTPUT` to save the pilot document to a chosen path.
 
