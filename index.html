@@ -3,11 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+  (function(){
+    var theme='dark',size='normal',sizes={normal:'100%',large:'112.5%',xl:'125%',xxl:'140%'};
+    try{var t=localStorage.getItem('worldthreads-theme');if(['auto','light','dark'].indexOf(t)>=0)theme=t;size=localStorage.getItem('worldthreads-text-size')||size;}catch(e){}
+    var dark=theme==='dark'||(theme==='auto'&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+    document.documentElement.setAttribute('data-theme',dark?'dark':'light');
+    document.documentElement.style.fontSize=Object.prototype.hasOwnProperty.call(sizes,size)?sizes[size]:'100%';
+  })();
+  </script>
   <title>WorldThreads — 1816 Prototype</title>
   <script src="feedback-log.js?v=20261006"></script>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="threads.css?v=0.5.14" />
-  <link rel="stylesheet" href="feedback.css?v=20261006" />
+  <link rel="stylesheet" href="styles.css?v=20261006-appearance" />
+  <link rel="stylesheet" href="threads.css?v=20261006-appearance" />
+  <link rel="stylesheet" href="feedback.css?v=20261006-appearance" />
+  <link rel="stylesheet" href="appearance.css?v=20261006" />
+  <script defer src="appearance.js?v=20261006"></script>
   <script type="module" src="feedback.mjs?v=20261006"></script>
 </head>
 <body>
@@ -16,7 +27,24 @@
       <div class="brand">WorldThreads</div>
       <div class="tagline">History isn't a collection of events. It's the threads that connect them.</div>
     </div>
-    <nav aria-label="Experience"><button class="nav-btn active" id="storyMode" aria-pressed="true">Choose a story</button><button class="nav-btn" id="objectsMode" aria-pressed="false">People, places & things</button><button class="nav-btn" id="researchMode" aria-pressed="false">Research library</button></nav>
+    <nav aria-label="Experience"><button class="nav-btn active" id="storyMode" aria-pressed="true">Choose a story</button><button class="nav-btn" id="objectsMode" aria-pressed="false">People, places & things</button><button class="nav-btn" id="researchMode" aria-pressed="false">Research library</button><div class="disp"><button class="disp-btn" id="dispBtn" type="button" aria-label="Display settings: theme and text size" aria-haspopup="dialog" aria-expanded="false" aria-controls="dispPanel"><span class="a1">A</span><span class="a2">a</span></button>
+                <div class="disp-panel" id="dispPanel" role="dialog" aria-label="Display settings">
+                    <p class="dph" id="dispThemeLbl">Theme</p>
+                    <div class="disp-row" id="dispTheme" role="group" aria-labelledby="dispThemeLbl">
+                        <button type="button" data-theme-choice="auto" aria-pressed="true" title="Match your device">Auto</button>
+                        <button type="button" data-theme-choice="light" aria-pressed="false" title="Light theme">Light</button>
+                        <button type="button" data-theme-choice="dark" aria-pressed="false" title="Dark theme">Dark</button>
+                    </div>
+                    <p class="dph mt" id="dispSizeLbl">Text size</p>
+                    <div class="disp-sizes" role="group" aria-labelledby="dispSizeLbl">
+                        <button type="button" data-size="normal" aria-pressed="true" aria-label="Normal text size" title="Normal">A</button>
+                        <button type="button" data-size="large" aria-pressed="false" aria-label="Large text size" title="Large">A</button>
+                        <button type="button" data-size="xl" aria-pressed="false" aria-label="Extra-large text size" title="Extra large">A</button>
+                        <button type="button" data-size="xxl" aria-pressed="false" aria-label="Largest text size" title="Largest">A</button>
+                    </div>
+                    <p class="disp-note">Saved on this device.</p>
+                </div>
+            </div></nav>
   </header>
 
   <main>

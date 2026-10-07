@@ -197,3 +197,11 @@ A subsequent confirmation at `48fce4f` passed **21/22**; WebKit intermittently c
 **PASS: 22/22 on `c77250d`**, 6 October 2026. The final run includes sixteen core Chromium functional suites (with the new evidence-close race regression), thirteen-screen semantic audit, both feedback frontend suites, actual Tab-only winning route, Firefox winning route and WebKit winning route. The complete WebKit route also passed in isolation after scrolling was made immediate. Four feedback-service cases and the data validator passed separately. Repository validation checks on the pushed candidate passed.
 
 The prior 20/21 and 21/22 reports remain retained. The final JSON report identifies each execution and candidate commit. Remaining partial cases stay partial: a complete tab/schema/route matrix, real screen reader and physical devices, uncoached participants, historian review, and corpus-wide original-source verification. The fixes are in the single-player prototype branch / PR #2. This confirmation does not certify the older published research frontend’s entire journey.
+
+## Display-control restoration — 6 October 2026
+
+The published research frontend already includes the Aa display control. The single-player test branch lacked it. The same control is now restored in the prototype: Auto / Light / Dark and Normal / Large / Extra-large / Largest text (100%, 112.5%, 125%, 140%). Fresh prototype visits retain dark mode; saved explicit preferences are honored. Auto follows device changes. The selected settings apply before first paint.
+
+Fixed type sizes now use relative units so the content responds to the size control. Light-mode surfaces, evidence and thesis fields retain distinct uncertainty/dispute accents. Largest-size testing found and fixed a narrow header overflow. `tests/appearance.cjs` checks all preferences, actual story-text growth, reload persistence, Auto/explicit-theme behavior, Escape/focus return, denied-storage honesty and largest-size reflow. Twelve sampled display screens had no detected WCAG A/AA violations. The full confirmation below remains separate.
+
+U06: **Tested within the automated scope above.** Real screen-reader users, physical devices and uncoached discoverability remain open. Add appearance to the optional accessibility run in tests/run-plan.cjs.
