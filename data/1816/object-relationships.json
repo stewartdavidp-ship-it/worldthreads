@@ -1,0 +1,3724 @@
+[
+  {
+    "id": "OBJLINK-0001",
+    "subjectId": "OBJ-PERSON-san-martin",
+    "predicate": "COMMANDED",
+    "objectId": "OBJ-1816-0029",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0029"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0002",
+    "subjectId": "OBJ-PERSON-san-martin",
+    "predicate": "COMMANDED",
+    "objectId": "OBJ-1816-0031",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0031"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0003",
+    "subjectId": "OBJ-PERSON-macquarie",
+    "predicate": "ORDERED",
+    "objectId": "OBJ-1816-0026",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-020",
+      "SRC-036"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0026"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0004",
+    "subjectId": "OBJ-PERSON-macquarie",
+    "predicate": "ISSUED",
+    "objectId": "OBJ-1816-0028",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-020"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0028"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0005",
+    "subjectId": "OBJ-PERSON-macquarie",
+    "predicate": "DISPATCHED",
+    "objectId": "OBJ-1816-0061",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-037"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0061"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0006",
+    "subjectId": "OBJ-PERSON-macquarie",
+    "predicate": "REPORTED",
+    "objectId": "OBJ-1816-0063",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-037"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0063"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0007",
+    "subjectId": "OBJ-PERSON-macquarie",
+    "predicate": "REPORTED",
+    "objectId": "OBJ-1816-0064",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-038"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0064"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0008",
+    "subjectId": "OBJ-PERSON-macquarie",
+    "predicate": "REPORTED",
+    "objectId": "OBJ-1816-0065",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-020"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0065"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0009",
+    "subjectId": "OBJ-PERSON-macquarie",
+    "predicate": "RECORDED_TRANSFER",
+    "objectId": "OBJ-1816-0066",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-038"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0066"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0010",
+    "subjectId": "OBJ-PERSON-mary-godwin",
+    "predicate": "CONCEIVED",
+    "objectId": "OBJ-1816-0015",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-013",
+      "SRC-014"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0015"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0011",
+    "subjectId": "OBJ-PERSON-laennec",
+    "predicate": "DEVELOPED",
+    "objectId": "OBJ-1816-0014",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-012"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0014"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0012",
+    "subjectId": "OBJ-PERSON-rossini",
+    "predicate": "COMPOSED",
+    "objectId": "OBJ-1816-0021",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-015"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0021"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0013",
+    "subjectId": "OBJ-PERSON-shaka",
+    "predicate": "LED",
+    "objectId": "OBJ-1816-0019",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-010"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0019"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0014",
+    "subjectId": "OBJ-PERSON-jefferson",
+    "predicate": "REPORTED",
+    "objectId": "OBJ-1816-0041",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-025"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0041"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0015",
+    "subjectId": "OBJ-PERSON-jefferson",
+    "predicate": "REPORTED",
+    "objectId": "OBJ-1816-0042",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-025"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0042"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0016",
+    "subjectId": "OBJ-PERSON-jefferson",
+    "predicate": "REPORTED",
+    "objectId": "OBJ-1816-0043",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-026"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0043"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0017",
+    "subjectId": "OBJ-PERSON-jefferson",
+    "predicate": "FORECAST",
+    "objectId": "OBJ-1816-0044",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-026"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0044"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0018",
+    "subjectId": "OBJ-PERSON-masek",
+    "predicate": "REPORTED",
+    "objectId": "OBJ-1816-0007",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-001"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0007"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0019",
+    "subjectId": "OBJ-PERSON-pellew",
+    "predicate": "COMMANDED",
+    "objectId": "OBJ-1816-0018",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-009"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0018"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0020",
+    "subjectId": "OBJ-PERSON-radama",
+    "predicate": "RELATIVES_REPORTED",
+    "objectId": "OBJ-1816-0070",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-041"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0070"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0021",
+    "subjectId": "OBJ-PERSON-radama",
+    "predicate": "MISSION_COUNTERPART",
+    "objectId": "OBJ-1816-0071",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-040"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0071"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0022",
+    "subjectId": "OBJ-PERSON-radama",
+    "predicate": "AGREEMENT_PARTY",
+    "objectId": "OBJ-1816-0072",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-040"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0072"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0023",
+    "subjectId": "OBJ-PERSON-radama",
+    "predicate": "PROCLAIMED",
+    "objectId": "OBJ-1816-0073",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-042"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0073"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0024",
+    "subjectId": "OBJ-PERSON-farquhar",
+    "predicate": "REPORTED",
+    "objectId": "OBJ-1816-0070",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-041"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0070"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0025",
+    "subjectId": "OBJ-PERSON-farquhar",
+    "predicate": "APPROVAL_ENVISAGED",
+    "objectId": "OBJ-1816-0072",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-040"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0072"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0026",
+    "subjectId": "OBJ-PERSON-farquhar",
+    "predicate": "APPROVED",
+    "objectId": "OBJ-1816-0073",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-042"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0073"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0027",
+    "subjectId": "OBJ-PERSON-lesage",
+    "predicate": "CONDUCTED_MISSION",
+    "objectId": "OBJ-1816-0071",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-040"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0071"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0028",
+    "subjectId": "OBJ-PERSON-lesage",
+    "predicate": "AGREEMENT_PARTY",
+    "objectId": "OBJ-1816-0072",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-040"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0072"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0029",
+    "subjectId": "OBJ-PERSON-daendels",
+    "predicate": "DISPATCHED_ENVOY",
+    "objectId": "OBJ-1816-0067",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0067"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0030",
+    "subjectId": "OBJ-PERSON-daendels",
+    "predicate": "SENT_GIFT",
+    "objectId": "OBJ-1816-0069",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0069"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0031",
+    "subjectId": "OBJ-PERSON-huydecoper",
+    "predicate": "CONDUCTED_MISSION",
+    "objectId": "OBJ-1816-0067",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0067"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0032",
+    "subjectId": "OBJ-PERSON-huydecoper",
+    "predicate": "REPORTED",
+    "objectId": "OBJ-1816-0068",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0068"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0033",
+    "subjectId": "OBJ-PERSON-asantehene",
+    "predicate": "ASKED_ABOUT_TRADE",
+    "objectId": "OBJ-1816-0068",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0068"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0034",
+    "subjectId": "OBJ-PERSON-asantehene",
+    "predicate": "INTENDED_RECIPIENT",
+    "objectId": "OBJ-1816-0069",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0069"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0035",
+    "subjectId": "OBJ-army-andes",
+    "predicate": "PARTICIPATED_IN",
+    "objectId": "OBJ-1816-0029",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Context or identity documented in the cited observation; inclusion is not a separate causal claim.",
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0029"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0036",
+    "subjectId": "OBJ-army-andes",
+    "predicate": "PARTICIPATED_IN",
+    "objectId": "OBJ-1816-0030",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Context or identity documented in the cited observation; inclusion is not a separate causal claim.",
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0030"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0037",
+    "subjectId": "OBJ-army-andes",
+    "predicate": "PARTICIPATED_IN",
+    "objectId": "OBJ-1816-0031",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Context or identity documented in the cited observation; inclusion is not a separate causal claim.",
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0031"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0038",
+    "subjectId": "OBJ-army-andes",
+    "predicate": "PARTICIPATED_IN",
+    "objectId": "OBJ-1816-0060",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Context or identity documented in the cited observation; inclusion is not a separate causal claim.",
+    "sourceRefs": [
+      "SRC-035"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0060"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0039",
+    "subjectId": "OBJ-tucuman-congress",
+    "predicate": "DECLARED",
+    "objectId": "OBJ-1816-0016",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Context or identity documented in the cited observation; inclusion is not a separate causal claim.",
+    "sourceRefs": [
+      "SRC-007"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0016"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0040",
+    "subjectId": "OBJ-mendoza-workshops",
+    "predicate": "PRODUCED",
+    "objectId": "OBJ-1816-0060",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Context or identity documented in the cited observation; inclusion is not a separate causal claim.",
+    "sourceRefs": [
+      "SRC-035"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0060"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0041",
+    "subjectId": "OBJ-dublin-hospital",
+    "predicate": "CAPACITY_REPORTED_IN",
+    "objectId": "OBJ-1816-0054",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Context or identity documented in the cited observation; inclusion is not a separate causal claim.",
+    "sourceRefs": [
+      "SRC-032"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0054"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0042",
+    "subjectId": "OBJ-independence",
+    "predicate": "INCLUDES_EVENT",
+    "objectId": "OBJ-1816-0016",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Context or identity documented in the cited observation; inclusion is not a separate causal claim.",
+    "sourceRefs": [
+      "SRC-007"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0016"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0043",
+    "subjectId": "OBJ-tambora",
+    "predicate": "SITE_OF",
+    "objectId": "OBJ-1816-0008",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Context or identity documented in the cited observation; inclusion is not a separate causal claim.",
+    "sourceRefs": [
+      "SRC-003",
+      "SRC-016"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0008"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0044",
+    "subjectId": "OBJ-1816-0001",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-001",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0001"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0045",
+    "subjectId": "OBJ-1816-0002",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-002",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0002"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0046",
+    "subjectId": "OBJ-1816-0003",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-003",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0003"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0047",
+    "subjectId": "OBJ-1816-0004",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-001",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0004"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0048",
+    "subjectId": "OBJ-1816-0005",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-004",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-001",
+      "SRC-003"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0005"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0049",
+    "subjectId": "OBJ-1816-0006",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-004",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-001"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0006"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0050",
+    "subjectId": "OBJ-1816-0007",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-005",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-001"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0007"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0051",
+    "subjectId": "OBJ-1816-0008",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-006",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-003",
+      "SRC-016"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0008"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0052",
+    "subjectId": "OBJ-1816-0009",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-007",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-004"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0009"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0053",
+    "subjectId": "OBJ-1816-0010",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-008",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-005"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0010"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0054",
+    "subjectId": "OBJ-1816-0011",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-009",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-005"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0011"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0055",
+    "subjectId": "OBJ-1816-0012",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-010",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-006"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0012"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0056",
+    "subjectId": "OBJ-1816-0013",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-011",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-006"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0013"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0057",
+    "subjectId": "OBJ-1816-0014",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-012",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-012"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0014"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0058",
+    "subjectId": "OBJ-1816-0015",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-013",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-013",
+      "SRC-014"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0015"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0059",
+    "subjectId": "OBJ-1816-0016",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-014",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-007"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0016"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0060",
+    "subjectId": "OBJ-1816-0017",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-015",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-008"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0017"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0061",
+    "subjectId": "OBJ-1816-0018",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-016",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-009"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0018"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0062",
+    "subjectId": "OBJ-1816-0019",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-017",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-010"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0019"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0063",
+    "subjectId": "OBJ-1816-0020",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-018",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-011"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0020"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0064",
+    "subjectId": "OBJ-1816-0021",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-019",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-015"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0021"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0065",
+    "subjectId": "OBJ-1816-0022",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-020",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-017"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0022"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0066",
+    "subjectId": "OBJ-1816-0023",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-021",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-018",
+      "SRC-019"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0023"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0067",
+    "subjectId": "OBJ-1816-0024",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-022",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-018"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0024"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0068",
+    "subjectId": "OBJ-1816-0025",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-023",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-019"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0025"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0069",
+    "subjectId": "OBJ-1816-0026",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-024",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-020",
+      "SRC-036"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0026"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0070",
+    "subjectId": "OBJ-1816-0027",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-025",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-020"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0027"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0071",
+    "subjectId": "OBJ-1816-0028",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-026",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-020"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0028"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0072",
+    "subjectId": "OBJ-1816-0029",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-027",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0029"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0073",
+    "subjectId": "OBJ-1816-0030",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-028",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0030"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0074",
+    "subjectId": "OBJ-1816-0031",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-029",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0031"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0075",
+    "subjectId": "OBJ-1816-0032",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-030",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0032"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0076",
+    "subjectId": "OBJ-1816-0033",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-031",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0033"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0077",
+    "subjectId": "OBJ-1816-0034",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-032",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0034"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0078",
+    "subjectId": "OBJ-1816-0035",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-030",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0035"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0079",
+    "subjectId": "OBJ-1816-0036",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-033",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-023"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0036"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0080",
+    "subjectId": "OBJ-1816-0037",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-033",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-023"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0037"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0081",
+    "subjectId": "OBJ-1816-0038",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-034",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-023"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0038"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0082",
+    "subjectId": "OBJ-1816-0039",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-035",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-024"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0039"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0083",
+    "subjectId": "OBJ-1816-0040",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-035",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-024"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0040"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0084",
+    "subjectId": "OBJ-1816-0041",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-036",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-025"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0041"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0085",
+    "subjectId": "OBJ-1816-0042",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-037",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-025"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0042"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0086",
+    "subjectId": "OBJ-1816-0043",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-036",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-026"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0043"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0087",
+    "subjectId": "OBJ-1816-0044",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-038",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-026"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0044"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0088",
+    "subjectId": "OBJ-1816-0045",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-039",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0045"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0089",
+    "subjectId": "OBJ-1816-0046",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-040",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0046"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0090",
+    "subjectId": "OBJ-1816-0047",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-039",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0047"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0091",
+    "subjectId": "OBJ-1816-0048",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-041",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0048"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0092",
+    "subjectId": "OBJ-1816-0049",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-042",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-028"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0049"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0093",
+    "subjectId": "OBJ-1816-0050",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-043",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0050"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0094",
+    "subjectId": "OBJ-1816-0051",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-044",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0051"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0095",
+    "subjectId": "OBJ-1816-0052",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-045",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0052"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0096",
+    "subjectId": "OBJ-1816-0053",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-046",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-031"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0053"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0097",
+    "subjectId": "OBJ-1816-0054",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-047",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-032"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0054"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0098",
+    "subjectId": "OBJ-1816-0055",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-048",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0055"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0099",
+    "subjectId": "OBJ-1816-0056",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-049",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0056"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0100",
+    "subjectId": "OBJ-1816-0057",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-050",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0057"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0101",
+    "subjectId": "OBJ-1816-0058",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-051",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-033"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0058"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0102",
+    "subjectId": "OBJ-1816-0059",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-051",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-034"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0059"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0103",
+    "subjectId": "OBJ-1816-0060",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-052",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-035"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0060"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0104",
+    "subjectId": "OBJ-1816-0061",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-053",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-037"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0061"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0105",
+    "subjectId": "OBJ-1816-0062",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-054",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-037"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0062"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0106",
+    "subjectId": "OBJ-1816-0063",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-055",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-037"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0063"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0107",
+    "subjectId": "OBJ-1816-0064",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-056",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-038"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0064"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0108",
+    "subjectId": "OBJ-1816-0065",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-057",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-020"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0065"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0109",
+    "subjectId": "OBJ-1816-0066",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-058",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-038"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0066"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0110",
+    "subjectId": "OBJ-1816-0067",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-059",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0067"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0111",
+    "subjectId": "OBJ-1816-0068",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-060",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0068"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0112",
+    "subjectId": "OBJ-1816-0069",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-061",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0069"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0113",
+    "subjectId": "OBJ-1816-0070",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-062",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-041"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0070"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0114",
+    "subjectId": "OBJ-1816-0071",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-063",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-040"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0071"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0115",
+    "subjectId": "OBJ-1816-0072",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-063",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-040"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0072"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0116",
+    "subjectId": "OBJ-1816-0073",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-064",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-042"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0073"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0117",
+    "subjectId": "OBJ-1816-0074",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-065",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-019",
+      "SRC-044"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0074"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0118",
+    "subjectId": "OBJ-1816-0075",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-066",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-043"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0075"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0119",
+    "subjectId": "OBJ-1816-0076",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-067",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-045"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0076"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0120",
+    "subjectId": "OBJ-1816-0077",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-068",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-046"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0077"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0121",
+    "subjectId": "OBJ-1816-0078",
+    "predicate": "LOCATED_IN",
+    "objectId": "OBJ-PLACE-069",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
+    "sourceRefs": [
+      "SRC-047",
+      "SRC-048"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0078"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0122",
+    "subjectId": "OBJ-1816-0001",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-united-states",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0001"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0123",
+    "subjectId": "OBJ-1816-0002",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-united-states",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0002"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0124",
+    "subjectId": "OBJ-1816-0003",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-united-states",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0003"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0125",
+    "subjectId": "OBJ-1816-0004",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-united-states",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0004"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0126",
+    "subjectId": "OBJ-1816-0041",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-united-states",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-025"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0041"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0127",
+    "subjectId": "OBJ-1816-0042",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-united-states",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-025"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0042"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0128",
+    "subjectId": "OBJ-1816-0043",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-united-states",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-026"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0043"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0129",
+    "subjectId": "OBJ-1816-0044",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-united-states",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-026"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0044"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0130",
+    "subjectId": "OBJ-1816-0032",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-netherlands",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0032"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0131",
+    "subjectId": "OBJ-1816-0033",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-netherlands",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0033"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0132",
+    "subjectId": "OBJ-1816-0034",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-netherlands",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0034"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0133",
+    "subjectId": "OBJ-1816-0035",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-netherlands",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0035"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0134",
+    "subjectId": "OBJ-1816-0045",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-choson",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0045"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0135",
+    "subjectId": "OBJ-1816-0046",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-choson",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0046"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0136",
+    "subjectId": "OBJ-1816-0047",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-choson",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0047"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0137",
+    "subjectId": "OBJ-1816-0048",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-choson",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0048"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0138",
+    "subjectId": "OBJ-1816-0012",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-qing",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-006"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0012"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0139",
+    "subjectId": "OBJ-1816-0013",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-qing",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-006"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0013"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0140",
+    "subjectId": "OBJ-1816-0016",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-rio-plata",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-007"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0016"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0141",
+    "subjectId": "OBJ-1816-0029",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-rio-plata",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0029"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0142",
+    "subjectId": "OBJ-1816-0060",
+    "predicate": "HISTORICAL_CONTEXT",
+    "objectId": "OBJ-POLITY-rio-plata",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Historical political context recorded in the observation. It does not imply a modern border or causal responsibility.",
+    "sourceRefs": [
+      "SRC-035"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0060"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJCLAIM-0001",
+    "subjectId": "OBJ-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0001",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "High",
+    "explanation": "Tambora is identified as a major volcanic forcing behind the anomalous 1816 Northern Hemisphere climate, while local atmospheric variability also mattered.",
+    "sourceRefs": [
+      "SRC-002",
+      "SRC-016"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0008",
+      "WT-1816-0001"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0001"
+    ],
+    "alternatives": [
+      "internal climate variability"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0002",
+    "subjectId": "OBJ-1816-0001",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0002",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "Medium-High",
+    "explanation": "The study infers species-specific responses from fisheries records, air temperatures and phenological knowledge. Direct fish behavior and mortality were not measured in 1816.",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0001",
+      "WT-1816-0002"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0002"
+    ],
+    "alternatives": [
+      "river conditions and habitat constraints",
+      "inference from later phenological knowledge"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0003",
+    "subjectId": "OBJ-1816-0002",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0003",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "Medium-High",
+    "explanation": "Weak alewife availability interacted with crop failure and food demand, shifting fishing effort toward marine species including mackerel.",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0002",
+      "WT-1816-0003"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0003"
+    ],
+    "alternatives": []
+  },
+  {
+    "id": "OBJCLAIM-0004",
+    "subjectId": "OBJ-1816-0003",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0004",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "High",
+    "explanation": "The emergency shift in fishing effort persisted after the immediate climate anomaly, creating a path-dependent structural adaptation.",
+    "sourceRefs": [
+      "SRC-002"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0003",
+      "WT-1816-0004"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0004"
+    ],
+    "alternatives": []
+  },
+  {
+    "id": "OBJCLAIM-0005",
+    "subjectId": "OBJ-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0005",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "High",
+    "explanation": "Tambora forcing contributed to the exceptionally cold 1816 summer in the Czech Lands; background climate and circulation variability also influenced conditions.",
+    "sourceRefs": [
+      "SRC-001",
+      "SRC-016"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0008",
+      "WT-1816-0005"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0005"
+    ],
+    "alternatives": []
+  },
+  {
+    "id": "OBJCLAIM-0006",
+    "subjectId": "OBJ-1816-0007",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0006",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "Medium-High",
+    "explanation": "Persistent wet conditions damaged cereals and yields, contributing to shortage and later grain-price pressure.",
+    "sourceRefs": [
+      "SRC-001"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0007",
+      "WT-1816-0006"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0006"
+    ],
+    "alternatives": []
+  },
+  {
+    "id": "OBJCLAIM-0007",
+    "subjectId": "OBJ-1816-0005",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0006",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "High",
+    "explanation": "Cold and damaging 1816 weather contributed to poor grain harvests followed by widespread price increases in 1817.",
+    "sourceRefs": [
+      "SRC-001"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0005",
+      "WT-1816-0006"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0007"
+    ],
+    "alternatives": []
+  },
+  {
+    "id": "OBJCLAIM-0008",
+    "subjectId": "OBJ-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0009",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "High",
+    "explanation": "The Geneva cold summer occurred in the post-Tambora climate anomaly, with regional circulation and cloudiness shaping the local expression.",
+    "sourceRefs": [
+      "SRC-004",
+      "SRC-016"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0008",
+      "WT-1816-0009"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0008"
+    ],
+    "alternatives": []
+  },
+  {
+    "id": "OBJCLAIM-0009",
+    "subjectId": "OBJ-1816-0009",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0015",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "Medium-High",
+    "explanation": "The cold, rainy Geneva summer helped keep the literary group indoors and formed the documented setting for the ghost-story challenge from which Frankenstein emerged. This is a contributing cultural context, not a claim that climate alone caused the work.",
+    "sourceRefs": [
+      "SRC-013",
+      "SRC-014"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0009",
+      "WT-1816-0015"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0009"
+    ],
+    "alternatives": []
+  },
+  {
+    "id": "OBJCLAIM-0010",
+    "subjectId": "OBJ-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0010",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "High",
+    "explanation": "Post-eruption cold conditions contributed to unusual Alpine snow conditions during 1816–1817.",
+    "sourceRefs": [
+      "SRC-005"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0008",
+      "WT-1816-0010"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0010"
+    ],
+    "alternatives": []
+  },
+  {
+    "id": "OBJCLAIM-0011",
+    "subjectId": "OBJ-1816-0010",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0011",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "Medium-High",
+    "explanation": "Snow storage increased the water available for melt, but modeling indicates spring 1817 snowfall and intense triggering rainfall were more immediate drivers than surviving 1816 snow alone.",
+    "sourceRefs": [
+      "SRC-005"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0010",
+      "WT-1816-0011"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0011"
+    ],
+    "alternatives": [
+      "spring 1817 snowfall",
+      "heavy July 1817 rainfall"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0012",
+    "subjectId": "OBJ-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0012",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "High",
+    "explanation": "Multiple proxy lines attribute a significant part of the southern China 1816 cold excursion to Tambora-era volcanic forcing.",
+    "sourceRefs": [
+      "SRC-006"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0008",
+      "WT-1816-0012"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0012"
+    ],
+    "alternatives": []
+  },
+  {
+    "id": "OBJCLAIM-0013",
+    "subjectId": "OBJ-1816-0012",
+    "predicate": "COINCIDED_WITH",
+    "objectId": "OBJ-1816-0013",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Cold conditions and reconstructed drying tendencies occurred together, but proxy systems disagree spatially, so the hydroclimate connection is stored as associated rather than simple deterministic causation.",
+    "sourceRefs": [
+      "SRC-006"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0012",
+      "WT-1816-0013"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0013"
+    ],
+    "alternatives": []
+  },
+  {
+    "id": "OBJCLAIM-0014",
+    "subjectId": "OBJ-1816-0017",
+    "predicate": "PRECEDED",
+    "objectId": "OBJ-1816-0016",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "These are distinct state-formation/diplomatic processes in different regions. The link is chronological only and exists to support comparative political timelines, not causation.",
+    "sourceRefs": [
+      "SRC-007",
+      "SRC-008"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0017",
+      "WT-1816-0016"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0014"
+    ],
+    "alternatives": []
+  },
+  {
+    "id": "OBJCLAIM-0015",
+    "subjectId": "OBJ-1816-0019",
+    "predicate": "COINCIDED_WITH",
+    "objectId": "OBJ-1816-0020",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Both occurred in southern Africa in 1816 but arose from different political systems. This relationship is explicitly non-causal and useful for regional comparison.",
+    "sourceRefs": [
+      "SRC-010",
+      "SRC-011"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0019",
+      "WT-1816-0020"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0015"
+    ],
+    "alternatives": []
+  },
+  {
+    "id": "OBJCLAIM-0016",
+    "subjectId": "OBJ-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0022",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CAUSAL",
+    "confidence": "High",
+    "explanation": "Local tephra deposition damaged croplands directly; this differs from remote aerosol climate effects.",
+    "sourceRefs": [
+      "SRC-017"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0008",
+      "WT-1816-0022"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0016"
+    ],
+    "alternatives": []
+  },
+  {
+    "id": "OBJCLAIM-0017",
+    "subjectId": "OBJ-1816-0022",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0023",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "Medium-High",
+    "explanation": "Loss of food production contributed to starvation in the local aftermath.",
+    "sourceRefs": [
+      "SRC-017",
+      "SRC-018"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0022",
+      "WT-1816-0023"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0017"
+    ],
+    "alternatives": [
+      "disease",
+      "disruption of exchange"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0018",
+    "subjectId": "OBJ-1816-0024",
+    "predicate": "RESPONDED_TO",
+    "objectId": "OBJ-1816-0023",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "Rice relief and distress sales are documented responses to famine. This edge reads response → crisis; it does not establish relief effectiveness.",
+    "sourceRefs": [
+      "SRC-018"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0024",
+      "WT-1816-0023"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0018"
+    ],
+    "alternatives": [
+      "unequal access to relief"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0019",
+    "subjectId": "OBJ-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0025",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "Medium",
+    "explanation": "Review combines drying proxies with simulations of weakened monsoon circulation following volcanic forcing.",
+    "sourceRefs": [
+      "SRC-019"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0008",
+      "WT-1816-0025"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0019"
+    ],
+    "alternatives": [
+      "internal circulation variability",
+      "proxy sensitivity"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0020",
+    "subjectId": "OBJ-1816-0026",
+    "predicate": "ENABLED",
+    "objectId": "OBJ-1816-0027",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "High",
+    "explanation": "Punitive orders enabled the expedition; Wallis’s conduct exceeded instructions to spare women and children.",
+    "sourceRefs": [
+      "SRC-020"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0026",
+      "WT-1816-0027"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0020"
+    ],
+    "alternatives": [
+      "commander decisions"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0021",
+    "subjectId": "OBJ-1816-0027",
+    "predicate": "PRECEDED",
+    "objectId": "OBJ-1816-0028",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "The massacre preceded the proclamation within the same colonial campaign; chronology does not prove that the massacre caused the policy.",
+    "sourceRefs": [
+      "SRC-020"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0027",
+      "WT-1816-0028"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0021"
+    ],
+    "alternatives": [
+      "prior colonial policy"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0022",
+    "subjectId": "OBJ-1816-0029",
+    "predicate": "ENABLED",
+    "objectId": "OBJ-1816-0030",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "Medium-High",
+    "explanation": "Organization and training provided capacity for the later campaign; this is a curated interpretation of the chronology.",
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0029",
+      "WT-1816-0030"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0022"
+    ],
+    "alternatives": [
+      "supply organization",
+      "route selection",
+      "local support"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0023",
+    "subjectId": "OBJ-1816-0030",
+    "predicate": "PRECEDED",
+    "objectId": "OBJ-1816-0031",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Crossing placed the army in Chile before Chacabuco; the chronology alone does not establish why the battle was won.",
+    "sourceRefs": [
+      "SRC-021"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0030",
+      "WT-1816-0031"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0023"
+    ],
+    "alternatives": [
+      "tactics",
+      "royalist decisions"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0024",
+    "subjectId": "OBJ-1816-0032",
+    "predicate": "PRECEDED",
+    "objectId": "OBJ-1816-0033",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Price pressure preceded the stock survey; the survey’s specific trigger was a provincial request.",
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0032",
+      "WT-1816-0033"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0024"
+    ],
+    "alternatives": [
+      "administrative stock monitoring"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0025",
+    "subjectId": "OBJ-1816-0034",
+    "predicate": "RESPONDED_TO",
+    "objectId": "OBJ-1816-0032",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "Medium-High",
+    "explanation": "Public imports addressed scarcity; beneficial price effects remain contested.",
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0034",
+      "WT-1816-0032"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0025"
+    ],
+    "alternatives": [
+      "private imports",
+      "late arrivals",
+      "distribution constraints"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0026",
+    "subjectId": "OBJ-1816-0035",
+    "predicate": "RESPONDED_TO",
+    "objectId": "OBJ-1816-0032",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "Medium-High",
+    "explanation": "Reduced-price sales targeted food access after price escalation.",
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0035",
+      "WT-1816-0032"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0026"
+    ],
+    "alternatives": [
+      "delivery and beneficiary coverage unresolved"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0027",
+    "subjectId": "OBJ-1816-0036",
+    "predicate": "CONTESTED_CONNECTION",
+    "objectId": "OBJ-1816-0038",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTESTED",
+    "confidence": "Medium-High",
+    "explanation": "Modeled production losses alone do not explain the regional malnutrition gradient.",
+    "sourceRefs": [
+      "SRC-023"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0036",
+      "WT-1816-0038"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0027"
+    ],
+    "alternatives": [
+      "social vulnerability",
+      "market access",
+      "policy",
+      "waterlogging"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0028",
+    "subjectId": "OBJ-1816-0036",
+    "predicate": "COINCIDED_WITH",
+    "objectId": "OBJ-1816-0037",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "The same reconstructed weather produced differing modeled crop responses.",
+    "sourceRefs": [
+      "SRC-023"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0036",
+      "WT-1816-0037"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0028"
+    ],
+    "alternatives": [
+      "cultivar calibration",
+      "management assumptions"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0029",
+    "subjectId": "OBJ-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0039",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "Medium-High",
+    "explanation": "Simulations attribute a substantial increase in cold-event likelihood to volcanic forcing.",
+    "sourceRefs": [
+      "SRC-024"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0008",
+      "WT-1816-0039"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0029"
+    ],
+    "alternatives": [
+      "circulation variability",
+      "forcing magnitude",
+      "model differences"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0030",
+    "subjectId": "OBJ-1816-0039",
+    "predicate": "COINCIDED_WITH",
+    "objectId": "OBJ-1816-0040",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Cold and wet anomalies co-occurred; their attribution strengths differ.",
+    "sourceRefs": [
+      "SRC-024"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0039",
+      "WT-1816-0040"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0030"
+    ],
+    "alternatives": [
+      "rainfall driven partly by internal circulation variability"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0031",
+    "subjectId": "OBJ-1816-0041",
+    "predicate": "COINCIDED_WITH",
+    "objectId": "OBJ-1816-0042",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Reported low morning temperatures accompany frost damage in the same letter; no regional crop-loss model is implied.",
+    "sourceRefs": [
+      "SRC-025"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0041",
+      "WT-1816-0042"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0031"
+    ],
+    "alternatives": [
+      "timing and phenology"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0032",
+    "subjectId": "OBJ-1816-0043",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0044",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "Medium",
+    "explanation": "Jefferson describes drought and frost as crop pressures; the resulting harvest figure remains his forecast.",
+    "sourceRefs": [
+      "SRC-026"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0043",
+      "WT-1816-0044"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0032"
+    ],
+    "alternatives": [
+      "frost",
+      "regional reporting limits"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0033",
+    "subjectId": "OBJ-1816-0046",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0045",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "Medium",
+    "explanation": "Author argues sufficient growing-season water helped rice; rainfall cannot be isolated from varieties, institutions and local conditions.",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0046",
+      "WT-1816-0045"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0033"
+    ],
+    "alternatives": [
+      "Contemporary reporting limits",
+      "Local conditions and evidence scale"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0034",
+    "subjectId": "OBJ-1816-0048",
+    "predicate": "PRECEDED",
+    "objectId": "OBJ-1816-0045",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Recovery follows an existing crisis; no Tambora→1814 edge.",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0048",
+      "WT-1816-0045"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0034"
+    ],
+    "alternatives": [
+      "Contemporary reporting limits",
+      "Local conditions and evidence scale"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0035",
+    "subjectId": "OBJ-1816-0045",
+    "predicate": "PRECEDED",
+    "objectId": "OBJ-1816-0047",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Administrative harvest classifications show continuing recovery; no universal volcanic crop-failure sequence is established.",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0045",
+      "WT-1816-0047"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0035"
+    ],
+    "alternatives": [
+      "Local hardship despite aggregate classifications"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0036",
+    "subjectId": "OBJ-1816-0050",
+    "predicate": "COINCIDED_WITH",
+    "objectId": "OBJ-1816-0051",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Cholera fear and flight observed; no quantified transmission claim.",
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0050",
+      "WT-1816-0051"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0036"
+    ],
+    "alternatives": [
+      "Contemporary reporting limits",
+      "Local conditions and evidence scale"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0037",
+    "subjectId": "OBJ-1816-0050",
+    "predicate": "PRECEDED",
+    "objectId": "OBJ-1816-0052",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Two epidemic records; direction of transmission not proven by ordering.",
+    "sourceRefs": [
+      "SRC-029"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0050",
+      "WT-1816-0052"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0037"
+    ],
+    "alternatives": [
+      "Contemporary reporting limits",
+      "Local conditions and evidence scale"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0038",
+    "subjectId": "OBJ-1816-0056",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0055",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "Medium",
+    "explanation": "Synthesis supports prolonged crisis; not all mortality attributable to starvation or volcano alone.",
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0056",
+      "WT-1816-0055"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0038"
+    ],
+    "alternatives": [
+      "Contemporary reporting limits",
+      "Local conditions and evidence scale"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0039",
+    "subjectId": "OBJ-1816-0055",
+    "predicate": "PRECEDED",
+    "objectId": "OBJ-1816-0057",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Subsequent epidemic, with no disease identification or proven nutritional cause.",
+    "sourceRefs": [
+      "SRC-030"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0055",
+      "WT-1816-0057"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0039"
+    ],
+    "alternatives": [
+      "Contemporary reporting limits",
+      "Local conditions and evidence scale"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0040",
+    "subjectId": "OBJ-1816-0053",
+    "predicate": "PRECEDED",
+    "objectId": "OBJ-1816-0054",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Context and later response; multifactorial disease causation remains uncertain.",
+    "sourceRefs": [
+      "SRC-031",
+      "SRC-032"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0053",
+      "WT-1816-0054"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0040"
+    ],
+    "alternatives": [
+      "Contemporary reporting limits",
+      "Local conditions and evidence scale"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0041",
+    "subjectId": "OBJ-1816-0058",
+    "predicate": "ENABLED",
+    "objectId": "OBJ-1816-0059",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "Medium",
+    "explanation": "Inferred contribution: arrival made foreign artists available for proposed recruitment. The sources do not establish that arrival caused policy planning; instruction and disbursement require separate records.",
+    "sourceRefs": [
+      "SRC-033",
+      "SRC-034"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0058",
+      "WT-1816-0059"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0041"
+    ],
+    "alternatives": [
+      "Policy planning",
+      "Pension payments not verified"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0042",
+    "subjectId": "OBJ-1816-0026",
+    "predicate": "PRECEDED",
+    "objectId": "OBJ-1816-0066",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Punitive orders precede the diary’s transfer of captive children; individual capture circumstances are not established.",
+    "sourceRefs": [
+      "SRC-036",
+      "SRC-038"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0026",
+      "WT-1816-0066"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0042"
+    ],
+    "alternatives": [
+      "Individual family histories needed"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0043",
+    "subjectId": "OBJ-1816-0027",
+    "predicate": "DOCUMENTED_BY",
+    "objectId": "OBJ-1816-0065",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "A later official account conflicts with Wallis’s attack narrative as assessed by the museum. Documentation is not corroboration of the resistance claim.",
+    "sourceRefs": [
+      "SRC-020"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0027",
+      "WT-1816-0065"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0043"
+    ],
+    "alternatives": [
+      "Colonial self-justification",
+      "Unequal archival representation"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0044",
+    "subjectId": "OBJ-1816-0063",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0064",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "Medium-High",
+    "explanation": "Contemporaneous diary reports connect heavy rain, flooding and threatened crops; losses are forecasts, not audited totals.",
+    "sourceRefs": [
+      "SRC-037",
+      "SRC-038"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0063",
+      "WT-1816-0064"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0044"
+    ],
+    "alternatives": [
+      "Local floodplain exposure",
+      "No volcanic attribution"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0045",
+    "subjectId": "OBJ-1816-0061",
+    "predicate": "COINCIDED_WITH",
+    "objectId": "OBJ-1816-0062",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Two independent May records illustrate shipping used for diplomacy and food exchange; neither shipment caused the other.",
+    "sourceRefs": [
+      "SRC-037"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0061",
+      "WT-1816-0062"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0045"
+    ],
+    "alternatives": [
+      "Gift receipt and Tahitian producer perspectives unverified"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0046",
+    "subjectId": "OBJ-1816-0060",
+    "predicate": "ENABLED",
+    "objectId": "OBJ-1816-0030",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "Medium",
+    "explanation": "The heritage account describes workshops producing campaign supplies; their exact share of total equipment is unresolved.",
+    "sourceRefs": [
+      "SRC-035",
+      "SRC-021"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0060",
+      "WT-1816-0030"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0046"
+    ],
+    "alternatives": [
+      "Other supply sources",
+      "Labor and requisition records needed"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0047",
+    "subjectId": "OBJ-1816-0067",
+    "predicate": "PRECEDED",
+    "objectId": "OBJ-1816-0068",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "The documented sequence frames diplomatic exchange; it does not establish that the supply inquiry caused the later gift.",
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0067",
+      "WT-1816-0068"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0047"
+    ],
+    "alternatives": [
+      "European envoy perspective",
+      "Asante court evidence needed"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0048",
+    "subjectId": "OBJ-1816-0068",
+    "predicate": "PRECEDED",
+    "objectId": "OBJ-1816-0069",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium-High",
+    "explanation": "The documented sequence frames diplomatic exchange; it does not establish that the supply inquiry caused the later gift.",
+    "sourceRefs": [
+      "SRC-039"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0068",
+      "WT-1816-0069"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0048"
+    ],
+    "alternatives": [
+      "European envoy perspective",
+      "Asante court evidence needed"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0049",
+    "subjectId": "OBJ-1816-0070",
+    "predicate": "PRECEDED",
+    "objectId": "OBJ-1816-0071",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Reported visitors and later mission form a diplomatic sequence; influence of specific individuals is not isolated.",
+    "sourceRefs": [
+      "SRC-041",
+      "SRC-040"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0070",
+      "WT-1816-0071"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0049"
+    ],
+    "alternatives": [
+      "Visitor identities disputed"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0050",
+    "subjectId": "OBJ-1816-0071",
+    "predicate": "ENABLED",
+    "objectId": "OBJ-1816-0072",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "Medium",
+    "explanation": "Lesage’s mission provided the setting for the preliminary agreement; exact legal scope remains limited to the source account.",
+    "sourceRefs": [
+      "SRC-040"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0071",
+      "WT-1816-0072"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0050"
+    ],
+    "alternatives": [
+      "Negotiation and local political aims"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0051",
+    "subjectId": "OBJ-1816-0072",
+    "predicate": "PRECEDED",
+    "objectId": "OBJ-1816-0073",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Separate agreements occurred in February and October; legal continuity and enforcement require additional records.",
+    "sourceRefs": [
+      "SRC-040",
+      "SRC-042"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0072",
+      "WT-1816-0073"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0051"
+    ],
+    "alternatives": [
+      "Domestic slavery persisted",
+      "Proclamation is not enforcement"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0052",
+    "subjectId": "OBJ-1816-0074",
+    "predicate": "COINCIDED_WITH",
+    "objectId": "OBJ-1816-0075",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Evidence overlaps in time but differs in variable, region and temporal resolution; this comparison does not establish causal transfer. ",
+    "sourceRefs": [
+      "SRC-019",
+      "SRC-044",
+      "SRC-043"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0074",
+      "WT-1816-0075"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0052"
+    ],
+    "alternatives": [
+      "Route-biased air measurements",
+      "Proxy isotope confounds",
+      "Simulations are not measurements"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0053",
+    "subjectId": "OBJ-1816-0074",
+    "predicate": "COINCIDED_WITH",
+    "objectId": "OBJ-1816-0076",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Evidence overlaps in time but differs in variable, region and temporal resolution; this comparison does not establish causal transfer. ",
+    "sourceRefs": [
+      "SRC-019",
+      "SRC-044",
+      "SRC-045"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0074",
+      "WT-1816-0076"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0053"
+    ],
+    "alternatives": [
+      "Route-biased air measurements",
+      "Proxy isotope confounds",
+      "Simulations are not measurements"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0054",
+    "subjectId": "OBJ-1816-0074",
+    "predicate": "COINCIDED_WITH",
+    "objectId": "OBJ-1816-0077",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "Evidence overlaps in time but differs in variable, region and temporal resolution; this comparison does not establish causal transfer. ",
+    "sourceRefs": [
+      "SRC-019",
+      "SRC-046",
+      "SRC-044"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0074",
+      "WT-1816-0077"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0054"
+    ],
+    "alternatives": [
+      "Route-biased air measurements",
+      "Proxy isotope confounds",
+      "Simulations are not measurements"
+    ]
+  },
+  {
+    "id": "OBJCLAIM-0055",
+    "subjectId": "OBJ-1816-0008",
+    "predicate": "CONTRIBUTED_TO",
+    "objectId": "OBJ-1816-0077",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "causalStatus": "CONTRIBUTORY",
+    "confidence": "Medium-High",
+    "explanation": "Volcanically forced model experiments produce persistent ocean cooling and heat loss. This is a model-supported mechanism, not directly measured historical ocean heat content.",
+    "sourceRefs": [
+      "SRC-046"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0008",
+      "WT-1816-0077"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0055"
+    ],
+    "alternatives": [
+      "Aerosol-forcing estimates",
+      "Model physics",
+      "Internal variability",
+      "Earlier 1809 forcing"
+    ]
+  }
+]

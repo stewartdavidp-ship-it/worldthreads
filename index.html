@@ -3,9 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+  (function(){
+    var theme='dark',size='normal',sizes={normal:'100%',large:'112.5%',xl:'125%',xxl:'140%'};
+    try{var t=localStorage.getItem('worldthreads-theme');if(['auto','light','dark'].indexOf(t)>=0)theme=t;size=localStorage.getItem('worldthreads-text-size')||size;}catch(e){}
+    var dark=theme==='dark'||(theme==='auto'&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+    document.documentElement.setAttribute('data-theme',dark?'dark':'light');
+    document.documentElement.style.fontSize=Object.prototype.hasOwnProperty.call(sizes,size)?sizes[size]:'100%';
+  })();
+  </script>
   <title>WorldThreads — 1816 Prototype</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="threads.css" />
+  <script src="feedback-log.js?v=20261006"></script>
+  <link rel="stylesheet" href="styles.css?v=20261006-appearance" />
+  <link rel="stylesheet" href="threads.css?v=20261006-appearance" />
+  <link rel="stylesheet" href="feedback.css?v=20261006-appearance" />
+  <link rel="stylesheet" href="appearance.css?v=20261006" />
+  <script defer src="appearance.js?v=20261006"></script>
+  <script type="module" src="feedback.mjs?v=20261006"></script>
 </head>
 <body>
   <header class="site-header">
@@ -13,17 +27,35 @@
       <div class="brand">WorldThreads</div>
       <div class="tagline">History isn't a collection of events. It's the threads that connect them.</div>
     </div>
-    <nav>
-      <button class="nav-btn active">1816</button>
-      <button class="nav-btn">Threads</button>
-      <button class="nav-btn">Evidence</button>
-    </nav>
+    <nav aria-label="Experience"><button class="nav-btn active" id="storyMode" aria-pressed="true">Choose a story</button><button class="nav-btn" id="objectsMode" aria-pressed="false">People, places & things</button><button class="nav-btn" id="researchMode" aria-pressed="false">Research library</button><div class="disp"><button class="disp-btn" id="dispBtn" type="button" aria-label="Display settings: theme and text size" aria-haspopup="dialog" aria-expanded="false" aria-controls="dispPanel"><span class="a1">A</span><span class="a2">a</span></button>
+                <div class="disp-panel" id="dispPanel" role="dialog" aria-label="Display settings">
+                    <p class="dph" id="dispThemeLbl">Theme</p>
+                    <div class="disp-row" id="dispTheme" role="group" aria-labelledby="dispThemeLbl">
+                        <button type="button" data-theme-choice="auto" aria-pressed="true" title="Match your device">Auto</button>
+                        <button type="button" data-theme-choice="light" aria-pressed="false" title="Light theme">Light</button>
+                        <button type="button" data-theme-choice="dark" aria-pressed="false" title="Dark theme">Dark</button>
+                    </div>
+                    <p class="dph mt" id="dispSizeLbl">Text size</p>
+                    <div class="disp-sizes" role="group" aria-labelledby="dispSizeLbl">
+                        <button type="button" data-size="normal" aria-pressed="true" aria-label="Normal text size" title="Normal">A</button>
+                        <button type="button" data-size="large" aria-pressed="false" aria-label="Large text size" title="Large">A</button>
+                        <button type="button" data-size="xl" aria-pressed="false" aria-label="Extra-large text size" title="Extra large">A</button>
+                        <button type="button" data-size="xxl" aria-pressed="false" aria-label="Largest text size" title="Largest">A</button>
+                    </div>
+                    <p class="disp-note">Saved on this device.</p>
+                </div>
+            </div></nav>
   </header>
 
   <main>
-    <section class="hero">
+    <section id="startupStatus" role="status" class="local-finding"><p>Loading the evidence collection…</p></section>
+    <section id="investigationProgress" class="investigation-progress" aria-label="Investigation progress"></section>
+    <section id="storyJourney" class="story-journey" aria-label="Guided historical investigation"></section>
+    <section id="objectExplorer" class="object-explorer" hidden aria-label="Explore people places and things"></section>
+    <div id="researchLibrary" hidden>
+    <section class="hero" id="year">
       <div>
-        <p class="eyebrow">PROTOTYPE YEAR · CONTEXT 1814–1818</p>
+        <p class="eyebrow">PROTOTYPE YEAR · DATED CONTEXT · ANTECEDENTS AND OUTCOMES</p>
         <h1>1816</h1>
         <h2>The world in motion</h2>
         <p class="intro">Explore evidence as a historical systems graph: Earth, biosphere, production, people, power and culture. Facts remain separate from the relationships historians infer between them.</p>
@@ -45,51 +77,65 @@
       <button class="filter power" data-system="POWER & CULTURE">Power & culture</button>
     </section>
 
-    <section class="data-strip">
+    <p class="thread-description"><span id="yearRecords">—</span> records cover 1816 or an overlapping window; <span id="contextRecords">—</span> are antecedents or later outcomes. Counts reflect gathered evidence, not completeness.</p><section class="data-strip">
       <div class="data-chip"><strong id="highConfidence">—</strong><span>high-confidence observations</span></div>
       <div class="data-chip"><strong id="regionsCovered">—</strong><span>continents represented</span></div>
       <div class="data-chip"><strong>5</strong><span>interacting systems</span></div>
-      <div class="data-chip"><strong>1814–18</strong><span>causal context window</span></div>
+      <div class="data-chip"><strong>1814–18</strong><span>main context window; proxy baselines may extend earlier</span></div>
     </section>
 
     <section class="layout">
       <aside class="panel map-panel">
-        <div class="section-head"><p class="eyebrow">WORLD VIEW</p><h3>Where the evidence sits</h3><p>Click a region to open one of its evidence records.</p></div>
+        <div class="section-head"><p class="eyebrow">WORLD VIEW</p><h3>Where the evidence sits</h3><p>Click a region to filter its evidence records.</p></div>
         <div class="map-shell">
           <div class="map-label na">North America</div><button class="map-node na-node" data-region="North America" aria-label="North America"></button>
           <div class="map-label europe">Europe</div><button class="map-node europe-node" data-region="Europe" aria-label="Europe"></button>
           <div class="map-label asia">Asia</div><button class="map-node asia-node" data-region="Asia" aria-label="Asia"></button>
           <div class="map-label africa">Africa</div><button class="map-node africa-node" data-region="Africa" aria-label="Africa"></button>
           <div class="map-label sa">South America</div><button class="map-node sa-node" data-region="South America" aria-label="South America"></button>
-          <div class="map-empty">Coverage shows evidence gathered so far, not historical importance. Research gaps remain explicit.</div>
+          <div class="map-label oceans">Oceans</div><button class="map-node oceans-node" data-region="Oceans" aria-label="Oceans"></button><div class="map-label oceania">Oceania</div><button class="map-node oceania-node" data-region="Oceania" aria-label="Oceania"></button><div class="map-empty">Coverage shows evidence gathered so far, not historical importance. Research gaps remain explicit.</div>
         </div>
-        <div class="legend"><span><i class="dot high"></i> High confidence</span><span><i class="dot medium"></i> Medium / mixed evidence</span></div>
+        <p class="legend">Markers indicate gathered evidence, not a regional confidence rating.</p>
       </aside>
 
-      <section class="panel thread-panel">
+      <section class="panel thread-panel" id="threads">
         <div class="section-head">
           <p class="eyebrow">TRACE</p>
           <h3 id="threadTitle">Historical thread</h3>
           <p id="threadSubtitle"></p>
         </div>
         <div class="thread-toolbar"><select id="threadSelect" class="thread-select" aria-label="Choose a historical thread"></select></div>
-        <p id="threadDescription" class="thread-description"></p>
-        <div id="threadGraph" class="thread-graph"></div>
+        <p id="threadDescription" class="thread-description"></p><button class="story-back" id="threadThesis">Use this thread as a thesis investigation →</button>
+        <p class="thread-description">Each row is a sourced connection. Click its label to assess the claim; association and chronology do not establish causation.</p><div id="threadGraph" class="thread-graph"></div><div id="mechanismPanel"></div>
       </section>
     </section>
 
-    <section class="panel observations-panel">
+    <section class="panel observations-panel" id="evidence">
       <div class="section-head row-head">
         <div><p class="eyebrow">1816 KNOWLEDGE GRAPH</p><h3>Observations</h3></div>
         <div id="countLabel" class="count-label"></div>
       </div>
-      <div id="cards" class="cards"></div>
+      <div class="evidence-toolbar"><label>Search evidence <input id="searchInput" type="search" placeholder="Place, topic, date or evidence type"></label><label>Region <select id="regionSelect"><option value="ALL">All regions</option></select></label><label>Time window <select id="periodSelect"><option value="ALL">All dated context</option><option value="YEAR">1816 and overlapping windows</option><option value="CONTEXT">Antecedents and later outcomes</option></select></label><label>Evidence basis <select id="evidenceSelect"><option value="ALL">All evidence types</option></select></label><label>Order <select id="sortSelect"><option value="date">Earliest first</option><option value="title">Title</option></select></label><button class="filter" id="clearFilters">Clear filters</button></div><div id="cards" class="cards" aria-live="polite"></div>
     </section>
+    <section class="panel observations-panel"><h3>Research gaps</h3><p>Open each gap to inspect the evidence added and its related threads. The remaining questions stay visible; partial coverage does not close a gap.</p><div id="researchGaps" class="cards"></div></section>
+    </div>
   </main>
 
-  <dialog id="detailDialog"><button id="closeDialog" class="close" aria-label="Close">×</button><div id="dialogContent"></div></dialog>
+  <dialog id="detailDialog" aria-labelledby="detailTitle"><button id="closeDialog" class="close" aria-label="Close">×</button><div id="dialogContent"></div></dialog>
 
-  <footer><span>WorldThreads v0.2</span><span>Prototype year: 1816 · evidence and relationships separated</span></footer>
-  <script src="app.js"></script>
+  <footer><span>WorldThreads v0.5</span><span>Prototype year: 1816 · evidence and relationships separated</span></footer>
+  <script src="stories.js?v=0.5.20"></script>
+  <script src="progress.js?v=0.5.20"></script>
+  <script src="investigations.js?v=0.5.20"></script>
+  <script src="casefiles.js?v=0.5.20"></script>
+  <script src="draft-storage.js?v=0.5.20"></script>
+  <script src="thesis.js?v=0.5.20"></script>
+  <script src="examiner.js?v=0.5.20"></script>
+  <script src="objects.js?v=0.5.20"></script>
+  <script src="saved-list-storage.js?v=0.5.20"></script>
+  <script src="research.js?v=0.5.20"></script>
+  <script src="portfolio.js?v=0.5.20"></script>
+  <script src="navigation.js?v=0.5.20"></script>
+  <script src="app.js?v=0.5.20"></script>
 </body>
 </html>

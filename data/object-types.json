@@ -1,0 +1,169 @@
+[
+  {
+    "id": "PERSON",
+    "label": "People",
+    "subtypes": [
+      "colonial_administrator",
+      "colonial_governor",
+      "commander",
+      "composer",
+      "envoy",
+      "inventor",
+      "observer",
+      "ruler",
+      "writer"
+    ]
+  },
+  {
+    "id": "MOVEMENT",
+    "label": "Political and social movements",
+    "subtypes": [
+      "independence",
+      "labour",
+      "reform",
+      "religious",
+      "resistance"
+    ]
+  },
+  {
+    "id": "POLITY",
+    "label": "Polities",
+    "subtypes": [
+      "colony",
+      "empire",
+      "historical_polity",
+      "kingdom",
+      "republic"
+    ]
+  },
+  {
+    "id": "INSTITUTION",
+    "label": "Institutions and organizations",
+    "subtypes": [
+      "army",
+      "assembly",
+      "government",
+      "hospital",
+      "workshop"
+    ]
+  },
+  {
+    "id": "PLACE",
+    "label": "Places",
+    "subtypes": [
+      "city",
+      "evidence_location",
+      "ocean_route",
+      "region",
+      "river_basin"
+    ]
+  },
+  {
+    "id": "NATURAL_FEATURE",
+    "label": "Natural features",
+    "subtypes": [
+      "mountain",
+      "river",
+      "volcano"
+    ]
+  },
+  {
+    "id": "ENVIRONMENTAL_EPISODE",
+    "label": "Weather and natural hazards",
+    "subtypes": [
+      "cold_episode",
+      "drought",
+      "earthquake",
+      "eruption",
+      "flood",
+      "persistent_rain",
+      "snow_storage",
+      "storm"
+    ]
+  },
+  {
+    "id": "BIOLOGICAL_SYSTEM",
+    "label": "Living systems",
+    "subtypes": [
+      "crop",
+      "fish_population"
+    ]
+  },
+  {
+    "id": "TECHNOLOGY",
+    "label": "Inventions and technologies",
+    "subtypes": [
+      "manufacturing",
+      "medical_instrument"
+    ]
+  },
+  {
+    "id": "WORK",
+    "label": "Cultural works",
+    "subtypes": [
+      "novel",
+      "opera"
+    ]
+  },
+  {
+    "id": "EVENT",
+    "label": "Events",
+    "subtypes": [
+      "battle",
+      "declaration",
+      "diplomatic_dispatch",
+      "diplomatic_exchange",
+      "diplomatic_mission",
+      "execution",
+      "forced_transfer",
+      "massacre",
+      "military_crossing",
+      "official_account",
+      "performance",
+      "protest",
+      "reported_visit",
+      "stock_inventory",
+      "strike",
+      "treaty",
+      "voyage",
+      "war"
+    ]
+  },
+  {
+    "id": "POLICY",
+    "label": "Policies and legal instruments",
+    "subtypes": [
+      "decree",
+      "proclamation",
+      "restriction",
+      "subsidy"
+    ]
+  },
+  {
+    "id": "PROCESS",
+    "label": "Processes of change",
+    "subtypes": [
+      "adaptation",
+      "diplomacy",
+      "epidemic",
+      "manufacturing",
+      "migration",
+      "military_preparation",
+      "political_expansion",
+      "trade"
+    ]
+  },
+  {
+    "id": "CONDITION",
+    "label": "Conditions",
+    "subtypes": [
+      "climate_reconstruction",
+      "food_pressure",
+      "harvest",
+      "health_capacity",
+      "health_exposure",
+      "nutrition",
+      "prices"
+    ]
+  }
+]

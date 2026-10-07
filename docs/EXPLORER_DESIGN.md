@@ -1,0 +1,125 @@
+# Exploring evidence through connections
+
+The inspector opens with one observation and its immediate incoming and outgoing relationships. Clicking a neighbor moves the focus. Clicking a relationship opens its endpoints, explanation, confidence, alternatives and sources. Back and breadcrumbs preserve the exploration path, explicitly distinguished from a causal claim.
+
+Evidence and record metadata are separate views. Source entries expand on demand, preserving provenance without making every drill-down a long document. The connection filter separates causal and contributory claims from associations and disputes. Empty directions describe the recorded network, not the absence of historical relationships. Dark mode and narrow-screen layouts are retained.
+
+## Platform patterns
+
+[Kumu focus](https://docs.kumu.io/guides/focus) provides the pattern of concentrating on a selected element and its neighborhood. [Obsidian local graph](https://obsidian.md/help/plugins/graph) provides the pattern of following the active record through linked records. WorldThreads adapts these ideas with explicit relationship predicates, uncertainty and evidence rather than treating proximity as causation.
+
+## Verification
+
+Browser checks exercise all thread endpoints and relationship explanations, keyboard opening, evidence tabs, collapsed sources, neighbor traversal, breadcrumb return, filtering, research-gap links and mobile width. Data validation checks identifiers, dates, references and mechanism/thread membership.
+
+## Story-first entry
+
+The default experience asks: why did damaging weather become a food crisis in some places while other places reported good harvests? Six scenes introduce the question, connect Tambora to European cooling, follow Czech weather and grain-price evidence, invite a working hypothesis, challenge a universal claim with Korean harvest records, and state a qualified conclusion. The ending offers a specific next investigation into Amsterdam relief.
+
+This is evidence assessment, not a scored game. Korea is not a controlled experiment and does not prove a single cause of resilience. Dutch policy authorization does not establish delivery or household benefit. Those limits are part of the story.
+
+What worked in the library: explicit link explanations, source provenance, uncertainty, and neighboring records. What did not work as an opening experience: competing map, counts, filters, long record lists and no central question or destination. The library is now a separate mode. Each story scene gives one primary next action, with optional evidence detours that return to the same scene.
+
+The current story covers selected climate and subsistence evidence, not all histories of 1816. Additional stories should each have their own question, human stakes, evidence that changes an explanation, and a qualified ending rather than funneling unrelated histories into Tambora.
+
+## Story selection and evidence frontiers
+
+The opening shelf offers three complete guided starting points: different harvest outcomes, Dutch relief and the Andean campaign. Readers choose a question before entering a journey. An interactive stop diagram reveals records as each scene is reached and lets readers revisit stops. Labeled relationship claims come from the underlying graph and retain their actual direction and causal status; story order is never rendered as a causal arrow. Connection lists remain collapsed by default to limit clutter.
+
+Each story ends at an explicit evidence frontier with a question and the kinds of sources needed to extend it. A proposal form collects the claim, source URL, passage reference, date/place, proposed claim category and limitations. Drafts are stored locally and downloaded as unreviewed JSON proposals. They do not enter the graph or a shared review queue. Shared submission/review is outside this interface; local saving must not imply publication.
+
+Browser tests cover all three story entrances and endings, revealed/unreached stops, evidence detours, chronological versus contributory labels, local draft saving and proposal download. The design intentionally offers selected stories rather than pretending every existing thread has a complete narrative.
+
+## Investigation mechanics and progress
+
+Dutch relief is the first story with an evidence workbench. A reader selects surviving record summaries, inspects the relevant clues, and makes an inference before the next scene unlocks. Four tasks test price evidence versus household outcomes, chronology across different towns, shipment timing versus purchase authorization, and the missing delivery/recipient evidence. Wrong interpretations cost no points and invite another evidence check. Correct interpretations reveal existing sourced connections. Completed clue panels collapse so the page does not accumulate information.
+
+No manuscripts, transcriptions, artifacts or discoveries are fabricated. The workbench identifies summaries as summaries and provides a source lens for checking passages, evidence basis and limitations. The other two stories retain their guided form; their deeper workbench tasks are not yet authored. The research library stays freely accessible.
+
+Progress persists locally: visited scenes, expanded relevant sources, examined relevant connections, working hypothesis, interpreted layers and saved unreviewed drafts. Unique milestones award points once, with badges and ranks in a field journal. One fully investigated story unlocks a claim-evaluation challenge; all three unlock a cross-story evidence comparison. Completing Dutch relief also requires its four interpretation tasks. A draft earns participation credit, not an endorsement of its accuracy.
+
+Browser checks verify locked steps, prerequisite clue inspection, wrong-answer handling, completion bonuses, repeated-action protection, resume after reload, saved clues, badges, challenge unlocks and corrupt-storage recovery. Progress is not an account, a peer-review result or proof that a source was understood. It does not sync between browsers.
+
+## Success, case files and the thesis workspace
+
+The primary goal is the 1816 Evidence Expedition: three case files and two method challenges. Each case desk unlocks after its investigation prerequisites and requires paired evidence, an appropriate limit and a useful next research move. Guided case completion earns a downloadable Markdown case file and a unique reward. Badges are secondary achievements; draft contribution is optional. Completion is an in-app learning milestone, not independent peer review or closure of a historical gap.
+
+Stages make the destination explicit: Discover, Investigate, Build the case, Case earned. The expedition meter tracks five milestones, and finishing earns the 1816 Investigator badge, a unique bonus and access to the thesis workspace and open-research board. Challenge access now follows earned case files rather than mere story visits.
+
+The thesis workspace is informed by [Harvard History’s dissertation prospectus guidance](https://history.fas.harvard.edu/graduate-program-dissertation-prospectus), [thesis guidance](https://writingcenter.fas.harvard.edu/thesis) and [counterargument guidance](https://writingcenter.fas.harvard.edu/counterargument). It separates the writer’s provisional argument from registered observations and asks for research significance, scholarship, scope, method, claim–evidence entries, checked passage references, counterargument, response, revision criteria, chapters and schedule. It saves locally and exports a Markdown research draft with a bibliography from selected records. Empty fields remain marked as unfinished; the app neither supplies invented citations nor grades scholarly originality.
+
+Tests cover missing evidence and unsupported limits at case submission, unique case/expedition rewards, locked challenges, case downloads, persisted completion and thesis draft saving/reopening/export. The downloaded plan is not a finished PhD thesis. Primary-source research, historiographical engagement, revision and external scholarly feedback remain necessary.
+
+## Enter through an object, then follow forces
+
+People, places & things is an independent entry alongside stories and the library. Search/filter opens a focused object with incoming/outgoing roles and historical claims, collapsible context and source-backed observation links. One shared person identity can connect several actions. A work can receive a climate-context claim and an attributed creator role without conflating them. Object navigation enters existing threads and preserves inspector breadcrumbs. No missing personal motivation or regional influence is invented.
+
+## One-thread thesis pilot and the research loop
+
+A single thread can start a thesis investigation immediately; completing unrelated cases is no longer a prerequisite. An earned case offers a direct Develop this thread into a thesis action, and the library offers the same entry for any thread. The full expedition remains an optional broader goal. Switching thesis threads archives the prior thread draft locally.
+
+The Dutch relief pilot was run through the real game: four evidence layers, case assembly, a thread-scoped thesis, an explicit household-distribution dead end, a local import and document export. The imported entry deliberately repeats a registered authorization claim to show that import mechanics do not supply new delivery evidence. Source passages were not independently rechecked during this pilot; registered locators and that limitation remain in the exported draft.
+
+Research prompts teach readers to define the unsupported link, identify a source capable of testing it, check provenance/date/place/purpose, preserve contrary evidence and negative searches, then revise the premise. Proposal imports are local, unreviewed candidate evidence. The export separates them from registered observations and includes research tasks and dead ends. Accepting a file is not accepting a historical claim.
+
+Browser checks cover object identities, indirect context, role versus causal labels, source backlinks, object-to-thread entry, the single-thread game-to-thesis route, malformed/unsafe imports, duplicate protection, local extension persistence, exports and mobile width.
+
+Object profiles also offer a direct influence-research entry, including when no curated thread exists. The stethoscope pilot entry preserves the lack of a recorded outgoing influence claim and starts an object-scoped question instead of inventing an impact story. Thread and object drafts are archived separately when changing investigation context.
+
+
+### Case-to-thesis handoff and defense rehearsal
+
+A completed learning case seeds its paired evidence, explicit limit and next research move into a new thread thesis. It does not fill in the writer's argument. The thesis includes three self-directed defense challenges: the missing causal link, a rival explanation and revision under credible counterevidence. Preparation reminders identify absent argument or interpretation fields without scoring quality or awarding scholarly certification. Responses and the carried case limit are retained locally and exported.
+
+
+### Live Chrome first-player pass
+
+Two entry paths were exercised in the visible Chrome UI: Dutch relief through a completed case into a thesis, and Laennec → stethoscope → object-scoped research with zero badges. The landing page now presents story questions before the expedition goal. A completed case hands off its concrete open question. Thesis navigation provides topic, evidence and defense actions; evidence options group the current investigation first. Object drafts offer questions about antecedent conditions or attributed changes without supplying a causal answer. Unconnected observation records open on evidence rather than an empty graph.
+
+Remaining design weakness: the guided interpretation answers are often easy to distinguish and thesis development still relies heavily on text fields. The stethoscope record lacks a passage locator and does not establish wider impact; no missing historical claim was invented to make the journey smoother. Further passes should test argument construction and revision as game actions.
+
+
+### Library-first argument-board pass
+
+A fresh library-first player was tested in live Chrome on the Brazilian artists and patronage thread. The evidence route now opens a board with the provisional argument, three evidence slots and a focused interpretation task. Players inspect a source, assign the record a role (support, challenge, context or unresolved) and explain the decision. Decisions update the underlying thesis entries, survive navigation and export as unreviewed writer interpretations. Empty slots remain legitimate; no reward or scholarly certification is earned by assigning roles.
+
+A second live pass replaced an arrival record with the decree while retaining its old interpretation. Role assignments are now bound to the selected record ID; a substitution triggers a review warning in the board, table and export, and the stale assignment stops counting as a prepared slot. Repeated records are explicitly distinguished from independent evidence. The automated board suite covers these behaviors, source-dialog return, export and mobile layout. The board still cannot judge whether a written explanation is valid; further passes should test rivalry, scope and argument revision rather than reward field completion.
+
+
+### Skeptical-examiner perspective
+
+A live Chrome pass deliberately started with an overreaching writer premise: funding authorization proves the proposed Brazilian school opened. The examiner round now asks for a rival explanation, predictions under each account, a discriminating source, a provisional assessment and a reasoned decision to retain, narrow or suspend the argument. A non-pending result needs a linked test record. Pending work can remain pending; no contrary historical document is fabricated.
+
+Applying a decision changes the actual thesis text and records the before/after statements, reason, source reference, predictions and provisional assessment in a local history exported with the draft. Evidence assignments are bound to the argument as well as the record, so changing the argument triggers reassessment. Automated checks exercise incomplete decisions, results without a record, narrowing, pending retention, suspension, duplicate protection, navigation, export and mobile width. These checks assess workflow integrity, not validity of a writer's explanation.
+
+
+Source inspection inside the challenge round is available without leaving the player's test. A regression caught an autosave-render race that could replace a source button during a click; stable content now keeps its existing controls. Imported candidates selected in the evidence table become available to the examiner immediately, retaining their unreviewed status.
+
+
+## Single-player interruption and AI handoff pass
+
+The home shelf resumes the active local research draft, including evidence and argument history. Examiner tests retain their original argument frame: changing the thesis blocks applying that old test until the writer explicitly reframes it. Reframing clears the assessment, decision and replacement argument; predictions remain as notes to review.
+
+The research desk prepares a portable AI brief containing the WorldThreads model, current argument, missing link, selected observations, source URLs and limits, and a one-candidate JSON contract. This is a manual copy/paste handoff, not a connected assistant or automatic repository access. The assistant is asked to seek conflicting evidence, distinguish causal inference, disclose access limitations and avoid invented locators. Prose and incomplete returns are rejected; structurally valid candidates stay unreviewed and local. Format validation does not establish source authenticity. No import earns points or certifies a thesis.
+
+
+## End-to-end completion pass (6 October 2026)
+
+A fresh player completed all three guided cases, both method challenges, one optional sourced proposal and an independently framed Brazil thesis investigation. Headless regression and live Chrome both reached 10 badges and 890 points. This includes a retrospective source candidate returned through the AI handoff, a rival prediction test, narrowing an overstated premise, reassessing evidence roles and filing a dated local portfolio. The candidate is not a new accepted observation, and contemporary attendance records remain a gap.
+
+The expedition finish and research-round finish are distinct. The local Portfolio presenter checkpoint requires all thesis-planning fields, an explanation and passage-verification note for each selected record, a research gap/source/search plan and a recorded rival decision for the current argument. Empty evidence slots are allowed. These are structural preparation checks, not semantic assessment or scholarly certification. A source may remain unavailable if the limit and next research step are recorded honestly. Filing earns 50 points once, preserves the argument/evidence/source snapshot and supports downloading it. Later edits do not alter the filed copy; a changed argument requires reassessing evidence and a new applicable rival decision. No external reviewer, account, publication or grading service is invoked.
+
+The playthrough caught stale local-addition feedback after import; the research desk now displays the returned candidate immediately. Portfolio work links use separate selectors from the main research navigation to preserve unambiguous navigation. Tests cover wrong answers, locked gates, repeat protection, all badges, incomplete filing rejection, unsupported AI returns, immutable exports, later argument changes, reload recovery and mobile width. Existing progression, research-loop, examiner and AI-handoff regressions also pass.
+
+Remaining limitation: a player can fill structurally valid fields with weak reasoning. The interface explicitly describes preparation and unreviewed writer assessments; content quality still requires critical source reading and human review.
+
+
+## Returning investigator pass (6 October 2026)
+
+The returning-player perspective exposed a stale defense checkpoint: an old decision could be reused after changing selected evidence while keeping the argument text. Examiner rounds now record the unique evidence selection they evaluated. Reframing updates that selection and clears assessment/decision; changing the test record after a non-pending assessment also requires a fresh assessment. The portfolio checkpoint requires a decision matching both current argument and evidence. Older decisions remain in history but cannot silently establish an evidence selection they did not record.
+
+Players can select a filed portfolio version, compare its argument and evidence with the current draft, see changed interpretations/citations, and download that selected immutable version. A second filing does not award extra points. Snapshot contents remain unreviewed research decisions.
+
+Candidates may be reused through another relevant thread/object entry without making a duplicate observation. A shared candidate retains its ID and unreviewed status; applicability contexts are links, not independent corroboration. Drafts remain separate between investigations. Thread/object resumption also preserves explicitly empty evidence slots instead of reseeding them.
+
+The returning-player regression covers a changed test record, changed evidence, a second defense and filing, older-version download equality, cross-context reuse/deduplication, independent drafts, deliberately empty slots, reload and mobile width. These behaviors were also exercised in live Chrome; the fresh-player winning route and affected examiner/research regressions continue to pass.

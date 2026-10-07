@@ -1,0 +1,36 @@
+name: Validate historical graph
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python3 tests/validate-data.py
+      - run: node --check app.js
+      - run: node --check stories.js
+      - run: node --check progress.js
+      - run: node --check investigations.js
+      - run: node --check casefiles.js
+      - run: node --check thesis.js
+      - run: node --check examiner.js
+      - run: node --check objects.js
+      - run: node --check research.js
+      - run: node --check portfolio.js
+      - run: node --check draft-storage.js
+      - run: node --check saved-list-storage.js
+      - run: node --check navigation.js
+      - run: node --check appearance.js
+
+      - run: node --check feedback-log.js
+      - run: node --check feedback.mjs
+      - run: node --check feedback-core.mjs
+      - run: node --check feedback-worker/index.mjs
+      - run: node --test tests/feedback-service.mjs
