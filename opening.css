@@ -20,3 +20,22 @@ main:has(.story-shelf) .story-footnote{font-size:.8rem;line-height:1.6;max-width
 
 .story-shelf-heading h1,.story-cover h2{overflow-wrap:anywhere}
 .story-shelf>*{min-width:0}
+
+/* Scene-led entrance, with explicitly illustrative artwork. */
+.scene-art{--scene-mid:#365044;--scene-near:#223c32;--scene-line:#a9c3ab;--scene-glow:#cfb87a;display:block;width:100%;background:#16251f;border-radius:12px}
+.scene-andes{--scene-mid:#40535a;--scene-near:#263b41;--scene-line:#becbc7;--scene-glow:#d0b77c}
+.scene-harvests{--scene-mid:#4d5940;--scene-near:#324337;--scene-line:#c2cd9f;--scene-glow:#c6b46f}
+.story-cover .scene-art{height:auto;margin:0 0 24px;color:inherit}
+.story-cover h2{min-height:0;margin:16px 0 24px;font-family:Georgia,serif;font-weight:500;line-height:1.25}
+.story-cover{padding:20px}
+.story-illustration{margin:24px 0}.story-illustration .scene-art{max-height:230px}
+.story-illustration figcaption,.visual-caption{font-size:.8rem;color:var(--wt-muted);line-height:1.6;margin:12px 0}
+.visual-record .record-icon{width:64px;height:64px;margin:4px 0 18px;color:var(--wt-link)}
+.visual-record{display:flex;flex-direction:column;align-items:flex-start;gap:12px;min-width:0}
+.visual-record strong{font-family:Georgia,serif;font-size:1.2rem;font-weight:500;line-height:1.35}
+.visual-record small{margin-top:auto}.visual-record.record-seen{border-style:solid;border-color:var(--wt-link)}
+.story-route{margin:26px 0}.story-route .unfolding-map{margin:16px 0 0}
+.story-method{margin:10px 0 24px}
+.case-tools>p:not(.eyebrow){max-width:750px;font-size:.85rem}
+.story-scene .story-narrative{margin:20px 0 24px}
+@media(max-width:600px){.visual-record .record-icon{width:48px;height:48px;margin-bottom:4px}.story-cover .scene-art{max-height:170px}.visual-record{padding:18px}}
