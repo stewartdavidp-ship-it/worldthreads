@@ -1,6 +1,6 @@
 # WorldThreads test plan and coverage ledger
 
-Updated: 6 October 2026. Current confirmation candidate: `f6054ef` (24/24 expanded checks passed; earlier confirmations retained below) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
+Updated: 6 October 2026. Current confirmation candidate: `ef68181` (25/25 expanded checks passed; earlier confirmations retained below) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
 
 ## What success means
 
@@ -72,7 +72,7 @@ Stable IDs let future passes update the same case rather than accumulate disconn
 | R01 | Reload and ordinary autosave | Tested | Draft, decisions, rewards and portfolios survive expected reload/context transitions | Research-flow + returning + winning |
 | R02 | Storage unavailable or full | Tested | Injected quota/denied writes block stale filing; current session work exports and save recovery succeeds | durability.cjs |
 | R03 | Two tabs edit the same investigation | Partial | Competing tabs require explicit choice; keeping a local draft preserves another investigation in its archive. Backup failure blocks replacement; latest-version recovery and unseen-write filing are checked. A complete multi-tab race matrix remains open | durability.cjs; concurrent-drafts.cjs; concurrent-progress.cjs |
-| R04 | Corrupted stored records / old schema | Partial | Malformed draft, candidate and portfolio shapes recover; unsupported historical schemas still need a complete migration matrix | durability + progress |
+| R04 | Corrupted stored records / old schema | Partial | Malformed draft, candidate and portfolio shapes recover. Unsupported progress versions are preserved and downloadable; session activity cannot overwrite them. Migration and unversioned-store coverage remain incomplete | durability; progress; schema-recovery |
 | R05 | Data fetch failure or offline startup | Tested | Failed HTTP or network collection loads show retry; existing saved research survives and editing after load works offline | interruption.cjs; offline first-load HTML/assets not covered |
 | R06 | Browser back, refresh and detour mid-task | Partial | Browser Back/Forward returns to the thesis stage; evidence detours and reload preserve drafts. Object modal Back/Forward and filtered library → thesis stage navigation pass; the evidence-close/next-scene race is fixed and regression-tested; broader route combinations remain open | interruption + returning + navigation-race |
 | U01 | Narrow screen | Partial | Touch emulation and 390/320px reflow pass; physical-device use remains untested | accessibility.cjs + existing suites |
@@ -214,3 +214,12 @@ Final display-restoration confirmation: **23/23 PASS at `f8a2b9e`**. Includes th
 A reproducible failure showed that Brazil work in one tab could replace a saved Dutch investigation in another tab when the player chose “Save this page’s draft instead.” The other investigation had no archive and could be lost after that tab closed. Conflict resolution now archives the different saved investigation before replacing the active draft. If that archive fails, replacement is blocked, the saved investigation remains intact, and the player sees a recovery explanation. Same-investigation version choices remain explicit.
 
 `tests/concurrent-drafts.cjs` passes four scoped cases: download current unsaved edits and preserve/restore the different investigation; blocked protective archive; load the latest other-tab version and reload; reject stale filing even before a storage event arrives. R03 remains partial because these tests do not establish an exhaustive interleaving matrix or atomic browser storage. Complete expanded confirmation: **24/24 PASS at `f6054ef`**. This includes all four concurrent-draft cases, previous functional suites, appearance/feedback audits, the full keyboard journey, and Firefox/WebKit completion. Historical graph validation also passed. Report: `worldthreads-draft-conflict-confirmation.json` in delivered outputs. Remaining source, human usability, screen-reader and exhaustive race/schema reviews stay open.
+
+
+### Unsupported saved-progress follow-up — R04
+
+A regression seeded a version-2 progress file, then entered a story. The old reader treated the unknown version as empty progress and the next activity silently replaced the original file with version 1. The fix preserves unsupported progress without interpreting its badges or case completions. A visible notice explains that new activities are session-only, and an export downloads the original stored bytes. The app does not claim to migrate an unknown schema.
+
+`tests/schema-recovery.cjs` covers newer, older, string-valued and missing progress versions; preservation after entry/reload; exact recovery export; an unsupported write from another tab; and continued loading of supported progress and legacy unversioned thesis drafts. The recovery notice fits at 320px and the sampled automated accessibility audit detected no WCAG A/AA violations. This pass protects the existing versioned progress store. Thesis drafts, research candidates and portfolio lists currently use unversioned record shapes; a complete migration/shape matrix remains open, so R04 stays partial.
+
+Complete expanded confirmation: **25/25 PASS at `ef68181`**. Includes the new schema-recovery suite, all prior functional checks, appearance/feedback, the full keyboard route, and Firefox/WebKit completion. Historical graph validation also passed. Report: `worldthreads-schema-recovery-confirmation.json` in delivered outputs. Screenshot: `worldthreads-unsupported-progress.png`. No historical claims or source judgments changed in this pass.
