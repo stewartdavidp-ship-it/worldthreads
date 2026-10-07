@@ -20,6 +20,12 @@ Any thread can start a thesis investigation without completing unrelated stories
 
 Dead ends become research tasks: specify the missing link, identify a source capable of testing it, check provenance and scope, preserve conflicting evidence and revise the premise. Sourced proposal JSON can be imported into a separate local corpus and selected as explicitly unreviewed candidate evidence. Imports do not change the registered graph; a repeated claim is not new evidence. Drafts, proposals and progress are local, not shared or synced. Failed saves keep the current draft available for recovery download and block filing; competing draft tabs require an explicit choice. Unusable local candidates can be excluded with a reason.
 
+## Review the published prototype
+
+Open [WorldThreads](https://stewartdavidp-ship-it.github.io/worldthreads/). No account is required. Start with Choose a story, follow its evidence and build a locally saved thesis; use Share feedback to report confusing steps. Work is saved in the reviewer’s browser, so it does not sync between people or devices.
+
+GitHub Pages serves the static site from `main` at the repository root. `.nojekyll` preserves direct static-file serving. The previous research interface remains on `gh-pages` for rollback; its public community archive and service remain separate from this single-player prototype.
+
 ## Explore locally
 
 ```bash
