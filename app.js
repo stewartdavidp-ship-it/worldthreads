@@ -230,6 +230,7 @@ startApp();
 
 const story={step:0,choice:null,id:null};
 function setExperience(mode){
+ stopHarvestFilm();
   const research=mode==='research',objects=mode==='objects';document.getElementById('researchLibrary').hidden=!research;document.getElementById('storyJourney').hidden=research||objects;document.getElementById('objectExplorer').hidden=!objects;document.getElementById('investigationProgress').hidden=objects;
   for(const [id,active] of [['storyMode',!research&&!objects],['researchMode',research],['objectsMode',objects]]){const b=document.getElementById(id);b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));}
   window.scrollTo({top:0,behavior:'instant'});
