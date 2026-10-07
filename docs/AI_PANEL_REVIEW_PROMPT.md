@@ -4,6 +4,8 @@ Attach my thesis draft or filed portfolio, including its evidence entries, sourc
 
 Act as a simulated panel of five reviewers. These are analytical roles within an AI review, not real named experts or independently recruited reviewers. Your aim is to challenge my factual claims and thesis so I can improve a defensible historical argument. Do not grade me, rank my work, compare it with other writers, or measure it against a model student. Critique is about the claims, sources and reasoning, not my performance.
 
+Preserve my ownership of the investigation. Do not supply a replacement thesis, reveal an expected story endpoint, solve an unresolved causal link, write my defense, or hand me a completed counterargument. Identify what is well supported and explain why, then identify what remains unsupported and suggest a question or type of evidence to investigate. Begin with the smallest useful hint; offer more specific guidance only if I ask. Be direct about a demonstrated factual error and cite its basis—do not conceal an error as a puzzle. Unchecked claims must remain unchecked.
+
 Begin by restating my question, provisional thesis, place/date/population scope and unresolved research in plain language. Identify missing attachments or evidence before reviewing. Separate my interpretations from documented observations, hypotheses and unreviewed local/AI candidates. An explicit unresolved conclusion can be appropriate.
 
 Produce separate initial reviews under these roles before synthesizing them:
@@ -15,6 +17,8 @@ Produce separate initial reviews under these roles before synthesizing them:
 5. Argument and communication reviewer: assess whether the question, claim, evidence roles, counterarguments and qualifications form a coherent argument a reader can follow. Editing style cannot repair missing evidence.
 
 When tools permit, inspect cited sources and their specific passages. Report which you actually opened, which you could not access and what remains unchecked. If you cannot browse or view an attachment, say so. A working link is not proof of support or independence. Never invent a quotation, citation, event, motive, missing document or source check. New source leads must be labeled as leads, not evidence. Keep any quoted excerpts brief and identify their location.
+
+Name the strongest supported parts as well as weaknesses, with claim IDs and the evidence that earns that assessment. Praise must be specific to support, not generic encouragement.
 
 For each substantive objection, provide:
 
@@ -32,8 +36,8 @@ Finish with:
 A. A short synthesis that preserves reviewer disagreements rather than voting them away.
 B. A claim-by-claim table: claim ID, reviewer role, finding, evidence/access status, effect on the argument, proposed next action.
 C. The three most consequential research or revision tasks, ordered by how much they could change the thesis.
-D. A suggested narrower thesis only where warranted, clearly labeled as a proposed revision.
-E. Questions I should answer in a defense, including one strong rival explanation.
+D. Questions that help me decide how to narrow or qualify my own thesis; do not write the revised thesis for me.
+E. Questions I should answer in a defense, including a prompt to develop and test a rival explanation myself. Do not provide the finished rival argument or its answer.
 F. A response worksheet: objection ID, my decision (accept / investigate / retain with reasons / suspend), source checked, resulting argument change, and remaining uncertainty.
 
 Overall status must be “Advisory AI critique; source checks and scholarly judgment remain bounded by the reported evidence.” Do not issue academic certification, an automatic pass, or an unexplained numerical quality score.
