@@ -79,3 +79,14 @@ If comparing current and proposed openings, use separate fresh participants or c
 Record comprehension, reasoning, motivation and mechanics separately. Measure assistance, first useful inference, abandonment point, confidence before/after contrary evidence, and recovery of purpose. Targets such as a 20-second orientation check or five-minute first inference are working targets to revise after observation, not research-backed universal cutoffs.
 
 Keep automated regressions as the reliability baseline. Run them after behavioral changes, rather than repeatedly rerunning the unchanged entire plan while human/product questions remain unanswered.
+
+
+## Proposed post-thesis AI panel
+
+The user proposed taking a completed thesis to their own AI assistant with a panel-review prompt. Treat this as a further investigation loop: export thesis and evidence packet → simulated panel critique → claim-linked objections → researcher response → source work and revision → another saved version. Initial case-building should remain approachable; panel review is an optional deeper step.
+
+Proposed review roles: historical context, source audit, causal criticism, scope/perspectives, and argument clarity. A single assistant producing five roles is a simulated panel, not five independently recruited experts. Critique should name the challenged claim, the inspected passage or access limit, the objection, and a research action. Different reviewer views should remain visible.
+
+The next outcome is a response record, not an AI approval badge. The researcher can accept a correction, investigate, retain with reasons, narrow or suspend. Any new source suggestion remains a lead until checked; review feedback should not enter the historical corpus as fact.
+
+A reusable manual prompt is supplied in AI_PANEL_REVIEW_PROMPT.md and the delivered outputs. No integrated panel feature, automatic critique import or academic evaluation is implemented by this planning pass. First test the manual loop on a real exported document. Evaluate whether the critique is specific and useful and whether the revised thesis is better supported, rather than how many objections or favorable votes it produces.
