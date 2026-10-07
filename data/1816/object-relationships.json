@@ -3720,5 +3720,45 @@
       "Internal variability",
       "Earlier 1809 forcing"
     ]
+  },
+  {
+    "id": "OBJLINK-0143",
+    "subjectId": "OBJ-1816-0046",
+    "objectId": "OBJ-1816-0079",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "evidenceObservationRefs": [
+      "WT-1816-0046",
+      "WT-1816-0079"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0056"
+    ],
+    "predicate": "COINCIDED_WITH",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Seoul rainfall and Iljik farming dates fall in the same year. These are different locations; the juxtaposition does not prove rainfall caused the local timing.",
+    "sourceRefs": [
+      "SRC-027"
+    ]
+  },
+  {
+    "id": "OBJLINK-0144",
+    "subjectId": "OBJ-1816-0081",
+    "objectId": "OBJ-1816-0080",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "evidenceObservationRefs": [
+      "WT-1816-0081",
+      "WT-1816-0080"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0057"
+    ],
+    "predicate": "COINCIDED_WITH",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "High",
+    "explanation": "Seoul rainfall and Iljik farming dates fall in the same year. These are different locations; the juxtaposition does not prove rainfall caused the local timing.",
+    "sourceRefs": [
+      "SRC-027"
+    ]
   }
 ]

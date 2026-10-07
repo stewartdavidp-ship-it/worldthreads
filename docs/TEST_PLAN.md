@@ -316,3 +316,13 @@ Changes: three selectable/scrubbable evidence landmarks now update an illustrate
 Agent recheck: noticeably more visual and less cluttered; landmark dates distinguish weather, harvests and later prices; chart reveal and reduced text helped. Last refinements about repeat-comparison clearing and the standalone Amsterdam button were also addressed. Browser checks cover landmark clicks/keyboard scrub, qualitative limits, reduced motion, narrow reflow, reveal focus, collapsed detail, argument-before-optional-investigation ordering, saving/export and stale/conflicting drafts. The existing keyboard winning-game and harvest-media regressions pass.
 
 Next: a human first-impression and explanation test; review whether animated landmarks teach sequence vs causation. Possible future extension: visual retain/narrow/suspend scope states and authentic archival images, once suitability and reuse are verified. Do not equate agent preference with learning effectiveness.
+
+### 7 October 2026 — researched rain/calendar extension
+
+- Source checked: Kim (2023) section 3/table 2/figure 4, independently checked by an agent; diary originals and Wada compilation not directly authenticated.
+- Added three bounded observations, four evidence/place objects and two explicitly associated cross-site comparisons. Historical graph validation passes: 81 observations, 57 relationships, 23 threads, 48 sources; 177 objects and 199 object connections.
+- Chrome agent found a real returning-session data-cache failure. Versioned corpus requests with revalidation fixed it; Chrome recheck displayed the correct bars and dates. Agent then requested simultaneous visibility; desktop now puts rainfall and farming panels side by side.
+- Tested: exact rainfall values, reported dates, season selection/calendar shading, shared rainfall scale, desktop two-panel layout, mobile/light layout, reduced motion, keyboard controls, no media rewards and sampled accessibility.
+- Regressions passed: saved inquiry, full winning-game, explorer relationships, load interruption/retry and feedback capture.
+- Research limit preserved: Seoul rainfall is not Iljik rainfall, a first-harvest date is not completed harvest, temporal alignment is not causation, and Table 2's day-difference discrepancy remains documented.
+- Still untested with humans: whether users infer the cross-site limitation or treat the shaded farming window as a causal simulation. Ask them what additional local evidence they need.

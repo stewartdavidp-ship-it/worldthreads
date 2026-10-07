@@ -931,5 +931,43 @@
       "Earlier 1809 forcing"
     ],
     "researchStatus": "Source checked; model limitation explicit"
+  },
+  {
+    "id": "REL-0056",
+    "subjectId": "WT-1816-0046",
+    "objectId": "WT-1816-0079",
+    "predicate": "COINCIDED_WITH",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Seoul rainfall and Iljik farming dates fall in the same year. These are different locations; the juxtaposition does not prove rainfall caused the local timing.",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "confidence": "High",
+    "lag": "Same calendar year; different sites",
+    "alternatives": [
+      "Farm-site weather differs from Seoul",
+      "Crop variety and local practice",
+      "Diary and reconstruction limits"
+    ],
+    "researchStatus": "Source checked; association only"
+  },
+  {
+    "id": "REL-0057",
+    "subjectId": "WT-1816-0081",
+    "objectId": "WT-1816-0080",
+    "predicate": "COINCIDED_WITH",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "Seoul rainfall and Iljik farming dates fall in the same year. These are different locations; the juxtaposition does not prove rainfall caused the local timing.",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "confidence": "High",
+    "lag": "Same calendar year; different sites",
+    "alternatives": [
+      "Farm-site weather differs from Seoul",
+      "Crop variety and local practice",
+      "Diary and reconstruction limits"
+    ],
+    "researchStatus": "Source checked; association only"
   }
 ]

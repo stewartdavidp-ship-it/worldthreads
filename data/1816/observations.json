@@ -1637,7 +1637,24 @@
       "OBJ-PLACE-040",
       "OBJ-POLITY-choson"
     ],
-    "primaryObjectId": "OBJ-1816-0046"
+    "primaryObjectId": "OBJ-1816-0046",
+    "seasonalRainfall": {
+      "unit": "mm",
+      "periods": [
+        "May–June",
+        "July–August",
+        "September–October"
+      ],
+      "values": [
+        178,
+        1322,
+        108
+      ],
+      "sourceRef": "SRC-027",
+      "sourceLocator": "Section 3, text accompanying Figure 4; PDF pp. 6–7",
+      "place": "Seoul",
+      "meaning": "Two-month reconstructed rainfall totals; not rainfall at Iljik and not daily readings."
+    }
   },
   {
     "id": "WT-1816-0047",
@@ -2921,5 +2938,161 @@
       "OBJ-PLACE-069"
     ],
     "primaryObjectId": "OBJ-1816-0078"
+  },
+  {
+    "id": "WT-1816-0079",
+    "title": "Iljik rice planting and first harvest dates in 1816",
+    "startDate": "1816-06-29",
+    "endDate": "1816-09-29",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Asia",
+    "region": "Iljik, Andong, Chosŏn Korea",
+    "historicalEntity": "Chosŏn dynasty",
+    "place": "Iljik, Andong, Chosŏn Korea",
+    "observation": "Kim’s Table 2 reports first rice planting on 06-29 and first harvest on 09-29 in 1816 at Iljik, Andong. Its early-1800s reference dates are June 26 and October 15.",
+    "coverageType": "CONDITION",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "agriculture, governance",
+    "analyticalRole": [
+      "STATE",
+      "RESILIENCE"
+    ],
+    "evidenceType": [
+      "Diary-based farming calendar reported in scholarship"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "sourceLocator": "Kim (2023), Table 2 and Section 3, PDF p. 7; YD, 1816–1817",
+    "uncertainty": "Local diary chronology reported by scholarship; the original diary and calendar conversions have not been independently authenticated here. First harvest is not completion of the harvest or a yield measurement. Reference dates summarize an early-1800s farming calendar, not an experimental control. Seoul rain data are from a different location. The text describes September 29 as 17 days before October 15; this interface uses reported dates without adopting that inconsistent day difference.",
+    "researchStatus": "Source checked in publisher PDF; local and temporal limits recorded",
+    "contextNode": false,
+    "gapRefs": [
+      "GAP-010"
+    ],
+    "peerReview": "Independent agent cross-check of publisher PDF, section 3, table 2 and figure 4. Original diary and rain compilation not accessed.",
+    "objectRefs": [
+      "OBJ-1816-0079",
+      "OBJ-PLACE-070",
+      "OBJ-POLITY-choson"
+    ],
+    "primaryObjectId": "OBJ-1816-0079",
+    "farmingCalendar": {
+      "firstPlanting": "1816-06-29",
+      "firstHarvest": "1816-09-29",
+      "referencePlanting": "06-26",
+      "referenceHarvest": "10-15",
+      "referenceMeaning": "Early-1800s farming calendar, as reported in Table 2",
+      "sourceRef": "SRC-027",
+      "sourceLocator": "Table 2, PDF p. 7",
+      "calendarNote": "Solar dates as converted by Kim from lunar-calendar records; original conversion not independently verified."
+    }
+  },
+  {
+    "id": "WT-1816-0080",
+    "title": "Iljik rice planting and first harvest dates in 1817",
+    "startDate": "1817-06-22",
+    "endDate": "1817-10-30",
+    "datePrecision": "DATE_RANGE",
+    "continent": "Asia",
+    "region": "Iljik, Andong, Chosŏn Korea",
+    "historicalEntity": "Chosŏn dynasty",
+    "place": "Iljik, Andong, Chosŏn Korea",
+    "observation": "Kim’s Table 2 reports first rice planting on 06-22 and first harvest on 10-30 in 1817 at Iljik, Andong. Its early-1800s reference dates are June 26 and October 15.",
+    "coverageType": "CONDITION",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "agriculture, governance",
+    "analyticalRole": [
+      "STATE",
+      "RESILIENCE"
+    ],
+    "evidenceType": [
+      "Diary-based farming calendar reported in scholarship"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "sourceLocator": "Kim (2023), Table 2 and Section 3, PDF p. 7; YD, 1816–1817",
+    "uncertainty": "Local diary chronology reported by scholarship; the original diary and calendar conversions have not been independently authenticated here. First harvest is not completion of the harvest or a yield measurement. Reference dates summarize an early-1800s farming calendar, not an experimental control. Seoul rain data are from a different location. The text describes September 29 as 17 days before October 15; this interface uses reported dates without adopting that inconsistent day difference.",
+    "researchStatus": "Source checked in publisher PDF; local and temporal limits recorded",
+    "contextNode": true,
+    "gapRefs": [
+      "GAP-010"
+    ],
+    "peerReview": "Independent agent cross-check of publisher PDF, section 3, table 2 and figure 4. Original diary and rain compilation not accessed.",
+    "objectRefs": [
+      "OBJ-1816-0080",
+      "OBJ-PLACE-070",
+      "OBJ-POLITY-choson"
+    ],
+    "primaryObjectId": "OBJ-1816-0080",
+    "farmingCalendar": {
+      "firstPlanting": "1817-06-22",
+      "firstHarvest": "1817-10-30",
+      "referencePlanting": "06-26",
+      "referenceHarvest": "10-15",
+      "referenceMeaning": "Early-1800s farming calendar, as reported in Table 2",
+      "sourceRef": "SRC-027",
+      "sourceLocator": "Table 2, PDF p. 7",
+      "calendarNote": "Solar dates as converted by Kim from lunar-calendar records; original conversion not independently verified."
+    }
+  },
+  {
+    "id": "WT-1816-0081",
+    "title": "Seoul rainfall reconstruction in 1817",
+    "startDate": "1817",
+    "endDate": "1817",
+    "datePrecision": "YEAR",
+    "continent": "Asia",
+    "region": "Seoul, Chosŏn Korea",
+    "historicalEntity": "Chosŏn dynasty",
+    "place": "Seoul, Chosŏn Korea",
+    "observation": "Kim reports reconstructed Seoul rainfall totals of 138 mm in May–June, 1,120 mm in July–August and 180 mm in September–October 1817.",
+    "coverageType": "CONDITION",
+    "system": "EARTH",
+    "topic": "climate, hydrology",
+    "analyticalRole": [
+      "STATE"
+    ],
+    "evidenceType": [
+      "Rain-gauge reconstruction"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-027"
+    ],
+    "sourceLocator": "Kim (2023), Section 3, text accompanying Figure 4, PDF pp. 6–7",
+    "uncertainty": "Two-month rainfall totals at Seoul are not farm-site measurements in Iljik. They do not independently establish a volcanic cause or household food access.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": true,
+    "gapRefs": [
+      "GAP-010"
+    ],
+    "peerReview": "Independent agent cross-check of publisher PDF, section 3, table 2 and figure 4. Original diary and rain compilation not accessed.",
+    "objectRefs": [
+      "OBJ-1816-0081",
+      "OBJ-PLACE-040",
+      "OBJ-POLITY-choson"
+    ],
+    "primaryObjectId": "OBJ-1816-0081",
+    "seasonalRainfall": {
+      "unit": "mm",
+      "periods": [
+        "May–June",
+        "July–August",
+        "September–October"
+      ],
+      "values": [
+        138,
+        1120,
+        180
+      ],
+      "sourceRef": "SRC-027",
+      "sourceLocator": "Section 3, text accompanying Figure 4; PDF pp. 6–7",
+      "place": "Seoul",
+      "meaning": "Two-month reconstructed rainfall totals; not rainfall at Iljik and not daily readings."
+    }
   }
 ]

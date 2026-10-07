@@ -41,3 +41,22 @@ Validation: dedicated browser scenario covers connect/predict/reveal/revise/expo
 The Czech scene now has three selected evidence landmarks: regional cold summer, qualitative grain losses, and later price pressure culminating in 1817. Selecting a button or keyboard range landmark updates the drawing and source summary. Grain losses and prices are two findings in WT-1816-0006, not separate independent sources. Illustrations animate their entrance only; they are not reconstructed historical weather, crop quantities or price curves. Reduced-motion preferences disable these animations.
 
 The main page retains the task, visual finding and important denominator/limit. Context, citation credits, reasoning and secondary revision details use named expansion controls. Korea reveal focuses the chart itself, and revision retains a compact evidence pair. Amsterdam relief is an optional next investigation rather than the lead visual in the player's conclusion.
+
+## Historical calendar comparison — 7 October 2026
+
+The Korean evidence measure now includes **Rain & farming calendar**. Switch 1816/1817 and select May–June, July–August or September–October. Source-linked Seoul rainfall bars retain a fixed 0–1,400 mm scale; selecting a season shades the same months on a separate Iljik, Andong farming calendar. On desktop the two places appear beside each other; on narrow screens they stack.
+
+Values verified in Kim (2023), section 3, figure 4 and table 2, PDF pp. 6–7:
+
+| Year | Seoul May–June | July–August | September–October | Iljik first planting | First harvest |
+| --- | --- | --- | --- | --- | --- |
+| 1816 | 178 mm | 1,322 mm | 108 mm | 29 June | 29 September |
+| 1817 | 138 mm | 1,120 mm | 180 mm | 22 June | 30 October |
+
+Reference farming dates reported for the early 1800s are 26 June and 15 October. Dates follow the article’s solar-date conversion convention. The table’s “17 days early” label conflicts with the 16-day calendar difference between 29 September and 15 October; the interface displays dates rather than that calculation. First harvest is not the date harvesting was completed. The two-month totals cover May–October, not annual rainfall. Neither location’s record establishes household access or a volcanic cause.
+
+Provenance: existing WT-1816-0046 gains structured seasonal rainfall values; new WT-1816-0079/0080 hold local farming calendars and WT-1816-0081 holds the 1817 Seoul reconstruction. Each links to SRC-027. Two COINCIDED_WITH associations explicitly preserve the different-place limitation, and evidence objects/relationships are included in the corpus and Korea thread. Independent agent source check confirmed values and exposed the date discrepancy; original diary and Wada compilation were not authenticated directly.
+
+Sources: [Kim article](https://link.springer.com/article/10.1007/s10584-023-03480-w), [publisher PDF](https://link.springer.com/content/pdf/10.1007/s10584-023-03480-w.pdf), CC BY 4.0. Charts redraw reported facts; no publisher image or third-party historical map is copied.
+
+Chrome reviewer caught a returning-session cache failure, addressed by versioned evidence requests with revalidation alongside versioned scripts. Follow-up confirmed the calendar renders. Dedicated browser checks cover exact totals and dates, year/season controls, desktop/mobile layout, source boundary, date discrepancy, keyboard, reduced motion, unchanged rewards and sampled accessibility.
