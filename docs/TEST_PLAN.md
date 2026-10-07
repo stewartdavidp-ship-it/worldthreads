@@ -1,6 +1,6 @@
 # WorldThreads test plan and coverage ledger
 
-Updated: 6 October 2026. Current confirmation candidate: `69f427d` (27/27 expanded checks passed; earlier confirmations retained below) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
+Updated: 7 October 2026. Current confirmation candidate: `69f427d` (27/27 expanded checks passed; earlier confirmations retained below) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
 
 ## What success means
 
@@ -83,6 +83,28 @@ Stable IDs let future passes update the same case rather than accumulate disconn
 | H01 | Uncoached beginner | Not tested | Can explain their question, evidence limit and next research move; record confusion and assistance | Real participant needed |
 | H02 | Skeptical advanced historian | Not tested | Can distinguish author interpretation from graph claims and critique a filed thesis | Independent reviewer needed |
 | H03 | Returning player after several days | Partial | Saved state works; player can recover purpose and next action without rereading everything | Returning automation; delayed human recall untested |
+
+## Next product-validation pass — 7 October 2026
+
+The reliability baseline is established within its tested scopes. The next priority is product purpose, uncoached comprehension, reasoning and motivation. See PRODUCT_REVIEW.md for a bounded comparison of official product patterns and the proposed hypotheses. No production UI change or human-study completion is implied by this review.
+
+One reviewer reportedly asked whether the site was for education or entertainment. Log this as an early positioning signal, not a representative study or a completed H01 session. The user confirmed the purpose: an education tool that uses an entertainment approach; factual history should drive curiosity first and game elements keep investigation interactive. Test whether the interface communicates this settled purpose. A short explanation supported by evidence, with thesis research as optional depth, is the proposed first outcome.
+
+| ID | New perspective | Status | Observable condition / proposed test | Evidence |
+|---|---|---|---|---|
+| P01 | Purpose and player role | Partial | After a brief uncoached look, describes learning through curiosity and evidence-based investigation; current versus purpose/promise variant | One user-reported ambiguous first impression; structured test pending |
+| P02 | Hook and first useful inference | Not tested | Chooses a question, interprets evidence and explains one resulting change; record time and assistance rather than counting clicks | Beginner pilot needed |
+| P03 | Choice has an evidential consequence | Not tested | Explains why one next source or comparison could distinguish rivals; another choice changes the investigation meaningfully | Task-choice prototype and observation needed |
+| P04 | Reasoning transfers to unfamiliar evidence | Not tested | On a new source pair, separates observation, interpretation and unsupported causal claim without reusing the game's answer | Independent transfer task needed |
+| P05 | Progress means improvement | Not tested | Explains how the argument or uncertainty changed and what remains; rewards do not substitute for that explanation | Human explanation and artifact comparison needed |
+| P06 | Case grows into thesis | Not tested | Short case brief naturally develops into deeper research; record intimidation, abandonment and unnecessary fields at transition | Compare current thesis entry with scaffolded-case concept |
+| P07 | Trust remains calibrated | Not tested | Distinguishes badges, format acceptance, local candidates and authenticated evidence; retains honest uncertainty after an inaccessible/contradictory source | Human adversarial research task; complements G04/A05/T06 |
+| P08 | Return restores purpose | Not tested | After 48–72 hours, identifies claim, weakest link and next useful research move without coaching | Delayed human test; complements H03 |
+| P09 | Factuality survives engaging narration | Not tested | Distinguishes source-grounded content, interpretations, hypotheses and unreviewed proposals; missing evidence stays open rather than becoming invented history | Human source/narrative review; complements D02/D03/A05 |
+
+Order: P01 → P02/P03 → P06 → P04/P05/P07/P09 → P08. Run a small diagnostic pilot before a broad interface redesign or corpus expansion. Four to six beginners plus a separate advanced reviewer is a practical first round, not proof of population-level outcomes. Compare variants with fresh participants or counterbalanced order; record prior exposure and assistance. Human learning, motivation, source judgment and technical completion stay separate outcomes. Working timings are hypotheses, not validated thresholds. None of the new cases is passed yet.
+
+Retain the existing 41-case ledger and 27-suite confirmation as the functional/source-coverage baseline. The new product cases add questions that scripted completion cannot answer. Continue known integrity fixes when reproduced; otherwise prioritize human/product evidence over unchanged-suite repetition.
 
 ## Original ordered passes (completed within the recorded automated scopes)
 
