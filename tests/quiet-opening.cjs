@@ -1,0 +1,28 @@
+const {chromium}=require('playwright');
+const assert=require('node:assert/strict');
+(async()=>{
+ const browser=await chromium.launch({headless:true});
+ const page=await browser.newPage({viewport:{width:1440,height:1000}});
+ await page.goto(process.env.WORLDTHREADS_URL||'http://127.0.0.1:8768');
+ await page.waitForSelector('[data-start-story]');
+ assert((await page.locator('#storyHeading').innerText()).includes('Learn history'));
+ assert.equal(await page.locator('[data-start-story]').count(),3);
+ assert(!(await page.locator('.progress-summary').isVisible()));
+ assert(!(await page.locator('.expedition-meter').isVisible()));
+ assert(!(await page.locator('.earned-badges').isVisible()));
+ await page.screenshot({path:'../../outputs/WorldThreads quieter opening.png',fullPage:true});
+ await page.locator('.expedition-goal>details>summary').click();
+ assert(await page.locator('.expedition-meter').isVisible());
+ await page.locator('#investigationProgress summary').click();
+ assert(await page.locator('.earned-badges').isVisible());
+ await page.click('[data-start-story=relief]');
+ assert(await page.locator('.progress-summary').isVisible());
+ assert(await page.locator('[data-case-clue]').first().isVisible());
+ await page.click('[data-story-home]');
+ assert((await page.locator('[data-start-story=relief]').innerText()).includes('Resume'));
+ await page.setViewportSize({width:390,height:844});
+ assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ await page.screenshot({path:'../../outputs/WorldThreads quieter opening mobile.png',fullPage:true});
+ await browser.close();
+ console.log('PASS: education purpose and three stories lead; goals and badges expand; active progress, evidence clues, resume and mobile reflow remain accessible.');
+})().catch(e=>{console.error(e);process.exit(1)});

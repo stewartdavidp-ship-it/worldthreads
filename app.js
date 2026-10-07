@@ -243,6 +243,8 @@ const storyChapters=[
  {label:'What we can say',title:'A shock is the beginning of an explanation.',text:'The Czech evidence supports a path from damaging weather through poor grain harvests to food-price pressure. Korean harvest reports limit how widely we can apply that account. Regional conditions and crop responses matter; relief and access to food need their own evidence.',record:'WT-1816-0035',prompt:'Amsterdam authorized subsidized rye sales in 1817. That gives us a next question—not a proven solution: did the food reach the households that needed it?',finish:true}
 ];
 function renderStory(moveFocus=false){
+ const progressRoot=document.getElementById('investigationProgress'),journeyRoot=document.getElementById('storyJourney');
+ if(story.id)journeyRoot.before(progressRoot);else journeyRoot.after(progressRoot);
  document.getElementById('storyJourney').classList.toggle('evidence-case',story.id==='relief');
  if(!story.id){renderStoryShelf(moveFocus);renderProgress();return;}
  recordProgress('visited',story.step);

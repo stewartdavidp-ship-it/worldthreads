@@ -1,0 +1,22 @@
+/* Quiet story entrance; evidence and game details remain available on demand. */
+main:has(.story-shelf){max-width:1120px}
+.story-shelf-heading{margin:12px 0 38px;max-width:760px}
+.story-shelf-heading h1{font-size:clamp(2.15rem,4vw,3.2rem);margin:14px 0 18px}
+.story-shelf-heading>p:last-child{font-size:1.125rem;color:var(--wt-muted)}
+.story-shelf{gap:24px}
+.story-cover{padding:26px 24px;background:var(--wt-surface);border-color:var(--wt-border);box-shadow:none}
+.story-cover h2{margin:18px 0 10px;font-size:1.5rem;min-height:3.75em}
+.story-cover p{margin:0 0 24px;color:var(--wt-muted);line-height:1.6}
+.story-cover .cover-end{font-size:.8rem;color:var(--wt-muted);margin-top:auto;margin-bottom:18px}
+.story-cover strong{font-size:.95rem;color:var(--wt-link)}
+.expedition-goal{display:block;background:transparent;border:0;padding:0;margin:30px 0 12px}
+.expedition-goal>details{padding:16px 18px;background:transparent;border-color:var(--wt-border)}
+.expedition-overview{display:grid;grid-template-columns:1fr 220px;gap:24px;padding-top:16px}
+main:has(.story-shelf) #investigationProgress{background:transparent;border:0;padding:0;margin-top:20px}
+main:has(.story-shelf) #investigationProgress .progress-summary{display:none}
+main:has(.story-shelf) #investigationProgress details{border-color:var(--wt-border);padding:16px 18px}
+main:has(.story-shelf) .story-footnote{font-size:.8rem;line-height:1.6;max-width:720px;color:var(--wt-muted)}
+@media(max-width:850px){.story-cover h2{min-height:0}.expedition-overview{grid-template-columns:1fr}.story-shelf-heading{margin-top:0}}
+
+.story-shelf-heading h1,.story-cover h2{overflow-wrap:anywhere}
+.story-shelf>*{min-width:0}
