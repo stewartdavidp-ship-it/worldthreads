@@ -23,3 +23,8 @@ The graph now labels arrival’s contribution as inferred and retains policy pla
 ## Still required
 
 Inspect the original newspaper, decree facsimile, correspondence, payment accounts and dated teaching/attendance records. Revise the causal argument against those records and relevant scholarship. Ask an independent historian to critique the resulting manuscript. Do not award scholarly validity from a completed checklist.
+
+
+## Follow-up source and interface pass
+
+The later 6 October pass directly accessed all three cited web pages, including the Câmara transcription. Its successful access is recorded in the source audit and corpus note; the printed original and implementation records remain uninspected. The complete-game thesis now explicitly attributes the disputed retrospective chronology described above. Shared-source reminders also survive partial overlap, local-candidate URLs, export and filing. See [the follow-up audit](THESIS_SOURCE_AUDIT.md) and the test-plan confirmation ledger.

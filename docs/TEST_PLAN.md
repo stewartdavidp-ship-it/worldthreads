@@ -1,6 +1,6 @@
 # WorldThreads test plan and coverage ledger
 
-Updated: 6 October 2026. Current confirmation candidate: `0b91acb` (26/26 expanded checks passed; earlier confirmations retained below) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
+Updated: 6 October 2026. Current confirmation candidate: `69f427d` (27/27 expanded checks passed; earlier confirmations retained below) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
 
 ## What success means
 
@@ -57,7 +57,7 @@ Stable IDs let future passes update the same case rather than accumulate disconn
 | T03 | Change argument, evidence or test record | Tested | Old role assignments/assessment cannot silently qualify the changed investigation | Examiner + returning |
 | T04 | File, revise and compare versions | Tested | Earlier snapshot remains immutable, selected download matches it, comparison explains changes | Winning + returning |
 | T05 | Superficial text satisfies the gate | Known limit | Structural completion is explicitly distinguished from academic quality; no semantic grading exists | Filing checks inspect completeness |
-| T06 | Contradictory evidence and pending research | Partial | Pending result does not fabricate a conclusion; conflicting-source reasoning still needs human assessment | Examiner; independent review pending |
+| T06 | Contradictory evidence and pending research | Partial | Pending result does not fabricate a conclusion; conflicting-source reasoning still needs human assessment | Examiner; independent agent source audit; human review pending |
 | A01 | Ask an AI assistant for research | Partial | Brief contains scope, model, evidence and return schema; independent agent returned a candidate from the exact Chrome brief; manual source review narrowed it before Chrome import | AI-research |
 | A02 | Import candidate and use it | Tested | Candidate remains local/unreviewed, selectable and exportable; registered graph unchanged | Research-flow + winning |
 | A03 | Duplicate candidate in another context | Tested | Reuses one finding with context links; does not count as independent corroboration | Returning |
@@ -68,7 +68,7 @@ Stable IDs let future passes update the same case rather than accumulate disconn
 | D02 | Source passage supports observation | Partial | Audit records exact passage, date/place scope, source dependence and access limits | Targeted research audit; corpus-wide review incomplete |
 | D03 | Relationship warrants causal language | Partial | Context/role does not become cause; alternative mechanisms and uncertainty retained | Data/UI distinctions + targeted audit; full independent review incomplete |
 | D04 | Coverage represents affected populations | Partial | Coverage gaps are explicit; add regional/local perspectives with provenance | Africa, Indigenous views, household relief and other gaps remain |
-| D05 | Completed thesis withstands scholarly critique | Partial | Independent agent source/reasoning critique completed; primary-record research and human historian assessment remain pending | BRAZIL_THESIS_REVIEW.md |
+| D05 | Completed thesis withstands scholarly critique | Partial | Independent agent source/reasoning critique completed; primary-record research and human historian assessment remain pending | BRAZIL_THESIS_REVIEW.md; THESIS_SOURCE_AUDIT.md |
 | R01 | Reload and ordinary autosave | Tested | Draft, decisions, rewards and portfolios survive expected reload/context transitions | Research-flow + returning + winning |
 | R02 | Storage unavailable or full | Tested | Injected quota/denied writes block stale filing; current session work exports and save recovery succeeds | durability.cjs |
 | R03 | Two tabs edit the same investigation | Partial | Competing tabs require explicit choice; keeping a local draft preserves another investigation in its archive. Backup failure blocks replacement; latest-version recovery and unseen-write filing are checked. A complete multi-tab race matrix remains open | durability.cjs; concurrent-drafts.cjs; concurrent-progress.cjs |
@@ -232,3 +232,12 @@ The next regression reproduced silent loss of unreadable research entries when a
 `tests/list-recovery.cjs` checks malformed JSON, unknown list/envelope shapes, exact download and reload recovery, failed import backup, failed portfolio backup without a reward, successful filing retry, mixed valid/unknown research during candidate exclusion, multiple originals and 320px reflow. Portfolio preparation in this suite is a fixture for storage checks, not a historical or scholarly assessment. R04 remains partial for draft/archive migration and deeper record-field validation.
 
 Complete expanded confirmation: **26/26 PASS at `0b91acb`**. Includes the new list-recovery cases and all prior functional suites, display/feedback audits, keyboard completion, Firefox and WebKit completion. Historical graph validation passed. Report: `worldthreads-list-recovery-confirmation.json` in delivered outputs. Original-source review and human usability checks remain open. Next substantive pass: D02/D03/D05 and T02/T06, reviewing a filed thesis against exact source passages, shared-source dependence and a rival explanation.
+
+
+### Filed-thesis source stress test — D02/D03/D05 and T02/T06
+
+An independent agent reviewed the Brazil thesis in the complete-game test and inspected its three cited institutional web sources. The direct Câmara transcription was available; the corpus access note now records that successful follow-up, while original printed legislation, payments and attendance remain unverified. The revised thesis attributes its retrospective chronology and preserves the disagreement between building readiness and inauguration. See THESIS_SOURCE_AUDIT.md for inspected passages, scope, limits and discriminating research tasks. Source access does not certify the thesis or establish that distinct institutions used independent underlying evidence.
+
+A failing regression showed that the source-overlap warning missed two shared-source records when a third distinct source was present. Shared references and matching registered/candidate URLs now generate entry-specific provenance reminders. Distinct links receive no independence verdict. Reminders appear during defense and presentation and persist in the thesis export and filed portfolio snapshot. `tests/source-dependence.cjs` covers partial overlap, mixed registered/candidate overlap, fragment variants, exports and distinct-link honesty. The complete-game example was narrowed to retain the contradictory retrospective building dates; original class and payment research remains open.
+
+Complete expanded confirmation: **27/27 PASS at `69f427d`**. Includes source-dependence regression, revised full-game thesis with provenance reminders preserved in its downloaded portfolio, prior functional/recovery checks, appearance/feedback audits, keyboard completion, Firefox and WebKit. Historical graph validation also passed. Report: `worldthreads-source-review-confirmation.json`; test-generated example: `worldthreads-source-reviewed-example-portfolio.json` in delivered outputs. These ledger cases remain partial for corpus-wide source verification, human scholarly review and broader provenance dependencies.
