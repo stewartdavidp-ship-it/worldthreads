@@ -1,0 +1,29 @@
+const {chromium}=require('playwright');const assert=require('node:assert/strict');
+(async()=>{const browser=await chromium.launch({headless:true});try{
+ const page=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
+ const base=process.env.WORLDTHREADS_URL||'http://127.0.0.1:8768';await page.goto(base);
+ await page.addScriptTag({path:require.resolve('axe-core/axe.min.js',{paths:[require('node:path').join(__dirname,'..','work','a11y'),process.cwd()]})});
+ const audit=async name=>{const r=await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}}));assert.deepEqual(r.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.failureSummary)})),[],name);};await page.click('[data-start-story=harvests]');
+ assert.equal(await page.locator('.place-pin').count(),3);await audit('locator');await page.click('[data-harvest-place=korea]');assert((await page.locator('#harvestPlace').innerText()).includes('later step'));assert.equal(await page.locator('#harvestPlace [data-story-evidence]').count(),0);
+ await page.setViewportSize({width:320,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));for(const pin of await page.locator('.place-pin').all())await pin.click();
+ const boxes=await page.locator('.place-pin').evaluateAll(es=>es.map(e=>{const r=e.getBoundingClientRect();return {left:r.left,right:r.right,top:r.top,bottom:r.bottom};}));for(let i=0;i<boxes.length;i++)for(let j=i+1;j<boxes.length;j++)assert(boxes[i].right<=boxes[j].left||boxes[j].right<=boxes[i].left||boxes[i].bottom<=boxes[j].top||boxes[j].bottom<=boxes[i].top,'Map controls must not overlap');
+ await page.screenshot({path:'../../outputs/WorldThreads harvest mobile.png',fullPage:true});await page.setViewportSize({width:1440,height:1000});
+ await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));await page.screenshot({path:'../../outputs/WorldThreads harvest locator.png',fullPage:true});await page.click('.story-next');
+ const points=()=>page.locator('.progress-summary strong').innerText();const before=await points();
+ assert(await page.locator('#calderaPhoto').isVisible());assert(!(await page.locator('.mechanism-film').isVisible()));
+ await page.locator('#calderaZoom').focus();await page.locator('#calderaZoom').press('ArrowRight');assert((await page.locator('#calderaPhoto').getAttribute('style')).includes('scale(1.1)'));
+ await page.click('[data-harvest-view=mechanism]');assert(!(await page.locator('.caldera-evidence').isVisible()));assert.equal(await page.locator('.mechanism-film').getAttribute('data-frame'),'0');
+ await page.click('[data-film-play]');assert.equal(await page.locator('[data-film-play]').getAttribute('aria-pressed'),'true');await page.click('[data-film-play]');assert.equal(await page.locator('[data-film-play]').getAttribute('aria-pressed'),'false');
+ await page.locator('#filmScrub').focus();await page.locator('#filmScrub').press('End');assert((await page.locator('#filmCaption').innerText()).includes('Some sunlight'));assert.equal(await page.locator('.mechanism-film').getAttribute('data-frame'),'2');assert.equal(await points(),before);
+ await page.emulateMedia({reducedMotion:'reduce'});assert.equal(await page.locator('.film-aerosols').evaluate(el=>getComputedStyle(el).transitionDuration),'0s');
+ await audit('mechanism');await page.locator('.mechanism-film').screenshot({path:'../../outputs/WorldThreads volcanic mechanism.png'});
+ await page.click('[data-film-play]');await page.click('.story-next');assert.equal(await page.evaluate(()=>harvestFilmTimer),null);assert((await page.locator('.rain-duration').innerText()).includes('eight weeks'));
+ await page.click('.story-next');assert(await page.locator('.story-next').isDisabled());await page.click('[data-story-choice=regional]');await page.click('.story-next');
+ assert.equal(await page.locator('.prefecture').count(),336);assert.equal(await page.locator('.poor-report').count(),17);await audit('prefecture chart');await page.locator('.korea-evidence').screenshot({path:'../../outputs/WorldThreads Korean evidence.png'});const countPoints=await points();await page.click('[data-korea-measure=paddies]');assert((await page.locator('#koreaMeasure').innerText()).includes('six assessed provinces'));assert((await page.locator('#koreaMeasure').innerText()).includes('11.2%'));assert.equal(await points(),countPoints);await audit('paddy chart');
+ await page.click('#dispBtn');await page.click('[data-theme-choice=light]');await page.click('#dispBtn');await audit('light paddy chart');
+ await page.setViewportSize({width:320,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.click('[data-korea-measure=prefectures]');assert.equal(await page.locator('.prefecture').count(),336);assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ await page.click('.story-next');await page.click('[data-harvest-frontier]');assert(await page.locator('#proposalClaim').isVisible());assert((await page.locator('.missing-evidence').innerText()).includes('Who received it'));
+ // Remote media failure must leave its evidence context and source link available.
+ const offline=await browser.newPage();await offline.route('https://assets.science.nasa.gov/**',r=>r.abort());await offline.goto(base);await offline.click('[data-start-story=harvests]');await offline.click('.story-next');await offline.locator('.photo-fallback').waitFor({state:'visible'});assert(await offline.locator('.caldera-evidence a').isVisible());
+ assert.deepEqual(errors,[]);console.log('PASS: locator reveal limits; photo zoom/failure fallback; controllable animation; reduced motion; timer cleanup; 17/336 and 11.2% separate denominators; no media rewards; narrow reflow; open research frontier.');
+ }finally{await browser.close();}})().catch(e=>{console.error(e);process.exit(1)});
