@@ -3,6 +3,7 @@ const assert=require('node:assert/strict');
 (async()=>{
  const browser=await chromium.launch({headless:true});
  const page=await browser.newPage({viewport:{width:1440,height:1000}});
+ if(process.env.WORLDTHREADS_KEYBOARD)await require('./keyboard-controls.cjs')(page);
  await page.goto(process.env.WORLDTHREADS_URL||'http://127.0.0.1:8768');
  await page.waitForSelector('[data-start-story]');
  assert((await page.locator('#storyHeading').innerText()).includes('Learn history'));
@@ -18,6 +19,7 @@ const assert=require('node:assert/strict');
  await page.click('[data-start-story=relief]');
  assert(await page.locator('.progress-summary').isVisible());
  assert(await page.locator('[data-case-clue]').first().isVisible());
+ await page.screenshot({path:'../../outputs/WorldThreads first investigation.png',fullPage:true});
  await page.click('[data-story-home]');
  assert((await page.locator('[data-start-story=relief]').innerText()).includes('Resume'));
  await page.setViewportSize({width:390,height:844});
