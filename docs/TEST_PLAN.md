@@ -1,6 +1,6 @@
 # WorldThreads test plan and coverage ledger
 
-Updated: 6 October 2026. Current confirmation candidate: `f8a2b9e` (23/23 expanded checks passed; earlier confirmations retained below) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
+Updated: 6 October 2026. Current confirmation candidate: `f6054ef` (24/24 expanded checks passed; earlier confirmations retained below) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
 
 ## What success means
 
@@ -71,7 +71,7 @@ Stable IDs let future passes update the same case rather than accumulate disconn
 | D05 | Completed thesis withstands scholarly critique | Partial | Independent agent source/reasoning critique completed; primary-record research and human historian assessment remain pending | BRAZIL_THESIS_REVIEW.md |
 | R01 | Reload and ordinary autosave | Tested | Draft, decisions, rewards and portfolios survive expected reload/context transitions | Research-flow + returning + winning |
 | R02 | Storage unavailable or full | Tested | Injected quota/denied writes block stale filing; current session work exports and save recovery succeeds | durability.cjs |
-| R03 | Two tabs edit the same investigation | Partial | Competing thesis tabs require explicit choice; archive failure blocks destructive switching. Two tabs retain and display both sets of earned progress; a complete multi-tab race matrix remains open | durability.cjs |
+| R03 | Two tabs edit the same investigation | Partial | Competing tabs require explicit choice; keeping a local draft preserves another investigation in its archive. Backup failure blocks replacement; latest-version recovery and unseen-write filing are checked. A complete multi-tab race matrix remains open | durability.cjs; concurrent-drafts.cjs; concurrent-progress.cjs |
 | R04 | Corrupted stored records / old schema | Partial | Malformed draft, candidate and portfolio shapes recover; unsupported historical schemas still need a complete migration matrix | durability + progress |
 | R05 | Data fetch failure or offline startup | Tested | Failed HTTP or network collection loads show retry; existing saved research survives and editing after load works offline | interruption.cjs; offline first-load HTML/assets not covered |
 | R06 | Browser back, refresh and detour mid-task | Partial | Browser Back/Forward returns to the thesis stage; evidence detours and reload preserve drafts. Object modal Back/Forward and filtered library → thesis stage navigation pass; the evidence-close/next-scene race is fixed and regression-tested; broader route combinations remain open | interruption + returning + navigation-race |
@@ -207,3 +207,10 @@ Fixed type sizes now use relative units so the content responds to the size cont
 U06: **Tested within the automated scope above.** Real screen-reader users, physical devices and uncoached discoverability remain open. Add appearance to the optional accessibility run in tests/run-plan.cjs.
 
 Final display-restoration confirmation: **23/23 PASS at `f8a2b9e`**. Includes the previous functional plan, new display-preference/reflow audit, feedback, full keyboard journey, Firefox and WebKit completion. Sampled default-theme and largest-size light-theme audits found no detected WCAG A/AA violations; incomplete/manual checks remain open. Chrome also confirmed that the Aa control appears, settings survive reload, and light/largest applies visibly. The user preview was restored to Dark / Normal after the walkthrough.
+
+
+### Concurrent-draft follow-up — R03
+
+A reproducible failure showed that Brazil work in one tab could replace a saved Dutch investigation in another tab when the player chose “Save this page’s draft instead.” The other investigation had no archive and could be lost after that tab closed. Conflict resolution now archives the different saved investigation before replacing the active draft. If that archive fails, replacement is blocked, the saved investigation remains intact, and the player sees a recovery explanation. Same-investigation version choices remain explicit.
+
+`tests/concurrent-drafts.cjs` passes four scoped cases: download current unsaved edits and preserve/restore the different investigation; blocked protective archive; load the latest other-tab version and reload; reject stale filing even before a storage event arrives. R03 remains partial because these tests do not establish an exhaustive interleaving matrix or atomic browser storage. Complete expanded confirmation: **24/24 PASS at `f6054ef`**. This includes all four concurrent-draft cases, previous functional suites, appearance/feedback audits, the full keyboard journey, and Firefox/WebKit completion. Historical graph validation also passed. Report: `worldthreads-draft-conflict-confirmation.json` in delivered outputs. Remaining source, human usability, screen-reader and exhaustive race/schema reviews stay open.
