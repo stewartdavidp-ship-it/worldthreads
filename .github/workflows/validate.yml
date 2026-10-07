@@ -26,6 +26,7 @@ jobs:
       - run: node --check portfolio.js
       - run: node --check draft-storage.js
       - run: node --check navigation.js
+      - run: node --check appearance.js
 
       - run: node --check feedback-log.js
       - run: node --check feedback.mjs

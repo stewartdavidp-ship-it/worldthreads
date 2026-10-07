@@ -1,6 +1,6 @@
 # WorldThreads test plan and coverage ledger
 
-Updated: 6 October 2026. Current confirmation candidate: `c77250d` (22/22 expanded checks passed; earlier complete 19-run confirmation: `eb09624`) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
+Updated: 6 October 2026. Current confirmation candidate: `f8a2b9e` (23/23 expanded checks passed; earlier confirmations retained below) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
 
 ## What success means
 
@@ -205,3 +205,5 @@ The published research frontend already includes the Aa display control. The sin
 Fixed type sizes now use relative units so the content responds to the size control. Light-mode surfaces, evidence and thesis fields retain distinct uncertainty/dispute accents. Largest-size testing found and fixed a narrow header overflow. `tests/appearance.cjs` checks all preferences, actual story-text growth, reload persistence, Auto/explicit-theme behavior, Escape/focus return, denied-storage honesty and largest-size reflow. Twelve sampled display screens had no detected WCAG A/AA violations. The full confirmation below remains separate.
 
 U06: **Tested within the automated scope above.** Real screen-reader users, physical devices and uncoached discoverability remain open. Add appearance to the optional accessibility run in tests/run-plan.cjs.
+
+Final display-restoration confirmation: **23/23 PASS at `f8a2b9e`**. Includes the previous functional plan, new display-preference/reflow audit, feedback, full keyboard journey, Firefox and WebKit completion. Sampled default-theme and largest-size light-theme audits found no detected WCAG A/AA violations; incomplete/manual checks remain open. Chrome also confirmed that the Aa control appears, settings survive reload, and light/largest applies visibly. The user preview was restored to Dark / Normal after the walkthrough.

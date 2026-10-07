@@ -71,3 +71,7 @@ See [the data model](docs/DATA_MODEL.md), [exploration design](docs/EXPLORER_DES
 ## Feedback
 
 “Share feedback” is available throughout an investigation, including evidence dialogs. Messages and an inspectable, bounded UI-state snapshot go to a private Cloudflare D1 inbox. Device diagnostics are optional; private thesis/research text and browser storage are excluded. Failed sends preserve the message, and retries do not duplicate reports. See [feedback operation and verification](docs/FEEDBACK.md).
+
+### Display settings
+
+The header’s Aa button controls Auto / Light / Dark and four text sizes. Settings stay in this browser; unavailable storage keeps them for the current visit. The single-player prototype defaults to dark mode and honors saved preferences. Story, evidence and thesis type scales with the text-size setting.
