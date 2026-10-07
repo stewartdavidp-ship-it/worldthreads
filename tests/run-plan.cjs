@@ -1,7 +1,7 @@
 // Reconfirm each scenario in a separate browser process and retain an explicit result ledger.
 const {spawnSync,execFileSync}=require('node:child_process');const fs=require('node:fs');
 const suites=['quiet-opening','explorer','progress','objects','research-flow','argument-board','examiner','ai-research','winning-game','returning-player','durability','interruption','adversarial-research','accessibility','concurrent-progress','concurrent-drafts','schema-recovery','list-recovery','source-dependence','navigation-matrix','navigation-race'].map(name=>({name,env:{}}));
-if(process.env.WORLDTHREADS_AXE==='1')suites.push({name:'harvest-media',env:{}},{name:'semantic-accessibility',env:{}},{name:'appearance',env:{}},{name:'feedback',env:{}});
+if(process.env.WORLDTHREADS_AXE==='1')suites.push({name:'harvest-inquiry',env:{}},{name:'harvest-media',env:{}},{name:'semantic-accessibility',env:{}},{name:'appearance',env:{}},{name:'feedback',env:{}});
 if(process.env.WORLDTHREADS_PUBLISHED_PREVIEW)suites.push({name:'feedback-published',env:{}});
 suites.push({name:'winning-game',label:'winning-game-keyboard',env:{WORLDTHREADS_KEYBOARD:'1'}});
 if(process.env.WORLDTHREADS_CROSS_BROWSER==='1')for(const browser of ['firefox','webkit'])suites.push({name:'winning-game',label:'winning-game-'+browser,env:{WORLDTHREADS_BROWSER:browser}});

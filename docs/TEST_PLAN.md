@@ -295,3 +295,12 @@ Local validation: quiet-opening (mouse and keyboard), winning-game, appearance a
 The harvest story now leads with an interactive geographic locator, alternate NASA photo/zoom and conceptual mechanism-animation views, a documentary duration graphic, Korean administrative-count and paddy-tax graphics, and an interactive research frontier. The locator uses public-domain modern land outlines, approximate markers and no historical borders or atmospheric routes. Source images, explanatory diagrams and derived evidence counts have distinct visible labels; media views earn no points. See HARVEST_MEDIA.md for provenance and limits.
 
 Validation passed locally: harvest-media (including sampled axe checks on locator, mechanism, prefecture and paddy graphics, light paddy view; 320px map hit targets; image failure; reduced motion; timer cleanup; exact 17/336 count and separate 11.2% denominator), winning-game (all 10 badges / 890 points through thesis filing), appearance, semantic-accessibility and explorer. After final visual-first ordering, winning-game, appearance and sampled accessibility were rerun successfully. Chrome verified the real NASA image, photo/mechanism switching and play control. No production feedback was submitted. Human engagement and educational transfer are still untested.
+
+### 7 October 2026 — first-story reasoning pass
+
+- Tested: player connection highlights a labeled hypothesis; local context stays distinct from the registered regional relationship.
+- Tested: a written prediction opens the Korean chart; revised claim/limit/next-source draft persists and downloads.
+- Tested: changing a tested prediction invalidates assembled status; another tab's draft is preserved.
+- Tested: sampled WCAG checks and 320px/light reflow on the new comparison; existing full winning-game and harvest-media regression scenarios pass.
+- Not established: learning outcomes, historical quality of player-written claims, or independent archival verification. The own-argument board remains separate from guided case badges; these badges do not certify the thesis.
+- Next human pilot: ask a fresh learner to predict, reveal, revise and explain which relationship has source support. Observe whether they can name a specific missing record without being supplied the conclusion.

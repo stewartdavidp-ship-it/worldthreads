@@ -25,3 +25,13 @@ No generated historical footage, fabricated scans, invented data series or sourc
 ## Verification
 
 The media-specific suite covers reveal limits, photo zoom and network-failure fallback, play/pause/scrubbing, reduced motion, timer cleanup when leaving a scene, accurate chart counts, separate paddy denominator, no extra media rewards, narrow reflow and the open research form. Existing winning-game, explorer, display and sampled accessibility suites are also run. Automated checks do not establish learner engagement or replace human accessibility/research review.
+
+## Evidence board pass — 7 October 2026
+
+The first story now adds a player-owned reasoning draft alongside its existing guided case. On the Czech timeline, the player proposes either a contributory interpretation or a sequence needing further investigation, then records supporting reasoning and a gap. The highlighted connector is explicitly the player's proposal. REL-0007 remains the registered contributory interpretation from regional weather record 0005 to regional grain/price record 0006; local account 0007 is context from the shared source, not independent corroboration.
+
+A written prediction opens the Korean visual comparison. The opening no longer discloses the good rice harvest. Once revealed, the player can retain, narrow or suspend an explanation, state a defensible claim, identify its limit and specify the next record to seek. A changed prediction marks the argument stale; retesting clears the prior decision. There is no correctness grade. Guided case completion and badges remain distinct from assembling this independent argument draft.
+
+Drafts use a separate versioned local key with conflicting-tab and unsupported-version preservation. Downloads contain player interpretation, referenced corpus records and source metadata, and an AI research handoff requesting critique without a finished thesis. They do not overwrite the existing thesis, publish observations or transmit draft content to an AI service.
+
+Validation: dedicated browser scenario covers connect/predict/reveal/revise/export, reload through the story shelf, changed-prediction invalidation, conflicting draft preservation, 320px/light layout and sampled accessibility. Existing winning-game and harvest-media scenarios also pass. These checks establish interface behavior, not learning effectiveness. Still to test with people: whether they understand the regional/local distinction, can justify a revision, and know how to seek the next source. Dragging cards, archival facsimiles, richer decision-driven animation and direct thesis import are still future work.
