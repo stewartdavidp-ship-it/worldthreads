@@ -304,3 +304,15 @@ Validation passed locally: harvest-media (including sampled axe checks on locato
 - Tested: sampled WCAG checks and 320px/light reflow on the new comparison; existing full winning-game and harvest-media regression scenarios pass.
 - Not established: learning outcomes, historical quality of player-written claims, or independent archival verification. The own-argument board remains separate from guided case badges; these badges do not certify the thesis.
 - Next human pilot: ask a fresh learner to predict, reveal, revise and explain which relationship has source support. Observe whether they can name a specific missing record without being supplied the conclusion.
+
+### 7 October 2026 — Chrome visual agent review and response
+
+An explicitly requested agent reviewed the first story in Chrome using a labeled local draft on localhost, preserving existing work on the other preview origin. This is a simulated player review, not a human usability study.
+
+Feedback: the Czech board felt like a form; the connector change was too small. Revealing Korea focused a button below the chart and scrolled past the reveal. Dense source credits and three writing fields dominated the comparison. The Amsterdam finale felt like an unexpected topic change.
+
+Changes: three selectable/scrubbable evidence landmarks now update an illustrated scene, dated finding and direct record access. Proposed contribution uses a solid connector; a sequence remains dashed. There are no invented measurements or interpolated trend lines. Source credits and context use labeled native expansions. Secondary writing fields expand separately; denominator and household-access limit stay visible. Reveal focuses the chart heading; a compact evidence pair supports revision. The player's argument precedes an optional Amsterdam investigation. Reopening unchanged reports preserves the decision; testing a changed prediction clears it.
+
+Agent recheck: noticeably more visual and less cluttered; landmark dates distinguish weather, harvests and later prices; chart reveal and reduced text helped. Last refinements about repeat-comparison clearing and the standalone Amsterdam button were also addressed. Browser checks cover landmark clicks/keyboard scrub, qualitative limits, reduced motion, narrow reflow, reveal focus, collapsed detail, argument-before-optional-investigation ordering, saving/export and stale/conflicting drafts. The existing keyboard winning-game and harvest-media regressions pass.
+
+Next: a human first-impression and explanation test; review whether animated landmarks teach sequence vs causation. Possible future extension: visual retain/narrow/suspend scope states and authentic archival images, once suitability and reuse are verified. Do not equate agent preference with learning effectiveness.
