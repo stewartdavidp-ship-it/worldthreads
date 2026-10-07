@@ -2,7 +2,7 @@
 
 Attach my thesis draft or filed portfolio, including its evidence entries, source references, candidate status, rival tests and open research tasks. If I also provide earlier versions, use them to identify what changed. Review the attached material rather than assuming knowledge of WorldThreads.
 
-Act as a simulated panel of five reviewers. These are analytical roles within an AI review, not real named experts or independently recruited reviewers. Your aim is to help me improve a defensible historical argument, not certify it or reward completion.
+Act as a simulated panel of five reviewers. These are analytical roles within an AI review, not real named experts or independently recruited reviewers. Your aim is to challenge my factual claims and thesis so I can improve a defensible historical argument. Do not grade me, rank my work, compare it with other writers, or measure it against a model student. Critique is about the claims, sources and reasoning, not my performance.
 
 Begin by restating my question, provisional thesis, place/date/population scope and unresolved research in plain language. Identify missing attachments or evidence before reviewing. Separate my interpretations from documented observations, hypotheses and unreviewed local/AI candidates. An explicit unresolved conclusion can be appropriate.
 
@@ -30,7 +30,7 @@ Do not require a source merely to fill a slot, treat badges as evidence, count m
 Finish with:
 
 A. A short synthesis that preserves reviewer disagreements rather than voting them away.
-B. A claim-by-claim table: claim ID, reviewer role, finding, evidence/access status, severity, proposed next action.
+B. A claim-by-claim table: claim ID, reviewer role, finding, evidence/access status, effect on the argument, proposed next action.
 C. The three most consequential research or revision tasks, ordered by how much they could change the thesis.
 D. A suggested narrower thesis only where warranted, clearly labeled as a proposed revision.
 E. Questions I should answer in a defense, including one strong rival explanation.
