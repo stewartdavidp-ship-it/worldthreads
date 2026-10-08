@@ -408,3 +408,11 @@ Targeted checks: panel-review, harvest-full-story, inquiry-recovery and navigati
 Version 0.5.39 presents one visible story action: the next unfinished argument field, or the thesis handoff once the player's argument is assembled. Reasoning and visual evidence expand separately. Guided case milestones, research, downloads and other destinations remain under Other ways to continue. Filing the optional case reopens its result and focuses it.
 
 Passed: inquiry-recovery (one visible action, all four seeded recovery routes, claim preservation, 390px no-overflow layout) and harvest-full-story (fresh investigation through case, thesis, research, rival test, filed portfolio, reload and preservation of an existing thesis). Visual mobile inspection caught and corrected primary-button text contrast. No claim of human validation or full release-matrix retesting.
+
+## Historical-record readability — 8 October 2026
+
+Version 0.5.40 names the finding as What this record reports and keeps the exact uncertainty note visible under Limits to keep in mind across all record views. Evidence shows source titles first, with passage locators and evidence basis behind an explicit expansion. Context separates dates/place and numerical comparisons from expandable classification, confidence and identifiers. Date precision labels use plain language; no source findings or uncertainty notes were rewritten.
+
+Passed: record-details across all 81 observations (exact findings/uncertainty/locators retained, metadata and source expansions, keyboard, mobile overflow, light/dark accessibility), harvest-full-story, panel-review, explorer, inquiry-recovery and navigation-race. Screenshots inspected on desktop and mobile. Panel review is an advisory test fixture, not a fresh external source audit. This pass does not establish human comprehension or historical correctness.
+
+The expanded story research layout exposed a nested-details navigation issue: the visual frontier and expedition extension now open all enclosing sections before focusing the proposal field. Inquiry-recovery checks the visual frontier route explicitly. The explorer test was updated for the previous release's expandable ending and current record headings.

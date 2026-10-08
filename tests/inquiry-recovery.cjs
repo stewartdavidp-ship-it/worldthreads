@@ -22,6 +22,7 @@ const assert=require('node:assert/strict');
   assert.equal(await page.evaluate(()=>document.activeElement.dataset.inquiryField),key);
   assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('worldthreads-harvest-inquiry-v1')).claim),claim);
  }
+ await page.reload();await page.click('[data-start-story=harvests]');await page.locator('.ending-evidence>summary').click();await page.locator('.story-route>summary').click();await page.click('[data-story-frontier]');assert(await page.locator('#proposalClaim').isVisible());assert.equal(await page.evaluate(()=>document.activeElement.id),'proposalClaim');
  assert.deepEqual(errors,[]);
  console.log('PASS: incomplete ending explains missing work → each recovery link opens and focuses its field → claim and prediction preserved.');
  }finally{await browser.close();}})().catch(e=>{console.error(e);process.exit(1)});

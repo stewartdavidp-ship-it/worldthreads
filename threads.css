@@ -33,3 +33,5 @@ button:not(.map-node),summary{min-height:44px;box-sizing:border-box}
 .focus-node .eyebrow{color:#c3d3b9}
 .map-node{width:44px;height:44px;min-height:44px;transform:translate(-13px,-13px);background:transparent;border:0;box-shadow:none}
 .map-node::after{content:"";position:absolute;left:13px;top:13px;width:18px;height:18px;box-sizing:border-box;border:3px solid #dce8e1;border-radius:50%;background:#4d7b65;box-shadow:0 0 0 6px rgba(77,123,101,.2)}
+
+.record-finding-heading{font-size:1rem;margin:20px 0 6px;color:var(--wt-ink)}.record-boundary{margin:18px 0;max-width:900px}.record-boundary h3{font-size:1rem;margin:4px 0 8px}.record-boundary p{margin:0;overflow-wrap:anywhere}.record-context{max-width:900px}.record-metadata summary,.record-provenance summary{min-height:44px;line-height:1.5;padding:8px 0}.record-metadata dd,.record-provenance p{overflow-wrap:anywhere}.record-source-intro{color:var(--wt-muted);line-height:1.6;max-width:750px}
