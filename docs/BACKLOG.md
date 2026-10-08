@@ -6,7 +6,7 @@ Replace text-only earned badges with recognizable icons. Reveal the badge name, 
 
 ## Agent usability follow-ups — 8 October 2026
 
-- Simplify the first-story ending to one primary next action, with alternate destinations behind an expansion.
+- Completed in 0.5.39: first-story ending has one visible next action; reasoning, visual evidence and alternate destinations expand on demand. Human usability confirmation remains pending.
 - Start historical-record details with what a record shows and cannot establish; move identifiers and taxonomy deeper.
 - Explore a visual comparison of the player's question, bounded claim and unresolved causal link without inferring historical support automatically.
 - Run uncoached human tasks to assess comprehension and the benefit of returning from an assistant.

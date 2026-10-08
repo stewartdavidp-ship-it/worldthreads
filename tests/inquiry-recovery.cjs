@@ -9,10 +9,14 @@ const assert=require('node:assert/strict');
  },claim);
  await page.goto(process.env.WORLDTHREADS_URL||'http://127.0.0.1:8772');await page.click('[data-start-story=harvests]');
  assert.equal(await page.locator('[data-inquiry-thesis]').isEnabled(),false);
- assert.equal(await page.locator('.inquiry-missing button').count(),4);
- assert((await page.locator('.inquiry-board').innerText()).includes('Not recorded yet'));
+ assert.equal(await page.locator('.inquiry-missing [data-inquiry-focus]').count(),4);
+ assert.equal(await page.locator('#storyJourney button:visible').count(),1);
+ await page.setViewportSize({width:390,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ await page.screenshot({path:'../../outputs/first-story-ending-simplified.png',fullPage:true});
+ assert((await page.locator('.inquiry-board').textContent()).includes('Not recorded yet'));
  for(const key of ['limit','next','reason','link']){
   if(key!=='limit'){await page.reload();await page.click('[data-start-story=harvests]');}
+  const target=page.locator('.inquiry-missing [data-inquiry-focus='+key+']');if(!await target.isVisible())await page.locator('.inquiry-missing summary').click();
   await page.click('.inquiry-missing [data-inquiry-focus='+key+']');
   assert(await page.locator('[data-inquiry-field='+key+']').isVisible());
   assert.equal(await page.evaluate(()=>document.activeElement.dataset.inquiryField),key);

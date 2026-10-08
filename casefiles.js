@@ -14,7 +14,7 @@ function caseFileHtml(config){
 function submitCaseFile(e){if(e.target.id!=='caseFileForm')return;e.preventDefault();const config=storyCatalog.find(s=>s.id===story.id),task=caseFileTasks[story.id];if(!config||!completedStory(config))return;const form=new FormData(e.target),chosen=form.getAll('records'),feedback=document.getElementById('caseFileFeedback');
  if(!task.required.every(id=>chosen.includes(id))){feedback.textContent='Your case needs the paired records: choose evidence for both parts of the conclusion. Use Inspect to revisit the clues.';return;}
  if(form.get('limit')!=='0'||form.get('next')!=='0'){feedback.textContent='Reconsider the boundary of the evidence. What cannot these records establish, and what new source would test it? No points lost.';return;}
- recordProgress('caseFiled',true);renderStory();document.querySelector('.case-victory').setAttribute('tabindex','-1');document.querySelector('.case-victory').focus();
+ recordProgress('caseFiled',true);renderStory();const victory=document.querySelector('.case-victory');for(let parent=victory.parentElement;parent;parent=parent.parentElement)if(parent.tagName==='DETAILS')parent.open=true;victory.setAttribute('tabindex','-1');victory.focus();
 }
 function downloadCaseFile(id){const config=storyCatalog.find(s=>s.id===id),task=caseFileTasks[id];if(!config||!storyProgress(id).caseFiled)return;
  const records=task.required.map(id=>obs(id)),refs=[...new Set(records.flatMap(o=>o.sourceRefs))].map(id=>source(id));

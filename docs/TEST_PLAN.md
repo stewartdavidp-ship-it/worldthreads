@@ -402,3 +402,9 @@ Three agents tested isolated browser sessions rather than sharing a player or ch
 | Assistant-first returning player | Review and research task buried after reload; note-writing appeared prerequisite to research | Exact-version Continue my review / Continue this research question actions, direct research action and visible suggested next step; independent retest and panel-review regression | Descriptive-versus-causal distinction still demands mental comparison |
 
 Targeted checks: panel-review, harvest-full-story, inquiry-recovery and navigation-race. These are not a rerun of the entire historical release matrix. Existing data/draft/review uncertainty boundaries remain unchanged. Backlog includes the user's badge-icon request; see BACKLOG.md.
+
+## First-story ending simplification — 8 October 2026
+
+Version 0.5.39 presents one visible story action: the next unfinished argument field, or the thesis handoff once the player's argument is assembled. Reasoning and visual evidence expand separately. Guided case milestones, research, downloads and other destinations remain under Other ways to continue. Filing the optional case reopens its result and focuses it.
+
+Passed: inquiry-recovery (one visible action, all four seeded recovery routes, claim preservation, 390px no-overflow layout) and harvest-full-story (fresh investigation through case, thesis, research, rival test, filed portfolio, reload and preservation of an existing thesis). Visual mobile inspection caught and corrected primary-button text contrast. No claim of human validation or full release-matrix retesting.
