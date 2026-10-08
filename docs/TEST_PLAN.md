@@ -368,3 +368,14 @@ Replaced the report-first presentation with an opening strength, one challenge a
 Chrome: inspected the genuine 13-concern ChatGPT review, followed claim/evidence controls and skipped all questions to verify that the ending preserves all 13 as open rather than claiming a successful defense. Automated regression also recorded a response, reloaded, checked version isolation and export, deliberately blocked a save and confirmed navigation could not discard the unsaved note, carried unanswered questions to the ending and returned to revision. First-story full playthrough, draft durability, graph validation, narrow/light layout and sampled accessibility pass.
 
 Remaining human test: does a new player understand what evidence would justify their decision? This is a more focused response workflow, not yet proof that the thesis-writing stage feels as visual or motivating as the story. AI findings and source access remain advisory and assistant-reported.
+
+
+## Is returning from the assistant worth it? — 8 October 2026
+
+The default handoff now copies a prose discussion brief with the filed claims and evidence. It requests no JSON or return to WorldThreads. The structured critique path is optional. A formatted report alone is not sufficient value to justify the return.
+
+The optional return provides a visual claim-to-record map using the player's filed roles, a citation dependency diagram with selectable sources, and a chosen challenge carried into the research desk without overwriting research notes. Citation lines show registered references in the filed snapshot; neither multiple citations nor an AI critique establish independent corroboration or checked passage support. Decisions are progressively disclosed.
+
+Verified in Chrome with the existing genuine 13-concern review: source highlight, chosen challenge → research desk → original challenge, unchanged decision count. Isolated browser regression verifies the default clipboard contains the actual thesis and no required JSON, exact record expansion, source highlighting, research-note preservation, wrong-version isolation, durable responses, mobile/light and sampled accessibility.
+
+Human evaluation: compare reading the critique in the assistant with the optional returned map. Can the reviewer identify which record/source underlies a challenged claim, distinguish context from support, and choose a research action more easily? If the map does not improve these tasks, simplify the return further. Still to explore: visual before/after comparison of a revised thesis and its changed evidence links, and a source-unavailable scenario that shows affected claims without declaring them false. Conversational follow-up remains in the assistant.
