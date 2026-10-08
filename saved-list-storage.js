@@ -31,8 +31,8 @@ function recordRecoveryHtml(key,valid,label){
 }
 document.addEventListener('click',e=>{
  const button=e.target.closest('[data-download-record-recovery]');if(!button)return;
- const key=button.dataset.downloadRecordRecovery;if(![LOCAL_RESEARCH_KEY,PORTFOLIO_KEY].includes(key))return;
+ const key=button.dataset.downloadRecordRecovery;if(![LOCAL_RESEARCH_KEY,PORTFOLIO_KEY,PANEL_REVIEW_KEY].includes(key))return;
  try{const index=button.dataset.recoveryIndex,raw=index==='current'?localStorage.getItem(key):recordRecoveryCopies(key)[Number(index)]?.raw;if(typeof raw!=='string')return;
- const url=URL.createObjectURL(new Blob([raw],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download=key===LOCAL_RESEARCH_KEY?'worldthreads-original-research.json':'worldthreads-original-portfolios.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+ const url=URL.createObjectURL(new Blob([raw],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download=key===LOCAL_RESEARCH_KEY?'worldthreads-original-research.json':key===PANEL_REVIEW_KEY?'worldthreads-original-panel-reviews.json':'worldthreads-original-portfolios.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
  }catch{button.textContent='Recovery file unavailable. Your saved records have not been changed.';}
 });

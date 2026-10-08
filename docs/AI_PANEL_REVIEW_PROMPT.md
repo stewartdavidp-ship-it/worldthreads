@@ -41,3 +41,12 @@ E. Questions I should answer in a defense, including a prompt to develop and tes
 F. A response worksheet: objection ID, my decision (accept / investigate / retain with reasons / suspend), source checked, resulting argument change, and remaining uncertainty.
 
 Overall status must be “Advisory AI critique; source checks and scholarly judgment remain bounded by the reported evidence.” Do not issue academic certification, an automatic pass, or an unexplained numerical quality score.
+
+
+## Built-in copy-and-return workflow
+
+In the thesis workspace, select Present your portfolio and file the research round. Open “Take my portfolio to an AI review panel”, prepare the prompt, and copy it into your preferred assistant. The generated prompt includes the selected filed thesis, evidence, references and a version-specific JSON schema, so an additional attachment is unnecessary for those contents. Copy the complete assistant JSON back into WorldThreads and choose “Bring review into my presentation”.
+
+The built-in return format takes precedence over the prose/table format above. It uses summary, five reviewers with strengths and concerns, disagreements, nextSteps, defenseQuestions and sourceChecks. Concerns reference C1 (thesis), C2–C4 (evidence interpretations), or document. Each declares its basis and what could change the assessment. WorldThreads rejects another filed version’s request ID and unsupported grading fields; it cannot verify the truth of the assistant’s commentary or reported access.
+
+Open a reviewer, record your own decision and reasoning, then download the portfolio with the critique and your responses. Any thesis revision remains a separate action; file and review a new version when needed. No AI service receives data automatically.

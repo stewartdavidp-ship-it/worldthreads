@@ -1,7 +1,7 @@
 const state={observations:[],relationships:[],threads:[],sources:[],mechanisms:[],gaps:[],objects:[],objectRelationships:[],objectTypes:[],region:'ALL',query:'',period:'ALL',evidence:'ALL',sort:'date',system:'ALL',threadId:null};
 
 let appLoaded=false;
-async function fetchCollection(path){const response=await fetch(path+'?v=0.5.29',{cache:'no-cache'});if(!response.ok)throw Error('Evidence collection unavailable ('+response.status+')');const value=await response.json();if(!Array.isArray(value))throw Error('An evidence collection has an invalid format');return value;}
+async function fetchCollection(path){const response=await fetch(path+'?v=0.5.32',{cache:'no-cache'});if(!response.ok)throw Error('Evidence collection unavailable ('+response.status+')');const value=await response.json();if(!Array.isArray(value))throw Error('An evidence collection has an invalid format');return value;}
 async function load(){
   const [observations,relationships,threads,sources,mechanisms,gaps,objects,objectRelationships,objectTypes]=await Promise.all([
     fetchCollection('data/1816/observations.json'),
