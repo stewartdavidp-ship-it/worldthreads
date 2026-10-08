@@ -1,6 +1,6 @@
 # WorldThreads test plan and coverage ledger
 
-Updated: 7 October 2026. Current confirmation candidate: `69f427d` (27/27 expanded checks passed; earlier confirmations retained below) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
+Updated: 8 October 2026. Latest targeted agent-perspective pass is recorded below. Earlier broad confirmation candidate: `69f427d` (27/27 expanded checks passed; earlier confirmations retained below) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
 
 ## What success means
 
@@ -388,3 +388,17 @@ The active question screen now starts with a plain-language question, a short ex
 Evidence opens in a native modal panel comparing the player's filed claim with the relevant recorded observations. Full claim, passage notes, source references and uncertainty are available through Read more. Full AI reasoning and evidence connection graphics have their own detail views. Closing the panel or pressing Escape restores focus to the originating button and preserves the main-page position and response. Nothing rewrites a thesis or certifies evidence.
 
 Verified in Chrome against the existing genuine review: question → evidence comparison → return to the same question. Browser regression verifies no connection map on the main screen, expanded source access, notes preserved across the panel, Escape/focus return, failed-save navigation blocking, research return, version isolation, export, narrow/light layout and sampled accessibility for both the question and modal. Next human check: can a reviewer identify the next action without knowing the model or reading the full report?
+
+
+## Independent agent perspectives — 8 October 2026
+
+Three agents tested isolated browser sessions rather than sharing a player or changing user work. Newcomer began fresh and reached a provisional first-story claim. Skeptic and assistant-first perspectives used a filed example and the previously genuine ChatGPT response, adapting only its request ID. This is task-based agent evidence; human intuition and learning remain unproven.
+
+| Perspective | Observed weakness | Change and confirmation | Remaining gap |
+|---|---|---|---|
+| Newcomer | Disabled thesis handoff after optional writing was skipped; empty labels and no direct recovery | Ending names every missing prerequisite; each recovery link opens and focuses its exact field, preserves the claim; independent agent retest and inquiry-recovery regression | Ending still has competing destinations; evidence metadata remains dense |
+| Skeptical researcher | Historical record button not routed from body-mounted comparison; subsequent history restoration collapsed review and could change selected filed version | Modal-specific record routing, live review return and nested-inspector close without rebuilding thesis; independent detour retest and panel-review regression with multiple versions | Human interpretation of comparison remains to test |
+| Skeptical researcher | Challenged research question hidden; retention visually secondary | Question is shown beside claim; retain has equal visibility; independent retest | Four choices need human evaluation |
+| Assistant-first returning player | Review and research task buried after reload; note-writing appeared prerequisite to research | Exact-version Continue my review / Continue this research question actions, direct research action and visible suggested next step; independent retest and panel-review regression | Descriptive-versus-causal distinction still demands mental comparison |
+
+Targeted checks: panel-review, harvest-full-story, inquiry-recovery and navigation-race. These are not a rerun of the entire historical release matrix. Existing data/draft/review uncertainty boundaries remain unchanged. Backlog includes the user's badge-icon request; see BACKLOG.md.
