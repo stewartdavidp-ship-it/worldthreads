@@ -50,3 +50,6 @@ In the thesis workspace, select Present your portfolio and file the research rou
 The built-in return format takes precedence over the prose/table format above. It uses summary, five reviewers with strengths and concerns, disagreements, nextSteps, defenseQuestions and sourceChecks. Concerns reference C1 (thesis), C2–C4 (evidence interpretations), or document. Each declares its basis and what could change the assessment. WorldThreads rejects another filed version’s request ID and unsupported grading fields; it cannot verify the truth of the assistant’s commentary or reported access.
 
 Open a reviewer, record your own decision and reasoning, then download the portfolio with the critique and your responses. Any thesis revision remains a separate action; file and review a new version when needed. No AI service receives data automatically.
+
+
+Use the JSON code block’s **Copy** control when returning the response. Some assistants' whole-message Copy formats ordinary text as Markdown and may escape URLs, producing invalid JSON. The generated prompt now requests a fenced JSON code block. If parsing fails, ask the assistant to return the same critique in a valid JSON code block; do not alter the historical findings merely to make an import pass.
