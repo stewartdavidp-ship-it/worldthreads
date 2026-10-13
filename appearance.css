@@ -250,3 +250,5 @@
 /* Let the enlarged brand and tagline fit a narrow header. */
 .site-header>div{min-width:0;max-width:100%}
 .brand{font-size:clamp(1.4rem,5vw,1.875rem);overflow-wrap:anywhere}
+/* Anchor the mobile display menu to the header, even when Aa wraps to another row. */
+@media(max-width:850px){.disp{position:static}.disp-panel{left:20px;right:20px;width:auto;max-height:50vh;overflow-y:auto}}

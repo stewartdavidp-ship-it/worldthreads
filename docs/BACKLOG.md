@@ -18,3 +18,7 @@ Completed in 0.5.42: neutral suggested question for the first-story handoff, vis
 ## Visual returned findings — 12 October 2026
 
 Completed in 0.5.43: interactive inspection/comparison/role path, visual provisional-claim versus unreviewed-finding comparison, expandable limits, contextual record-chooser handoff and folded pasted data after import. Review graphics guide research actions without implying a verified historical link. Next human test: can the player explain what the candidate changes, what it cannot establish, and why an evidence role is their interpretation?
+
+## Less text, more graphical story — 13 October 2026
+
+Completed in 0.5.44: compact Czech chronology/Korean count comparison; source-linked visual items; larger charts and detailed limits on demand; shorter map/photo/mechanism/timeline captions; exact full-text expansion for long drafts and findings. Initial comparison text is about 23% lower than 0.5.43 in a matched interface check. Source/causal distinctions and complete stored/exported text remain intact. Human recognition of units, uncertainty and next action remains to test.

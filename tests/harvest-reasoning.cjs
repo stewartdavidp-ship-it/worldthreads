@@ -27,7 +27,7 @@ const fs=require('node:fs');
  await page.locator('.harvest-reasoning').scrollIntoViewIfNeeded();await page.screenshot({path:path.resolve(__dirname,'../../../outputs/WorldThreads explanation gap desktop.png')});
  await page.click('.reasoning-direction [data-inquiry-focus=next]');assert.equal(await page.evaluate(()=>document.activeElement.dataset.inquiryField),'next');assert.equal(await page.inputValue('[data-inquiry-field=next]'),draft.next);assert.equal(await page.inputValue('[data-inquiry-field=claim]'),draft.claim);
  await page.locator('.reasoning-gap>summary').click();assert.equal(await page.locator('[data-reasoning-direction=reporting]').getAttribute('aria-pressed'),'true','Direction survives the writing detour within this session');
- await page.click('[data-reasoning-direction=weather]');await page.locator('.reasoning-direction summary').click();assert((await page.locator('.reasoning-direction').innerText()).includes('Which local weather and crop records'));
+ await page.click('[data-reasoning-direction=weather]');await page.getByText('Help me choose evidence to seek',{exact:true}).click();assert((await page.locator('.reasoning-direction').innerText()).includes('Which local weather and crop records'));
  await page.setViewportSize({width:390,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
  await page.locator('.harvest-reasoning').scrollIntoViewIfNeeded();await page.screenshot({path:path.resolve(__dirname,'../../../outputs/WorldThreads explanation gap mobile.png'),fullPage:true});
  const axe=fs.readFileSync(require.resolve('axe-core/axe.min.js',{paths:[path.join(__dirname,'..','work','a11y'),process.cwd()]}),'utf8');await page.addScriptTag({content:axe});
