@@ -1,3 +1,4 @@
+const {chooseInquiryResponse}=require('./helpers/inquiry-response.cjs');
 const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
@@ -10,7 +11,7 @@ await page.click('[data-start-story=harvests]');await page.click('.story-next');
 await page.selectOption('[data-inquiry-field=link]','sequence');await page.click('.inquiry-writing summary');
 await page.fill('[data-inquiry-field=reason]','Chronology suggests a connection to test; timing alone cannot establish a cause.');await page.click('.story-next');
 await page.fill('[data-inquiry-field=prediction]','Reports may differ because crop and reporting categories differ.');await page.click('[data-story-choice=regional]');await page.click('.story-next');await page.click('[data-inquiry-reveal]');
-await page.selectOption('[data-inquiry-field=decision]','suspend');
+await chooseInquiryResponse(page,'suspend');
 const claim='These selected reports differ, but do not yet establish why harvest outcomes differed.';
 const question='Find the Korean instructions defining poor yield and compare the categories with the Czech reconstruction.';
 await page.fill('[data-inquiry-field=claim]',claim);await page.click('.inquiry-writing summary');await page.fill('[data-inquiry-field=limit]','Different crops, periods and reporting units prevent a matched yield comparison.');await page.fill('[data-inquiry-field=next]',question);await page.click('.story-next');await page.click('[data-inquiry-thesis]');

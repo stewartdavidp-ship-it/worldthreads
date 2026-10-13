@@ -22,3 +22,7 @@ Completed in 0.5.43: interactive inspection/comparison/role path, visual provisi
 ## Less text, more graphical story — 13 October 2026
 
 Completed in 0.5.44: compact Czech chronology/Korean count comparison; source-linked visual items; larger charts and detailed limits on demand; shorter map/photo/mechanism/timeline captions; exact full-text expansion for long drafts and findings. Initial comparison text is about 23% lower than 0.5.43 in a matched interface check. Source/causal distinctions and complete stored/exported text remain intact. Human recognition of units, uncertainty and next action remains to test.
+
+## Visual hypothesis and revision choices — 13 October 2026
+
+Completed in 0.5.45: clickable hypothetical same/different-outcome diagrams; Keep/Narrow/Leave open icon controls; written prediction before advancement and explicit reveal before the guided Korean source. Full first-story/thesis and ten-badge winning routes pass. Reward rules, accepted historical data, ungraded interpretation and source/causal uncertainty distinctions remain intact. Next human question: can the player explain how the evidence changed their initial prediction without confusing an activity milestone with verification?

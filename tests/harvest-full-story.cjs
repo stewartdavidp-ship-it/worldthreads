@@ -1,3 +1,4 @@
+const {chooseInquiryResponse}=require('./helpers/inquiry-response.cjs');
 const {selectThesisStage}=require('./helpers/thesis-stage.cjs');
 const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
@@ -15,7 +16,7 @@ const sample=require('./fixtures/harvest-playthrough.json');
  await page.fill('[data-inquiry-field=reason]','Regional weather and grain-price chronology support a contribution; timing alone does not isolate trade or household access.');await page.click('.story-next');
  const prediction='If the shock alone determines harvests, Korean reports should show widespread failure.';
  await page.fill('[data-inquiry-field=prediction]',prediction);await page.click('[data-story-choice=universal]');await page.click('.story-next');await page.click('[data-inquiry-reveal]');
- await page.selectOption('[data-inquiry-field=decision]','narrow');await page.fill('[data-inquiry-field=claim]',sample.argumentRevisions[0].before);await page.click('.inquiry-writing summary');
+ await chooseInquiryResponse(page,'narrow');await page.fill('[data-inquiry-field=claim]',sample.argumentRevisions[0].before);await page.click('.inquiry-writing summary');
  await page.fill('[data-inquiry-field=limit]',sample.counterargument);await page.fill('[data-inquiry-field=next]',sample.researchQuestion);await page.click('.story-next');
  await page.locator('.ending-alternatives>summary').click();await page.getByText('Build the guided case and earn its milestone',{exact:true}).click();
  for(const id of ['WT-1816-0006','WT-1816-0045'])await page.check('#caseFileForm input[value="'+id+'"]');await page.selectOption('#caseFileForm [name=limit]','0');await page.selectOption('#caseFileForm [name=next]','0');await page.locator('#caseFileForm button[type=submit]').click();

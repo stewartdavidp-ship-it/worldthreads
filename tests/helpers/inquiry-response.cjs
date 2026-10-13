@@ -1,0 +1,1 @@
+exports.chooseInquiryResponse=async(page,value)=>{const button=page.locator('[data-inquiry-decision='+value+']');if(await button.count())await button.click();else await page.selectOption('[data-inquiry-field=decision]',value);};
