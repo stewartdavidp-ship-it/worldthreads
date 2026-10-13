@@ -9,10 +9,10 @@ const fs=require('node:fs');
  await page.goto(process.env.WORLDTHREADS_URL||'http://127.0.0.1:8772');await page.click('[data-start-story=harvests]');
  assert.equal(await page.locator('#storyJourney button:visible').count(),1,'The ending keeps one next action');
  await page.getByText('See how the records connect to my argument',{exact:true}).click();
- assert((await page.locator('.reasoning-interpretation').innerText()).includes(draft.claim));
+ await page.click('[data-trail-stop=claim]');assert((await page.locator('.reasoning-interpretation').innerText()).includes(draft.claim));
  assert((await page.locator('.reasoning-interpretation').innerText()).includes('not automatically verified'));
  await page.locator('.reasoning-interpretation summary').click();assert((await page.locator('.reasoning-interpretation').innerText()).includes(draft.next));
- await page.locator('.reasoning-gap>summary').press('Enter');
+ await page.click('[data-trail-stop=records]');await page.locator('.reasoning-gap>summary').press('Enter');
  assert((await page.locator('.reasoning-gap').innerText()).includes('No cause of this contrast has been established here'));
  const before=await page.evaluate(()=>({draft:localStorage.getItem('worldthreads-harvest-inquiry-v1'),progress:localStorage.getItem('worldthreads-investigation-progress-v1')}));
  for(const direction of ['weather','reporting','access']){

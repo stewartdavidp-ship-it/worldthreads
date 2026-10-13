@@ -26,3 +26,7 @@ Completed in 0.5.44: compact Czech chronology/Korean count comparison; source-li
 ## Visual hypothesis and revision choices — 13 October 2026
 
 Completed in 0.5.45: clickable hypothetical same/different-outcome diagrams; Keep/Narrow/Leave open icon controls; written prediction before advancement and explicit reveal before the guided Korean source. Full first-story/thesis and ten-badge winning routes pass. Reward rules, accepted historical data, ungraded interpretation and source/causal uncertainty distinctions remain intact. Next human question: can the player explain how the evidence changed their initial prediction without confusing an activity milestone with verification?
+
+## Trace the investigation into the thesis — 13 October 2026
+
+Completed in 0.5.46: optional four-stop visual investigation trail at the first-story ending and in its thesis workspace. Players select their earlier prediction, starting records, working claim or next evidence; current claim/question edits stay reflected. Earlier response/limits are distinguished from later revisions, and starting records are not automatically assigned thesis support. Full play, research and portfolio routes pass; human comprehension remains to evaluate. Future visual work: show deliberately documented thesis revisions and their changed evidence roles, without implying improved truth from revisions or additional citations.
