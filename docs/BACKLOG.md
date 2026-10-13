@@ -14,3 +14,7 @@ Replace text-only earned badges with recognizable icons. Reveal the badge name, 
 ## Story-to-thesis continuity — 12 October 2026
 
 Completed in 0.5.42: neutral suggested question for the first-story handoff, visible player-authored next research task, direct research-plan action, expandable background/thesis route, and current question retained through editing and resume. Full-story, cautious-player, panel-return and winning-route checks pass. Human comprehension and the benefit of the assistant return remain the next validation priority; no new stories added in this pass.
+
+## Visual returned findings — 12 October 2026
+
+Completed in 0.5.43: interactive inspection/comparison/role path, visual provisional-claim versus unreviewed-finding comparison, expandable limits, contextual record-chooser handoff and folded pasted data after import. Review graphics guide research actions without implying a verified historical link. Next human test: can the player explain what the candidate changes, what it cannot establish, and why an evidence role is their interpretation?
