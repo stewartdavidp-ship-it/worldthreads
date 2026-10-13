@@ -16,6 +16,7 @@ const claim='These selected reports differ, but do not yet establish why harvest
 const question='Find the Korean instructions defining poor yield and compare the categories with the Czech reconstruction.';
 await page.fill('[data-inquiry-field=claim]',claim);await page.click('.inquiry-writing summary');await page.fill('[data-inquiry-field=limit]','Different crops, periods and reporting units prevent a matched yield comparison.');await page.fill('[data-inquiry-field=next]',question);await page.click('.story-next');await page.click('[data-inquiry-thesis]');
 assert.equal(await page.inputValue('[name=argument]'),claim);
+assert.equal(await page.inputValue('[name=title]'),'Comparing Czech and Korean harvest reports');
 assert.match(await page.inputValue('[name=question]'),/^What can the selected/);
 assert.equal(await page.inputValue('[name=role0]'),'');
 assert.equal(await page.locator('#thesisNextQuestion').innerText(),question);
