@@ -1,3 +1,4 @@
+const {selectThesisStage}=require('./helpers/thesis-stage.cjs');
 const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const path=require('node:path');
@@ -41,7 +42,7 @@ const fs=require('node:fs');
  await page.click('#researchMode');await audit('light largest research library');
  await page.selectOption('#threadSelect','THREAD-BRAZIL-PATRONAGE');await page.click('#threadThesis');
  for(const stage of ['topic','evidence','defense','research','present']){await page.click('[data-thesis-stage='+stage+']');await audit('light largest thesis '+stage);}
- await page.setViewportSize({width:320,height:720});await page.click('[data-thesis-stage=topic]');await audit('light largest 320px thesis');
+ await page.setViewportSize({width:320,height:720});await selectThesisStage(page,'topic');await audit('light largest 320px thesis');
  await open();await audit('light largest 320px display settings');await page.keyboard.press('Escape');
  await page.click('#storyMode');await audit('light largest 320px story shelf');
  await open();await page.getByRole('button',{name:'Dark',exact:true}).click();await page.keyboard.press('Escape');await audit('dark largest 320px story shelf');

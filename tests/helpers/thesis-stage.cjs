@@ -1,0 +1,2 @@
+exports.selectThesisStage=async(page,stage)=>{const tools=page.locator('.thesis-tools');if(!(await tools.evaluate(e=>e.open)))await tools.locator('summary').click();await tools.locator('[data-thesis-stage='+stage+']').click();};
+exports.returnToThread=async(page)=>{const background=page.locator('.thesis-background');if(!(await background.evaluate(e=>e.open)))await background.locator('summary').click();await background.locator('[data-return-thread]').click();};

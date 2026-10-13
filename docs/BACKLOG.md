@@ -10,3 +10,7 @@ Replace text-only earned badges with recognizable icons. Reveal the badge name, 
 - Completed in 0.5.40: historical records lead with the reported finding and its limits; context and measurements are separated from expandable classification, confidence and identifiers. Exact source locators expand in the evidence view. Human comprehension remains to test.
 - Completed in 0.5.41: the first story visually separates two reported findings, the unresolved explanatory gap and the player's own interpretation. Weather/crop, reporting and household-access directions lead to source inspection and the player's research question; no automatic verification or answers.
 - Run uncoached human tasks to assess comprehension and the benefit of returning from an assistant.
+
+## Story-to-thesis continuity — 12 October 2026
+
+Completed in 0.5.42: neutral suggested question for the first-story handoff, visible player-authored next research task, direct research-plan action, expandable background/thesis route, and current question retained through editing and resume. Full-story, cautious-player, panel-return and winning-route checks pass. Human comprehension and the benefit of the assistant return remain the next validation priority; no new stories added in this pass.

@@ -1,0 +1,37 @@
+const {chromium}=require('playwright');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+(async()=>{const browser=await chromium.launch();try{
+const page=await browser.newPage({viewport:{width:1200,height:900}}),errors=[];
+page.on('pageerror',e=>errors.push(e.message));
+await page.goto(process.env.WORLDTHREADS_URL||'http://127.0.0.1:8774');
+await page.click('[data-start-story=harvests]');await page.click('.story-next');await page.click('.story-next');
+await page.selectOption('[data-inquiry-field=link]','sequence');await page.click('.inquiry-writing summary');
+await page.fill('[data-inquiry-field=reason]','Chronology suggests a connection to test; timing alone cannot establish a cause.');await page.click('.story-next');
+await page.fill('[data-inquiry-field=prediction]','Reports may differ because crop and reporting categories differ.');await page.click('[data-story-choice=regional]');await page.click('.story-next');await page.click('[data-inquiry-reveal]');
+await page.selectOption('[data-inquiry-field=decision]','suspend');
+const claim='These selected reports differ, but do not yet establish why harvest outcomes differed.';
+const question='Find the Korean instructions defining poor yield and compare the categories with the Czech reconstruction.';
+await page.fill('[data-inquiry-field=claim]',claim);await page.click('.inquiry-writing summary');await page.fill('[data-inquiry-field=limit]','Different crops, periods and reporting units prevent a matched yield comparison.');await page.fill('[data-inquiry-field=next]',question);await page.click('.story-next');await page.click('[data-inquiry-thesis]');
+assert.equal(await page.inputValue('[name=argument]'),claim);
+assert.match(await page.inputValue('[name=question]'),/^What can the selected/);
+assert.equal(await page.inputValue('[name=role0]'),'');
+assert.equal(await page.locator('#thesisNextQuestion').innerText(),question);
+assert.equal(await page.locator('.thesis-tools').evaluate(e=>e.open),false);
+assert.equal(await page.locator('.thesis-background').evaluate(e=>e.open),false);
+await page.getByRole('button',{name:'Plan how to investigate this →'}).click();
+assert.equal(await page.locator('#researchDesk').evaluate(e=>e.open),true);
+assert.equal(await page.evaluate(()=>document.activeElement.closest('details').id),'researchDesk');
+const revised='Locate the original Korean poor-yield classification instructions and identify their geographic coverage.';
+await page.fill('[name=researchQuestion]',revised);
+assert.equal(await page.locator('#thesisNextQuestion').innerText(),revised);
+assert.equal(await page.inputValue('[name=argument]'),claim);
+await page.getByText('Take this question to an AI research assistant',{exact:true}).click();await page.click('[data-build-ai-brief]');assert((await page.inputValue('#aiResearchBrief')).includes(revised));
+await page.reload();await page.getByRole('button',{name:'Resume my thesis →'}).click();assert.equal(await page.locator('#thesisNextQuestion').innerText(),revised);assert.equal(await page.inputValue('[name=argument]'),claim);
+await page.locator('#storyHeading').scrollIntoViewIfNeeded();await page.screenshot({path:path.resolve(__dirname,'../../../outputs/WorldThreads thesis next question.png')});
+await page.setViewportSize({width:390,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+const axe=fs.readFileSync(require.resolve('axe-core/axe.min.js',{paths:[path.join(__dirname,'..','work','a11y'),process.cwd()]}),'utf8');await page.addScriptTag({content:axe});
+for(const theme of ['dark','light']){await page.evaluate(t=>document.documentElement.dataset.theme=t,theme);const result=await page.evaluate(()=>axe.run(document.querySelector('.thesis-workspace'),{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}}));assert.deepEqual(result.violations.map(x=>x.id),[]);}
+assert.deepEqual(errors,[]);console.log('PASS: cautious fresh story → neutral question → own next task → focused research plan → edited question in AI brief → saved resume → mobile and theme accessibility. No human-comprehension conclusion.');
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exit(1)});

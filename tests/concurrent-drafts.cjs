@@ -1,3 +1,4 @@
+const {selectThesisStage}=require('./helpers/thesis-stage.cjs');
 const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
@@ -44,7 +45,7 @@ const url=process.env.WORLDTHREADS_URL||'http://127.0.0.1:8765';
  {
   const context=await browser.newContext(),page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));await page.goto(url);await page.click('#researchMode');await page.selectOption('#threadSelect','THREAD-BRAZIL-PATRONAGE');await page.click('#threadThesis');await page.fill('[name=argument]','Visible local draft before an unseen write.');
   await page.evaluate(k=>localStorage.setItem(k,JSON.stringify({threadId:'THREAD-DUTCH-RELIEF',argument:'Remote saved draft changed before notification.'})),KEY);
-  await page.click('[data-thesis-stage=present]');await page.click('[data-file-portfolio]');assert.match(await page.locator('#portfolioStatus').innerText(),/not filed.*sav/i);
+  await selectThesisStage(page,'present');await page.click('[data-file-portfolio]');assert.match(await page.locator('#portfolioStatus').innerText(),/not filed.*sav/i);
   assert.equal(await page.evaluate(k=>JSON.parse(localStorage.getItem(k)).argument,KEY),'Remote saved draft changed before notification.');assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('worldthreads-thesis-portfolios-v1')||'[]').length),0);
   await context.close();console.log('PASS: an unseen storage change blocks stale filing without overwriting the saved draft.');
  }
