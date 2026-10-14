@@ -38,3 +38,7 @@ Completed in 0.5.47: selectable recorded decisions with before/after claim cards
 ## Research the exact revision gap — 13 October 2026
 
 Completed in 0.5.48: pending decisions carry their discriminating source and rival predictions into research with an exact-decision return; existing notes remain intact. The context survives saving/reload and travels into the copied AI brief, thesis export and filed portfolio. Missing originating decisions stay unavailable rather than switching tasks. Full first-story/portfolio and game routes pass. Human recognition of source-search versus evidence-found remains to evaluate; a research detour never certifies the test.
+
+## Compare a finding against competing predictions — 13 October 2026
+
+Completed in 0.5.49: icon switches compare an unreviewed return with the current claim, own prediction or rival prediction. One comparison is visible at a time; exact limits and long text remain available on demand. Reading/switching changes no evidence role, assessment or reward. Current edits, task switches and saved resume retain the correct context. First-story/game/portfolio and rendered-style checks pass. Next graphical opportunity: compare the registered sources' dates, places and measure types, keeping unknown candidate dates/locations and unmatched units explicit rather than plotting invented precision.
