@@ -24,6 +24,7 @@ jobs:
       - run: node --check harvest-reasoning.js
       - run: node --check harvest-inquiry.js
       - run: node --check harvest-visuals.js
+      - run: node --check thesis-focus.js
       - run: node --check thesis.js
       - run: node --check examiner.js
       - run: node --check objects.js

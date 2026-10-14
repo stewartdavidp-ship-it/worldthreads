@@ -14,7 +14,7 @@ await page.fill('[data-inquiry-field=prediction]','Reports may differ because cr
 await chooseInquiryResponse(page,'suspend');
 const claim='These selected reports differ, but do not yet establish why harvest outcomes differed.';
 const question='Find the Korean instructions defining poor yield and compare the categories with the Czech reconstruction.';
-await page.fill('[data-inquiry-field=claim]',claim);await page.click('.inquiry-writing summary');await page.fill('[data-inquiry-field=limit]','Different crops, periods and reporting units prevent a matched yield comparison.');await page.fill('[data-inquiry-field=next]',question);await page.click('.story-next');await page.click('[data-inquiry-thesis]');
+await page.fill('[data-inquiry-field=claim]',claim);await page.click('.inquiry-writing summary');await page.fill('[data-inquiry-field=limit]','Different crops, periods and reporting units prevent a matched yield comparison.');await page.fill('[data-inquiry-field=next]',question);await page.click('.story-next');await page.click('[data-inquiry-thesis]');await page.locator('.focus-gap>summary').click();
 assert.equal(await page.inputValue('[name=argument]'),claim);
 assert.equal(await page.inputValue('[name=title]'),'Comparing Czech and Korean harvest reports');
 assert.match(await page.inputValue('[name=question]'),/^What can the selected/);
@@ -30,7 +30,7 @@ await page.fill('[name=researchQuestion]',revised);
 assert.equal(await page.locator('#thesisNextQuestion').innerText(),revised);
 assert.equal(await page.inputValue('[name=argument]'),claim);
 await page.getByText('Take this question to an AI research assistant',{exact:true}).click();await page.click('[data-build-ai-brief]');assert((await page.inputValue('#aiResearchBrief')).includes(revised));
-await page.reload();await page.getByRole('button',{name:'Resume my thesis →'}).click();assert.equal(await page.locator('#thesisNextQuestion').innerText(),revised);assert.equal(await page.inputValue('[name=argument]'),claim);
+await page.reload();await page.getByRole('button',{name:'Resume my thesis →'}).click();await page.locator('.focus-gap>summary').click();assert.equal(await page.locator('#thesisNextQuestion').innerText(),revised);assert.equal(await page.inputValue('[name=argument]'),claim);
 await page.locator('#storyHeading').scrollIntoViewIfNeeded();await page.screenshot({path:path.resolve(__dirname,'../../../outputs/WorldThreads thesis next question.png')});
 await page.setViewportSize({width:390,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
 const axe=fs.readFileSync(require.resolve('axe-core/axe.min.js',{paths:[path.join(__dirname,'..','work','a11y'),process.cwd()]}),'utf8');await page.addScriptTag({content:axe});

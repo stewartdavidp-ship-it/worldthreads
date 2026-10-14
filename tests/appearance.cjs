@@ -40,7 +40,7 @@ const fs=require('node:fs');
  await audit('light largest story');await page.click('[data-story-evidence]');await audit('light largest evidence');
  await page.click('#closeDialog');await page.waitForFunction(()=>!history.state?.inspector);
  await page.click('#researchMode');await audit('light largest research library');
- await page.selectOption('#threadSelect','THREAD-BRAZIL-PATRONAGE');await page.click('#threadThesis');
+ await page.selectOption('#threadSelect','THREAD-BRAZIL-PATRONAGE');await page.click('#threadThesis');await require('./helpers/thesis-stage.cjs').openWorkbench(page);
  for(const stage of ['topic','evidence','defense','research','present']){await selectThesisStage(page,stage);await audit('light largest thesis '+stage);}
  await page.setViewportSize({width:320,height:720});await selectThesisStage(page,'topic');await audit('light largest 320px thesis');
  await open();await audit('light largest 320px display settings');await page.keyboard.press('Escape');

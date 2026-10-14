@@ -8,11 +8,11 @@ const url=process.env.WORLDTHREADS_URL||'http://127.0.0.1:8765';
  const pair=async()=>{
   const context=await browser.newContext({acceptDownloads:true}),one=await context.newPage(),two=await context.newPage();
   for(const page of [one,two])page.on('pageerror',e=>errors.push(e.message));
-  await one.goto(url);await one.click('#researchMode');await one.selectOption('#threadSelect','THREAD-BRAZIL-PATRONAGE');await one.click('#threadThesis');await one.fill('[name=argument]','Brazil investigation retained in the first tab.');
-  await two.goto(url);await two.getByRole('button',{name:'Resume my thesis →',exact:true}).click();
+  await one.goto(url);await one.click('#researchMode');await one.selectOption('#threadSelect','THREAD-BRAZIL-PATRONAGE');await one.click('#threadThesis');await require('./helpers/thesis-stage.cjs').openWorkbench(one);await one.fill('[name=argument]','Brazil investigation retained in the first tab.');
+  await two.goto(url);await two.getByRole('button',{name:'Resume my thesis →',exact:true}).click();await require('./helpers/thesis-stage.cjs').openWorkbench(two);
   return {context,one,two};
  };
- const openDutch=async(page)=>{await page.click('#researchMode');await page.selectOption('#threadSelect','THREAD-DUTCH-RELIEF');await page.click('#threadThesis');};
+ const openDutch=async(page)=>{await page.click('#researchMode');await page.selectOption('#threadSelect','THREAD-DUTCH-RELIEF');await page.click('#threadThesis');await require('./helpers/thesis-stage.cjs').openWorkbench(page);};
  const switchDutch=async(page)=>{await openDutch(page);await page.fill('[name=argument]','Dutch investigation saved by the second tab.');};
  // Choosing this page's version must preserve a different investigation saved elsewhere.
  {
@@ -38,12 +38,12 @@ const url=process.env.WORLDTHREADS_URL||'http://127.0.0.1:8765';
  {
   const {context,one,two}=await pair();await two.fill('[name=argument]','Other tab, first version.');await one.locator('#draftRecovery').waitFor({state:'visible'});await two.fill('[name=argument]','Other tab, later version.');await one.click('[data-use-other-draft]');
   assert.equal(await one.locator('[name=argument]').inputValue(),'Other tab, later version.');
-  await one.reload();await one.getByRole('button',{name:'Resume my thesis →',exact:true}).click();assert.equal(await one.locator('[name=argument]').inputValue(),'Other tab, later version.');
+  await one.reload();await one.getByRole('button',{name:'Resume my thesis →',exact:true}).click();await require('./helpers/thesis-stage.cjs').openWorkbench(one);assert.equal(await one.locator('[name=argument]').inputValue(),'Other tab, later version.');
   await context.close();console.log('PASS: use-other resolution reads the latest saved version and survives reload.');
  }
  // Conflict detection must compare current storage even before its storage event arrives.
  {
-  const context=await browser.newContext(),page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));await page.goto(url);await page.click('#researchMode');await page.selectOption('#threadSelect','THREAD-BRAZIL-PATRONAGE');await page.click('#threadThesis');await page.fill('[name=argument]','Visible local draft before an unseen write.');
+  const context=await browser.newContext(),page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));await page.goto(url);await page.click('#researchMode');await page.selectOption('#threadSelect','THREAD-BRAZIL-PATRONAGE');await page.click('#threadThesis');await require('./helpers/thesis-stage.cjs').openWorkbench(page);await page.fill('[name=argument]','Visible local draft before an unseen write.');
   await page.evaluate(k=>localStorage.setItem(k,JSON.stringify({threadId:'THREAD-DUTCH-RELIEF',argument:'Remote saved draft changed before notification.'})),KEY);
   await selectThesisStage(page,'present');await page.click('[data-file-portfolio]');assert.match(await page.locator('#portfolioStatus').innerText(),/not filed.*sav/i);
   assert.equal(await page.evaluate(k=>JSON.parse(localStorage.getItem(k)).argument,KEY),'Remote saved draft changed before notification.');assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('worldthreads-thesis-portfolios-v1')||'[]').length),0);
