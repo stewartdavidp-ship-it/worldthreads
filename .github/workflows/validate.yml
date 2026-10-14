@@ -20,6 +20,7 @@ jobs:
       - run: node --check progress.js
       - run: node --check investigations.js
       - run: node --check casefiles.js
+      - run: node --check scope-compare.js
       - run: node --check harvest-reasoning.js
       - run: node --check harvest-inquiry.js
       - run: node --check harvest-visuals.js

@@ -42,3 +42,7 @@ Completed in 0.5.48: pending decisions carry their discriminating source and riv
 ## Compare a finding against competing predictions — 13 October 2026
 
 Completed in 0.5.49: icon switches compare an unreviewed return with the current claim, own prediction or rival prediction. One comparison is visible at a time; exact limits and long text remain available on demand. Reading/switching changes no evidence role, assessment or reward. Current edits, task switches and saved resume retain the correct context. First-story/game/portfolio and rendered-style checks pass. Next graphical opportunity: compare the registered sources' dates, places and measure types, keeping unknown candidate dates/locations and unmatched units explicit rather than plotting invented precision.
+
+## Make comparison scope visible — 14 October 2026
+
+Completed in 0.5.50: selectable harvest-report and weather/farming scope graphics within the first story’s comparison limits. Place pins, year-coverage cells, exact registered periods and measure labels lead to source inspection. The mismatch warning stays above the cards; changing pairs brings the relevant graphic into view. Annual scope is not continuous data, first harvest is not yield, and shared scholarly provenance is not independent corroboration. Full story/game/portfolio checks pass. Human interpretation remains to evaluate. Future visual scope: let players deliberately choose other registered records to compare without guessing coordinates, converting unmatched measures or extracting precise candidate dates from ambiguous text.
