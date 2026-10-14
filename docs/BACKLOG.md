@@ -34,3 +34,7 @@ Completed in 0.5.46: optional four-stop visual investigation trail at the first-
 ## See what a thesis revision changes — 13 October 2026
 
 Completed in 0.5.47: selectable recorded decisions with before/after claim cards, exact expanded reasoning and pending-test status; named current record links for role reassessment with a return to the same decision. Older decisions are distinguished from the current draft and do not invent past evidence-role snapshots. Recording a decision refreshes the first-story trail and candidate comparison. New first-story thesis titles are neutral; existing titles are preserved. Full story/game/portfolio routes pass. Human comprehension remains pending. Future scope: deliberately capture evidence-role history in a compatible new snapshot format, if human testing shows it helps explain revisions; never reconstruct missing snapshots as facts.
+
+## Research the exact revision gap — 13 October 2026
+
+Completed in 0.5.48: pending decisions carry their discriminating source and rival predictions into research with an exact-decision return; existing notes remain intact. The context survives saving/reload and travels into the copied AI brief, thesis export and filed portfolio. Missing originating decisions stay unavailable rather than switching tasks. Full first-story/portfolio and game routes pass. Human recognition of source-search versus evidence-found remains to evaluate; a research detour never certifies the test.
