@@ -1,6 +1,6 @@
 # WorldThreads test plan and coverage ledger
 
-Updated: 15 October 2026. Latest functional confirmation: 0.5.55, 31/31 scenarios passed. Agent-perspective passes are recorded separately below. Earlier broad confirmation candidate: `69f427d` (27/27 expanded checks passed; earlier confirmations retained below) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
+Updated: 15 October 2026. Latest functional confirmation: 0.5.56, 32/32 scenarios passed, plus final audit follow-up. Agent-perspective passes are recorded separately below. Earlier broad confirmation candidate: `69f427d` (27/27 expanded checks passed; earlier confirmations retained below) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
 
 ## What success means
 
@@ -564,3 +564,14 @@ Development checks found a lost guided-case question (fixed and retested) and an
 The application now retries one transport interruption per collection, after 250 ms. Fault injection confirms recovery from a single reset; persistent resets stop after two attempts and expose explicit retry without changing saved writing or accepting partial collections. Invalid JSON, wrong collection shape and HTTP errors are not retried or accepted. Startup exceptions are logged. This is bounded collection recovery, not a replacement JavaScript loader or a claim of resilience to every outage.
 
 Reproduce the preview with `python3 tests/preview.py --port 8776`; in a second terminal run `WORLDTHREADS_URL=http://127.0.0.1:8776 node tests/run-plan.cjs`. Optional cross-browser engine suites were not rerun. No new external AI review, human learning/retention test or historical source authentication is claimed. Uncoached human understanding and motivation to return remain open.
+
+
+## First guided story source foundations — 15 October 2026
+
+The scheduled first priority resumed after the usage window refreshed. Version 0.5.56 completed the 32-scenario regression plan with no failures. The final first-story-audit scenario and data validator were rerun successfully after linking GAP-011 and recording the paper’s within-region oat counterevidence. Validation covers 81 observations, 57 relationships, 23 threads, 49 sources, 12 mechanisms, 177 objects and 199 object connections; the open research-gap catalogue now has 11 entries. No observation/relationship identity was added or changed.
+
+The new audit scenario checks reconstructed temperature evidence, exact source locators, source sharing, pre-eruption price movement, incompatible price-volume denominators, local testimony versus regional inference, qualified relationships, preview-only commentary access, visible unresolved tasks and retention of limits in AI briefs/thesis exports. The full first-story scenario additionally checks the exported argument handoff includes Tambora and its source access notes. The full plan retains story-to-thesis, all ten badges/890 points, AI fixtures, rival/revision, reassessment, portfolio/export, complete keyboard play, storage/concurrency, navigation, narrow layout/themes and sampled accessibility coverage.
+
+Chrome inspection separately followed the first story’s Czech price landmark into the revised evidence view, expanded source-specific support/limits and exact locator, and confirmed the observation-confidence distinction. The evidence cards expand only on request; this was no graphical redesign. Read RESEARCH_AUDIT.md for inspected scholarly passages, figure inspection and original-source access limits.
+
+These results establish scoped functional behavior and a targeted self-audit, not independent peer review, original-document authentication, a new real external-AI panel review, or human learning/retention. Previously filed snapshots and player writing are preserved. No later prioritized item or follow-up automation was started.

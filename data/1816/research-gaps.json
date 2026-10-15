@@ -241,5 +241,28 @@
       "Compare provincial crop calendars, tax records and household access.",
       "Do not infer absence of local hardship from aggregate harvest classifications."
     ]
+  },
+  {
+    "id": "GAP-011",
+    "region": "Czech Lands",
+    "domain": "source provenance + harvests + prices",
+    "question": "How far did weather contribute to Czech grain-price pressure, beyond earlier price trends and economic conditions?",
+    "priority": "High",
+    "status": "Open",
+    "updatedDate": "2026-10-15",
+    "observationIds": [
+      "WT-1816-0005",
+      "WT-1816-0006",
+      "WT-1816-0007"
+    ],
+    "threadIds": [
+      "THREAD-CENTRAL-EUROPE-FOOD"
+    ],
+    "remainingQuestions": [
+      "Inspect the underlying station records, Mašek/Urban transmission and Schebek/Albert price compilations; the modern paper is not their independent authentication.",
+      "Compare matching grains, places and volume units, with pre-eruption price movement and economic alternatives; do not read an isolated weather effect from the sequence.",
+      "Seek household food-access evidence separately from harvest reports, prices and Korean administrative categories."
+    ],
+    "notes": "The published Czech paper and its price figure were inspected in the 15 October audit. Original records and the magnitude of any weather contribution remain unresolved. Multiple records from SRC-001 are not independent corroboration."
   }
 ]

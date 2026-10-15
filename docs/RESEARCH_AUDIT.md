@@ -93,3 +93,31 @@ Sources inspected:
 REL-0009 remains a contributing interpretation, with confidence reduced from Medium-High to Medium and explicit alternatives. Its source list now cites the recollection and modern synthesis rather than treating the surviving draft as evidence for the behavioral pathway. The object-claim projection is synchronized; linked object provenance includes the new source. Thread wording now presents a hypothesis rather than an independently established route from weather to creative choices.
 
 Source-specific support/limits are visible inside source cards and carried into new thesis exports and research briefs. Registered IDs and the number of observations/relationships stay unchanged; sources increase from 48 to 49. Previously filed snapshots are preserved. Existing writer interpretations still need reassessment against the revised evidence; this audit does not automatically grade or rewrite them. Next research: inspect contemporary letters/diaries and compare their chronology with the later author account.
+
+
+## First guided story: climate, harvest and price provenance — 15 October 2026
+
+Scope: targeted self-audit of WT-1816-0005/0006/0007/0008 and comparison scope in WT-1816-0045, not independent peer review or authentication of original documents. Stable record IDs and dates remain; no new observations or relationships were added.
+
+### Passages inspected
+
+- [Brázdil et al. (2016), published open PDF](https://cp.copernicus.org/articles/12/1361/2016/cp-12-1361-2016.pdf): Introduction pp. 1361–1362; data and methods pp. 1362–1364; Sect. 4.1 and the captions for Figs. 2–3; Sect. 4.2.2 p. 1367 (Mašek account through Urban 1999); Sect. 4.2.3 pp. 1367–1368 (harvest and price discussion); Fig. 7/Table 1 p. 1369; Sect. 5.2 and 5.3 pp. 1368–1371; data availability p. 1371. Figure 7 was visually inspected, including its caption, different volume denominators and source compilations.
+- [Brugnara et al. (2015)](https://cp.copernicus.org/articles/11/1027/2015/cp-11-1027-2015.pdf), Introduction pp. 1028–1029: eruption/cooling background in a meteorological data study. This does not directly substantiate Czech grain losses or price series; SRC-003 was removed from WT-1816-0005’s direct evidence list.
+- [Luterbacher and Pfister (2015)](https://www.nature.com/articles/ngeo2404): publisher summary only. Full commentary remains subscription-restricted and was not read. SRC-016 is retained as explicitly preview-only context for the Tambora observation, not new full-text corroboration of a local mechanism.
+- [Kim (2023)](https://link.springer.com/article/10.1007/s10584-023-03480-w), Sect. 3, Annual Crop Report paragraphs and cited Fig. 2, plus footnote 2: the comparison uses eight-province harvest classifications and six-province tax assessments. Original reports/manuscripts were not independently inspected. No new population/mortality or farming-mechanism claims were adopted.
+
+### Corrections and boundaries
+
+The cold record now identifies modern analysis of homogenised instrumental series and documentary context. The price record distinguishes harvest reports from series for Prague and Moravia, supplies exact locators, and identifies pre-eruption price movement and incompatible raw volume denominators. No new price ratios, crop-loss percentages, normalized chart or causal-effect estimate was calculated. The local rain record identifies its quoted transmission through Urban and the modern paper rather than implying manuscript authentication.
+
+Each audited record carries source-specific support and limits, including explicit access limits on the commentary. Registered observation confidence describes the reported evidence; it does not certify a causal pathway. REL-0005 keeps modern volcanic attribution separate from contemporary Czech testimony. REL-0006 is qualified to a local account and uncertain regional contribution (Medium). REL-0007 remains contributory, with economic alternatives and Medium-High confidence. The Czech thread and corresponding object-claim projections are synchronized. Context/object provenance follows the edited records. No independent source was manufactured by splitting one paper into multiple records.
+
+The Korean count and tax-area comparison remains unlike a Czech grain-price or yield measure. Existing distinctions between rainfall location, farming dates and household access remain. Imported AI candidates, player roles, rewards, original writing and previously filed snapshots are not reassessed automatically. New thesis/research exports retain the support/limits; the first-story handoff now includes the Tambora record and its source access notes.
+
+### Still unresolved
+
+Original station diaries, Mašek/Urban transmission, Schebek’s Prague compilation, Albert’s Moravian compilation, and original Korean reports were not independently authenticated. The Nature full text was unavailable. This audit does not isolate a weather contribution to prices, explain the Czech–Korean contrast, or establish household food access. The next useful work is original-source comparison and explicit tests of competing economic and institutional explanations; missing passages remain research tasks. No human comprehension/retention or new external AI-panel test was performed.
+
+GAP-011 links the unresolved original-source and price-attribution tasks to the Czech thread and its three observations, so the open work is visible from the thread rather than only in this audit. It supplies no new historical observation or accepted causal link.
+
+Within-region counterevidence is retained too: Sect. 4.2.3 p. 1368 cites a good oat yield in 1816 (via S6), alongside differing cereal-price fluctuations. The price record now explicitly cautions against treating every cereal as a failed crop. This does not add a quantified regional oat yield.

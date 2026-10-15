@@ -78,3 +78,8 @@ Remaining: human comprehension and delayed return motivation; a real external AI
 ## Recover from interrupted collection loading — 15 October 2026
 
 Implemented for 0.5.55: collection fetches retry one transport interruption after a short delay. Persistent failures retain the explicit retry screen and saved writing; invalid JSON, wrong collection shape and HTTP errors remain failures. Startup exceptions are logged for diagnostics. Fault-injection checks distinguish these cases. The default local Python preview showed connection resets affecting scripts and collections during repeated cold-page bursts; `tests/preview.py` uses HTTP keep-alive and a larger connection queue for browser tests. A 100-fresh-context/100-reload probe of that preview completed with no connection resets. This does not claim recovery from missing JavaScript assets or arbitrary network outages.
+
+
+## Scheduled priority 1: first-story source foundations — 15 October 2026
+
+Implemented for 0.5.56 after the usage window refreshed. Added exact locators, source-specific support, transmission/access limits and honest scholarly review status to the Czech climate/harvest/price/local-rain records and Tambora context; rechecked the Korean comparison’s administrative scope. Qualified the local/regional causal connections and synchronized object projections and provenance. Exported first-story context now includes the audited Tambora record. See RESEARCH_AUDIT.md for inspected passages and unresolved originals. No new graphical feature, AI-panel review or human pilot was started; subsequent prioritized items remain pending.

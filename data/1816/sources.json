@@ -12,7 +12,10 @@
       "harvests",
       "grain prices",
       "Czech Lands"
-    ]
+    ],
+    "notes": "Audit 2026-10-15: full published PDF inspected for climate, documentary and grain-price passages and Fig. 7. Modern homogenisation and interpretation remain distinct from underlying records, which were not independently inspected. Multiple linked records from this paper are not independent corroboration.",
+    "accessedDate": "2026-10-15",
+    "alternateUrl": "https://cp.copernicus.org/articles/12/1361/2016/cp-12-1361-2016.pdf"
   },
   {
     "id": "SRC-002",
@@ -42,7 +45,9 @@
       "instrumental climate",
       "Europe",
       "1816"
-    ]
+    ],
+    "notes": "Audit 2026-10-15: open Introduction pp. 1028–1029 inspected for eruption/cooling context. Its background synthesis is not a source for Czech harvest losses or prices.",
+    "accessedDate": "2026-10-15"
   },
   {
     "id": "SRC-004",
@@ -240,7 +245,9 @@
       "Europe",
       "harvests",
       "adaptation"
-    ]
+    ],
+    "notes": "Audit 2026-10-15: publisher preview/summary inspected; full commentary remained subscription-restricted and was not accessed. Do not describe this as a full-text verification.",
+    "accessedDate": "2026-10-15"
   },
   {
     "id": "SRC-017",

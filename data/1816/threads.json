@@ -35,7 +35,7 @@
     "id": "THREAD-CENTRAL-EUROPE-FOOD",
     "title": "Weather shock becomes a subsistence crisis",
     "subtitle": "Czech Lands, 1816–1817",
-    "description": "Cold and persistent wet weather damaged grain production; the harvest shock propagated into food scarcity and grain-price pressure with a measurable lag into 1817.",
+    "description": "Czech climate series and documentary reports link damaging weather with harvest difficulties and the 1817 grain-price peak. Earlier price rises, different grains and economic conditions limit a single-cause explanation; household access remains a separate question.",
     "nodeIds": [
       "WT-1816-0008",
       "WT-1816-0005",
@@ -55,7 +55,7 @@
       "lag"
     ],
     "scope": "Europe",
-    "confidence": "High",
+    "confidence": "Medium-High",
     "mechanismIds": [
       "MECH-001",
       "MECH-005"

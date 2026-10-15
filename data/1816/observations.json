@@ -151,7 +151,7 @@
     "region": "Central Europe",
     "historicalEntity": "Czech Lands",
     "place": "Bohemia and Moravia",
-    "observation": "Instrumental and documentary evidence records an extremely cold summer in 1816; documentary evidence also records damaging weather and poor grain harvests.",
+    "observation": "Brázdil et al. analyze homogenised station and Czech areal temperature series showing a notably cold summer in 1816, alongside documentary reports of damaging weather.",
     "coverageType": "CONDITION",
     "system": "EARTH",
     "topic": "Temperature / precipitation",
@@ -159,20 +159,32 @@
       "SHOCK"
     ],
     "evidenceType": [
-      "Instrumental measurement",
-      "Documentary observation"
+      "Homogenised instrumental reconstruction",
+      "Documentary evidence analyzed in scholarship"
     ],
     "confidence": "High",
     "sourceRefs": [
-      "SRC-001",
-      "SRC-003"
+      "SRC-001"
     ],
-    "researchStatus": "Verified",
+    "researchStatus": "Scholarly passages checked; underlying records not independently inspected",
     "objectRefs": [
       "OBJ-1816-0005",
       "OBJ-PLACE-004"
     ],
-    "primaryObjectId": "OBJ-1816-0005"
+    "primaryObjectId": "OBJ-1816-0005",
+    "sourceLocator": "Brázdil et al. (2016), Sect. 2.1 pp. 1362–1363; Sect. 4.1 pp. 1364–1365, Fig. 2; Sect. 4.2.2 p. 1367; Table 1 p. 1369.",
+    "uncertainty": "Modern analysis of historical measurements and accounts, not an unprocessed thermometer reading. Station and areal coverage differ. Cold conditions do not independently identify volcanic causation or household food access. Shares SRC-001 with the harvest and local-rain records.",
+    "sourceSupport": [
+      {
+        "sourceId": "SRC-001",
+        "label": "Climate series analyzed in 2016",
+        "supports": "Cold Czech summer: Sect. 4.1 and Fig. 2; documentary context: Sect. 4.2.2.",
+        "limits": "Underlying station records and manuscripts were not rechecked; grain losses and prices require separate evidence."
+      }
+    ],
+    "gapRefs": [
+      "GAP-011"
+    ]
   },
   {
     "id": "WT-1816-0006",
@@ -183,8 +195,8 @@
     "continent": "Europe",
     "region": "Central Europe",
     "historicalEntity": "Czech Lands",
-    "place": "Bohemia and Moravia",
-    "observation": "Bad grain harvests associated with the 1815–1816 weather were followed by widespread grain-price increases culminating in 1817.",
+    "place": "Prague and Moravia",
+    "observation": "Brázdil et al. associate bad harvests in 1815–1816 with grain-price pressure peaking in 1817. Their Prague and Moravian price series had already risen from 1813.",
     "coverageType": "TREND",
     "system": "PRODUCTION & RESOURCES",
     "topic": "Grain harvest / food prices",
@@ -192,8 +204,8 @@
       "OUTCOME",
       "PRESSURE"
     ],
-    "baseline": "pre-crisis grain prices",
-    "anomaly": "large increases; crop-specific",
+    "baseline": "Figure 7 annual series, 1811–1820; not a single normalized baseline",
+    "anomaly": "1817 price peak; grain- and place-specific changes",
     "evidenceType": [
       "Administrative/economic records",
       "Documentary evidence"
@@ -202,12 +214,25 @@
     "sourceRefs": [
       "SRC-001"
     ],
-    "researchStatus": "Verified",
+    "researchStatus": "Scholarly passages and figure checked; underlying price compilations not independently inspected",
     "objectRefs": [
       "OBJ-1816-0006",
       "OBJ-PLACE-004"
     ],
-    "primaryObjectId": "OBJ-1816-0006"
+    "primaryObjectId": "OBJ-1816-0006",
+    "sourceLocator": "Brázdil et al. (2016), Sect. 4.2.3 pp. 1367–1368, especially the price paragraph on p. 1368; Fig. 7 p. 1369; Sect. 5.3 pp. 1370–1371; Sect. 7 p. 1371.",
+    "uncertainty": "No crop-loss percentage or household food-access measure is supplied here. Figure 7 uses gulden per 61.49 litres for Prague and gulden per hectolitre for Moravia; raw levels are not directly comparable. Prices were rising before Tambora; the weather contribution is not isolated from demand and post-war economic conditions. Shares SRC-001 with the climate and local-rain records. The paper also cites a good 1816 oat yield; do not assume every cereal failed.",
+    "sourceSupport": [
+      {
+        "sourceId": "SRC-001",
+        "label": "Harvest reports and price series analyzed in 2016",
+        "supports": "Sect. 4.2.3 and Fig. 7 connect reported harvest difficulties with later price pressure.",
+        "limits": "Schebek (1873) and Albert (1964) were not independently inspected. Sect. 5.3 discusses economic context; no isolated weather effect is estimated."
+      }
+    ],
+    "gapRefs": [
+      "GAP-011"
+    ]
   },
   {
     "id": "WT-1816-0007",
@@ -239,15 +264,26 @@
     "sourceRefs": [
       "SRC-001"
     ],
-    "researchStatus": "Verified",
-    "sourceLocator": "Brázdil et al., pp. 1367–1368",
-    "uncertainty": "Local documentary account; not a measured regional rainfall total.",
+    "researchStatus": "Quoted scholarly passage checked; original local account not inspected",
+    "sourceLocator": "Brázdil et al. (2016), Sect. 4.2.2 p. 1367, Mašek of Řenče paragraph, citing Urban (1999).",
+    "uncertainty": "Local account quoted through Urban (1999) and Brázdil et al. (2016); neither the original account nor Urban’s volume was independently inspected. Eight weeks is reported duration, not a measured regional rainfall total. Its reported rain–yield–price–hunger sequence does not isolate a regional causal effect or independently corroborate records sharing SRC-001.",
     "objectRefs": [
       "OBJ-1816-0007",
       "OBJ-PERSON-masek",
       "OBJ-PLACE-005"
     ],
-    "primaryObjectId": "OBJ-1816-0007"
+    "primaryObjectId": "OBJ-1816-0007",
+    "sourceSupport": [
+      {
+        "sourceId": "SRC-001",
+        "label": "Local testimony quoted in scholarship",
+        "supports": "Sect. 4.2.2 reports Mašek’s rain duration and associated local difficulties.",
+        "limits": "An attributed account, not a regional rain gauge or an independently authenticated manuscript."
+      }
+    ],
+    "gapRefs": [
+      "GAP-011"
+    ]
   },
   {
     "id": "WT-1816-0008",
@@ -273,17 +309,40 @@
     ],
     "confidence": "High",
     "sourceRefs": [
-      "SRC-016",
-      "SRC-003"
+      "SRC-001",
+      "SRC-003",
+      "SRC-016"
     ],
-    "researchStatus": "Verified",
+    "researchStatus": "Open scholarly passages checked; commentary preview only",
     "contextNode": true,
     "objectRefs": [
       "OBJ-1816-0008",
       "OBJ-tambora",
       "OBJ-PLACE-006"
     ],
-    "primaryObjectId": "OBJ-1816-0008"
+    "primaryObjectId": "OBJ-1816-0008",
+    "sourceLocator": "SRC-001: Introduction pp. 1361–1362 and Sect. 5.2 pp. 1368–1370. SRC-003: Introduction pp. 1028–1029. SRC-016: public publisher summary only; full commentary not accessed.",
+    "uncertainty": "Modern volcanic-climate interpretation, not a contemporary Czech identification of Tambora. It does not establish uniform regional weather, a local rainfall mechanism, or harvest and household outcomes. These syntheses may reuse underlying studies. SRC-016 full text was not inspected in this pass.",
+    "sourceSupport": [
+      {
+        "sourceId": "SRC-001",
+        "label": "Open volcanic-climate synthesis",
+        "supports": "Introduction describes the eruption and aerosol-cooling mechanism; Sect. 5.2 distinguishes later explanation from contemporary accounts.",
+        "limits": "Not an original eruption measurement or a quantified attribution of every local outcome."
+      },
+      {
+        "sourceId": "SRC-003",
+        "label": "Open meteorological data study · background context",
+        "supports": "Introduction dates the eruption and summarizes subsequent cooling; the study assembles early instrumental observations.",
+        "limits": "Background attribution is cited scholarship, not independent proof of Czech crop or price effects."
+      },
+      {
+        "sourceId": "SRC-016",
+        "label": "Publisher preview · full text not accessed",
+        "supports": "Public summary attributes European summer cooling to Tambora.",
+        "limits": "Only the preview was inspected; not a full-text audit or an independent source for local mechanisms."
+      }
+    ]
   },
   {
     "id": "WT-1816-0009",
@@ -1609,8 +1668,8 @@
     "sourceRefs": [
       "SRC-027"
     ],
-    "sourceLocator": "Section 3, paragraphs 2–5; Figure 2; Annual Crop Reports in Sŭngjŏngwŏn ilgi",
-    "uncertainty": "Administrative categories and taxation proxies are not crop tonnage; good aggregate conditions do not rule out local hardship. Paddy-tax figures cover six assessed provinces; harvest reporting spans eight.",
+    "sourceLocator": "Kim (2023), Sect. 3, paragraphs on Annual Crop Reports and 1816 figures; Fig. 2; footnote 2 for the cited Royal Secretariat entries.",
+    "uncertainty": "Administrative categories and taxation proxies are not crop tonnage; good aggregate conditions do not rule out local hardship. Paddy-tax figures cover six assessed provinces; harvest reporting spans eight. Original crop reports and manuscript entries were not independently inspected in this pass.",
     "researchStatus": "Source checked; limits recorded",
     "contextNode": false,
     "gapRefs": [
@@ -1622,7 +1681,15 @@
       "OBJ-PLACE-039",
       "OBJ-POLITY-choson"
     ],
-    "primaryObjectId": "OBJ-1816-0045"
+    "primaryObjectId": "OBJ-1816-0045",
+    "sourceSupport": [
+      {
+        "sourceId": "SRC-027",
+        "label": "Administrative categories analyzed in 2023",
+        "supports": "Sect. 3 reports harvest classifications for eight provinces and paddy-tax exemptions for six.",
+        "limits": "Prefecture counts and assessed tax area are not crop tonnage, household access, or measurements matched to Czech prices. Original records were not independently inspected here."
+      }
+    ]
   },
   {
     "id": "WT-1816-0046",

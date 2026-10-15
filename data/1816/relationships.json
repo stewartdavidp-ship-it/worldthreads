@@ -66,11 +66,13 @@
     "objectId": "WT-1816-0005",
     "causalStatus": "CONTRIBUTORY",
     "lag": "~1 year",
-    "explanation": "Tambora forcing contributed to the exceptionally cold 1816 summer in the Czech Lands; background climate and circulation variability also influenced conditions.",
+    "explanation": "Modern scholarship links Tambora forcing to the cold Czech summer. The Czech contemporary accounts do not themselves identify Tambora; this does not isolate local rainfall or crop effects.",
     "confidence": "High",
     "sourceRefs": [
-      "SRC-001",
-      "SRC-016"
+      "SRC-001"
+    ],
+    "alternatives": [
+      "Background climate and circulation variability; modern attribution is distinct from contemporary testimony."
     ]
   },
   {
@@ -80,10 +82,14 @@
     "objectId": "WT-1816-0006",
     "causalStatus": "CONTRIBUTORY",
     "lag": "months",
-    "explanation": "Persistent wet conditions damaged cereals and yields, contributing to shortage and later grain-price pressure.",
-    "confidence": "Medium-High",
+    "explanation": "The Řenče account associates persistent rain with poor yields, prices and hunger locally. A contribution to the wider grain-price pattern remains an interpretation, not a measured regional effect.",
+    "confidence": "Medium",
     "sourceRefs": [
       "SRC-001"
+    ],
+    "alternatives": [
+      "Local testimony and regional synthesis share SRC-001, not independent corroboration.",
+      "Grain type, locality, demand and post-war economic conditions may affect prices."
     ]
   },
   {
@@ -93,10 +99,14 @@
     "objectId": "WT-1816-0006",
     "causalStatus": "CONTRIBUTORY",
     "lag": "6–18 months",
-    "explanation": "Cold and damaging 1816 weather contributed to poor grain harvests followed by widespread price increases in 1817.",
-    "confidence": "High",
+    "explanation": "The Czech synthesis interprets damaging weather as contributing to harvest difficulties and the 1817 price peak. Price rises began before Tambora; the weather contribution is not quantitatively isolated.",
+    "confidence": "Medium-High",
     "sourceRefs": [
       "SRC-001"
+    ],
+    "alternatives": [
+      "Price increases from 1813 predate the April 1815 eruption.",
+      "Sect. 5.3 discusses demand and post-war economic conditions; crops and localities differ."
     ]
   },
   {
