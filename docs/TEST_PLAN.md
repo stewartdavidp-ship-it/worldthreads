@@ -1,6 +1,6 @@
 # WorldThreads test plan and coverage ledger
 
-Updated: 15 October 2026. Latest functional confirmation: 0.5.56, 32/32 scenarios passed, plus final audit follow-up. Agent-perspective passes are recorded separately below. Earlier broad confirmation candidate: `69f427d` (27/27 expanded checks passed; earlier confirmations retained below) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
+Updated: 15 October 2026. Latest functional confirmation: 0.5.57, 33/33 scenarios passed, plus the optional first-story inquiry/export check. Agent-perspective passes are recorded separately below. Earlier broad confirmation candidate: `69f427d` (27/27 expanded checks passed; earlier confirmations retained below) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
 
 ## What success means
 
@@ -575,3 +575,14 @@ The new audit scenario checks reconstructed temperature evidence, exact source l
 Chrome inspection separately followed the first story’s Czech price landmark into the revised evidence view, expanded source-specific support/limits and exact locator, and confirmed the observation-confidence distinction. The evidence cards expand only on request; this was no graphical redesign. Read RESEARCH_AUDIT.md for inspected scholarly passages, figure inspection and original-source access limits.
 
 These results establish scoped functional behavior and a targeted self-audit, not independent peer review, original-document authentication, a new real external-AI panel review, or human learning/retention. Previously filed snapshots and player writing are preserved. No later prioritized item or follow-up automation was started.
+
+
+## 0.5.57 — visual evidence boundaries (15 October 2026)
+
+The first guided story's existing Czech timeline now offers Record, Proposed link and Open question views, with one compact illustration and explanation visible at a time. Source detail stays expandable. The proposed contribution is a questioned, dashed bridge; choosing a player hypothesis never makes it a proved cause. The open question varies by landmark and focuses the existing reasoning field without inserting an answer. These views do not change historical records, inquiry decisions, saved writing, rewards or portfolios.
+
+Validation: all 33 primary scenarios passed against the candidate working tree (base commit 415abf5), including fresh keyboard completion, first-story-to-thesis flow, research return, comparison, review, export, saved-state recovery and navigation. New evidence-boundary coverage checks mode focus, one panel, unchanged state/rewards, canonical relationship inspection, missing-evidence action, saved notes, dark/light, 320px, largest text, reduced motion and sampled accessibility. The optional harvest-inquiry check also passed after replacing obsolete ending-page selectors with the current expandable ending controls; it verifies the argument download and stale-prediction flow. Data validation and syntax checks passed; graph remains 81 observations, 57 relationships, 23 threads, 49 sources, 12 mechanisms, 177 objects and 199 connections.
+
+A bounded Chrome walkthrough observed link inspection and the price-gap action focusing an empty reasoning field. This is functional UI evidence, not a human comprehension study or a new external AI-panel review. No historical evidence was added or strengthened. Still pending: ask a fresh human player to distinguish record, proposed link and missing source from the graphic, and explain what they would investigate next without interpreting game completion as proof.
+
+Report: `outputs/worldthreads-0.5.57-confirmation.json` in the enclosing workspace; screenshot: `outputs/worldthreads-evidence-boundaries.png`.

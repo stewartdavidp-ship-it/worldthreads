@@ -23,6 +23,7 @@ jobs:
       - run: node --check scope-compare.js
       - run: node --check harvest-reasoning.js
       - run: node --check harvest-inquiry.js
+      - run: node --check evidence-boundary.js
       - run: node --check harvest-visuals.js
       - run: node --check thread-focus.js
       - run: node --check thesis-focus.js

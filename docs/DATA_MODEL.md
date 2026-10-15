@@ -148,3 +148,8 @@ An optional `sourceSupport` array records `sourceId`, `label`, `supports` and `l
 ### Editorial starting questions (0.5.55)
 
 `question-start.js` supplies optional thread-specific investigation prompts, separate from observations, relationships and mechanisms. Choosing a prompt deliberately copies its question into the player's editable draft; it supplies no answer or evidence role and earns no reward. Opening a record does not adopt a question. Existing questions and immutable portfolios are not migrated or rewritten; an existing question can be compared with a suggestion, then edited manually. New library/object investigations begin with an empty player question; completed guided cases retain their selected question, and explicit story handoffs preserve the player's writing.
+
+
+### Visual evidence boundaries (0.5.57)
+
+The first-story timeline's Record/Proposed link/Open question controls are session-only presentation state. They read existing records, REL-0007 and the audited unresolved scope; they do not generate observations, accepted links, source verification, player answers or rewards. The questioned/dashed bridge depicts an interpretation to test, not an estimated effect or probability. Selecting a hypothesis can highlight timeline connectors but keeps them dashed. Gap guidance can focus the existing reasoning field; only the player's writing changes the saved draft. Source/connection inspection retains its existing optional activity rules.

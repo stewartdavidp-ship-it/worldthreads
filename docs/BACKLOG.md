@@ -83,3 +83,10 @@ Implemented for 0.5.55: collection fetches retry one transport interruption afte
 ## Scheduled priority 1: first-story source foundations — 15 October 2026
 
 Implemented for 0.5.56 after the usage window refreshed. Added exact locators, source-specific support, transmission/access limits and honest scholarly review status to the Czech climate/harvest/price/local-rain records and Tambora context; rechecked the Korean comparison’s administrative scope. Qualified the local/regional causal connections and synchronized object projections and provenance. Exported first-story context now includes the audited Tambora record. See RESEARCH_AUDIT.md for inspected passages and unresolved originals. No new graphical feature, AI-panel review or human pilot was started; subsequent prioritized items remain pending.
+
+
+## Visual evidence boundaries in the first story — 15 October 2026
+
+Implemented for 0.5.57: the existing Czech timeline preview now switches between Record, Proposed link and Open question, with distinct book/link/search icons and one illustrated explanation at a time. The link graphic uses a questioned, dashed bridge; choosing a player hypothesis no longer changes timeline connectors to solid lines. Price evidence flags its pre-eruption trend; crop and price views reveal different source-search questions. Exact source/relationship details expand on demand, and the gap action focuses the existing reasoning field without writing an answer. View switching changes no evidence, role, reward or saved argument; the optional existing connection-inspection activity is unchanged. No quantitative series, normalized price chart or new historical fact is invented. Human comprehension of the graphic remains to test.
+
+Next human task for this graphic: identify what the record establishes, what the questioned bridge claims, and one source that could test the open question. Observe whether the player writes a bounded explanation without treating the graphic, source viewing or activity progress as verification. This remains untested with participants.

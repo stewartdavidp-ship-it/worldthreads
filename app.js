@@ -3,7 +3,7 @@ const state={observations:[],relationships:[],threads:[],sources:[],mechanisms:[
 let appLoaded=false;
 async function fetchCollection(path){
  for(let attempt=0;attempt<2;attempt++)try{
-  const response=await fetch(path+'?v=0.5.56',{cache:'no-cache'});
+  const response=await fetch(path+'?v=0.5.57',{cache:'no-cache'});
   if(!response.ok)throw Error('Evidence collection unavailable ('+response.status+')');
   const value=await response.json();if(!Array.isArray(value))throw Error('An evidence collection has an invalid format');return value;
  }catch(error){
