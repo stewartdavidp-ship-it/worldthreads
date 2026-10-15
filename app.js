@@ -1,7 +1,7 @@
 const state={observations:[],relationships:[],threads:[],sources:[],mechanisms:[],gaps:[],objects:[],objectRelationships:[],objectTypes:[],region:'ALL',query:'',period:'ALL',evidence:'ALL',sort:'date',system:'ALL',threadId:null};
 
 let appLoaded=false;
-async function fetchCollection(path){const response=await fetch(path+'?v=0.5.52',{cache:'no-cache'});if(!response.ok)throw Error('Evidence collection unavailable ('+response.status+')');const value=await response.json();if(!Array.isArray(value))throw Error('An evidence collection has an invalid format');return value;}
+async function fetchCollection(path){const response=await fetch(path+'?v=0.5.53',{cache:'no-cache'});if(!response.ok)throw Error('Evidence collection unavailable ('+response.status+')');const value=await response.json();if(!Array.isArray(value))throw Error('An evidence collection has an invalid format');return value;}
 async function load(){
   const [observations,relationships,threads,sources,mechanisms,gaps,objects,objectRelationships,objectTypes]=await Promise.all([
     fetchCollection('data/1816/observations.json'),
@@ -19,13 +19,13 @@ async function load(){
 }
 
 function bind(){
-  document.getElementById('threadThesis').onclick=()=>startThreadThesis(state.threadId);
+  document.getElementById('threadThesis').onclick=()=>{if(readThesisDraft().threadId===state.threadId){setExperience('story');openThesisWorkspace();}else startThreadThesis(state.threadId);};
   document.getElementById('objectsMode').onclick=()=>{setExperience('objects');renderObjects();};
   document.getElementById('objectExplorer').addEventListener('click',e=>{const o=e.target.closest('[data-object]');if(o)openObject(o.dataset.object);if(e.target.id==='moreObjects'){objectBrowse.limit+=12;renderObjects();}});
   document.getElementById('objectExplorer').addEventListener('input',e=>{if(e.target.id==='objectSearch'){objectBrowse.query=e.target.value;objectBrowse.limit=12;renderObjects();}});
   document.getElementById('objectExplorer').addEventListener('change',e=>{if(e.target.id==='objectType'){objectBrowse.type=e.target.value;objectBrowse.limit=12;renderObjects();}});
   document.getElementById('storyMode').onclick=()=>{story.id=null;setExperience('story');renderStory();};
-  document.getElementById('researchMode').onclick=()=>setExperience('research');
+  document.getElementById('researchMode').onclick=()=>{setExperience('research');showWholeLibrary();};
   document.getElementById('storyJourney').addEventListener('click',e=>{
     const threadThesis=e.target.closest('[data-thread-thesis]');if(threadThesis){startThreadThesis(threadThesis.dataset.threadThesis);return;}
     const returnThread=e.target.closest('[data-return-thread]');if(returnThread){setExperience('research');selectThread(returnThread.dataset.returnThread);return;}
@@ -139,7 +139,8 @@ function renderThread(){
     const similar=state.threads.filter(t=>t.id!==thread.id&&(t.mechanismIds||[]).includes(id));
     return `<details><summary>${escapeHtml(m.name)} · ${escapeHtml(m.status)}</summary><p>${escapeHtml(m.description)}</p><p>Possible buffers: ${escapeHtml(m.resilienceFactors.join(', ')||'Not yet documented')}.</p><p>Counterexamples and limits: ${escapeHtml(m.counterexamples?.join('; ')||'Not yet documented; absence is not confirmation')}.</p><div class="gap-links">${(m.counterexampleObservationIds||[]).map(id=>`<button class="filter" data-observation="${escapeAttr(id)}">Inspect: ${escapeHtml(obs(id)?.title||id)}</button>`).join('')}</div>${similar.map(t=>`<button class="filter" data-thread="${escapeAttr(t.id)}">Compare: ${escapeHtml(t.title)}</button>`).join('')}</details>`;
   }).join('');
-  document.getElementById('mechanismPanel').onclick=e=>{const b=e.target.closest('[data-thread]');if(b){state.threadId=b.dataset.thread;document.getElementById('threadSelect').value=state.threadId;renderThread();}};
+  refreshThreadFocus();
+  document.getElementById('mechanismPanel').onclick=e=>{const b=e.target.closest('[data-thread]');if(b){selectThread(b.dataset.thread);}};
 
 }
 
@@ -224,7 +225,7 @@ function renderInspector(focus=false){
 }
 
 function overlaps1816(o){return Number(o.startDate.slice(0,4))<=1816&&Number(o.endDate.slice(0,4))>=1816;}
-function selectThread(id){state.threadId=id;document.getElementById('threadSelect').value=id;renderThread();document.getElementById('threads').scrollIntoView({behavior:'instant'});}
+function selectThread(id,{focused=true,moveFocus=true}={}){if(!state.threads.some(t=>t.id===id))id=state.threads[0]?.id;if(!id)return;setExperience('research');state.threadId=id;libraryView=focused?'thread':'all';document.getElementById('threadSelect').value=id;renderThread();if(moveFocus)focusThreadHeading();}
 
 function obs(id){return state.observations.find(o=>o.id===id)}
 function source(id){return state.sources.find(s=>s.id===id)}
