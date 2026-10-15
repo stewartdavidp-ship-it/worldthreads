@@ -79,3 +79,17 @@ The case-to-thesis handoff formerly seeded generic thread nodes rather than the 
 ## 6 October: thesis-plan source review
 
 See [the targeted Brazil thesis review](BRAZIL_THESIS_REVIEW.md). This pass records conflicting building-readiness dates, explicit source-access limits and an inferred contribution. An independent agent critique does not replace a historian’s assessment or inspection of the missing original records.
+
+## Frankenstein provenance audit — 14 October 2026
+
+Scope: digital archive descriptions and the text of the 1831 introduction; no original manuscript authentication or exhaustive literary-history review. WT-1816-0015 retains its identity and 1816 event window, but separates surviving drafting from remembered origins. SRC-049 registers the later author account. The source year is 1831, not the event date.
+
+Sources inspected:
+
+- [Shelley–Godwin Archive, Notebook A](https://shelleygodwinarchive.org/contents/frankenstein_notebook_a/), opening paragraph: editorial dating of surviving drafting to August–early December 1816. Its [composition overview](https://shelleygodwinarchive.org/contents/frankenstein/), opening two paragraphs, distinguishes the lost early story from surviving drafts. This does not document the moment of invention or independently test an indoor-weather mechanism.
+- [Mary Shelley, Introduction (1831), scholarly digital text](https://frankensteinvariorum.github.io/fv-collation/Frankenstein_1831.html), Introduction pp. vii–viii, rain/ghost-story/Byron paragraphs; signature dated 15 October 1831. This is retrospective author testimony about 1816. Original printed pages were not collated in this audit.
+- [Andrew Dickson / British Library, Mary Shelley’s Frankenstein](https://www.britishlibrary.cn/en/works/frankenstein/), opening narrative and The birth of Frankenstein: modern interpretation. Essay publication date is not established; the previous 2026 source year was unsupported and is now null. The page header’s 1925 field is not taken as the essay date.
+
+REL-0009 remains a contributing interpretation, with confidence reduced from Medium-High to Medium and explicit alternatives. Its source list now cites the recollection and modern synthesis rather than treating the surviving draft as evidence for the behavioral pathway. The object-claim projection is synchronized; linked object provenance includes the new source. Thread wording now presents a hypothesis rather than an independently established route from weather to creative choices.
+
+Source-specific support/limits are visible inside source cards and carried into new thesis exports and research briefs. Registered IDs and the number of observations/relationships stay unchanged; sources increase from 48 to 49. Previously filed snapshots are preserved. Existing writer interpretations still need reassessment against the revised evidence; this audit does not automatically grade or rewrite them. Next research: inspect contemporary letters/diaries and compare their chronology with the later author account.

@@ -139,3 +139,7 @@ A person’s role in an action does not establish the person’s motives. Connec
 ## Local research additions
 
 Imported proposal JSON requires a claim, http(s) source URL, locator, date/place and limits. Local additions retain proposal kind, thread context, import time and Unreviewed status. They are stored separately in the browser and are not accepted observations, projected object links or changes to the registered graph. They can be selected in a thesis evidence table as explicitly labeled candidate evidence. A repeated import of the same claim/source/locator is not additional evidence.
+
+### Source-specific support within an observation
+
+An optional `sourceSupport` array records `sourceId`, `label`, `supports` and `limits` for each source reference. It distinguishes what different sources contribute without combining their roles into a single verification claim. Validation requires one entry per referenced source when present. Source cards, research briefs and new thesis exports expose these boundaries; it is not a source-authenticity score. WT-1816-0015 is the first audited example.

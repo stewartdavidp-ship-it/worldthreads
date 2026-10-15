@@ -91,7 +91,7 @@
     "id": "THREAD-CLIMATE-CULTURE",
     "title": "Climate becomes cultural context",
     "subtitle": "Geneva, summer 1816",
-    "description": "The unusually cold and cloudy Geneva summer created the documented setting in which Mary Godwin's literary circle stayed indoors, exchanged ghost stories and generated the story that became Frankenstein.",
+    "description": "Geneva weather reconstruction, surviving drafting and Shelley’s later recollection suggest a cultural-context hypothesis. The route from weather to creative choices is not independently established by these records.",
     "nodeIds": [
       "WT-1816-0008",
       "WT-1816-0009",
@@ -107,7 +107,7 @@
       "cultural production"
     ],
     "scope": "Europe",
-    "confidence": "Medium-High",
+    "confidence": "Medium",
     "mechanismIds": [
       "MECH-004"
     ]

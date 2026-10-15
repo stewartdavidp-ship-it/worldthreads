@@ -544,3 +544,10 @@ The full plan includes all three cases, two challenges, all ten badges/890 point
 Chrome inspection showed the focused thread without world statistics, regional map, all observations or unrelated gaps. Exact thread-member records and registered linked gaps expand on demand; absent catalogued gaps are explicitly not proof of completeness. The same-thread thesis control resumes the existing draft directly. Browser history retains focus/full-library state and source detours. Research library still opens the full browse view, preserving filters.
 
 The bounded [repeat-researcher pass](playtests/2026-10-14/thread-focus-review.md) verified the object→focused thread→citation card→return→thesis path and judged focus/interest/next-step clarity 4/5. It did not complete its filter/own-text retention check; those assertions are supplied by automation, not attributed to that agent. No screenshot from the agent is claimed. Generic initial thesis questions, source-specific Frankenstein uncertainty, delayed human return and learning remain open.
+
+
+## Frankenstein source provenance — 14 October 2026
+
+Version 0.5.54 passed all 29 scenarios in one complete local confirmation run. The added frankenstein-audit scenario checks source-specific roles and limits, the retrospective 1831 account, qualified relationship confidence, research prompt context and thesis export. Chrome inspection confirmed the same source distinctions in the focused thread evidence view. Data validation, JavaScript syntax and whitespace checks pass. Counts: 81 observations, 57 relationships, 23 threads, 49 sources, 12 mechanisms, 177 objects and 199 connections.
+
+This was an audit of accessible digital editions and editorial chronology, not independent manuscript authentication or a new external AI review. Contemporary corroboration of the weather-to-creative-choice mechanism remains open. Existing filed portfolios are not rewritten.

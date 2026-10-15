@@ -494,7 +494,7 @@
   },
   {
     "id": "WT-1816-0015",
-    "title": "Frankenstein begins in the cold, stormy summer of 1816",
+    "title": "Frankenstein: surviving draft and remembered beginnings",
     "startDate": "1816-06",
     "endDate": "1816-12",
     "datePrecision": "DATE_RANGE",
@@ -502,7 +502,7 @@
     "region": "Western Europe / Alps",
     "historicalEntity": "Swiss Confederation / British literary circle",
     "place": "Geneva / Cologny and later England",
-    "observation": "Mary Godwin conceived the story that became Frankenstein during the cold, rainy summer near Geneva; surviving Notebook A contains draft material written from August to early December 1816.",
+    "observation": "The Shelley–Godwin Archive dates Notebook A’s drafting to August–early December 1816. In her 1831 introduction, Mary Shelley recalled rain keeping the group indoors near Geneva, ghost-story reading and Byron’s story-writing challenge in summer 1816.",
     "coverageType": "WORK",
     "system": "POWER & CULTURE",
     "topic": "Literature / climate and culture",
@@ -510,21 +510,45 @@
       "OUTCOME"
     ],
     "evidenceType": [
-      "Manuscript evidence",
-      "Library scholarship"
+      "Manuscript evidence with editorial dating",
+      "Retrospective author account (1831)",
+      "Modern library interpretation"
     ],
     "confidence": "High",
     "sourceRefs": [
       "SRC-013",
+      "SRC-049",
       "SRC-014"
     ],
-    "researchStatus": "Verified",
+    "researchStatus": "Source scope reviewed; manuscripts not independently authenticated",
     "objectRefs": [
       "OBJ-1816-0015",
       "OBJ-PERSON-mary-godwin",
       "OBJ-PLACE-013"
     ],
-    "primaryObjectId": "OBJ-1816-0015"
+    "primaryObjectId": "OBJ-1816-0015",
+    "sourceLocator": "SRC-013: Notebook A opening paragraph; alternate composition overview, opening two paragraphs. SRC-049: Introduction, pp. vii–viii (rain, ghost stories and Byron’s challenge), signed 15 October 1831. SRC-014: opening origin narrative and The birth of Frankenstein.",
+    "uncertainty": "Notebook A is not the lost first story or a record of the moment of conception. Its dates are an editorial reconstruction. The rain/indoors narrative is a recollection published in 1831, not contemporary weather measurement. These sources do not isolate weather as a cause of creative choices.",
+    "sourceSupport": [
+      {
+        "sourceId": "SRC-013",
+        "label": "Surviving draft · editorial dating",
+        "supports": "Dates the surviving Notebook A draft within 1816.",
+        "limits": "Not the lost first story; does not independently establish why the work was conceived."
+      },
+      {
+        "sourceId": "SRC-049",
+        "label": "1831 recollection of 1816",
+        "supports": "Shelley’s later account of rain, indoor ghost-story reading and the writing challenge.",
+        "limits": "Retrospective testimony, not a day-by-day diary or a measurement of climate effects."
+      },
+      {
+        "sourceId": "SRC-014",
+        "label": "Modern interpretation",
+        "supports": "A modern library account of the work’s origins.",
+        "limits": "Not independent contemporary corroboration; do not merge its retelling with manuscript evidence."
+      }
+    ]
   },
   {
     "id": "WT-1816-0016",

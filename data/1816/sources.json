@@ -193,14 +193,16 @@
       "Frankenstein",
       "literature",
       "Geneva"
-    ]
+    ],
+    "alternateUrl": "https://shelleygodwinarchive.org/contents/frankenstein/",
+    "notes": "The archive supplies editorial dating of the surviving draft. Its composition overview identifies the original summer story as lost. Manuscript survival and editorial chronology do not independently establish the weather-to-creativity pathway."
   },
   {
     "id": "SRC-014",
     "type": "Library interpretation",
-    "authorOrOrg": "British Library",
+    "authorOrOrg": "Andrew Dickson / British Library",
     "title": "Mary Shelley’s Frankenstein",
-    "year": 2026,
+    "year": null,
     "url": "https://www.britishlibrary.cn/en/works/frankenstein/",
     "quality": "High",
     "topics": [
@@ -208,7 +210,8 @@
       "Frankenstein",
       "1816 weather",
       "literature"
-    ]
+    ],
+    "notes": "Modern interpretive essay, not an independent contemporary account. Its essay publication date is not established here; the page header’s 1925 field is not used as that date. Its origin narrative must be distinguished from manuscript evidence and retrospective author testimony."
   },
   {
     "id": "SRC-015",
@@ -718,5 +721,21 @@
     ],
     "notes": "Indexed printed p129 inspected; full PDF fetch unavailable.",
     "accessedDate": "2026-10-05"
+  },
+  {
+    "id": "SRC-049",
+    "type": "Retrospective author account · digital scholarly edition",
+    "authorOrOrg": "Mary W. Shelley; digital edition by Elisa Beshero-Bondar and Rikk Mulligan",
+    "title": "Introduction to Frankenstein, revised edition (1831)",
+    "year": 1831,
+    "url": "https://frankensteinvariorum.github.io/fv-collation/Frankenstein_1831.html",
+    "quality": "High",
+    "topics": [
+      "Mary Shelley",
+      "Frankenstein",
+      "retrospective testimony",
+      "1816 weather"
+    ],
+    "notes": "Author recollection dated 15 October 1831 about summer 1816. The digital introduction was inspected; original printed pages were not independently collated. Later summaries can repeat this account and are not independent contemporary corroboration."
   }
 ]

@@ -11,6 +11,10 @@ o,r,t,s,m=map(indexed,[observations,relationships,threads,sources,mechanisms])
 for x in observations:
  for key in ['title','startDate','endDate','datePrecision','continent','region','historicalEntity','place','observation','coverageType','system','topic','analyticalRole','evidenceType','confidence','sourceRefs','researchStatus']:assert key in x,(x['id'],key)
  assert x['sourceRefs'] and all(id in s for id in x['sourceRefs'])
+ if 'sourceSupport' in x:
+  assert isinstance(x['sourceSupport'],list) and {a['sourceId'] for a in x['sourceSupport']}==set(x['sourceRefs'])
+  assert len(x['sourceSupport'])==len(x['sourceRefs'])
+  assert all(all(isinstance(a.get(k),str) and a[k].strip() for k in ['sourceId','label','supports','limits']) for a in x['sourceSupport'])
  assert set(x['analyticalRole']) <= {'STATE','PRESSURE','SHOCK','RESPONSE','OUTCOME','RESILIENCE','ADAPTATION'}
 for x in relationships:
  assert x['subjectId'] in o and x['objectId'] in o

@@ -164,7 +164,8 @@
     "explanation": "The linked observations document this role or context; this edge does not measure causal influence.",
     "sourceRefs": [
       "SRC-013",
-      "SRC-014"
+      "SRC-014",
+      "SRC-049"
     ],
     "evidenceObservationRefs": [
       "WT-1816-0015"
@@ -984,7 +985,8 @@
     "explanation": "Spatial support of the observation, not a causal claim or a precise modern boundary.",
     "sourceRefs": [
       "SRC-013",
-      "SRC-014"
+      "SRC-014",
+      "SRC-049"
     ],
     "evidenceObservationRefs": [
       "WT-1816-0015"
@@ -2606,10 +2608,10 @@
     "objectId": "OBJ-1816-0015",
     "relationshipKind": "HISTORICAL_CLAIM",
     "causalStatus": "CONTRIBUTORY",
-    "confidence": "Medium-High",
-    "explanation": "The cold, rainy Geneva summer helped keep the literary group indoors and formed the documented setting for the ghost-story challenge from which Frankenstein emerged. This is a contributing cultural context, not a claim that climate alone caused the work.",
+    "confidence": "Medium",
+    "explanation": "Shelley’s 1831 recollection connects rainy days indoors with ghost-story reading and Byron’s challenge in 1816. This supports a proposed cultural-context contribution, not an independently isolated effect of weather on creative choices. Notebook A documents drafting, not that behavioral pathway.",
     "sourceRefs": [
-      "SRC-013",
+      "SRC-049",
       "SRC-014"
     ],
     "evidenceObservationRefs": [
@@ -2619,7 +2621,11 @@
     "evidenceRelationshipRefs": [
       "REL-0009"
     ],
-    "alternatives": []
+    "alternatives": [
+      "The later author account and modern retelling are not independent contemporary corroboration.",
+      "Literary, social and intellectual influences are not isolated from weather by these records.",
+      "Contemporary letters or diaries are needed to test the behavioral chronology; the surviving draft alone cannot do so."
+    ]
   },
   {
     "id": "OBJCLAIM-0010",
