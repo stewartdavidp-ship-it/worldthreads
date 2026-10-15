@@ -66,3 +66,15 @@ The repeated researcher agent verified the literary object→thread→source-cit
 ## Separate Frankenstein evidence and recollection — 14 October 2026
 
 Implemented for 0.5.54: explicit manuscript/editorial, retrospective-author and modern-interpretation source roles; locators and uncertainty for WT-1816-0015; new registered 1831 author source; undated British Library essay metadata; qualified relationship/thread wording and synchronized object provenance. Source roles appear on demand and travel into research briefs and thesis exports. The source-scope audit is documented in RESEARCH_AUDIT.md. Original manuscripts/print pages were not independently authenticated; contemporary diary/letter comparison and human interpretation testing remain open. Previously filed snapshots and player writing are preserved. No claim of comprehensive historical verification is made.
+
+
+## Start with a concrete research question — 15 October 2026
+
+Implemented for 0.5.55: each of the 23 threads has an optional editorial starting question tied to its particular uncertainty; objects offer a prompt with their linked records. New investigations leave the player's question blank until they choose and edit a suggestion or write their own. The fresh overview shows that choice and expandable exact records before empty claim/evidence cards. A source detour does not adopt the suggestion. The question editor keeps the suggestion available for comparison without overwriting existing writing, including earlier generic prompts. Existing story-to-thesis writing, archived investigations, roles, progress and filed portfolios remain intact. The old object-direction buttons that replaced a question immediately are superseded by this deliberate selection/comparison flow.
+
+Remaining: human comprehension and delayed return motivation; a real external AI review of the changed flow; source-by-source contemporary diary/letter corroboration of the literary mechanism. Prompt coverage and browser completion do not establish historical authenticity or learning.
+
+
+## Recover from interrupted collection loading — 15 October 2026
+
+Implemented for 0.5.55: collection fetches retry one transport interruption after a short delay. Persistent failures retain the explicit retry screen and saved writing; invalid JSON, wrong collection shape and HTTP errors remain failures. Startup exceptions are logged for diagnostics. Fault-injection checks distinguish these cases. The default local Python preview showed connection resets affecting scripts and collections during repeated cold-page bursts; `tests/preview.py` uses HTTP keep-alive and a larger connection queue for browser tests. A 100-fresh-context/100-reload probe of that preview completed with no connection resets. This does not claim recovery from missing JavaScript assets or arbitrary network outages.

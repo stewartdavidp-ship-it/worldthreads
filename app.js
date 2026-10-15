@@ -1,7 +1,17 @@
 const state={observations:[],relationships:[],threads:[],sources:[],mechanisms:[],gaps:[],objects:[],objectRelationships:[],objectTypes:[],region:'ALL',query:'',period:'ALL',evidence:'ALL',sort:'date',system:'ALL',threadId:null};
 
 let appLoaded=false;
-async function fetchCollection(path){const response=await fetch(path+'?v=0.5.54',{cache:'no-cache'});if(!response.ok)throw Error('Evidence collection unavailable ('+response.status+')');const value=await response.json();if(!Array.isArray(value))throw Error('An evidence collection has an invalid format');return value;}
+async function fetchCollection(path){
+ for(let attempt=0;attempt<2;attempt++)try{
+  const response=await fetch(path+'?v=0.5.55',{cache:'no-cache'});
+  if(!response.ok)throw Error('Evidence collection unavailable ('+response.status+')');
+  const value=await response.json();if(!Array.isArray(value))throw Error('An evidence collection has an invalid format');return value;
+ }catch(error){
+  // Retry a transport interruption once; invalid JSON and HTTP errors stay failures.
+  if(!(error instanceof TypeError)||attempt===1)throw error;
+  await new Promise(resolve=>setTimeout(resolve,250));
+ }
+}
 async function load(){
   const [observations,relationships,threads,sources,mechanisms,gaps,objects,objectRelationships,objectTypes]=await Promise.all([
     fetchCollection('data/1816/observations.json'),
@@ -233,7 +243,7 @@ function source(id){return state.sources.find(s=>s.id===id)}
 function escapeHtml(str=''){return String(str).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
 function escapeAttr(str=''){return escapeHtml(str)}
 
-async function startApp(){document.querySelectorAll('.site-header button').forEach(b=>b.disabled=true);const status=document.getElementById('startupStatus');status.hidden=false;status.innerHTML='<p>Loading the evidence collection… Your saved research stays in this browser.</p>';try{await load();}catch{status.innerHTML='<h1>Evidence could not be loaded</h1><p>The collection is unavailable, not empty. Check your connection and try again. Saved research has not been changed.</p><button class="story-next" id="retryLoad">Try loading again</button>';document.getElementById('retryLoad').onclick=startApp;}}
+async function startApp(){document.querySelectorAll('.site-header button').forEach(b=>b.disabled=true);const status=document.getElementById('startupStatus');status.hidden=false;status.innerHTML='<p>Loading the evidence collection… Your saved research stays in this browser.</p>';try{await load();}catch(error){console.error('Evidence collection startup failed',error);status.innerHTML='<h1>Evidence could not be loaded</h1><p>The collection is unavailable, not empty. Check your connection and try again. Saved research has not been changed.</p><button class="story-next" id="retryLoad">Try loading again</button>';document.getElementById('retryLoad').onclick=startApp;}}
 startApp();
 
 const story={step:0,choice:null,id:null};

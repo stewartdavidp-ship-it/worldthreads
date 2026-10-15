@@ -143,3 +143,8 @@ Imported proposal JSON requires a claim, http(s) source URL, locator, date/place
 ### Source-specific support within an observation
 
 An optional `sourceSupport` array records `sourceId`, `label`, `supports` and `limits` for each source reference. It distinguishes what different sources contribute without combining their roles into a single verification claim. Validation requires one entry per referenced source when present. Source cards, research briefs and new thesis exports expose these boundaries; it is not a source-authenticity score. WT-1816-0015 is the first audited example.
+
+
+### Editorial starting questions (0.5.55)
+
+`question-start.js` supplies optional thread-specific investigation prompts, separate from observations, relationships and mechanisms. Choosing a prompt deliberately copies its question into the player's editable draft; it supplies no answer or evidence role and earns no reward. Opening a record does not adopt a question. Existing questions and immutable portfolios are not migrated or rewritten; an existing question can be compared with a suggestion, then edited manually. New library/object investigations begin with an empty player question; completed guided cases retain their selected question, and explicit story handoffs preserve the player's writing.
