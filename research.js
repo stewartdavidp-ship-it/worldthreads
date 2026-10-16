@@ -7,12 +7,13 @@ function findingsForDraft(draft){return localFindings().filter(x=>findingBelongs
 function thesisRecord(id){return obs(id)||localFindings().find(x=>x.id===id&&!x.excludedAt);}
 function validThread(id){return state.threads.some(t=>t.id===id);}
 function canUseThesis(){return expeditionFinished()||filedCases().length>0||validThread(readThesisDraft().threadId)||!!historicalObject(readThesisDraft().objectId);}
-function startThreadThesis(id,inquiry=null){const thread=state.threads.find(t=>t.id===id);if(!thread)return;const existing=readThesisDraft();const previous=existing.threadId||existing.objectId;if(previous&&previous!==id){if(!archiveCurrentDraft(previous)){setExperience('story');openThesisWorkspace(existing);document.getElementById('thesisStatus').textContent='Previous investigation could not be archived. Your current work remains here; download it and resolve the storage problem or tab conflict before switching investigations.';return;}}
+function startThreadThesis(id,inquiry=null,preferredRecords=[]){const thread=state.threads.find(t=>t.id===id);if(!thread)return;const existing=readThesisDraft();const previous=existing.threadId||existing.objectId;if(previous&&previous!==id){if(!archiveCurrentDraft(previous)){setExperience('story');openThesisWorkspace(existing);document.getElementById('thesisStatus').textContent='Previous investigation could not be archived. Your current work remains here; download it and resolve the storage problem or tab conflict before switching investigations.';return;}}
  let draft=existing.threadId===id?existing:{};if(!Object.keys(draft).length)draft=readArchivedDraft(id);
  const needsTitle=!draft.title;
  draft={...draft,threadId:id,objectId:null,title:draft.title||thread.title,question:draft.question||'',argument:draft.argument||'',status:'Unreviewed research draft'};
  const learningCase=storyCatalog.find(s=>s.thread===id&&storyProgress(s.id).caseFiled),task=learningCase&&caseFileTasks[learningCase.id];
- const seeds=task?[...task.required,...thread.nodeIds.filter(n=>!task.required.includes(n))]:thread.nodeIds;
+ const baseSeeds=task?[...task.required,...thread.nodeIds.filter(n=>!task.required.includes(n))]:thread.nodeIds,preferred=[...new Set(preferredRecords)].filter(n=>thread.nodeIds.includes(n));
+ const seeds=[...preferred,...baseSeeds.filter(n=>!preferred.includes(n))];
  if(!draft.savedAt)for(let i=0;i<3;i++)if(!draft['record'+i])draft['record'+i]=seeds[i]||'';
  if(task){if(!draft.savedAt&&!draft.question.trim())draft.question=learningCase.question;draft.researchQuestion=draft.researchQuestion||learningCase.question;draft.researchSource=draft.researchSource||task.next[0];draft.caseLimit=draft.caseLimit||task.limits[0];}
 

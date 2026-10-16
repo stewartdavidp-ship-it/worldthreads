@@ -3,7 +3,7 @@ const state={observations:[],relationships:[],threads:[],sources:[],mechanisms:[
 let appLoaded=false;
 async function fetchCollection(path){
  for(let attempt=0;attempt<2;attempt++)try{
-  const response=await fetch(path+'?v=0.5.60',{cache:'no-cache'});
+  const response=await fetch(path+'?v=0.5.61',{cache:'no-cache'});
   if(!response.ok)throw Error('Evidence collection unavailable ('+response.status+')');
   const value=await response.json();if(!Array.isArray(value))throw Error('An evidence collection has an invalid format');return value;
  }catch(error){
@@ -37,7 +37,7 @@ function bind(){
   document.getElementById('storyMode').onclick=()=>{story.id=null;setExperience('story');renderStory();};
   document.getElementById('researchMode').onclick=()=>{setExperience('research');showWholeLibrary();};
   document.getElementById('storyJourney').addEventListener('click',e=>{
-    const threadThesis=e.target.closest('[data-thread-thesis]');if(threadThesis){startThreadThesis(threadThesis.dataset.threadThesis);return;}
+    const threadThesis=e.target.closest('[data-thread-thesis]');if(threadThesis){startThreadThesis(threadThesis.dataset.threadThesis,null,threadThesis.hasAttribute('data-andes-handoff')&&andesSelected().length===2?andesSelected().map(x=>x[0]):[]);return;}
     const returnThread=e.target.closest('[data-return-thread]');if(returnThread){setExperience('research');selectThread(returnThread.dataset.returnThread);return;}
     const thesis=e.target.closest('[data-open-thesis]');if(thesis){openThesisWorkspace();return;}
     const thesisDownload=e.target.closest('[data-download-thesis]');if(thesisDownload){downloadThesisDraft();return;}

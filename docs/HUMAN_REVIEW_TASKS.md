@@ -15,3 +15,8 @@ For the observer: record the participant's words, detours, requests for help and
 
 
 For a returning player with an existing review: close the site and return after a break. Without help, identify the question you were investigating and use the suggested next step. Explain whether the critique refers to your current writing or an earlier filed version. Find your existing research notes. If you change your claim, check which version the review still applies to. Record confusion, detours and whether the return adds value beyond the assistant conversation; do not treat completion as evidence of learning or source accuracy.
+
+
+For the Dutch relief flow: after earning its guided case, explore the two documentary tracks. Explain whether the imports and reserved rye are known to be the same stock, and what would count as evidence of household receipt. Select the missing link and plan your next source search. Does this feel like a different investigation from the harvest comparison? Record the participant's reasoning and hesitation; reaching the research desk alone does not establish comprehension.
+
+For the Andes flow: after earning its guided case, choose two pieces and explain what you expect their connection to establish before revealing it. Try another pair. Explain the difference between contribution, chronology and an unrecorded direct link. Carry your chosen pair into your explanation. Can you identify a source you would need next? Record whether the selection feels purposeful or arbitrary, and whether the player mistakes the absence of a registered link for proof of no influence.

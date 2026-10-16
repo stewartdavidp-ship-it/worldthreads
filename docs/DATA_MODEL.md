@@ -165,3 +165,13 @@ New panel prompts request schemaVersion 2. The schema adds `internal document su
 The overview's review/research suggestion is derived from existing portfolio fingerprints, exact context and filed timestamp, saved critique, player response and chosen research concern. No new stored state is introduced. A critique is recommended as current only if its portfolio fingerprint equals the working draft fingerprint. Earlier valid reviews remain accessible with a changed-draft warning. An open concern is one without a completed player response or one deliberately left for investigation/suspended judgment; this is workflow status, not truth or source verification. Updating a response or selecting a research concern refreshes the overview. Completed filing refreshes it as well, preventing another generic filing prompt for an unchanged filed draft.
 
 The optional next-question preview and review action carry the same concern ID. Viewing the suggestion does not change a saved cursor; deliberately resuming it uses the existing review-position save. Generic review-resume controls continue to honor their saved position.
+
+
+### Dutch relief tracing (0.5.61)
+
+The selected relief-trace checkpoint is session-only presentation state. The activity uses WT-1816-0034 and WT-1816-0035 as distinct documentary tracks, with a source-search question rather than a fabricated receipt record. It asserts neither common shipment identity nor verified recipients. It adds no observation, relation, mechanism, reward or storage schema. Its research action invokes the existing thread-draft handoff and research focus. Existing drafts, notes and source-role decisions use their original saving/recovery/version rules; no extra story notebook is created.
+
+
+### Andes pair exploration (0.5.61)
+
+Pair selection and reveal state are session-only. The activity reads existing records WT-1816-0060/0030/0031 and their direct relationships REL-0046/0023. A missing direct relationship is not a claim of no historical influence, and a transitive graph path is not promoted to a new causal assertion. Inspecting the activity assigns no evidence role or reward. A deliberate thesis handoff may prioritize the chosen pair among the new draft’s initial records; IDs must belong to that thread. Existing or archived draft selections/writing are preserved. No new storage field or historical graph data is added.
