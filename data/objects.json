@@ -335,7 +335,10 @@
     "sourceRefs": [
       "SRC-013",
       "SRC-049",
-      "SRC-014"
+      "SRC-014",
+      "SRC-050",
+      "SRC-051",
+      "SRC-052"
     ],
     "researchStatus": "Evidence-linked seed",
     "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
@@ -1869,7 +1872,10 @@
     "sourceRefs": [
       "SRC-013",
       "SRC-049",
-      "SRC-014"
+      "SRC-014",
+      "SRC-050",
+      "SRC-051",
+      "SRC-052"
     ],
     "researchStatus": "Evidence-linked seed",
     "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
@@ -2611,7 +2617,10 @@
     "sourceRefs": [
       "SRC-013",
       "SRC-049",
-      "SRC-014"
+      "SRC-014",
+      "SRC-050",
+      "SRC-051",
+      "SRC-052"
     ],
     "researchStatus": "Evidence-linked seed",
     "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",

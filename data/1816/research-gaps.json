@@ -264,5 +264,27 @@
       "Seek household food-access evidence separately from harvest reports, prices and Korean administrative categories."
     ],
     "notes": "The published Czech paper and its price figure were inspected in the 15 October audit. Original records and the magnitude of any weather contribution remain unresolved. Multiple records from SRC-001 are not independent corroboration."
+  },
+  {
+    "id": "GAP-012",
+    "region": "Geneva / literary circle",
+    "domain": "literary chronology + source transmission",
+    "question": "Which parts of Frankenstein’s origin sequence can the surviving evidence establish, and what remains beyond it?",
+    "priority": "High",
+    "status": "Open",
+    "updatedDate": "2026-10-16",
+    "observationIds": [
+      "WT-1816-0009",
+      "WT-1816-0015"
+    ],
+    "threadIds": [
+      "THREAD-CLIMATE-CULTURE"
+    ],
+    "remainingQuestions": [
+      "Collate the inspected digital texts against printed witnesses and locate the surviving family diary transcript, if accessible; the original Polidori diary is reported destroyed.",
+      "Check the archive’s July journal quotations against the surviving manuscript and document missing June/early-July coverage without treating missing entries as evidence of no writing.",
+      "Compare the 1817 published rain narrative, June diary activity and 1831 recollection without inventing an exact conception date or a weather effect."
+    ],
+    "notes": "Digital passages now support a bounded context/chronology comparison. Manuscript authentication, the exact origin sequence and an isolated behavioral mechanism remain unresolved; the archive chronology is not an extra independent Polidori witness."
   }
 ]

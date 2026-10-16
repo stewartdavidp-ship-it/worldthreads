@@ -106,3 +106,10 @@ Implemented for 0.5.59: the investigation overview recognizes an already-filed c
 Next human task: return after a break, identify the question to pick up without opening the full workspace, follow it, and explain which version the AI reviewed. Observe whether the research note is still recognizable and whether the next step feels useful rather than another filing obligation. Human return motivation remains untested.
 
 Final confirmation: 35/35 primary browser scenarios passed, with full story/game/portfolio routes, exact challenge routing, old-version separation, narrow/largest-text/themes and saved-state recovery. Direct Chrome inspection was unavailable because the tab debugger was unattached; no new manual or human usability result is claimed.
+
+
+## Compare contemporary Frankenstein traces — 16 October 2026
+
+Implemented for 0.5.60: inspected a near-contemporary published rain letter, the June diary entries in a later edited transcript, and the archive chronology. Added three precisely scoped source entries and source-card support/limits to the existing literary record. The diary’s filtered transmission and the distinction between author testimony/editorial reconstruction remain explicit. The exact conception sequence and weather effect stay unresolved; relationship confidence and mechanism status do not increase. GAP-012 carries the remaining source-authentication/chronology work into the thread. See RESEARCH_AUDIT.md. Human comprehension and manuscript authentication remain open.
+
+Validation: all 35 primary scenarios and the all-81-record detail check passed. No new observations, relationships or objects; source registry is 52 and GAP-012 remains open. Previously filed three-source literary snapshot exported unchanged while the current evidence has six source-specific entries.

@@ -744,5 +744,52 @@
       "1816 weather"
     ],
     "notes": "Author recollection dated 15 October 1831 about summer 1816. The digital introduction was inspected; original printed pages were not independently collated. Later summaries can repeat this account and are not independent contemporary corroboration."
+  },
+  {
+    "id": "SRC-050",
+    "type": "1816 diary via edited family transcript · digital transcription",
+    "authorOrOrg": "John William Polidori; edited by William Michael Rossetti",
+    "title": "The Diary of Dr. John William Polidori, 1816, Relating to Byron, Shelley, etc. (1911 edition)",
+    "year": 1911,
+    "url": "https://www.gutenberg.org/cache/epub/55017/pg55017-images.html#Page_125",
+    "quality": "High",
+    "topics": [
+      "Polidori",
+      "ghost stories",
+      "Geneva",
+      "source transmission"
+    ],
+    "notes": "Diary entries dated 1816, published in 1911; the publication year is not the event date. The digital text of June 15–18 and the editor’s Introduction pp. 10–11 were inspected. Rossetti says Charlotte Polidori copied the diary while omitting passages and destroyed the original. Neither the original diary nor that family transcript was authenticated here. The editor’s bracketed commentary is distinct from diary testimony."
+  },
+  {
+    "id": "SRC-051",
+    "type": "Near-contemporary published travel letter · digital transcription",
+    "authorOrOrg": "Mary Wollstonecraft Shelley and Percy Bysshe Shelley",
+    "title": "History of a Six Weeks’ Tour (1817), Letter II, dated 1st June",
+    "year": 1817,
+    "url": "https://www.gutenberg.org/cache/epub/52790/pg52790-images.html#Page_98",
+    "quality": "High",
+    "topics": [
+      "Mary Shelley",
+      "Geneva",
+      "rain",
+      "travel letters"
+    ],
+    "notes": "The 1817 publication’s Letter II, signed M. and dated 1st June, pp. 98–100, was inspected in digital transcription. It reports rain restricting time outdoors, with sunshine intervals. This is a published travel text, not an authenticated autograph letter or an instrument record; it does not narrate the ghost-story challenge or establish its date."
+  },
+  {
+    "id": "SRC-052",
+    "type": "Scholarly archive chronology",
+    "authorOrOrg": "Shelley–Godwin Archive",
+    "title": "Frankenstein Chronology",
+    "year": null,
+    "url": "https://shelleygodwinarchive.org/contents/frankenstein/frankenstein-chronology/",
+    "quality": "High",
+    "topics": [
+      "Frankenstein",
+      "journal chronology",
+      "source dependence"
+    ],
+    "notes": "Entries for 15–19 June and 24 July 1816 were inspected. The chronology compares the Polidori diary edition, Shelley’s later account and journal references. It does not determine the exact competition/conception sequence and notes missing portions of Shelley’s journal. Its Polidori citations repeat SRC-050’s underlying evidence; they are not another independent witness. Archive quotations were inspected, not the underlying journal manuscript."
   }
 ]

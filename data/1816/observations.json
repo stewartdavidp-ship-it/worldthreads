@@ -561,7 +561,7 @@
     "region": "Western Europe / Alps",
     "historicalEntity": "Swiss Confederation / British literary circle",
     "place": "Geneva / Cologny and later England",
-    "observation": "The Shelley–Godwin Archive dates Notebook A’s drafting to August–early December 1816. In her 1831 introduction, Mary Shelley recalled rain keeping the group indoors near Geneva, ghost-story reading and Byron’s story-writing challenge in summer 1816.",
+    "observation": "The 1817 travel book’s Letter II reports rain keeping Shelley’s party mostly indoors. Polidori’s June 17 diary entry, preserved in a later edited transcript, reports ghost stories already begun. Notebook A is dated August–early December 1816; Shelley’s 1831 introduction later recalled the writing challenge.",
     "coverageType": "WORK",
     "system": "POWER & CULTURE",
     "topic": "Literature / climate and culture",
@@ -571,23 +571,29 @@
     "evidenceType": [
       "Manuscript evidence with editorial dating",
       "Retrospective author account (1831)",
-      "Modern library interpretation"
+      "Modern library interpretation",
+      "1816 diary via later edited transcript",
+      "Near-contemporary published letter",
+      "Scholarly chronology with journal excerpts"
     ],
     "confidence": "High",
     "sourceRefs": [
       "SRC-013",
       "SRC-049",
-      "SRC-014"
+      "SRC-014",
+      "SRC-050",
+      "SRC-051",
+      "SRC-052"
     ],
-    "researchStatus": "Source scope reviewed; manuscripts not independently authenticated",
+    "researchStatus": "Published texts and archive chronology inspected; original manuscripts not authenticated",
     "objectRefs": [
       "OBJ-1816-0015",
       "OBJ-PERSON-mary-godwin",
       "OBJ-PLACE-013"
     ],
     "primaryObjectId": "OBJ-1816-0015",
-    "sourceLocator": "SRC-013: Notebook A opening paragraph; alternate composition overview, opening two paragraphs. SRC-049: Introduction, pp. vii–viii (rain, ghost stories and Byron’s challenge), signed 15 October 1831. SRC-014: opening origin narrative and The birth of Frankenstein.",
-    "uncertainty": "Notebook A is not the lost first story or a record of the moment of conception. Its dates are an editorial reconstruction. The rain/indoors narrative is a recollection published in 1831, not contemporary weather measurement. These sources do not isolate weather as a cause of creative choices.",
+    "sourceLocator": "SRC-013: Notebook A opening paragraph; alternate composition overview, opening two paragraphs. SRC-049: Introduction, pp. vii–viii (rain, ghost stories and Byron’s challenge), signed 15 October 1831. SRC-014: opening origin narrative and The birth of Frankenstein. SRC-050: June 15–18 entries, especially June 17 p. 125; Introduction pp. 10–11 on the filtered copy and destruction of the original. SRC-051: Letter II, dated 1st June, signed M., pp. 98–100. SRC-052: 15–19 June and 24 July 1816 entries, including MWS Journal I, p. 118 as cited by the archive.",
+    "uncertainty": "The origin sequence remains unresolved. Notebook A is a later draft. The 1831 account is retrospective, not contemporary weather measurement. The filtered diary transmission does not name Frankenstein in its June 17 entry. The 1817 rain letter mentions sunshine too, not a challenge date. Missing journal coverage and shared underlying texts limit corroboration; none isolates weather’s effect on creative choices. Original manuscripts were not authenticated here.",
     "sourceSupport": [
       {
         "sourceId": "SRC-013",
@@ -606,6 +612,24 @@
         "label": "Modern interpretation",
         "supports": "A modern library account of the work’s origins.",
         "limits": "Not independent contemporary corroboration; do not merge its retelling with manuscript evidence."
+      },
+      {
+        "sourceId": "SRC-050",
+        "label": "1816 diary · filtered later transmission",
+        "supports": "The June 17 entry reports the group’s ghost stories begun, before Polidori’s own start; June 15 records a discussion with Shelley.",
+        "limits": "According to its editor, the printed text derives from a filtered family copy after the original was destroyed. Diary wording does not name Frankenstein; bracketed editorial interpretation is not Polidori’s testimony."
+      },
+      {
+        "sourceId": "SRC-051",
+        "label": "1817 publication · letter dated 1 June",
+        "supports": "Letter II reports rain restricting the party mostly to the house and also sunshine intervals.",
+        "limits": "Near-contemporary published account, not a manuscript weather log. It neither mentions the ghost-story challenge nor establishes its date or indoor confinement at Diodati."
+      },
+      {
+        "sourceId": "SRC-052",
+        "label": "Archive comparison · unresolved chronology",
+        "supports": "Compares the June diary entries and later recollection; quotes Shelley’s July 24 journal reference to writing her story.",
+        "limits": "The quoted journal manuscript was not inspected here. Missing journal coverage and competing reconstructions leave the exact start unresolved. The Polidori citations share SRC-050’s underlying text."
       }
     ]
   },

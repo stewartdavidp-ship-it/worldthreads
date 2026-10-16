@@ -165,7 +165,10 @@
     "sourceRefs": [
       "SRC-013",
       "SRC-014",
-      "SRC-049"
+      "SRC-049",
+      "SRC-050",
+      "SRC-051",
+      "SRC-052"
     ],
     "evidenceObservationRefs": [
       "WT-1816-0015"
@@ -987,7 +990,10 @@
     "sourceRefs": [
       "SRC-013",
       "SRC-014",
-      "SRC-049"
+      "SRC-049",
+      "SRC-050",
+      "SRC-051",
+      "SRC-052"
     ],
     "evidenceObservationRefs": [
       "WT-1816-0015"
@@ -2617,10 +2623,13 @@
     "relationshipKind": "HISTORICAL_CLAIM",
     "causalStatus": "CONTRIBUTORY",
     "confidence": "Medium",
-    "explanation": "Shelley’s 1831 recollection connects rainy days indoors with ghost-story reading and Byron’s challenge in 1816. This supports a proposed cultural-context contribution, not an independently isolated effect of weather on creative choices. Notebook A documents drafting, not that behavioral pathway.",
+    "explanation": "The 1817 rain letter supports an indoor-weather context; Polidori’s June 17 diary entry supports ghost-story activity, through later filtered transmission. Shelley’s 1831 account connects those themes. Their combination leaves a cultural-context contribution plausible, but does not establish the exact conception sequence or isolate weather from other influences. Notebook A documents later drafting.",
     "sourceRefs": [
       "SRC-049",
-      "SRC-014"
+      "SRC-014",
+      "SRC-050",
+      "SRC-051",
+      "SRC-052"
     ],
     "evidenceObservationRefs": [
       "WT-1816-0009",
@@ -2631,8 +2640,9 @@
     ],
     "alternatives": [
       "The later author account and modern retelling are not independent contemporary corroboration.",
-      "Literary, social and intellectual influences are not isolated from weather by these records.",
-      "Contemporary letters or diaries are needed to test the behavioral chronology; the surviving draft alone cannot do so."
+      "The diary and the archive chronology share an underlying text; the published diary survives through a filtered copy.",
+      "The rain letter predates the June story entries but does not connect weather to the challenge. Contemporary-dated records support separate parts of the context, not an isolated causal effect.",
+      "Missing journal coverage, uncertain start dates and literary/social/intellectual influences remain unresolved."
     ]
   },
   {
