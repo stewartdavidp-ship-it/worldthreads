@@ -21,6 +21,8 @@ jobs:
       - run: node --check investigations.js
       - run: node --check casefiles.js
       - run: node --check scope-compare.js
+      - run: node --check panel-review.js
+      - run: node --check panel-defense.js
       - run: node --check harvest-reasoning.js
       - run: node --check harvest-inquiry.js
       - run: node --check evidence-boundary.js

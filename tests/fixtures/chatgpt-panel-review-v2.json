@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 2,
+  "requestId": "WT-PANEL-2f6b4f75-2026-10-16T00:10:00.000Z",
+  "status": "Advisory AI critique",
+  "summary": "The investigation asks why the 1816 climate shock coincided with different reported harvest outcomes in the Czech Lands and Chos\u014fn Korea. The provisional thesis is that scholarly reconstructions describe Czech grain losses and subsequent price pressure alongside favorable Korean rice-harvest classifications. This challenges an unqualified uniform-harvest-failure narrative but does not establish why outcomes differed. The scope is the Czech Lands and Korea in 1816\u20131817, with some earlier observations used for chronology. The populations represented by administrative crop reports, price series and local diaries must not be conflated with all households. The principal unresolved questions concern regional weather, crop responses, reporting differences and household food access. The portfolio supplies four claims, three selected evidence records, four bibliographic references, a rival hypothesis, predictions and a pending test. It also supplies an earlier argument version and its revision. The revised argument narrows a claim about actual harvest crises to a claim about reported outcomes. Missing materials include independently authenticated original Korean administrative and diary records, underlying Czech price compilations, matched local weather and crop observations, and household-level evidence. No external source was opened during this review. Portfolio descriptions of earlier inspections are treated as reported audit history, not independent verification by this panel.",
+  "reviewers": [
+    {
+      "role": "history",
+      "strengths": [
+        {
+          "claimId": "C2",
+          "finding": "The Czech record distinguishes 1815\u20131816 harvest difficulties from an 1817 price peak and acknowledges that the reported price series began rising in 1813. This chronology prevents the argument from treating every price increase as a new consequence of the 1816 weather.",
+          "basis": "internal document support",
+          "sourceUrl": "",
+          "locator": ""
+        },
+        {
+          "claimId": "C4",
+          "finding": "The portfolio dates Tambora to April 1815 and explicitly distinguishes modern volcanic-climate attribution from contemporary observations. It does not present retrospective attribution as testimony by historical observers.",
+          "basis": "internal document support",
+          "sourceUrl": "",
+          "locator": ""
+        }
+      ],
+      "concerns": [
+        {
+          "id": "history-1",
+          "claimId": "C2",
+          "finding": "The Czech price sequence includes a pre-1815 rise, reported harvest problems and a later peak. The relative contributions of these developments remain unresolved. Without closer chronology, the sequence cannot establish how much of the price pressure followed the 1816 harvest.",
+          "basis": "methodological concern",
+          "sourceUrl": "",
+          "locator": "",
+          "nextAction": "Compare the dated harvest accounts with the grain-specific price chronology, beginning with the identified sections and Figure 7 of Br\u00e1zdil et al. (2016).",
+          "whatWouldChange": "Dated observations showing a distinguishable change in the price trajectory after documented harvest losses would strengthen the proposed sequence without independently establishing its cause."
+        },
+        {
+          "id": "history-2",
+          "claimId": "C3",
+          "finding": "The Korean evidence combines annual administrative classifications with references to local farming chronology. Whether their observation periods and calendars align closely enough to support a local comparison remains unchecked.",
+          "basis": "unchecked question",
+          "sourceUrl": "",
+          "locator": "",
+          "nextAction": "Check the dates, calendar conventions and geographical references in the underlying Korean records.",
+          "whatWouldChange": "Authenticated dates and locations that align the observations with the relevant crop seasons would permit a more precise comparison."
+        }
+      ]
+    },
+    {
+      "role": "sources",
+      "strengths": [
+        {
+          "claimId": "C2",
+          "finding": "The portfolio identifies Br\u00e1zdil et al. (2016), section 4.2.3 and Figure 7, records different price units for Prague and Moravia, and discloses that the underlying compilations were not independently inspected. These are useful audit locators and limitations, not proof that the cited passages have been verified in this review.",
+          "basis": "internal document support",
+          "sourceUrl": "",
+          "locator": ""
+        },
+        {
+          "claimId": "C3",
+          "finding": "The Korean record separates eight-province harvest reporting from six-province paddy-tax coverage and identifies administrative classifications as different from crop tonnage or household food access.",
+          "basis": "internal document support",
+          "sourceUrl": "",
+          "locator": ""
+        }
+      ],
+      "concerns": [
+        {
+          "id": "sources-1",
+          "claimId": "C2",
+          "finding": "The supplied portfolio reports previous inspection of the scholarly article, but the panel has not verified the exact passages supporting the Czech grain-loss and price claims. The original price compilations also remain unaudited. The reported high confidence cannot substitute for passage-level verification.",
+          "basis": "unchecked question",
+          "sourceUrl": "",
+          "locator": "",
+          "nextAction": "Verify the stated sections and Figure 7 against the published article, then trace the price series to their underlying compilations where accessible.",
+          "whatWouldChange": "Confirmed passages supporting the exact wording, together with verified provenance and units, would strengthen the evidentiary assessment."
+        },
+        {
+          "id": "sources-2",
+          "claimId": "C3",
+          "finding": "The figures of 17 poor-yield prefectures among 336 and 11.2% tax-exempt paddy area are supplied through a scholarly reconstruction. Their precise administrative definitions, denominators and transcription history have not been independently authenticated by this panel.",
+          "basis": "unchecked question",
+          "sourceUrl": "",
+          "locator": "",
+          "nextAction": "Check Kim (2023), section 3, Figure 2 and footnote 2, then trace the cited crop assessments to their original administrative records.",
+          "whatWouldChange": "Verified classifications, denominators and record provenance would support a more precise statement about the reported Korean conditions."
+        },
+        {
+          "id": "sources-3",
+          "claimId": "C4",
+          "finding": "The selected interpretation invokes Luterbacher and Pfister (2015), but its portfolio entry says only a publisher preview was inspected and no precise full-text passage locator is available. This reference cannot presently serve as a verified full-text passage supporting a specific local mechanism.",
+          "basis": "internal document support",
+          "sourceUrl": "",
+          "locator": "",
+          "nextAction": "Obtain and inspect the full commentary if accessible, or retain its preview strictly as limited background context.",
+          "whatWouldChange": "An accessible, verified passage would clarify exactly which climate-antecedent propositions this reference supports."
+        }
+      ]
+    },
+    {
+      "role": "causality",
+      "strengths": [
+        {
+          "claimId": "C1",
+          "finding": "The revised thesis explicitly separates the reported regional contrast from its explanation and from household food access. The portfolio records a rival hypothesis, competing predictions and a pending discriminator rather than presenting the mechanism as resolved.",
+          "basis": "internal document support",
+          "sourceUrl": "",
+          "locator": ""
+        }
+      ],
+      "concerns": [
+        {
+          "id": "causality-1",
+          "claimId": "C1",
+          "finding": "The apparent contrast may arise partly from comparing Czech grain losses and prices with Korean rice classifications. Different outcomes and measurement systems cannot yet distinguish actual crop-response differences from reporting effects.",
+          "basis": "methodological concern",
+          "sourceUrl": "",
+          "locator": "",
+          "nextAction": "Identify the smallest feasible comparison using matched crop types, seasons and reporting definitions.",
+          "whatWouldChange": "Comparable local observations showing a persistent difference after accounting for reporting categories would strengthen the claim of differing crop outcomes."
+        },
+        {
+          "id": "causality-2",
+          "claimId": "C4",
+          "finding": "Tambora is presented as a contributing climate antecedent, but the evidence selected here does not isolate a causal pathway from volcanic forcing to the specific harvest reports or household outcomes in both regions.",
+          "basis": "methodological concern",
+          "sourceUrl": "",
+          "locator": "",
+          "nextAction": "Identify which intermediate weather and agricultural observations would be required before testing a regional mechanism.",
+          "whatWouldChange": "Dated, geographically matched observations supporting the proposed intermediate steps, alongside consideration of rival explanations, would justify a stronger mechanism assessment."
+        },
+        {
+          "id": "causality-3",
+          "claimId": "document",
+          "finding": "The rival predictions are useful but not yet operationalized. The portfolio does not specify how much a contrast must diminish, or what pattern would distinguish reporting differences from real regional differences. The test result remains pending.",
+          "basis": "internal document support",
+          "sourceUrl": "",
+          "locator": "",
+          "nextAction": "Specify observable criteria for the two predictions before examining new records.",
+          "whatWouldChange": "Predetermined comparison criteria and independently checked observations would make the rival test more discriminating."
+        }
+      ]
+    },
+    {
+      "role": "scope",
+      "strengths": [
+        {
+          "claimId": "C3",
+          "finding": "The portfolio explicitly limits Korean administrative evidence by province coverage, crop type and measurement purpose. It also warns against transferring Seoul rainfall observations to Iljik farms or interpreting tax exemptions as direct household welfare measures.",
+          "basis": "internal document support",
+          "sourceUrl": "",
+          "locator": ""
+        }
+      ],
+      "concerns": [
+        {
+          "id": "scope-1",
+          "claimId": "C1",
+          "finding": "The thesis names the Czech Lands and Korea as comparison units, but the selected evidence has different geographical resolutions: Prague and Moravian prices, wider Czech documentary synthesis, and Korean administrative classifications. Their representativeness is not established.",
+          "basis": "methodological concern",
+          "sourceUrl": "",
+          "locator": "",
+          "nextAction": "Map the geographical and population coverage of each observation before treating it as representative of its named region.",
+          "whatWouldChange": "Documented coverage and defensible aggregation rules would justify broader regional language."
+        },
+        {
+          "id": "scope-2",
+          "claimId": "C3",
+          "finding": "Favorable aggregate rice classifications cannot establish that all communities or households avoided shortages. The current selected records do not supply matched household consumption, relief or food-access evidence.",
+          "basis": "methodological concern",
+          "sourceUrl": "",
+          "locator": "",
+          "nextAction": "Seek geographically and temporally matched household, market or relief records, while retaining the current limitation if none can be found.",
+          "whatWouldChange": "Credible local evidence of household conditions would allow a separate, appropriately bounded assessment of food access."
+        }
+      ]
+    },
+    {
+      "role": "communication",
+      "strengths": [
+        {
+          "claimId": "document",
+          "finding": "The recorded revision replaces the stronger statement that the reports demonstrate the absence of a uniform harvest crisis with a narrower claim about contrasting reported outcomes. The portfolio also distinguishes supporting evidence from context, names the rival explanation and states the unresolved causal gap.",
+          "basis": "internal document support",
+          "sourceUrl": "",
+          "locator": ""
+        },
+        {
+          "claimId": "C1",
+          "finding": "The thesis states both what the registered reconstructions reportedly indicate and what they cannot establish. The explicit unresolved conclusion is coherent with the pending research test.",
+          "basis": "internal document support",
+          "sourceUrl": "",
+          "locator": ""
+        }
+      ],
+      "concerns": [
+        {
+          "id": "communication-1",
+          "claimId": "C1",
+          "finding": "The question asks why the shock produced different harvest outcomes, while the thesis currently establishes only a contrast in reports. Readers could mistake the research question's causal premise for an established result.",
+          "basis": "internal document support",
+          "sourceUrl": "",
+          "locator": "",
+          "nextAction": "Check that the question, chapter headings and conclusions consistently distinguish observed reporting differences from the unproven causal explanation.",
+          "whatWouldChange": "Consistent wording that preserves the causal question as unresolved would remove the ambiguity."
+        },
+        {
+          "id": "communication-2",
+          "claimId": "document",
+          "finding": "The portfolio records confidence labels and a peer-review description, but these do not establish independent passage verification. The argument needs to remain clear about what was reviewed previously, what was independently authenticated and what remains pending.",
+          "basis": "methodological concern",
+          "sourceUrl": "",
+          "locator": "",
+          "nextAction": "Maintain a claim-level audit trail distinguishing registered summaries, scholarly passages, original records and unresolved verification.",
+          "whatWouldChange": "A traceable source audit would allow readers to distinguish evidentiary support from workflow status."
+        }
+      ]
+    }
+  ],
+  "disagreements": [
+    "The historical reviewer sees the Czech chronology as a useful bounded sequence, while the causal reviewer emphasizes that this sequence cannot establish the relative contribution of weather to prices. These positions are compatible but lead to different immediate verification priorities.",
+    "The source auditor recognizes unusually specific internal locators and provenance warnings, while the scope reviewer considers geographical and population comparability the more consequential unresolved issue. Passage verification alone would not resolve that comparability problem.",
+    "The communication reviewer regards the narrowed thesis as internally coherent, while the causal reviewer considers the rival predictions insufficiently operationalized. The argument may remain defensible as an explicitly unresolved investigation even if the causal test cannot yet be completed."
+  ],
+  "nextSteps": [
+    "Verify the exact passages and figures supporting C2 and C3 in Br\u00e1zdil et al. (2016) and Kim (2023). Record the wording, measurement units, administrative definitions and source dependencies; distinguish any unavailable original records from inspected scholarship.",
+    "Define one feasible matched comparison of crop, location, season and reporting criteria. Specify what observations would distinguish a substantive regional difference from a classification or coverage effect before evaluating the records.",
+    "Investigate the missing local weather-to-crop and crop-to-household links using dated agricultural, market or relief evidence where available. If the necessary records remain inaccessible, preserve the limited conclusion about contrasting reports."
+  ],
+  "defenseQuestions": [
+    "What exactly do the Czech and Korean sources measure, and which differences remain after accounting for their different crops, geographical coverage and reporting systems?",
+    "Which specific passages support the central claims, and which underlying historical records have not been independently authenticated?",
+    "What observation would most clearly distinguish your proposed regional difference from the rival reporting-system explanation?",
+    "How does the Czech price increase beginning before Tambora affect the causal interpretation of the 1817 peak?",
+    "If matched local records cannot be obtained, what conclusion can you retain without making an unsupported claim about causation or household food access?"
+  ],
+  "sourceChecks": [
+    {
+      "url": "https://cp.copernicus.org/articles/12/1361/2016/index.html",
+      "locator": "Section 4.2.3, pp. 1367\u20131368; Figure 7, p. 1369; sections 5.2\u20135.3",
+      "status": "not checked",
+      "note": "The portfolio reports a previous full-PDF inspection. This panel did not open the article or independently verify its passages or underlying price compilations."
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s10584-023-03480-w",
+      "locator": "Section 3, pp. 6\u20137; Figure 2; footnote 2",
+      "status": "not checked",
+      "note": "The portfolio reports previous inspection of the scholarly article. This panel did not open it or authenticate the underlying administrative reports and diary entries."
+    },
+    {
+      "url": "https://www.nature.com/articles/ngeo2404",
+      "locator": "Publisher summary; precise full-text passage locator not supplied",
+      "status": "not checked",
+      "note": "The portfolio reports previous access to a publisher preview, with full commentary unavailable in that earlier review. This panel did not attempt access and cannot independently confirm current availability."
+    },
+    {
+      "url": "https://cp.copernicus.org/articles/11/1027/2015/cp-11-1027-2015.html",
+      "locator": "Introduction, pp. 1028\u20131029",
+      "status": "not checked",
+      "note": "The portfolio identifies this as background climate evidence and reports earlier inspection. This panel did not open the article. Its underlying evidentiary independence remains unverified here."
+    }
+  ]
+}

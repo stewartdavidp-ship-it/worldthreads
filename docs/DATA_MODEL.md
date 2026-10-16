@@ -153,3 +153,8 @@ An optional `sourceSupport` array records `sourceId`, `label`, `supports` and `l
 ### Visual evidence boundaries (0.5.57)
 
 The first-story timeline's Record/Proposed link/Open question controls are session-only presentation state. They read existing records, REL-0007 and the audited unresolved scope; they do not generate observations, accepted links, source verification, player answers or rewards. The questioned/dashed bridge depicts an interpretation to test, not an estimated effect or probability. Selecting a hypothesis can highlight timeline connectors but keeps them dashed. Gap guidance can focus the existing reasoning field; only the player's writing changes the saved draft. Source/connection inspection retains its existing optional activity rules.
+
+
+### Advisory review basis (0.5.58)
+
+New panel prompts request schemaVersion 2. The schema adds `internal document support` to the existing finding bases. This means support within the supplied writing, not authentication of a historical source. Schema 2 inspected-passage findings require a matching `sourceChecks.url` whose status is `opened` and whose locator is nonempty. This is internal report consistency only; reported opening or inspection remains unauthenticated. Schema 1 remains accepted with its original validation and stored contents. No migration rewrites earlier reports. Human-facing basis disclosures derive from the finding and assistant-reported access, with a warning for an older unmatched passage claim. They never become evidence, a grading signal or a reward.
