@@ -5,3 +5,6 @@
 .question-starter{padding:18px;border:1px solid var(--wt-border);border-radius:14px;background:var(--wt-surface);overflow-wrap:anywhere}.question-starter .starter-question{font-size:1.1em;max-width:65ch}.question-starter .story-back{white-space:normal;max-width:100%;min-height:44px}.question-starter small{color:var(--wt-muted);font-size:.85em}.question-starter-help{margin:14px 0}.question-starter-help>.question-starter{margin-top:12px}.starter-records{margin:16px 0}.starter-records .focus-record{font-size:.9em}
 
 .thesis-focus.needs-question .thesis-focus-next{padding:0;border:0;background:none;margin:12px 0}.thesis-focus.needs-question .thesis-focus-next .focus-next-icon,.thesis-focus.needs-question .thesis-focus-next .eyebrow,.thesis-focus.needs-question #thesisFocusNextTitle,.thesis-focus.needs-question #thesisFocusNextNote{display:none}
+
+/* Returned critique text can contain long source names or URLs. */
+.thesis-focus-next>div{min-width:0}#thesisFocusReview,.defense-resume,.resume-research-context{overflow-wrap:anywhere}

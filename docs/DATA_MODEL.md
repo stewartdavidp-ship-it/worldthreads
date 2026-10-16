@@ -158,3 +158,10 @@ The first-story timeline's Record/Proposed link/Open question controls are sessi
 ### Advisory review basis (0.5.58)
 
 New panel prompts request schemaVersion 2. The schema adds `internal document support` to the existing finding bases. This means support within the supplied writing, not authentication of a historical source. Schema 2 inspected-passage findings require a matching `sourceChecks.url` whose status is `opened` and whose locator is nonempty. This is internal report consistency only; reported opening or inspection remains unauthenticated. Schema 1 remains accepted with its original validation and stored contents. No migration rewrites earlier reports. Human-facing basis disclosures derive from the finding and assistant-reported access, with a warning for an older unmatched passage claim. They never become evidence, a grading signal or a reward.
+
+
+### Returning to a filed investigation (0.5.59)
+
+The overview's review/research suggestion is derived from existing portfolio fingerprints, exact context and filed timestamp, saved critique, player response and chosen research concern. No new stored state is introduced. A critique is recommended as current only if its portfolio fingerprint equals the working draft fingerprint. Earlier valid reviews remain accessible with a changed-draft warning. An open concern is one without a completed player response or one deliberately left for investigation/suspended judgment; this is workflow status, not truth or source verification. Updating a response or selecting a research concern refreshes the overview. Completed filing refreshes it as well, preventing another generic filing prompt for an unchanged filed draft.
+
+The optional next-question preview and review action carry the same concern ID. Viewing the suggestion does not change a saved cursor; deliberately resuming it uses the existing review-position save. Generic review-resume controls continue to honor their saved position.

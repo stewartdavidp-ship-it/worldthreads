@@ -12,3 +12,6 @@ Open https://stewartdavidp-ship-it.github.io/worldthreads/ in a fresh browser pr
 If you already have a filed thesis and an AI critique, try returning that critique to WorldThreads. Describe what the site lets you do that you would miss by staying in the assistant. If you do not have those materials, skip this task rather than inventing a review.
 
 For the observer: record the participant's words, detours, requests for help and any lost work. Mark each task as completed independently, completed with help, or unfinished. Pay special attention to whether they infer a cause from contrasting reports, mistake a lead for evidence, or mistake a badge for scholarly certification. These are usability observations; do not treat completion time as a grade.
+
+
+For a returning player with an existing review: close the site and return after a break. Without help, identify the question you were investigating and use the suggested next step. Explain whether the critique refers to your current writing or an earlier filed version. Find your existing research notes. If you change your claim, check which version the review still applies to. Record confusion, detours and whether the return adds value beyond the assistant conversation; do not treat completion as evidence of learning or source accuracy.
