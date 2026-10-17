@@ -219,9 +219,12 @@
     "counterexamples": [
       "The corpus has no authenticated issue-to-receipt chain for the selected column. This is missing evidence, not proof that delivery failed.",
       "A later reported food store does not trace the origin of workshop equipment or explain the battle.",
-      "Command decisions, force dispositions and opponent actions are competing explanatory questions, not established causes in this pilot."
+      "Command decisions, force dispositions and opponent actions are competing explanatory questions, not established causes in this pilot.",
+      "O’Higgins reports continuing with troops on foot amid mule shortage (WT-1816-0083); the report is a scoped constraint on a frictionless preparation story, not independent proof of a military cause."
     ],
-    "counterexampleObservationIds": [],
+    "counterexampleObservationIds": [
+      "WT-1816-0083"
+    ],
     "researchTests": [
       {
         "id": "receipt",

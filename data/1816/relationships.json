@@ -1011,5 +1011,27 @@
     "confidence": "Medium",
     "lag": "overlapping campaign context",
     "researchStatus": "Targeted printed-source comparison 2026-10-17; no causal attribution"
+  },
+  {
+    "id": "REL-0059",
+    "subjectId": "WT-1816-0030",
+    "objectId": "WT-1816-0083",
+    "predicate": "RELATED_TO",
+    "causalStatus": "ASSOCIATED",
+    "explanation": "The 6 February transport reports add a different division’s local supply and movement context within the broad crossing window. They do not establish Las Heras’s planned provisioning, workshop-to-column delivery or a cause of victory. The periods overlap; the two attributed reports are not independent witnesses.",
+    "sourceRefs": [
+      "SRC-021",
+      "SRC-053",
+      "SRC-054",
+      "SRC-056"
+    ],
+    "alternatives": [
+      "Reported receipt is not an authenticated issue-to-receipt chain",
+      "Fate and timing of the six-mule difference remain unreported",
+      "Different divisions, commodities and reports must retain their scope"
+    ],
+    "confidence": "Medium",
+    "lag": "overlapping campaign context",
+    "researchStatus": "Targeted printed-source inspection 2026-10-17; no causal attribution"
   }
 ]

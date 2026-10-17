@@ -209,11 +209,12 @@
     "id": "THREAD-ANDES",
     "title": "Military preparation across a mountain barrier",
     "subtitle": "South America · 1815–1817 context",
-    "description": "Follow 1816 organization into the 1817 crossing, a reported food-store seizure and battle. Preparation is contributory; the supply report adds context without proving a ration issue; battle sequence is chronological.",
+    "description": "Follow 1816 organization into the crossing, different divisions’ reported food and transport constraints, and battle. These reports add scoped context, not an authenticated equipment delivery chain or a complete military cause.",
     "nodeIds": [
       "WT-1816-0060",
       "WT-1816-0029",
       "WT-1816-0030",
+      "WT-1816-0083",
       "WT-1816-0082",
       "WT-1816-0031"
     ],
@@ -221,7 +222,8 @@
       "REL-0046",
       "REL-0022",
       "REL-0023",
-      "REL-0058"
+      "REL-0058",
+      "REL-0059"
     ],
     "mechanisms": [],
     "mechanismIds": [

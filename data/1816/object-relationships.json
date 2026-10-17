@@ -3879,5 +3879,62 @@
       "WT-1816-0082"
     ],
     "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJCLAIM-0059",
+    "subjectId": "OBJ-1816-0030",
+    "objectId": "OBJ-1816-0083",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "evidenceObservationRefs": [
+      "WT-1816-0030",
+      "WT-1816-0083"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0059"
+    ],
+    "predicate": "RELATED_TO",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "The 6 February transport reports add a different division’s local supply and movement context within the broad crossing window. They do not establish Las Heras’s planned provisioning, workshop-to-column delivery or a cause of victory. The periods overlap; the two attributed reports are not independent witnesses.",
+    "sourceRefs": [
+      "SRC-021",
+      "SRC-053",
+      "SRC-054",
+      "SRC-056"
+    ]
+  },
+  {
+    "id": "OBJLINK-0149",
+    "subjectId": "OBJ-PERSON-ohiggins",
+    "objectId": "OBJ-1816-0083",
+    "predicate": "ATTRIBUTED_REPORT_AUTHOR",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "The printed attribution supplies author or campaign context, not autograph authentication or measured causal influence.",
+    "sourceRefs": [
+      "SRC-056"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0083"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0150",
+    "subjectId": "OBJ-army-andes",
+    "objectId": "OBJ-1816-0083",
+    "predicate": "CAMPAIGN_CONTEXT",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "The printed attribution supplies author or campaign context, not autograph authentication or measured causal influence.",
+    "sourceRefs": [
+      "SRC-056"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0083"
+    ],
+    "evidenceRelationshipRefs": []
   }
 ]

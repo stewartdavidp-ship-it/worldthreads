@@ -2194,14 +2194,16 @@
       "WT-1816-0030",
       "WT-1816-0031",
       "WT-1816-0060",
-      "WT-1816-0082"
+      "WT-1816-0082",
+      "WT-1816-0083"
     ],
     "sourceRefs": [
       "SRC-021",
-      "SRC-035",
       "SRC-053",
       "SRC-054",
-      "SRC-055"
+      "SRC-035",
+      "SRC-055",
+      "SRC-056"
     ],
     "researchStatus": "Evidence-linked seed",
     "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
@@ -4248,5 +4250,51 @@
     "regions": [
       "South America"
     ]
+  },
+  {
+    "observationIds": [
+      "WT-1816-0083"
+    ],
+    "sourceRefs": [
+      "SRC-056"
+    ],
+    "researchStatus": "Targeted printed-source inspection; original authentication open",
+    "focusDates": {
+      "start": "1817-02-06",
+      "end": "1817-02-06",
+      "meaning": "Date of the linked reports, not a complete movement duration, receipt time or lifetime."
+    },
+    "regions": [
+      "South America"
+    ],
+    "id": "OBJ-1816-0083",
+    "type": "EVENT",
+    "subtype": "official_account",
+    "label": "O’Higgins’s transport and movement reports",
+    "description": "Reported mule receipts and movement on foot, in later edited texts dated 6 February 1817.",
+    "identityNote": "An object for the reported acts; not authenticated receipts or a complete route reconstruction."
+  },
+  {
+    "observationIds": [
+      "WT-1816-0083"
+    ],
+    "sourceRefs": [
+      "SRC-056"
+    ],
+    "researchStatus": "Targeted printed-source inspection; original authentication open",
+    "focusDates": {
+      "start": "1817-02-06",
+      "end": "1817-02-06",
+      "meaning": "Date of the linked reports, not a complete movement duration, receipt time or lifetime."
+    },
+    "regions": [
+      "South America"
+    ],
+    "id": "OBJ-PERSON-ohiggins",
+    "type": "PERSON",
+    "subtype": "commander",
+    "label": "Bernardo O’Higgins",
+    "description": "Attributed author of the linked transport and movement reports.",
+    "identityNote": "Evidence-scoped identity for these reports, not a complete biography, authenticated signature or influence ranking."
   }
 ]

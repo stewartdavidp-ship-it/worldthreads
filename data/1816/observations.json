@@ -3310,5 +3310,64 @@
       "OBJ-PLACE-santa-rosa-andes"
     ],
     "primaryObjectId": "OBJ-1816-0082"
+  },
+  {
+    "id": "WT-1816-0083",
+    "title": "O’Higgins reports fewer mules received and troops on foot",
+    "startDate": "1817-02-06",
+    "endDate": "1817-02-06",
+    "datePrecision": "EXACT_DAY",
+    "continent": "South America",
+    "region": "Andes",
+    "historicalEntity": "O’Higgins’s division, Army of the Andes",
+    "place": "Campamento en el Cuzco; guardia de Achupella (report locations as printed)",
+    "system": "HUMAN SYSTEMS",
+    "topic": "reported transport receipts and movement",
+    "analyticalRole": [
+      "PRESSURE",
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Contemporary reports in later edited transcription"
+    ],
+    "observation": "In a 6 February report O’Higgins states that he received 124 of 130 mules sent to him and would move with considerable troops on foot. In another report that day, dated 11 p.m., he reports arrival with much of his division on foot for lack of mules.",
+    "uncertainty": "These are reported counts and movement in two texts attributed to the same commander, not independently checked receipts or witnesses. The six-mule arithmetic difference does not establish death, delay, diversion or any other fate. This is not Las Heras’s division, a food issue, or a trace of Mendoza workshop equipment. No percentage of troops on foot or army-wide loss rate can be derived. The earlier report separately mentions a different transfer of 400 y tantas mules; its denominator must not be mixed with 130. Dates are report dates; exact receipt time and modern camp coordinates remain unresolved.",
+    "sourceLocator": "Bertling (1908), printed p. 21, Documento Nº 18 (PDF page 32): paragraph beginning De las 130 mulas, date/signature below. Printed p. 22, Documento Nº 19 (PDF page 33): opening paragraph and 6 February 1817, 11 p.m. dateline. Printed p. 21 footnote proposes, rather than establishes, the Cuzco camp location.",
+    "confidence": "Medium",
+    "coverageType": "EVENT",
+    "researchStatus": "Printed reports visually checked; original receipts and transmission remain unresolved",
+    "contextNode": true,
+    "sourceRefs": [
+      "SRC-056"
+    ],
+    "sourceSupport": [
+      {
+        "sourceId": "SRC-056",
+        "label": "Two reports, one attributed commander",
+        "supports": "Printed document 18 gives 130 sent and 124 received; document 19 reports arrival on foot by much of the division, attributing this to lack of mules. The second report can be compared with the first report’s intended movement.",
+        "limits": "1908 edited text, not authenticated autograph or a sender/receiver ledger match. Same reporter, different reported acts; neither establishes the fate of six mules, conditions in Las Heras’s division, equipment provenance or a quantified battle contribution."
+      }
+    ],
+    "reportedQuantities": [
+      {
+        "item": "mules reported sent to O’Higgins",
+        "value": 130,
+        "unit": "mules"
+      },
+      {
+        "item": "mules O’Higgins reports received",
+        "value": 124,
+        "unit": "mules"
+      }
+    ],
+    "gapRefs": [
+      "GAP-005"
+    ],
+    "objectRefs": [
+      "OBJ-1816-0083",
+      "OBJ-PERSON-ohiggins",
+      "OBJ-army-andes"
+    ],
+    "primaryObjectId": "OBJ-1816-0083"
   }
 ]
