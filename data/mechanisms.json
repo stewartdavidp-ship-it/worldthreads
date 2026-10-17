@@ -197,10 +197,17 @@
   {
     "id": "MECH-007",
     "name": "Organized capacity → geographic access → campaign",
-    "description": "Preparation can enable access across a barrier without determining a military outcome.",
-    "inputs": [],
-    "intermediateProcesses": [],
-    "possibleOutcomes": [],
+    "description": "A hypothesis to test: preparation could enable geographic access, but production, delivery, receipt and military outcome require different evidence. The present records do not establish the full pathway.",
+    "inputs": [
+      "Hypothesized equipment and provisioning capacity; workshop production is reported, delivery to particular columns is untraced."
+    ],
+    "intermediateProcesses": [
+      "Unresolved: dispatch, transport and receipt by an identified column, with dated quantities and provenance.",
+      "Hypothesized: usable supplies could support continued movement; a planned march and a later store report do not isolate this contribution."
+    ],
+    "possibleOutcomes": [
+      "Possible geographic access, conditional on movement and supply evidence; neither access nor available stores determine a battle result."
+    ],
     "resilienceFactors": [
       "route knowledge",
       "supply capacity"
@@ -209,8 +216,64 @@
       "THREAD-ANDES"
     ],
     "status": "Hypothesis",
-    "counterexamples": [],
-    "counterexampleObservationIds": []
+    "counterexamples": [
+      "The corpus has no authenticated issue-to-receipt chain for the selected column. This is missing evidence, not proof that delivery failed.",
+      "A later reported food store does not trace the origin of workshop equipment or explain the battle.",
+      "Command decisions, force dispositions and opponent actions are competing explanatory questions, not established causes in this pilot."
+    ],
+    "counterexampleObservationIds": [],
+    "researchTests": [
+      {
+        "id": "receipt",
+        "label": "Was it received?",
+        "icon": "mountain",
+        "question": "Did the intended provisioning and night march in Las Heras’s 1 February dispatch occur, and what reached that division?",
+        "source": "Seek dated ration issues and receipts, then a later movement report or diary for this division. Compare dates, issuer, recipient and quantities; authenticate each document and its transmission. The 8 February store report is a different claim, not a receipt for the 1 February plan.",
+        "distinguishes": "Matching issues, receipts and movement entries could connect intention with recorded execution. A plan alone cannot.",
+        "limit": "Unavailable or unmatched records leave execution unresolved; they do not establish that the division went without supplies.",
+        "observationIds": [
+          "WT-1816-0030",
+          "WT-1816-0082"
+        ],
+        "knownLabel": "1 February dispatch",
+        "knownStatus": "Intended provisioning",
+        "missingLabel": "Issue, receipt & movement"
+      },
+      {
+        "id": "origin",
+        "label": "Where did it come from?",
+        "icon": "workshop",
+        "question": "Can a dated equipment issue from the Mendoza workshops be traced to an identified crossing column?",
+        "source": "Seek workshop output and dispatch ledgers alongside transport and column receipt records. Match item descriptions, dates and recipients. Keep weapons and equipment separate from captured food packages; their provenance is not interchangeable.",
+        "distinguishes": "An item-level dispatch and matching receipt could connect production with a column. An approximate workforce or a later food-store total cannot.",
+        "limit": "The heritage account reports production; no inspected ledger here establishes a specific dispatch or receipt. Missing provenance does not prove no contribution.",
+        "observationIds": [
+          "WT-1816-0060",
+          "WT-1816-0030",
+          "WT-1816-0082"
+        ],
+        "knownLabel": "Workshop production",
+        "knownStatus": "Heritage account",
+        "missingLabel": "Dispatch & column receipt"
+      },
+      {
+        "id": "outcome",
+        "label": "What explains victory?",
+        "icon": "battle",
+        "question": "What evidence would distinguish a logistical contribution at Chacabuco from explanations involving command, dispositions or opponent actions?",
+        "source": "Compare dated supply availability and condition with battle reports from both sides, orders and independently sourced accounts of dispositions and command decisions. Test the chronology and scope of each explanation; do not reconstruct deliveries backward from victory.",
+        "distinguishes": "Evidence about operational constraints and competing explanations could test a bounded contribution. Sequence alone does not isolate a cause.",
+        "limit": "The current battle record establishes the reported result, not the relative weight of military causes. These are research hypotheses, not new historical findings.",
+        "observationIds": [
+          "WT-1816-0060",
+          "WT-1816-0030",
+          "WT-1816-0031"
+        ],
+        "knownLabel": "Chacabuco result",
+        "knownStatus": "Chronology ≠ explanation",
+        "missingLabel": "Competing battle accounts"
+      }
+    ]
   },
   {
     "id": "MECH-008",

@@ -1,6 +1,6 @@
 # Distinct investigations, shared research tools
 
-17 October 2026. Updated for 0.5.63. Implementation assessment, not a human usability study. The first story is the reference for depth, not a screen template to copy.
+17 October 2026. Updated for 0.5.64. Implementation assessment, not a human usability study. The first story is the reference for depth, not a screen template to copy.
 
 ## What should be shared
 
@@ -25,6 +25,8 @@ These additions are a first transfer, not full parity. They use the existing the
 
 These are design hypotheses and priorities, not evidence of increased engagement or retention. No new agent/persona playtest or human trial is claimed in this assessment.
 
-Follow-on research gap identified in the dispatch pass: MECH-007 remains a hypothesis with empty input, intermediate-process and possible-outcome lists. The new report does not validate the mechanism. A later pass should define testable preparation/access claims and rival explanations from sourced records, keeping untraced delivery as an explicit missing intermediate step rather than filling the model from the storyboard.
+Follow-on research gap identified in the dispatch pass: At that point MECH-007 had empty input, intermediate-process and possible-outcome lists. The report did not validate the mechanism. The 0.5.64 design pass below supplies conditional questions and explicitly missing steps, not verified delivery or a completed causal chain.
 
 0.5.63 extends the dispatch into a deliberately opened later trace: the 8 February reported store has its own observation and an association within the crossing window. Package units remain distinct, the report can fold away, and copies of the same dispatch remain dependent. It adds research substance without simulating a delivered ration, altering existing rewards or claiming full first-story parity.
+
+0.5.64 adds a distinct post-case research-design choice for the missing Workshop/Battle connection. The player chooses delivery/receipt, equipment origin or battle explanation, inspects existing records, and deliberately takes a bounded question to research. MECH-007 gains testable conditional steps and source-search designs, not a completed mechanism. Viewing does not award points or edit a thesis; an existing plan remains with a separate lead to compare. The next activity should be source retrieval/authentication or observed human confusion, not another speculative transport animation.

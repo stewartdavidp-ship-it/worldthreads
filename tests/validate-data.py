@@ -30,6 +30,13 @@ for x in threads:
  for id in x['relationshipIds']:assert {r[id]['subjectId'],r[id]['objectId']}<=set(x['nodeIds'])
  assert x['mechanismIds'] and all(id in m for id in x['mechanismIds'])
 for x in mechanisms:
+ if 'researchTests' in x:
+  assert x['status']=='Hypothesis' and x['researchTests'],x['id']
+  assert len({q['id'] for q in x['researchTests']})==len(x['researchTests']),x['id']
+  for q in x['researchTests']:
+   assert all(isinstance(q.get(k),str) and q[k].strip() for k in ['id','label','icon','question','source','distinguishes','limit','knownLabel','knownStatus','missingLabel']),x['id']
+   assert q['icon'] in ['mountain','workshop','battle'] and q['observationIds'] and len(set(q['observationIds']))==len(q['observationIds']),x['id']
+   assert all(id in o and any(id in t[tid]['nodeIds'] for tid in x['prototypeThreads']) for id in q['observationIds']),x['id']
  assert all(id in t for id in x['prototypeThreads'])
  assert all(id in o for id in x.get('counterexampleObservationIds',[]))
  assert set(x['prototypeThreads']) == {q['id'] for q in threads if x['id'] in q['mechanismIds']}
