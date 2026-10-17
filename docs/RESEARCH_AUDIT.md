@@ -165,3 +165,26 @@ Find later reports or journals showing actual movement, dated ration issues/rece
 The final dispatch research handoff retains the exact planned-march question for a new empty investigation; existing saved/archived plans receive a comparison lead without replacement. This is editorial research guidance, not newly discovered evidence of execution.
 
 MECH-007 was also inspected: it still labels the organized-capacity/access/campaign mechanism as a hypothesis and its input/process/outcome arrays remain empty. This pass does not populate or validate those steps from a commander’s prospective report. Their incompleteness is a follow-on research task.
+
+
+# Later Andean provisioning report — 17 October 2026, v0.5.63
+
+Follow-up to the 1 February prospective march: looked for later movement/provisioning reports and earlier printed transmission. Added WT-1816-0082 as a separate reported event, rather than packing the later claim into the crossing observation. REL-0058 is RELATED_TO / ASSOCIATED with Medium confidence: the observation windows overlap, so it is not a before/after causal chain. No causal or mechanism confidence increases.
+
+## Inspected sources and locators
+
+- SRC-054: *Gaceta de Buenos Aires*, facsimile volume V, Junta de Historia y Numismática Americana, Compañía Sud-Americana de Billetes de Banco (1914), digitized Harold B. Lee Library copy at https://archive.org/details/gacetadebuenosai05acad. Read the title page (PDF 9: 1914, despite collection catalog 1910), issue headers and relevant columns visually. Printed p. 49 right column (PDF 61, IA leaf 61), 21 February 1817 issue: Las Heras’s 1 February report gives 7 p.m. and the proposed 10 p.m. march after provisioning. Printed p. 46 right column (PDF 58, IA leaf 58), report No. 5, 20 February issue: the final Nota in his 8 February report says he took a store with 100 líos of charque and the same number of fardos of biscuit. Headers were checked at printed pp. 43 and 47. Scanned page images, not OCR alone, support these readings.
+- SRC-055: *Biblioteca de Mayo*, tomo XVI, segunda parte (1963), printed p. 14348 [16], PDF 24: Las Heras’s report No. 5, Santa Rosa, 8 February 1817 at 7 p.m., final Nota. Read its heading, body, date, store note and Es copia attribution to secretary Zenteno. Surrounding PDF pages 16–24 were also read, including earlier engagements and later campaign correspondence. These are contextual checks, not a collation of every adjacent report.
+- SRC-053 was compared with the earlier facsimile for its plan wording. This improves the recorded transmission trail; it does not authenticate the autograph, archival original or original 1817 newspaper paper. The 1914 and 1963 reproductions of the same report are not independent witnesses. SRC-021’s direct-access limit remains unresolved. Catalog/search/blog references were used only to locate the primary printed reproductions, not to substantiate the new observation.
+
+## What the new record does and does not establish
+
+WT-1816-0082 records what Las Heras reported taking. 8 February is the report date, and Santa Rosa the dispatch location; neither is automatically the seizure/distribution time or precise store location. The record retains two original package terms as reportedQuantities, 100 líos of charque (dried meat) and 100 fardos of biscuit. No package weight, common mass, ration count, recipient denominator or issue ledger is supplied. Do not convert the counts into kilograms, rations per soldier or a resolved 1 February handover. Do not treat captured provisions as traced Mendoza workshop output.
+
+The new report links to the Army of the Andes, an attributed-author object for Las Heras, and an evidence-location object for Santa Rosa. Role/context edges remain associations; no biography, motives, store coordinates or causal influence score is inferred. Canonical object membership, source unions and the REL-0058 projection are synchronized. Existing source/observation identities and older filed snapshots are preserved. GAP-005 remains partially addressed and requests issue/receipt records, package definitions and recipients. MECH-007 remains an unvalidated hypothesis; no missing intermediate delivery is filled from this report.
+
+## Presentation and remaining research
+
+After interpreting the plan, a player may explicitly open a later trace, inspect the separate package counts and compare the two dated claims. The whole report and finer details can fold away. Reading changes no evidence role, assertion or reward. The report can enter a fresh thesis’s starting records only after the player finds it; existing selections/writing remain. Research guidance retains the exact missing-issue question. Source warnings now identify a shared source or edition URL and all referenced document titles: sharing a book URL does not establish document identity, and different URLs do not establish independence.
+
+Original manuscripts/paper, quantities actually distributed and recipients remain unverified. Later adjacent claims about fatigue, horses and combat were not added as new accepted observations in this pass. Human comprehension and retention are still open; functional and bounded Chrome checks are recorded in TEST_PLAN.md.

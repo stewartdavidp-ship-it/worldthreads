@@ -15,6 +15,9 @@ for x in observations:
   assert isinstance(x['sourceSupport'],list) and {a['sourceId'] for a in x['sourceSupport']}==set(x['sourceRefs'])
   assert len(x['sourceSupport'])==len(x['sourceRefs'])
   assert all(all(isinstance(a.get(k),str) and a[k].strip() for k in ['sourceId','label','supports','limits']) for a in x['sourceSupport'])
+ if 'reportedQuantities' in x:
+  assert x['reportedQuantities'] and isinstance(x['reportedQuantities'],list),x['id']
+  assert all(isinstance(q,dict) and type(q.get('value')) in (int,float) and q['value']>=0 and all(isinstance(q.get(k),str) and q[k].strip() for k in ['item','unit']) for q in x['reportedQuantities']),x['id']
  assert set(x['analyticalRole']) <= {'STATE','PRESSURE','SHOCK','RESPONSE','OUTCOME','RESILIENCE','ADAPTATION'}
 for x in relationships:
  assert x['subjectId'] in o and x['objectId'] in o

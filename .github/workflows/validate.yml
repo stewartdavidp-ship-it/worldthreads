@@ -20,6 +20,7 @@ jobs:
       - run: node --check relief-trace.js
       - run: node --check andes-connections.js
       - run: node --check andes-dispatch.js
+      - run: node --check andes-stores.js
       - run: node --check progress.js
       - run: node --check investigations.js
       - run: node --check casefiles.js

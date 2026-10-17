@@ -3785,5 +3785,99 @@
     "sourceRefs": [
       "SRC-027"
     ]
+  },
+  {
+    "id": "OBJCLAIM-0058",
+    "subjectId": "OBJ-1816-0030",
+    "objectId": "OBJ-1816-0082",
+    "relationshipKind": "HISTORICAL_CLAIM",
+    "evidenceObservationRefs": [
+      "WT-1816-0030",
+      "WT-1816-0082"
+    ],
+    "evidenceRelationshipRefs": [
+      "REL-0058"
+    ],
+    "predicate": "RELATED_TO",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "The 8 February food-store report adds local supply context within the broader crossing window. It does not confirm the 1 February planned ration issue, trace workshop output to the store or explain victory. The observation windows overlap; this is not a before/after causal chain.",
+    "sourceRefs": [
+      "SRC-053",
+      "SRC-054",
+      "SRC-055"
+    ]
+  },
+  {
+    "id": "OBJLINK-0145",
+    "subjectId": "OBJ-PERSON-las-heras",
+    "objectId": "OBJ-1816-0030",
+    "predicate": "ATTRIBUTED_REPORT_AUTHOR",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "The linked printed report supports this attribution or context, not authenticated handwriting, store coordinates or a measured causal influence.",
+    "sourceRefs": [
+      "SRC-053",
+      "SRC-054"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0030"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0146",
+    "subjectId": "OBJ-PERSON-las-heras",
+    "objectId": "OBJ-1816-0082",
+    "predicate": "ATTRIBUTED_REPORT_AUTHOR",
+    "relationshipKind": "PARTICIPATION",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "The linked printed report supports this attribution or context, not authenticated handwriting, store coordinates or a measured causal influence.",
+    "sourceRefs": [
+      "SRC-054",
+      "SRC-055"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0082"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0147",
+    "subjectId": "OBJ-army-andes",
+    "objectId": "OBJ-1816-0082",
+    "predicate": "CAMPAIGN_CONTEXT",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "The linked printed report supports this attribution or context, not authenticated handwriting, store coordinates or a measured causal influence.",
+    "sourceRefs": [
+      "SRC-054",
+      "SRC-055"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0082"
+    ],
+    "evidenceRelationshipRefs": []
+  },
+  {
+    "id": "OBJLINK-0148",
+    "subjectId": "OBJ-PLACE-santa-rosa-andes",
+    "objectId": "OBJ-1816-0082",
+    "predicate": "DISPATCH_LOCATION",
+    "relationshipKind": "CONTEXT",
+    "causalStatus": "ASSOCIATED",
+    "confidence": "Medium",
+    "explanation": "The linked printed report supports this attribution or context, not authenticated handwriting, store coordinates or a measured causal influence.",
+    "sourceRefs": [
+      "SRC-054",
+      "SRC-055"
+    ],
+    "evidenceObservationRefs": [
+      "WT-1816-0082"
+    ],
+    "evidenceRelationshipRefs": []
   }
 ]

@@ -806,7 +806,41 @@
       "planned provisioning",
       "source transmission"
     ],
-    "notes": "Edition: Senado de la Nación, Biblioteca de Mayo, tomo XVI, segunda parte (1963); scan hosted by Biblioteca del Congreso de la Nación. Printed p. 14337 [5], PDF page 13 of 571. The text bears an Es copia attestation attributed to secretary Zenteno. On p. 14336 the editors identify the enclosing San Martín dispatch and annexes with the 21 February 1817 Extraordinaria de Buenos-Ayres. Surrounding pages were visually read, not the autograph, archival original or newspaper facsimile. Dependence between this edition and the institutional chronology is unverified.",
+    "notes": "Edition: Senado de la Nación, Biblioteca de Mayo, tomo XVI, segunda parte (1963), printed p. 14337 [5], PDF page 13. Copy attestation attributed to secretary Zenteno. On 17 October 2026 its plan wording was visually compared with the 1914 newspaper facsimile, SRC-054, printed p. 49, right column (21 February 1817 issue). These transmit the same dispatch, not independent accounts. The comparison concerns later reproductions, not the autograph, archival original or the original 1817 paper. Dependence on the institutional chronology remains unverified.",
     "accessedDate": "2026-10-16"
+  },
+  {
+    "id": "SRC-054",
+    "type": "Contemporary newspaper in later facsimile",
+    "authorOrOrg": "Gazeta / Extraordinaria de Buenos-Ayres; Junta de Historia y Numismática Americana (facsimile edition)",
+    "title": "Campaign dispatches in the 1914 Gazeta facsimile, volume V",
+    "year": 1914,
+    "url": "https://archive.org/details/gacetadebuenosai05acad",
+    "quality": "Medium-High",
+    "topics": [
+      "Andes",
+      "military reports",
+      "provisioning",
+      "source transmission"
+    ],
+    "notes": "Volume V title page (PDF page 9) gives 1914, although the collection-level catalog says 1910. Digitized Harold B. Lee Library copy. Visually compared printed p. 49, right column (PDF page 61 / IA leaf 61), Las Heras’s 1 February plan in the 21 February 1817 issue; and p. 46, right column, No. 5, final Nota (PDF page 58 / IA leaf 58), his 8 February food-store report in the 20 February issue. These reproduce the same dispatches as the 1963 edition, not independent witnesses. The 1817 paper and autographs were not physically authenticated. OCR was used to locate, not authenticate, passages.",
+    "accessedDate": "2026-10-17"
+  },
+  {
+    "id": "SRC-055",
+    "type": "Contemporary report, later edition",
+    "authorOrOrg": "Juan Gregorio de Las Heras / Senado de la Nación",
+    "title": "Las Heras’s reported food-store seizure, 8 February 1817",
+    "year": 1963,
+    "url": "https://digitales.bcn.gob.ar/files/textos/Biblioteca-de-mayo---Tomo-16---2-parte.pdf#page=24",
+    "quality": "Medium-High",
+    "topics": [
+      "Andes",
+      "reported captured food",
+      "provisioning",
+      "source transmission"
+    ],
+    "notes": "Biblioteca de Mayo, tomo XVI, segunda parte (1963), printed p. 14348 [16], PDF page 24 of 571: report No. 5, Santa Rosa, 8 February 1817 at 7 p.m., final Nota beginning He tomado un almacén. It reports 100 líos of charque and the same number of fardos of biscuit. Package weights, ration issues and recipients are not stated. Compare the same report in SRC-054, printed p. 46, right column: this is a transmission comparison, not independent corroboration. The heading, date, note and Es copia attribution to secretary Zenteno were visually inspected; no autograph or original warehouse ledger authenticated.",
+    "accessedDate": "2026-10-17"
   }
 ]

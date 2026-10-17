@@ -10,10 +10,10 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
   });
   await page.goto(url);
   if(mode==='one-reset'){
-   await page.locator('[data-start-story]').first().waitFor();assert.equal(requests,2);assert.equal(await page.locator('#retryLoad').count(),0);assert.equal(await page.evaluate(()=>state.objects.length),177);assert.equal(await page.evaluate(()=>state.observations.length),81);
+   await page.locator('[data-start-story]').first().waitFor();assert.equal(requests,2);assert.equal(await page.locator('#retryLoad').count(),0);assert.equal(await page.evaluate(()=>state.objects.length),require('../data/objects.json').length);assert.equal(await page.evaluate(()=>state.observations.length),require('../data/1816/observations.json').length);
   }else{
    await page.locator('#retryLoad').waitFor();assert.equal(requests,mode==='persistent-reset'?2:1);assert(await page.locator('#researchMode').isDisabled());assert.equal(await page.evaluate(()=>appLoaded),false);assert.equal(await page.evaluate(()=>state.observations.length),0);assert.equal(await page.evaluate(k=>localStorage.getItem(k),key),saved);
-   recovered=true;await page.click('#retryLoad');await page.locator('[data-start-story]').first().waitFor();assert.equal(await page.evaluate(()=>state.objects.length),177);assert(await page.locator('#researchMode').isEnabled());assert.equal(await page.evaluate(k=>localStorage.getItem(k),key),saved);
+   recovered=true;await page.click('#retryLoad');await page.locator('[data-start-story]').first().waitFor();assert.equal(await page.evaluate(()=>state.objects.length),require('../data/objects.json').length);assert(await page.locator('#researchMode').isEnabled());assert.equal(await page.evaluate(k=>localStorage.getItem(k),key),saved);
   }
   assert.equal(await page.evaluate(k=>localStorage.getItem(k),key),saved);assert.deepEqual(errors,[]);await context.close();
  }

@@ -4,7 +4,7 @@ History isn't a collection of events. It's the threads that connect them.
 
 WorldThreads v0.5 explores the 1816 world through sources, observations, historical objects, relationships, threads and mechanisms. Objects identify people, movements, places, institutions, inventions, works, events, natural hazards and other factors. Observations remain the sourced claims about them.
 
-The prototype supports dark/light themes and adjustable text. It contains 81 observations, 53 sources, 57 observation relationship claims, 23 threads, 12 mechanism hypotheses and 177 objects, including 15 people. Its 199 object links include 57 exact projections of existing claims and 142 documented roles/context links. Coverage spans six continents plus marine records; gaps remain open. Dated antecedents, later outcomes and multi-year reconstructions retain their actual scope.
+The prototype supports dark/light themes and adjustable text. It contains 82 observations, 55 sources, 58 observation relationship claims, 23 threads, 12 mechanism hypotheses and 180 objects, including 16 people. Its 204 object links include 58 exact projections of existing claims and 146 documented roles/context links. Coverage spans six continents plus marine records; gaps remain open. Dated antecedents, later outcomes and multi-year reconstructions retain their actual scope.
 
 ## Ways into the investigation
 

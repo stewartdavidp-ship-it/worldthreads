@@ -184,3 +184,12 @@ WT-1816-0030 retains its identity/date range while adding a source-specific cont
 The two-clock diagram and chosen reading/reveal are session-only presentation state. They change no thesis, role, graph, point or schema. Moving to research after the case uses the existing draft/archive safeguards and may seed the crossing record only into a fresh draft. The visual does not simulate travel, infer route coordinates or count a correct reading as historical verification. Normal story continuation remains available without doing this optional reading exercise.
 
 A dispatch research action can supply an editorial question/source lead only when the target draft is genuinely empty, before default case planning is filled. A saved or archived draft is preserved even if its savedAt field is absent. Existing research questions, source plans and notes are not overwritten; an ephemeral dispatch-lead card provides comparison on that explicit route. No claim, evidence role or verified event is seeded.
+
+
+### Reported package quantities and transmission (0.5.63)
+
+Optional observation reportedQuantities is a list of item/value/unit entries for separately stated counts. Values must be nonnegative numbers and item/unit labels nonempty. These are reported counts, not normalized weights or independent verification. WT-1816-0082 keeps líos of charque and fardos of biscuit separate; no arithmetic total, mass or ration denominator is generated. Source-specific limits and both counts travel into AI context and exports.
+
+The later report has its own observation, author/event/location objects and an ASSOCIATED context relation to the overlapping crossing window. It does not validate a past ration issue or increase MECH-007 confidence. Discovery/quantity-detail state is session-only, and the native document fold changes no assertion or reward. Only an explicit research handoff can seed the found report into an empty draft’s initial records; existing drafts/portfolios remain untouched.
+
+Source provenance reminders group normalized source/edition URLs, naming every referenced document title in a group. A shared URL can contain different documents; it is a cue to investigate identity/transmission, not a verdict that the claims are the same or independently corroborated.

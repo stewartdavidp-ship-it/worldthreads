@@ -1,6 +1,6 @@
 # Distinct investigations, shared research tools
 
-16 October 2026. Updated for 0.5.62. Implementation assessment, not a human usability study. The first story is the reference for depth, not a screen template to copy.
+17 October 2026. Updated for 0.5.63. Implementation assessment, not a human usability study. The first story is the reference for depth, not a screen template to copy.
 
 ## What should be shared
 
@@ -26,3 +26,5 @@ These additions are a first transfer, not full parity. They use the existing the
 These are design hypotheses and priorities, not evidence of increased engagement or retention. No new agent/persona playtest or human trial is claimed in this assessment.
 
 Follow-on research gap identified in the dispatch pass: MECH-007 remains a hypothesis with empty input, intermediate-process and possible-outcome lists. The new report does not validate the mechanism. A later pass should define testable preparation/access claims and rival explanations from sourced records, keeping untraced delivery as an explicit missing intermediate step rather than filling the model from the storyboard.
+
+0.5.63 extends the dispatch into a deliberately opened later trace: the 8 February reported store has its own observation and an association within the crossing window. Package units remain distinct, the report can fold away, and copies of the same dispatch remain dependent. It adds research substance without simulating a delivered ration, altering existing rewards or claiming full first-story parity.

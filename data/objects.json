@@ -686,7 +686,8 @@
     ],
     "sourceRefs": [
       "SRC-021",
-      "SRC-053"
+      "SRC-053",
+      "SRC-054"
     ],
     "researchStatus": "Evidence-linked seed",
     "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
@@ -2192,12 +2193,15 @@
       "WT-1816-0029",
       "WT-1816-0030",
       "WT-1816-0031",
-      "WT-1816-0060"
+      "WT-1816-0060",
+      "WT-1816-0082"
     ],
     "sourceRefs": [
       "SRC-021",
       "SRC-035",
-      "SRC-053"
+      "SRC-053",
+      "SRC-054",
+      "SRC-055"
     ],
     "researchStatus": "Evidence-linked seed",
     "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
@@ -2970,7 +2974,8 @@
     ],
     "sourceRefs": [
       "SRC-021",
-      "SRC-053"
+      "SRC-053",
+      "SRC-054"
     ],
     "researchStatus": "Evidence-linked seed",
     "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
@@ -4167,6 +4172,81 @@
     },
     "regions": [
       "Asia"
+    ]
+  },
+  {
+    "id": "OBJ-1816-0082",
+    "type": "EVENT",
+    "subtype": "official_account",
+    "label": "Reported seizure of food stores",
+    "description": "A military report about captured provisions, not an authenticated warehouse inventory or a ration issue.",
+    "observationIds": [
+      "WT-1816-0082"
+    ],
+    "sourceRefs": [
+      "SRC-054",
+      "SRC-055"
+    ],
+    "researchStatus": "Evidence-linked; printed transmission limits recorded",
+    "identityNote": "Curated from the linked reports; no precise store coordinates, full biography or causal ranking inferred.",
+    "focusDates": {
+      "start": "1817-02-08",
+      "end": "1817-02-08",
+      "meaning": "Window of linked reports, not a lifetime, founding date or exhaustive duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-PERSON-las-heras",
+    "type": "PERSON",
+    "subtype": "commander",
+    "label": "Juan Gregorio de Las Heras",
+    "description": "Commander to whom the linked printed campaign reports are attributed. These records do not provide a complete biography, motives or a measure of influence.",
+    "observationIds": [
+      "WT-1816-0030",
+      "WT-1816-0082"
+    ],
+    "sourceRefs": [
+      "SRC-021",
+      "SRC-053",
+      "SRC-054",
+      "SRC-055"
+    ],
+    "researchStatus": "Evidence-linked; printed transmission limits recorded",
+    "identityNote": "Curated from the linked reports; no precise store coordinates, full biography or causal ranking inferred.",
+    "focusDates": {
+      "start": "1817-01-12",
+      "end": "1817-02-10",
+      "meaning": "Window of linked reports, not a lifetime, founding date or exhaustive duration."
+    },
+    "regions": [
+      "South America"
+    ]
+  },
+  {
+    "id": "OBJ-PLACE-santa-rosa-andes",
+    "type": "PLACE",
+    "subtype": "evidence_location",
+    "label": "Santa Rosa, Chile",
+    "description": "Location named in the 8 February dispatch; the store’s precise location is not established by this object.",
+    "observationIds": [
+      "WT-1816-0082"
+    ],
+    "sourceRefs": [
+      "SRC-054",
+      "SRC-055"
+    ],
+    "researchStatus": "Evidence-linked; printed transmission limits recorded",
+    "identityNote": "Curated from the linked reports; no precise store coordinates, full biography or causal ranking inferred.",
+    "focusDates": {
+      "start": "1817-02-08",
+      "end": "1817-02-08",
+      "meaning": "Window of linked reports, not a lifetime, founding date or exhaustive duration."
+    },
+    "regions": [
+      "South America"
     ]
   }
 ]

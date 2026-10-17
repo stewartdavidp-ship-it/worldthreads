@@ -37,9 +37,9 @@ function sourceProvenanceNotes(draft){
  for(let i=0;i<3;i++){
   const record=thesisRecord(draft['record'+i]);if(!record)continue;selected.push(record);
   const origins=record.reviewStatus?[{key:identity(record.url,record.id),label:'the supplied source URL'}]:(record.sourceRefs||[]).map(id=>{const ref=source(id);return {key:identity(ref?.url,id),label:ref?.title||id};});
-  for(const origin of origins){const group=groups.get(origin.key)||{label:origin.label,entries:new Set()};group.entries.add(i+1);groups.set(origin.key,group);}
+  for(const origin of origins){const group=groups.get(origin.key)||{labels:new Set(),entries:new Set()};group.labels.add(origin.label);group.entries.add(i+1);groups.set(origin.key,group);}
  }
- const notes=[...groups.values()].filter(g=>g.entries.size>1).map(g=>`Evidence entries ${[...g.entries].join(', ')} use the same source (${g.label}). Multiple interpretations of it are not independent corroboration; inspect its underlying evidence.`);
+ const notes=[...groups.values()].filter(g=>g.entries.size>1).map(g=>`Evidence entries ${[...g.entries].join(', ')} use the same source or edition URL (${[...g.labels].join('; ')}). Different documents can share a volume. Check document identity and transmission before claiming independent corroboration.`);
  if(selected.length>1)notes.push('Different source links do not prove independent provenance. Check whether accounts reuse the same document, testimony or scholarship.');
  if(selected.some(r=>r.reviewStatus==='Unreviewed'))notes.push('A selected local candidate is unreviewed. Verify its source and passage before treating it as support.');
  return notes;

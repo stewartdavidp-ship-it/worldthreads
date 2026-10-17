@@ -1135,11 +1135,12 @@
     ],
     "sourceRefs": [
       "SRC-021",
-      "SRC-053"
+      "SRC-053",
+      "SRC-054"
     ],
     "observation": "Multiple columns departed Cuyo in January and the army assembled west of the mountains in February. A Las Heras dispatch dated 1 February describes a planned 10 p.m. march after provisioning with biscuit and wine.",
-    "uncertainty": "The date range combines several columns, not one crossing day. In the 1 February report, the 10 p.m. march after provisioning is prospective: it does not confirm departure, quantities, recipients, workshop origin or losses. The later printed copy was inspected; its autograph and newspaper transmission were not authenticated. A commander’s report is not independent verification of conditions across the army.",
-    "sourceLocator": "SRC-021: 12 January–10 February 1817 entries. SRC-053: printed p. 14337 [5], PDF page 13, Parte del coronel Juan Gregorio de Las Heras, Paramillo de las Cuevas, 1 February 1817; first paragraph gives 7 p.m., final paragraph the planned 10 p.m. march.",
+    "uncertainty": "The date range combines several columns, not one crossing day. The 1 February 10 p.m. march after provisioning is prospective: it confirms neither departure nor a ration issue. Two later printed reproductions of that dispatch were compared, not independent witnesses. The autograph and original 1817 paper remain unauthenticated; quantities, recipients and workshop origin are unresolved.",
+    "sourceLocator": "SRC-021: 12 January–10 February 1817 entries. SRC-053: printed p. 14337 [5], PDF page 13, Parte del coronel Juan Gregorio de Las Heras, Paramillo de las Cuevas, 1 February 1817; first paragraph gives 7 p.m., final paragraph the planned 10 p.m. march. SRC-054: 21 February 1817 issue, facsimile p. 49, right column, Otro del Coronel D. Juan Gregorio de las Heras al general San Martín; PDF page 61 / IA leaf 61.",
     "confidence": "High",
     "coverageType": "EVENT",
     "researchStatus": "Targeted source comparison; transmission and prospective-action limits recorded",
@@ -1147,7 +1148,8 @@
     "objectRefs": [
       "OBJ-1816-0030",
       "OBJ-army-andes",
-      "OBJ-PLACE-028"
+      "OBJ-PLACE-028",
+      "OBJ-PERSON-las-heras"
     ],
     "primaryObjectId": "OBJ-1816-0030",
     "sourceSupport": [
@@ -1161,7 +1163,13 @@
         "sourceId": "SRC-053",
         "label": "Contemporary plan, later printed copy",
         "supports": "Las Heras writes from Paramillo de las Cuevas at 7 p.m. on 1 February; he describes a 10 p.m. march after the troop is provisioned with biscuit and wine. Printed p. 14337, PDF page 13.",
-        "limits": "Prospective action is not completed movement or a ration receipt. No quantities, workshop-to-column transfer or whole-army coverage follow. The 1963 edition prints a copy attestation attributed to secretary Zenteno; the autograph and cited newspaper facsimile were not authenticated. Dependence on the institutional chronology is unverified."
+        "limits": "Prospective action is not completed movement or a ration receipt. The 1963 text bears a copy attestation attributed to secretary Zenteno. Its plan wording was compared with SRC-054, a later facsimile of the same dispatch; this is not independent corroboration or authentication of the autograph or original 1817 paper. Dependence on the institutional chronology is unverified."
+      },
+      {
+        "sourceId": "SRC-054",
+        "label": "Earlier printed transmission · same dispatch",
+        "supports": "The 21 February 1817 newspaper text in the 1914 facsimile, printed p. 49 right column (PDF page 61), contains the 7 p.m. report and proposed 10 p.m. march after provisioning.",
+        "limits": "A reproduction of the same dispatch as SRC-053, not another eyewitness or a completed-delivery record. Comparing printed wording does not authenticate the autograph, original newspaper paper or conditions throughout the army."
       }
     ],
     "gapRefs": [
@@ -3236,5 +3244,71 @@
       "place": "Seoul",
       "meaning": "Two-month reconstructed rainfall totals; not rainfall at Iljik and not daily readings."
     }
+  },
+  {
+    "id": "WT-1816-0082",
+    "title": "Las Heras reports seizing food stores",
+    "startDate": "1817-02-08",
+    "endDate": "1817-02-08",
+    "datePrecision": "EXACT_DAY",
+    "continent": "South America",
+    "region": "Central Chile",
+    "historicalEntity": "Army of the Andes",
+    "place": "Santa Rosa, Chile (dispatch location)",
+    "system": "PRODUCTION & RESOURCES",
+    "topic": "campaign provisioning, reported captured stores",
+    "observation": "In a dispatch dated 8 February 1817, Las Heras reported taking a food store containing 100 líos of charque (dried meat) and 100 fardos of biscuit.",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Contemporary military report in later printed reproductions"
+    ],
+    "sourceRefs": [
+      "SRC-054",
+      "SRC-055"
+    ],
+    "sourceLocator": "SRC-054: 20 February 1817 Extraordinaria, facsimile p. 46, right column, No. 5, final Nota (PDF page 58 / IA leaf 58). SRC-055: Biblioteca de Mayo, printed p. 14348 [16], No. 5, final Nota (PDF page 24).",
+    "uncertainty": "8 February is the report date, not an independently established seizure or distribution time; Santa Rosa is the dispatch location. Líos and fardos are different package terms: weights, contents per package and rations per soldier are unknown. This self-report is not a ration receipt, proof of the 1 February issue or a trace from Mendoza workshops. Both editions transmit the same report, not independent witnesses.",
+    "confidence": "Medium",
+    "coverageType": "EVENT",
+    "researchStatus": "Two later printed transmissions visually compared; original records and distribution unverified",
+    "contextNode": true,
+    "gapRefs": [
+      "GAP-005"
+    ],
+    "reportedQuantities": [
+      {
+        "item": "charque (dried meat)",
+        "value": 100,
+        "unit": "líos"
+      },
+      {
+        "item": "biscuit",
+        "value": 100,
+        "unit": "fardos"
+      }
+    ],
+    "sourceSupport": [
+      {
+        "sourceId": "SRC-054",
+        "label": "Newspaper facsimile · reported seizure",
+        "supports": "Printed p. 46, right column, report No. 5 dated 8 February, final Nota: 100 líos of charque and the same number of fardos of biscuit.",
+        "limits": "1914 reproduction of a commander’s report published on 20 February 1817. No package weights, ration issue, recipient list or 1 February handover is supplied. Same report as SRC-055; not independent corroboration."
+      },
+      {
+        "sourceId": "SRC-055",
+        "label": "Later edition · same report",
+        "supports": "Printed p. 14348, report No. 5 and final Nota reproduce the dated store-seizure claim and the two package counts.",
+        "limits": "1963 edited copy with Es copia attribution to secretary Zenteno. Compared with SRC-054 as the same transmission chain, not a second witness. The autograph and warehouse/issue records remain unauthenticated."
+      }
+    ],
+    "objectRefs": [
+      "OBJ-1816-0082",
+      "OBJ-PERSON-las-heras",
+      "OBJ-army-andes",
+      "OBJ-PLACE-santa-rosa-andes"
+    ],
+    "primaryObjectId": "OBJ-1816-0082"
   }
 ]

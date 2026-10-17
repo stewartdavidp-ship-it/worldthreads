@@ -123,3 +123,8 @@ See FLOW_CAPABILITIES.md for the capability assessment and priorities. Implement
 ## Read a campaign dispatch before drawing the route — 16 October 2026
 
 Implemented in 0.5.62: a visually inspected 1817 Las Heras report in a 1963 documentary edition now enriches the existing crossing record. The crossing chapter replaces its generic illustration with two clocks and a deliberate reading/reveal: report time versus planned march after provisioning. The Spanish, copy transmission, exact page and next evidence expand on demand. A crossing-pair detour leads to the same activity and existing research desk after earning the case. No verified departure, ration receipt, route geometry or delivery quantity is invented; no selection reward or automatic claim is created. The workshop source and REL-0046 now state the untraced delivery boundary; object projections and saved portfolios remain compatible. See RESEARCH_AUDIT.md and TEST_PLAN.md for source and functional scope. Next: later movement/issue/receipt records, original authentication and human interpretation testing.
+
+
+## Follow the plan into a later report — 17 October 2026
+
+Candidate 0.5.63: compared earlier newspaper facsimiles with the later edition and added the separate 8 February reported food-store seizure. A later-trace control reveals package counts without inventing weights or rations, keeps the earlier issue gap open, links the new observation/person/place/context and carries it into a fresh research draft when deliberately found. Existing writing, selections and older portfolios remain. Shared-URL warnings now distinguish a volume from a document. Next research: actual issues/receipts, package weights, recipients and original-record authentication. Human interpretation is still pending.

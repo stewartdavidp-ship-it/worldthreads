@@ -1,0 +1,91 @@
+{
+  "record": {
+    "id": "WT-1816-0030",
+    "title": "Army crosses Andean passes",
+    "startDate": "1817-01-12",
+    "endDate": "1817-02-10",
+    "datePrecision": "DATE_RANGE",
+    "continent": "South America",
+    "region": "Andes",
+    "historicalEntity": "Army of the Andes",
+    "place": "Cuyo–Chile mountain passes",
+    "system": "HUMAN SYSTEMS",
+    "topic": "Army crosses Andean passes",
+    "analyticalRole": [
+      "RESPONSE"
+    ],
+    "evidenceType": [
+      "Institutional chronology",
+      "Contemporary dispatch in later edited transcription"
+    ],
+    "sourceRefs": [
+      "SRC-021",
+      "SRC-053"
+    ],
+    "observation": "Multiple columns departed Cuyo in January and the army assembled west of the mountains in February. A Las Heras dispatch dated 1 February describes a planned 10 p.m. march after provisioning with biscuit and wine.",
+    "uncertainty": "The date range combines several columns, not one crossing day. In the 1 February report, the 10 p.m. march after provisioning is prospective: it does not confirm departure, quantities, recipients, workshop origin or losses. The later printed copy was inspected; its autograph and newspaper transmission were not authenticated. A commander’s report is not independent verification of conditions across the army.",
+    "sourceLocator": "SRC-021: 12 January–10 February 1817 entries. SRC-053: printed p. 14337 [5], PDF page 13, Parte del coronel Juan Gregorio de Las Heras, Paramillo de las Cuevas, 1 February 1817; first paragraph gives 7 p.m., final paragraph the planned 10 p.m. march.",
+    "confidence": "High",
+    "coverageType": "EVENT",
+    "researchStatus": "Targeted source comparison; transmission and prospective-action limits recorded",
+    "contextNode": true,
+    "objectRefs": [
+      "OBJ-1816-0030",
+      "OBJ-army-andes",
+      "OBJ-PLACE-028"
+    ],
+    "primaryObjectId": "OBJ-1816-0030",
+    "sourceSupport": [
+      {
+        "sourceId": "SRC-021",
+        "label": "Institutional sequence",
+        "supports": "Dated departures of several columns in January and the army’s assembly on 10 February 1817.",
+        "limits": "Institutional chronology, not a delivery ledger or causal study. Direct access returned 403 on this recheck; indexed entries were available, but no fresh full-page authentication is claimed."
+      },
+      {
+        "sourceId": "SRC-053",
+        "label": "Contemporary plan, later printed copy",
+        "supports": "Las Heras writes from Paramillo de las Cuevas at 7 p.m. on 1 February; he describes a 10 p.m. march after the troop is provisioned with biscuit and wine. Printed p. 14337, PDF page 13.",
+        "limits": "Prospective action is not completed movement or a ration receipt. No quantities, workshop-to-column transfer or whole-army coverage follow. The 1963 edition prints a copy attestation attributed to secretary Zenteno; the autograph and cited newspaper facsimile were not authenticated. Dependence on the institutional chronology is unverified."
+      }
+    ],
+    "gapRefs": [
+      "GAP-005"
+    ]
+  },
+  "sources": [
+    {
+      "id": "SRC-021",
+      "type": "Institutional historical record",
+      "authorOrOrg": "Instituto Nacional Sanmartiniano",
+      "title": "Cronología Sanmartiniana",
+      "year": 2019,
+      "url": "https://sanmartiniano.cultura.gob.ar/noticia/cronologia-sanmartiniana/",
+      "quality": "High",
+      "topics": [
+        "Andes",
+        "military preparation",
+        "independence"
+      ],
+      "notes": "Entries for 1 August and 30 September 1816, January–February 1817; institutional chronology, not a causal attribution study. Access recheck 16 October 2026: direct page returned 403; indexed entries remained accessible for the departure/assembly sequence. No new full-page or original-record authentication is claimed.",
+      "accessedDate": "2026-10-05"
+    },
+    {
+      "id": "SRC-053",
+      "type": "Contemporary report, later edition",
+      "authorOrOrg": "Juan Gregorio de Las Heras / Senado de la Nación",
+      "title": "Las Heras’s field report, 1 February 1817",
+      "year": 1963,
+      "url": "https://digitales.bcn.gob.ar/files/textos/Biblioteca-de-mayo---Tomo-16---2-parte.pdf#page=13",
+      "quality": "Medium-High",
+      "topics": [
+        "Andes",
+        "military logistics",
+        "planned provisioning",
+        "source transmission"
+      ],
+      "notes": "Edition: Senado de la Nación, Biblioteca de Mayo, tomo XVI, segunda parte (1963); scan hosted by Biblioteca del Congreso de la Nación. Printed p. 14337 [5], PDF page 13 of 571. The text bears an Es copia attestation attributed to secretary Zenteno. On p. 14336 the editors identify the enclosing San Martín dispatch and annexes with the 21 February 1817 Extraordinaria de Buenos-Ayres. Surrounding pages were visually read, not the autograph, archival original or newspaper facsimile. Dependence between this edition and the institutional chronology is unverified.",
+      "accessedDate": "2026-10-16"
+    }
+  ]
+}
