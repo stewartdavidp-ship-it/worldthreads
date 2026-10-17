@@ -3501,10 +3501,11 @@
     "relationshipKind": "HISTORICAL_CLAIM",
     "causalStatus": "CONTRIBUTORY",
     "confidence": "Medium",
-    "explanation": "The heritage account describes workshops producing campaign supplies; their exact share of total equipment is unresolved.",
+    "explanation": "The heritage account describes workshops producing campaign supplies; their exact share of total equipment is unresolved. The crossing chronology and a separate planned march do not trace workshop goods to particular columns or verify receipt.",
     "sourceRefs": [
       "SRC-035",
-      "SRC-021"
+      "SRC-021",
+      "SRC-053"
     ],
     "evidenceObservationRefs": [
       "WT-1816-0060",

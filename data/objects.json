@@ -685,7 +685,8 @@
       "WT-1816-0030"
     ],
     "sourceRefs": [
-      "SRC-021"
+      "SRC-021",
+      "SRC-053"
     ],
     "researchStatus": "Evidence-linked seed",
     "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
@@ -2195,7 +2196,8 @@
     ],
     "sourceRefs": [
       "SRC-021",
-      "SRC-035"
+      "SRC-035",
+      "SRC-053"
     ],
     "researchStatus": "Evidence-linked seed",
     "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",
@@ -2967,7 +2969,8 @@
       "WT-1816-0030"
     ],
     "sourceRefs": [
-      "SRC-021"
+      "SRC-021",
+      "SRC-053"
     ],
     "researchStatus": "Evidence-linked seed",
     "identityNote": "Identity and focus are curated from the existing records; this is not a complete biography or universal importance ranking.",

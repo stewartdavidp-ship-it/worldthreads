@@ -1130,24 +1130,43 @@
       "RESPONSE"
     ],
     "evidenceType": [
-      "Institutional chronology"
+      "Institutional chronology",
+      "Contemporary dispatch in later edited transcription"
     ],
     "sourceRefs": [
-      "SRC-021"
+      "SRC-021",
+      "SRC-053"
     ],
-    "observation": "Multiple columns departed Cuyo in January and crossed the Andes; the army assembled west of the mountains in February.",
-    "uncertainty": "Date range includes several routes and departures rather than one crossing day.",
-    "sourceLocator": "12 January–10 February 1817 entries",
+    "observation": "Multiple columns departed Cuyo in January and the army assembled west of the mountains in February. A Las Heras dispatch dated 1 February describes a planned 10 p.m. march after provisioning with biscuit and wine.",
+    "uncertainty": "The date range combines several columns, not one crossing day. In the 1 February report, the 10 p.m. march after provisioning is prospective: it does not confirm departure, quantities, recipients, workshop origin or losses. The later printed copy was inspected; its autograph and newspaper transmission were not authenticated. A commander’s report is not independent verification of conditions across the army.",
+    "sourceLocator": "SRC-021: 12 January–10 February 1817 entries. SRC-053: printed p. 14337 [5], PDF page 13, Parte del coronel Juan Gregorio de Las Heras, Paramillo de las Cuevas, 1 February 1817; first paragraph gives 7 p.m., final paragraph the planned 10 p.m. march.",
     "confidence": "High",
     "coverageType": "EVENT",
-    "researchStatus": "Source checked",
+    "researchStatus": "Targeted source comparison; transmission and prospective-action limits recorded",
     "contextNode": true,
     "objectRefs": [
       "OBJ-1816-0030",
       "OBJ-army-andes",
       "OBJ-PLACE-028"
     ],
-    "primaryObjectId": "OBJ-1816-0030"
+    "primaryObjectId": "OBJ-1816-0030",
+    "sourceSupport": [
+      {
+        "sourceId": "SRC-021",
+        "label": "Institutional sequence",
+        "supports": "Dated departures of several columns in January and the army’s assembly on 10 February 1817.",
+        "limits": "Institutional chronology, not a delivery ledger or causal study. Direct access returned 403 on this recheck; indexed entries were available, but no fresh full-page authentication is claimed."
+      },
+      {
+        "sourceId": "SRC-053",
+        "label": "Contemporary plan, later printed copy",
+        "supports": "Las Heras writes from Paramillo de las Cuevas at 7 p.m. on 1 February; he describes a 10 p.m. march after the troop is provisioned with biscuit and wine. Printed p. 14337, PDF page 13.",
+        "limits": "Prospective action is not completed movement or a ration receipt. No quantities, workshop-to-column transfer or whole-army coverage follow. The 1963 edition prints a copy attestation attributed to secretary Zenteno; the autograph and cited newspaper facsimile were not authenticated. Dependence on the institutional chronology is unverified."
+      }
+    ],
+    "gapRefs": [
+      "GAP-005"
+    ]
   },
   {
     "id": "WT-1816-0031",
@@ -2307,7 +2326,7 @@
       "SRC-035"
     ],
     "sourceLocator": "Paragraphs beginning La Maestranza se convirtió hacia 1816 and En total",
-    "uncertainty": "The source says 'hacia 1816'; the workforce total is approximate, not a dated census.",
+    "uncertainty": "The source says 'hacia 1816'; approximately 371 is not a dated census. A heritage description of production does not establish dispatch quantities, delivery to a particular column or the share of total campaign equipment. Workshop accounts and payrolls remain uninspected.",
     "researchStatus": "Source checked; limits recorded",
     "contextNode": false,
     "gapRefs": [
@@ -2315,7 +2334,7 @@
     ],
     "value": 371,
     "unit": "workers, approximate heritage-account estimate",
-    "peerReview": "Targeted independent cross-check of Asia/health and Americas/Oceania research; original records accessed as described by sources.",
+    "peerReview": "Targeted research cross-review recorded 5 October 2026; 16 October self-audit re-read the institutional heritage passage. No original payroll, workshop ledger or delivery receipt authenticated.",
     "objectRefs": [
       "OBJ-1816-0060",
       "OBJ-army-andes",
@@ -2323,7 +2342,15 @@
       "OBJ-PLACE-052",
       "OBJ-POLITY-rio-plata"
     ],
-    "primaryObjectId": "OBJ-1816-0060"
+    "primaryObjectId": "OBJ-1816-0060",
+    "sourceSupport": [
+      {
+        "sourceId": "SRC-035",
+        "label": "Later heritage synthesis",
+        "supports": "The paragraphs beginning La Maestranza se convirtió hacia 1816 and En total describe campaign equipment, arms and ammunition and an approximate 371-person workforce across several trades.",
+        "limits": "Undated institutional synthesis credited to the municipality. The workforce is approximate; it is not a dated census, output series, dispatch list or proof of receipt by the crossing columns."
+      }
+    ]
   },
   {
     "id": "WT-1816-0061",

@@ -100,11 +100,12 @@
     "priority": "High",
     "status": "Partially addressed",
     "notes": "Evidence added with source-specific limits; the broader research question remains open.",
-    "updatedDate": "2026-10-06",
+    "updatedDate": "2026-10-16",
     "observationIds": [
       "WT-1816-0058",
       "WT-1816-0059",
-      "WT-1816-0060"
+      "WT-1816-0060",
+      "WT-1816-0030"
     ],
     "threadIds": [
       "THREAD-ANDES",
@@ -113,7 +114,8 @@
     "remainingQuestions": [
       "Find South American weather and crop series without inferring European climate patterns.",
       "Find Mendoza supply accounts and Brazil pension disbursement/teaching records.",
-      "Resolve conflicting building-readiness dates in Biblioteca Nacional (ready by 1823) and Arquivo Nacional (ready in 1826); distinguish construction, inauguration, private teaching and full operation. Source independence is unverified."
+      "Resolve conflicting building-readiness dates in Biblioteca Nacional (ready by 1823) and Arquivo Nacional (ready in 1826); distinguish construction, inauguration, private teaching and full operation. Source independence is unverified.",
+      "Compare the 1 February Las Heras provisioning/march plan with later column journals, ration issues and receipts. The inspected printed copy does not show execution, quantities, losses or a link to Mendoza workshop output."
     ]
   },
   {

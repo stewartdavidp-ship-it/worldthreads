@@ -175,3 +175,12 @@ The selected relief-trace checkpoint is session-only presentation state. The act
 ### Andes pair exploration (0.5.61)
 
 Pair selection and reveal state are session-only. The activity reads existing records WT-1816-0060/0030/0031 and their direct relationships REL-0046/0023. A missing direct relationship is not a claim of no historical influence, and a transitive graph path is not promoted to a new causal assertion. Inspecting the activity assigns no evidence role or reward. A deliberate thesis handoff may prioritize the chosen pair among the new draft’s initial records; IDs must belong to that thread. Existing or archived draft selections/writing are preserved. No new storage field or historical graph data is added.
+
+
+### Andean dispatch reading (0.5.62)
+
+WT-1816-0030 retains its identity/date range while adding a source-specific contemporary plan in later transmission (SRC-053) alongside the institutional sequence. These are separate support roles, not independently authenticated corroboration. Source metadata distinguishes the 1817 report date from the 1963 edition. No plan is promoted to a completed delivery, new causal edge or quantitative time series. Object source unions and REL-0046’s existing claim projection are synchronized; older filed snapshots are not rewritten.
+
+The two-clock diagram and chosen reading/reveal are session-only presentation state. They change no thesis, role, graph, point or schema. Moving to research after the case uses the existing draft/archive safeguards and may seed the crossing record only into a fresh draft. The visual does not simulate travel, infer route coordinates or count a correct reading as historical verification. Normal story continuation remains available without doing this optional reading exercise.
+
+A dispatch research action can supply an editorial question/source lead only when the target draft is genuinely empty, before default case planning is filled. A saved or archived draft is preserved even if its savedAt field is absent. Existing research questions, source plans and notes are not overwritten; an ephemeral dispatch-lead card provides comparison on that explicit route. No claim, evidence role or verified event is seeded.

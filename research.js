@@ -7,8 +7,9 @@ function findingsForDraft(draft){return localFindings().filter(x=>findingBelongs
 function thesisRecord(id){return obs(id)||localFindings().find(x=>x.id===id&&!x.excludedAt);}
 function validThread(id){return state.threads.some(t=>t.id===id);}
 function canUseThesis(){return expeditionFinished()||filedCases().length>0||validThread(readThesisDraft().threadId)||!!historicalObject(readThesisDraft().objectId);}
-function startThreadThesis(id,inquiry=null,preferredRecords=[]){const thread=state.threads.find(t=>t.id===id);if(!thread)return;const existing=readThesisDraft();const previous=existing.threadId||existing.objectId;if(previous&&previous!==id){if(!archiveCurrentDraft(previous)){setExperience('story');openThesisWorkspace(existing);document.getElementById('thesisStatus').textContent='Previous investigation could not be archived. Your current work remains here; download it and resolve the storage problem or tab conflict before switching investigations.';return;}}
+function startThreadThesis(id,inquiry=null,preferredRecords=[],researchLead=null){const thread=state.threads.find(t=>t.id===id);if(!thread)return;const existing=readThesisDraft();const previous=existing.threadId||existing.objectId;if(previous&&previous!==id){if(!archiveCurrentDraft(previous)){setExperience('story');openThesisWorkspace(existing);document.getElementById('thesisStatus').textContent='Previous investigation could not be archived. Your current work remains here; download it and resolve the storage problem or tab conflict before switching investigations.';return;}}
  let draft=existing.threadId===id?existing:{};if(!Object.keys(draft).length)draft=readArchivedDraft(id);
+ const seedResearchLead=researchLead&&['question','source'].every(k=>typeof researchLead[k]==='string'&&researchLead[k].trim()&&researchLead[k].length<=4000)&&Object.entries(draft).every(([key,value])=>key==='argumentRevisions'?Array.isArray(value)&&value.length===0:value===null||value==='');
  const needsTitle=!draft.title;
  draft={...draft,threadId:id,objectId:null,title:draft.title||thread.title,question:draft.question||'',argument:draft.argument||'',status:'Unreviewed research draft'};
  const learningCase=storyCatalog.find(s=>s.thread===id&&storyProgress(s.id).caseFiled),task=learningCase&&caseFileTasks[learningCase.id];
@@ -17,6 +18,7 @@ function startThreadThesis(id,inquiry=null,preferredRecords=[]){const thread=sta
  if(!draft.savedAt)for(let i=0;i<3;i++)if(!draft['record'+i])draft['record'+i]=seeds[i]||'';
  if(task){if(!draft.savedAt&&!draft.question.trim())draft.question=learningCase.question;draft.researchQuestion=draft.researchQuestion||learningCase.question;draft.researchSource=draft.researchSource||task.next[0];draft.caseLimit=draft.caseLimit||task.limits[0];}
 
+ if(seedResearchLead){draft.researchQuestion=researchLead.question;draft.researchSource=researchLead.source;}
  const carried=!!inquiry&&!draft.savedAt&&!draft.argument.trim();
  if(carried){if(needsTitle)draft.title='Comparing Czech and Korean harvest reports';draft.argument=inquiry.claim;draft.question="What can the selected Czech and Korean reports establish about harvest outcomes in 1816, and what remains unexplained?";draft.counterargument=inquiry.limit;draft.researchQuestion=inquiry.next;draft.caseLimit=inquiry.limit;draft.record0="WT-1816-0006";draft.record1="WT-1816-0045";draft.record2="WT-1816-0008";draft.storyPrediction=inquiry.testedPrediction;draft.storyDecision=inquiry.decision;draft.storyBoundary=inquiry.limit;draft.storyConnection=inquiry.reason;}
  activateDraft(draft);

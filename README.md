@@ -4,11 +4,11 @@ History isn't a collection of events. It's the threads that connect them.
 
 WorldThreads v0.5 explores the 1816 world through sources, observations, historical objects, relationships, threads and mechanisms. Objects identify people, movements, places, institutions, inventions, works, events, natural hazards and other factors. Observations remain the sourced claims about them.
 
-The dark-mode prototype contains 78 observations, 48 sources, 55 observation relationship claims, 23 threads, 12 mechanism hypotheses and 173 objects, including 15 people. Its 197 object links include 55 exact projections of existing claims and 142 documented roles/context links. Coverage spans six continents plus marine records; gaps remain open. Dated antecedents, later outcomes and multi-year reconstructions retain their actual scope.
+The prototype supports dark/light themes and adjustable text. It contains 81 observations, 53 sources, 57 observation relationship claims, 23 threads, 12 mechanism hypotheses and 177 objects, including 15 people. Its 199 object links include 57 exact projections of existing claims and 142 documented roles/context links. Coverage spans six continents plus marine records; gaps remain open. Dated antecedents, later outcomes and multi-year reconstructions retain their actual scope.
 
 ## Ways into the investigation
 
-- **Choose a story:** three guided starting points, with an unfolding diagram, evidence detours and open questions. Dutch relief uses four clue-interpretation tasks before advancing.
+- **Choose a story:** three guided starting points, with an unfolding diagram, evidence detours and open questions. Dutch relief uses four clue-interpretation tasks before advancing, then separates purchases/arrival from a decree and unknown household receipt. The Andes combines evidence pairs with a dated field-report reading: an intended march is not a confirmed movement or ration receipt. The stories share research tools while asking different investigative questions.
 - **People, places & things:** start with a familiar object, follow its incoming/outgoing roles and change claims, inspect sources, then enter a thread. Forces affecting a person’s actions or works are distinguished from evidence of their motives. Missing influences can start an object-scoped research question.
 - **Research library:** search/filter all observations, inspect actual relationship endpoints, compare mechanisms and follow research gaps. Context and association never automatically become causal claims.
 
@@ -29,7 +29,7 @@ GitHub Pages serves the static site from `main` at the repository root. `.nojeky
 ## Explore locally
 
 ```bash
-python3 -m http.server 8000
+python3 tests/preview.py --port 8000
 ```
 
 Open http://localhost:8000. No build or runtime package installation is required.

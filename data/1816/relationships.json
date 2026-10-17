@@ -765,18 +765,20 @@
     "objectId": "WT-1816-0030",
     "predicate": "ENABLED",
     "causalStatus": "CONTRIBUTORY",
-    "explanation": "The heritage account describes workshops producing campaign supplies; their exact share of total equipment is unresolved.",
+    "explanation": "The heritage account describes workshops producing campaign supplies; their exact share of total equipment is unresolved. The crossing chronology and a separate planned march do not trace workshop goods to particular columns or verify receipt.",
     "sourceRefs": [
       "SRC-035",
-      "SRC-021"
+      "SRC-021",
+      "SRC-053"
     ],
     "confidence": "Medium",
     "lag": "months",
     "alternatives": [
       "Other supply sources",
-      "Labor and requisition records needed"
+      "Workshop dispatches and column receipt records needed",
+      "A planned ration issue does not demonstrate completed delivery"
     ],
-    "researchStatus": "Source checked; research cross-review 2026-10-05"
+    "researchStatus": "Research cross-review recorded 2026-10-05; targeted source-limit self-audit 2026-10-16"
   },
   {
     "id": "REL-0047",

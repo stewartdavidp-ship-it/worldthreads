@@ -1,0 +1,35 @@
+{
+  "id": "WT-1816-0030",
+  "title": "Army crosses Andean passes",
+  "startDate": "1817-01-12",
+  "endDate": "1817-02-10",
+  "datePrecision": "DATE_RANGE",
+  "continent": "South America",
+  "region": "Andes",
+  "historicalEntity": "Army of the Andes",
+  "place": "Cuyo–Chile mountain passes",
+  "system": "HUMAN SYSTEMS",
+  "topic": "Army crosses Andean passes",
+  "analyticalRole": [
+    "RESPONSE"
+  ],
+  "evidenceType": [
+    "Institutional chronology"
+  ],
+  "sourceRefs": [
+    "SRC-021"
+  ],
+  "observation": "Multiple columns departed Cuyo in January and crossed the Andes; the army assembled west of the mountains in February.",
+  "uncertainty": "Date range includes several routes and departures rather than one crossing day.",
+  "sourceLocator": "12 January–10 February 1817 entries",
+  "confidence": "High",
+  "coverageType": "EVENT",
+  "researchStatus": "Source checked",
+  "contextNode": true,
+  "objectRefs": [
+    "OBJ-1816-0030",
+    "OBJ-army-andes",
+    "OBJ-PLACE-028"
+  ],
+  "primaryObjectId": "OBJ-1816-0030"
+}

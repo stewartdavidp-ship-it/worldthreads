@@ -326,7 +326,7 @@
       "military preparation",
       "independence"
     ],
-    "notes": "Entries for 1 August and 30 September 1816, January–February 1817; institutional chronology, not a causal attribution study.",
+    "notes": "Entries for 1 August and 30 September 1816, January–February 1817; institutional chronology, not a causal attribution study. Access recheck 16 October 2026: direct page returned 403; indexed entries remained accessible for the departure/assembly sequence. No new full-page or original-record authentication is claimed.",
     "accessedDate": "2026-10-05"
   },
   {
@@ -539,8 +539,8 @@
     "topics": [
       "PRODUCTION & RESOURCES"
     ],
-    "notes": "Source entry: Paragraphs beginning La Maestranza se convirtió hacia 1816 and En total",
-    "accessedDate": "2026-10-05"
+    "notes": "Institutional heritage text credited to Municipalidad de la Ciudad de Mendoza. Read paragraphs beginning La Maestranza se convirtió hacia 1816 and En total: approximate 371-person total and trades. Around 1816 is not a precise census date; the account supplies no dispatch, column receipt, quantity series or share of total equipment. No workshop ledger or original payroll was authenticated.",
+    "accessedDate": "2026-10-16"
   },
   {
     "id": "SRC-036",
@@ -791,5 +791,22 @@
       "source dependence"
     ],
     "notes": "Entries for 15–19 June and 24 July 1816 were inspected. The chronology compares the Polidori diary edition, Shelley’s later account and journal references. It does not determine the exact competition/conception sequence and notes missing portions of Shelley’s journal. Its Polidori citations repeat SRC-050’s underlying evidence; they are not another independent witness. Archive quotations were inspected, not the underlying journal manuscript."
+  },
+  {
+    "id": "SRC-053",
+    "type": "Contemporary report, later edition",
+    "authorOrOrg": "Juan Gregorio de Las Heras / Senado de la Nación",
+    "title": "Las Heras’s field report, 1 February 1817",
+    "year": 1963,
+    "url": "https://digitales.bcn.gob.ar/files/textos/Biblioteca-de-mayo---Tomo-16---2-parte.pdf#page=13",
+    "quality": "Medium-High",
+    "topics": [
+      "Andes",
+      "military logistics",
+      "planned provisioning",
+      "source transmission"
+    ],
+    "notes": "Edition: Senado de la Nación, Biblioteca de Mayo, tomo XVI, segunda parte (1963); scan hosted by Biblioteca del Congreso de la Nación. Printed p. 14337 [5], PDF page 13 of 571. The text bears an Es copia attestation attributed to secretary Zenteno. On p. 14336 the editors identify the enclosing San Martín dispatch and annexes with the 21 February 1817 Extraordinaria de Buenos-Ayres. Surrounding pages were visually read, not the autograph, archival original or newspaper facsimile. Dependence between this edition and the institutional chronology is unverified.",
+    "accessedDate": "2026-10-16"
   }
 ]
