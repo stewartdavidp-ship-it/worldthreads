@@ -167,3 +167,8 @@ Candidate 0.5.69 follows the Chrome observation from 0.5.68. When a card has rec
 The new source-disclosure scenario exercises Czech, Dutch, Andes and literary records, keyboard expansion, unchanged model/draft/progress, direct links, fallback relationship caveats, real largest-text control, 320px, themes and sampled accessibility. Fresh Chrome inspection verified Tambora's preview-only warning remains visible with publication notes folded. Automated checks do not establish human understanding of the distinction.
 
 A related short-phone check reproduced an off-screen result after choosing an Andes research question. Its result heading now receives conditional immediate scrolling when outside the visible area. The extended andes-questions scenario passes the 320×650/largest-text reveal and the full source/research/AI-brief/export/saved-plan path. Selecting a question still changes no historical claim, reward or saved argument.
+
+
+## 0.5.70 — later-report reveal on a short phone
+
+The additional 320×650/largest-text check reproduced a hidden later-report heading when opening the 8 February store report. Conditional immediate scrolling now brings that heading into view only when needed. The expanded andes-stores scenario passes its full plan/later report, distinct package units, association/dependent copies, source detour, research/AI brief/export, immutable earlier snapshot and own-writing flow, plus keyboard/themes/sampled accessibility. This focused follow-up does not claim another full-plan run or human comprehension result. Historical data and reward rules remain unchanged. The next mobile check should cover the separate transport-comparison reveal; no failure is asserted until tested.
