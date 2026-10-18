@@ -158,3 +158,12 @@ Candidate 0.5.68: a fresh Chrome Andes walkthrough reached the dispatch, complet
 Observed follow-up: some expanded source cards repeat record-specific caveats in general publication notes. Consider separating publication context behind a labelled disclosure while retaining the visible support/limits and accessible citation; verify all source-inspection and export routes before changing this shared renderer.
 
 The short-phone screenshot also exposed fragmented endpoint labels in the side-by-side pair graphic despite no page overflow. The graphic now stacks at narrow widths and retains whole labels; a layout assertion supplements the heading-visibility check. This visual finding was missed by the previous horizontal-overflow/accessibility checks.
+
+
+## Read a source without repeated publication notes — 18 October 2026
+
+Candidate 0.5.69 follows the Chrome observation from 0.5.68. When a card has record-specific support and limits, these remain immediately readable after opening it; general publication notes and the existing quality assessment now expand separately. Source and alternate-copy links remain directly available. Cards without scoped support retain their general caveat in the open card, rather than hiding the only warning. No text, citation, source identity, access status or export information is deleted. The new disclosure is not an evidence-source activity and earns no additional reward.
+
+The new source-disclosure scenario exercises Czech, Dutch, Andes and literary records, keyboard expansion, unchanged model/draft/progress, direct links, fallback relationship caveats, real largest-text control, 320px, themes and sampled accessibility. Fresh Chrome inspection verified Tambora's preview-only warning remains visible with publication notes folded. Automated checks do not establish human understanding of the distinction.
+
+A related short-phone check reproduced an off-screen result after choosing an Andes research question. Its result heading now receives conditional immediate scrolling when outside the visible area. The extended andes-questions scenario passes the 320×650/largest-text reveal and the full source/research/AI-brief/export/saved-plan path. Selecting a question still changes no historical claim, reward or saved argument.
