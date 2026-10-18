@@ -1236,9 +1236,9 @@
     "sourceRefs": [
       "SRC-022"
     ],
-    "sourceLocator": "Section IV, Figure 3",
-    "uncertainty": "Commodity-specific city series; no national household average is implied.",
-    "researchStatus": "Source checked; limits recorded",
+    "sourceLocator": "Printed p. 63, Figure 3 and note 75; repository PDF page 24 of 35. Monthly Amsterdam rye Exchange prices and Frisian-potato prices, grams of silver per litre; different left/right graph scales.",
+    "uncertainty": "Commodity-specific monthly Amsterdam price series, expressed in silver per litre, not a national average or household intake. Figure 3 uses different axes for rye and potatoes. No causal price effect of the later public purchases is established.",
+    "researchStatus": "Targeted full-text audit; underlying archival records remain uninspected",
     "contextNode": false,
     "gapRefs": [],
     "objectRefs": [
@@ -1246,7 +1246,15 @@
       "OBJ-PLACE-030",
       "OBJ-POLITY-netherlands"
     ],
-    "primaryObjectId": "OBJ-1816-0032"
+    "primaryObjectId": "OBJ-1816-0032",
+    "sourceSupport": [
+      {
+        "sourceId": "SRC-022",
+        "label": "Figure 3 · unlike commodity series",
+        "supports": "The plotted monthly rye and potato series and accompanying text support the reported surge. Note 75 identifies Amsterdam grain-trade records and Posthumus’s price history.",
+        "limits": "This is one study’s compiled price evidence, not a household consumption series. The two commodities use separate graph axes; no exact monthly readings were digitized here. The underlying records were not rechecked."
+      }
+    ]
   },
   {
     "id": "WT-1816-0033",
@@ -1272,9 +1280,9 @@
     "sourceRefs": [
       "SRC-022"
     ],
-    "sourceLocator": "Section IV, Public grain purchases",
-    "uncertainty": "An inventory establishes administrative action, not adequate reserves.",
-    "researchStatus": "Source checked; limits recorded",
+    "sourceLocator": "Printed p. 65, Public grain purchases, opening paragraph and note 82; repository PDF page 26. Citation: Archief Delft, Archief Secretarie gemeente Delft, 2-79, 17 December 1816 no. 3.",
+    "uncertainty": "The article reports an administrative inventory following a provincial request. It does not show reserve adequacy, distribution or household food access; the original municipal paper remains to inspect.",
+    "researchStatus": "Targeted full-text audit; underlying archival records remain uninspected",
     "contextNode": false,
     "gapRefs": [],
     "objectRefs": [
@@ -1282,7 +1290,15 @@
       "OBJ-PLACE-031",
       "OBJ-POLITY-netherlands"
     ],
-    "primaryObjectId": "OBJ-1816-0033"
+    "primaryObjectId": "OBJ-1816-0033",
+    "sourceSupport": [
+      {
+        "sourceId": "SRC-022",
+        "label": "Administrative inventory reported in scholarship",
+        "supports": "The paragraph identifies a provincial request and a Delft merchants’/bakers’ stock inventory in December 1816.",
+        "limits": "The original municipal paper was not inspected. An inventory is not a measured yield, adequate reserve, grain purchase, household receipt or outcome."
+      }
+    ]
   },
   {
     "id": "WT-1816-0034",
@@ -1309,9 +1325,9 @@
     "sourceRefs": [
       "SRC-022"
     ],
-    "sourceLocator": "Section IV, Public grain purchases",
-    "uncertainty": "Imports alone do not establish effective price relief.",
-    "researchStatus": "Source checked; limits recorded",
+    "sourceLocator": "Printed pp. 65–68, Public grain purchases; repository PDF pages 26–29. Notes 84–87 give policy, purchase/account and arrival/sales leads; p. 68 contrasts the timing of public arrivals with private imports.",
+    "uncertainty": "Public purchasing and reported late arrivals do not establish household receipt, identify the decree’s reserved rye as the same grain, or isolate a price effect. Keep private imports separate; the underlying accounts remain uninspected.",
+    "researchStatus": "Targeted full-text audit; underlying archival records remain uninspected",
     "contextNode": false,
     "gapRefs": [],
     "objectRefs": [
@@ -1319,7 +1335,15 @@
       "OBJ-PLACE-032",
       "OBJ-POLITY-netherlands"
     ],
-    "primaryObjectId": "OBJ-1816-0034"
+    "primaryObjectId": "OBJ-1816-0034",
+    "sourceSupport": [
+      {
+        "sourceId": "SRC-022",
+        "label": "Public purchases · timing and price interpretation",
+        "supports": "The text describes commissioning merchants, public grain purchases, arrival timing and subsequent sales. It questions attributing market-price changes to these purchases.",
+        "limits": "Private imports, public stock and the later reserved rye are not identified as the same lot. The merchant and arrival/sales documents cited in notes 85–87 were not independently inspected; this is not a matched delivery chain or causal price estimate."
+      }
+    ]
   },
   {
     "id": "WT-1816-0035",
@@ -1346,9 +1370,9 @@
     "sourceRefs": [
       "SRC-022"
     ],
-    "sourceLocator": "Section IV, decree of 27 June 1817",
-    "uncertainty": "Authorization does not measure delivery or household benefit.",
-    "researchStatus": "Source checked; limits recorded",
+    "sourceLocator": "Printed p. 67, paragraph beginning In the northern Netherlands, and note 94; repository PDF page 28. The article cites Nationaal Archief, Ministry of Finance A, 2.08.01.01, 154-320 (KB 38), for the 27 June 1817 decree.",
+    "uncertainty": "The source supports a reserved quantity and stated purpose, not completed sales, named recipients or household benefit. The original decree and recipient records remain uninspected; evidence about purchases in other provinces is not proof of Amsterdam delivery or failure.",
+    "researchStatus": "Targeted full-text audit; underlying archival records remain uninspected",
     "contextNode": true,
     "gapRefs": [],
     "value": 500,
@@ -1358,7 +1382,15 @@
       "OBJ-PLACE-030",
       "OBJ-POLITY-netherlands"
     ],
-    "primaryObjectId": "OBJ-1816-0035"
+    "primaryObjectId": "OBJ-1816-0035",
+    "sourceSupport": [
+      {
+        "sourceId": "SRC-022",
+        "label": "Decree authorization reported in scholarship",
+        "supports": "The paragraph reports a 27 June decree reserving 500 lasts of rye for reduced-price sales to poorer Amsterdam residents.",
+        "limits": "Neither the decree original nor recipient/sales records were inspected. Do not extend the following discussion of other provinces’ purchases to prove Amsterdam delivery or non-delivery. A last is the reported volume unit, not a household ration."
+      }
+    ]
   },
   {
     "id": "WT-1816-0036",

@@ -1,0 +1,60 @@
+{
+  "record": {
+    "id": "WT-1816-0035",
+    "title": "Subsidized rye authorized for Amsterdam",
+    "startDate": "1817-06-27",
+    "endDate": "1817-06-27",
+    "datePrecision": "EXACT_DAY",
+    "continent": "Europe",
+    "region": "Northwestern Europe",
+    "historicalEntity": "United Kingdom of the Netherlands",
+    "place": "Amsterdam",
+    "observation": "A royal decree reserved 500 lasts of rye for reduced-price sales to poorer Amsterdam residents.",
+    "coverageType": "EVENT",
+    "system": "POWER & CULTURE",
+    "topic": "Targeted food relief",
+    "analyticalRole": [
+      "RESPONSE",
+      "RESILIENCE"
+    ],
+    "evidenceType": [
+      "Royal decree analyzed in scholarship"
+    ],
+    "confidence": "High",
+    "sourceRefs": [
+      "SRC-022"
+    ],
+    "sourceLocator": "Section IV, decree of 27 June 1817",
+    "uncertainty": "Authorization does not measure delivery or household benefit.",
+    "researchStatus": "Source checked; limits recorded",
+    "contextNode": true,
+    "gapRefs": [],
+    "value": 500,
+    "unit": "lasts of rye authorized",
+    "objectRefs": [
+      "OBJ-1816-0035",
+      "OBJ-PLACE-030",
+      "OBJ-POLITY-netherlands"
+    ],
+    "primaryObjectId": "OBJ-1816-0035"
+  },
+  "sources": [
+    {
+      "id": "SRC-022",
+      "type": "Peer-reviewed article",
+      "authorOrOrg": "Jessica Dijkman, Past & Present",
+      "title": "Managing Food Crises: Urban Relief Stocks in Pre-Industrial Holland",
+      "year": 2021,
+      "url": "https://doi.org/10.1093/pastj/gtaa014",
+      "quality": "High",
+      "topics": [
+        "grain prices",
+        "relief",
+        "Netherlands",
+        "trade"
+      ],
+      "notes": "Section IV and Figure 3: archival economic analysis; public imports and price effects require separate assessment.",
+      "accessedDate": "2026-10-05"
+    }
+  ]
+}

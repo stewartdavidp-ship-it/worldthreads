@@ -50,6 +50,7 @@ for x in observations:
  assert x['startDate'] <= x['endDate'],x['id']
  if int(x['id'].split('-')[-1])>=32:assert x.get('uncertainty') and x.get('sourceLocator'),x['id']
 for x in sources:
+ if x.get('alternateUrl'):assert isinstance(x['alternateUrl'],str) and x['alternateUrl'].startswith('https://'),x['id']
  assert x['url'].startswith('https://') and x.get('title') and x.get('authorOrOrg') and x.get('topics'),x['id']
 print(f'PASS: {len(o)} observations, {len(r)} relationships, {len(t)} threads, {len(s)} sources, {len(m)} mechanisms')
 

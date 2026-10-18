@@ -377,7 +377,7 @@
     "alternatives": [
       "administrative stock monitoring"
     ],
-    "researchStatus": "Source checked; research cross-review 2026-10-05"
+    "researchStatus": "Full-text scope audit 2026-10-17; archival originals remain uninspected"
   },
   {
     "id": "REL-0025",
@@ -385,7 +385,7 @@
     "objectId": "WT-1816-0032",
     "predicate": "RESPONDED_TO",
     "causalStatus": "CONTRIBUTORY",
-    "explanation": "Public imports addressed scarcity; beneficial price effects remain contested.",
+    "explanation": "Public purchases were a policy response to scarcity and price pressure. This response link is not evidence that the intervention lowered prices; the study questions that interpretation and distinguishes public and private imports.",
     "sourceRefs": [
       "SRC-022"
     ],
@@ -396,7 +396,7 @@
       "late arrivals",
       "distribution constraints"
     ],
-    "researchStatus": "Source checked; research cross-review 2026-10-05"
+    "researchStatus": "Full-text scope audit 2026-10-17; archival originals remain uninspected"
   },
   {
     "id": "REL-0026",
@@ -404,7 +404,7 @@
     "objectId": "WT-1816-0032",
     "predicate": "RESPONDED_TO",
     "causalStatus": "CONTRIBUTORY",
-    "explanation": "Reduced-price sales targeted food access after price escalation.",
+    "explanation": "The decree authorized reduced-price rye with a stated access purpose after price escalation. This records a policy response, not verified sales, household benefit or a demonstrated effect on prices.",
     "sourceRefs": [
       "SRC-022"
     ],
@@ -413,7 +413,7 @@
     "alternatives": [
       "delivery and beneficiary coverage unresolved"
     ],
-    "researchStatus": "Source checked; research cross-review 2026-10-05"
+    "researchStatus": "Full-text scope audit 2026-10-17; archival originals remain uninspected"
   },
   {
     "id": "REL-0027",

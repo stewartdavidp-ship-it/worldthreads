@@ -1,6 +1,6 @@
 # Distinct investigations, shared research tools
 
-17 October 2026. Updated for 0.5.65. Implementation assessment, not a human usability study. The first story is the reference for depth, not a screen template to copy.
+17 October 2026. Updated for 0.5.66. Implementation assessment, not a human usability study. The first story is the reference for depth, not a screen template to copy.
 
 ## What should be shared
 
@@ -32,3 +32,5 @@ Follow-on research gap identified in the dispatch pass: At that point MECH-007 h
 0.5.64 adds a distinct post-case research-design choice for the missing Workshop/Battle connection. The player chooses delivery/receipt, equipment origin or battle explanation, inspects existing records, and deliberately takes a bounded question to research. MECH-007 gains testable conditional steps and source-search designs, not a completed mechanism. Viewing does not award points or edit a thesis; an existing plan remains with a separate lead to compare. The next activity should be source retrieval/authentication or observed human confusion, not another speculative transport animation.
 
 0.5.65: the receipt question can open an actual transport report from another division. A common-scale count graphic and explicit interpretation distinguish reported receipt from an assumed fate, then expandable printed pages and the same reporter’s later movement account support source inspection. This comparison deliberately does not answer Las Heras’s provisioning or workshop provenance. Its own research handoff seeks matching records; the global play/reward model is unchanged. The source-retrieval gap has produced a scoped new observation rather than a simulated supply chain.
+
+0.5.66 audits the Dutch foundation rather than copying an Andes screen. The separate-ledger activity now leads to precisely located, scoped source passages and an accessible full-text copy; briefs and bibliographies retain that access. The Amsterdam receipt gap remains. A future money-versus-food activity could use the article’s Table 5 only with clear institutional scope, nominal-money and loaf-count distinctions; original records remain to inspect. No household benefit or new visual series has been inferred from those totals.
