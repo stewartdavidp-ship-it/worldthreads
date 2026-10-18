@@ -225,3 +225,19 @@ The accessible Nationaal Archief finding aid for access 2.08.01.01 was read at p
 SRC-057 is explicitly a finding aid used only as a retrieval lead. GAP-013 formalizes the unresolved Dutch original/recipient chain and links the existing four Dutch observations, without adding historical observations, relationships or causal confidence. Its optional sourceTrail distinguishes the study inspected, catalog inspected/original uninspected, and recipient records to seek. Corpus access status is not a player verification, proof of a historical outcome or a new delivery witness. Only deliberate research handoff can seed an empty draft; an existing plan remains with a separate lead to compare.
 
 Official pages used: https://erfgoeddelft.nl/collecties/bronnen-per-thema/bronnen-slavernijverleden (collection context, not 1816 relief data); https://hdl.handle.net/21.12115/NL-DtAD6496487 (another collection item, stalled; not recorded as a link to the cited accounts); finding aid above. All contacts remain untouched. Chrome’s catalog navigation/focus timed out; no new manual Chrome walkthrough or human comprehension result is claimed. Isolated Chromium functional checks are recorded separately.
+
+
+## Workshop-account retrieval follow-up — 18 October 2026
+
+Rechecked the official Instituto Nacional Sanmartiniano volume VI index:
+https://sanmartiniano.cultura.gob.ar/media/uploads/site-31/multimedia/Documentos/6.documentos_para_la_historia_tomo_vi_indice.pdf
+
+The readable index (PDF page 2, printed index pages 512–513) lists document 1086, a Mendoza workshop/laboratory account dated 25 July 1817, and document 1087, a same-date account of workshop work by soldiers and prisoners. These remain catalog descriptions, not inspected account passages. The extracted page-number column is detached from its entries; screenshot retrieval failed with a cache miss. Printed volume page mappings remain unverified. Do not assign record-specific printed locators or transcribe totals from this extraction.
+
+The official publication landing page was found through indexed search results, but fresh direct retrieval returned HTTP 403 through both web retrieval and an external-network request:
+https://sanmartiniano.cultura.gob.ar/noticia/documentos-para-la-historia-del-libertador-general-san-martin/
+The alternate official collection overview also returned 403:
+https://sanmartiniano.cultura.gob.ar/noticia/dia-internacional-del-libro/
+The browser/search service could read the index, while a fresh direct index download also returned 403. This is an access limitation in this session, not evidence that the documents are absent or that the archive lacks them. No full-volume link was recovered, no account totals inspected, and no original authenticated.
+
+Next retrieval target: full volume VI, documents 1086–1087; verify their printed page numbers visually first. Inspect account coverage dates, categories, units, opening balances and whether entries identify issues, destinations or recipients. Even if obtained, a July account must not be assumed to describe January–February deliveries. Seek matching dated issue/receipt records before connecting a particular workshop output to a crossing column. No observations, relationships, mechanisms, object projections, rewards or saved player work were changed in this pass. No application release or browser regression result is claimed for this documentation-only update.

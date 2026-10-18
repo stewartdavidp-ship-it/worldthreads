@@ -144,3 +144,8 @@ Implemented 0.5.66: retrieved and inspected the full study behind the Dutch flow
 ## Follow a citation through a dead end — 18 October 2026
 
 Implemented 0.5.67: original Delft accounts could not be reached; do not graph their totals as authenticated originals. A folded Dutch post-case trail now separates the study, a real archive guide, the uninspected decree and the unlocated recipient record. Players inspect the source’s role, choose a missing step and deliberately take a bounded question into research; existing writing/plans remain with a separate comparison lead. GAP-013 makes this original/recipient chain visible from the library. The finding aid adds one retrieval source, not another delivery witness. Next research: resolve the exact decree item, locate Amsterdam recipient evidence, and authenticate the separate Delft accounts. Uncoached human testing remains pending.
+
+
+## Workshop-account access check — 18 October 2026
+
+Revisited the next Andes source-retrieval lead. The official volume VI index is readable through the research service, but full-publication and alternate collection pages return 403; a fresh direct index download also returns 403. Documents 1086–1087 remain uninspected July 1817 accounts. RESEARCH_AUDIT.md now records the exact retrieval target, access attempts and the coverage/recipient questions to check before using any totals. No historical or UI change is warranted from this index alone. This task remains open pending full text; do not repeat the same blocked URLs without a new access route. Next independent work can assess the three-story end-to-end flow or retrieve another identified original; human comprehension and return interest still require participant testing.
