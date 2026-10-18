@@ -292,5 +292,84 @@
       "Compare the 1817 published rain narrative, June diary activity and 1831 recollection without inventing an exact conception date or a weather effect."
     ],
     "notes": "Digital passages now support a bounded context/chronology comparison. Manuscript authentication, the exact origin sequence and an isolated behavioral mechanism remain unresolved; the archive chronology is not an extra independent Polidori witness."
+  },
+  {
+    "id": "GAP-013",
+    "region": "Netherlands / Amsterdam and Delft",
+    "domain": "relief implementation + source transmission",
+    "question": "Can the recorded relief response be traced through original documents to completed sales and recipient access?",
+    "priority": "High",
+    "status": "Open",
+    "updatedDate": "2026-10-18",
+    "observationIds": [
+      "WT-1816-0032",
+      "WT-1816-0033",
+      "WT-1816-0034",
+      "WT-1816-0035"
+    ],
+    "threadIds": [
+      "THREAD-DUTCH-RELIEF"
+    ],
+    "sourceRefs": [
+      "SRC-022",
+      "SRC-057"
+    ],
+    "notes": "The study and a relevant finding aid were inspected. Original decree, accounts and recipient entries remain uninspected; the catalog is a research lead, not another delivery witness.",
+    "remainingQuestions": [
+      "Resolve the cited 154-320 (KB 38) archival item and inspect its original text and transmission.",
+      "Locate dated Amsterdam subsidized-sales or recipient evidence and test whether it concerns the same reserved rye.",
+      "The Delft charity account references in Table 5 (447-1162 and 237) remain uninspected. Persistent-link access stalled; no money-versus-food graphic is inferred from authenticated originals in this pass.",
+      "Keep public import records, authorization, regular institutional relief and household food access separate; preserve city, commodity, date and institutional coverage."
+    ],
+    "sourceTrail": [
+      {
+        "id": "study",
+        "label": "Read the study",
+        "status": "Study read in the source audit",
+        "kind": "STUDY",
+        "sourceId": "SRC-022",
+        "locator": "Dijkman (2021), printed p. 67, note 94; Utrecht repository PDF page 28 of 35.",
+        "detail": "The study reports a decree reserving 500 lasts for reduced-price sales in Amsterdam. Its footnote points to an archival citation, not named recipient entries.",
+        "limit": "The DOI and repository copy are one publication. Reading its account does not authenticate the original decree or prove completed sales.",
+        "question": "What does Dijkman’s decree paragraph establish, and which part of the Amsterdam distribution claim still needs an original record?",
+        "source": "Read printed p. 67 and note 94 in Dijkman (2021), https://research-portal.uu.nl/ws/files/233449012/gtaa014.pdf#page=28. Trace the decree citation before assessing actual sales or household receipt.",
+        "recordIds": [
+          "WT-1816-0035",
+          "WT-1816-0034"
+        ]
+      },
+      {
+        "id": "archive",
+        "label": "Find the decree",
+        "status": "Archive guide read · decree still to check",
+        "kind": "CATALOG",
+        "sourceId": "SRC-057",
+        "locator": "Article note 94: Nationaal Archief, Ministry of Finance A, 2.08.01.01, 154-320 (KB 38). Finding aid printed/PDF pp. 39–40.",
+        "detail": "The finding aid describes relevant grain-purchase, decree and arrival/sales material. It supplies a collection route, not the text of the cited decree.",
+        "limit": "The exact mapping from the article’s 154-320 (KB 38) to the underlying item is unresolved. Do not substitute a catalog description for inspection of that item.",
+        "question": "Which original item corresponds to the 27 June 1817 decree cited as 154-320 (KB 38), and what does its actual text authorize?",
+        "source": "Start with Nationaal Archief access 2.08.01.01, finding aid pp. 39–40, https://www.nationaalarchief.nl/onderzoeken/archief/2.08.01.01/download/pdf#page=39. Resolve the article’s archival citation, then inspect the original decree and transmission. The catalog is not the decree or a receipt.",
+        "recordIds": [
+          "WT-1816-0035",
+          "WT-1816-0034"
+        ]
+      },
+      {
+        "id": "recipients",
+        "label": "Find who received it",
+        "status": "Recipient records still to find",
+        "kind": "MISSING",
+        "sourceId": null,
+        "locator": "No dated Amsterdam recipient or subsidized-sales entries have been inspected for this reserved rye.",
+        "detail": "Look for entries that connect a date, quantity and sale price with recipients or recipient categories. Establish whether they concern the same reserved rye.",
+        "limit": "No specific recipient ledger has been located here. Unavailable records do not prove failed delivery, and records from another town do not establish Amsterdam receipt.",
+        "question": "Which dated sales or recipient records could establish who obtained Amsterdam’s reserved rye, at what price and when?",
+        "source": "Seek relevant municipal or provincial sales/distribution records. Match commodity, reserved stock, dates, prices and recipient categories. Record an unavailable source as unresolved; do not equate public imports, another town’s relief or authorization with this delivery. No exact recipient ledger is supplied by the current corpus.",
+        "recordIds": [
+          "WT-1816-0035",
+          "WT-1816-0034"
+        ]
+      }
+    ]
   }
 ]

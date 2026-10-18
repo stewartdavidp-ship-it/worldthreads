@@ -42,6 +42,14 @@ for x in mechanisms:
  assert set(x['prototypeThreads']) == {q['id'] for q in threads if x['id'] in q['mechanismIds']}
 g=indexed(gaps)
 for x in gaps:
+ assert all(id in s for id in x.get('sourceRefs',[])),x['id']
+ if 'sourceTrail' in x:
+  assert x['sourceTrail'] and len({q['id'] for q in x['sourceTrail']})==len(x['sourceTrail']),x['id']
+  for q in x['sourceTrail']:
+   assert all(isinstance(q.get(k),str) and q[k].strip() for k in ['id','label','status','kind','locator','detail','limit','question','source']),x['id']
+   assert q['kind'] in ['STUDY','CATALOG','MISSING'],x['id']
+   assert (q['sourceId'] is None if q['kind']=='MISSING' else q['sourceId'] in x['sourceRefs']),x['id']
+   assert q['recordIds'] and len(set(q['recordIds']))==len(q['recordIds']) and set(q['recordIds'])<=set(x['observationIds']),x['id']
  assert all(id in o for id in x.get('observationIds',[]))
  assert all(id in t for id in x.get('threadIds',[]))
  if x['status']=='Partially addressed':assert x.get('observationIds') and x.get('remainingQuestions'),x['id']

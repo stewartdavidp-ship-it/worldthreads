@@ -860,5 +860,22 @@
     ],
     "notes": "H. Bertling, Documentos históricos referentes al paso de Los Andes (Concepción, 1908), printed pp. 21–22, documents 18–19; PDF pages 32–33 of 181. Title page, both reports and the editorial location footnote were visually inspected. Document 18 prints 130 mules reported sent and 124 received, not the erroneous OCR reading; it separately mentions a different transfer of 400 y tantas mules. Document 19, dated 6 February at 11 p.m., reports arrival with much of the division on foot for lack of mules. Both are attributed to the same commander and are not independent corroboration. No autograph, issue ledger or original receipt was authenticated. Editor’s proposed location for Cuzco is conjectural; no modern coordinates inferred. Catalog: https://www.memoriachilena.gob.cl/602/w3-article-9227.html (MC0027393), marks the digitized document patrimonio cultural común.",
     "accessedDate": "2026-10-17"
+  },
+  {
+    "id": "SRC-057",
+    "type": "Official archival finding aid",
+    "authorOrOrg": "Nationaal Archief, Den Haag",
+    "title": "Finding aid: Ministry of Finance, 1813–1830, access 2.08.01.01",
+    "year": null,
+    "url": "https://www.nationaalarchief.nl/onderzoeken/archief/2.08.01.01/download/pdf#page=39",
+    "quality": "High for collection description; not historical-record verification",
+    "topics": [
+      "Dutch relief",
+      "archive navigation",
+      "grain trade",
+      "source retrieval"
+    ],
+    "notes": "Finding aid, printed/PDF pp. 39–40: describes public grain-purchase material, reports to the king, royal decrees/correspondence, and Amsterdam arrival/sales statements. The catalog directs requests for the purchase/distribution material to inventory 154; it does not authenticate Dijkman’s particular KB 38 citation or establish a modern item-by-item mapping for 154-320. Underlying documents, recipient lists and the original 27 June decree were not inspected. This source is used as a retrieval lead only, not independent support for grain delivery or household benefit. The exact Delft charity accounts remained inaccessible in this pass; they are a separate archive.",
+    "accessedDate": "2026-10-18"
   }
 ]

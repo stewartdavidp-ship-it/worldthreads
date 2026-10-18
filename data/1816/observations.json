@@ -1240,7 +1240,9 @@
     "uncertainty": "Commodity-specific monthly Amsterdam price series, expressed in silver per litre, not a national average or household intake. Figure 3 uses different axes for rye and potatoes. No causal price effect of the later public purchases is established.",
     "researchStatus": "Targeted full-text audit; underlying archival records remain uninspected",
     "contextNode": false,
-    "gapRefs": [],
+    "gapRefs": [
+      "GAP-013"
+    ],
     "objectRefs": [
       "OBJ-1816-0032",
       "OBJ-PLACE-030",
@@ -1284,7 +1286,9 @@
     "uncertainty": "The article reports an administrative inventory following a provincial request. It does not show reserve adequacy, distribution or household food access; the original municipal paper remains to inspect.",
     "researchStatus": "Targeted full-text audit; underlying archival records remain uninspected",
     "contextNode": false,
-    "gapRefs": [],
+    "gapRefs": [
+      "GAP-013"
+    ],
     "objectRefs": [
       "OBJ-1816-0033",
       "OBJ-PLACE-031",
@@ -1329,7 +1333,9 @@
     "uncertainty": "Public purchasing and reported late arrivals do not establish household receipt, identify the decree’s reserved rye as the same grain, or isolate a price effect. Keep private imports separate; the underlying accounts remain uninspected.",
     "researchStatus": "Targeted full-text audit; underlying archival records remain uninspected",
     "contextNode": false,
-    "gapRefs": [],
+    "gapRefs": [
+      "GAP-013"
+    ],
     "objectRefs": [
       "OBJ-1816-0034",
       "OBJ-PLACE-032",
@@ -1374,7 +1380,9 @@
     "uncertainty": "The source supports a reserved quantity and stated purpose, not completed sales, named recipients or household benefit. The original decree and recipient records remain uninspected; evidence about purchases in other provinces is not proof of Amsterdam delivery or failure.",
     "researchStatus": "Targeted full-text audit; underlying archival records remain uninspected",
     "contextNode": true,
-    "gapRefs": [],
+    "gapRefs": [
+      "GAP-013"
+    ],
     "value": 500,
     "unit": "lasts of rye authorized",
     "objectRefs": [

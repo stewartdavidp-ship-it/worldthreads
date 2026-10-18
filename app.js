@@ -3,7 +3,7 @@ const state={observations:[],relationships:[],threads:[],sources:[],mechanisms:[
 let appLoaded=false;
 async function fetchCollection(path){
  for(let attempt=0;attempt<2;attempt++)try{
-  const response=await fetch(path+'?v=0.5.66',{cache:'no-cache'});
+  const response=await fetch(path+'?v=0.5.67',{cache:'no-cache'});
   if(!response.ok)throw Error('Evidence collection unavailable ('+response.status+')');
   const value=await response.json();if(!Array.isArray(value))throw Error('An evidence collection has an invalid format');return value;
  }catch(error){
@@ -99,7 +99,7 @@ function render(){
   [...new Set(state.observations.map(o=>o.continent))].sort().forEach(region=>{const option=document.createElement('option');option.value=region;option.textContent=region;select.appendChild(option);});
   const evidenceSelect=document.getElementById('evidenceSelect');
   [...new Set(state.observations.flatMap(o=>o.evidenceType))].sort().forEach(type=>{const option=document.createElement('option');option.value=type;option.textContent=type;evidenceSelect.appendChild(option);});
-  document.getElementById('researchGaps').innerHTML=state.gaps.map(g=>`<article class="relation-item"><h4>${escapeHtml(g.region)} · ${escapeHtml(g.status)}</h4><p>${escapeHtml(g.question)}</p><p>${escapeHtml(g.notes||'')}</p><details><summary>${g.observationIds?.length||0} linked records · evidence added</summary><div class="gap-links">${(g.observationIds||[]).map(id=>`<button class="filter" data-observation="${escapeAttr(id)}">${escapeHtml(obs(id)?.title||id)}</button>`).join('')}</div><div class="gap-links">${(g.threadIds||[]).map(id=>`<button class="filter" data-thread="${escapeAttr(id)}">Thread: ${escapeHtml(state.threads.find(t=>t.id===id)?.title||id)}</button>`).join('')}</div></details><h5>Still unresolved</h5><ul>${(g.remainingQuestions||[]).map(q=>`<li>${escapeHtml(q)}</li>`).join('')}</ul></article>`).join('');
+  document.getElementById('researchGaps').innerHTML=state.gaps.map(g=>`<article class="relation-item"><h4>${escapeHtml(g.region)} · ${escapeHtml(g.status)}</h4><p>${escapeHtml(g.question)}</p><p>${escapeHtml(g.notes||'')}</p><details><summary>${g.observationIds?.length||0} linked records · evidence added</summary><div class="gap-links">${(g.observationIds||[]).map(id=>`<button class="filter" data-observation="${escapeAttr(id)}">${escapeHtml(obs(id)?.title||id)}</button>`).join('')}</div><div class="gap-links">${(g.threadIds||[]).map(id=>`<button class="filter" data-thread="${escapeAttr(id)}">Thread: ${escapeHtml(state.threads.find(t=>t.id===id)?.title||id)}</button>`).join('')}</div>${g.sourceRefs?.length?`<p>Source and retrieval basis: ${(g.sourceRefs||[]).map(source).filter(Boolean).map(s=>`<a href="${escapeAttr(s.url)}" target="_blank" rel="noreferrer">${escapeHtml(s.title)} · ${escapeHtml(s.type)} ↗</a>`).join(' · ')}</p>`:''}</details><h5>Still unresolved</h5><ul>${(g.remainingQuestions||[]).map(q=>`<li>${escapeHtml(q)}</li>`).join('')}</ul></article>`).join('');
 
 }
 

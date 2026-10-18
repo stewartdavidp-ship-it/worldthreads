@@ -1,6 +1,6 @@
 # Distinct investigations, shared research tools
 
-17 October 2026. Updated for 0.5.66. Implementation assessment, not a human usability study. The first story is the reference for depth, not a screen template to copy.
+18 October 2026. Updated for 0.5.67. Implementation assessment, not a human usability study. The first story is the reference for depth, not a screen template to copy.
 
 ## What should be shared
 
@@ -34,3 +34,5 @@ Follow-on research gap identified in the dispatch pass: At that point MECH-007 h
 0.5.65: the receipt question can open an actual transport report from another division. A common-scale count graphic and explicit interpretation distinguish reported receipt from an assumed fate, then expandable printed pages and the same reporter’s later movement account support source inspection. This comparison deliberately does not answer Las Heras’s provisioning or workshop provenance. Its own research handoff seeks matching records; the global play/reward model is unchanged. The source-retrieval gap has produced a scoped new observation rather than a simulated supply chain.
 
 0.5.66 audits the Dutch foundation rather than copying an Andes screen. The separate-ledger activity now leads to precisely located, scoped source passages and an accessible full-text copy; briefs and bibliographies retain that access. The Amsterdam receipt gap remains. A future money-versus-food activity could use the article’s Table 5 only with clear institutional scope, nominal-money and loaf-count distinctions; original records remain to inspect. No household benefit or new visual series has been inferred from those totals.
+
+0.5.67 follows the Dutch citation into a genuine retrieval limit. The folded post-case source trail uses book/document/people graphics for study → cited original → recipient evidence, with plain access-status labels, references and limits on demand. A chosen missing step becomes a research question only by explicit handoff; it cannot verify delivery or rewrite an existing plan. The finding aid and new Dutch gap distinguish available metadata from uninspected documents. The proposed money-versus-food series is deferred because original Delft accounts remain inaccessible in this pass; no substitute data or invented receipt is supplied.
