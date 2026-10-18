@@ -149,3 +149,12 @@ Implemented 0.5.67: original Delft accounts could not be reached; do not graph t
 ## Workshop-account access check — 18 October 2026
 
 Revisited the next Andes source-retrieval lead. The official volume VI index is readable through the research service, but full-publication and alternate collection pages return 403; a fresh direct index download also returns 403. Documents 1086–1087 remain uninspected July 1817 accounts. RESEARCH_AUDIT.md now records the exact retrieval target, access attempts and the coverage/recipient questions to check before using any totals. No historical or UI change is warranted from this index alone. This task remains open pending full text; do not repeat the same blocked URLs without a new access route. Next independent work can assess the three-story end-to-end flow or retrieve another identified original; human comprehension and return interest still require participant testing.
+
+
+## Keep the revealed connection in sight — 18 October 2026
+
+Candidate 0.5.68: a fresh Chrome Andes walkthrough reached the dispatch, completed the guided case and selected a missing-link research question in the shared workspace. A new 320×650/largest-text browser check reproduced an off-screen connection result: focus moved, but the heading stayed outside the visible area. The pair reveal now brings its heading into view only when needed, using an immediate scroll. Both contributory and missing-link reveals are covered; existing writing and evidence selections remain protected by the same scenario. No source claim or reward rule changes. This is a functional self-test, not an uncoached participant result.
+
+Observed follow-up: some expanded source cards repeat record-specific caveats in general publication notes. Consider separating publication context behind a labelled disclosure while retaining the visible support/limits and accessible citation; verify all source-inspection and export routes before changing this shared renderer.
+
+The short-phone screenshot also exposed fragmented endpoint labels in the side-by-side pair graphic despite no page overflow. The graphic now stacks at narrow widths and retains whole labels; a layout assertion supplements the heading-visibility check. This visual finding was missed by the previous horizontal-overflow/accessibility checks.
