@@ -1,6 +1,6 @@
 # WorldThreads test plan and coverage ledger
 
-Updated: 17 October 2026. Latest functional confirmation: 0.5.67; all 43 scenarios have passing executions (42/43 broad run plus corrected relief-trace retest and final source-trail mobile check). All 83 record details were checked in 0.5.65; the four changed Dutch source views are covered by the new audit scenario. Agent-perspective passes are recorded separately below. Earlier broad confirmation candidate: `69f427d` (27/27 expanded checks passed; earlier confirmations retained below) (first fix baseline: `3ba2895`) (earlier coverage baseline: `5da62dc`). Scope: single-player, browser-local prototype.
+Updated: 18 October 2026. Release 0.5.72: fresh 44/44 primary scenarios passed. Recent focused passes cover all five Andes flows, full keyboard game-to-thesis play and the live transport scenario; 0.5.69 also checked all 83 record details. These are functional/visual self-checks, not human usability, source authentication or learning results. Earlier broad and corrected focused attempts remain below. Current open work is listed in [NEXT_ACTIONS.md](NEXT_ACTIONS.md). Scope: single-player, browser-local prototype.
 
 ## What success means
 
@@ -715,3 +715,12 @@ The next open transport check reproduced an off-screen comparison heading at 320
 The extended andes-mules scenario checks both short-phone reveals, minimum card width, actual printed pages, same-reporter dependence, no inferred fate for six, distinct division/commodity, source detour, research/AI brief/export, existing saved question/writing and reload, plus themes/keyboard/sampled accessibility. A focused screenshot was inspected after the fix. The related Andes scenarios are rerun because the mobile spacing is shared. This is functional and visual self-testing, not human comprehension or original-record authentication. No new historical source or observation is claimed.
 
 Final local validation for 0.5.71: all five affected Andes scenarios pass after the final spacing change, plus full keyboard winning-game/thesis/portfolio play. Data/object validation and 36 workflow JavaScript syntax checks pass. This is focused regression confirmation, not another 44-scenario broad run. Diagnosis, failed reproduction and final outputs are retained in parent-workspace outputs/worldthreads-0.5.71-confirmation.json.
+
+
+## 0.5.72 — readable Dutch source-trail cards (18 October 2026)
+
+The Dutch follow-up reproduced insufficient label width at 320×650 with largest text. The three-column number/icon/text arrangement and repeated nested padding consumed the reading width even without horizontal overflow. Narrow source-trail cards now use two columns, with step number/icon in the first and label/status in the second; repeated horizontal indentation is removed from the nested relief panels. The expanded relief-citation test requires at least 120px for the step label and 180px for the opened source-role card at the tested settings, and retains the heading-visibility check. Its full source-role/unchanged model and rewards/research/brief/export/saved-plan route passes. A final short-phone screenshot was inspected.
+
+Study, finding aid, uninspected decree and missing recipient evidence retain distinct labels and limits. No historical data, source status, saved-work schema, reward or desktop layout is changed. The primary plan is being rerun after the recent source-reading and mobile changes; its final result will be recorded separately. Human comprehension and original-record authentication remain open.
+
+Final 0.5.72 local confirmation: 44/44 primary scenarios passed in one broad run, plus the focused Dutch citation check and data/object validation. The parent-workspace report is outputs/worldthreads-0.5.72-confirmation.json.

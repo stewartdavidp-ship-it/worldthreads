@@ -1,5 +1,7 @@
 # WorldThreads backlog
 
+For current open priorities, see [NEXT_ACTIONS.md](NEXT_ACTIONS.md). The entries below are a chronological record; implemented items are not an instruction to rebuild them.
+
 ## Badge icons — requested 8 October 2026
 
 Replace text-only earned badges with recognizable icons. Reveal the badge name, meaning and earning condition on hover, keyboard focus and tap. Keep an accessible text name, distinguish earned and locked states without relying on colour, and preserve existing earned progress. Implemented in 0.5.41: ten distinct SVG icons, earned/check and locked/padlock states, hover titles and a shared explanation on hover, focus or tap. Existing reward rules and stored progress are preserved. Human icon-recognition testing remains pending.
@@ -179,3 +181,10 @@ The additional 320×650/largest-text check reproduced a hidden later-report head
 The next open transport check reproduced an off-screen comparison heading at 320×650 with largest text. Both the comparison and interpretation reveals now focus and conditionally bring their heading into view. Screenshot inspection then exposed a larger defect: nested case, pair, question, document and transport padding reduced the transport card to 97px, with only about 52px available for text. Passing overflow and focus checks had missed words fragmented across many lines. Narrow-screen spacing now removes repeated horizontal indentation within the Andes research panels; the transport card retains at least 200px at 320px. Text size, historical wording, counts, uncertainty, rewards, drafts and portfolios are unchanged.
 
 The extended andes-mules scenario checks both short-phone reveals, minimum card width, actual printed pages, same-reporter dependence, no inferred fate for six, distinct division/commodity, source detour, research/AI brief/export, existing saved question/writing and reload, plus themes/keyboard/sampled accessibility. A focused screenshot was inspected after the fix. The related Andes scenarios are rerun because the mobile spacing is shared. This is functional and visual self-testing, not human comprehension or original-record authentication. No new historical source or observation is claimed.
+
+
+## 0.5.72 — readable Dutch source-trail cards (18 October 2026)
+
+The Dutch follow-up reproduced insufficient label width at 320×650 with largest text. The three-column number/icon/text arrangement and repeated nested padding consumed the reading width even without horizontal overflow. Narrow source-trail cards now use two columns, with step number/icon in the first and label/status in the second; repeated horizontal indentation is removed from the nested relief panels. The expanded relief-citation test requires at least 120px for the step label and 180px for the opened source-role card at the tested settings, and retains the heading-visibility check. Its full source-role/unchanged model and rewards/research/brief/export/saved-plan route passes. A final short-phone screenshot was inspected.
+
+Study, finding aid, uninspected decree and missing recipient evidence retain distinct labels and limits. No historical data, source status, saved-work schema, reward or desktop layout is changed. The primary plan is being rerun after the recent source-reading and mobile changes; its final result will be recorded separately. Human comprehension and original-record authentication remain open.
