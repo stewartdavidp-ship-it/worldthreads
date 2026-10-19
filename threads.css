@@ -43,3 +43,7 @@ button:not(.map-node),summary{min-height:44px;box-sizing:border-box}
 .reading-excerpt-label{font-size:.75rem;color:var(--wt-muted);margin-bottom:.25rem}.reading-full{margin:.5rem 0 1rem}.reading-full p,.reading-excerpt{overflow-wrap:anywhere}
 
 .source-publication-context{margin:.8rem 0;padding:.6rem .8rem;border-left:2px solid var(--wt-border)}.source-publication-context>summary{cursor:pointer;font-size:.875rem}.source-access-links{margin:.8rem 0 0}
+
+/* A returned finding must remain readable inside the nested research workspace. */
+@media(max-width:500px){.thesis-workbench:has(.local-finding),.research-loop:has(.local-finding),.local-finding{padding-inline:8px}.local-finding>.candidate-review,.local-finding>.candidate-compare,.local-finding .candidate-comparison>section{padding-inline:8px}}
+@media(max-width:500px){.local-finding .candidate-comparison .eyebrow{letter-spacing:normal;overflow-wrap:normal;word-break:normal}}

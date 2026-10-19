@@ -1,10 +1,10 @@
 # Next actions and evidence boundaries
 
-Updated 18 October 2026. Release 0.5.72: fresh 44/44 primary confirmation passed. The chronological backlog and test ledger retain earlier attempts; this page identifies open work rather than treating those entries as current failures.
+Updated 18 October 2026. Release 0.5.73: fresh 46/46 primary confirmation passed. The chronological backlog and test ledger retain earlier attempts; this page identifies open work rather than treating those entries as current failures.
 
 ## Next independent interface check
 
-A first check reproduced collapsed reading width in the AI-return/candidate-finding comparison at 320×650 with largest text: nested padding left about 49px for the player argument. Fix this reproduced issue and test source details, comparison choices and saved work. Existing scenarios cover the workflow, storage, narrow layouts and sampled accessibility; the new readable-width checks have so far targeted Andes transport and Dutch citation panels. Inspect screenshots as well as overflow and focus: deeply nested panels can technically fit while splitting ordinary words into fragments. Reproduce before changing the layout. Preserve the exact concern, reviewed version, player response and source/verification status.
+The candidate-finding comparison width issue is corrected in 0.5.73 and both related scenarios are now in the 46-scenario primary plan. A separate check reproduced only 130px for an imported AI critique concern at 320×650/largest text: portfolio/workbench/review padding accumulates. Fix this reproduced issue and test the review question, basis/access warnings, response choices, exact filed version and saved response. Inspect screenshots as well as overflow and focus; technically fitting text can still break ordinary words.
 
 ## Human review still needed
 

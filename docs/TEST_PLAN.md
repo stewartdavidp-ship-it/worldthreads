@@ -1,6 +1,6 @@
 # WorldThreads test plan and coverage ledger
 
-Updated: 18 October 2026. Release 0.5.72: fresh 44/44 primary scenarios passed. Recent focused passes cover all five Andes flows, full keyboard game-to-thesis play and the live transport scenario; 0.5.69 also checked all 83 record details. These are functional/visual self-checks, not human usability, source authentication or learning results. Earlier broad and corrected focused attempts remain below. Current open work is listed in [NEXT_ACTIONS.md](NEXT_ACTIONS.md). Scope: single-player, browser-local prototype.
+Updated: 18 October 2026. Release 0.5.73: fresh 46/46 primary scenarios passed. Candidate-path and candidate-predictions are now primary checks, including short-phone/largest-text reading widths. All 83 record details were checked in 0.5.69; historical data is unchanged in these layout releases. These are functional/visual self-checks, not human usability, source authentication or learning results. Earlier broad and corrected focused attempts remain below. Current open work is listed in [NEXT_ACTIONS.md](NEXT_ACTIONS.md). Scope: single-player, browser-local prototype.
 
 ## What success means
 
@@ -724,3 +724,12 @@ The Dutch follow-up reproduced insufficient label width at 320×650 with largest
 Study, finding aid, uninspected decree and missing recipient evidence retain distinct labels and limits. No historical data, source status, saved-work schema, reward or desktop layout is changed. The primary plan is being rerun after the recent source-reading and mobile changes; its final result will be recorded separately. Human comprehension and original-record authentication remain open.
 
 Final 0.5.72 local confirmation: 44/44 primary scenarios passed in one broad run, plus the focused Dutch citation check and data/object validation. The parent-workspace report is outputs/worldthreads-0.5.72-confirmation.json.
+
+
+## 0.5.73 — readable returned-finding comparison (18 October 2026)
+
+A synthetic interface fixture reproduced only 49px for the player's argument at 320×650/largest text: workbench, research, local-finding, comparison and section padding accumulated. The mobile workspace now uses restrained horizontal padding around local findings. The original argument/candidate text, status, supplied limits, source context and reward/storage rules remain unchanged. Screenshot inspection also caught the spaced uppercase provisional heading splitting within a word; mobile comparison headings now retain normal letter spacing without reducing text size.
+
+Candidate-path and candidate-predictions are promoted into the primary plan (46 scenarios). Their checks cover reading widths, source/claim/role navigation, preserved supplied limits, own/rival/argument comparison, live claim updates, exclusions and reload, exact originating decision, unchanged rewards/model/writing on comparison, keyboard/themes/accessibility. They use interface fixtures, not new assistant research or verified findings. The expanded plan is running; its final result is recorded separately.
+
+Final 0.5.73 confirmation: 46/46 primary scenarios passed in one broad run, plus final focused candidate path/prediction checks. Data/object validation and 36 workflow syntax checks pass. Retained report: parent workspace outputs/worldthreads-0.5.73-confirmation.json.
