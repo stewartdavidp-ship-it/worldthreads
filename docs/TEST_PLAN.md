@@ -1,6 +1,6 @@
 # WorldThreads test plan and coverage ledger
 
-Updated: 18 October 2026. Release 0.5.73: fresh 46/46 primary scenarios passed. Candidate-path and candidate-predictions are now primary checks, including short-phone/largest-text reading widths. All 83 record details were checked in 0.5.69; historical data is unchanged in these layout releases. These are functional/visual self-checks, not human usability, source authentication or learning results. Earlier broad and corrected focused attempts remain below. Current open work is listed in [NEXT_ACTIONS.md](NEXT_ACTIONS.md). Scope: single-player, browser-local prototype.
+Updated: 19 October 2026. Release candidate 0.5.75: fresh 47/47 primary scenarios passed; harvest-calendar now runs in the primary plan. Final focused checks also cover whole timeline/view/response labels, visible selected headings with retained keyboard focus, reading widths, saved reasoning and calendar source measures at 320×650/largest text. The data and original-source boundaries remain unchanged. These are functional/visual self-checks, not human usability, source authentication or learning results. Earlier broad and corrected focused attempts remain below. Current open work is listed in [NEXT_ACTIONS.md](NEXT_ACTIONS.md). Scope: single-player, browser-local prototype.
 
 ## What success means
 
@@ -742,3 +742,14 @@ The next check reproduced only 130px for an imported critique concern at 320×65
 Panel-basis and panel-review now cover those reading-width checks through the real display controls. The related saved-response, exact-version return and returning-investigator routes are also checked. Fixtures remain interface test material; no new external AI review, source authentication, scholarly judgement or human comprehension result is claimed. This is a focused follow-up to the clean 46-scenario 0.5.73 run, not a new broad run.
 
 Final 0.5.74 focused confirmation: panel-review, panel-basis, return-context and returning-player pass. The evidence-dialog source check initially still failed after widening the dialog; inspection identified comparison-section and nested-details padding. Reducing that indentation and overriding the browser dialog maximum produced the passing final review flow. Failed attempts and final outputs are retained in parent-workspace outputs/worldthreads-0.5.74-confirmation.json. No new 46-scenario broad run is claimed for this focused follow-up.
+
+
+## 0.5.75 — first-story evidence controls at largest text (19 October 2026)
+
+At 320×650/largest text, a new check reproduced labels breaking inside words in the Czech timeline and Record / Proposed link / Open question controls. Narrow chronology entries now stack with label/date columns and retain dashed connectors; the view controls use full-width icon/label rows. A second failure showed the selected view heading below the screen. When necessary, changing views now aligns the control group and preview without moving focus away from the selected button. Tests require whole words, readable caption width, visible selected headings and unchanged saved/model/reward state. Screenshot review exposed the same problem in Keep/Narrow/Leave open controls; they now reflow into full-width icon/label/caption rows. Their wording and ungraded/unrewarded behavior are unchanged.
+
+The farming-calendar detail passed the added short-phone/largest-text reading-width check without a layout change. Harvest-calendar is promoted from the optional accessibility batch to the primary plan (47 scenarios, without a duplicate optional run). The focused boundary, calendar, inquiry and full first-story/thesis flows pass. The expanded primary run is underway; its final result is recorded separately. Historical wording, source numbers, measures, scope and uncertainty are unchanged. These are functional and visual self-checks, not participant learning results.
+
+Final local 0.5.75 primary confirmation: 47/47 in one broad run, plus the final focused harvest-inquiry scenario. Data/object validation and 36 workflow JavaScript syntax checks pass. Additional Firefox and WebKit full-game runs both passed; their scope is the complete winning route, not every targeted short-phone reading check. Results are recorded separately; they do not replace the targeted short-phone checks.
+
+Publication candidate 0.5.75: 47/47 primary, final focused boundary/calendar/inquiry/full-story checks, and both Firefox/WebKit complete winning routes passed. Retained report: parent workspace outputs/worldthreads-0.5.75-confirmation.json.

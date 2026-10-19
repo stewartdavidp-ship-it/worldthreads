@@ -20,4 +20,5 @@ document.addEventListener('click',e=>{
  const b=e.target.closest('[data-boundary-view]');if(!b||!harvestBoundaryModes.some(([key])=>key===b.dataset.boundaryView))return;
  harvestBoundaryView=b.dataset.boundaryView;const preview=document.getElementById('harvestLandmarkPreview');if(!preview)return;
  preview.innerHTML=harvestBoundaryPreview(harvestLandmarks[harvestTimelinePosition]);preview.querySelector('[data-boundary-view="'+harvestBoundaryView+'"]').focus({preventScroll:true});
+ const heading=preview.querySelector('.landmark-caption h3'),headerBottom=Math.max(0,document.querySelector('.site-header')?.getBoundingClientRect().bottom||0),bounds=heading.getBoundingClientRect();if(bounds.top<headerBottom+16||bounds.bottom>innerHeight){const top=preview.querySelector('.boundary-modes').getBoundingClientRect().top;window.scrollTo({top:window.scrollY+top-headerBottom-16,behavior:'instant'});}
 });

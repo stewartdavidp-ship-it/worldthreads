@@ -1,10 +1,12 @@
 # Next actions and evidence boundaries
 
-Updated 18 October 2026. Baseline: 0.5.73 passed a fresh 46/46 primary confirmation; 0.5.74 adds focused critique-reading fixes. The chronological backlog and test ledger retain earlier attempts; this page identifies open work rather than treating those entries as current failures.
+Updated 19 October 2026. Candidate 0.5.75 passed a fresh 47/47 primary confirmation, with the 0.5.74 critique fixes retained. The chronological backlog and test ledger retain earlier attempts; this page identifies open work rather than treating those entries as current failures.
 
-## Next independent interface check
+## Current interface checkpoint
 
-The candidate-finding comparison is corrected in 0.5.73 and both scenarios are in the 46-scenario primary plan. The critique concern/basis and nested source-dialog widths are corrected in 0.5.74 with focused review/return checks. Next, inspect the first story's chart details and Record / Proposed link / Open question panels at 320×650 with largest text. Existing workflow, themes and accessibility checks are not a guarantee of readable word wrapping. Require clear reading width, a visible selected result and an identifiable next source while preserving the incompatible-measure and causal-uncertainty distinctions. Reproduce before changing layout.
+The first story's short-phone timeline, Record / Proposed link / Open question and Keep / Narrow / Leave open labels are corrected in 0.5.75. View headings remain visible without taking focus from the selected control. Farming-calendar details passed the new reading-width check without a layout change; that scenario is now primary. The candidate comparison and critique/source-dialog fixes are retained. The current primary confirmation is 47/47. Firefox and WebKit complete winning routes also passed; this does not claim all targeted reading checks in those engines. Do not treat these as human comprehension or original-source authentication.
+
+Next, prioritize the participant tasks below before adding a notebook or another story template. Independent historical work can pursue the more precise price-source lead; its scan passages remain uninspected and the direct PDF request was rate limited. No new table values or causal claim should be added from the catalogue alone.
 
 ## Human review still needed
 
@@ -15,7 +17,7 @@ Use HUMAN_REVIEW_TASKS.md with actual participants when available. Assess whethe
 - Dutch relief: authenticate the decree cited as 154-320 (KB 38), resolve its modern catalogue mapping, and locate actual Amsterdam recipient/sales evidence. The finding aid is a retrieval lead, not a delivery witness.
 - Delft relief accounts: the study's table is accessible, but underlying accounts remain uninspected. Do not graph nominal expenditure and loaf totals as an authenticated original series or infer unit bread prices, efficiency or household access.
 - Andes: obtain and inspect workshop accounts listed as volume VI documents 1086–1087, dated July 1817. Access attempts and the unresolved printed-page mapping are in RESEARCH_AUDIT.md. Do not repeat blocked URLs without a new access route, invent totals, or treat July records as proof of pre-crossing delivery.
-- First story and literary records: original transmissions and household/causal interpretations retain the gaps recorded in RESEARCH_AUDIT.md. Existing modern studies, later editions and inaccessible passages do not become independent original evidence through repeated citation.
+- First story and literary records: Schebek’s relevant Prague-price chapter is now located bibliographically at printed pp. 91–104; a catalogue scan lead is recorded in RESEARCH_AUDIT.md, but the tables remain uninspected. Original transmissions and household/causal interpretations retain the gaps recorded in RESEARCH_AUDIT.md. Existing modern studies, later editions and inaccessible passages do not become independent original evidence through repeated citation.
 
 ## Conditional design work
 

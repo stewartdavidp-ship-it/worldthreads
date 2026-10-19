@@ -241,3 +241,14 @@ https://sanmartiniano.cultura.gob.ar/noticia/dia-internacional-del-libro/
 The browser/search service could read the index, while a fresh direct index download also returned 403. This is an access limitation in this session, not evidence that the documents are absent or that the archive lacks them. No full-volume link was recovered, no account totals inspected, and no original authenticated.
 
 Next retrieval target: full volume VI, documents 1086–1087; verify their printed page numbers visually first. Inspect account coverage dates, categories, units, opening balances and whether entries identify issues, destinations or recipients. Even if obtained, a July account must not be assumed to describe January–February deliveries. Seek matching dated issue/receipt records before connecting a particular workshop output to a crossing column. No observations, relationships, mechanisms, object projections, rewards or saved player work were changed in this pass. No application release or browser regression result is claimed for this documentation-only update.
+
+
+## More precise Prague-price retrieval lead — 19 October 2026
+
+The 2024 study https://cp.copernicus.org/articles/20/1017/2024/ identifies the Schebek contribution on Prague grain prices (1655–1872) as printed pp. 91–104 in the 1873 exhibition catalogue. Its Sect. 2.2 and Appendix A also identify distinct Sušice archive leads (AS7, inventory 187; AS8, inventory 945, box 40) and warn of disagreements between overlapping records. These are citations in a modern study, not inspected originals or independent verification of the registered Prague series. Its dataset statement requires an author request; no contact was made.
+
+Google Books' catalogue https://books.google.com/books/about/Collectiv_Ausstellung_von_Beitr%C3%A4gen_zur.html?id=uFdbAAAAcAAJ identifies an 1873, 137-page volume from the Bavarian State Library. The download link did not yield a readable document through the research tool; selected printed page 100 returned a cache miss. That is a retrieval limit in this session, not evidence that the scan is unavailable to other readers.
+
+Next: inspect the actual pp. 91–104, locate the 1813–1817 entries, and check grain, currency, volume and series construction before copying any values. No table entry was transcribed, normalized or graphed. The 2016 study and its underlying compilation must not be counted as independent witnesses. WT-1816-0006 and its existing source-access limits remain unchanged.
+
+A subsequent direct catalogue fetch succeeded (HTTP 200) and exposed its listed public PDF link. Retrieving that link returned HTTP 429 (rate limit). No further download attempt or access workaround was made. The earlier cache miss therefore must not be read as absence of a public scan; actual price-table passages are still uninspected.
