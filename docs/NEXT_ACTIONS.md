@@ -1,10 +1,10 @@
 # Next actions and evidence boundaries
 
-Updated 18 October 2026. Release 0.5.73: fresh 46/46 primary confirmation passed. The chronological backlog and test ledger retain earlier attempts; this page identifies open work rather than treating those entries as current failures.
+Updated 18 October 2026. Baseline: 0.5.73 passed a fresh 46/46 primary confirmation; 0.5.74 adds focused critique-reading fixes. The chronological backlog and test ledger retain earlier attempts; this page identifies open work rather than treating those entries as current failures.
 
 ## Next independent interface check
 
-The candidate-finding comparison width issue is corrected in 0.5.73 and both related scenarios are now in the 46-scenario primary plan. A separate check reproduced only 130px for an imported AI critique concern at 320×650/largest text: portfolio/workbench/review padding accumulates. Fix this reproduced issue and test the review question, basis/access warnings, response choices, exact filed version and saved response. Inspect screenshots as well as overflow and focus; technically fitting text can still break ordinary words.
+The candidate-finding comparison is corrected in 0.5.73 and both scenarios are in the 46-scenario primary plan. The critique concern/basis and nested source-dialog widths are corrected in 0.5.74 with focused review/return checks. Next, inspect the first story's chart details and Record / Proposed link / Open question panels at 320×650 with largest text. Existing workflow, themes and accessibility checks are not a guarantee of readable word wrapping. Require clear reading width, a visible selected result and an identifiable next source while preserving the incompatible-measure and causal-uncertainty distinctions. Reproduce before changing layout.
 
 ## Human review still needed
 

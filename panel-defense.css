@@ -23,3 +23,7 @@
 
 /* A critique basis describes advice, never a verification score. */
 .defense-basis{margin:.8rem 0;max-width:58rem;overflow-wrap:anywhere}.defense-basis summary{display:flex;align-items:center;gap:.6rem;cursor:pointer}.defense-basis summary::before{content:'▸'}.defense-basis[open] summary::before{content:'▾'}.defense-basis svg{width:1.5rem;height:1.5rem;flex:none;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.defense-basis p{max-width:65ch}
+
+/* Preserve reading width when a filed review sits inside the full workbench. */
+@media(max-width:500px){#thesisWorkbench:has(#thesisPortfolio[open]:not([hidden]) #panelReview[open].has-review),#thesisPortfolio:has(#panelReview[open].has-review),#panelReview.has-review{padding-inline:8px}}
+@media(max-width:500px){#defenseDetailDialog{width:calc(100vw - 24px);max-width:calc(100vw - 24px);padding:12px}#defenseDetailDialog .defense-compare>section,#defenseDetailDialog details{padding-inline:8px}}
