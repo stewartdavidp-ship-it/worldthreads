@@ -12,3 +12,6 @@
 
 /* Narrow evidence cards need full-width labels, not two squeezed columns. */
 @media(max-width:500px){.andes-pair-bridge{grid-template-columns:1fr;gap:.7rem}.andes-pair-bridge>span{flex-direction:row;flex-wrap:wrap;text-align:center}.andes-pair-bridge .andes-question{width:3rem;justify-self:center}.andes-pair-bridge strong{word-break:normal;overflow-wrap:normal}.andes-pair-result{padding:.7rem}}
+
+/* Keep nested research panels from spending the phone's reading width on borders. */
+@media(max-width:500px){.case-victory:has(.andes-connections){padding-inline:8px}.andes-connections{padding-inline:8px}.andes-connections .andes-pair-result,.andes-connections .andes-questions,.andes-connections .andes-mule-document{padding-inline:0}.andes-connections .andes-mules{padding-inline:8px}}
