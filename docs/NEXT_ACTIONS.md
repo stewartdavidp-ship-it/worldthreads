@@ -1,6 +1,8 @@
 # Next actions and evidence boundaries
 
-Updated 19 October 2026. Candidate 0.5.75 passed a fresh 47/47 primary confirmation, with the 0.5.74 critique fixes retained. The chronological backlog and test ledger retain earlier attempts; this page identifies open work rather than treating those entries as current failures.
+Updated 19 October 2026. Published 0.5.75 passed a fresh 47/47 primary confirmation, with the 0.5.74 critique fixes retained. The chronological backlog and test ledger retain earlier attempts; this page identifies open work rather than treating those entries as current failures.
+
+Publication confirmed 19 October (20 October UTC): Pages and graph-validation jobs succeeded; the public app serves 0.5.75. Live evidence-boundary, harvest-calendar and harvest-inquiry checks all passed after restoring the missing test browser.
 
 ## Current interface checkpoint
 
