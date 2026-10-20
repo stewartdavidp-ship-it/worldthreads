@@ -8,7 +8,7 @@ Publication confirmed 19 October (20 October UTC): Pages and graph-validation jo
 
 The first story's short-phone timeline, Record / Proposed link / Open question and Keep / Narrow / Leave open labels are corrected in 0.5.75. View headings remain visible without taking focus from the selected control. Farming-calendar details passed the new reading-width check without a layout change; that scenario is now primary. The candidate comparison and critique/source-dialog fixes are retained. The current primary confirmation is 47/47. Firefox and WebKit complete winning routes also passed; this does not claim all targeted reading checks in those engines. Do not treat these as human comprehension or original-source authentication.
 
-Next, prioritize the participant tasks below before adding a notebook or another story template. Independent historical work can pursue the more precise price-source lead; its scan passages remain uninspected and the direct PDF request was rate limited. No new table values or causal claim should be added from the catalogue alone.
+Next, prioritize the participant tasks below before adding a notebook or another story template. The 20 October source pass retrieved and visually inspected the price compilation via the Bavarian Library. Next, integrate its exact source locators and limits, then independently check any numerical transcription before designing a chart. See RESEARCH_AUDIT.md; no series or causal claim was added in the retrieval pass.
 
 ## Human review still needed
 
@@ -19,7 +19,7 @@ Use HUMAN_REVIEW_TASKS.md with actual participants when available. Assess whethe
 - Dutch relief: authenticate the decree cited as 154-320 (KB 38), resolve its modern catalogue mapping, and locate actual Amsterdam recipient/sales evidence. The finding aid is a retrieval lead, not a delivery witness.
 - Delft relief accounts: the study's table is accessible, but underlying accounts remain uninspected. Do not graph nominal expenditure and loaf totals as an authenticated original series or infer unit bread prices, efficiency or household access.
 - Andes: obtain and inspect workshop accounts listed as volume VI documents 1086–1087, dated July 1817. Access attempts and the unresolved printed-page mapping are in RESEARCH_AUDIT.md. Do not repeat blocked URLs without a new access route, invent totals, or treat July records as proof of pre-crossing delivery.
-- First story and literary records: Schebek’s relevant Prague-price chapter is now located bibliographically at printed pp. 91–104; a catalogue scan lead is recorded in RESEARCH_AUDIT.md, but the tables remain uninspected. Original transmissions and household/causal interpretations retain the gaps recorded in RESEARCH_AUDIT.md. Existing modern studies, later editions and inaccessible passages do not become independent original evidence through repeated citation.
+- First story and literary records: Schebek’s relevant Prague-price chapter is now located bibliographically at printed pp. 91–104; the Bavarian Library scan’s printed pp. 91–93 and 98–99 were visually inspected on 20 October. Corpus integration and numerical transcription checks remain pending; the underlying Prague archival records and Albert source remain uninspected. Original transmissions and household/causal interpretations retain the gaps recorded in RESEARCH_AUDIT.md. Existing modern studies, later editions and inaccessible passages do not become independent original evidence through repeated citation.
 
 ## Conditional design work
 
