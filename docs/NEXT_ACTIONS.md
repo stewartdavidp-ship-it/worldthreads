@@ -32,3 +32,8 @@ Consider a short case notebook only if observed player behavior supports it; reu
 ## Release discipline
 
 Use tests/preview.py, the relevant scenario and source/export checks, and appropriate regressions. Preserve failed attempts alongside corrected runs. Record whether a result is broad, focused, live, historical or human; none certifies the others. Keep saved writing, filed snapshots, portfolios and display controls intact. Check allowance and preserve the user’s current reserve (2% authorized on 3 November, superseding 20%); never spend reset credits or schedule another run from this checklist.
+
+
+## Next graphics pass
+
+The tested price-basis exhibit and citation branches are published in 0.5.77. Tested candidate 0.5.78 adds type symbols and compact exact counts to the object browser/focus map. A promising next factual illustration is Wellcome’s later 1829 stethoscope print, the original IIIF browser request was blocked, but its licensed Commons copy loaded and was visually inspected. A separately tested contextual viewer can now be considered using that copy, with date/credit/rights explicit. Record date/rights/credit separately from the 1816 invention claim if access becomes reliable.

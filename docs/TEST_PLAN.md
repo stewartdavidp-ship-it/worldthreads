@@ -1,6 +1,6 @@
 # WorldThreads test plan and coverage ledger
 
-Updated: 3 November 2026. Candidate 0.5.77: fresh 49/49 primary scenarios passed against the frozen working candidate. Harvest-inquiry is now primary, with citation completeness checked in its real download; price-evidence adds source-basis graphic, keyboard, mobile/largest-text and no-viewing-mutation checks. Panel-review covers desktop diagram activation, stacked phone citation branches, source selection and one-record drill-down with focus. Source, causal and household-access limits remain explicit. Functional/visual self-checks do not establish human usability, learning or original-source authentication. Current open work is in NEXT_ACTIONS.md. Scope: single-player, browser-local prototype.
+Updated: 3 November 2026. Candidate 0.5.78: fresh 49/49 primary scenarios passed against the frozen working candidate. Harvest-inquiry is now primary, with citation completeness checked in its real download; price-evidence adds source-basis graphic, keyboard, mobile/largest-text and no-viewing-mutation checks. Panel-review covers desktop diagram activation, stacked phone citation branches, source selection and one-record drill-down with focus. Source, causal and household-access limits remain explicit. Functional/visual self-checks do not establish human usability, learning or original-source authentication. Current open work is in NEXT_ACTIONS.md. Scope: single-player, browser-local prototype.
 
 ## What success means
 
@@ -770,3 +770,10 @@ Publication confirmation: Pages 41707219052 and graph validation 41707219746 suc
 ## 0.5.77 final graphics/export confirmation — 3 November 2026
 
 49/49 primary scenarios passed in a fresh run after feature changes were frozen (base HEAD f89e829; working candidate files tested). Earlier 48/48 export-only and intermediate 49/49 runs are retained separately, along with the actual pre-fix missing-SRC-058 download failure and corrected focused runs. The final run includes prediction/revision, short download citation completeness, full harvest/thesis/research/portfolio/history-export/reload, source limits, unlike regional measures, desktop and mobile review map drill-down, saved portfolios, concurrent recovery and keyboard winning route. Data/object validation, 37 JS syntax checks and feedback-service tests passed. Screenshots of the price exhibit and phone citation branch were visually inspected. No numeric price series, causal-strength increase, new external AI review, human comprehension claim or original archival authentication. Report: parent outputs/worldthreads-0.5.77-confirmation.json; publication/live checks added after deployment.
+
+
+## 0.5.78 object-symbol confirmation — 3 November 2026
+
+49/49 primary scenarios passed against the working candidate (base HEAD e8cfc79). Object coverage now checks all 14 type-symbol mappings, decorative/hidden icon semantics, card and focus-node presence, actual person/work/hazard/technology navigation, largest-text 320px layout, both themes and sampled accessibility. Desktop cards, all symbols and compact phone card screenshots inspected. Counts remain exact registered evidence/connection counts, with complete accessible descriptions; they do not rank influence. No object identity, historical claim, evidence role, source or saved schema changes. Data/object validation and 38 JS syntax checks passed. Report: parent outputs/worldthreads-0.5.78-confirmation.json.
+
+0.5.77 public confirmation: Pages 41720838619 and graph validation 41720840694 succeeded for e8cfc79; live price-evidence, harvest-inquiry and panel-review passed, including source links, full short-download citations, desktop keyboard nodes, phone branches and one-record filed-evidence drill-down.

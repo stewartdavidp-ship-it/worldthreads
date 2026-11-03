@@ -223,3 +223,8 @@ The first story gains a folded, interactive price-basis exhibit: ledger/coin/sil
 Filed-thesis citation graphics now use stacked, readable branches and a compact source selector on phones. Selecting a source brings its citation branch into view; nodes open only their own filed record with keyboard focus on its details. Desktop record nodes are keyboard-activatable links. Citation dependence remains separate from verified support and source independence; old snapshots and review/version identity are preserved.
 
 A real short-export failure omitted SRC-058 because the bibliography was hard-coded. The download now derives its sources from exported record references. Harvest-inquiry is primary; price-evidence adds a dedicated scenario (49 total). Before/after failure and pass logs, intermediate confirmation runs, final confirmation and live results are retained in the parent confirmation report. These are functional/visual self-checks, not a human study or independent source authentication.
+
+
+## 0.5.78 — visual object identities (3 November 2026)
+
+All 14 existing types gain consistent native vector symbols on browser cards, linked objects and the focused object. Compact record/connection count chips replace repeated sentences; accessible names and tooltips retain the distinction between evidence records, roles/change connections and historical importance. Type names remain visible. No portrait or particular historical artifact is implied by these category marks. Object routes, evidence links, research handoff, counts and source/status data are unchanged. 49/49 primary scenarios and focused largest-text/theme/accessibility checks passed; screenshots inspected.
