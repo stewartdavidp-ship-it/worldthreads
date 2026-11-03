@@ -238,3 +238,10 @@ The stethoscope object offers a folded contextual viewer of Wellcome's catalogue
 ## 0.5.80 — find a known item outside the current type (3 November 2026)
 
 Searching for Stethoscope within the initial People filter now shows a compact registered match with its technology symbol and actual type, instead of an empty dead end. Opening it keeps the chosen filter/search. Suggestions are limited to three curated matches and appear only when there is no in-type match; nothing is invented for an unknown query. Name matching tolerates spaces/accents. The closed object-list route restores from existing browser history after reload, with type/query/limit validated and controls synchronized; existing saved writing and portfolios are untouched. 51/51 primary scenarios and focused compact-view checks passed with failure/fix logs retained.
+
+
+## 0.5.81 — read the title page, then seek the right evidence (3 November 2026)
+
+The Frankenstein work offers a folded facsimile reading tool with publication-line, epigraph-credit and author-name clues. A small two-stage visual separates 1816 writing context from the printed 1818 publication; the chosen clue links to the existing source assessment. The printed page is not presented as proof of a particular Geneva writing night or a weather-to-novel cause. Digital-copy provenance, reuse and physical-authentication limits remain explicit. The separate NLM exhibition supports the anonymous-edition context; no new corpus identity or causal link is created by viewing.
+
+Stress testing also fixed a dead source detour, pointer zoom resets caused by a container/control selector collision, and whole-page resize fitting. Controls show loading, remain disabled until ready, retain the source-date label and offer a source link when the image is unavailable. 52/52 primary scenarios passed after corrected focused pointer/resize/source checks.

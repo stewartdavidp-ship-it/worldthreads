@@ -3,7 +3,7 @@ const state={observations:[],relationships:[],threads:[],sources:[],mechanisms:[
 let appLoaded=false;
 async function fetchCollection(path){
  for(let attempt=0;attempt<2;attempt++)try{
-  const response=await fetch(path+'?v=0.5.80',{cache:'no-cache'});
+  const response=await fetch(path+'?v=0.5.81',{cache:'no-cache'});
   if(!response.ok)throw Error('Evidence collection unavailable ('+response.status+')');
   const value=await response.json();if(!Array.isArray(value))throw Error('An evidence collection has an invalid format');return value;
  }catch(error){
@@ -76,7 +76,7 @@ function bind(){
     const objectResearch=e.target.closest('[data-object-research]');if(objectResearch){startObjectResearch(objectResearch.dataset.objectResearch);return;}
     const object=e.target.closest('[data-object]');if(object){openObject(object.dataset.object);return;}
     const objectLink=e.target.closest('[data-object-link]');if(objectLink){openObjectLink(objectLink.dataset.objectLink);return;}
-    const o=e.target.closest('[data-observation]');if(o){openDetail(obs(o.dataset.observation));return;}
+    const o=e.target.closest('[data-observation]');if(o){openDetail(obs(o.dataset.observation));if(o.dataset.evidenceView==='true'){inspector.tab='evidence';renderInspector(true);}return;}
     const r=e.target.closest('[data-relationship]');if(r){openRelationship(state.relationships.find(x=>x.id===r.dataset.relationship));return;}
     const h=e.target.closest('[data-history]');if(h){const index=Number(h.dataset.history);if(index>=0&&index<=inspector.index){inspector.index=index;inspector.tab='connections';inspector.linkFilter='all';renderInspector(true);}return;}
     const tab=e.target.closest('[data-inspector-tab]');if(tab){inspector.tab=tab.dataset.inspectorTab;renderInspector();return;}

@@ -1,12 +1,12 @@
 # Next actions and evidence boundaries
 
-Updated 3 November 2026. Published baseline 0.5.79; candidate 0.5.80 passed a fresh 51/51 primary confirmation. The chronological history stays in TEST_PLAN.md, BACKLOG.md and RESEARCH_AUDIT.md. This page identifies current work.
+Updated 3 November 2026. Published baseline 0.5.80; candidate 0.5.81 passed a fresh 52/52 primary confirmation. The chronological history stays in TEST_PLAN.md, BACKLOG.md and RESEARCH_AUDIT.md. This page identifies current work.
 
 ## Graphics and exploration
 
-- 0.5.79 publication/live checks passed: real stethoscope print, selected views, date boundary and unavailable-image fallback. The later 1829 illustration is visual context, not automatically accepted evidence of 1816. Finish 0.5.80 publication/live checks for cross-type object entry and closed-list search restoration.
+- 0.5.79 publication/live checks passed: real stethoscope print, selected views, date boundary and unavailable-image fallback. The later 1829 illustration is visual context, not automatically accepted evidence of 1816. 0.5.80 publication/live search checks passed. Finish 0.5.81 live title-page, pointer/resize and source-detour checks.
 - 0.5.77's folded price-basis exhibit and clickable thesis citation branches passed live checks. 0.5.78's object type symbols/compact counts and display controls also passed live. Keep views useful as research tools, not decoration or certification.
-- Candidate 0.5.80 supplies labelled cross-type visual matches without overriding the chosen filter, plus tolerant name matching and closed-list reload recovery. Human discoverability still needs review.
+- Published 0.5.80 supplies labelled cross-type visual matches without overriding the chosen filter, plus tolerant name matching and closed-list reload recovery. Human discoverability still needs review.
 - Extend historical imagery only from inspected, normally accessible sources with date, credit and rights checked. The stethoscope mirror is documented; do not copy its rights or date to other Wellcome photographs. Preserve fallback source access.
 
 ## Historical retrieval and measurement still open
@@ -23,3 +23,8 @@ Use HUMAN_REVIEW_TASKS.md with uncoached participants when available: do they re
 ## Release discipline
 
 Use tests/preview.py, affected source/game/thesis/export checks and appropriate regressions. Preserve failed attempts and label broad, focused, live, historical and human evidence separately. Keep saved writing, filed snapshots, portfolios and display controls intact. The user's current reserve is 2% (3 November), superseding the earlier 20%; check allowance periodically, never spend reset credits and do not schedule another run.
+
+
+## Grounded follow-ups
+
+Check common-name discovery for Mary Shelley versus the existing Mary Godwin identity, using inspected SRC-052 chronology entries (15 May 1819 and 11 August 1823) rather than creating a second person. Consider a filed-source provenance graphic for SRC-001's reuse of SRC-058 for WT-1816-0006 only; source transmission is not a causal mechanism or independent witness. Scope any metadata to the relevant observation and preserve old filed references.

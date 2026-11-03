@@ -1,6 +1,6 @@
 # WorldThreads test plan and coverage ledger
 
-Updated: 3 November 2026. Candidate 0.5.80: fresh 51/51 primary scenarios passed against the frozen working candidate. Harvest-inquiry is now primary, with citation completeness checked in its real download; price-evidence adds source-basis graphic, keyboard, mobile/largest-text and no-viewing-mutation checks. Panel-review covers desktop diagram activation, stacked phone citation branches, source selection and one-record drill-down with focus. Source, causal and household-access limits remain explicit. Functional/visual self-checks do not establish human usability, learning or original-source authentication. Current open work is in NEXT_ACTIONS.md. Scope: single-player, browser-local prototype.
+Updated: 3 November 2026. Candidate 0.5.81: fresh 52/52 primary scenarios passed against the frozen working candidate. Harvest-inquiry is now primary, with citation completeness checked in its real download; price-evidence adds source-basis graphic, keyboard, mobile/largest-text and no-viewing-mutation checks. Panel-review covers desktop diagram activation, stacked phone citation branches, source selection and one-record drill-down with focus. Source, causal and household-access limits remain explicit. Functional/visual self-checks do not establish human usability, learning or original-source authentication. Current open work is in NEXT_ACTIONS.md. Scope: single-player, browser-local prototype.
 
 ## What success means
 
@@ -793,3 +793,12 @@ Publication confirmation: Pages 41707219052 and graph validation 41707219746 suc
 Failure ledger retains original no-suggestion timeout, the initial reload reset, and a subsequent assertion that checked before modal-close history settled. The final test explicitly waits for the closed route. It passes keyboard entry, unchanged model/draft/filter/query, reload, largest-text 320px light/dark accessibility, real accentless registered-name matching, honest empty results and normal in-type results. A focused rerun after compact wording also passed; screenshots inspected. Report: parent outputs/worldthreads-0.5.80-confirmation.json.
 
 0.5.79 live confirmation: Pages 41723847307 and validation 41723847470 succeeded for f13abbf. Public object-plate and objects scenarios passed, including the real image, source date, unavailable-image fallback and saved-work boundary.
+
+
+## 0.5.81 title-page clues and viewer stress checks — 3 November 2026
+
+52/52 primary scenarios passed against frozen working candidate files (base HEAD c07673d). Book-page loads the real 1818 facsimile, checks publication/quotation/authorship clues, preserves the 1816-writing versus 1818-publication boundary, opens the exact registered source record and returns, and checks no draft/reward/corpus changes from viewing. Both document viewers retain date/source credits, unavailable-image fallback and largest-text phone/theme accessibility.
+
+Actual failures retained: an initial dead source button used a story-only handler inside the object inspector; it now uses the existing observation route with explicit evidence-view intent. Resize testing exposed a shared data attribute on the container/buttons; a separate pointer test reproduced zoom resetting when its click bubbled. State and control attributes are now distinct, and only actual view buttons trigger selection. A subsequent whole-page fit test failed on resizing; responsive refitting now preserves selection and focus without replacing the reading panel. Both corrected focused scenarios passed before the full run. Loading controls stay disabled until the source is ready. This is not a real-device/screen-reader trial, physical-copy authentication or proof of novel genesis. Report: parent outputs/worldthreads-0.5.81-confirmation.json.
+
+0.5.80 publication: Pages 41725354254 and graph validation 41725355328 succeeded for c07673d. The live object-search scenario passed, including filter/query recovery and honest empty/in-type results.
