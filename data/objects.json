@@ -1889,7 +1889,16 @@
     },
     "regions": [
       "Europe"
-    ]
+    ],
+    "aliases": [
+      "Mary Shelley",
+      "Mary Wollstonecraft Shelley"
+    ],
+    "aliasSourceRefs": [
+      "SRC-052"
+    ],
+    "aliasSourceLocator": "Shelley-Godwin Archive, Frankenstein Chronology: 15 May 1819 letter quotation identifies Mary Godwin as now Mrs Shelley; 11 August 1823 edition entry gives Mary Wollstonecraft Shelley.",
+    "aliasSourceNote": "Name-finding metadata, not a new influence claim or authentication of the genesis narrative. The modern chronology quotes editions and gives publication metadata; the original letter was not inspected in this pass."
   },
   {
     "id": "OBJ-PERSON-laennec",

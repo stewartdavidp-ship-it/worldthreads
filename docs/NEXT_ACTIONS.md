@@ -28,3 +28,9 @@ Use tests/preview.py, affected source/game/thesis/export checks and appropriate 
 ## Grounded follow-ups
 
 Check common-name discovery for Mary Shelley versus the existing Mary Godwin identity, using inspected SRC-052 chronology entries (15 May 1819 and 11 August 1823) rather than creating a second person. Consider a filed-source provenance graphic for SRC-001's reuse of SRC-058 for WT-1816-0006 only; source transmission is not a causal mechanism or independent witness. Scope any metadata to the relevant observation and preserve old filed references.
+
+## 0.5.82 visual provenance and name discovery
+
+0.5.81 published successfully; live title-page and medical-print checks passed. Candidate 0.5.82 adds a compact publication trail in the filed thesis review, based only on provenance present in that saved version. SRC-001's dependency on SRC-058 is scoped to WT-1816-0006's Prague price series, not all climate/Moravian results. Older portfolios receive no inferred metadata. Mary Shelley and Mary Wollstonecraft Shelley now find the existing Mary Godwin object through sourced aliases; no duplicate person or influence claim is created. Final regression/publication checks are in progress.
+
+0.5.82 confirmation: fresh primary plan passed 53/53, data/object validation and 41 JavaScript syntax checks passed. Focused assistant-brief scope check passed (one Prague reuse, not climate/Tambora). Publication/live verification pending. Functional results do not replace human review.

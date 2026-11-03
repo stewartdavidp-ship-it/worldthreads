@@ -44,3 +44,6 @@ Follow-on research gap identified in the dispatch pass: At that point MECH-007 h
 
 
 0.5.78 gives all existing object types consistent visual identity cues and compact counts without changing the meaning of roles, evidence or missing links. 0.5.79's candidate goes beyond a symbol for one technology: a dated, optional primary-print viewer lets the player inspect selected views and pursue the catalogue. Its later date is part of the investigation boundary; it cannot award a verified invention claim or substitute for source assessment. No template or image has been fabricated for another object merely to fill the interface.
+
+
+0.5.81 provides a dated 1818 Frankenstein title-page reading activity, with distinct publication, epigraph and anonymous-authorship views. 0.5.82 adds a different thesis-review visual: publication reuse, explicitly separated from historical causation. The two-node diagram reveals full titles/locators/limits on demand and uses only the selected filed version. Sourced Mary Shelley aliases improve person entry without creating a new object or reward.

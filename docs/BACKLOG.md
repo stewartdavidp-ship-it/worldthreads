@@ -245,3 +245,9 @@ Searching for Stethoscope within the initial People filter now shows a compact r
 The Frankenstein work offers a folded facsimile reading tool with publication-line, epigraph-credit and author-name clues. A small two-stage visual separates 1816 writing context from the printed 1818 publication; the chosen clue links to the existing source assessment. The printed page is not presented as proof of a particular Geneva writing night or a weather-to-novel cause. Digital-copy provenance, reuse and physical-authentication limits remain explicit. The separate NLM exhibition supports the anonymous-edition context; no new corpus identity or causal link is created by viewing.
 
 Stress testing also fixed a dead source detour, pointer zoom resets caused by a container/control selector collision, and whole-page resize fitting. Controls show loading, remain disabled until ready, retain the source-date label and offer a source link when the image is unavailable. 52/52 primary scenarios passed after corrected focused pointer/resize/source checks.
+
+## 0.5.82 candidate
+
+Implemented sourced Mary Shelley aliases and a scoped, snapshot-preserving Prague publication-reuse graphic. Full regression and publication confirmation pending. Keep numeric Prague charts blocked on transcription/currency checks. Human review of whether the diagram communicates shared dependence remains open.
+
+0.5.82 confirmation: fresh primary plan passed 53/53, data/object validation and 41 JavaScript syntax checks passed. Focused assistant-brief scope check passed (one Prague reuse, not climate/Tambora). Publication/live verification pending. Functional results do not replace human review.

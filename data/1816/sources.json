@@ -15,7 +15,19 @@
     ],
     "notes": "Audit 2026-10-15: full published PDF inspected for climate, documentary and grain-price passages and Fig. 7. Modern homogenisation and interpretation remain distinct from underlying records, which were not independently inspected. Multiple linked records from this paper are not independent corroboration.",
     "accessedDate": "2026-10-15",
-    "alternateUrl": "https://cp.copernicus.org/articles/12/1361/2016/cp-12-1361-2016.pdf"
+    "alternateUrl": "https://cp.copernicus.org/articles/12/1361/2016/cp-12-1361-2016.pdf",
+    "sourceDependencies": [
+      {
+        "sourceId": "SRC-058",
+        "kind": "CITES_COMPILATION",
+        "observationIds": [
+          "WT-1816-0006"
+        ],
+        "scope": "Prague grain-price series in Figure 7",
+        "locator": "Brázdil et al. (2016), Figure 7 caption, printed p. 1369, identifies Prague data as Schebek (1873); Data availability, p. 1372, names Schebek for Prague and Albert for Moravia.",
+        "limits": "These citations share the Prague compilation; they are not independent price witnesses. Original archival extraction and the exact currency transformation remain unchecked. This does not describe the source basis of all climate or Moravian results."
+      }
+    ]
   },
   {
     "id": "SRC-002",

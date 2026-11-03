@@ -60,6 +60,13 @@ for x in observations:
 for x in sources:
  if x.get('alternateUrl'):assert isinstance(x['alternateUrl'],str) and x['alternateUrl'].startswith('https://'),x['id']
  assert x['url'].startswith('https://') and x.get('title') and x.get('authorOrOrg') and x.get('topics'),x['id']
+ if 'sourceDependencies' in x:
+  assert isinstance(x['sourceDependencies'],list),x['id']
+  for dep in x['sourceDependencies']:
+   assert dep.get('sourceId') in s and dep['sourceId']!=x['id'] and dep.get('kind')=='CITES_COMPILATION',x['id']
+   assert dep.get('observationIds') and len(set(dep['observationIds']))==len(dep['observationIds']),x['id']
+   assert all(oid in o and {x['id'],dep['sourceId']}<=set(o[oid]['sourceRefs']) for oid in dep['observationIds']),x['id']
+   assert all(isinstance(dep.get(k),str) and dep[k].strip() for k in ['scope','locator','limits']),x['id']
 print(f'PASS: {len(o)} observations, {len(r)} relationships, {len(t)} threads, {len(s)} sources, {len(m)} mechanisms')
 
 objects=load('data/objects.json'); object_links=load('data/1816/object-relationships.json'); object_types=load('data/object-types.json')
@@ -71,6 +78,11 @@ for x in observations:
 for x in objects:
  assert x['type'] in ot and x['subtype'] in ot[x['type']]['subtypes'],x['id']
  assert x['label'] and x['description'] and x['identityNote']
+ if 'aliases' in x:
+  assert isinstance(x['aliases'],list) and x['aliases'] and all(isinstance(a,str) and a.strip()==a and a for a in x['aliases']),x['id']
+  assert len(set(x['aliases']))==len(x['aliases']) and x['label'] not in x['aliases'],x['id']
+  assert x.get('aliasSourceRefs') and set(x['aliasSourceRefs'])<=set(x['sourceRefs']) and all(ref in s for ref in x['aliasSourceRefs']),x['id']
+  assert x.get('aliasSourceLocator') and x.get('aliasSourceNote'),x['id']
  assert x['observationIds'] and all(id in o and x['id'] in o[id]['objectRefs'] for id in x['observationIds'])
  assert set(x['sourceRefs'])=={ref for id in x['observationIds'] for ref in o[id]['sourceRefs']}
  assert x['focusDates']['start']==min(o[id]['startDate'] for id in x['observationIds'])
