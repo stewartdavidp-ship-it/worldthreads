@@ -1,6 +1,6 @@
 # WorldThreads test plan and coverage ledger
 
-Updated: 3 November 2026. Candidate 0.5.78: fresh 49/49 primary scenarios passed against the frozen working candidate. Harvest-inquiry is now primary, with citation completeness checked in its real download; price-evidence adds source-basis graphic, keyboard, mobile/largest-text and no-viewing-mutation checks. Panel-review covers desktop diagram activation, stacked phone citation branches, source selection and one-record drill-down with focus. Source, causal and household-access limits remain explicit. Functional/visual self-checks do not establish human usability, learning or original-source authentication. Current open work is in NEXT_ACTIONS.md. Scope: single-player, browser-local prototype.
+Updated: 3 November 2026. Candidate 0.5.79: fresh 50/50 primary scenarios passed against the frozen working candidate. Harvest-inquiry is now primary, with citation completeness checked in its real download; price-evidence adds source-basis graphic, keyboard, mobile/largest-text and no-viewing-mutation checks. Panel-review covers desktop diagram activation, stacked phone citation branches, source selection and one-record drill-down with focus. Source, causal and household-access limits remain explicit. Functional/visual self-checks do not establish human usability, learning or original-source authentication. Current open work is in NEXT_ACTIONS.md. Scope: single-player, browser-local prototype.
 
 ## What success means
 
@@ -777,3 +777,10 @@ Publication confirmation: Pages 41707219052 and graph validation 41707219746 suc
 49/49 primary scenarios passed against the working candidate (base HEAD e8cfc79). Object coverage now checks all 14 type-symbol mappings, decorative/hidden icon semantics, card and focus-node presence, actual person/work/hazard/technology navigation, largest-text 320px layout, both themes and sampled accessibility. Desktop cards, all symbols and compact phone card screenshots inspected. Counts remain exact registered evidence/connection counts, with complete accessible descriptions; they do not rank influence. No object identity, historical claim, evidence role, source or saved schema changes. Data/object validation and 38 JS syntax checks passed. Report: parent outputs/worldthreads-0.5.78-confirmation.json.
 
 0.5.77 public confirmation: Pages 41720838619 and graph validation 41720840694 succeeded for e8cfc79; live price-evidence, harvest-inquiry and panel-review passed, including source links, full short-download citations, desktop keyboard nodes, phone branches and one-record filed-evidence drill-down.
+
+
+## 0.5.79 historical-print viewer — 3 November 2026
+
+50/50 primary scenarios passed against the frozen working candidate (base HEAD 959c349). New object-plate scenario loads the real licensed image, checks default fold, catalogue date, fixed 1829 viewport label, whole/section/end selections, keyboard magnification and unchanged image URL/model/writing/rewards. It checks largest-text 320px light/dark layout and sampled accessibility, then deliberately blocks the image and requires disabled image tools plus accessible catalogue fallback. Initial sizing/readiness assertion failed; default image fitting and readiness were corrected, with failure/fixed/final logs retained. Desktop and actual phone viewport screenshots inspected. No claim of 1816 prototype authentication, clinical impact, new human trial or new corpus evidence. Report: parent outputs/worldthreads-0.5.79-confirmation.json.
+
+0.5.78 publication: Pages 41722267211 and graph validation 41722268674 succeeded for 959c349. Live objects and appearance passed, including all type symbols, object routes and largest-text theme controls.

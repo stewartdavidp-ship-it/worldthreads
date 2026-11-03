@@ -228,3 +228,8 @@ A real short-export failure omitted SRC-058 because the bibliography was hard-co
 ## 0.5.78 — visual object identities (3 November 2026)
 
 All 14 existing types gain consistent native vector symbols on browser cards, linked objects and the focused object. Compact record/connection count chips replace repeated sentences; accessible names and tooltips retain the distinction between evidence records, roles/change connections and historical importance. Type names remain visible. No portrait or particular historical artifact is implied by these category marks. Object routes, evidence links, research handoff, counts and source/status data are unchanged. 49/49 primary scenarios and focused largest-text/theme/accessibility checks passed; screenshots inspected.
+
+
+## 0.5.79 — inspect a historical instrument print (3 November 2026)
+
+The stethoscope object offers a folded contextual viewer of Wellcome's catalogued 1829 print, with whole plate, section and end views, magnification and scrolling. The date remains next to the image during inspection. Credit, primary catalogue, licensed Commons copy and reuse link are available; original IIIF browser failure is recorded, while the published mirror was inspected and used normally without proxying or local hosting. The later print is separate from the accepted 1816 invention record and does not claim to authenticate its first prototype or clinical impact. Viewing does not add an evidence role or reward. Image failure leaves the source catalogue accessible and the rest of the object route intact. 50/50 primary scenarios passed after correcting an initial fitting/readiness failure; screenshots inspected.

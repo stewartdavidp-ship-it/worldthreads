@@ -287,3 +287,10 @@ The linked IIIF full image returned HTTP 200 to a header check, but a real brows
 
 
 Follow-on access: the licensed Commons copy at https://commons.wikimedia.org/wiki/File:Laennec%27s_Stethoscope_Wellcome_L0033027.jpg loads normally through its published upload.wikimedia.org original-image link. The browser-rendered image was visually inspected: numbered figures show complete longitudinal views, a section and an end view. Commons identifies the same Wellcome L0033027 / ceprrg8g source and lists CC BY 4.0 with Wellcome credit; current Wellcome metadata marks the print Public Domain. Preserve attribution, both catalogue/mirror links, the later 1829 date and any display/zoom description. This updates the earlier *image uninspected* access note for this copy, without authenticating an 1816 prototype or a medical-impact claim. No image viewer is included in 0.5.78.
+
+
+## Later stethoscope print viewer — 0.5.79 candidate, 3 November 2026
+
+The inspected Commons copy is used as optional visual context in the stethoscope object header. Whole-plate, Fig. 2 section and Fig. 6 end-view controls zoom/pan the unchanged image; the 1829 date remains visible at the image. The primary Wellcome catalogue, licensed mirror, credit and reuse link are present. The modern photo candidates were not substituted, and the inaccessible original IIIF endpoint was not proxied. Image failure leaves the catalogue link accessible and disables the image controls.
+
+This later illustration supplies a viewing tool, not new accepted evidence of invention, medical efficacy, use in 1816 or diffusion. It is not added to an evidence slot by viewing, nor used to change a source, observation, relationship, object identity, confidence or reward. Like the existing modern Tambora photograph, it remains explicit media context rather than an automatically accepted historical claim. Converting it into corpus evidence would require a separately scoped observation and source assessment. No 1816 prototype authentication is claimed.

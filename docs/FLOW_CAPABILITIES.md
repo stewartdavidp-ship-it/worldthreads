@@ -41,3 +41,6 @@ Follow-on research gap identified in the dispatch pass: At that point MECH-007 h
 
 
 0.5.77 adds a separate reading tool within the first story: two illustrated monetary representations lead to the inspected compilation pages and a household-access boundary. The player chooses which source representation to inspect, rather than interpreting an unsourced price animation. The thesis review’s citation graph also becomes actionable on desktop and readable as stacked branches on phones; a node leads to one filed record. These visual changes do not change the game’s case gates, evidence roles or rewards. The short argument download now carries every referenced source.
+
+
+0.5.78 gives all existing object types consistent visual identity cues and compact counts without changing the meaning of roles, evidence or missing links. 0.5.79's candidate goes beyond a symbol for one technology: a dated, optional primary-print viewer lets the player inspect selected views and pursue the catalogue. Its later date is part of the investigation boundary; it cannot award a verified invention claim or substitute for source assessment. No template or image has been fabricated for another object merely to fill the interface.
