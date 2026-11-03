@@ -1,6 +1,6 @@
 # WorldThreads test plan and coverage ledger
 
-Updated: 19 October 2026. Published 0.5.75: fresh 47/47 primary scenarios passed; harvest-calendar now runs in the primary plan. Final focused checks also cover whole timeline/view/response labels, visible selected headings with retained keyboard focus, reading widths, saved reasoning and calendar source measures at 320×650/largest text. The data and original-source boundaries remain unchanged. These are functional/visual self-checks, not human usability, source authentication or learning results. Earlier broad and corrected focused attempts remain below. Current open work is listed in [NEXT_ACTIONS.md](NEXT_ACTIONS.md). Scope: single-player, browser-local prototype.
+Updated: 3 November 2026. Candidate 0.5.76: fresh 47/47 primary scenarios passed; harvest-calendar now runs in the primary plan. Final focused checks also cover whole timeline/view/response labels, visible selected headings with retained keyboard focus, reading widths, saved reasoning and calendar source measures at 320×650/largest text. The data and original-source boundaries remain unchanged. These are functional/visual self-checks, not human usability, source authentication or learning results. Earlier broad and corrected focused attempts remain below. Current open work is listed in [NEXT_ACTIONS.md](NEXT_ACTIONS.md). Scope: single-player, browser-local prototype.
 
 ## What success means
 
@@ -758,3 +758,8 @@ Publication candidate 0.5.75: 47/47 primary, final focused boundary/calendar/inq
 ## 0.5.75 published confirmation — 19 October (20 October UTC)
 
 Pages run 39281253478 and graph validation 39281253803 completed successfully for d6f9f9b487adf7bf2caed43efef58146f2e5cc12. The public app serves 0.5.75. Live evidence-boundary, harvest-calendar and harvest-inquiry all passed, including short-phone/largest-text, saved reasoning, source measures and export assertions. Initial browser launch failed because its executable was missing; the restored Chromium runtime completed all three checks. This is a focused public-site confirmation following the recorded 47/47 candidate run, not a new broad or human trial. Parent outputs/worldthreads-0.5.75-confirmation.json retains deployment and live results.
+
+
+## 0.5.76 Prague compilation integration — 3 November 2026
+
+47/47 primary scenarios passed against the working candidate (runner records base HEAD f801226). Focused first-story-audit, harvest-full-story, returning-player and appearance also passed. The updated audit requires SRC-058 and its limits in the evidence inspector, AI brief and thesis export; the full story includes revision, filing, history export and reload. Appearance covers dark/light, four text sizes and largest-text mobile reflow. Data validation passed with 83 observations, 59 relationships, 23 threads, 58 sources, 182 objects and 207 object links; object source unions and exact causal projections remain valid. JS syntax and diff checks passed. Initial browser launch failed because Chromium was missing; after runtime restoration all checks passed. Source-dialog screenshot inspected. No new human study, external AI review, original archival authentication or numerical price transcription is claimed. Publication/live checks recorded in parent outputs/worldthreads-0.5.76-confirmation.json.

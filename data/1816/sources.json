@@ -877,5 +877,22 @@
     ],
     "notes": "Finding aid, printed/PDF pp. 39–40: describes public grain-purchase material, reports to the king, royal decrees/correspondence, and Amsterdam arrival/sales statements. The catalog directs requests for the purchase/distribution material to inventory 154; it does not authenticate Dijkman’s particular KB 38 citation or establish a modern item-by-item mapping for 154-320. Underlying documents, recipient lists and the original 27 June decree were not inspected. This source is used as a retrieval lead only, not independent support for grain delivery or household benefit. The exact Delft charity accounts remained inaccessible in this pass; they are a separate archive.",
     "accessedDate": "2026-10-18"
+  },
+  {
+    "id": "SRC-058",
+    "type": "Historical price compilation",
+    "authorOrOrg": "Edmund Schebek (editor), Prague Chamber of Commerce and Industry; extraction attributed to Ferdinand Urban",
+    "title": "Collectiv-Ausstellung von Beiträgen zur Geschichte der Preise: Prague grain-price chapter",
+    "year": 1873,
+    "url": "https://www.digitale-sammlungen.de/en/view/bsb11164530?page=111",
+    "quality": "Inspected printed compilation; underlying archival extraction not authenticated",
+    "topics": [
+      "Prague",
+      "grain prices",
+      "currency conversion",
+      "source transmission"
+    ],
+    "notes": "Printed pp. 91–93 and 98–99 visually inspected 20 October 2026 (library canvases 111–113 and 118–119). P. 91 attributes monthly/quarterly archival extraction and annual averages to Ferdinand Urban and explains volume/currency conversion uncertainty. Table I A p. 98 presents source-derived prices; Table I B p. 99 presents converted prices per Lower Austrian Metzen in Austrian silver currency, including 1816–1817 rows. Underlying Prague archival records were not inspected. No numeric series transcribed here. This compilation underlies SRC-001: these are dependent sources, not independent corroboration. It does not verify Moravian prices, household access or an isolated weather effect.",
+    "accessedDate": "2026-10-20"
   }
 ]

@@ -212,22 +212,29 @@
     ],
     "confidence": "High",
     "sourceRefs": [
-      "SRC-001"
+      "SRC-001",
+      "SRC-058"
     ],
-    "researchStatus": "Scholarly passages and figure checked; underlying price compilations not independently inspected",
+    "researchStatus": "Scholarly analysis and selected 1873 Prague compilation pages inspected; underlying archival extraction and Moravian compilation unchecked",
     "objectRefs": [
       "OBJ-1816-0006",
       "OBJ-PLACE-004"
     ],
     "primaryObjectId": "OBJ-1816-0006",
-    "sourceLocator": "Brázdil et al. (2016), Sect. 4.2.3 pp. 1367–1368, especially the price paragraph on p. 1368; Fig. 7 p. 1369; Sect. 5.3 pp. 1370–1371; Sect. 7 p. 1371.",
+    "sourceLocator": "Brázdil et al. (2016), Sect. 4.2.3 pp. 1367–1368, especially the price paragraph on p. 1368; Fig. 7 p. 1369; Sect. 5.3 pp. 1370–1371; Sect. 7 p. 1371. Schebek (1873), printed pp. 91–93 (method and limits), Table I A p. 98 and I B p. 99 (1816–1817 rows); Bavarian Library canvases 111–113, 118–119.",
     "uncertainty": "No crop-loss percentage or household food-access measure is supplied here. Figure 7 uses gulden per 61.49 litres for Prague and gulden per hectolitre for Moravia; raw levels are not directly comparable. Prices were rising before Tambora; the weather contribution is not isolated from demand and post-war economic conditions. Shares SRC-001 with the climate and local-rain records. The paper also cites a good 1816 oat yield; do not assume every cereal failed.",
     "sourceSupport": [
       {
         "sourceId": "SRC-001",
         "label": "Harvest reports and price series analyzed in 2016",
         "supports": "Sect. 4.2.3 and Fig. 7 connect reported harvest difficulties with later price pressure.",
-        "limits": "Schebek (1873) and Albert (1964) were not independently inspected. Sect. 5.3 discusses economic context; no isolated weather effect is estimated."
+        "limits": "The underlying Prague archival extraction and Albert (1964) Moravian compilation were not independently inspected. Selected Schebek pages were inspected separately, but SRC-001 and SRC-058 share the same Prague series. Sect. 5.3 discusses economic context; no isolated weather effect is estimated."
+      },
+      {
+        "sourceId": "SRC-058",
+        "label": "1873 Prague compilation: method and annual price tables",
+        "supports": "Printed pp. 91–93 describe Urban’s extraction and annual averages; Table I A p. 98 and I B p. 99 show the 1816–1817 Prague rows in recorded and converted currency forms.",
+        "limits": "A later compilation, not an authenticated original market ledger or independent corroboration of SRC-001. Currency conversion has stated uncertainty; no numeric series is transcribed here. Prague only: not Moravian verification, household purchasing power or causal attribution."
       }
     ],
     "gapRefs": [

@@ -255,7 +255,7 @@
     "question": "How far did weather contribute to Czech grain-price pressure, beyond earlier price trends and economic conditions?",
     "priority": "High",
     "status": "Open",
-    "updatedDate": "2026-10-15",
+    "updatedDate": "2026-11-03",
     "observationIds": [
       "WT-1816-0005",
       "WT-1816-0006",
@@ -265,11 +265,11 @@
       "THREAD-CENTRAL-EUROPE-FOOD"
     ],
     "remainingQuestions": [
-      "Inspect the underlying station records, Mašek/Urban transmission and Schebek/Albert price compilations; the modern paper is not their independent authentication.",
+      "Inspect underlying station records and Mašek/Urban transmission, authenticate the Prague archival extraction, and inspect Albert’s Moravian compilation. Selected Schebek pages have been inspected; they do not authenticate their own underlying records.",
       "Compare matching grains, places and volume units, with pre-eruption price movement and economic alternatives; do not read an isolated weather effect from the sequence.",
       "Seek household food-access evidence separately from harvest reports, prices and Korean administrative categories."
     ],
-    "notes": "The published Czech paper and its price figure were inspected in the 15 October audit. Original records and the magnitude of any weather contribution remain unresolved. Multiple records from SRC-001 are not independent corroboration."
+    "notes": "The published Czech paper and its price figure were inspected in the 15 October audit. Original records and the magnitude of any weather contribution remain unresolved. Multiple records from SRC-001 are not independent corroboration. Selected Schebek method/table pages inspected on 20 October and linked as SRC-058 on 3 November. Numerical transcription remains pending; SRC-058 and SRC-001 share the Prague series."
   },
   {
     "id": "GAP-012",
