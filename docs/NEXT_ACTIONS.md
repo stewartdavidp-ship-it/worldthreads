@@ -1,12 +1,12 @@
 # Next actions and evidence boundaries
 
-Updated 3 November 2026. Published baseline 0.5.78; candidate 0.5.79 passed a fresh 50/50 primary confirmation. The chronological history stays in TEST_PLAN.md, BACKLOG.md and RESEARCH_AUDIT.md. This page identifies current work.
+Updated 3 November 2026. Published baseline 0.5.79; candidate 0.5.80 passed a fresh 51/51 primary confirmation. The chronological history stays in TEST_PLAN.md, BACKLOG.md and RESEARCH_AUDIT.md. This page identifies current work.
 
 ## Graphics and exploration
 
-- Finish 0.5.79 publication/live checks: real stethoscope print, selected views, date boundary and unavailable-image fallback. The later 1829 illustration is visual context, not automatically accepted evidence of 1816.
+- 0.5.79 publication/live checks passed: real stethoscope print, selected views, date boundary and unavailable-image fallback. The later 1829 illustration is visual context, not automatically accepted evidence of 1816. Finish 0.5.80 publication/live checks for cross-type object entry and closed-list search restoration.
 - 0.5.77's folded price-basis exhibit and clickable thesis citation branches passed live checks. 0.5.78's object type symbols/compact counts and display controls also passed live. Keep views useful as research tools, not decoration or certification.
-- Assess known-item entry: the object browser starts within People, so searching an invention may return no matches despite a registered object in another type. Consider a clear, visual cross-type match suggestion without silently overriding the chosen filter.
+- Candidate 0.5.80 supplies labelled cross-type visual matches without overriding the chosen filter, plus tolerant name matching and closed-list reload recovery. Human discoverability still needs review.
 - Extend historical imagery only from inspected, normally accessible sources with date, credit and rights checked. The stethoscope mirror is documented; do not copy its rights or date to other Wellcome photographs. Preserve fallback source access.
 
 ## Historical retrieval and measurement still open

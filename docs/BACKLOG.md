@@ -233,3 +233,8 @@ All 14 existing types gain consistent native vector symbols on browser cards, li
 ## 0.5.79 — inspect a historical instrument print (3 November 2026)
 
 The stethoscope object offers a folded contextual viewer of Wellcome's catalogued 1829 print, with whole plate, section and end views, magnification and scrolling. The date remains next to the image during inspection. Credit, primary catalogue, licensed Commons copy and reuse link are available; original IIIF browser failure is recorded, while the published mirror was inspected and used normally without proxying or local hosting. The later print is separate from the accepted 1816 invention record and does not claim to authenticate its first prototype or clinical impact. Viewing does not add an evidence role or reward. Image failure leaves the source catalogue accessible and the rest of the object route intact. 50/50 primary scenarios passed after correcting an initial fitting/readiness failure; screenshots inspected.
+
+
+## 0.5.80 — find a known item outside the current type (3 November 2026)
+
+Searching for Stethoscope within the initial People filter now shows a compact registered match with its technology symbol and actual type, instead of an empty dead end. Opening it keeps the chosen filter/search. Suggestions are limited to three curated matches and appear only when there is no in-type match; nothing is invented for an unknown query. Name matching tolerates spaces/accents. The closed object-list route restores from existing browser history after reload, with type/query/limit validated and controls synchronized; existing saved writing and portfolios are untouched. 51/51 primary scenarios and focused compact-view checks passed with failure/fix logs retained.
