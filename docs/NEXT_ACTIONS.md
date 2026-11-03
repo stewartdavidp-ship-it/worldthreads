@@ -2,15 +2,17 @@
 
 Updated 3 November 2026. Published 0.5.76 passed a fresh 47/47 primary confirmation, with the 0.5.74 critique fixes retained. The chronological backlog and test ledger retain earlier attempts; this page identifies open work rather than treating those entries as current failures.
 
-Publication confirmed 19 October (20 October UTC): Pages and graph-validation jobs succeeded; the public app serves 0.5.75. Live evidence-boundary, harvest-calendar and harvest-inquiry checks all passed after restoring the missing test browser.
+Earlier checkpoint, 19 October (20 October UTC): Pages and graph-validation jobs succeeded for 0.5.75. Live evidence-boundary, harvest-calendar and harvest-inquiry checks all passed after restoring the missing test browser.
 
 0.5.76 publication confirmed 3 November: 47/47 primary scenarios, focused saved-work/appearance checks, and both live first-story/source-export checks passed. Exact new source support is available in the existing inspector and exports; no price series or causal-strength change was introduced.
+
+Candidate 0.5.77 passed 49/49 primary checks with the folded price-basis graphic, readable/clickable thesis citation branches, precise monetary-basis caveat and complete short argument exports. Publication confirmation follows separately.
 
 ## Current interface checkpoint
 
 The first story's short-phone timeline, Record / Proposed link / Open question and Keep / Narrow / Leave open labels are corrected in 0.5.75. View headings remain visible without taking focus from the selected control. Farming-calendar details passed the new reading-width check without a layout change; that scenario is now primary. The candidate comparison and critique/source-dialog fixes are retained. The current primary confirmation is 47/47. Firefox and WebKit complete winning routes also passed; this does not claim all targeted reading checks in those engines. Do not treat these as human comprehension or original-source authentication.
 
-Next, prioritize the participant tasks below before adding a notebook or another story template. The 20 October source pass retrieved and visually inspected the price compilation via the Bavarian Library. Published 0.5.76 integrates its exact source locators and limits. Independently check any numerical transcription before designing a chart. See RESEARCH_AUDIT.md; no series or causal claim was added in the retrieval pass.
+Next, prioritize the participant tasks below before adding a notebook or another story template. The 20 October source pass retrieved and visually inspected the price compilation via the Bavarian Library. Published 0.5.76 integrates its exact source locators and limits. Before any chart, qualify the pre-eruption trend by monetary basis: the 3 November cross-check finds Figure 7 appears to follow the recorded-money series, while the converted-silver table has a different pre-1816 path. Tested candidate 0.5.77 adds the corpus caveat and folded price-basis illustration; exact transcription/method checks remain to do. See RESEARCH_AUDIT.md; no series or causal claim was added in the retrieval pass.
 
 ## Human review still needed
 
@@ -29,4 +31,4 @@ Consider a short case notebook only if observed player behavior supports it; reu
 
 ## Release discipline
 
-Use tests/preview.py, the relevant scenario and source/export checks, and appropriate regressions. Preserve failed attempts alongside corrected runs. Record whether a result is broad, focused, live, historical or human; none certifies the others. Keep saved writing, filed snapshots, portfolios and display controls intact. Check allowance and preserve the 20% reserve; never spend reset credits or schedule another run from this checklist.
+Use tests/preview.py, the relevant scenario and source/export checks, and appropriate regressions. Preserve failed attempts alongside corrected runs. Record whether a result is broad, focused, live, historical or human; none certifies the others. Keep saved writing, filed snapshots, portfolios and display controls intact. Check allowance and preserve the user’s current reserve (2% authorized on 3 November, superseding 20%); never spend reset credits or schedule another run from this checklist.

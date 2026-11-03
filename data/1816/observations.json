@@ -196,7 +196,7 @@
     "region": "Central Europe",
     "historicalEntity": "Czech Lands",
     "place": "Prague and Moravia",
-    "observation": "Brázdil et al. associate bad harvests in 1815–1816 with grain-price pressure peaking in 1817. Their Prague and Moravian price series had already risen from 1813.",
+    "observation": "Brázdil et al. associate bad harvests in 1815–1816 with grain-price pressure peaking in 1817. Their Figure 7 shows Prague and Moravian prices rising after 1813; the monetary basis matters when comparing the Prague compilation’s recorded and silver-converted tables.",
     "coverageType": "TREND",
     "system": "PRODUCTION & RESOURCES",
     "topic": "Grain harvest / food prices",
@@ -222,7 +222,7 @@
     ],
     "primaryObjectId": "OBJ-1816-0006",
     "sourceLocator": "Brázdil et al. (2016), Sect. 4.2.3 pp. 1367–1368, especially the price paragraph on p. 1368; Fig. 7 p. 1369; Sect. 5.3 pp. 1370–1371; Sect. 7 p. 1371. Schebek (1873), printed pp. 91–93 (method and limits), Table I A p. 98 and I B p. 99 (1816–1817 rows); Bavarian Library canvases 111–113, 118–119.",
-    "uncertainty": "No crop-loss percentage or household food-access measure is supplied here. Figure 7 uses gulden per 61.49 litres for Prague and gulden per hectolitre for Moravia; raw levels are not directly comparable. Prices were rising before Tambora; the weather contribution is not isolated from demand and post-war economic conditions. Shares SRC-001 with the climate and local-rain records. The paper also cites a good 1816 oat yield; do not assume every cereal failed.",
+    "uncertainty": "No crop-loss percentage or household food-access measure is supplied here. Figure 7 uses gulden per 61.49 litres for Prague and gulden per hectolitre for Moravia; raw levels are not directly comparable. Prices were rising before Tambora; the weather contribution is not isolated from demand and post-war economic conditions. Shares SRC-001 with the climate and local-rain records. The paper also cites a good 1816 oat yield; do not assume every cereal failed. The pre-eruption price trend here refers to Figure 7. Schebek’s converted-silver Table I B has a different Prague wheat path before 1816 from the recorded-money Table I A; do not treat the two monetary representations as interchangeable. Figure 7’s exact currency-transformation basis remains to verify.",
     "sourceSupport": [
       {
         "sourceId": "SRC-001",
@@ -234,7 +234,7 @@
         "sourceId": "SRC-058",
         "label": "1873 Prague compilation: method and annual price tables",
         "supports": "Printed pp. 91–93 describe Urban’s extraction and annual averages; Table I A p. 98 and I B p. 99 show the 1816–1817 Prague rows in recorded and converted currency forms.",
-        "limits": "A later compilation, not an authenticated original market ledger or independent corroboration of SRC-001. Currency conversion has stated uncertainty; no numeric series is transcribed here. Prague only: not Moravian verification, household purchasing power or causal attribution."
+        "limits": "A later compilation, not an authenticated original market ledger or independent corroboration of SRC-001. Currency conversion has stated uncertainty; no numeric series is transcribed here. Prague only: not Moravian verification, household purchasing power or causal attribution. Table I B has a different pre-1816 wheat trend from Table I A; Figure 7 appears to follow A, but the plotted data and currency transformation are not independently reconstructed."
       }
     ],
     "gapRefs": [

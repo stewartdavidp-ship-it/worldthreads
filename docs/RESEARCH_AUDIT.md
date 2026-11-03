@@ -268,3 +268,12 @@ This is inspection of the 1873 compilation underlying the modern study, not an i
 ## Prague compilation integration — 3 November 2026 (candidate 0.5.76)
 
 SRC-058 now links the inspected 1873 compilation to WT-1816-0006 with exact printed/canvas locators and record-specific support/limits. The underlying Prague archival extraction and Albert Moravian compilation remain unchecked. The 2016 study and its underlying Prague series are explicitly dependent, not separate corroboration. GAP-011 stays open; its retrieval questions distinguish inspected compilation pages from uninspected underlying records. Object source membership is synchronized. No numerical series, confidence, causal relationship, saved-work schema or reward changes are made. Existing relationship projections remain unchanged because their scholarly attribution has not changed. Validation results follow in TEST_PLAN.md.
+
+
+## Price-series basis cross-check — 3 November 2026
+
+Re-read the 2016 study's Sect. 4.2.3, printed p. 1368, and visually inspected Fig. 7 p. 1369 against Schebek Table I A p. 98 and Table I B p. 99. The modern figure's Prague wheat trajectory and approximate scale appear to follow A (source-derived money) rather than B (converted silver). This is a visual comparison, not reconstruction of the authors' underlying data. Figure 7’s caption states volume and gulden, but does not identify which of Schebek’s currency transformations is used. Do not replace that omission with an assumed constant silver measure.
+
+The apparent Prague wheat rise after 1813 in the modern figure should therefore stay attributed to that plotted series. In B, the printed 1813–1815 wheat entries decline before rising in 1816–1817; the two monetary representations are not interchangeable trend evidence. No independently verified normalized series, conversion formula or percentage has been produced. Exact transcriptions and a full monetary-method check remain prerequisites to a chart. The source remains dependent on the modern study's underlying compilation and cannot isolate weather, harvest supply, demand, money or household affordability. No historian/authors contacted.
+
+Candidate 0.5.77 qualifies the existing pre-eruption trend as the modern Figure 7 series and adds the monetary-basis caveat to WT-1816-0006 and REL-0007 with synchronized object projections. Do not alter or strengthen confidence merely because another printed table has been found. This research finding is separate from the 0.5.77 short-export fix.

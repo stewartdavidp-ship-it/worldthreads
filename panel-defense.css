@@ -27,3 +27,13 @@
 /* Preserve reading width when a filed review sits inside the full workbench. */
 @media(max-width:500px){#thesisWorkbench:has(#thesisPortfolio[open]:not([hidden]) #panelReview[open].has-review),#thesisPortfolio:has(#panelReview[open].has-review),#panelReview.has-review{padding-inline:8px}}
 @media(max-width:500px){#defenseDetailDialog{width:calc(100vw - 24px);max-width:calc(100vw - 24px);padding:12px}#defenseDetailDialog .defense-compare>section,#defenseDetailDialog details{padding-inline:8px}}
+
+/* Citation branches retain full labels on phones instead of a clipped wide SVG. */
+.defense-source-mobile{display:none}
+@media(max-width:600px){.defense-source-map{overflow-x:visible}.defense-source-map>svg{display:none}.defense-source-mobile{display:grid;gap:.8rem;margin-top:1rem}.source-mobile-group{border:1px solid var(--wt-border);border-radius:12px;padding:.65rem;background:var(--wt-surface)}.defense-source-mobile .source-muted{display:none}.source-mobile-heading{display:flex;gap:.6rem;align-items:flex-start}.defense-source-map .source-mobile-heading svg{display:block;flex:0 0 40px;width:40px;min-width:0;height:54px;stroke:var(--wt-link);fill:none}.source-mobile-heading>div{min-width:0}.source-mobile-heading strong,.source-mobile-heading span{display:block;overflow-wrap:anywhere}.source-mobile-heading span{font-size:.85em;color:var(--wt-muted);margin-top:.35rem}.source-mobile-group ul{margin:.5rem 0 0 .9rem;padding:0 0 0 1rem;list-style:none;border-left:2px solid var(--wt-link)}.source-mobile-group li{position:relative;padding:.5rem 0;overflow-wrap:anywhere}.source-record-dot{position:absolute;width:.55rem;height:.55rem;border:2px solid var(--wt-link);border-radius:50%;left:-1.33rem;top:.9rem;background:var(--wt-surface)}}
+
+.source-mobile-picker{display:none}@media(max-width:600px){.defense-source-buttons{display:none}.source-mobile-picker{display:grid;gap:.4rem;font-weight:700}.source-mobile-picker select{width:100%;min-width:0;font:inherit;padding:.6rem;background:var(--wt-surface);color:var(--wt-ink);border:1px solid var(--wt-border);border-radius:8px}.source-mobile-group{scroll-margin-top:1rem}}
+
+.source-mobile-group .source-record-link{font:inherit;text-align:left;color:var(--wt-link);background:transparent;border:0;padding:.2rem 0;min-height:44px;cursor:pointer;text-decoration:underline;text-underline-offset:.15em}
+
+.defense-source-map>svg a{cursor:pointer}.defense-source-map>svg a:hover rect,.defense-source-map>svg a:focus-visible rect{fill:var(--wt-hover);stroke:var(--wt-link);stroke-width:3}

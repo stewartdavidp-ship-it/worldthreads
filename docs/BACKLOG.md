@@ -214,3 +214,12 @@ The farming-calendar detail passed the added short-phone/largest-text reading-wi
 ## 0.5.76 — inspected Prague price compilation (3 November 2026)
 
 SRC-058 supplies the inspected Schebek printed pages, exact canvas locators and scoped support for WT-1816-0006. Distinguish recorded versus converted prices and compilation versus original archival extraction; retain source dependence, Moravian access gap and causal/household limits. Object source unions synchronized; IDs, writing, snapshots, rewards and relationships preserved. No price values or chart added. 47/47 primary checks plus focused source/story/export, returning-player and appearance passed; publication record in the confirmation report.
+
+
+## 0.5.77 — graphical source reading and complete short exports (3 November 2026)
+
+The first story gains a folded, interactive price-basis exhibit: ledger/coin/silver drawings distinguish recorded-money Table I A from converted-silver Table I B. Selection opens the appropriate printed source page; the separate household-access question remains unanswered. No quantities are plotted, no historical objects reconstructed and no view awards points or changes writing. A source cross-check qualifies WT-1816-0006 and REL-0007's pre-eruption trend by monetary basis, with exact object projection synchronization and unchanged causal confidence.
+
+Filed-thesis citation graphics now use stacked, readable branches and a compact source selector on phones. Selecting a source brings its citation branch into view; nodes open only their own filed record with keyboard focus on its details. Desktop record nodes are keyboard-activatable links. Citation dependence remains separate from verified support and source independence; old snapshots and review/version identity are preserved.
+
+A real short-export failure omitted SRC-058 because the bibliography was hard-coded. The download now derives its sources from exported record references. Harvest-inquiry is primary; price-evidence adds a dedicated scenario (49 total). Before/after failure and pass logs, intermediate confirmation runs, final confirmation and live results are retained in the parent confirmation report. These are functional/visual self-checks, not a human study or independent source authentication.

@@ -2577,7 +2577,7 @@
     "relationshipKind": "HISTORICAL_CLAIM",
     "causalStatus": "CONTRIBUTORY",
     "confidence": "Medium-High",
-    "explanation": "The Czech synthesis interprets damaging weather as contributing to harvest difficulties and the 1817 price peak. Price rises began before Tambora; the weather contribution is not quantitatively isolated.",
+    "explanation": "The Czech synthesis interprets damaging weather as contributing to harvest difficulties and the 1817 price peak. Figure 7 shows price rises before Tambora; their monetary basis and the weather contribution are not quantitatively isolated.",
     "sourceRefs": [
       "SRC-001"
     ],
@@ -2589,7 +2589,7 @@
       "REL-0007"
     ],
     "alternatives": [
-      "Price increases from 1813 predate the April 1815 eruption.",
+      "Figure 7’s price increases from 1813 predate the April 1815 eruption; recorded-money and converted-silver series must not be treated as interchangeable.",
       "Sect. 5.3 discusses demand and post-war economic conditions; crops and localities differ."
     ]
   },
