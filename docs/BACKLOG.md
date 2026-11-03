@@ -251,3 +251,5 @@ Stress testing also fixed a dead source detour, pointer zoom resets caused by a 
 Implemented sourced Mary Shelley aliases and a scoped, snapshot-preserving Prague publication-reuse graphic. Full regression and publication confirmation pending. Keep numeric Prague charts blocked on transcription/currency checks. Human review of whether the diagram communicates shared dependence remains open.
 
 0.5.82 confirmation: fresh primary plan passed 53/53, data/object validation and 41 JavaScript syntax checks passed. Focused assistant-brief scope check passed (one Prague reuse, not climate/Tambora). Publication/live verification pending. Functional results do not replace human review.
+
+0.5.82 published as bd33ab5. Hosted validation 41730229574 and Pages 41730229710 succeeded; live object-aliases, panel-review and first-story-audit passed, including the first-story AI brief and thesis export. Remaining source gaps and human-review needs are unchanged.

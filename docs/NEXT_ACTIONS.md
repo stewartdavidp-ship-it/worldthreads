@@ -1,10 +1,10 @@
 # Next actions and evidence boundaries
 
-Updated 3 November 2026. Published baseline 0.5.80; candidate 0.5.81 passed a fresh 52/52 primary confirmation. The chronological history stays in TEST_PLAN.md, BACKLOG.md and RESEARCH_AUDIT.md. This page identifies current work.
+Updated 3 November 2026. Published baseline 0.5.82; fresh primary confirmation passed 53/53 and all three targeted live checks passed. The chronological history stays in TEST_PLAN.md, BACKLOG.md and RESEARCH_AUDIT.md. This page identifies current work.
 
 ## Graphics and exploration
 
-- 0.5.79 publication/live checks passed: real stethoscope print, selected views, date boundary and unavailable-image fallback. The later 1829 illustration is visual context, not automatically accepted evidence of 1816. 0.5.80 publication/live search checks passed. Finish 0.5.81 live title-page, pointer/resize and source-detour checks.
+- 0.5.79 publication/live checks passed: real stethoscope print, selected views, date boundary and unavailable-image fallback. The later 1829 illustration is visual context, not automatically accepted evidence of 1816. 0.5.80 publication/live search checks passed. 0.5.81 live title-page, pointer/resize and source-detour checks passed.
 - 0.5.77's folded price-basis exhibit and clickable thesis citation branches passed live checks. 0.5.78's object type symbols/compact counts and display controls also passed live. Keep views useful as research tools, not decoration or certification.
 - Published 0.5.80 supplies labelled cross-type visual matches without overriding the chosen filter, plus tolerant name matching and closed-list reload recovery. Human discoverability still needs review.
 - Extend historical imagery only from inspected, normally accessible sources with date, credit and rights checked. The stethoscope mirror is documented; do not copy its rights or date to other Wellcome photographs. Preserve fallback source access.
@@ -34,3 +34,5 @@ Check common-name discovery for Mary Shelley versus the existing Mary Godwin ide
 0.5.81 published successfully; live title-page and medical-print checks passed. Candidate 0.5.82 adds a compact publication trail in the filed thesis review, based only on provenance present in that saved version. SRC-001's dependency on SRC-058 is scoped to WT-1816-0006's Prague price series, not all climate/Moravian results. Older portfolios receive no inferred metadata. Mary Shelley and Mary Wollstonecraft Shelley now find the existing Mary Godwin object through sourced aliases; no duplicate person or influence claim is created. Final regression/publication checks are in progress.
 
 0.5.82 confirmation: fresh primary plan passed 53/53, data/object validation and 41 JavaScript syntax checks passed. Focused assistant-brief scope check passed (one Prague reuse, not climate/Tambora). Publication/live verification pending. Functional results do not replace human review.
+
+0.5.82 published as bd33ab5. Hosted validation 41730229574 and Pages 41730229710 succeeded; live object-aliases, panel-review and first-story-audit passed, including the first-story AI brief and thesis export. Remaining source gaps and human-review needs are unchanged.
