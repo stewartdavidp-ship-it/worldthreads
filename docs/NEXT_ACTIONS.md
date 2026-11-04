@@ -52,3 +52,9 @@ Candidate uses the returned claimId to highlight the player interpretation (C2â€
 0.5.84 confirmation: primary plan passed 54/54; final focused panel-review passed after the broad-question disclosure refinement. Graph validation and 43 syntax checks passed. Publication/live checks pending. Existing strict review schemas remain unchanged; prompt guidance clarifies the existing explicit claim IDs.
 
 0.5.84 published as 12135b0. Hosted validation 41766870609 and Pages 41766868724 succeeded. Live panel-review, return-context and harvest-links passed. Human tasks now test marker interpretation, locating filed passages, thesis-wide scope and whether the return adds value beyond the assistant. Functional checks use an existing fixture; no fresh external AI audit or human learning outcome is claimed.
+
+## 0.5.85 â€” replace the legacy volcanic mechanism graphic
+
+The user identified the remaining triangle/curved-stroke placeholder. Candidate replaces that exact scene with original layered vector terrain, a textured plume, atmospheric curvature/veil and traced light paths. Direct Eruption/Aerosols/Sunlight controls supplement play/pause/reset/scrubbing; motion occurs only during playback and respects reduced motion. Geometry/particle counts are conceptual, not reconstructed measurements. Focused eruption-scene and harvest-media checks passed; full 55-scenario confirmation in progress.
+
+0.5.85 confirmation: primary plan passed 55/55; final dedicated eruption-scene check and broader harvest-media suite passed. Graph validation and 44 syntax checks passed. Final layout places stage selection above the illustration; explanatory detail explicitly separates light-path counts from energy fractions. Publication/live verification pending.

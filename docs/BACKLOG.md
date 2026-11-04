@@ -269,3 +269,9 @@ Returned concern IDs now locate questions on the filed evidence path, with delib
 0.5.84 confirmation: primary plan passed 54/54; final focused panel-review passed after the broad-question disclosure refinement. Graph validation and 43 syntax checks passed. Publication/live checks pending. Existing strict review schemas remain unchanged; prompt guidance clarifies the existing explicit claim IDs.
 
 0.5.84 published as 12135b0. Hosted validation 41766870609 and Pages 41766868724 succeeded. Live panel-review, return-context and harvest-links passed. Human tasks now test marker interpretation, locating filed passages, thesis-wide scope and whether the return adds value beyond the assistant. Functional checks use an existing fixture; no fresh external AI audit or human learning outcome is claimed.
+
+## 0.5.85 — legacy mechanism placeholder
+
+Replaced the specific simplistic volcano animation flagged by the user with an original atmospheric cutaway and selectable explanation stages. Keep the conceptual status visible and distinguish the illustration from the NASA photograph. Remaining quality evaluation: human response to the new art and whether the stages clarify the mechanism without implying a complete local harvest explanation.
+
+0.5.85 confirmation: primary plan passed 55/55; final dedicated eruption-scene check and broader harvest-media suite passed. Graph validation and 44 syntax checks passed. Final layout places stage selection above the illustration; explanatory detail explicitly separates light-path counts from energy fractions. Publication/live verification pending.

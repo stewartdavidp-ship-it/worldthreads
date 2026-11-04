@@ -826,3 +826,9 @@ Expanded panel-review scenario covers explicit C1/C2 markers, exact single-recor
 0.5.84 confirmation: primary plan passed 54/54; final focused panel-review passed after the broad-question disclosure refinement. Graph validation and 43 syntax checks passed. Publication/live checks pending. Existing strict review schemas remain unchanged; prompt guidance clarifies the existing explicit claim IDs.
 
 0.5.84 published as 12135b0. Hosted validation 41766870609 and Pages 41766868724 succeeded. Live panel-review, return-context and harvest-links passed. Human tasks now test marker interpretation, locating filed passages, thesis-wide scope and whether the return adds value beyond the assistant. Functional checks use an existing fixture; no fresh external AI audit or human learning outcome is claimed.
+
+## 0.5.85 candidate — volcanic mechanism illustration
+
+New primary eruption-scene scenario checks direct keyboard stage selection, slider/pressed-state synchronization, actual timed advance and pause, restart, reduced-motion CSS, unchanged storage/graph/rewards, 320px largest text/both themes, sampled accessibility and exit timer cleanup. Existing harvest-media suite passed its broader map/photo/mechanism/Korean-measure/source/failure checks. Desktop and phone screenshots inspected. Graph validation and 44 syntax checks passed; full 55-scenario confirmation pending. No simulated historical quantities or 1815 visual authentication.
+
+0.5.85 confirmation: primary plan passed 55/55; final dedicated eruption-scene check and broader harvest-media suite passed. Graph validation and 44 syntax checks passed. Final layout places stage selection above the illustration; explanatory detail explicitly separates light-path counts from energy fractions. Publication/live verification pending.

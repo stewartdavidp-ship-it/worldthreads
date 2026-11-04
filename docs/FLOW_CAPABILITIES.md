@@ -53,3 +53,6 @@ Follow-on research gap identified in the dispatch pass: At that point MECH-007 h
 
 
 0.5.84 adds a version-specific review navigation path. Explicit C2/C3/C4 IDs highlight the corresponding player reading; C1/document highlights the thesis. Reading/source/record/thesis selections open saved material without changing the argument or rewarding agreement with critique. The marker identifies an assistant question, not a proven error or historical causal relationship. Earlier review schemas remain supported.
+
+
+0.5.85 replaces the first story’s earlier triangle/stroke mechanism art with a layered atmospheric illustration. Three direct stages update the plume/aerosol/light emphasis and explanatory caption; playback, pause, reset and scrubbing remain available. Animation is illustrative and optional, honors reduced motion, and creates no rewards or accepted historical claims. The current volcano photograph remains a distinct real-image option.
