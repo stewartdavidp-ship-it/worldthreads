@@ -1,6 +1,6 @@
 # Learning to investigate with AI
 
-Candidate 0.5.90 · 4 November 2026. Product/learning design, not demonstrated learning efficacy.
+Published 0.5.90 · 4 November 2026. Product/learning design, not demonstrated learning efficacy.
 
 ## Product purpose
 
@@ -50,3 +50,6 @@ The guide is a distinct browser-history route. Back/Forward and reload retain it
 Primary plan passed 59/59. Final dedicated learning-path, quote, navigation matrix, evidence-close race and appearance checks passed. 48 JavaScript syntax checks and graph/object validation passed. Returning learners get accurate resume labels, and explicit navigation away clears the tutorial entry query so reload does not force it back. Automated scenarios establish functionality, not comprehension, engagement, retention or skill transfer. Native Safari/WebKit coverage is not claimed for this change.
 
 Prioritize a human pilot over adding more guide pages. Ask learners to explain the app's purpose, distinguish a source from evidence, justify a reviewer decision, locate the real assistant workflow, and apply the method to unfamiliar everyday material. Compare independent reasoning before/after and include a delayed task before claiming durable transfer. Do not compare learners with one another or award research mastery from page visits.
+
+
+0.5.90 published from aa07539fb5af8d69cc4755cbcc0f409f0cc32881 on 4 November 2026. Hosted validation 41868253133 and Pages 41868249791 succeeded. The public learning-path scenario passed through the introduction, quote exercise, research bridge, first-story own argument, everyday plan/prompt, thesis/export, reload/history and preservation checks. Public entry: https://stewartdavidp-ship-it.github.io/worldthreads/?learn=worldthreads . Functional confirmation, not human learning validation.
