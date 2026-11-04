@@ -966,3 +966,8 @@ Publication note: the previous 0.5.96 Pages deployment failed after its build/va
 Expanded the remembered-assistant chooser from two presets to eleven: ChatGPT, Claude, Google Gemini, Microsoft Copilot, Perplexity, Grok, Meta AI, DeepSeek, Mistral Vibe (formerly Le Chat), Qwen and Poe. Custom chat/workspace URLs remain editable. Options render from the same preset registry that fills the name/address, preventing list drift. Only the chosen assistant appears in the lesson. These are external website shortcuts, not claims that every provider has passed the research-return exercise or offers identical browsing/features.
 
 Official chat endpoints checked 4 November 2026; DeepSeek and Meta AI block automated page fetches, while the other new endpoints resolved or redirected to their provider sign-in/chat pages. Mistral’s official product page identifies Vibe as formerly Le Chat. Chat-preference test now checks all eleven preset name/address pairs plus the existing one-link, custom URL, reload, preserved learning/writing/rewards, mobile/largest/themes/accessibility and blocked/future-storage cases. It passed locally. Prompt-practice regression checked separately.
+
+
+## 0.5.99 — clear fields for another assistant
+
+Explicitly switching the chooser to My own chat / another assistant clears the display name and web address. Opening an already saved custom preference still shows its saved values. The existing assistant scenario now asserts both cleared fields before entering a custom URL; selection is not saved until Use this assistant.
