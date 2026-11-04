@@ -895,3 +895,8 @@ Sources, design boundaries, state protection and validation scope: [LEARNING_PAT
 
 
 0.5.91: identify the research site as Quotle.info throughout visible exercise text, source references, accessibility labels and the copied research prompt. The introduction and first exercise now link its name directly to https://quotle.info/ in a new tab. Internal IDs and saved-note keys are unchanged. Copy/link clarification; focused existing journey checks apply.
+
+
+## 0.5.92 — simplify the introductory quote case
+
+Replaced the quote-stage answer/review/writing gates with three short worked-example screens: Ask, Check, Apply. Sample prompts and a qualified correction teach the approach before independent historical investigation. Optional source trail, uncertainty and original notes remain available; sample text is never saved as learner writing. Affected quote, learning-path, navigation and first-story/thesis/export checks are run before publication. Human comprehension and retention remain untested.

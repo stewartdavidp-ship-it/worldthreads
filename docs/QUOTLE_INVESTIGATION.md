@@ -2,7 +2,11 @@
 
 Candidate 0.5.89 · 4 November 2026. This is a learning-design hypothesis, not a demonstrated improvement in critical thinking.
 
-## Purpose and route
+## Current simplified route — 0.5.92
+
+The introductory case now has three screens: sample prompts → inspected passage and example correction → Ask, Check, Qualify. There is no required typing, answer gate or reviewer form. Deeper source and reviewer context are optional disclosures. Independent writing and evidence decisions begin in the historical story. Earlier learner notes remain intact and separate from provided examples, including in downloads. Completion records viewing, not competence. Light-mode source text contrast was corrected. The original 0.5.89 design and validation below are historical; its mandatory quote-stage writing/review steps no longer describe the introduction.
+
+## Original 0.5.89 purpose and route
 
 One short, optional investigation introduces a repeatable process: question → research → check → review → revise. The learner then applies source-scope and reviewer-checking decisions inside the existing first harvest story. The story shelf offers the entry; `?practice=quotle` opens it directly. Returning learners can keep using the original stories and research workspace.
 
