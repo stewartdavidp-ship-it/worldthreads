@@ -104,3 +104,6 @@ Sources, design boundaries, state protection and validation scope: [LEARNING_PAT
 
 
 0.5.90 published from aa07539fb5af8d69cc4755cbcc0f409f0cc32881 on 4 November 2026. Hosted validation 41868253133 and Pages 41868249791 succeeded. The public learning-path scenario passed through the introduction, quote exercise, research bridge, first-story own argument, everyday plan/prompt, thesis/export, reload/history and preservation checks. Public entry: https://stewartdavidp-ship-it.github.io/worldthreads/?learn=worldthreads . Functional confirmation, not human learning validation.
+
+
+0.5.91: identify the research site as Quotle.info throughout visible exercise text, source references, accessibility labels and the copied research prompt. The introduction and first exercise now link its name directly to https://quotle.info/ in a new tab. Internal IDs and saved-note keys are unchanged. Copy/link clarification; focused existing journey checks apply.
