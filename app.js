@@ -25,7 +25,7 @@ async function load(){
     fetchCollection('data/object-types.json')
   ]);
   Object.assign(state,{observations,relationships,threads,sources,mechanisms,gaps,objects,objectRelationships,objectTypes,threadId:threads[0]?.id||null});
-  bind(); bindHarvestVisuals(); bindHarvestInquiry(); render(); renderStory();appLoaded=true;if(new URLSearchParams(location.search).get('learn')==='worldthreads')openLearningPath('orientation',0,false);else if(new URLSearchParams(location.search).get('practice')==='quotle')openQuotlePractice(false);setupNavigationHistory();document.getElementById('startupStatus').hidden=true;document.querySelectorAll('.site-header button').forEach(b=>b.disabled=false);
+  bind(); bindHarvestVisuals(); bindHarvestInquiry(); render(); renderStory();appLoaded=true;if(new URLSearchParams(location.search).get('learn')==='worldthreads')openLearningPath('orientation',0,false);else if(new URLSearchParams(location.search).get('practice')==='quotle')openQuotlePractice(false);if(new URLSearchParams(location.search).get('investigate')==='harvests')openHarvestAI(false);setupNavigationHistory();document.getElementById('startupStatus').hidden=true;document.querySelectorAll('.site-header button').forEach(b=>b.disabled=false);
 }
 
 function bind(){
@@ -34,7 +34,7 @@ function bind(){
   document.getElementById('objectExplorer').addEventListener('click',e=>{const o=e.target.closest('[data-object]');if(o)openObject(o.dataset.object);if(e.target.id==='moreObjects'){objectBrowse.limit+=12;renderObjects();}});
   document.getElementById('objectExplorer').addEventListener('input',e=>{if(e.target.id==='objectSearch'){objectBrowse.query=e.target.value;objectBrowse.limit=12;renderObjects();}});
   document.getElementById('objectExplorer').addEventListener('change',e=>{if(e.target.id==='objectType'){objectBrowse.type=e.target.value;objectBrowse.limit=12;renderObjects();}});
-  document.getElementById('storyMode').onclick=()=>{learningClearUrl();learningPathOpen=false;quotlePracticeOpen=false;story.id=null;setExperience('story');renderStory();};
+  document.getElementById('storyMode').onclick=()=>{harvestAIActive=false;learningClearUrl();learningPathOpen=false;quotlePracticeOpen=false;story.id=null;setExperience('story');renderStory();};
   document.getElementById('researchMode').onclick=()=>{setExperience('research');showWholeLibrary();};
   document.getElementById('storyJourney').addEventListener('click',e=>{
     const threadThesis=e.target.closest('[data-thread-thesis]');if(threadThesis){startThreadThesis(threadThesis.dataset.threadThesis,null,threadThesis.hasAttribute('data-andes-handoff')&&andesSelected().length===2?andesSelected().map(x=>x[0]):[]);return;}
@@ -47,8 +47,8 @@ function bind(){
     const caseAnswer=e.target.closest('[data-case-answer]');if(caseAnswer){answerCase(Number(caseAnswer.dataset.caseAnswer));return;}
     const challenge=e.target.closest('[data-investigation-challenge]');if(challenge){openChallenge(challenge.dataset.investigationChallenge);return;}
     const answer=e.target.closest('[data-challenge-answer]');if(answer){answerChallenge(answer.dataset.challengeAnswer,Number(answer.dataset.answer));return;}
-    const start=e.target.closest('[data-start-story]');if(start){learningPathOpen=false;quotlePracticeOpen=false;story.id=start.dataset.startStory;const saved=storyProgress(story.id);const config=storyCatalog.find(s=>s.id===story.id);story.step=Math.max(0,Math.min(saved.last,(config.chapters||storyChapters).length-1));story.choice=saved.choice;story.clue=null;renderStory(true);return;}
-    const home=e.target.closest('[data-story-home]');if(home){learningPathOpen=false;quotlePracticeOpen=false;story.id=null;renderStory(true);return;}
+    const start=e.target.closest('[data-start-story]');if(start){harvestAIActive=false;learningPathOpen=false;quotlePracticeOpen=false;story.id=start.dataset.startStory;const saved=storyProgress(story.id);const config=storyCatalog.find(s=>s.id===story.id);story.step=Math.max(0,Math.min(saved.last,(config.chapters||storyChapters).length-1));story.choice=saved.choice;story.clue=null;renderStory(true);return;}
+    const home=e.target.closest('[data-story-home]');if(home){harvestAIActive=false;learningPathOpen=false;quotlePracticeOpen=false;story.id=null;renderStory(true);return;}
     const frontier=e.target.closest('[data-story-frontier],[data-harvest-frontier]');if(frontier){revealStoryContribution();return;}
     const download=e.target.closest('[data-download-proposal]');if(download){downloadProposal();return;}
     const step=e.target.closest('[data-story-step]');if(step){const next=Number(step.dataset.storyStep);if(story.id==='relief'&&next>story.step&&!storyProgress('relief').visited.includes(next)&&!caseSolved())return;story.step=next;story.clue=null;renderStory(true);return;}
@@ -255,7 +255,7 @@ startApp();
 const story={step:0,choice:null,id:null};
 function setExperience(mode){
  stopHarvestFilm();
-  const research=mode==='research',objects=mode==='objects';if(research||objects){learningClearUrl();quotlePracticeOpen=false;learningPathOpen=false;}document.getElementById('researchLibrary').hidden=!research;document.getElementById('storyJourney').hidden=research||objects;document.getElementById('objectExplorer').hidden=!objects;document.getElementById('investigationProgress').hidden=objects;
+  const research=mode==='research',objects=mode==='objects';if(research||objects){harvestAIActive=false;learningClearUrl();quotlePracticeOpen=false;learningPathOpen=false;}document.getElementById('researchLibrary').hidden=!research;document.getElementById('storyJourney').hidden=research||objects;document.getElementById('objectExplorer').hidden=!objects;document.getElementById('investigationProgress').hidden=objects;
   for(const [id,active] of [['storyMode',!research&&!objects],['researchMode',research],['objectsMode',objects]]){const b=document.getElementById(id);b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));}
   window.scrollTo({top:0,behavior:'instant'});
 }
@@ -271,6 +271,7 @@ function renderStory(moveFocus=false){
  stopHarvestFilm();
  if(learningPathOpen){renderLearningPath(moveFocus);return;}
  if(quotlePracticeOpen){renderQuotlePractice(moveFocus);return;}
+ if(harvestAIActive&&story.id==='harvests'){renderHarvestAI(moveFocus);return;}
  document.getElementById('investigationProgress').hidden=false;
  const progressRoot=document.getElementById('investigationProgress'),journeyRoot=document.getElementById('storyJourney');
  if(story.id)journeyRoot.before(progressRoot);else journeyRoot.after(progressRoot);
