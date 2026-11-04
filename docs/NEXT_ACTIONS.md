@@ -1,6 +1,6 @@
 # Next actions and evidence boundaries
 
-Updated 4 November 2026. Published baseline 0.5.85; primary confirmation passed 55/55, final focused media checks and both targeted live checks passed. The chronological history stays in TEST_PLAN.md, BACKLOG.md and RESEARCH_AUDIT.md. This page identifies current work.
+Updated 4 November 2026. Published baseline 0.5.86; primary confirmation passed 56/56, final focused research/progress checks, live checks and the independent Safari student-perspective pass completed. The chronological history stays in TEST_PLAN.md, BACKLOG.md and RESEARCH_AUDIT.md. This page identifies current work.
 
 ## Graphics and exploration
 
@@ -70,3 +70,7 @@ The uncoached actual-Safari pass understood the app and completed the Dutch case
 Implements SF-01/SF-02 first: a visible research action row in the writing overview; direct AI-brief preparation route; an empty question receives focus first. Dutch/Andes final scenes offer independent research before the optional case is earned. Case requirements now live inside the story header instead of above the automatic entry scroll. Story explored, source/link viewed and guided case earned are distinct, with actionable remaining checks. Existing gates/rewards/writing safeguards remain authoritative. SF-05 map invitation corrected. Broader quiz cueing (SF-03) and density (SF-04) remain open. Next: publish validated candidate, then fresh actual-Safari grade-7/8-perspective agent with no walkthrough or prior findings.
 
 0.5.86 readiness: full primary plan passed 56/56. Final focused research-entry, progress, research-flow and ai-research checks passed after the story-header positioning, plain-language labels and focused assistant view refinements. The assistant view now reveals both invalid-import feedback and unreviewed findings on deliberate return. One test initially assumed the return accordion open, another used the wrong status ID, and a visible-status assertion needed to account for uppercase styling; corrected and rechecked. 45 syntax checks passed. Publication and fresh actual-Safari grade-7/8-perspective evaluation pending.
+
+## 0.5.86 live and independently checked
+
+Hosted publication and live research-entry/progress checks passed. Fresh actual-Safari agent, grade-7/8 lens and no walkthrough, found independent research and AI brief route, understood story versus case, and recovered own writing after reload. The remaining barrier moved to academic vocabulary, source terminology and finer writing-progress feedback. See TEST_PLAN.md for limited coverage: Andes completed as a narrative; other stories only sampled; external AI/portfolio not completed. Prioritize student-facing language and acknowledging drafted evidence next, alongside open quiz cueing/density work.
