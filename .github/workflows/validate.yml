@@ -24,6 +24,7 @@ jobs:
       - run: node --check andes-mules.js
       - run: node --check andes-dispatch.js
       - run: node --check andes-stores.js
+      - run: node --check research-entry.js
       - run: node --check progress.js
       - run: node --check investigations.js
       - run: node --check casefiles.js

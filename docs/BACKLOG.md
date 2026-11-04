@@ -287,3 +287,9 @@ Replaced the specific simplistic volcano animation flagged by the user with an o
 - SF-05: change map invitation so an unrevealed place does not promise immediately available records.
 
 These are one independent agent's design observations in actual Safari, not population-level usability findings. No confirmed Safari bug. Keep the long native typing anomaly unconfirmed until reproducible independently of the automation action. See TEST_PLAN.md for precise coverage and exclusions; all issues remain open.
+
+## 0.5.86 candidate follow-up to Safari findings
+
+SF-01: research and AI handoff receive visible overview actions; independent research available from Dutch/Andes endings without the case badge. SF-02: active story header shows explored scenes, source/link views and unearned/earned case separately, with remaining-check actions. Case task copy calls out the optional badge, not a research prerequisite. SF-05: map invitation no longer promises gated records. Validation and a fresh grade-7/8-perspective actual-Safari pass pending. SF-03 answer cueing and remaining SF-04 nesting/density stay open.
+
+0.5.86 readiness: full primary plan passed 56/56. Final focused research-entry, progress, research-flow and ai-research checks passed after the story-header positioning, plain-language labels and focused assistant view refinements. The assistant view now reveals both invalid-import feedback and unreviewed findings on deliberate return. One test initially assumed the return accordion open, another used the wrong status ID, and a visible-status assertion needed to account for uppercase styling; corrected and rechecked. 45 syntax checks passed. Publication and fresh actual-Safari grade-7/8-perspective evaluation pending.

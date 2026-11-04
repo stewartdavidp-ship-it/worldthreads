@@ -56,3 +56,6 @@ Follow-on research gap identified in the dispatch pass: At that point MECH-007 h
 
 
 0.5.85 replaces the first story’s earlier triangle/stroke mechanism art with a layered atmospheric illustration. Three direct stages update the plume/aerosol/light emphasis and explanatory caption; playback, pause, reset and scrubbing remain available. Animation is illustrative and optional, honors reduced motion, and creates no rewards or accepted historical claims. The current volcano photograph remains a distinct real-image option.
+
+
+0.5.86 makes independent research a visible route from relevant story endings and the writing overview. Source search and external-AI preparation no longer depend on discovering full-workspace accordions. Source/connection view requirements appear at story entry and update from recorded progress; scene exploration does not label a guided case earned. A case badge remains an optional guided milestone, while independent research keeps its own evidence/revision requirements. No source verification, interpretation role or reward is inferred from clicking the new navigation.
