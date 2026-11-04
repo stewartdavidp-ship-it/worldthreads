@@ -20,3 +20,43 @@
 
 .quotle-practice .quotle-options>div{grid-template-columns:repeat(2,minmax(0,1fr))}.quotle-practice .quotle-poster{padding:18px 26px;margin-bottom:18px}.quotle-practice .quotle-poster blockquote{font-size:clamp(2rem,4vw,3rem);margin-bottom:16px}.quotle-practice .quotle-claim-pair p{margin:0}.quotle-earlier-notes p{white-space:pre-wrap;overflow-wrap:anywhere}@media(max-width:650px){.quotle-practice .quotle-options>div{grid-template-columns:1fr}}
 .quotle-practice .quotle-source .eyebrow,.quotle-practice .quotle-source .quotle-note{color:var(--wt-ink)}
+/* Keep the core example and its actions together; expanded sources may grow naturally. */
+main:has(.quotle-practice){padding-top:16px;padding-bottom:20px}
+.story-journey:has(.quotle-practice){padding-top:0;padding-bottom:0}
+.quotle-practice{max-width:1100px;scroll-margin-top:110px}
+.quotle-toolbar{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:16px}
+.quotle-toolbar .quotle-path{flex:1;max-width:480px;margin:0;gap:12px}
+.quotle-toolbar .quotle-path li{display:flex;justify-content:center;align-items:center;gap:8px;padding:6px}
+.quotle-toolbar .quotle-path li>span{width:22px;height:22px;margin:0}
+.quotle-practice h1{font-size:2rem;margin:6px 0 16px}
+.quotle-practice h2{font-size:1.1rem;margin:0 0 12px}
+.quotle-practice p{line-height:1.45}
+.quotle-workspace{display:grid;grid-template-columns:1fr 1.15fr;gap:24px;align-items:start}
+.quotle-workspace>*{min-width:0}
+.quotle-practice .quotle-poster{padding:16px 20px;margin:0 0 12px}
+.quotle-practice .quotle-poster blockquote{font-size:2rem;margin:0 0 12px}
+.quotle-practice .quotle-model{padding:12px 16px;margin:0}
+.quotle-practice .quotle-model p{font-size:1rem;margin-top:8px}
+.quotle-practice .quotle-options{margin:0}
+.quotle-practice .quotle-options>div{grid-template-columns:1fr;gap:10px}
+.quotle-practice .quotle-choice{padding:12px 14px;min-height:0;gap:6px}
+.quotle-practice .quotle-choice[aria-pressed=true]{padding:11px 13px}
+.quotle-practice .quotle-feedback{padding:10px 14px;margin:12px 0 0}
+.quotle-prompt-feedback{min-height:72px}
+.quotle-practice .quotle-source{padding:16px;margin:0}
+.quotle-practice .quotle-source h3{font-size:1rem;margin:8px 0}
+.quotle-practice .quotle-source p{margin:8px 0}
+.quotle-practice .quotle-source blockquote{font-size:1.2rem;margin:12px 0}
+.quotle-check-workspace .quotle-claim-pair{grid-template-columns:1fr;margin:0;gap:8px}
+.quotle-check-workspace .quotle-claim-pair>div{padding:12px 16px;gap:6px}
+.quotle-check-workspace .quotle-pair-arrow{display:none}
+.quotle-practice>details{margin:10px 0}
+.quotle-practice .quotle-actions{margin:16px 0 10px;gap:12px}
+.quotle-practice .quotle-save{margin:8px 0}
+.quotle-practice .quotle-recap{margin:12px 0;gap:18px}
+.quotle-practice .quotle-recap article{padding:12px 8px;gap:8px}
+@media(max-width:760px){.quotle-workspace{grid-template-columns:1fr;gap:18px}.quotle-toolbar{align-items:flex-start;gap:12px;flex-wrap:wrap}.quotle-toolbar .quotle-path{flex-basis:100%;max-width:none}.quotle-practice h1{font-size:1.8rem}.quotle-prompt-feedback{min-height:0}}
+main .story-journey:has(.quotle-practice){margin:0;padding:0}
+.quotle-practice>details{padding:0 12px}
+.quotle-practice>details>summary{padding:10px 0;min-height:44px}
+.quotle-practice>details[open]{padding-bottom:12px}

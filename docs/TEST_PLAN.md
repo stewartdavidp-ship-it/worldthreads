@@ -900,3 +900,12 @@ Sources, design boundaries, state protection and validation scope: [LEARNING_PAT
 ## 0.5.92 — simplify the introductory quote case
 
 Replaced the quote-stage answer/review/writing gates with three short worked-example screens: Ask, Check, Apply. Sample prompts and a qualified correction teach the approach before independent historical investigation. Optional source trail, uncertainty and original notes remain available; sample text is never saved as learner writing. Affected quote, learning-path, navigation and first-story/thesis/export checks are run before publication. Human comprehension and retention remain untested.
+
+
+## 0.5.93 — smallest-text scrolling and flow correction
+
+Manual browser inspection confirmed excessive scrolling in 0.5.92 at Normal (the smallest setting, 16px), not only Largest: at 1280×720 the first Next button began around y=1010 and the source step Next ended around y=1267. Automated completion alone had missed this usability failure.
+
+Compact toolbars and side-by-side quote/prompt and passage/correction panels now keep the three quote screens’ essential content and controls visible at 1280×720 Normal. Source metadata is concise with the full source trail still available. Selecting a prompt preserves scroll position; step changes focus the heading without jumping down the page. The introduction and research bridge use the same compact spacing, including paired concept/task panels. Optional expanded detail, phone layouts and larger text grow naturally; no fixed-height clipping or hidden reading content. Existing saved writing, exports and evidence boundaries are unchanged.
+
+Validation: quote practice with explicit Normal UI selection and screen-bound assertions for Ask/feedback/Check/Apply; learning-path E2E with screen-bound assertions for all six introduction/research steps, first story, thesis/export and saved work; navigation matrix; appearance suite across all text sizes, themes and largest-size reflow; syntax and diff checks. One initial guide-bound assertion found an 8px overflow in the final orientation step; repeated instructional text was shortened and the assertion passed. Human comprehension and all possible screen sizes remain untested.

@@ -45,3 +45,6 @@ All actions are buttons/fields/links with keyboard access. Dark/light controls a
 Primary plan passed 58/58. Final dedicated quote-to-history, navigation matrix, inspector-close race and appearance checks passed. Additional practice checks preserve a competing tab’s notes, preserve unsupported future data, and recover a download when storage is blocked. Phone/largest text in both themes and sampled accessibility passed; 47 JavaScript syntax checks and graph/object validation passed. WebKit execution was attempted but its Playwright browser binary is absent in this environment; do not describe that as a Safari pass or a product failure. Actual human/student comprehension, transfer to unfamiliar material, retention and independent source verification remain untested. The practice must be evaluated with people before claiming learning efficacy.
 
 Final reading-order check: the Korean reviewer checkpoint follows the revealed crop evidence, so the evidence-reveal focus cannot skip it. Dedicated quote-to-history and harvest-inquiry checks passed after this adjustment.
+
+
+0.5.93: compact two-column core at desktop Normal; explicit 1280×720 viewport assertions now check that prompt feedback, passage/correction and next actions are on screen without scrolling. Optional expanded material still grows naturally, as do phone and enlarged-text layouts.
