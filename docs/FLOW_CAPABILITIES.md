@@ -59,3 +59,6 @@ Follow-on research gap identified in the dispatch pass: At that point MECH-007 h
 
 
 0.5.86 makes independent research a visible route from relevant story endings and the writing overview. Source search and external-AI preparation no longer depend on discovering full-workspace accordions. Source/connection view requirements appear at story entry and update from recorded progress; scene exploration does not label a guided case earned. A case badge remains an optional guided milestone, while independent research keeps its own evidence/revision requirements. No source verification, interpretation role or reward is inferred from clicking the new navigation.
+
+
+0.5.87 prototypes three reading-support profiles over the same Andes evidence and writing workflow. Profiles change coaching and explanatory depth, not sources, uncertainty, scoring or tool access. Word explanations sit beside editorial text and original-record displays; source quotations and stored observations are untouched. Plain writing labels teach research terms through optional help; advanced academic background stays expandable. Preferences persist separately and synchronize across tabs, while unsupported future preferences are preserved. Saved portfolios and exported research content remain independent of support mode.

@@ -30,7 +30,7 @@ await page.fill('[name=researchQuestion]',revised);
 assert.equal(await page.locator('#thesisNextQuestion').innerText(),revised);
 assert.equal(await page.inputValue('[name=argument]'),claim);
 await page.getByText('Take this question to an AI research assistant',{exact:true}).click();await page.click('[data-build-ai-brief]');assert((await page.inputValue('#aiResearchBrief')).includes(revised));
-await page.reload();await page.getByRole('button',{name:'Resume my thesis →'}).click();await page.locator('.focus-gap>summary').click();assert.equal(await page.locator('#thesisNextQuestion').innerText(),revised);assert.equal(await page.inputValue('[name=argument]'),claim);
+await page.reload();await page.getByRole('button',{name:'Resume my explanation →'}).click();await page.locator('.focus-gap>summary').click();assert.equal(await page.locator('#thesisNextQuestion').innerText(),revised);assert.equal(await page.inputValue('[name=argument]'),claim);
 await page.locator('#storyHeading').scrollIntoViewIfNeeded();await page.screenshot({path:path.resolve(__dirname,'../../../outputs/WorldThreads thesis next question.png')});
 await page.setViewportSize({width:390,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
 const axe=fs.readFileSync(require.resolve('axe-core/axe.min.js',{paths:[path.join(__dirname,'..','work','a11y'),process.cwd()]}),'utf8');await page.addScriptTag({content:axe});

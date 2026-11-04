@@ -9,7 +9,7 @@ const url=process.env.WORLDTHREADS_URL||'http://127.0.0.1:8765';
   const context=await browser.newContext({acceptDownloads:true}),one=await context.newPage(),two=await context.newPage();
   for(const page of [one,two])page.on('pageerror',e=>errors.push(e.message));
   await one.goto(url);await one.click('#researchMode');await one.selectOption('#threadSelect','THREAD-BRAZIL-PATRONAGE');await one.click('#threadThesis');await require('./helpers/thesis-stage.cjs').openWorkbench(one);await one.fill('[name=argument]','Brazil investigation retained in the first tab.');
-  await two.goto(url);await two.getByRole('button',{name:'Resume my thesis →',exact:true}).click();await require('./helpers/thesis-stage.cjs').openWorkbench(two);
+  await two.goto(url);await two.getByRole('button',{name:'Resume my explanation →',exact:true}).click();await require('./helpers/thesis-stage.cjs').openWorkbench(two);
   return {context,one,two};
  };
  const openDutch=async(page)=>{await page.click('#researchMode');await page.selectOption('#threadSelect','THREAD-DUTCH-RELIEF');await page.click('#threadThesis');await require('./helpers/thesis-stage.cjs').openWorkbench(page);};
@@ -38,7 +38,7 @@ const url=process.env.WORLDTHREADS_URL||'http://127.0.0.1:8765';
  {
   const {context,one,two}=await pair();await two.fill('[name=argument]','Other tab, first version.');await one.locator('#draftRecovery').waitFor({state:'visible'});await two.fill('[name=argument]','Other tab, later version.');await one.click('[data-use-other-draft]');
   assert.equal(await one.locator('[name=argument]').inputValue(),'Other tab, later version.');
-  await one.reload();await one.getByRole('button',{name:'Resume my thesis →',exact:true}).click();await require('./helpers/thesis-stage.cjs').openWorkbench(one);assert.equal(await one.locator('[name=argument]').inputValue(),'Other tab, later version.');
+  await one.reload();await one.getByRole('button',{name:'Resume my explanation →',exact:true}).click();await require('./helpers/thesis-stage.cjs').openWorkbench(one);assert.equal(await one.locator('[name=argument]').inputValue(),'Other tab, later version.');
   await context.close();console.log('PASS: use-other resolution reads the latest saved version and survives reload.');
  }
  // Conflict detection must compare current storage even before its storage event arrives.

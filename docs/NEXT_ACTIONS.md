@@ -74,3 +74,9 @@ Implements SF-01/SF-02 first: a visible research action row in the writing overv
 ## 0.5.86 live and independently checked
 
 Hosted publication and live research-entry/progress checks passed. Fresh actual-Safari agent, grade-7/8 lens and no walkthrough, found independent research and AI brief route, understood story versus case, and recovered own writing after reload. The remaining barrier moved to academic vocabulary, source terminology and finer writing-progress feedback. See TEST_PLAN.md for limited coverage: Andes completed as a narrative; other stories only sampled; external AI/portfolio not completed. Prioritize student-facing language and acknowledging drafted evidence next, alongside open quiz cueing/density work.
+
+## 0.5.87 — three-audience reading support prototype
+
+Andes plus the common writing workspace now offer More guidance (junior high), Some guidance (high school) and In depth (college/adult), with neutral support labels and audience suggestions in Display settings. One shared bounded story summary remains the same in all modes; mode changes coaching/method prompts and disclosure. Contextual word-help dialogs are available from the story, relevant Andes record inspectors and evidence board. Original source wording and source limits are not rewritten. Common form labels are plain; academic framework detail folds away. Drafted evidence explanations receive a visible count and a non-repeating next task. Research data/IDs, stored writing, portfolios, points and exports remain unchanged across mode switches.
+
+Primary confirmation passed 57/57; final reading-support, navigation and appearance checks passed; 46 syntax checks and graph validation passed. Publishing then reviewing with fresh audience-perspective agents. Remaining rollout: other stories and specialist source terminology need curated support, not an automatic wholesale rewrite.
