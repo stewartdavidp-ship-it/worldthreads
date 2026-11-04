@@ -818,3 +818,9 @@ New primary harvest-links scenario tests first-story selection, keyboard focus, 
 0.5.83 confirmation: 54/54 primary browser scenarios passed, including the fresh first-story/thesis/export and keyboard completion paths; graph validation and 42 syntax checks passed. Publication/live checks pending.
 
 0.5.83 published as faf06e6. Hosted validation 41765795598 and Pages 41765794940 succeeded. Live harvest-links and harvest-full-story passed, including research brief, revision, reassessment, filed portfolio, export and reload. Human comprehension and explicit critique-to-link anchoring remain open.
+
+## 0.5.84 — returned critique anchors
+
+Expanded panel-review scenario covers explicit C1/C2 markers, exact single-record/source detours, whole-thesis access from a subclaim concern, all readings for a thesis-wide question, immutable filed writing/portfolio/decisions, missing-filed-record honesty, keyboard/phone/themes and sampled accessibility. First assertion expected the full thesis in visible collapsed text; corrected to inspect its complete expandable quotation. Screenshot inspection then found fragmented phone labels despite no overflow. Phone path now uses vertical full-width rows, with whole-word range checks. Marker explanation folds separately. Original attempts retained in /tmp/wt-0584-anchor*.log. Full 54-scenario plan in progress; 43 syntax checks and graph validation passed. Test critique is a fixture, not a new external review.
+
+0.5.84 confirmation: primary plan passed 54/54; final focused panel-review passed after the broad-question disclosure refinement. Graph validation and 43 syntax checks passed. Publication/live checks pending. Existing strict review schemas remain unchanged; prompt guidance clarifies the existing explicit claim IDs.

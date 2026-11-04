@@ -22,7 +22,7 @@ Use HUMAN_REVIEW_TASKS.md with uncoached participants when available: do they re
 
 ## Release discipline
 
-Use tests/preview.py, affected source/game/thesis/export checks and appropriate regressions. Preserve failed attempts and label broad, focused, live, historical and human evidence separately. Keep saved writing, filed snapshots, portfolios and display controls intact. The user's current reserve is 2% (3 November), superseding the earlier 20%; check allowance periodically, never spend reset credits and do not schedule another run.
+Use tests/preview.py, affected source/game/thesis/export checks and appropriate regressions. Preserve failed attempts and label broad, focused, live, historical and human evidence separately. Keep saved writing, filed snapshots, portfolios and display controls intact. The user removed the usage reserve on 3 November for this run. Check allowance periodically, never spend reset credits and do not schedule another run.
 
 
 ## Grounded follow-ups
@@ -44,3 +44,9 @@ Candidate adds a three-link illustrated reading tool at the Czech argument step 
 0.5.83 confirmation: 54/54 primary browser scenarios passed, including the fresh first-story/thesis/export and keyboard completion paths; graph validation and 42 syntax checks passed. Publication/live checks pending.
 
 0.5.83 published as faf06e6. Hosted validation 41765795598 and Pages 41765794940 succeeded. Live harvest-links and harvest-full-story passed, including research brief, revision, reassessment, filed portfolio, export and reload. Human comprehension and explicit critique-to-link anchoring remain open.
+
+## 0.5.84 — locate returned review questions
+
+Candidate uses the returned claimId to highlight the player interpretation (C2–C4) or overall thesis (C1/document) on a source/record/reading/thesis path. It never classifies review prose into historical links. Each stop opens corresponding filed material; thesis-wide readings remain a set rather than an invented single target. Prompt guidance makes this anchoring explicit. Saved portfolios/reviews keep existing schemas. Final confirmation in progress. User removed the 2% reserve for this run; no reset credits may be spent.
+
+0.5.84 confirmation: primary plan passed 54/54; final focused panel-review passed after the broad-question disclosure refinement. Graph validation and 43 syntax checks passed. Publication/live checks pending. Existing strict review schemas remain unchanged; prompt guidance clarifies the existing explicit claim IDs.

@@ -261,3 +261,9 @@ Implemented compact selectable weather/harvest, harvest/price and price/access v
 0.5.83 confirmation: 54/54 primary browser scenarios passed, including the fresh first-story/thesis/export and keyboard completion paths; graph validation and 42 syntax checks passed. Publication/live checks pending.
 
 0.5.83 published as faf06e6. Hosted validation 41765795598 and Pages 41765794940 succeeded. Live harvest-links and harvest-full-story passed, including research brief, revision, reassessment, filed portfolio, export and reload. Human comprehension and explicit critique-to-link anchoring remain open.
+
+## 0.5.84 candidate — critique with an explicit place to inspect
+
+Returned concern IDs now locate questions on the filed evidence path, with deliberate source/record/interpretation/thesis detours. No prose-driven historical-link guess or automatic error judgment. Phone screenshot weakness fixed with wider path rows and folded explanation. Still seek human review of whether this helps reasoning compared with staying in the assistant.
+
+0.5.84 confirmation: primary plan passed 54/54; final focused panel-review passed after the broad-question disclosure refinement. Graph validation and 43 syntax checks passed. Publication/live checks pending. Existing strict review schemas remain unchanged; prompt guidance clarifies the existing explicit claim IDs.

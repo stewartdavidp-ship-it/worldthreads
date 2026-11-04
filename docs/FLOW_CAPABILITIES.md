@@ -50,3 +50,6 @@ Follow-on research gap identified in the dispatch pass: At that point MECH-007 h
 
 
 0.5.83 carries a first-story visual reading tool from the Czech argument step into the relevant thesis overview. Three selectable pairs distinguish contribution, non-isolated effect and missing household evidence. A deliberate action opens the evidence board; looking does not change the draft, roles, rewards or accepted graph. This teaches the boundary in this specific story rather than installing a universal causal-chain template.
+
+
+0.5.84 adds a version-specific review navigation path. Explicit C2/C3/C4 IDs highlight the corresponding player reading; C1/document highlights the thesis. Reading/source/record/thesis selections open saved material without changing the argument or rewarding agreement with critique. The marker identifies an assistant question, not a proven error or historical causal relationship. Earlier review schemas remain supported.
