@@ -1,6 +1,6 @@
 # Next actions and evidence boundaries
 
-Updated 3 November 2026. Published baseline 0.5.82; fresh primary confirmation passed 53/53 and all three targeted live checks passed. The chronological history stays in TEST_PLAN.md, BACKLOG.md and RESEARCH_AUDIT.md. This page identifies current work.
+Updated 3 November 2026. Published baseline 0.5.83; fresh primary confirmation passed 54/54 and both targeted live checks passed. The chronological history stays in TEST_PLAN.md, BACKLOG.md and RESEARCH_AUDIT.md. This page identifies current work.
 
 ## Graphics and exploration
 
@@ -42,3 +42,5 @@ Check common-name discovery for Mary Shelley versus the existing Mary Godwin ide
 Candidate adds a three-link illustrated reading tool at the Czech argument step and in relevant thesis overviews. Weather/harvest contribution, unresolved harvest/price attribution and missing household access are distinct. One selected pair is visible; support and limits expand on demand. No new observation, causal link, confidence, score or saved-writing schema. Targeted test passed; 54-scenario confirmation in progress. Next: human discoverability/comprehension, then connect filed critique to precisely identified evidence links without guessing from free text.
 
 0.5.83 confirmation: 54/54 primary browser scenarios passed, including the fresh first-story/thesis/export and keyboard completion paths; graph validation and 42 syntax checks passed. Publication/live checks pending.
+
+0.5.83 published as faf06e6. Hosted validation 41765795598 and Pages 41765794940 succeeded. Live harvest-links and harvest-full-story passed, including research brief, revision, reassessment, filed portfolio, export and reload. Human comprehension and explicit critique-to-link anchoring remain open.

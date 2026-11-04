@@ -259,3 +259,5 @@ Implemented sourced Mary Shelley aliases and a scoped, snapshot-preserving Pragu
 Implemented compact selectable weather/harvest, harvest/price and price/access views in the Czech step and applicable thesis overview. Keep uncertainty local to each link and all reading separate from assessment/rewards. Further work: test unaided discovery; identify critique-to-evidence connections explicitly before highlighting them. Do not classify a player’s thesis automatically from this curated reading tool.
 
 0.5.83 confirmation: 54/54 primary browser scenarios passed, including the fresh first-story/thesis/export and keyboard completion paths; graph validation and 42 syntax checks passed. Publication/live checks pending.
+
+0.5.83 published as faf06e6. Hosted validation 41765795598 and Pages 41765794940 succeeded. Live harvest-links and harvest-full-story passed, including research brief, revision, reassessment, filed portfolio, export and reload. Human comprehension and explicit critique-to-link anchoring remain open.
