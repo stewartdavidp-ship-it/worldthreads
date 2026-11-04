@@ -277,3 +277,13 @@ Replaced the specific simplistic volcano animation flagged by the user with an o
 0.5.85 confirmation: primary plan passed 55/55; final dedicated eruption-scene check and broader harvest-media suite passed. Graph validation and 44 syntax checks passed. Final layout places stage selection above the illustration; explanatory detail explicitly separates light-path counts from energy fractions. Publication/live verification pending.
 
 0.5.85 published as 173a7d0 on 4 November 2026. Hosted validation 41831701588 and Pages 41831700632 succeeded. Live eruption-scene and harvest-full-story passed, including thesis handoff, research brief, revision, portfolio/export and reload. Actual live illustration preview captured. Human assessment of the new visual remains open.
+
+## Open from independent Safari first visit — 4 November 2026
+
+- SF-01: make the transition into own writing/research and the assistant handoff easier to discover, without adding another full-page information dump.
+- SF-02: distinguish narrative completion from a case earned; surface remaining source/connection requirements before the ending.
+- SF-03: replace answer-cuing distractors with plausible interpretations that require comparing support; preserve uncertainty and reward process rather than agreement.
+- SF-04: reduce nested reading/action decisions and retain one clear next step.
+- SF-05: change map invitation so an unrevealed place does not promise immediately available records.
+
+These are one independent agent's design observations in actual Safari, not population-level usability findings. No confirmed Safari bug. Keep the long native typing anomaly unconfirmed until reproducible independently of the automation action. See TEST_PLAN.md for precise coverage and exclusions; all issues remain open.

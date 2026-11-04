@@ -60,3 +60,7 @@ The user identified the remaining triangle/curved-stroke placeholder. Candidate 
 0.5.85 confirmation: primary plan passed 55/55; final dedicated eruption-scene check and broader harvest-media suite passed. Graph validation and 44 syntax checks passed. Final layout places stage selection above the illustration; explanatory detail explicitly separates light-path counts from energy fractions. Publication/live verification pending.
 
 0.5.85 published as 173a7d0 on 4 November 2026. Hosted validation 41831701588 and Pages 41831700632 succeeded. Live eruption-scene and harvest-full-story passed, including thesis handoff, research brief, revision, portfolio/export and reload. Actual live illustration preview captured. Human assessment of the new visual remains open.
+
+## Independent Safari priorities — 4 November 2026
+
+The uncoached actual-Safari pass understood the app and completed the Dutch case, but found research/assistant entry buried, completion/gate distinctions confusing and guided answers too easy to infer. Prioritize SF-01 research discovery, SF-02 progression clarity and SF-03 stronger interpretation choices, then SF-04 density and SF-05 map wording. Preserve the public v0.5.85 test baseline while recording findings; no app changes were made during the test. Full report/coverage in TEST_PLAN.md and parent outputs/worldthreads-safari-first-visit-2026-11-04.json. No confirmed Safari functional bug; do not call native typing/AX anomalies product defects without reproduction.

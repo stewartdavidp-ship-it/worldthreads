@@ -834,3 +834,13 @@ New primary eruption-scene scenario checks direct keyboard stage selection, slid
 0.5.85 confirmation: primary plan passed 55/55; final dedicated eruption-scene check and broader harvest-media suite passed. Graph validation and 44 syntax checks passed. Final layout places stage selection above the illustration; explanatory detail explicitly separates light-path counts from energy fractions. Publication/live verification pending.
 
 0.5.85 published as 173a7d0 on 4 November 2026. Hosted validation 41831701588 and Pages 41831700632 succeeded. Live eruption-scene and harvest-full-story passed, including thesis handoff, research brief, revision, portfolio/export and reload. Actual live illustration preview captured. Human assessment of the new visual remains open.
+
+## 4 November 2026 — uncoached actual Safari first visit
+
+Baseline v0.5.85 / a59d5d7. Independent fresh-context agent used actual Safari 27.0.1 (22625.1.29.11.28), macOS 27.0.1, new private window with initial zero progress. No chat history, source code, test plan, walkthrough, expected answers or fixture were supplied. This is an AI-agent proxy, separate from deterministic regressions and human research.
+
+Observed: Dutch story and guided case completed; scholarly PDF opened; independent temporary claim drafted. All Andes and Europe/Korea narrative scenes explored, including dispatch, store-count and climate-mechanism visuals. Andes case and Europe/Korea independent argument were not completed. Research-assistant handoff found and brief prepared; no external response/import invented. Ordinary reload returned to chooser; 5 badges / 305 points / 1 of 3 cases and complete own claim persisted and were resumed. Actual final Safari screenshot/AX state verified by parent; test private window left open.
+
+Open findings: SF-01 research/assistant discovery is too deeply nested; SF-02 story completion, case completion and source/connection gates add bookkeeping; SF-03 distractors/title cue answers; SF-04 long nested pages increase effort; SF-05 map invitation promises records before Korea unlocks. Useful: purpose, epistemic boundaries, source access, documentary/measurement visuals and saved-work continuation. No confirmed Safari-specific functional defect. One long native typeText truncation did not reproduce with paste/short chunks; keep it an unconfirmed automation/input issue.
+
+Not covered: completed external return, defense/portfolio, downloads, entity/library breadth, separate private-session closure persistence, mobile Safari or broad Safari accessibility. Full structured observations: parent outputs/worldthreads-safari-first-visit-2026-11-04.json. No product changes made during this test.
