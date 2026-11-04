@@ -810,3 +810,9 @@ New primary object-aliases scenario checks common/full Mary Shelley names, canon
 0.5.82 confirmation: fresh primary plan passed 53/53, data/object validation and 41 JavaScript syntax checks passed. Focused assistant-brief scope check passed (one Prague reuse, not climate/Tambora). Publication/live verification pending. Functional results do not replace human review.
 
 0.5.82 published as bd33ab5. Hosted validation 41730229574 and Pages 41730229710 succeeded; live object-aliases, panel-review and first-story-audit passed, including the first-story AI brief and thesis export. Remaining source gaps and human-review needs are unchanged.
+
+## 0.5.83 candidate — shared story/thesis connection graphic
+
+New primary harvest-links scenario tests first-story selection, keyboard focus, exact observation and REL-0007 detours, no viewing-driven changes to storage/graph, the same tool in a seeded thesis, deliberate evidence-board navigation, 320px/largest text, both themes and sampled accessibility. Focused check and inspected desktop/phone screenshots passed; 42 syntax checks and graph validation passed. Full 54-scenario confirmation pending. Existing harvest-full-story / thesis-focus scenarios cover the actual game-to-thesis handoff; the new test labels its thesis seed as a fixture. No human learning result claimed.
+
+0.5.83 confirmation: 54/54 primary browser scenarios passed, including the fresh first-story/thesis/export and keyboard completion paths; graph validation and 42 syntax checks passed. Publication/live checks pending.

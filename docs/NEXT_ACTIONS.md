@@ -36,3 +36,9 @@ Check common-name discovery for Mary Shelley versus the existing Mary Godwin ide
 0.5.82 confirmation: fresh primary plan passed 53/53, data/object validation and 41 JavaScript syntax checks passed. Focused assistant-brief scope check passed (one Prague reuse, not climate/Tambora). Publication/live verification pending. Functional results do not replace human review.
 
 0.5.82 published as bd33ab5. Hosted validation 41730229574 and Pages 41730229710 succeeded; live object-aliases, panel-review and first-story-audit passed, including the first-story AI brief and thesis export. Remaining source gaps and human-review needs are unchanged.
+
+## 0.5.83 — first-story connection reading
+
+Candidate adds a three-link illustrated reading tool at the Czech argument step and in relevant thesis overviews. Weather/harvest contribution, unresolved harvest/price attribution and missing household access are distinct. One selected pair is visible; support and limits expand on demand. No new observation, causal link, confidence, score or saved-writing schema. Targeted test passed; 54-scenario confirmation in progress. Next: human discoverability/comprehension, then connect filed critique to precisely identified evidence links without guessing from free text.
+
+0.5.83 confirmation: 54/54 primary browser scenarios passed, including the fresh first-story/thesis/export and keyboard completion paths; graph validation and 42 syntax checks passed. Publication/live checks pending.

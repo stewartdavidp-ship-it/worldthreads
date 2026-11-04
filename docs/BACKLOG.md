@@ -253,3 +253,9 @@ Implemented sourced Mary Shelley aliases and a scoped, snapshot-preserving Pragu
 0.5.82 confirmation: fresh primary plan passed 53/53, data/object validation and 41 JavaScript syntax checks passed. Focused assistant-brief scope check passed (one Prague reuse, not climate/Tambora). Publication/live verification pending. Functional results do not replace human review.
 
 0.5.82 published as bd33ab5. Hosted validation 41730229574 and Pages 41730229710 succeeded; live object-aliases, panel-review and first-story-audit passed, including the first-story AI brief and thesis export. Remaining source gaps and human-review needs are unchanged.
+
+## First-story visual continuity (0.5.83 candidate)
+
+Implemented compact selectable weather/harvest, harvest/price and price/access views in the Czech step and applicable thesis overview. Keep uncertainty local to each link and all reading separate from assessment/rewards. Further work: test unaided discovery; identify critique-to-evidence connections explicitly before highlighting them. Do not classify a player’s thesis automatically from this curated reading tool.
+
+0.5.83 confirmation: 54/54 primary browser scenarios passed, including the fresh first-story/thesis/export and keyboard completion paths; graph validation and 42 syntax checks passed. Publication/live checks pending.

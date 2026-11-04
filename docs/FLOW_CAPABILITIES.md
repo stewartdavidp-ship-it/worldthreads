@@ -47,3 +47,6 @@ Follow-on research gap identified in the dispatch pass: At that point MECH-007 h
 
 
 0.5.81 provides a dated 1818 Frankenstein title-page reading activity, with distinct publication, epigraph and anonymous-authorship views. 0.5.82 adds a different thesis-review visual: publication reuse, explicitly separated from historical causation. The two-node diagram reveals full titles/locators/limits on demand and uses only the selected filed version. Sourced Mary Shelley aliases improve person entry without creating a new object or reward.
+
+
+0.5.83 carries a first-story visual reading tool from the Czech argument step into the relevant thesis overview. Three selectable pairs distinguish contribution, non-isolated effect and missing household evidence. A deliberate action opens the evidence board; looking does not change the draft, roles, rewards or accepted graph. This teaches the boundary in this specific story rather than installing a universal causal-chain template.
