@@ -1,8 +1,8 @@
-# WorldThreads
+# Beyond the Reply
 
-History isn't a collection of events. It's the threads that connect them.
+Learn to question AI, follow the evidence and build your own explanation.
 
-WorldThreads v0.5 explores the 1816 world through sources, observations, historical objects, relationships, threads and mechanisms. Objects identify people, movements, places, institutions, inventions, works, events, natural hazards and other factors. Observations remain the sourced claims about them.
+Beyond the Reply (formerly WorldThreads) uses guided investigations to teach critical thinking with AI. Its historical training ground explores the 1816 world through sources, observations, historical objects, relationships, threads and mechanisms. Objects identify people, movements, places, institutions, inventions, works, events, natural hazards and other factors. Observations remain the sourced claims about them.
 
 The prototype supports dark/light themes and adjustable text. It contains 83 observations, 57 sources, 59 observation relationship claims, 23 threads, 12 mechanism hypotheses and 182 objects, including 17 people. Its 207 object links include 59 exact projections of existing claims and 148 documented roles/context links. Coverage spans six continents plus marine records; gaps remain open. Source totals include an archival finding aid used only as a retrieval lead, not another witness to delivery. Dated antecedents, later outcomes and multi-year reconstructions retain their actual scope.
 
@@ -22,7 +22,7 @@ Dead ends become research tasks: specify the missing link, identify a source cap
 
 ## Review the published prototype
 
-Open [WorldThreads](https://stewartdavidp-ship-it.github.io/worldthreads/). No account is required. Start with Choose a story, follow its evidence and build a locally saved thesis; use Share feedback to report confusing steps. Work is saved in the reviewer’s browser, so it does not sync between people or devices.
+Open [Beyond the Reply](https://stewartdavidp-ship-it.github.io/worldthreads/). No account is required. Start with Choose a story, follow its evidence and build a locally saved thesis; use Share feedback to report confusing steps. Work is saved in the reviewer’s browser, so it does not sync between people or devices.
 
 GitHub Pages serves the static site from `main` at the repository root. `.nojekyll` preserves direct static-file serving. The previous research interface remains on `gh-pages` for rollback; its public community archive and service remain separate from this single-player prototype.
 

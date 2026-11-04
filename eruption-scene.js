@@ -39,5 +39,5 @@ function eruptionScene(){
  <g class="eruption-scene-guides" fill="none" stroke="#c1d7d4" stroke-width="1" opacity=".5"><path d="M124 290h64l57 12"/><path class="veil-guide" d="M475 109v-27h85"/><path class="light-guide" d="M752 267h50v-55"/></g>
  <g class="eruption-art-labels"><text x="46" y="286">ERUPTION</text><text class="veil-guide" x="568" y="86">AEROSOL VEIL</text><text class="light-guide" x="745" y="290">LESS LIGHT</text><text class="light-guide" x="745" y="308">AT THE SURFACE</text></g>
  <rect width="960" height="500" fill="url(#er-grain)" pointer-events="none"/>
- </svg><span class="eruption-scene-credit">WorldThreads · explanatory illustration</span></div>`;
+ </svg><span class="eruption-scene-credit">Beyond the Reply · explanatory illustration</span></div>`;
 }

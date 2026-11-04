@@ -1,6 +1,6 @@
 const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 (async()=>{const browser=await chromium.launch();try{
- const context=await browser.newContext({viewport:{width:1280,height:720}}),p=await context.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));const base=process.env.WORLDTHREADS_URL||'http://127.0.0.1:8792';await p.goto(base);await p.waitForSelector('[data-learning-start]');
+ const context=await browser.newContext({viewport:{width:1280,height:720}}),p=await context.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));const base=process.env.WORLDTHREADS_URL||'http://127.0.0.1:8792';await p.goto(base);await p.waitForSelector('[data-learning-start]');assert((await p.title()).startsWith('Beyond the Reply'));assert.equal(await p.locator('.brand').innerText(),'Beyond the Reply');
  await p.evaluate(()=>writeCurrentDraft({threadId:'THREAD-ANDES',argument:'Prior independent explanation must survive the learning guide.'}));
  const untouched=()=>p.evaluate(()=>JSON.stringify({graph:state,writing:localStorage.getItem(THESIS_KEY),portfolios:localStorage.getItem(PORTFOLIO_KEY),rewards:localStorage.getItem(PROGRESS_KEY),harvest:localStorage.getItem(HARVEST_INQUIRY_KEY)})),before=await untouched();
  await p.click('[data-learning-start]');assert((await p.locator('#learningHeading').innerText()).includes('Build your own judgment'));assert.equal(await p.locator('.learning-journey>li').count(),3);
