@@ -6,7 +6,7 @@ const assert=require('node:assert/strict');
  if(process.env.WORLDTHREADS_KEYBOARD)await require('./keyboard-controls.cjs')(page);
  await page.goto(process.env.WORLDTHREADS_URL||'http://127.0.0.1:8768');
  await page.waitForSelector('[data-start-story]');
- assert((await page.locator('#storyHeading').innerText()).includes('Learn history'));
+ assert((await page.locator('#storyHeading').innerText()).includes('Learn to investigate with AI'));
  assert.equal(await page.locator('[data-start-story]').count(),3);
  assert.equal(await page.locator('.story-cover .scene-art').count(),3);
  assert(!(await page.locator('.progress-summary').isVisible()));

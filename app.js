@@ -3,7 +3,7 @@ const state={observations:[],relationships:[],threads:[],sources:[],mechanisms:[
 let appLoaded=false;
 async function fetchCollection(path){
  for(let attempt=0;attempt<2;attempt++)try{
-  const response=await fetch(path+'?v=0.5.89',{cache:'no-cache'});
+  const response=await fetch(path+'?v=0.5.90',{cache:'no-cache'});
   if(!response.ok)throw Error('Evidence collection unavailable ('+response.status+')');
   const value=await response.json();if(!Array.isArray(value))throw Error('An evidence collection has an invalid format');return value;
  }catch(error){
@@ -25,7 +25,7 @@ async function load(){
     fetchCollection('data/object-types.json')
   ]);
   Object.assign(state,{observations,relationships,threads,sources,mechanisms,gaps,objects,objectRelationships,objectTypes,threadId:threads[0]?.id||null});
-  bind(); bindHarvestVisuals(); bindHarvestInquiry(); render(); renderStory();appLoaded=true;if(new URLSearchParams(location.search).get('practice')==='quotle')openQuotlePractice(false);setupNavigationHistory();document.getElementById('startupStatus').hidden=true;document.querySelectorAll('.site-header button').forEach(b=>b.disabled=false);
+  bind(); bindHarvestVisuals(); bindHarvestInquiry(); render(); renderStory();appLoaded=true;if(new URLSearchParams(location.search).get('learn')==='worldthreads')openLearningPath('orientation',0,false);else if(new URLSearchParams(location.search).get('practice')==='quotle')openQuotlePractice(false);setupNavigationHistory();document.getElementById('startupStatus').hidden=true;document.querySelectorAll('.site-header button').forEach(b=>b.disabled=false);
 }
 
 function bind(){
@@ -34,7 +34,7 @@ function bind(){
   document.getElementById('objectExplorer').addEventListener('click',e=>{const o=e.target.closest('[data-object]');if(o)openObject(o.dataset.object);if(e.target.id==='moreObjects'){objectBrowse.limit+=12;renderObjects();}});
   document.getElementById('objectExplorer').addEventListener('input',e=>{if(e.target.id==='objectSearch'){objectBrowse.query=e.target.value;objectBrowse.limit=12;renderObjects();}});
   document.getElementById('objectExplorer').addEventListener('change',e=>{if(e.target.id==='objectType'){objectBrowse.type=e.target.value;objectBrowse.limit=12;renderObjects();}});
-  document.getElementById('storyMode').onclick=()=>{quotlePracticeOpen=false;story.id=null;setExperience('story');renderStory();};
+  document.getElementById('storyMode').onclick=()=>{learningClearUrl();learningPathOpen=false;quotlePracticeOpen=false;story.id=null;setExperience('story');renderStory();};
   document.getElementById('researchMode').onclick=()=>{setExperience('research');showWholeLibrary();};
   document.getElementById('storyJourney').addEventListener('click',e=>{
     const threadThesis=e.target.closest('[data-thread-thesis]');if(threadThesis){startThreadThesis(threadThesis.dataset.threadThesis,null,threadThesis.hasAttribute('data-andes-handoff')&&andesSelected().length===2?andesSelected().map(x=>x[0]):[]);return;}
@@ -47,8 +47,8 @@ function bind(){
     const caseAnswer=e.target.closest('[data-case-answer]');if(caseAnswer){answerCase(Number(caseAnswer.dataset.caseAnswer));return;}
     const challenge=e.target.closest('[data-investigation-challenge]');if(challenge){openChallenge(challenge.dataset.investigationChallenge);return;}
     const answer=e.target.closest('[data-challenge-answer]');if(answer){answerChallenge(answer.dataset.challengeAnswer,Number(answer.dataset.answer));return;}
-    const start=e.target.closest('[data-start-story]');if(start){quotlePracticeOpen=false;story.id=start.dataset.startStory;const saved=storyProgress(story.id);const config=storyCatalog.find(s=>s.id===story.id);story.step=Math.max(0,Math.min(saved.last,(config.chapters||storyChapters).length-1));story.choice=saved.choice;story.clue=null;renderStory(true);return;}
-    const home=e.target.closest('[data-story-home]');if(home){quotlePracticeOpen=false;story.id=null;renderStory(true);return;}
+    const start=e.target.closest('[data-start-story]');if(start){learningPathOpen=false;quotlePracticeOpen=false;story.id=start.dataset.startStory;const saved=storyProgress(story.id);const config=storyCatalog.find(s=>s.id===story.id);story.step=Math.max(0,Math.min(saved.last,(config.chapters||storyChapters).length-1));story.choice=saved.choice;story.clue=null;renderStory(true);return;}
+    const home=e.target.closest('[data-story-home]');if(home){learningPathOpen=false;quotlePracticeOpen=false;story.id=null;renderStory(true);return;}
     const frontier=e.target.closest('[data-story-frontier],[data-harvest-frontier]');if(frontier){revealStoryContribution();return;}
     const download=e.target.closest('[data-download-proposal]');if(download){downloadProposal();return;}
     const step=e.target.closest('[data-story-step]');if(step){const next=Number(step.dataset.storyStep);if(story.id==='relief'&&next>story.step&&!storyProgress('relief').visited.includes(next)&&!caseSolved())return;story.step=next;story.clue=null;renderStory(true);return;}
@@ -255,7 +255,7 @@ startApp();
 const story={step:0,choice:null,id:null};
 function setExperience(mode){
  stopHarvestFilm();
-  const research=mode==='research',objects=mode==='objects';if(research||objects)quotlePracticeOpen=false;document.getElementById('researchLibrary').hidden=!research;document.getElementById('storyJourney').hidden=research||objects;document.getElementById('objectExplorer').hidden=!objects;document.getElementById('investigationProgress').hidden=objects;
+  const research=mode==='research',objects=mode==='objects';if(research||objects){learningClearUrl();quotlePracticeOpen=false;learningPathOpen=false;}document.getElementById('researchLibrary').hidden=!research;document.getElementById('storyJourney').hidden=research||objects;document.getElementById('objectExplorer').hidden=!objects;document.getElementById('investigationProgress').hidden=objects;
   for(const [id,active] of [['storyMode',!research&&!objects],['researchMode',research],['objectsMode',objects]]){const b=document.getElementById(id);b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));}
   window.scrollTo({top:0,behavior:'instant'});
 }
@@ -269,6 +269,7 @@ const storyChapters=[
 ];
 function renderStory(moveFocus=false){
  stopHarvestFilm();
+ if(learningPathOpen){renderLearningPath(moveFocus);return;}
  if(quotlePracticeOpen){renderQuotlePractice(moveFocus);return;}
  document.getElementById('investigationProgress').hidden=false;
  const progressRoot=document.getElementById('investigationProgress'),journeyRoot=document.getElementById('storyJourney');
@@ -282,5 +283,6 @@ function renderStory(moveFocus=false){
  document.getElementById('storyJourney').innerHTML=`<button class="story-link" data-story-home>← Choose another story</button><div class="story-progress"><span>${escapeHtml(config.short)}</span><span>Step ${story.step+1} of ${chapters.length}</span></div><div id="storyCaseReadiness">${storyCaseReadiness(config)}</div><details class="story-method"><summary>Your path to a case file</summary>${caseStagesHtml(config)}</details><article class="story-scene"><p class="eyebrow">${escapeHtml(c.label)}</p><h1 id="storyHeading" tabindex="-1">${escapeHtml(task?task.title:c.title)}</h1>${config.id==='harvests'?(story.step===5?harvestInquiryBoard()+harvestVisual():harvestVisual()+(story.step>=2?harvestInquiryBoard():'')):''}${config.id==='harvests'?harvestNarrative(c):config.id==='andes'?andesReadingHtml(c,story.step):`<p class="story-narrative">${escapeHtml(task&&!solved?task.surface:c.text)}</p>`}${task?caseHtml():config.id==='harvests'?'':config.id==='andes'&&story.step===2?andesDispatchHtml():`<figure class="story-illustration">${storySceneArt(config.id)}<figcaption>Illustrative scene · not a historical reconstruction</figcaption></figure>`}${o&&!task&&!(config.id==='harvests'&&story.step===4&&!harvestInquiry.revealed)?`<aside class="story-proof"><p class="eyebrow">One piece of evidence · ${escapeHtml(o.place)}</p><button class="story-link" data-story-evidence="${o.id}">Check the source and its limits ↗</button>${c.claim?`<button class="story-link" data-story-claim="${c.claim}">Examine this connection ↗</button>`:''}</aside>`:''}${c.choice&&config.id!=='harvests'?`<div class="story-choices"><button data-story-choice="universal" aria-pressed="${story.choice==='universal'}">A global shock should mean poor harvests everywhere.</button><button data-story-choice="regional" aria-pressed="${story.choice==='regional'}">Local conditions should change the outcome.</button></div><p class="story-feedback" role="status">${feedback||'Choose a hypothesis to continue.'}</p>`:''}${c.finish&&solved?storyResearchEntryHtml(config)+caseFileHtml(config)+frontierHtml(config):''}${c.prompt&&config.id!=='harvests'?`<p class="story-question">${escapeHtml(c.prompt)}</p>`:''}${storyGraphic(config,chapters)}<div class="story-actions">${story.step?`<button class="story-back" data-story-step="${story.step-1}">← Previous</button>`:''}${(!c.finish||!solved)?`<button class="story-next" data-story-step="${story.step+1}" ${(c.choice&&(!story.choice||(config.id==='harvests'&&!harvestInquiry.prediction.trim())))||(task&&!solved)?'disabled':''}>${escapeHtml(c.next||(task&&!solved?'Interpret the clues to continue':'Continue'))} →</button>`:`<button class="story-next" data-story-library="${config.thread}">Explore the full evidence →</button><button class="story-back" data-story-step="0">Start again</button>`}</div></article><p class="story-footnote">A guided investigation from selected records. The full research library contains other histories of 1816; they do not all share a volcanic cause.</p>`;
  if(config.id==='harvests'&&c.finish){document.getElementById('storyJourney').innerHTML=`<div class="story-progress"><span>${escapeHtml(config.short)}</span><span>Story explored · your argument continues</span></div><div id="storyCaseReadiness">${storyCaseReadiness(config)}</div><article class="story-scene"><p class="eyebrow">From discovery to explanation</p><h1 id="storyHeading" tabindex="-1">What can you defend now?</h1>${harvestInquiryBoard()}<details class="ending-evidence"><summary>Revisit the visual evidence</summary>${harvestVisual()}${harvestNarrative(c)}<button class="story-link" data-story-evidence="WT-1816-0045">Check the Korean report and its limits ↗</button>${storyGraphic(config,chapters)}</details><details class="ending-alternatives"><summary>Other ways to continue</summary><p>The guided case is an optional evidence exercise. Your own argument can continue into a thesis independently.</p><details><summary>${storyProgress(config.id).caseFiled?'View my earned guided case':'Build the guided case and earn its milestone'}</summary>${caseFileHtml(config)}</details><details><summary>Explore the open research question</summary>${frontierHtml(config)}</details><div class="story-actions"><button class="story-back" data-inquiry-download>Download my argument and research handoff</button><button class="story-back" data-story-library="${config.thread}">Explore the full evidence</button><button class="story-back" data-story-step="4">Return to the comparison</button><button class="story-back" data-story-step="0">Start again</button><button class="story-back" data-story-home>Choose another story</button></div></details></article>`;}
  const transfer=quotleTransferHtml();if(transfer){const article=journeyRoot.querySelector('.story-scene');if(article){if(story.step===5)article.insertAdjacentHTML('beforeend',transfer);else if(story.step===4&&article.querySelector('.response-choices'))article.querySelector('.response-choices').insertAdjacentHTML('beforebegin',transfer);else article.querySelector('h1').insertAdjacentHTML('afterend',transfer);}}
+ if(story.id==='harvests'&&story.step===5)journeyRoot.querySelector('.story-scene').insertAdjacentHTML('beforeend','<aside class="learning-everyday-link"><button type="button" class="story-back" data-learning-everyday>Use this research method in everyday life →</button></aside>');
  if(moveFocus){document.getElementById('storyHeading').focus();document.getElementById('storyJourney').scrollIntoView({behavior:'instant',block:'start'});}
 }
