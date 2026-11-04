@@ -151,3 +151,10 @@ Learning boundary: these tests show that the activities and handoffs work and ma
 
 
 Final source-isolation follow-up: opening a record alone had been covered, but expanding a named source could still enter the older story reward handler. AI practice now bypasses that handler, and its test expands the actual named-source disclosure before asserting byte-identical original progress. The expanded investigation and original progress/reward scenarios both pass. The progress script has a distinct cache key so the fix reaches existing browsers.
+
+
+## 0.5.96 — one remembered chat assistant
+
+Replaced the first investigation’s simultaneous ChatGPT/Claude links with a browser-local assistant preference. A one-time dialog offers shortcuts or any user-supplied chat name and http/https web address, including a workspace path. The main screen then shows only Open [chosen name] and Change beside Copy research prompt. Opening a link never sends or appends the research prompt. Custom native application protocols are not claimed; the preference opens chat websites.
+
+The preference uses its own versioned store and preserves unfamiliar data; denied saving permits an explicit visit-only choice. New-tab safety, credential/unsafe-scheme rejection and keyboard/dialog focus are covered. The new chat-preference scenario verifies custom/preset setup, one visible launch link, exact new-tab URL, reload, unchanged course/thesis/rewards, 320px/largest text, themes/accessibility and future/blocked storage. Existing harvest-ai full thesis/export and learning-path regressions passed. This isolated preference change did not repeat the previous broad 60-scenario historical/research run. The new scenario is registered for future full runs. No native browser download was used for this check.
