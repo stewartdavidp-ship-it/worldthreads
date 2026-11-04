@@ -971,3 +971,18 @@ Official chat endpoints checked 4 November 2026; DeepSeek and Meta AI block auto
 ## 0.5.99 — clear fields for another assistant
 
 Explicitly switching the chooser to My own chat / another assistant clears the display name and web address. Opening an already saved custom preference still shows its saved values. The existing assistant scenario now asserts both cleared fields before entering a custom URL; selection is not saved until Use this assistant.
+
+
+## 0.6.0 — connect AI practice to the existing research journey
+
+Integration review found two concrete breaks: the historical research desk did not reuse the saved assistant and lacked a direct clipboard action, while the AI lesson’s notebook link reset the historical scene to zero. The desk now offers Copy my research brief and the same remembered assistant launcher; the explicit Prepare action still creates a draft snapshot for inspection. Notebook entry resumes the saved scene/choice. The lesson ending includes an expandable three-stage route: practice → evidence/challenge/research → filed portfolio, with the historical guided case labeled optional and separate. No new reward rules, mastery scores, historical records or source claims were added.
+
+Tests extend ai-research with exact brief copy, saved Gemini selection across reload and graph/progress isolation for candidate import. Harvest-ai now checks resumed historical scene 3, retained lesson writing, no earned case from navigation and the continuation route. Chrome review walked research-library thread → explanation → AI research → prepared brief → remembered assistant. Existing source limitations, local candidate review and learner-assigned evidence roles remain authoritative. Investigation downloads and thesis/portfolio exports remain distinct artifacts; the prompt/response comparison is not silently merged into an earlier thesis.
+
+Follow-up review priorities:
+1. Test whether an unfamiliar learner can explain the difference between practice activity, a guided case and a filed research round, without opening help first. Current model/browser tests do not answer this.
+2. Review whether the detailed research desk can present prepare/copy/return with less scrolling at large text sizes. Keep full packet inspection available.
+3. Explore an explicit, versioned AI-practice provenance attachment to a selected thesis/portfolio; preserve old drafts and keep AI claims separate from evidence. Do not infer a linkage merely because the same thread was selected.
+4. Repeat an unfamiliar-source transfer task with actual junior-high, high-school and advanced learners. Successful clicks/exports are not proof of critical-thinking gains.
+
+Validation: all 22 selected integration/regression scenarios passed, including full game completion, historical full story, thesis handoff/export, candidate pathway/predictions, panel review, returning-player/durability, navigation, appearance, accessibility and reading support. All app-script syntax, historical/object data validation and diff checks passed. The interrupted preliminary broad run is not counted as a full-plan confirmation. The new run uses constructed candidate responses; this pass did not send a new request to an external AI service.

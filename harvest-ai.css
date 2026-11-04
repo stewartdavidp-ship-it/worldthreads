@@ -10,3 +10,5 @@ main:has(.harvest-ai){padding-top:16px;padding-bottom:20px}main .story-journey:h
 .hai-nav{margin-top:6px}
 .hai-track li{padding-top:3px;padding-bottom:3px}
 .hai-roundtrip{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:16px 0}.hai-roundtrip a{padding:10px 0}.hai-roundtrip>p{flex-basis:100%;margin:0;font-size:.85rem;color:var(--wt-muted)}
+
+.hai-research-route{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;list-style:none;padding:0}.hai-research-route li{padding:14px;border:1px solid var(--wt-border);border-radius:12px;background:var(--wt-surface)}.hai-research-route p{font-size:.9rem}.research-chat-actions{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:12px 0}#aiBriefCopyStatus{font-size:.9rem;color:var(--wt-muted)}@media(max-width:760px){.hai-research-route{grid-template-columns:1fr}}
