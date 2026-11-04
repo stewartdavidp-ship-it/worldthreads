@@ -8,6 +8,7 @@ function persistProgress(){try{const stored=readProgress(),stories={};if(unsuppo
 window.addEventListener('storage',e=>{if(e.key!==PROGRESS_KEY)return;const remote=readProgress();for(const config of storyCatalog){const saved=remote.stories[config.id];if(!saved||typeof saved!=='object')continue;const current=storyProgress(config.id);if(Number.isInteger(saved.last))current.last=saved.last;if(['universal','regional'].includes(saved.choice))current.choice=saved.choice;investigationProgress.stories[config.id]=current;}persistProgress();renderProgress();document.querySelectorAll('[data-investigation-challenge]').forEach(button=>button.disabled=button.dataset.investigationChallenge==='causation'?filedCases().length===0:filedCases().length!==storyCatalog.length);});
 
 function recordProgress(kind,value){
+ if(typeof harvestAIActive!=='undefined'&&harvestAIActive)return;
  if(!story.id||!storyCatalog.some(s=>s.id===story.id))return;
  const p=storyProgress(story.id);
  if(['visited','sources','connections','clues','solved'].includes(kind)&&!p[kind].includes(value))p[kind].push(value);

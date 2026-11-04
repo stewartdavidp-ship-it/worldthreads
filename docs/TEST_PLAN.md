@@ -936,3 +936,6 @@ Learning boundary: these tests show that the activities and handoffs work and ma
 
 
 0.5.95 confirmation: broad primary run completed 58/60. It found a missing Resume label on the retained historical notebook and an AI-brief test still expecting the former WorldThreads brand. The label was restored; the exact brand assertion was updated to Beyond the Reply, and both focused scenarios passed. The new investigation also passed expanded contrast/accessibility checks across its instructional screens in both themes. All 60 scenarios have passing executions after these corrections; this is not described as a fresh 60/60 frozen-commit run. Appearance and the 51-script syntax/data checks passed separately. Final focused checks and public confirmation are recorded in the release receipt.
+
+
+Final source-isolation follow-up: opening a record alone had been covered, but expanding a named source could still enter the older story reward handler. AI practice now bypasses that handler, and its test expands the actual named-source disclosure before asserting byte-identical original progress. The expanded investigation and original progress/reward scenarios both pass. The progress script has a distinct cache key so the fix reaches existing browsers.
