@@ -1,6 +1,6 @@
 # Next actions and evidence boundaries
 
-Updated 3 November 2026. Published baseline 0.5.83; fresh primary confirmation passed 54/54 and both targeted live checks passed. The chronological history stays in TEST_PLAN.md, BACKLOG.md and RESEARCH_AUDIT.md. This page identifies current work.
+Updated 3 November 2026. Published baseline 0.5.84; primary confirmation passed 54/54, final focused review check and all three targeted live checks passed. The chronological history stays in TEST_PLAN.md, BACKLOG.md and RESEARCH_AUDIT.md. This page identifies current work.
 
 ## Graphics and exploration
 
@@ -50,3 +50,5 @@ Candidate adds a three-link illustrated reading tool at the Czech argument step 
 Candidate uses the returned claimId to highlight the player interpretation (C2–C4) or overall thesis (C1/document) on a source/record/reading/thesis path. It never classifies review prose into historical links. Each stop opens corresponding filed material; thesis-wide readings remain a set rather than an invented single target. Prompt guidance makes this anchoring explicit. Saved portfolios/reviews keep existing schemas. Final confirmation in progress. User removed the 2% reserve for this run; no reset credits may be spent.
 
 0.5.84 confirmation: primary plan passed 54/54; final focused panel-review passed after the broad-question disclosure refinement. Graph validation and 43 syntax checks passed. Publication/live checks pending. Existing strict review schemas remain unchanged; prompt guidance clarifies the existing explicit claim IDs.
+
+0.5.84 published as 12135b0. Hosted validation 41766870609 and Pages 41766868724 succeeded. Live panel-review, return-context and harvest-links passed. Human tasks now test marker interpretation, locating filed passages, thesis-wide scope and whether the return adds value beyond the assistant. Functional checks use an existing fixture; no fresh external AI audit or human learning outcome is claimed.

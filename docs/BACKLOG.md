@@ -267,3 +267,5 @@ Implemented compact selectable weather/harvest, harvest/price and price/access v
 Returned concern IDs now locate questions on the filed evidence path, with deliberate source/record/interpretation/thesis detours. No prose-driven historical-link guess or automatic error judgment. Phone screenshot weakness fixed with wider path rows and folded explanation. Still seek human review of whether this helps reasoning compared with staying in the assistant.
 
 0.5.84 confirmation: primary plan passed 54/54; final focused panel-review passed after the broad-question disclosure refinement. Graph validation and 43 syntax checks passed. Publication/live checks pending. Existing strict review schemas remain unchanged; prompt guidance clarifies the existing explicit claim IDs.
+
+0.5.84 published as 12135b0. Hosted validation 41766870609 and Pages 41766868724 succeeded. Live panel-review, return-context and harvest-links passed. Human tasks now test marker interpretation, locating filed passages, thesis-wide scope and whether the return adds value beyond the assistant. Functional checks use an existing fixture; no fresh external AI audit or human learning outcome is claimed.
