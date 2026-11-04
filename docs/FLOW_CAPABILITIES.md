@@ -62,3 +62,10 @@ Follow-on research gap identified in the dispatch pass: At that point MECH-007 h
 
 
 0.5.87 prototypes three reading-support profiles over the same Andes evidence and writing workflow. Profiles change coaching and explanatory depth, not sources, uncertainty, scoring or tool access. Word explanations sit beside editorial text and original-record displays; source quotations and stored observations are untouched. Plain writing labels teach research terms through optional help; advanced academic background stays expandable. Preferences persist separately and synchronize across tabs, while unsupported future preferences are preserved. Saved portfolios and exported research content remain independent of support mode.
+
+
+## 0.5.87 audience review and 0.5.88 source-reading follow-up — 4 November 2026
+
+Published 0.5.87 passed hosted validation and live reading/display checks. Three independent fresh-context AI agents used separate private Safari windows as junior-high, high-school and college/adult readers. All explored the four Andes scenes and recovered their own writing after a support change and reload. Younger perspectives found summaries/definitions useful but dense source-history notes difficult; the adult perspective valued clear language plus method questions. These are model simulations, not real-student usability or learning validation. External AI, new source search and full case/portfolio completion were not covered by these manual passes. Full coverage/findings: parent outputs/worldthreads-audience-safari-2026-11-04.json.
+
+0.5.88 adds optional short reading guides beside unchanged Andes records, a plain explanation beside the intact dispatch transmission details, source-versus-connection progress labels, and date-resolution wording. Original quotations, data, saved writing and reward rules remain unchanged. The native Safari reload warning was reported by agents but did not reproduce in a separate ordinary saved reload; retain unsaved-writing protection and keep this observation unresolved. Remaining: real audience testing; other-story support; long workspace/source detail density; quiz cueing.
