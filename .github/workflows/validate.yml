@@ -16,6 +16,7 @@ jobs:
       - run: python3 tests/validate-data.py
       - run: node --check app.js
       - run: node --check reading-preview.js
+      - run: node --check prompt-practice.js
       - run: node --check chat-preference.js
       - run: node --check harvest-ai.js
       - run: node --check learning-path.js
