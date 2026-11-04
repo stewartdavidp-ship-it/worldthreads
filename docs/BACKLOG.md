@@ -275,3 +275,5 @@ Returned concern IDs now locate questions on the filed evidence path, with delib
 Replaced the specific simplistic volcano animation flagged by the user with an original atmospheric cutaway and selectable explanation stages. Keep the conceptual status visible and distinguish the illustration from the NASA photograph. Remaining quality evaluation: human response to the new art and whether the stages clarify the mechanism without implying a complete local harvest explanation.
 
 0.5.85 confirmation: primary plan passed 55/55; final dedicated eruption-scene check and broader harvest-media suite passed. Graph validation and 44 syntax checks passed. Final layout places stage selection above the illustration; explanatory detail explicitly separates light-path counts from energy fractions. Publication/live verification pending.
+
+0.5.85 published as 173a7d0 on 4 November 2026. Hosted validation 41831701588 and Pages 41831700632 succeeded. Live eruption-scene and harvest-full-story passed, including thesis handoff, research brief, revision, portfolio/export and reload. Actual live illustration preview captured. Human assessment of the new visual remains open.

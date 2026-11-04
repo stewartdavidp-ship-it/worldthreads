@@ -1,6 +1,6 @@
 # Next actions and evidence boundaries
 
-Updated 3 November 2026. Published baseline 0.5.84; primary confirmation passed 54/54, final focused review check and all three targeted live checks passed. The chronological history stays in TEST_PLAN.md, BACKLOG.md and RESEARCH_AUDIT.md. This page identifies current work.
+Updated 4 November 2026. Published baseline 0.5.85; primary confirmation passed 55/55, final focused media checks and both targeted live checks passed. The chronological history stays in TEST_PLAN.md, BACKLOG.md and RESEARCH_AUDIT.md. This page identifies current work.
 
 ## Graphics and exploration
 
@@ -58,3 +58,5 @@ Candidate uses the returned claimId to highlight the player interpretation (C2â€
 The user identified the remaining triangle/curved-stroke placeholder. Candidate replaces that exact scene with original layered vector terrain, a textured plume, atmospheric curvature/veil and traced light paths. Direct Eruption/Aerosols/Sunlight controls supplement play/pause/reset/scrubbing; motion occurs only during playback and respects reduced motion. Geometry/particle counts are conceptual, not reconstructed measurements. Focused eruption-scene and harvest-media checks passed; full 55-scenario confirmation in progress.
 
 0.5.85 confirmation: primary plan passed 55/55; final dedicated eruption-scene check and broader harvest-media suite passed. Graph validation and 44 syntax checks passed. Final layout places stage selection above the illustration; explanatory detail explicitly separates light-path counts from energy fractions. Publication/live verification pending.
+
+0.5.85 published as 173a7d0 on 4 November 2026. Hosted validation 41831701588 and Pages 41831700632 succeeded. Live eruption-scene and harvest-full-story passed, including thesis handoff, research brief, revision, portfolio/export and reload. Actual live illustration preview captured. Human assessment of the new visual remains open.
