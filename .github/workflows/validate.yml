@@ -16,6 +16,7 @@ jobs:
       - run: python3 tests/validate-data.py
       - run: node --check app.js
       - run: node --check reading-preview.js
+      - run: node --check quotle-practice.js
       - run: node --check reading-support.js
       - run: node --check stories.js
       - run: node --check relief-trace.js
