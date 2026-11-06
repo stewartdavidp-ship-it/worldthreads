@@ -292,9 +292,28 @@ function renderStory(moveFocus=false){
    scene.querySelector('.story-narrative').after(actions);
    const dispatch = scene.querySelector(':scope > .andes-dispatch');
    if (dispatch) {
-    const continuation = document.createElement('p');
+    const nextScene = actions.querySelector('.story-next');
+    nextScene.textContent = 'Continue to Chacabuco →';
+    const readDispatch = document.createElement('button');
+    readDispatch.type = 'button';
+    readDispatch.className = 'story-back';
+    readDispatch.textContent = 'Read the 7 p.m. dispatch ↓';
+    readDispatch.addEventListener('click', () => {
+     const heading = dispatch.querySelector('h3');
+     heading.tabIndex = -1;
+     heading.focus({preventScroll:true});
+     heading.scrollIntoView({block:'center',behavior:'instant'});
+    });
+    nextScene.before(readDispatch);
+    const invitation = document.createElement('p');
+    invitation.textContent = 'Las Heras planned to march at 10 p.m. Can his report tell us whether the soldiers got their rations?';
+    actions.before(invitation);
+    const continuation = document.createElement('div');
     continuation.className = 'dispatch-continue';
-    continuation.append(actions.querySelector('.story-next').cloneNode(true));
+    const takeaway = document.createElement('p');
+    takeaway.className = 'dispatch-takeaway';
+    takeaway.textContent = 'The dispatch records a plan. To verify delivery, look for a dated record showing who received the rations.';
+    continuation.append(takeaway, nextScene.cloneNode(true));
     dispatch.after(continuation);
    }
   }

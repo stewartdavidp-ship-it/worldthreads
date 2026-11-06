@@ -15,3 +15,6 @@
 
 /* Keep nested research panels from spending the phone's reading width on borders. */
 @media(max-width:500px){.case-victory:has(.andes-connections){padding-inline:8px}.andes-connections{padding-inline:8px}.andes-connections .andes-pair-result,.andes-connections .andes-questions,.andes-connections .andes-mule-document{padding-inline:0}.andes-connections .andes-mules{padding-inline:8px}}
+
+.dispatch-continue { margin-block: 1rem; }
+.andes-dispatch:not(:has(.dispatch-reading-result)) + .dispatch-continue .dispatch-takeaway { display: none; }
