@@ -40,6 +40,11 @@ const assert=require('node:assert/strict');
  const comparison=page.locator('.story-1816-comparison');
  const invitation=await comparison.locator('summary').boundingBox();
  assert(invitation && invitation.y+invitation.height<=664,'Homework next step is in the initial phone viewport');
+ const feedback=page.locator('footer .wt-feedback-launch');
+ await feedback.waitFor();
+ assert.equal(await feedback.evaluate(el=>getComputedStyle(el).position),'static');
+ const feedbackBox=await feedback.boundingBox();
+ assert(feedbackBox.y>=invitation.y+invitation.height,'Feedback is below the comparison control');
  assert.equal(await comparison.evaluate(el=>el.open),false);
  await comparison.locator('summary').click();
  assert.match(await comparison.innerText(),/bumper rice crop/);
@@ -53,6 +58,16 @@ const assert=require('node:assert/strict');
  await page.goto(new URL('./',page.url()).href);
  const start=await page.getByRole('button',{name:'Start the Andes story'}).boundingBox();
  assert(start && start.y+start.height<=664,'The featured story starts in the initial phone viewport');
+ await page.getByRole('button',{name:'Start the Andes story'}).click();
+ const scene=page.locator('.story-scene');
+ const narrative=await scene.locator('.story-narrative').first().boundingBox();
+ assert(narrative && narrative.y<664,'The Andes opening starts in the initial phone viewport');
+ for (const selector of ['#storyCaseReadiness','.story-method','#investigationProgress']) {
+  assert(await scene.evaluate((el,selector)=>Boolean(el.compareDocumentPosition(document.querySelector(selector)) & Node.DOCUMENT_POSITION_FOLLOWING),selector));
+ }
+ await feedback.click();
+ await page.getByRole('dialog',{name:'Share feedback'}).waitFor();
+ await page.keyboard.press('Escape');
  await browser.close();
  console.log('PASS: story-first home and sourced 1816 entry fit the first phone viewport; comparison and guided handoff work; goals and badges expand; active progress, evidence clues, resume and mobile reflow remain accessible.');
 })().catch(e=>{console.error(e);process.exit(1)});

@@ -274,7 +274,7 @@ function renderStory(moveFocus=false){
  if(harvestAIActive&&story.id==='harvests'){renderHarvestAI(moveFocus);return;}
  document.getElementById('investigationProgress').hidden=false;
  const progressRoot=document.getElementById('investigationProgress'),journeyRoot=document.getElementById('storyJourney');
- if(story.id)journeyRoot.before(progressRoot);else journeyRoot.after(progressRoot);
+ if(story.id && story.id!=='andes')journeyRoot.before(progressRoot);else journeyRoot.after(progressRoot);
  document.getElementById('storyJourney').classList.toggle('evidence-case',story.id==='relief');
  if(!story.id){renderStoryShelf(moveFocus);renderProgress();return;}
  recordProgress('visited',story.step);
@@ -285,5 +285,9 @@ function renderStory(moveFocus=false){
  if(config.id==='harvests'&&c.finish){document.getElementById('storyJourney').innerHTML=`<div class="story-progress"><span>${escapeHtml(config.short)}</span><span>Story explored · your argument continues</span></div><div id="storyCaseReadiness">${storyCaseReadiness(config)}</div><article class="story-scene"><p class="eyebrow">From discovery to explanation</p><h1 id="storyHeading" tabindex="-1">What can you defend now?</h1>${harvestInquiryBoard()}<details class="ending-evidence"><summary>Revisit the visual evidence</summary>${harvestVisual()}${harvestNarrative(c)}<button class="story-link" data-story-evidence="WT-1816-0045">Check the Korean report and its limits ↗</button>${storyGraphic(config,chapters)}</details><details class="ending-alternatives"><summary>Other ways to continue</summary><p>The guided case is an optional evidence exercise. Your own argument can continue into a thesis independently.</p><details><summary>${storyProgress(config.id).caseFiled?'View my earned guided case':'Build the guided case and earn its milestone'}</summary>${caseFileHtml(config)}</details><details><summary>Explore the open research question</summary>${frontierHtml(config)}</details><div class="story-actions"><button class="story-back" data-inquiry-download>Download my argument and research handoff</button><button class="story-back" data-story-library="${config.thread}">Explore the full evidence</button><button class="story-back" data-story-step="4">Return to the comparison</button><button class="story-back" data-story-step="0">Start again</button><button class="story-back" data-story-home>Choose another story</button></div></details></article>`;}
  const transfer=quotleTransferHtml();if(transfer){const article=journeyRoot.querySelector('.story-scene');if(article){if(story.step===5)article.insertAdjacentHTML('beforeend',transfer);else if(story.step===4&&article.querySelector('.response-choices'))article.querySelector('.response-choices').insertAdjacentHTML('beforebegin',transfer);else article.querySelector('h1').insertAdjacentHTML('afterend',transfer);}}
  if(story.id==='harvests'&&story.step===5)journeyRoot.querySelector('.story-scene').insertAdjacentHTML('beforeend','<aside class="learning-everyday-link"><button type="button" class="story-back" data-learning-everyday>Use this research method in everyday life →</button></aside>');
+ if (config.id === 'andes') {
+  const scene = journeyRoot.querySelector('.story-scene');
+  scene.after(document.getElementById('storyCaseReadiness'), journeyRoot.querySelector('.story-method'));
+ }
  if(moveFocus){document.getElementById('storyHeading').focus();document.getElementById('storyJourney').scrollIntoView({behavior:'instant',block:'start'});}
 }

@@ -37,5 +37,5 @@ form.addEventListener('submit',async e=>{e.preventDefault();if(sending)return;if
  }catch(error){status.textContent=error.name==='TimeoutError'||error instanceof TypeError?'Feedback could not be sent. Check your connection and retry; your message is still here.':error.message;}finally{sending=false;send.disabled=false;}
 });
 function launchButton(label,inline=false){const button=document.createElement('button');button.type='button';button.className='wt-feedback-launch'+(inline?' wt-feedback-inline':'');button.textContent=label;button.addEventListener('click',()=>openFeedback(button));return button;}
-document.body.append(launchButton('Share feedback'));
+(document.querySelector('footer') || document.body).append(launchButton('Share feedback'));
 document.getElementById('detailDialog')?.append(launchButton('Share feedback about this evidence',true));
