@@ -290,6 +290,13 @@ function renderStory(moveFocus=false){
   if (!c.finish) {
    const actions = scene.querySelector('.story-actions');
    scene.querySelector('.story-narrative').after(actions);
+   const dispatch = scene.querySelector(':scope > .andes-dispatch');
+   if (dispatch) {
+    const continuation = document.createElement('p');
+    continuation.className = 'dispatch-continue';
+    continuation.append(actions.querySelector('.story-next').cloneNode(true));
+    dispatch.after(continuation);
+   }
   }
   scene.after(document.getElementById('storyCaseReadiness'), journeyRoot.querySelector('.story-method'));
  }
