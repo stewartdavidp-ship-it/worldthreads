@@ -21,6 +21,7 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=r
  await choose('transfer','repeat');assert((await p.locator('.hai-feedback').innerText()).includes('one source'));await choose('transfer','trace');await fit();assert.equal(await p.evaluate(()=>JSON.stringify({graph:state,thesis:localStorage.getItem(THESIS_KEY),portfolios:localStorage.getItem(PORTFOLIO_KEY),progress:localStorage.getItem(PROGRESS_KEY),notebook:localStorage.getItem(HARVEST_INQUIRY_KEY)})),original,'Guided clicks must not mutate historical facts, original notebook, writing or rewards');
  await p.reload();await p.waitForSelector('.harvest-ai');assert.equal(await p.evaluate(()=>harvestAI.step),5);await p.goBack();assert.equal(await p.locator('[data-hai-field=claim]').inputValue(),claim);await p.goForward();assert(await p.locator('[data-hai-thesis]').isEnabled());
  const practice=p.locator('#sourcePractice');
+ assert(await practice.evaluate(el=>Boolean(el.compareDocumentPosition(document.querySelector('.hai-end-actions')) & Node.DOCUMENT_POSITION_FOLLOWING)));
  await practice.locator('summary').click();
  assert(await practice.locator('[data-source-practice-save]').isDisabled());
  assert(!(await practice.innerText()).includes('Both blogs copied'));
