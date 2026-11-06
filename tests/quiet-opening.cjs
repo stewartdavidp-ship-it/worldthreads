@@ -65,6 +65,10 @@ const assert=require('node:assert/strict');
  for (const selector of ['#storyCaseReadiness','.story-method','#investigationProgress']) {
   assert(await scene.evaluate((el,selector)=>Boolean(el.compareDocumentPosition(document.querySelector(selector)) & Node.DOCUMENT_POSITION_FOLLOWING),selector));
  }
+ const andesNext=scene.getByRole('button',{name:'How did they prepare the army?'});
+ assert(await andesNext.evaluate(el=>el.closest('.story-actions').previousElementSibling.matches('.story-narrative')));
+ await andesNext.click();
+ assert.match(await page.locator('#storyHeading').innerText(),/Equipment needs an organized army/);
  await feedback.click();
  await page.getByRole('dialog',{name:'Share feedback'}).waitFor();
  await page.keyboard.press('Escape');

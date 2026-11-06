@@ -287,6 +287,10 @@ function renderStory(moveFocus=false){
  if(story.id==='harvests'&&story.step===5)journeyRoot.querySelector('.story-scene').insertAdjacentHTML('beforeend','<aside class="learning-everyday-link"><button type="button" class="story-back" data-learning-everyday>Use this research method in everyday life →</button></aside>');
  if (config.id === 'andes') {
   const scene = journeyRoot.querySelector('.story-scene');
+  if (!c.finish) {
+   const actions = scene.querySelector('.story-actions');
+   scene.querySelector('.story-narrative').after(actions);
+  }
   scene.after(document.getElementById('storyCaseReadiness'), journeyRoot.querySelector('.story-method'));
  }
  if(moveFocus){document.getElementById('storyHeading').focus();document.getElementById('storyJourney').scrollIntoView({behavior:'instant',block:'start'});}
