@@ -25,7 +25,7 @@ async function load(){
     fetchCollection('data/object-types.json')
   ]);
   Object.assign(state,{observations,relationships,threads,sources,mechanisms,gaps,objects,objectRelationships,objectTypes,threadId:threads[0]?.id||null});
-  bind(); bindHarvestVisuals(); bindHarvestInquiry(); render(); renderStory();appLoaded=true;if(new URLSearchParams(location.search).get('learn')==='worldthreads')openLearningPath('orientation',0,false);else if(new URLSearchParams(location.search).get('practice')==='quotle')openQuotlePractice(false);if(new URLSearchParams(location.search).get('investigate')==='harvests')openHarvestAI(false);if(new URLSearchParams(location.search).get('story')==='1816')render1816Entry();setupNavigationHistory();document.getElementById('startupStatus').hidden=true;document.querySelectorAll('.site-header button').forEach(b=>b.disabled=false);
+  bind(); bindHarvestVisuals(); bindHarvestInquiry(); render(); renderStory();appLoaded=true;if(new URLSearchParams(location.search).get('learn')==='worldthreads')openLearningPath('orientation',0,false);else if(new URLSearchParams(location.search).get('practice')==='quotle')openQuotlePractice(false);if(new URLSearchParams(location.search).get('investigate')==='harvests')openHarvestAI(false);if(new URLSearchParams(location.search).get('story')==='1816')render1816Entry(history.state?.comparisonOpen===true);setupNavigationHistory();document.getElementById('startupStatus').hidden=true;document.querySelectorAll('.site-header button').forEach(b=>b.disabled=false);
 }
 
 function bind(){

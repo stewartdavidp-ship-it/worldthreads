@@ -13,14 +13,14 @@ const storyCatalog=[
  {label:'The evidence boundary',title:'The crossing preceded victory. That is not the whole cause.',text:'The army won at Chacabuco. The recorded link from crossing to battle is chronological, not proof that preparation alone explains the victory. The next layer of the story needs logistics and competing military explanations.',record:'WT-1816-0031',claim:'REL-0023',finish:true}
  ]}
 ];
-function render1816Entry() {
+function render1816Entry(comparisonOpen = false) {
  document.getElementById('investigationProgress').hidden = true;
  document.getElementById('storyJourney').innerHTML = `<article class="story-1816">
   <p class="eyebrow">1816 · Weather and harvests</p>
   <h1 id="storyHeading" tabindex="-1">Why was 1816 the Year Without a Summer?</h1>
   <p>Much of Europe had an unusually cold summer in 1816. Mount Tambora erupted in April 1815. Sulfur from the eruption formed tiny particles that reduced sunlight and made the cold more likely.</p>
   <p><a href="https://www.research.ed.ac.uk/en/publications/disentangling-the-causes-of-the-1816-european-year-without-a-summ/" target="_blank" rel="noopener noreferrer">Climate study · Schurer et al. (2019) ↗</a></p>
-  <details class="story-1816-comparison">
+  <details class="story-1816-comparison" ${comparisonOpen ? 'open' : ''}>
    <summary>Did crops fail everywhere? Compare two regions</summary>
    <h2>Two regions, different reports</h2>
    <p><strong>Czech Lands.</strong> Weather records and historical accounts describe a cold summer and poor grain harvests. Grain prices rose widely in 1817. <a href="https://cp.copernicus.org/articles/12/1361/2016/index.html" target="_blank" rel="noopener noreferrer">Read the Czech Lands study ↗</a></p>
