@@ -47,3 +47,24 @@ button:not(.map-node),summary{min-height:44px;box-sizing:border-box}
 /* A returned finding must remain readable inside the nested research workspace. */
 @media(max-width:500px){.thesis-workbench:has(.local-finding),.research-loop:has(.local-finding),.local-finding{padding-inline:8px}.local-finding>.candidate-review,.local-finding>.candidate-compare,.local-finding .candidate-comparison>section{padding-inline:8px}}
 @media(max-width:500px){.local-finding .candidate-comparison .eyebrow{letter-spacing:normal;overflow-wrap:normal;word-break:normal}}
+
+.relief-story-lead { min-width: 0; }
+.region-comparison { display: grid; gap: 1rem; margin-block: 1rem; }
+.region-comparison section { padding: 1rem; background: var(--wt-surface); border: 1px solid var(--wt-border); border-radius: 12px; }
+.region-comparison h3 { margin-top: 0; }
+@media (min-width: 1050px) {
+ .story-journey.evidence-case { max-width: 1320px; }
+ .evidence-case .story-scene.relief-desktop-scene {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  gap: 1.5rem;
+  max-width: none;
+  align-items: start;
+ }
+ .relief-desktop-scene > * { grid-column: 1 / -1; min-width: 0; }
+ .relief-desktop-scene > .relief-story-lead { grid-column: 1; grid-row: 1; }
+ .relief-desktop-scene > .case-workbench, .relief-desktop-scene > .case-reveal { grid-column: 2; grid-row: 1; margin-top: 0; }
+ .story-1816 { max-width: 64rem; }
+ .story-1816 > p { max-width: 46rem; }
+ .region-comparison { grid-template-columns: 1fr 1fr; }
+}

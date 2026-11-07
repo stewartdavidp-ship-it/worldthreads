@@ -274,7 +274,7 @@ function renderStory(moveFocus=false){
  if(harvestAIActive&&story.id==='harvests'){renderHarvestAI(moveFocus);return;}
  document.getElementById('investigationProgress').hidden=false;
  const progressRoot=document.getElementById('investigationProgress'),journeyRoot=document.getElementById('storyJourney');
- if(story.id && story.id!=='andes')journeyRoot.before(progressRoot);else journeyRoot.after(progressRoot);
+ if(story.id && !['andes','relief'].includes(story.id))journeyRoot.before(progressRoot);else journeyRoot.after(progressRoot);
  document.getElementById('storyJourney').classList.toggle('evidence-case',story.id==='relief');
  if(!story.id){renderStoryShelf(moveFocus);renderProgress();return;}
  recordProgress('visited',story.step);
@@ -317,6 +317,11 @@ function renderStory(moveFocus=false){
     dispatch.after(continuation);
    }
   }
+  scene.after(document.getElementById('storyCaseReadiness'), journeyRoot.querySelector('.story-method'));
+ }
+ if (config.id === 'relief') {
+  const scene = journeyRoot.querySelector('.story-scene');
+  arrangeReliefScene(scene, c);
   scene.after(document.getElementById('storyCaseReadiness'), journeyRoot.querySelector('.story-method'));
  }
  if(moveFocus){document.getElementById('storyHeading').focus();document.getElementById('storyJourney').scrollIntoView({behavior:'instant',block:'start'});}
