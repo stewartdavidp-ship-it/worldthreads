@@ -68,3 +68,10 @@ button:not(.map-node),summary{min-height:44px;box-sizing:border-box}
  .story-1816 > p { max-width: 46rem; }
  .region-comparison { grid-template-columns: 1fr 1fr; }
 }
+
+.person-story { display: grid; gap: 1rem; margin-block: 1rem; }
+.person-story article, .dispatch-learning { padding: 1rem; border: 1px solid var(--wt-border); border-radius: 12px; background: var(--wt-surface); }
+.person-story h3 { margin-top: 0; }
+.person-story p { line-height: 1.5; }
+.dispatch-learning { margin-block: 1rem; }
+@media (min-width: 1050px) { .person-story:has(article:nth-child(2)) { grid-template-columns: 1fr 1fr; } }
