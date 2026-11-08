@@ -109,3 +109,19 @@ button:not(.map-node),summary{min-height:44px;box-sizing:border-box}
  .andes-dispatch > [data-andes-dispatch-reveal] { grid-column: 2; grid-row: 6; justify-self: start; }
 }
 @media(max-width:500px) { .dispatch-evidence-boundary { grid-template-columns: 1fr; } .evidence-timeline strong { font-size: 1.6rem; } .evidence-timeline > .dispatch-now,.evidence-timeline > .dispatch-later { padding: .65rem; } }
+
+/* A missing historical record is a visible frontier, not a completed arrow. */
+.andes-evidence-trail { margin-block: 1.5rem; }
+.andes-evidence-trail h5 { font-size: 1.1rem; margin: 0 0 1rem; }
+.andes-trail-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; align-items: stretch; }
+.andes-trail-grid article { position: relative; min-width: 0; padding: 1rem; border: 1px solid var(--wt-border); border-radius: 12px; background: var(--wt-bg); }
+.andes-trail-grid .trail-missing { border-style: dashed; background: transparent; }
+.trail-kind { display: block; color: var(--wt-muted); font-size: .75rem; letter-spacing: .06em; text-transform: uppercase; margin-bottom: .7rem; }
+.andes-trail-grid strong { display: block; font-size: 1.1rem; }
+.andes-trail-grid p { margin: .6rem 0 0; line-height: 1.5; }
+.trail-gap-icon { display: inline-grid; place-items: center; width: 1.5rem; height: 1.5rem; border: 1px dashed var(--wt-border); border-radius: 50%; margin-bottom: .5rem; }
+.andes-stores .andes-package-counts { gap: .75rem; }
+.andes-stores .andes-package-counts > div { display: grid; grid-template-columns: 2.5rem auto; column-gap: .75rem; align-items: center; text-align: left; padding: .8rem 1rem; }
+.andes-stores .andes-package-counts svg { grid-row: 1 / 4; width: 2.5rem; height: 2.5rem; }
+.andes-stores .andes-package-counts strong { font-size: 1.6rem; }
+@media(max-width:650px) { .andes-trail-grid { grid-template-columns: 1fr; gap: .65rem; } .andes-stores .andes-package-counts > div { display: flex; text-align: center; padding: .7rem; } }
