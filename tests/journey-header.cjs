@@ -1,0 +1,30 @@
+const engines=require('playwright'),chromium=engines[process.env.WORLDTHREADS_BROWSER||'chromium'],assert=require('node:assert/strict');
+(async()=>{const b=await chromium.launch();try{
+ const p=await b.newPage({viewport:{width:1440,height:900}}),errors=[];
+ p.on('pageerror',e=>errors.push(e.message));
+ await p.goto(process.env.WORLDTHREADS_URL||'http://127.0.0.1:8792');
+ const snapshot=()=>p.evaluate(()=>JSON.stringify({progress:localStorage.getItem(PROGRESS_KEY),draft:localStorage.getItem(THESIS_KEY),portfolio:localStorage.getItem(PORTFOLIO_KEY)}));
+ await p.click('[data-start-story=harvests]');await p.locator('.story-next').click();
+ assert.equal(await p.locator('#journeyHeader progress').getAttribute('value'),'2');
+ assert.equal(await p.locator('#journeyHeader progress').getAttribute('max'),'6');
+ const heading=await p.locator('#storyHeading').boundingBox();assert(heading.y<350&&heading.y>140);
+ assert.equal(await p.locator('#storyJourney .story-readiness,#storyJourney .story-method,#storyJourney .progress-summary').count(),0);
+ const before=await snapshot();await p.click('[data-open-journey]');
+ await p.addScriptTag({path:require.resolve('axe-core/axe.min.js',{paths:[require('node:path').join(__dirname,'..','work','a11y'),process.cwd()]})});
+ const accessibility=await p.evaluate(()=>axe.run(document.querySelector('#journeyPanel'),{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}}));assert.deepEqual(accessibility.violations.map(v=>v.id),[]);
+ assert(await p.locator('#journeyPanel').evaluate(el=>el.open));assert(await p.locator('[data-check-source]').isVisible());
+ await p.keyboard.press('Escape');assert.equal(await snapshot(),before);assert(await p.locator('[data-open-journey]').evaluate(el=>el===document.activeElement));
+ await p.click('[data-open-journey]');await p.click('[data-check-source]');
+ assert(!(await p.locator('#journeyPanel').evaluate(el=>el.open)));assert(await p.locator('#detailDialog').evaluate(el=>el.open));
+ assert.equal(await p.evaluate(()=>storyProgress('harvests').sources.length),0);
+ await p.locator('.evidence-source > summary').first().click();await p.click('#closeDialog');await p.waitForFunction(()=>!pendingInspectorClose&&!restoringNavigation);
+ await p.click('[data-open-journey]');assert(await p.locator('[data-check-connection]').isVisible());await p.click('[data-close-journey]');
+ await p.locator('.story-next').click();assert.equal(await p.locator('#storyCaseReadiness').count(),1);assert.equal(await p.locator('#journeyHeader progress').getAttribute('value'),'3');
+ await p.click('[data-open-journey]');await p.locator('#journeyPanel [data-story-home]').click();assert(!(await p.locator('#journeyPanel').evaluate(el=>el.open)));assert(await p.locator('[data-start-story=harvests]').isVisible());await p.click('[data-start-story=harvests]');assert.equal(await p.locator('#journeyHeader progress').getAttribute('value'),'3');
+ await p.click('#objectsMode');assert(await p.locator('[data-open-journey]').isVisible());assert.equal(await p.locator('#journeyHeader progress').count(),0);
+ await p.click('#storyMode');await p.click('[data-start-story=andes]');assert.equal(await p.locator('#journeyHeader progress').getAttribute('max'),'4');
+ await p.click('#storyMode');await p.click('[data-start-story=relief]');assert(await p.locator('.story-next').isDisabled());assert(await p.locator('[data-case-clue]').first().isVisible());
+ for(const width of [1440,390,320]){await p.setViewportSize({width,height:900});for(const theme of ['dark','light']){await p.evaluate(t=>document.documentElement.dataset.theme=t,theme);await p.click('[data-open-journey]');assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await p.click('[data-close-journey]');}}
+ await p.click('#dispBtn');await p.click('[data-size=xxl]');await p.click('#dispBtn');await p.click('[data-open-journey]');assert(await p.locator('[data-close-journey]').isVisible());await p.keyboard.press('Escape');assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ assert.deepEqual(errors,[]);console.log('PASS: focused scene → header position → deliberate journey details → source/connection handoff → no view-driven saved-state changes → single requirements node → other modes/stories → narrow/themes/largest text and Escape focus return.');
+ }finally{await b.close()}})().catch(e=>{console.error(e);process.exit(1)});

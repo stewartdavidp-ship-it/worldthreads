@@ -14,6 +14,7 @@ jobs:
         with:
           node-version: '22'
       - run: python3 tests/validate-data.py
+      - run: node --check journey-header.js
       - run: node --check app.js
       - run: node --check reading-preview.js
       - run: node --check prompt-practice.js

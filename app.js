@@ -257,6 +257,7 @@ function setExperience(mode){
  stopHarvestFilm();
   const research=mode==='research',objects=mode==='objects';if(research||objects){harvestAIActive=false;learningClearUrl();quotlePracticeOpen=false;learningPathOpen=false;}document.getElementById('researchLibrary').hidden=!research;document.getElementById('storyJourney').hidden=research||objects;document.getElementById('objectExplorer').hidden=!objects;document.getElementById('investigationProgress').hidden=objects;
   for(const [id,active] of [['storyMode',!research&&!objects],['researchMode',research],['objectsMode',objects]]){const b=document.getElementById(id);b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));}
+  syncJourneyHeader();
   window.scrollTo({top:0,behavior:'instant'});
 }
 const storyChapters=[
@@ -267,11 +268,12 @@ const storyChapters=[
  {label:'The complication',title:'The reports diverge.',text:'Korean records report good rice harvests in 1816. This comparison does not hold local weather, crops or institutions constant. It does show why “1816 meant crop failure everywhere” is too broad.',record:'WT-1816-0045',prompt:'The investigation changes: which local conditions, crops and ways of obtaining food made the difference?',next:'Build a better explanation'},
  {label:'What we can say',title:'A shock is the beginning of an explanation.',text:'The Czech evidence supports a path from damaging weather through poor grain harvests to food-price pressure. Korean harvest reports limit how widely we can apply that account. Regional conditions and crop responses matter; relief and access to food need their own evidence.',record:'WT-1816-0035',prompt:'Amsterdam authorized subsidized rye sales in 1817. That gives us a next question—not a proven solution: did the food reach the households that needed it?',finish:true}
 ];
-function renderStory(moveFocus=false){
+function renderStory(moveFocus=false){hideJourneyHeader();
  stopHarvestFilm();
  if(learningPathOpen){renderLearningPath(moveFocus);return;}
  if(quotlePracticeOpen){renderQuotlePractice(moveFocus);return;}
  if(harvestAIActive&&story.id==='harvests'){renderHarvestAI(moveFocus);return;}
+ document.getElementById('journeyRequirements')?.replaceChildren();
  document.getElementById('investigationProgress').hidden=false;
  const progressRoot=document.getElementById('investigationProgress'),journeyRoot=document.getElementById('storyJourney');
  if(story.id && !['andes','relief'].includes(story.id))journeyRoot.before(progressRoot);else journeyRoot.after(progressRoot);
@@ -324,5 +326,6 @@ function renderStory(moveFocus=false){
   arrangeReliefScene(scene, c);
   scene.after(document.getElementById('storyCaseReadiness'), journeyRoot.querySelector('.story-method'));
  }
+ syncJourneyHeader();
  if(moveFocus){document.getElementById('storyHeading').focus();document.getElementById('storyJourney').scrollIntoView({behavior:'instant',block:'start'});}
 }

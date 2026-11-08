@@ -13,7 +13,7 @@ const storyCatalog=[
  {label:'The evidence boundary',title:'The crossing preceded victory. That is not the whole cause.',text:'The army won at Chacabuco. The recorded link from crossing to battle is chronological, not proof that preparation alone explains the victory. The next layer of the story needs logistics and competing military explanations.',record:'WT-1816-0031',claim:'REL-0023',finish:true}
  ]}
 ];
-function render1816Entry(comparisonOpen = false) {
+function render1816Entry(comparisonOpen = false) {hideJourneyHeader();
  document.getElementById('investigationProgress').hidden = true;
  document.getElementById('storyJourney').innerHTML = `<article class="story-1816">
   <p class="eyebrow">1816 · Weather and harvests</p>

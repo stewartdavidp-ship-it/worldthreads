@@ -2,6 +2,10 @@
 
 Updated: 3 November 2026. Candidate 0.5.81: fresh 52/52 primary scenarios passed against the frozen working candidate. Harvest-inquiry is now primary, with citation completeness checked in its real download; price-evidence adds source-basis graphic, keyboard, mobile/largest-text and no-viewing-mutation checks. Panel-review covers desktop diagram activation, stacked phone citation branches, source selection and one-record drill-down with focus. Source, causal and household-access limits remain explicit. Functional/visual self-checks do not establish human usability, learning or original-source authentication. Current open work is in NEXT_ACTIONS.md. Scope: single-player, browser-local prototype.
 
+## 0.6.14 layout coverage
+
+Historical story progress is now consolidated in the header journey control; the main scene contains the current historical activity. `journey-header.cjs` is primary coverage for disclosure, position versus accomplishments, focus return, source handoff and unchanged saved state. See [JOURNEY_LAYOUT.md](JOURNEY_LAYOUT.md) for design evidence and boundaries. Other checks below retain their historical scope; the release confirmation report records current executions.
+
 ## What success means
 
 A player can find a question worth investigating, distinguish evidence from inference, test a rival explanation, revise a claim, and file an honest, recoverable thesis portfolio. Rewards should make that work legible. Completing activities is not proof that the thesis is true.
