@@ -16,7 +16,7 @@ function andesPanorama(step, record) {
  const [x, y] = positions[step];
  const sequence = positions.slice(0, step + 1).map(([left, top]) => `${left * 9.6},${top * 4.1}`).join(' ');
  return `<figure class="andes-panorama" data-panorama-step="${step}" aria-label="Illustrated Andes story journey">
- <div class="andes-panorama-art">
+ <div class="andes-panorama-art" role="group" tabindex="-1" aria-label="Scene ${step + 1} of 4: ${stops[step]}">
   <div class="andes-camera">
   <svg viewBox="0 0 960 410" preserveAspectRatio="xMidYMid slice" aria-hidden="true" class="andes-landscape">
    <defs>
@@ -83,4 +83,25 @@ function animateAndesPanorama(panorama, previousStep, step) {
   {transform: views[previousStep] || 'scale(1.02)'},
   {transform: views[step]}
  ], {duration: 1050, easing: 'cubic-bezier(.2,.7,.3,1)'});
+}
+
+function andesPanoramaViewportTop() {
+ const art = document.querySelector('.andes-panorama-art');
+ if (!art) return null;
+ const bounds = art.getBoundingClientRect();
+ const headerBottom = document.querySelector('.site-header').getBoundingClientRect().bottom;
+ const visibleHeight = Math.min(innerHeight, bounds.bottom) - Math.max(headerBottom, bounds.top);
+ // Bring the scene into view if the reader has scrolled past most of the artwork.
+ return visibleHeight >= Math.min(120, bounds.height / 2) ? bounds.top : headerBottom + 12;
+}
+
+function restoreAndesPanoramaViewport(top) {
+ const panorama = document.querySelector('.andes-panorama');
+ const art = panorama.querySelector('.andes-panorama-art');
+ window.scrollBy({top: art.getBoundingClientRect().top - top, behavior: 'instant'});
+ const current = panorama.querySelector('[aria-current="step"]');
+ const bounds = current.getBoundingClientRect();
+ const headerBottom = document.querySelector('.site-header').getBoundingClientRect().bottom;
+ const focusTarget = bounds.top >= headerBottom && bounds.bottom <= innerHeight ? current : art;
+ focusTarget.focus({preventScroll:true});
 }

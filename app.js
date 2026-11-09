@@ -51,7 +51,17 @@ function bind(){
     const home=e.target.closest('[data-story-home]');if(home){harvestAIActive=false;learningPathOpen=false;quotlePracticeOpen=false;story.id=null;renderStory(true);return;}
     const frontier=e.target.closest('[data-story-frontier],[data-harvest-frontier]');if(frontier){revealStoryContribution();return;}
     const download=e.target.closest('[data-download-proposal]');if(download){downloadProposal();return;}
-    const step=e.target.closest('[data-story-step]');if(step){if(step.getAttribute('aria-disabled')==='true')return;const next=Number(step.dataset.storyStep);if(story.id==='relief'&&next>story.step&&!storyProgress('relief').visited.includes(next)&&!caseSolved())return;story.step=next;story.clue=null;renderStory(true);return;}
+    const step = e.target.closest('[data-story-step]');
+    if (step) {
+      if (step.getAttribute('aria-disabled') === 'true') return;
+      const next = Number(step.dataset.storyStep);
+      if (story.id === 'relief' && next > story.step && !storyProgress('relief').visited.includes(next) && !caseSolved()) return;
+      const panoramaTop = step.closest('.andes-panorama, .dispatch-continue') ? andesPanoramaViewportTop() : null;
+      story.step = next;
+      story.clue = null;
+      renderStory(true, panoramaTop);
+      return;
+    }
     const evidence=e.target.closest('[data-story-evidence]');if(evidence){openDetail(obs(evidence.dataset.storyEvidence));inspector.tab='evidence';renderInspector(true);return;}
     const claim=e.target.closest('[data-story-claim]');if(claim){openRelationship(state.relationships.find(r=>r.id===claim.dataset.storyClaim));return;}
     const choice=e.target.closest('[data-story-choice]');if(choice){story.choice=choice.dataset.storyChoice;recordProgress('choice',story.choice);renderStory();document.querySelector('[data-story-choice="'+story.choice+'"]')?.focus({preventScroll:true});return;}
@@ -88,7 +98,7 @@ function bind(){
   document.getElementById('researchGaps').addEventListener('click',e=>{const o=e.target.closest('[data-observation]');if(o)openDetail(obs(o.dataset.observation));const t=e.target.closest('[data-thread]');if(t)selectThread(t.dataset.thread);});
   document.getElementById('mechanismPanel').addEventListener('click',e=>{const o=e.target.closest('[data-observation]');if(o)openDetail(obs(o.dataset.observation));});
   document.getElementById('closeDialog').addEventListener('click',()=>document.getElementById('detailDialog').close());
-  const dialog=document.getElementById('detailDialog');dialog.addEventListener('close',()=>{if(inspector.opener?.isConnected)inspector.opener.focus();});
+  const dialog=document.getElementById('detailDialog');dialog.addEventListener('close',()=>{if(inspector.opener?.isConnected)inspector.opener.focus({preventScroll:true});});
   dialog.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const controls=[...dialog.querySelectorAll('button:not(:disabled),a[href],summary,input:not([type=hidden]),select,textarea,[tabindex="0"]')].filter(x=>{if(!x.getClientRects().length)return false;for(let parent=x.parentElement;parent&&parent!==dialog;parent=parent.parentElement)if(parent.tagName==='DETAILS'&&!parent.open&&!parent.querySelector(':scope > summary')?.contains(x))return false;return true;}),first=controls[0],last=controls.at(-1);if(!first)return;if((e.shiftKey&&(document.activeElement===first||document.activeElement.id==='detailTitle'))||(!e.shiftKey&&document.activeElement===last)){e.preventDefault();(e.shiftKey?last:first).focus();}});
   document.getElementById('detailDialog').addEventListener('close',()=>{if(story.id&&!document.getElementById('storyJourney').hidden){const config=storyCatalog.find(s=>s.id===story.id);if(story.step===(config.chapters||storyChapters).length-1){const desk=document.querySelector('.case-goal');if(desk&&!desk.querySelector('#caseFileForm')&&completedStory(config))desk.outerHTML=caseFileHtml(config);}}});
 }
@@ -268,7 +278,7 @@ const storyChapters=[
  {label:'The complication',title:'The reports diverge.',text:'Korean records report good rice harvests in 1816. This comparison does not hold local weather, crops or institutions constant. It does show why “1816 meant crop failure everywhere” is too broad.',record:'WT-1816-0045',prompt:'The investigation changes: which local conditions, crops and ways of obtaining food made the difference?',next:'Build a better explanation'},
  {label:'What we can say',title:'A shock is the beginning of an explanation.',text:'The Czech evidence supports a path from damaging weather through poor grain harvests to food-price pressure. Korean harvest reports limit how widely we can apply that account. Regional conditions and crop responses matter; relief and access to food need their own evidence.',record:'WT-1816-0035',prompt:'Amsterdam authorized subsidized rye sales in 1817. That gives us a next question—not a proven solution: did the food reach the households that needed it?',finish:true}
 ];
-function renderStory(moveFocus=false){hideJourneyHeader();
+function renderStory(moveFocus=false, panoramaTop=null){hideJourneyHeader();
  const previousPanorama = document.querySelector('.andes-panorama');
  const previousAndesStep = previousPanorama ? Number(previousPanorama.dataset.panoramaStep) : undefined;
  stopHarvestFilm();
@@ -339,5 +349,10 @@ function renderStory(moveFocus=false){hideJourneyHeader();
   scene.after(document.getElementById('storyCaseReadiness'), journeyRoot.querySelector('.story-method'));
  }
  syncJourneyHeader();
- if(moveFocus){document.getElementById('storyHeading').focus();document.getElementById('storyJourney').scrollIntoView({behavior:'instant',block:'start'});}
+ if (panoramaTop !== null && config.id === 'andes') {
+  restoreAndesPanoramaViewport(panoramaTop);
+ } else if (moveFocus) {
+  document.getElementById('storyHeading').focus({preventScroll:true});
+  document.getElementById('storyJourney').scrollIntoView({behavior:'instant',block:'start'});
+ }
 }
