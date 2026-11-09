@@ -18,7 +18,7 @@ const assert = require('node:assert/strict');
   await image.scrollIntoViewIfNeeded();
   await page.waitForFunction(() => document.querySelector('.andes-synthesis img').naturalWidth > 0);
   assert.equal(await exercise.locator('[download]').getAttribute('href'), await image.getAttribute('src'));
-  const prompt = await exercise.getByRole('textbox', {name: 'Source comparison prompt'}).inputValue();
+  const prompt = await exercise.locator('[aria-label="Source comparison prompt"]').inputValue();
   for (const value of ['WT-1816-0060', 'WT-1816-0030', 'WT-1816-0083', 'WT-1816-0082',
    '124 of 130 mules', '400 y tantas', 'If the image is missing', 'count them as one account',
    'one supported synthesis', 'one tempting but unsupported link']) assert(prompt.includes(value), value);
@@ -34,7 +34,7 @@ const assert = require('node:assert/strict');
   }));
   await exercise.locator('[data-copy-andes-synthesis]').click();
   await exercise.getByText(/selected for manual copying/).waitFor();
-  assert(await exercise.getByRole('textbox', {name: 'Source comparison prompt'}).evaluate(field =>
+  assert(await exercise.locator('[aria-label="Source comparison prompt"]').evaluate(field =>
    field === document.activeElement && field.selectionEnd === field.value.length));
   await exercise.locator('[data-story-evidence="WT-1816-0083"]').click();
   assert.match(await page.locator('#detailTitle').innerText(), /mule/i);
