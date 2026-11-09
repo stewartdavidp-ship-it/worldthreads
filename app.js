@@ -328,6 +328,7 @@ function renderStory(moveFocus=false){hideJourneyHeader();
     takeaway.textContent = 'The dispatch records a plan. To verify delivery, look for a dated record showing who received the rations.';
     continuation.append(takeaway, nextScene.cloneNode(true));
     dispatch.after(continuation);
+    dispatch.insertAdjacentHTML('beforebegin', andesSynthesisHtml());
    }
   }
   scene.after(document.getElementById('storyCaseReadiness'), journeyRoot.querySelector('.story-method'));
