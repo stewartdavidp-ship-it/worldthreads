@@ -51,7 +51,7 @@ function bind(){
     const home=e.target.closest('[data-story-home]');if(home){harvestAIActive=false;learningPathOpen=false;quotlePracticeOpen=false;story.id=null;renderStory(true);return;}
     const frontier=e.target.closest('[data-story-frontier],[data-harvest-frontier]');if(frontier){revealStoryContribution();return;}
     const download=e.target.closest('[data-download-proposal]');if(download){downloadProposal();return;}
-    const step=e.target.closest('[data-story-step]');if(step){const next=Number(step.dataset.storyStep);if(story.id==='relief'&&next>story.step&&!storyProgress('relief').visited.includes(next)&&!caseSolved())return;story.step=next;story.clue=null;renderStory(true);return;}
+    const step=e.target.closest('[data-story-step]');if(step){if(step.getAttribute('aria-disabled')==='true')return;const next=Number(step.dataset.storyStep);if(story.id==='relief'&&next>story.step&&!storyProgress('relief').visited.includes(next)&&!caseSolved())return;story.step=next;story.clue=null;renderStory(true);return;}
     const evidence=e.target.closest('[data-story-evidence]');if(evidence){openDetail(obs(evidence.dataset.storyEvidence));inspector.tab='evidence';renderInspector(true);return;}
     const claim=e.target.closest('[data-story-claim]');if(claim){openRelationship(state.relationships.find(r=>r.id===claim.dataset.storyClaim));return;}
     const choice=e.target.closest('[data-story-choice]');if(choice){story.choice=choice.dataset.storyChoice;recordProgress('choice',story.choice);renderStory();document.querySelector('[data-story-choice="'+story.choice+'"]')?.focus({preventScroll:true});return;}
@@ -269,6 +269,8 @@ const storyChapters=[
  {label:'What we can say',title:'A shock is the beginning of an explanation.',text:'The Czech evidence supports a path from damaging weather through poor grain harvests to food-price pressure. Korean harvest reports limit how widely we can apply that account. Regional conditions and crop responses matter; relief and access to food need their own evidence.',record:'WT-1816-0035',prompt:'Amsterdam authorized subsidized rye sales in 1817. That gives us a next question—not a proven solution: did the food reach the households that needed it?',finish:true}
 ];
 function renderStory(moveFocus=false){hideJourneyHeader();
+ const previousPanorama = document.querySelector('.andes-panorama');
+ const previousAndesStep = previousPanorama ? Number(previousPanorama.dataset.panoramaStep) : undefined;
  stopHarvestFilm();
  if(learningPathOpen){renderLearningPath(moveFocus);return;}
  if(quotlePracticeOpen){renderQuotlePractice(moveFocus);return;}
@@ -289,10 +291,16 @@ function renderStory(moveFocus=false){hideJourneyHeader();
  if(story.id==='harvests'&&story.step===5)journeyRoot.querySelector('.story-scene').insertAdjacentHTML('beforeend','<aside class="learning-everyday-link"><button type="button" class="story-back" data-learning-everyday>Use this research method in everyday life →</button></aside>');
  if (config.id === 'andes') {
   const scene = journeyRoot.querySelector('.story-scene');
+  const illustration = scene.querySelector(':scope > .story-illustration');
+  const dispatch = scene.querySelector(':scope > .andes-dispatch');
+  const landscapeAnchor = illustration || dispatch;
+  landscapeAnchor.insertAdjacentHTML('beforebegin', andesPanorama(story.step, o));
+  illustration?.remove();
+  const panorama = scene.querySelector('.andes-panorama');
+  animateAndesPanorama(panorama, previousAndesStep, story.step);
   if (!c.finish) {
    const actions = scene.querySelector('.story-actions');
    scene.querySelector('.story-narrative').after(actions);
-   const dispatch = scene.querySelector(':scope > .andes-dispatch');
    if (dispatch) {
     const nextScene = actions.querySelector('.story-next');
     nextScene.textContent = 'Continue to Chacabuco →';
@@ -306,6 +314,9 @@ function renderStory(moveFocus=false){hideJourneyHeader();
      heading.focus({preventScroll:true});
      heading.scrollIntoView({block:'center',behavior:'instant'});
     });
+    for (const hotspot of panorama.querySelectorAll('[data-panorama-dispatch]')) {
+     hotspot.addEventListener('click', () => readDispatch.click());
+    }
     nextScene.before(readDispatch);
     const invitation = document.createElement('p');
     invitation.textContent = 'Las Heras planned to march at 10 p.m. Can his report tell us whether the soldiers got their rations?';
