@@ -56,21 +56,21 @@ function andesSynthesisHtml() {
    </div>
   </div>
   <h4>Run the comparison</h4>
-  <p>Paste the prompt into your AI assistant and attach the page image if it accepts images. Bring the reply back here for the evidence check.</p>
+  <p>Compare the records yourself, or paste the prompt into your AI assistant and attach the page image if it accepts images. Save the connections you can support.</p>
   <button type="button" class="story-back" data-copy-andes-synthesis>Copy source comparison prompt</button>
   <p class="media-note" role="status"></p>
   <details><summary>Read or copy the full prompt</summary>
    <textarea readonly rows="9" aria-label="Source comparison prompt">${escapeHtml(andesSynthesisPrompt())}</textarea>
   </details>
-  <details class="andes-synthesis-return" ${review.reply ? 'open' : ''}>
-   <summary>Bring back the AI reply</summary>
-   <p>Paste the reply as text. Use the records below to decide which links hold up, then save your notes in this browser.</p>
-   <label for="andes-synthesis-reply">AI reply</label>
-   <textarea id="andes-synthesis-reply" rows="7" maxlength="24000">${escapeHtml(review.reply || '')}</textarea>
+  <details class="andes-synthesis-return" ${review.reply || review.notes ? 'open' : ''}>
+   <summary>Record your source check</summary>
+   <p>Write which connections hold up and what remains uncertain. If you used AI, you can also save its reply.</p>
    <label for="andes-synthesis-notes">Evidence check notes</label>
    <textarea id="andes-synthesis-notes" rows="4" maxlength="8000">${escapeHtml(review.notes || '')}</textarea>
-   <button type="button" class="story-back" data-save-andes-review>Save reply and notes</button>
-   <p class="media-note" data-andes-review-status role="status">${review.reply ? 'Saved in this browser.' : ''}</p>
+   <label for="andes-synthesis-reply">AI reply (optional)</label>
+   <textarea id="andes-synthesis-reply" rows="7" maxlength="24000">${escapeHtml(review.reply || '')}</textarea>
+   <button type="button" class="story-back" data-save-andes-review>Save my review</button>
+   <p class="media-note" data-andes-review-status role="status">${review.reply || review.notes ? 'Saved in this browser.' : ''}</p>
   </details>
   <details class="andes-synthesis-check"><summary>Check the AI’s synthesis against the records</summary>
    <h4>Compare the records across four dimensions</h4>
@@ -109,15 +109,15 @@ document.addEventListener('click', event => {
  const reply = panel.querySelector('#andes-synthesis-reply');
  const notes = panel.querySelector('#andes-synthesis-notes');
  const status = panel.querySelector('[data-andes-review-status]');
- if (!reply.value.trim()) {
-  status.textContent = 'Paste an AI reply before saving.';
-  reply.focus();
+ if (!reply.value.trim() && !notes.value.trim()) {
+  status.textContent = 'Add evidence notes or an AI reply before saving.';
+  notes.focus();
   return;
  }
  try {
   localStorage.setItem(andesReviewKey, JSON.stringify({reply: reply.value, notes: notes.value}));
   status.textContent = 'Saved in this browser.';
  } catch {
-  status.textContent = 'The browser could not save this reply. Copy your reply and notes before leaving.';
+  status.textContent = 'The browser could not save this review. Copy your work before leaving.';
  }
 });
