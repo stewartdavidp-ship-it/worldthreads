@@ -18,7 +18,7 @@ const assert = require('node:assert/strict');
   await image.scrollIntoViewIfNeeded();
   await page.waitForFunction(() => document.querySelector('.andes-synthesis img').naturalWidth > 0);
   assert.equal(await exercise.locator('[download]').getAttribute('href'), await image.getAttribute('src'));
-  const prompt = await exercise.locator('textarea').inputValue();
+  const prompt = await exercise.getByRole('textbox', {name: 'Source comparison prompt'}).inputValue();
   for (const value of ['WT-1816-0060', 'WT-1816-0030', 'WT-1816-0083', 'WT-1816-0082',
    '124 of 130 mules', '400 y tantas', 'If the image is missing', 'count them as one account',
    'one supported synthesis', 'one tempting but unsupported link']) assert(prompt.includes(value), value);
@@ -34,7 +34,7 @@ const assert = require('node:assert/strict');
   }));
   await exercise.locator('[data-copy-andes-synthesis]').click();
   await exercise.getByText(/selected for manual copying/).waitFor();
-  assert(await exercise.locator('textarea').evaluate(field =>
+  assert(await exercise.getByRole('textbox', {name: 'Source comparison prompt'}).evaluate(field =>
    field === document.activeElement && field.selectionEnd === field.value.length));
   await exercise.locator('[data-story-evidence="WT-1816-0083"]').click();
   assert.match(await page.locator('#detailTitle').innerText(), /mule/i);
@@ -43,6 +43,16 @@ const assert = require('node:assert/strict');
   await page.setViewportSize({width: 320, height: 700});
   await page.evaluate(() => { document.documentElement.style.fontSize = '140%'; });
   assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+  await exercise.getByText('Bring back the AI reply', {exact: true}).click();
+  await exercise.getByLabel('AI reply', {exact: true}).fill('Test reply: reported receipt of 124 mules.');
+  await exercise.getByLabel('Evidence check notes', {exact: true}).fill('Test audit: the scan and record agree.');
+  await exercise.getByRole('button', {name: 'Save reply and notes'}).click();
+  await exercise.getByText('Saved in this browser.', {exact: true}).waitFor();
+  await page.reload();
+  await page.locator('[data-start-story=andes]').click();
+  await exercise.locator(':scope > summary').click();
+  assert.equal(await exercise.getByLabel('AI reply', {exact: true}).inputValue(), 'Test reply: reported receipt of 124 mules.');
+  assert.equal(await exercise.getByLabel('Evidence check notes', {exact: true}).inputValue(), 'Test audit: the scan and record agree.');
   assert.deepEqual(errors, []);
   console.log('PASS: source image, four-record AI prompt, clipboard and manual fallback, verification, evidence detour and narrow layout.');
  } finally {
